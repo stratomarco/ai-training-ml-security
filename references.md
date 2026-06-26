@@ -100,3 +100,11 @@ For red teams:
 
 - NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations  
   https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+
+
+## Module 5 — LLM Application Security
+
+- OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+- OWASP GenAI Security Project: https://genai.owasp.org/
+- OWASP LLM Top 10 2025 PDF: https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf
+- DVAIA — Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application

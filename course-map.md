@@ -111,3 +111,10 @@ Mitigation: Per-action authorization, scoped tool tokens, approval gates, audit 
 - Module 04 — BIML Architectural Risk Analysis is now expanded with slides, instructor notes, student handout, architecture review exercise, checklist, quiz, and references.
 - Added `templates/architecture-risk-review-template.md`.
 - Added `labs/architecture-risk-review-labs/docops-assistant-architecture-review.md`.
+
+
+## Build status update — v0.6
+
+| Module | Status | Notes |
+|---|---|---|
+| 05 — LLM Application Security | Complete | Added README, slides, instructor notes, student handout, exercise, checklist, quiz, references, DVAIA lab guide, and review template. |

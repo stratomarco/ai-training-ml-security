@@ -123,3 +123,17 @@ Completed:
 - DocOps Assistant architecture review lab
 
 Next recommended milestone: Module 05 — LLM Application Security.
+
+
+## Completed in v0.6
+
+- [x] Add Module 5 LLM Application Security
+- [x] Add DVAIA-style LLM application security lab guide
+- [x] Add LLM application security review template
+
+## Next recommended work
+
+- [ ] Add Module 6 RAG Security and Indirect Prompt Injection
+- [ ] Add RAG threat model exercise
+- [ ] Add RAG-specific lab guide
+- [ ] Add vector database authorization checklist

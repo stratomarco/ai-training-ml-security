@@ -100,3 +100,20 @@ Choose a license before publishing. A practical default for training content is 
 ## Course status
 
 Current working version: **v0.5 draft**. Module 01, Module 02, Module 03, and Module 04 have complete teaching packages.
+
+
+## v0.6 update
+
+Module 5 — LLM Application Security is now complete.
+
+Added:
+
+- OWASP LLM/GenAI risk framing
+- LLM application architecture slides
+- Instructor notes
+- Student handout
+- LLM application security review exercise
+- LLM security checklist
+- Quiz and answer key
+- DVAIA-style LLM application security lab guide
+- LLM application security review template
