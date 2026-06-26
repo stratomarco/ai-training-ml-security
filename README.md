@@ -99,4 +99,4 @@ Choose a license before publishing. A practical default for training content is 
 
 ## Course status
 
-Current working version: **v0.3 draft**. Module 01 and Module 02 have complete teaching packages.
+Current working version: **v0.4 draft**. Module 01, Module 02, and Module 03 have complete teaching packages.

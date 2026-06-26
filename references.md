@@ -93,3 +93,9 @@ For red teams:
 4. Damn Vulnerable AI Agent
 5. OWASP Agentic Applications Top 10
 6. BIML LLM risk analysis
+
+
+## Adversarial ML taxonomy
+
+- NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations  
+  https://csrc.nist.gov/pubs/ai/100/2/e2025/final

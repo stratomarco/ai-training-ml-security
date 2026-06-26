@@ -97,3 +97,10 @@ Mitigation: Per-action authorization, scoped tool tokens, approval gates, audit 
 
 - Module 02 — ML System Architecture is now expanded with slides, instructor notes, student handout, lifecycle DFD exercise, checklist, quiz, and references.
 - Added `templates/ml-system-architecture-review-template.md`.
+
+
+## v0.4 update
+
+- Module 03 — OWASP ML Security Top 10 is now expanded with slides, instructor notes, student handout, attack review exercise, checklist, quiz, and references.
+- Added `labs/toy-ml-attacks/classical-ml-attack-lab.md`.
+- Added `templates/ml-attack-summary-template.md`.

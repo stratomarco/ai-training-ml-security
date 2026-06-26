@@ -87,3 +87,21 @@ Completed:
 - ML system architecture review template
 
 Next recommended milestone: Module 03 — OWASP ML Security Top 10.
+
+
+## v0.4 — Module 03 complete
+
+Completed:
+
+- Module 03 README
+- Module 03 slides
+- Module 03 instructor notes
+- Module 03 student handout
+- Module 03 OWASP ML attack review exercise
+- Module 03 checklist
+- Module 03 quiz
+- Module 03 references
+- Toy ML attack lab guide
+- ML attack summary template
+
+Next recommended milestone: Module 04 — BIML Architectural Risk Analysis.
