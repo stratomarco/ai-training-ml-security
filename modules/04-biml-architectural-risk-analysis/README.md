@@ -2,120 +2,158 @@
 
 ## Purpose
 
-Use BIML as the bridge between security engineering and ML/LLM architecture.
+Use BIML as the bridge between classic security engineering and practical ML/LLM architecture review.
+
+This module teaches students how to identify security risks before implementation by reviewing the architecture, lifecycle, assets, trust boundaries, assumptions, and abuse cases of an AI-enabled system.
 
 ## Key message
 
-Good AI security starts before implementation. Architecture determines which failures become possible.
+Good AI security starts before exploit payloads. Architecture determines which failures become possible.
+
+The most important question is not only:
+
+> Can I jailbreak the model?
+
+The stronger question is:
+
+> Why does the system allow a model response, retrieved document, dataset, tool call, or workflow step to create security impact?
+
+## Why BIML matters
+
+The Berryville Institute of Machine Learning focuses on building security into ML systems from a security engineering perspective. Its earlier work introduced BIML-78, a set of 78 ML security risks associated with a generic ML process model. Later LLM architectural risk work adapted and extended that approach to LLM systems.
+
+This makes BIML especially useful for this course because it is not only an attack list. It is a design-review mindset.
 
 ## Learning objectives
 
 By the end of this module, students should be able to:
 
-1. Explain the core security problem addressed by this module.
-2. Identify the relevant assets, trust boundaries, and attacker goals.
-3. Connect the topic to classic security engineering principles.
-4. Recognize the ML, LLM, RAG, or agent-specific failure mode.
-5. Propose practical mitigations and discuss residual risk.
+1. Explain architectural risk analysis in plain language.
+2. Explain why BIML is useful for ML and LLM security design reviews.
+3. Distinguish design-level risks from implementation bugs.
+4. Identify assets, trust boundaries, assumptions, and abuse cases in an AI architecture.
+5. Map ML and LLM risks to lifecycle components.
+6. Explain why prompts, datasets, embeddings, model artifacts, tools, and feedback loops change the architecture.
+7. Produce an architecture risk review for an AI-enabled system.
+8. Recommend security requirements and design controls.
+9. Discuss residual risk after mitigations.
+10. Communicate architectural AI risk to engineers and leadership.
 
 ## Topics
 
 - Architectural risk analysis
+- Building security in
 - BIML-78
-- LLM architectural risk analysis
-- Model lifecycle risk
-- Design-level weaknesses
+- BIML LLM architectural risk analysis
+- ML lifecycle risk
+- LLM architecture risk
+- Risk categories across components
+- System-wide risks
 - Abuse-case-driven review
 - Security requirements
+- Design controls
+- Residual risk
+- Architecture review deliverables
 
 ## Security engineering connection
 
-This module should always connect back to classic security engineering. The instructor should avoid treating AI as magic or as a separate universe. The practical question is how familiar principles change when models, datasets, embeddings, tools, prompts, and autonomous workflows become part of the system.
+This module directly connects to classic security engineering:
 
-Important principles to reuse:
+| Classic concept | AI/ML application |
+|---|---|
+| Secure design review | Review AI architecture before implementation |
+| Threat modeling | Identify attackers, assets, entry points, and trust boundaries |
+| Abuse cases | Describe how the system can be intentionally misused |
+| Least privilege | Limit model, tool, data, and workflow privileges |
+| Complete mediation | Check authorization at every data/tool/action boundary |
+| Defense in depth | Combine model guardrails with system controls |
+| Secure failure | Ensure low-confidence, blocked, or failed model actions fail safely |
+| Auditability | Log decisions, tool calls, retrievals, policy decisions, and approvals |
+| Supply chain integrity | Treat datasets, models, adapters, prompts, and dependencies as artifacts |
 
-- Least privilege
-- Explicit trust boundaries
-- Complete mediation
-- Defense in depth
-- Secure defaults
-- Input and output handling
-- Auditability
-- Supply chain integrity
-- Privacy by design
-- Resilience and recovery
+## Module framing
+
+Architectural risk analysis asks:
+
+1. What are we building?
+2. What are the valuable assets?
+3. Who can interact with the system?
+4. What can the system observe?
+5. What can the system change?
+6. What trust boundaries exist?
+7. What assumptions must be true for the system to be safe?
+8. What happens when those assumptions are false?
+9. What security requirements should be added?
+10. What residual risk remains?
 
 ## Reference architecture
 
 ```text
-user or attacker
+user / attacker
   |
   v
-application or AI interface
+AI application interface
   |
+  +-- identity and session context
+  +-- prompt builder
   +-- model gateway
   +-- policy layer
-  +-- data or retrieval service
-  +-- tool or workflow service
-  +-- logs and monitoring
+  +-- retrieval service
+  |     +-- document store
+  |     +-- embedding model
+  |     +-- vector database
+  +-- tool broker
+  |     +-- ticketing API
+  |     +-- configuration API
+  |     +-- email/docs API
+  +-- memory service
+  +-- logging and monitoring
+  +-- feedback pipeline
+  +-- model registry
 ```
 
 ## Lab
 
-### Lab goal
+Students perform an architecture risk review of **DocOps Assistant**, a fictional internal AI assistant that can search internal documents, summarize incidents, and update tickets.
 
-Review an AI architecture and identify design-level risks before writing exploit payloads.
-
-### Lab structure
-
-1. Introduce the scenario.
-2. Map assets and trust boundaries.
-3. Demonstrate or reproduce the vulnerable behavior.
-4. Explain the root cause.
-5. Propose mitigations.
-6. Discuss operational trade-offs.
-7. Capture residual risk.
-
-## Defensive design patterns
-
-- Keep security decisions outside the model where possible.
-- Treat model input and output as untrusted.
-- Apply least privilege to data, tools, and workflows.
-- Validate tool arguments and enforce authorization per action.
-- Log security-relevant events.
-- Rate-limit expensive or sensitive operations.
-- Add human approval for destructive or high-impact actions.
-- Build monitoring for abuse, drift, and unexpected behavior.
-
-## Discussion questions
-
-1. What is the highest-value asset in this scenario?
-2. Where are the trust boundaries?
-3. What does the model know?
-4. What can the model do?
-5. What should the model not be allowed to decide?
-6. What would you fix first?
-7. What would you monitor?
-8. What residual risk remains?
+Students must identify design-level risks before writing any prompt injection payloads.
 
 ## Deliverable
 
-Architecture risk review.
+Architecture risk review containing:
 
-## Instructor notes
+- System summary
+- Asset list
+- Trust boundaries
+- Assumptions
+- Abuse cases
+- Risk list
+- Risk prioritization
+- Security requirements
+- Defensive architecture recommendations
+- Residual risk statement
 
-Students may focus too much on clever prompts or exploit strings. Bring the discussion back to architecture, permissions, system boundaries, workflow design, and risk decisions.
+## Recommended module files
 
-A good answer should include both offensive understanding and defensive judgment.
+- `slides.md`
+- `instructor-notes.md`
+- `student-handout.md`
+- `exercise-biml-architecture-review.md`
+- `checklist.md`
+- `quiz.md`
+- `references.md`
 
-## Review questions
+## Instructor guidance
 
-1. What is the core risk in this module?
-2. Which classic security principles apply?
-3. What makes the AI version of the problem different?
-4. What mitigation is strongest?
-5. What mitigation is weakest if used alone?
+Students may try to jump straight into prompt injection examples. Redirect them back to architecture.
 
-## Suggested reading
+Ask repeatedly:
 
-See [`../../references.md`](../../references.md).
+- Why does this attack have impact?
+- Which trust boundary failed?
+- Which authorization decision was missing?
+- Which assumption was unsafe?
+- Which component should enforce the control?
+- What should be redesigned before deployment?
+
+A strong answer should identify not only attacks, but also security requirements.

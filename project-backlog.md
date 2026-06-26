@@ -105,3 +105,21 @@ Completed:
 - ML attack summary template
 
 Next recommended milestone: Module 04 — BIML Architectural Risk Analysis.
+
+
+## v0.5 — Module 04 complete
+
+Completed:
+
+- Module 04 README
+- Module 04 slides
+- Module 04 instructor notes
+- Module 04 student handout
+- Module 04 BIML-style architecture review exercise
+- Module 04 checklist
+- Module 04 quiz
+- Module 04 references
+- Architecture risk review template
+- DocOps Assistant architecture review lab
+
+Next recommended milestone: Module 05 — LLM Application Security.

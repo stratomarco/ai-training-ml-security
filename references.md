@@ -16,6 +16,7 @@ This file contains the initial reference spine for the course.
 - NIST AI RMF Generative AI Profile, NIST AI 600-1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
 - NIST Adversarial Machine Learning taxonomy, NIST AI 100-2e2023: https://csrc.nist.gov/pubs/ai/100/2/e2023/final
 - BIML Results: https://berryvilleiml.com/results/
+- BIML Interactive Machine Learning Risk Framework: https://berryvilleiml.com/interactive/
 - BIML Architectural Risk Analysis of Large Language Models: https://berryvilleiml.com/docs/BIML-LLM24.pdf
 
 ## Lab references

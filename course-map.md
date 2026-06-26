@@ -104,3 +104,10 @@ Mitigation: Per-action authorization, scoped tool tokens, approval gates, audit 
 - Module 03 — OWASP ML Security Top 10 is now expanded with slides, instructor notes, student handout, attack review exercise, checklist, quiz, and references.
 - Added `labs/toy-ml-attacks/classical-ml-attack-lab.md`.
 - Added `templates/ml-attack-summary-template.md`.
+
+
+## v0.5 update
+
+- Module 04 — BIML Architectural Risk Analysis is now expanded with slides, instructor notes, student handout, architecture review exercise, checklist, quiz, and references.
+- Added `templates/architecture-risk-review-template.md`.
+- Added `labs/architecture-risk-review-labs/docops-assistant-architecture-review.md`.
