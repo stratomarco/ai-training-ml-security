@@ -91,3 +91,9 @@ AI-specific failure: Agent has access to broad tools and data
 Exploit: Prompt injection causes the agent to update a ticket or leak data
 Mitigation: Per-action authorization, scoped tool tokens, approval gates, audit logs
 ```
+
+
+## v0.3 update
+
+- Module 02 — ML System Architecture is now expanded with slides, instructor notes, student handout, lifecycle DFD exercise, checklist, quiz, and references.
+- Added `templates/ml-system-architecture-review-template.md`.

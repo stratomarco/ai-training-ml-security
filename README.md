@@ -95,3 +95,8 @@ DVAIA and similar projects can provide the hands-on substrate. This curriculum p
 ## License
 
 Choose a license before publishing. A practical default for training content is Creative Commons Attribution 4.0 for course material and Apache 2.0 or MIT for any code you later add.
+
+
+## Course status
+
+Current working version: **v0.3 draft**. Module 01 and Module 02 have complete teaching packages.

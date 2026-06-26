@@ -70,3 +70,20 @@ Create these issues first:
 [repo] Decide license model for content and code
 [repo] Add CONTRIBUTING.md
 ```
+
+
+## v0.3 — Module 02 complete
+
+Completed:
+
+- Module 02 README
+- Module 02 slides
+- Module 02 instructor notes
+- Module 02 student handout
+- Module 02 lifecycle DFD exercise
+- Module 02 checklist
+- Module 02 quiz
+- Module 02 references
+- ML system architecture review template
+
+Next recommended milestone: Module 03 — OWASP ML Security Top 10.
