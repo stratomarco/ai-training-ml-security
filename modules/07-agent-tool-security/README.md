@@ -2,123 +2,145 @@
 
 ## Purpose
 
-Teach why agents are more dangerous than chatbots.
+Teach why agentic systems are riskier than chatbots and how to secure LLM-driven tools, workflows, memory, and autonomous actions.
+
+A chatbot mainly produces text. An agent can act. Once an LLM can call tools, create tickets, send messages, query systems, execute code, browse websites, update records, or coordinate with other agents, AI security becomes workflow security, identity security, and authorization design.
 
 ## Key message
 
-An agent is an application that can act. Once the model can use tools, AI security becomes workflow security.
+> An agent is an application that can act. The model may choose the action, but the system must enforce what actions are allowed.
+
+The model should not be the security boundary. Agent safety depends on controls around identity, authorization, tool design, policy enforcement, approval gates, logging, sandboxing, and rollback.
 
 ## Learning objectives
 
 By the end of this module, students should be able to:
 
-1. Explain the core security problem addressed by this module.
-2. Identify the relevant assets, trust boundaries, and attacker goals.
-3. Connect the topic to classic security engineering principles.
-4. Recognize the ML, LLM, RAG, or agent-specific failure mode.
-5. Propose practical mitigations and discuss residual risk.
+1. Explain why agents introduce higher risk than simple LLM applications.
+2. Identify assets, trust boundaries, identities, tools, permissions, and high-impact actions in an agentic system.
+3. Explain tool misuse, excessive agency, memory poisoning, goal hijacking, identity abuse, insecure inter-agent communication, and cascading failures.
+4. Design tool permission boundaries using least privilege and per-action authorization.
+5. Distinguish model decision-making from enforceable security policy.
+6. Add human approval gates for sensitive, destructive, expensive, or externally visible actions.
+7. Define logging, audit, monitoring, kill-switch, and rollback requirements for agents.
+8. Produce an agent control design that balances security, usability, and developer velocity.
 
 ## Topics
 
-- Tool calling
-- Function calling
-- Memory
-- Planning
-- Workflow execution
+- Agent architecture
+- Tool calling and function calling
+- Tool schemas and argument validation
+- Tool identity and scoped credentials
+- Per-action authorization
+- Least privilege for agents
+- Direct and indirect prompt injection against agents
+- Goal hijacking
+- Tool misuse
+- Identity and privilege abuse
+- Memory and context poisoning
+- Insecure inter-agent communication
 - Excessive agency
-- Confused deputy
-- Permission boundaries
-- Approval gates
-- Sandboxing
+- Human-agent trust exploitation
+- Cascading failures
+- Sandboxing and egress control
+- Approval gates and break-glass flows
+- Audit logs and accountability
+- Kill switches and rollback
 
 ## Security engineering connection
 
-This module should always connect back to classic security engineering. The instructor should avoid treating AI as magic or as a separate universe. The practical question is how familiar principles change when models, datasets, embeddings, tools, prompts, and autonomous workflows become part of the system.
+Agent security reuses classic security principles:
 
-Important principles to reuse:
-
-- Least privilege
-- Explicit trust boundaries
-- Complete mediation
-- Defense in depth
-- Secure defaults
-- Input and output handling
-- Auditability
-- Supply chain integrity
-- Privacy by design
-- Resilience and recovery
+| Principle | Agent security interpretation |
+|---|---|
+| Least privilege | Agents should only receive the tools, data, and scopes needed for the current task. |
+| Complete mediation | Every tool action should be authorized at execution time, not only when the conversation starts. |
+| Fail-safe defaults | When policy is unclear, the agent should not perform the action. |
+| Separation of duties | The model may propose an action, but policy enforcement should happen outside the model. |
+| Defense in depth | Prompt rules, tool validation, policy, approvals, monitoring, and rollback all matter. |
+| Auditability | Every meaningful agent decision and tool action should be attributable and reviewable. |
+| Economy of mechanism | Prefer small, specific tools over broad tools such as `run_shell`, `query_anything`, or `send_any_email`. |
 
 ## Reference architecture
 
 ```text
-user or attacker
+user / attacker / business workflow
   |
   v
-application or AI interface
+agent interface
   |
+  +-- conversation state
+  +-- instruction hierarchy
   +-- model gateway
-  +-- policy layer
-  +-- data or retrieval service
-  +-- tool or workflow service
-  +-- logs and monitoring
+  +-- planning / orchestration layer
+  +-- policy decision point
+  +-- tool broker
+  |     +-- ticket tool
+  |     +-- document search tool
+  |     +-- email / chat tool
+  |     +-- code or shell tool
+  |     +-- browser tool
+  |     +-- internal API tools
+  +-- memory service
+  +-- audit log
+  +-- monitoring and alerting
+  +-- approval workflow
 ```
+
+## Core design rule
+
+The model can recommend, classify, summarize, plan, or request an action.
+
+The application must decide:
+
+- whether the user is allowed to request the action;
+- whether the agent identity is allowed to perform the action;
+- whether the target object is in scope;
+- whether the arguments are valid;
+- whether approval is required;
+- whether rate, cost, or safety limits apply;
+- whether the action must be logged or monitored.
 
 ## Lab
 
-### Lab goal
+Students review and exploit a vulnerable internal operations agent that can:
 
-Exploit a vulnerable agent that can read tickets, search documents, and update records.
+- read fake incidents;
+- search fake internal documents;
+- update fake tickets;
+- store memory;
+- call a simulated notification tool;
+- call a simulated shell-like diagnostic tool.
 
-### Lab structure
-
-1. Introduce the scenario.
-2. Map assets and trust boundaries.
-3. Demonstrate or reproduce the vulnerable behavior.
-4. Explain the root cause.
-5. Propose mitigations.
-6. Discuss operational trade-offs.
-7. Capture residual risk.
-
-## Defensive design patterns
-
-- Keep security decisions outside the model where possible.
-- Treat model input and output as untrusted.
-- Apply least privilege to data, tools, and workflows.
-- Validate tool arguments and enforce authorization per action.
-- Log security-relevant events.
-- Rate-limit expensive or sensitive operations.
-- Add human approval for destructive or high-impact actions.
-- Build monitoring for abuse, drift, and unexpected behavior.
-
-## Discussion questions
-
-1. What is the highest-value asset in this scenario?
-2. Where are the trust boundaries?
-3. What does the model know?
-4. What can the model do?
-5. What should the model not be allowed to decide?
-6. What would you fix first?
-7. What would you monitor?
-8. What residual risk remains?
+The goal is not to attack real systems. The lab uses local fake data and simulated tools.
 
 ## Deliverable
 
-Agent control design with approval gates and least privilege.
+Students produce an **agent control design** containing:
 
-## Instructor notes
+1. Agent architecture diagram
+2. Tool inventory
+3. Tool permission matrix
+4. Sensitive-action approval policy
+5. Memory trust policy
+6. Logging and monitoring requirements
+7. Kill-switch and rollback plan
+8. Residual risk statement
 
-Students may focus too much on clever prompts or exploit strings. Bring the discussion back to architecture, permissions, system boundaries, workflow design, and risk decisions.
+## Files in this module
 
-A good answer should include both offensive understanding and defensive judgment.
+- `slides.md` — Markdown slide deck
+- `instructor-notes.md` — delivery guidance and facilitation notes
+- `student-handout.md` — student-facing reference
+- `exercise-agent-control-design.md` — main exercise
+- `checklist.md` — agent security checklist
+- `quiz.md` — quiz and answer key
+- `references.md` — module-specific references
 
-## Review questions
+## Related labs and templates
 
-1. What is the core risk in this module?
-2. Which classic security principles apply?
-3. What makes the AI version of the problem different?
-4. What mitigation is strongest?
-5. What mitigation is weakest if used alone?
-
-## Suggested reading
-
-See [`../../references.md`](../../references.md).
+- `../../labs/agent-labs/agent-tool-misuse-lab.md`
+- `../../labs/agent-labs/memory-poisoning-approval-gates-lab.md`
+- `../../templates/agent-control-design-template.md`
+- `../../templates/tool-permission-matrix-template.md`
+- `../../templates/agent-action-approval-policy-template.md`

@@ -118,3 +118,61 @@ Mitigation: Per-action authorization, scoped tool tokens, approval gates, audit 
 | Module | Status | Notes |
 |---|---|---|
 | 05 — LLM Application Security | Complete | Added README, slides, instructor notes, student handout, exercise, checklist, quiz, references, DVAIA lab guide, and review template. |
+
+
+## Build status update — v0.7
+
+| Module | Status | Notes |
+|---|---|---|
+| 06 — RAG Security and Indirect Prompt Injection | Complete | Added README, slides, instructor notes, student handout, RAG threat model exercise, checklist, quiz, references, RAG lab guide, RAG threat model template, and vector database authorization checklist. |
+
+Updated lab mapping:
+
+| Lab | Module | Purpose |
+|---|---|---|
+| `labs/rag-labs/rag-indirect-prompt-injection-lab.md` | 06 | Demonstrate indirect prompt injection, retrieval authorization failure, cross-tenant leakage, and mitigation design. |
+| `templates/rag-threat-model-template.md` | 06 | Standard deliverable format for RAG security reviews. |
+| `templates/vector-database-authorization-checklist.md` | 06 | Focused checklist for vector DB and retrieval-layer authorization. |
+
+
+## Build status update — v0.8
+
+| Module | Status | Notes |
+|---|---|---|
+| 07 — Agent and Tool Security | Complete | Added README, slides, instructor notes, student handout, agent control design exercise, checklist, quiz, references, agent tool misuse lab, memory poisoning lab, and agent control templates. |
+
+Updated lab mapping:
+
+| Lab or template | Module | Purpose |
+|---|---|---|
+| `labs/agent-labs/agent-tool-misuse-lab.md` | 07 | Demonstrate excessive agency, tool misuse, weak authorization, dangerous tool design, and approval design. |
+| `labs/agent-labs/memory-poisoning-approval-gates-lab.md` | 07 | Demonstrate memory poisoning, memory provenance, review, expiry, and approval gates. |
+| `templates/agent-control-design-template.md` | 07 | Standard deliverable format for agent security reviews. |
+| `templates/tool-permission-matrix-template.md` | 07 | Defines per-tool users, roles, targets, actions, approval, logging, and rollback. |
+| `templates/agent-action-approval-policy-template.md` | 07 | Defines risk-tiered approval requirements for agent actions. |
+
+
+## Build status update — v0.9
+
+| Area | Status | Notes |
+|---|---|---|
+| BrokenPilot capstone paper design | Complete | Added scenario, architecture, roles, data model, tools, vulnerability list, attack paths, student brief, instructor solution guide, secure reference architecture, grading rubric, implementation notes, and module mapping. |
+
+Updated capstone mapping:
+
+| File | Purpose |
+|---|---|
+| `labs/brokenpilot/scenario.md` | Business context and student mission. |
+| `labs/brokenpilot/architecture.md` | Components, data flows, and trust boundaries. |
+| `labs/brokenpilot/roles.md` | Legitimate users, attacker personas, and permission assumptions. |
+| `labs/brokenpilot/data-model.md` | Fake data entities and classification model. |
+| `labs/brokenpilot/tools.md` | Tool inventory, risk tiers, and permission matrix. |
+| `labs/brokenpilot/vulnerabilities.md` | Intentional vulnerabilities mapped to course modules. |
+| `labs/brokenpilot/attack-paths.md` | Suggested attack chains for capstone delivery. |
+| `labs/brokenpilot/student-brief.md` | Student-facing assignment. |
+| `labs/brokenpilot/instructor-solution.md` | Instructor guide with expected findings. |
+| `labs/brokenpilot/secure-reference-architecture.md` | Target-state secure design. |
+| `labs/brokenpilot/grading-rubric.md` | BrokenPilot-specific rubric. |
+| `templates/brokenpilot-final-report-template.md` | Final report template. |
+
+Next recommended module: Module 8 — Secure MLOps and AI Supply Chain.

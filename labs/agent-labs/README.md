@@ -1,17 +1,22 @@
 # Agent Labs
 
-Agent labs focus on AI systems that can take actions through tools, APIs, workflows, memory, and planning.
+This folder contains controlled, fake-data labs for agent and tool security.
 
-## Lab ideas
+These labs should be run only in local or dedicated training environments. They are designed to teach secure design, threat modeling, and defensive controls for AI agents. They are not intended for attacking real systems.
 
-1. Agent updates a ticket without proper approval
-2. Agent leaks data through a tool response
-3. Agent executes a tool using attacker-controlled arguments
-4. Agent stores malicious memory
-5. Agent follows instructions from an untrusted document
-6. Agent chains low-risk actions into high-risk impact
-7. Agent bypasses intended workflow boundaries
+## Labs
 
-## Core lesson
+- `agent-tool-misuse-lab.md` — tool misuse, excessive agency, tool permission matrix, approval gates.
+- `memory-poisoning-approval-gates-lab.md` — persistent memory risk, provenance, review, expiry, and approval workflow.
 
-An agent is an application that can act. Once the model has tools, security must be enforced around the tools, not only inside the prompt.
+## Lab philosophy
+
+Each agent lab should teach the same pattern:
+
+1. What can the agent do?
+2. What identity does it use?
+3. What data can influence it?
+4. What tools can it call?
+5. What can go wrong?
+6. What controls should exist outside the model?
+7. What should be logged, approved, monitored, and reversible?

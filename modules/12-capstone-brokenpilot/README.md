@@ -1,123 +1,106 @@
 # Module 12 — Capstone: BrokenPilot
 
+## Status
+
+Design package complete. Full teaching package can be expanded later after Modules 8–11 are built.
+
+The current capstone design lives in [`../../labs/brokenpilot/`](../../labs/brokenpilot/).
+
 ## Purpose
 
-Bring everything together in a realistic internal AI agent scenario.
+Bring the entire course together in a realistic internal AI agent scenario.
+
+BrokenPilot is an internal AI assistant used by engineering and operations teams. It can search documents, summarize incidents, read and update tickets, query fake service configuration, use tools, retrieve context through RAG, and store memory.
+
+Students must threat model, attack, defend, and communicate risk for the system.
 
 ## Key message
 
-Students must connect architecture, exploitation, mitigation, governance, and residual risk.
+The capstone is not about finding one clever prompt.
+
+The capstone is about connecting architecture, exploitation, mitigation, governance, and residual risk.
 
 ## Learning objectives
 
-By the end of this module, students should be able to:
+By the end of this capstone, students should be able to:
 
-1. Explain the core security problem addressed by this module.
-2. Identify the relevant assets, trust boundaries, and attacker goals.
-3. Connect the topic to classic security engineering principles.
-4. Recognize the ML, LLM, RAG, or agent-specific failure mode.
-5. Propose practical mitigations and discuss residual risk.
+1. Explain the architecture of an AI-enabled internal operations assistant.
+2. Identify assets, trust boundaries, and attacker personas.
+3. Build a threat model for an LLM/RAG/agent system.
+4. Demonstrate representative vulnerabilities safely in a fake lab environment.
+5. Connect vulnerabilities to classic security engineering principles.
+6. Propose mitigations that balance security, usability, and developer velocity.
+7. Design a secure reference architecture.
+8. Produce a red-team report and risk register.
+9. Explain residual risk to leadership.
 
-## Topics
+## Capstone materials
 
-- Architecture review
-- Threat modeling
-- Attack chain development
-- Prompt injection
-- Indirect prompt injection
-- RAG poisoning
-- Tool misuse
-- Memory poisoning
-- Mitigation design
-- Residual risk
+| File | Purpose |
+|---|---|
+| [`../../labs/brokenpilot/scenario.md`](../../labs/brokenpilot/scenario.md) | Business context and student mission. |
+| [`../../labs/brokenpilot/architecture.md`](../../labs/brokenpilot/architecture.md) | System architecture and trust boundaries. |
+| [`../../labs/brokenpilot/roles.md`](../../labs/brokenpilot/roles.md) | User roles and attacker personas. |
+| [`../../labs/brokenpilot/data-model.md`](../../labs/brokenpilot/data-model.md) | Fake data model. |
+| [`../../labs/brokenpilot/tools.md`](../../labs/brokenpilot/tools.md) | Tool inventory and permission model. |
+| [`../../labs/brokenpilot/vulnerabilities.md`](../../labs/brokenpilot/vulnerabilities.md) | Intentional vulnerability list. |
+| [`../../labs/brokenpilot/attack-paths.md`](../../labs/brokenpilot/attack-paths.md) | Suggested attack paths. |
+| [`../../labs/brokenpilot/student-brief.md`](../../labs/brokenpilot/student-brief.md) | Student-facing assignment brief. |
+| [`../../labs/brokenpilot/instructor-solution.md`](../../labs/brokenpilot/instructor-solution.md) | Instructor solution guide. |
+| [`../../labs/brokenpilot/secure-reference-architecture.md`](../../labs/brokenpilot/secure-reference-architecture.md) | Target-state secure design. |
+| [`../../labs/brokenpilot/grading-rubric.md`](../../labs/brokenpilot/grading-rubric.md) | BrokenPilot-specific rubric. |
 
-## Security engineering connection
+## Suggested delivery flow
 
-This module should always connect back to classic security engineering. The instructor should avoid treating AI as magic or as a separate universe. The practical question is how familiar principles change when models, datasets, embeddings, tools, prompts, and autonomous workflows become part of the system.
+| Phase | Activity | Time |
+|---|---|---:|
+| 1 | Introduce business context and architecture | 20 min |
+| 2 | Student threat modeling | 45–60 min |
+| 3 | Attack-path exploration | 60–90 min |
+| 4 | Mitigation design | 45–60 min |
+| 5 | Team presentations | 30–60 min |
+| 6 | Instructor debrief | 30 min |
 
-Important principles to reuse:
+For a shorter workshop, use only one or two attack paths and focus heavily on mitigation design.
 
-- Least privilege
-- Explicit trust boundaries
-- Complete mediation
-- Defense in depth
-- Secure defaults
-- Input and output handling
-- Auditability
-- Supply chain integrity
-- Privacy by design
-- Resilience and recovery
+## Required student deliverables
 
-## Reference architecture
-
-```text
-user or attacker
-  |
-  v
-application or AI interface
-  |
-  +-- model gateway
-  +-- policy layer
-  +-- data or retrieval service
-  +-- tool or workflow service
-  +-- logs and monitoring
-```
-
-## Lab
-
-### Lab goal
-
-Threat model, attack, defend, and present an internal AI operations assistant.
-
-### Lab structure
-
-1. Introduce the scenario.
-2. Map assets and trust boundaries.
-3. Demonstrate or reproduce the vulnerable behavior.
-4. Explain the root cause.
-5. Propose mitigations.
-6. Discuss operational trade-offs.
-7. Capture residual risk.
-
-## Defensive design patterns
-
-- Keep security decisions outside the model where possible.
-- Treat model input and output as untrusted.
-- Apply least privilege to data, tools, and workflows.
-- Validate tool arguments and enforce authorization per action.
-- Log security-relevant events.
-- Rate-limit expensive or sensitive operations.
-- Add human approval for destructive or high-impact actions.
-- Build monitoring for abuse, drift, and unexpected behavior.
-
-## Discussion questions
-
-1. What is the highest-value asset in this scenario?
-2. Where are the trust boundaries?
-3. What does the model know?
-4. What can the model do?
-5. What should the model not be allowed to decide?
-6. What would you fix first?
-7. What would you monitor?
-8. What residual risk remains?
-
-## Deliverable
-
-Final security review, executive summary, risk register, and residual-risk statement.
+1. Executive summary.
+2. Architecture and trust-boundary summary.
+3. Threat model.
+4. Abuse cases.
+5. Findings with evidence.
+6. Risk register.
+7. Mitigation plan.
+8. Secure reference architecture.
+9. Residual-risk statement.
+10. Leadership talking points.
 
 ## Instructor notes
 
-Students may focus too much on clever prompts or exploit strings. Bring the discussion back to architecture, permissions, system boundaries, workflow design, and risk decisions.
+Students may over-focus on prompt payloads. Redirect them toward:
 
-A good answer should include both offensive understanding and defensive judgment.
+- What the model can see.
+- What the model can do.
+- Which trust boundary failed.
+- Which policy was missing.
+- Which action should have required approval.
+- Which data should never have reached the model.
+- Which logs would be needed during an incident.
 
-## Review questions
+## Defensive design patterns
 
-1. What is the core risk in this module?
-2. Which classic security principles apply?
-3. What makes the AI version of the problem different?
-4. What mitigation is strongest?
-5. What mitigation is weakest if used alone?
+- Keep security decisions outside the model.
+- Treat model input and output as untrusted.
+- Apply least privilege to data, tools, and workflows.
+- Validate tool arguments and enforce authorization per action.
+- Add human approval for destructive or high-impact actions.
+- Preserve document metadata during chunking.
+- Enforce retrieval authorization.
+- Scope, review, and expire memory.
+- Log security-relevant events.
+- Rate-limit expensive or sensitive operations.
+- Build monitoring for abuse, drift, and unexpected behavior.
 
 ## Suggested reading
 

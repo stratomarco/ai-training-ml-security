@@ -108,3 +108,32 @@ For red teams:
 - OWASP GenAI Security Project: https://genai.owasp.org/
 - OWASP LLM Top 10 2025 PDF: https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf
 - DVAIA — Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
+
+
+## RAG and indirect prompt injection references
+
+- OWASP LLM01 — Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+- NIST AI 600-1 — Generative AI Profile: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
+- DVAIA — Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
+
+
+## Agent and tool security references
+
+- OWASP Top 10 for Agentic Applications for 2026: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+- OWASP Agentic Applications release summary: https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/
+- OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+- NIST AI 600-1 — Generative AI Profile: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
+- MITRE ATLAS: https://atlas.mitre.org/
+
+
+## BrokenPilot capstone reference focus
+
+The BrokenPilot capstone should reuse the course-wide reference set rather than introduce a separate framework. It primarily draws from:
+
+- Classic security engineering and threat modeling.
+- OWASP LLM/GenAI risks for prompt injection, output handling, excessive agency, overreliance, model DoS, and model theft.
+- OWASP Agentic risks for tool use, autonomy, memory, and workflow execution.
+- OWASP ML risks for poisoning, model/data supply chain, model theft, and output integrity.
+- BIML-style architectural risk analysis.
+- NIST AI RMF and GenAI profile for risk management and governance framing.
+- MITRE ATLAS for adversarial AI tactics and technique mapping.

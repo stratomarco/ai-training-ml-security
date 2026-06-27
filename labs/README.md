@@ -19,11 +19,14 @@ Every lab must:
 
 ## Lab categories
 
-- DVAIA guides
-- RAG labs
-- Agent labs
-- Toy ML attack labs
-- BrokenPilot capstone labs
+| Folder | Purpose |
+|---|---|
+| [`dvaia-guides/`](dvaia-guides/) | Wrappers for DVAIA-style LLM application security exercises. |
+| [`rag-labs/`](rag-labs/) | RAG and indirect prompt injection exercises. |
+| [`agent-labs/`](agent-labs/) | Agent/tool security, memory poisoning, and approval-gate exercises. |
+| [`toy-ml-attacks/`](toy-ml-attacks/) | Classical ML attack exercises. |
+| [`architecture-risk-review-labs/`](architecture-risk-review-labs/) | Architecture review tabletop exercises. |
+| [`brokenpilot/`](brokenpilot/) | Final capstone paper design for an internal AI operations assistant. |
 
 ## Standard lab format
 

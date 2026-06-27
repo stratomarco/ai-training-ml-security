@@ -36,23 +36,27 @@ This backlog tracks the next build steps for the GitHub repository.
 
 ## Milestone v0.4 — Module 2 complete
 
-- [ ] Complete Module 2 README
-- [ ] Add Module 2 slides
-- [ ] Add ML lifecycle diagram
-- [ ] Add ML pipeline threat modeling exercise
-- [ ] Add Module 2 checklist
-- [ ] Add Module 2 quiz
+- [x] Complete Module 2 README
+- [x] Add Module 2 slides
+- [x] Add ML lifecycle diagram
+- [x] Add ML pipeline threat modeling exercise
+- [x] Add Module 2 checklist
+- [x] Add Module 2 quiz
 
-## Milestone v0.5 — BrokenPilot capstone design
+## Milestone v0.9 — BrokenPilot capstone design
 
-- [ ] Draft BrokenPilot architecture
-- [ ] Define user roles
-- [ ] Define data model
-- [ ] Define tools
-- [ ] Define intentional vulnerabilities
-- [ ] Create student brief
-- [ ] Create instructor solution guide
-- [ ] Create grading rubric
+- [x] Draft BrokenPilot architecture
+- [x] Define user roles
+- [x] Define data model
+- [x] Define tools
+- [x] Define intentional vulnerabilities
+- [x] Create attack paths
+- [x] Create student brief
+- [x] Create instructor solution guide
+- [x] Create secure reference architecture
+- [x] Create grading rubric
+- [x] Create implementation notes
+- [x] Create final report template
 
 ## Suggested GitHub issues
 
@@ -131,9 +135,55 @@ Next recommended milestone: Module 05 — LLM Application Security.
 - [x] Add DVAIA-style LLM application security lab guide
 - [x] Add LLM application security review template
 
-## Next recommended work
+## Completed in v0.7
 
-- [ ] Add Module 6 RAG Security and Indirect Prompt Injection
-- [ ] Add RAG threat model exercise
-- [ ] Add RAG-specific lab guide
-- [ ] Add vector database authorization checklist
+- [x] Add Module 6 RAG Security and Indirect Prompt Injection
+- [x] Add RAG threat model exercise
+- [x] Add RAG-specific lab guide
+- [x] Add RAG security checklist
+- [x] Add RAG quiz and answer key
+- [x] Add RAG threat model template
+- [x] Add vector database authorization checklist
+
+## Completed in v0.8
+
+- [x] Add Module 7 Agent and Tool Security
+- [x] Add agent control design exercise
+- [x] Add agent security checklist
+- [x] Add agent quiz and answer key
+- [x] Add agent tool misuse lab guide
+- [x] Add memory poisoning and approval gates lab guide
+- [x] Add agent control design template
+- [x] Add tool permission matrix template
+- [x] Add agent action approval policy template
+
+## Transition completed after v0.8
+
+- [x] Start BrokenPilot capstone design on paper
+- [x] Define BrokenPilot roles, tools, data model, and intentional vulnerabilities
+
+
+## Completed in v0.9
+
+- [x] Complete BrokenPilot capstone paper design
+- [x] Add BrokenPilot scenario
+- [x] Add BrokenPilot architecture
+- [x] Add BrokenPilot roles and attacker personas
+- [x] Add BrokenPilot data model
+- [x] Add BrokenPilot tools and permission model
+- [x] Add BrokenPilot intentional vulnerabilities
+- [x] Add BrokenPilot attack paths
+- [x] Add BrokenPilot student brief
+- [x] Add BrokenPilot instructor solution guide
+- [x] Add BrokenPilot secure reference architecture
+- [x] Add BrokenPilot grading rubric
+- [x] Add BrokenPilot implementation notes
+- [x] Add BrokenPilot module mapping
+- [x] Add BrokenPilot final report template
+
+## Next recommended work after v0.9
+
+- [ ] Add Module 8 Secure MLOps and AI Supply Chain
+- [ ] Add broken ML pipeline lab guide
+- [ ] Add model artifact and dataset provenance review templates
+- [ ] Expand Module 12 slides and instructor package after Modules 8–11 are complete

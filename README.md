@@ -77,14 +77,24 @@ ai-training-ml-security/
 └── assessments/
 ```
 
-## Recommended first build order
+## Build order
 
-1. Finalize the syllabus.
-2. Complete Module 1 as the reference module.
-3. Build the reusable module template.
-4. Map DVAIA labs to OWASP and course modules.
-5. Design the BrokenPilot capstone.
-6. Expand one module at a time.
+The project is being built module by module, with each completed module treated as a teachable unit.
+
+Completed so far:
+
+1. Finalized the initial syllabus and course map.
+2. Completed Module 1 as the reference module.
+3. Built the reusable module template.
+4. Added the first DVAIA-to-course mapping.
+5. Completed Modules 2–7 as full teaching packages.
+
+Next recommended work:
+
+1. Build Module 8 — Secure MLOps and AI Supply Chain.
+2. Expand the DVAIA and agent lab wrappers with concrete instructor notes.
+3. Later convert BrokenPilot from paper design into a local vulnerable lab application.
+4. Continue one module at a time until the v1.0 teachable release.
 
 ## Lab philosophy
 
@@ -92,28 +102,73 @@ Existing vulnerable projects should be used where possible. The course value is 
 
 DVAIA and similar projects can provide the hands-on substrate. This curriculum provides the learning path.
 
+Labs should be local, controlled, fake-data environments. The goal is to teach security reasoning, not to attack systems the student does not own.
+
 ## License
 
-Choose a license before publishing. A practical default for training content is Creative Commons Attribution 4.0 for course material and Apache 2.0 or MIT for any code you later add.
+The current repository includes `LICENSE.md` with a practical split-license model:
 
+- Training content: Creative Commons Attribution 4.0 style terms.
+- Future code/labs: Apache 2.0 or MIT can be added when code is introduced.
+
+Review the license text before making the repository public.
 
 ## Course status
 
-Current working version: **v0.5 draft**. Module 01, Module 02, Module 03, and Module 04 have complete teaching packages.
+Current working version: **v0.9 draft**. Modules 01–07 have complete teaching packages, and the BrokenPilot capstone paper design is complete.
 
+| Module | Status | Notes |
+|---|---|---|
+| 01 — Security Engineering for AI | Complete | Reference module with slides, notes, handout, exercise, checklist, quiz, and references. |
+| 02 — ML System Architecture | Complete | Lifecycle architecture, DFD exercise, architecture review template. |
+| 03 — OWASP ML Security Top 10 | Complete | Classical ML attack categories and toy ML lab. |
+| 04 — BIML Architectural Risk Analysis | Complete | Design review, abuse cases, architectural risk review lab. |
+| 05 — LLM Application Security | Complete | OWASP LLM/GenAI framing and DVAIA-style LLM lab. |
+| 06 — RAG Security and Indirect Prompt Injection | Complete | RAG architecture, retrieval authorization, indirect prompt injection, RAG lab, and templates. |
+| 07 — Agent and Tool Security | Complete | Tool calling, excessive agency, memory poisoning, approval gates, sandboxing, auditability, and agent control design. |
+| 08 — Secure MLOps and Supply Chain | Planned | Future module. |
+| 09 — Privacy Attacks | Planned | Future module. |
+| 10 — Adversarial ML and Robustness | Planned | Future module. |
+| 11 — AI Red Team Methodology | Planned | Future module. |
+| 12 — BrokenPilot Capstone | Design complete | Paper capstone design complete; full teaching package can be expanded after Modules 8–11. |
 
-## v0.6 update
+## Previous update — v0.8
 
-Module 5 — LLM Application Security is now complete.
+Module 7 — Agent and Tool Security is now complete.
 
 Added:
 
-- OWASP LLM/GenAI risk framing
-- LLM application architecture slides
+- Agent and tool security slides
 - Instructor notes
 - Student handout
-- LLM application security review exercise
-- LLM security checklist
+- Agent control design exercise
+- Agent security checklist
 - Quiz and answer key
-- DVAIA-style LLM application security lab guide
-- LLM application security review template
+- Agent tool misuse lab guide
+- Memory poisoning and approval gates lab guide
+- Agent control design template
+- Tool permission matrix template
+- Agent action approval policy template
+
+
+## Build status update — v0.9
+
+BrokenPilot capstone paper design is now complete.
+
+Added:
+
+- Scenario and business context
+- Architecture and trust-boundary model
+- Roles and attacker personas
+- Fake data model
+- Tool inventory and permission model
+- Intentional vulnerability list
+- Suggested attack paths
+- Student-facing brief
+- Instructor solution guide
+- Secure reference architecture
+- BrokenPilot-specific grading rubric
+- Implementation notes for a future local lab
+- Final report template
+
+Next recommended work: Module 8 — Secure MLOps and AI Supply Chain.

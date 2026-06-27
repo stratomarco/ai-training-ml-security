@@ -130,3 +130,15 @@ Students should be assessed on:
 - Residual risk thinking
 
 The goal is not to reward only exploitation. The goal is to reward complete security judgment.
+
+
+## v0.8 curriculum status
+
+Modules 01–07 became complete teaching packages. Module 07 added agent and tool security, including excessive agency, tool misuse, memory poisoning, approval gates, sandboxing, auditability, and agent control design.
+
+
+## v0.9 update
+
+The BrokenPilot capstone paper design is now complete. This includes scenario, architecture, roles, data model, tools, vulnerability list, attack paths, student brief, instructor solution guide, secure reference architecture, grading rubric, implementation notes, and module mapping.
+
+The next recommended build step is Module 8 — Secure MLOps and AI Supply Chain.
