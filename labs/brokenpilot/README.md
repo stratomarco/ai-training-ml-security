@@ -93,3 +93,12 @@ Students must produce:
 Do not let the capstone become a prompt-hacking contest.
 
 The expected outcome is not only that students can break the assistant. The expected outcome is that students can explain **why the architecture allowed the failure**, what should be changed, what remains risky, and how to communicate the decision to engineering and leadership.
+
+
+## v0.14 teaching support guides
+
+| File | Purpose |
+|---|---|
+| `final-presentation-guide.md` | Helps students prepare the final leadership and engineering readout. |
+| `evidence-log-guide.md` | Defines safe, useful evidence handling for capstone findings. |
+| `remediation-backlog-guide.md` | Converts findings into actionable engineering work. |

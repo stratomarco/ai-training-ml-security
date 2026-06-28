@@ -37,3 +37,19 @@ This folder contains reusable Markdown templates for students and instructors.
 | [`privacy-risk-assessment-template.md`](privacy-risk-assessment-template.md) | AI privacy risk assessment. |
 | [`ai-data-retention-log-review-template.md`](ai-data-retention-log-review-template.md) | Prompt, completion, retrieval, trace, memory, and feedback retention review. |
 | [`ai-privacy-control-checklist.md`](ai-privacy-control-checklist.md) | Compact AI privacy control checklist. |
+| [`adversarial-test-plan-template.md`](adversarial-test-plan-template.md) | Adversarial test plan for model-backed systems. |
+| [`robustness-evaluation-template.md`](robustness-evaluation-template.md) | Robustness evaluation and threshold review template. |
+| [`drift-abuse-monitoring-template.md`](drift-abuse-monitoring-template.md) | Drift, abuse monitoring, and response playbook template. |
+| [`ai-red-team-scope-template.md`](ai-red-team-scope-template.md) | AI red team scope and rules-of-engagement template. |
+| [`ai-red-team-attack-plan-template.md`](ai-red-team-attack-plan-template.md) | AI red team attack planning template. |
+| [`ai-red-team-report-template.md`](ai-red-team-report-template.md) | Full AI red team report template. |
+| [`ai-red-team-executive-readout-template.md`](ai-red-team-executive-readout-template.md) | Leadership-facing red team readout template. |
+
+
+## v0.14 BrokenPilot templates
+
+Added:
+
+- `brokenpilot-risk-register-template.md`
+- `brokenpilot-evidence-log-template.md`
+- `brokenpilot-remediation-backlog-template.md`

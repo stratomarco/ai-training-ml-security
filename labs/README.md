@@ -27,9 +27,20 @@ Every lab must:
 | [`toy-ml-attacks/`](toy-ml-attacks/) | Classical ML attack exercises. |
 | [`mlops-supply-chain-labs/`](mlops-supply-chain-labs/) | Secure MLOps and AI supply chain review exercises. |
 | [`privacy-labs/`](privacy-labs/) | Privacy leakage, cross-tenant RAG, membership inference, and model inversion tabletop exercises. |
+| [`adversarial-ml-labs/`](adversarial-ml-labs/) | Evasion, robustness testing, poisoning, backdoors, drift, and feedback-loop abuse exercises. |
+| [`ai-red-team-labs/`](ai-red-team-labs/) | AI red team scoping, rules of engagement, evidence planning, and BrokenPilot attack-chain exercises. |
 | [`architecture-risk-review-labs/`](architecture-risk-review-labs/) | Architecture review tabletop exercises. |
 | [`brokenpilot/`](brokenpilot/) | Final capstone paper design for an internal AI operations assistant. |
 
 ## Standard lab format
 
 Use [`../templates/lab-guide-template.md`](../templates/lab-guide-template.md) for every lab.
+
+
+## v0.14 BrokenPilot capstone support guides
+
+Added:
+
+- `brokenpilot/final-presentation-guide.md`
+- `brokenpilot/evidence-log-guide.md`
+- `brokenpilot/remediation-backlog-guide.md`

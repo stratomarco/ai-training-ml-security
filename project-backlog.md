@@ -215,10 +215,80 @@ Next recommended milestone: Module 05 — LLM Application Security.
 - [x] Add AI data retention and log review template
 - [x] Add AI privacy control checklist
 
-## Next recommended work after v0.11
+## Completed in v0.10
 
-- [ ] Add Module 10 Adversarial ML and Robustness
-- [ ] Add adversarial robustness lab guide
-- [ ] Add adversarial test plan template
-- [ ] Add classifier evasion tabletop or local lab
-- [ ] Expand Module 12 slides and instructor package after Modules 8–11 are complete
+- [x] Add Module 8 Secure MLOps and AI Supply Chain
+- [x] Add broken ML pipeline lab guide
+- [x] Add model artifact provenance lab guide
+- [x] Add Secure MLOps templates
+
+## Completed in v0.11
+
+- [x] Add Module 9 Privacy Attacks and Data Protection
+- [x] Add privacy leakage and cross-tenant RAG lab guide
+- [x] Add membership inference and model inversion tabletop
+- [x] Add privacy risk templates
+
+## Completed in v0.12
+
+- [x] Add Module 10 Adversarial ML and Robustness
+- [x] Add adversarial test plan exercise
+- [x] Add adversarial ML robustness checklist
+- [x] Add evasion and robustness lab guide
+- [x] Add poisoning, backdoor, and feedback-loop tabletop lab
+- [x] Add adversarial test plan template
+- [x] Add robustness evaluation template
+- [x] Add drift and abuse monitoring template
+
+## Completed in v0.13
+
+- [x] Build Module 11 AI Red Team Methodology
+- [x] Add AI red team scope and rules of engagement guide
+- [x] Add BrokenPilot attack-chain red team lab
+- [x] Add AI red team report template
+- [x] Add AI red team executive readout template
+- [x] Add AI red team grading rubric
+
+## Next recommended milestone — Module 12 / v1.0 readiness
+
+- [x] Expand Module 12 BrokenPilot Capstone into a full teaching package
+- [x] Add Module 12 slides
+- [x] Add Module 12 instructor notes
+- [x] Add Module 12 student handout
+- [x] Add capstone final presentation guide
+- [ ] Add v1.0 release checklist
+- [ ] Review all README status blocks for consistency
+- [ ] Review references and links
+- [ ] Decide final public license wording before making repository public
+
+
+## Completed in v0.14
+
+- [x] Build Module 12 BrokenPilot Capstone full teaching package
+- [x] Add Module 12 slides
+- [x] Add Module 12 instructor notes
+- [x] Add Module 12 student handout
+- [x] Add capstone threat-modeling exercise
+- [x] Add capstone red team and mitigation-design exercise
+- [x] Add capstone checklist
+- [x] Add capstone quiz and answer key
+- [x] Expand capstone runbook
+- [x] Add final presentation guide
+- [x] Add evidence log guide
+- [x] Add remediation backlog guide
+- [x] Add BrokenPilot risk register template
+- [x] Add BrokenPilot evidence log template
+- [x] Add BrokenPilot remediation backlog template
+- [x] Add final capstone grading rubric
+
+## Next recommended milestone — v1.0 release readiness
+
+- [ ] Add v1.0 release checklist
+- [ ] Review all README/status blocks for consistency
+- [ ] Review all module links
+- [ ] Review references and external links
+- [ ] Review license wording before public release
+- [ ] Add repository topics and GitHub description
+- [ ] Add CHANGELOG.md
+- [ ] Add release notes for v1.0
+- [ ] Decide whether to keep repository private or make public

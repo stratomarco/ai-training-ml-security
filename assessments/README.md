@@ -13,3 +13,15 @@ The assessment model should reward complete security judgment, not only exploita
 | [`brokenpilot-grading.md`](brokenpilot-grading.md) | Index entry pointing to the BrokenPilot-specific rubric. |
 
 The canonical BrokenPilot rubric is in [`../labs/brokenpilot/grading-rubric.md`](../labs/brokenpilot/grading-rubric.md).
+
+
+## AI red team assessment
+
+- [`ai-red-team-grading.md`](ai-red-team-grading.md) — Rubric for Module 11 red team planning and reporting deliverables.
+
+
+## v0.14 BrokenPilot final assessment
+
+Added:
+
+- `brokenpilot-capstone-final-rubric.md`

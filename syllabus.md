@@ -141,18 +141,60 @@ Modules 01–07 became complete teaching packages. Module 07 added agent and too
 
 The BrokenPilot capstone paper design is now complete. This includes scenario, architecture, roles, data model, tools, vulnerability list, attack paths, student brief, instructor solution guide, secure reference architecture, grading rubric, implementation notes, and module mapping.
 
-The next recommended build step is Module 10 — Adversarial ML and Robustness.
+The next recommended build step is Module 11 — AI Red Team Methodology.
 
 
 ## v0.10 update
 
 Module 08 — Secure MLOps and AI Supply Chain is now complete. It adds training material for datasets, labels, notebooks, dependencies, training infrastructure, model artifacts, registries, provenance, promotion gates, feedback-loop security, and ML-BOM thinking.
 
-The next recommended build step is Module 10 — Adversarial ML and Robustness.
+The next recommended build step is Module 11 — AI Red Team Methodology.
 
 
 ## v0.11 update
 
 Module 09 — Privacy Attacks and Data Protection is now complete. It adds training material for membership inference, model inversion, training data extraction, prompt and completion leakage, log leakage, embedding leakage, vector database exposure, cross-tenant retrieval, agent memory leakage, feedback-loop reuse, retention, deletion, and privacy risk assessment.
 
-The next recommended build step is Module 10 — Adversarial ML and Robustness.
+The next recommended build step is Module 11 — AI Red Team Methodology.
+
+
+## v0.12 update
+
+Module 10 — Adversarial ML and Robustness is now complete. It adds training material for evasion, poisoning, backdoors, trigger-based behavior, distribution shift, concept drift, confidence calibration, robustness testing, fallback behavior, monitoring, incident response, and secure retraining.
+
+The next recommended build step is Module 11 — AI Red Team Methodology.
+
+
+## Current status
+
+Current working version: v0.14 draft. Modules 01–12 have complete teaching packages, and the BrokenPilot capstone is ready for v1.0 release review.
+
+
+## v0.13 update — Module 11 complete
+
+Module 11 — AI Red Team Methodology is complete. It covers scope, rules of engagement, safety boundaries, system understanding, threat modeling, attack planning, controlled testing, evidence collection, severity scoring, reporting, remediation, executive readout, and residual risk.
+
+The module includes labs for AI red team scoping and BrokenPilot attack-chain planning, plus templates for scope, attack plans, full reports, executive readouts, and grading.
+
+
+## v0.14 update — Module 12 complete
+
+Module 12 — BrokenPilot Capstone is now complete as a full teaching package.
+
+Added:
+
+- Capstone slides
+- Instructor notes
+- Student handout
+- Threat-modeling exercise
+- Red team and mitigation-design exercise
+- Capstone checklist
+- Quiz and answer key
+- Expanded capstone runbook
+- Final presentation guide
+- Evidence log guide
+- Remediation backlog guide
+- BrokenPilot-specific templates
+- Final capstone assessment rubric
+
+The course now has complete teaching packages for Modules 01–12. The next milestone is v1.0 release readiness: consistency review, reference review, license review, and optional public-release cleanup.

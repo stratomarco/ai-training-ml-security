@@ -175,7 +175,7 @@ Updated capstone mapping:
 | `labs/brokenpilot/grading-rubric.md` | BrokenPilot-specific rubric. |
 | `templates/brokenpilot-final-report-template.md` | Final report template. |
 
-Next recommended module: Module 10 — Adversarial ML and Robustness.
+Next recommended module: Module 12 — BrokenPilot Capstone full teaching package.
 
 
 ## Build status update — v0.10
@@ -196,7 +196,7 @@ Updated lab and template mapping:
 | `templates/model-registry-access-control-template.md` | 08 | Registry RBAC and promotion approval design template. |
 | `templates/ml-bom-template.md` | 08 | ML bill-of-materials template covering code, data, model, prompt, RAG, evaluation, and deployment artifacts. |
 
-Next recommended module: Module 10 — Adversarial ML and Robustness.
+Next recommended module: Module 12 — BrokenPilot Capstone full teaching package.
 
 
 ## Build status update — v0.11
@@ -215,4 +215,68 @@ Updated lab and template mapping:
 | `templates/ai-data-retention-log-review-template.md` | 09 | Focused template for prompt, completion, retrieval, trace, memory, and feedback retention. |
 | `templates/ai-privacy-control-checklist.md` | 09 | Compact privacy control checklist for AI systems. |
 
-Next recommended module: Module 10 — Adversarial ML and Robustness.
+Next recommended module: Module 12 — BrokenPilot Capstone full teaching package.
+
+
+## Build status update — v0.12
+
+| Module | Status | Notes |
+|---|---|---|
+| 10 — Adversarial ML and Robustness | Complete | Added README, slides, instructor notes, student handout, adversarial test plan exercise, checklist, quiz, references, adversarial ML labs, and robustness templates. |
+
+Updated lab and template mapping:
+
+| Lab or template | Module | Purpose |
+|---|---|---|
+| `labs/adversarial-ml-labs/evasion-robustness-lab.md` | 10 | Demonstrate controlled evasion and robustness testing against a toy classifier. |
+| `labs/adversarial-ml-labs/poisoning-backdoor-tabletop.md` | 10 | Tabletop exercise for poisoned training data, backdoors, feedback-loop abuse, model rollback, and recovery. |
+| `templates/adversarial-test-plan-template.md` | 10 | Standard deliverable format for adversarial ML test planning. |
+| `templates/robustness-evaluation-template.md` | 10 | Focused template for robustness evaluation, threshold review, and failure analysis. |
+| `templates/drift-abuse-monitoring-template.md` | 10 | Monitoring and response template for drift, evasion, poisoning, and abuse. |
+
+Next recommended module: Module 12 — BrokenPilot Capstone full teaching package.
+
+
+## Build status update — v0.13
+
+| Module | Status | Notes |
+|---|---|---|
+| 11 — AI Red Team Methodology | Complete | Added README, slides, instructor notes, student handout, AI red team planning exercise, checklist, quiz, references, red team labs, templates, and grading rubric. |
+
+Updated lab and template mapping:
+
+| Lab or template | Module | Purpose |
+|---|---|---|
+| `labs/ai-red-team-labs/ai-red-team-scoping-tabletop.md` | 11 | Define AI red team mission, scope, rules of engagement, safety boundaries, evidence requirements, and success criteria. |
+| `labs/ai-red-team-labs/brokenpilot-attack-chain-lab.md` | 11 | Plan and document realistic BrokenPilot attack chains, findings, mitigations, and residual risk. |
+| `templates/ai-red-team-scope-template.md` | 11 | Standard scope and rules-of-engagement template for AI red team work. |
+| `templates/ai-red-team-attack-plan-template.md` | 11 | Attack planning template covering threat model, prerequisites, test steps, evidence, and mitigations. |
+| `templates/ai-red-team-report-template.md` | 11 | Full AI red team report template. |
+| `templates/ai-red-team-executive-readout-template.md` | 11 | Leadership-facing readout template. |
+| `assessments/ai-red-team-grading.md` | 11 | Grading rubric for AI red team deliverables. |
+
+Next recommended module: Module 12 — BrokenPilot Capstone full teaching package and v1.0 release readiness.
+
+
+## Build status update — v0.14
+
+| Module | Status | Notes |
+|---|---|---|
+| 12 — BrokenPilot Capstone | Complete | Added full capstone teaching package: slides, instructor notes, student handout, exercises, checklist, quiz, runbook, presentation guide, evidence guide, remediation guide, templates, and final rubric. |
+
+Updated lab and template mapping:
+
+| Lab or template | Module | Purpose |
+|---|---|---|
+| `modules/12-capstone-brokenpilot/slides.md` | 12 | Capstone delivery deck. |
+| `modules/12-capstone-brokenpilot/exercise-capstone-threat-model.md` | 12 | Structured threat-modeling exercise. |
+| `modules/12-capstone-brokenpilot/exercise-capstone-red-team-review.md` | 12 | Structured attack-path, findings, and mitigation exercise. |
+| `labs/brokenpilot/final-presentation-guide.md` | 12 | Student final readout guide. |
+| `labs/brokenpilot/evidence-log-guide.md` | 12 | Evidence handling and documentation guide. |
+| `labs/brokenpilot/remediation-backlog-guide.md` | 12 | Guide for converting findings into engineering work. |
+| `templates/brokenpilot-risk-register-template.md` | 12 | Capstone-specific risk register template. |
+| `templates/brokenpilot-evidence-log-template.md` | 12 | Capstone-specific evidence log template. |
+| `templates/brokenpilot-remediation-backlog-template.md` | 12 | Capstone-specific remediation backlog template. |
+| `assessments/brokenpilot-capstone-final-rubric.md` | 12 | Final capstone scoring rubric. |
+
+Next recommended milestone: v1.0 release readiness review.

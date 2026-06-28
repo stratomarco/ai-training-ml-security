@@ -14,7 +14,7 @@ This file contains the initial reference spine for the course.
 - MITRE ATLAS: https://atlas.mitre.org/
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
 - NIST AI RMF Generative AI Profile, NIST AI 600-1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
-- NIST Adversarial Machine Learning taxonomy, NIST AI 100-2e2023: https://csrc.nist.gov/pubs/ai/100/2/e2023/final
+- NIST Adversarial Machine Learning taxonomy, NIST AI 100-2 E2025: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
 - BIML Results: https://berryvilleiml.com/results/
 - BIML Interactive Machine Learning Risk Framework: https://berryvilleiml.com/interactive/
 - BIML Architectural Risk Analysis of Large Language Models: https://berryvilleiml.com/docs/BIML-LLM24.pdf
@@ -163,3 +163,35 @@ Module 08 uses these references to connect conventional secure development and s
 - MITRE ATLAS: https://atlas.mitre.org/
 
 Module 09 uses these references to connect privacy engineering to AI-specific leakage paths: membership inference, model inversion, training data extraction, prompt and completion leakage, embedding leakage, vector database exposure, cross-tenant retrieval, agent memory, and feedback-loop reuse.
+
+
+## Adversarial ML and Robustness References
+
+- NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+- MITRE ATLAS: https://atlas.mitre.org/
+- OWASP Machine Learning Security Top 10: https://owasp.org/www-project-machine-learning-security-top-10/
+- OWASP ML01:2023 Input Manipulation Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML01_2023-Input_Manipulation_Attack
+- OWASP ML02:2023 Data Poisoning Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML02_2023-Data_Poisoning_Attack
+- OWASP ML08:2023 Model Skewing: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML08_2023-Model_Skewing
+- OWASP ML10:2023 Model Poisoning: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML10_2023-Model_Poisoning
+
+Module 10 uses these references to connect adversarial ML to practical robustness engineering: evasion, poisoning, backdoors, trigger-based behavior, distribution shift, drift, monitoring, fallback, secure retraining, and recovery.
+
+
+## AI Red Team Methodology References
+
+- OWASP GenAI Red Teaming Guide: https://genai.owasp.org/resource/genai-red-teaming-guide/
+- OWASP GenAI Security Project: https://genai.owasp.org/
+- OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+- OWASP LLM01:2025 Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+- MITRE ATLAS: https://atlas.mitre.org/
+- NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
+- NIST AI 600-1 — Generative AI Profile: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+- NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+
+Module 11 uses these references to structure AI red teaming as a disciplined security activity: scope, safety boundaries, threat modeling, attack planning, model/application/infrastructure/runtime testing, evidence, reporting, remediation, and residual risk.
+
+
+## Capstone integration references
+
+The BrokenPilot capstone should be taught as an integration exercise that draws from the full reference set: secure software design, threat modeling, OWASP ML/LLM/Agentic risks, BIML architectural risk analysis, NIST AI RMF and GenAI Profile, NIST adversarial ML taxonomy, MITRE ATLAS, privacy engineering, and secure SDLC / SSDF-style practices.

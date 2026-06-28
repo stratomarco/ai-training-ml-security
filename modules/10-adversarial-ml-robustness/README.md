@@ -4,121 +4,136 @@
 
 Teach adversarial ML as practical system robustness, not only academic math.
 
+This module helps students understand how models can be reliable under normal validation conditions and still fail under adversarial pressure, distribution shift, data manipulation, backdoors, or abuse patterns.
+
 ## Key message
 
-A model can be statistically accurate and still insecure under adversarial pressure.
+A model can be statistically accurate and still be insecure.
+
+Security review must ask not only "how accurate is the model?" but also:
+
+- accurate for whom;
+- accurate under what assumptions;
+- accurate against which attacker;
+- accurate after which data changes;
+- accurate with which fallback behavior;
+- safe enough for which business decision.
 
 ## Learning objectives
 
 By the end of this module, students should be able to:
 
-1. Explain the core security problem addressed by this module.
-2. Identify the relevant assets, trust boundaries, and attacker goals.
-3. Connect the topic to classic security engineering principles.
-4. Recognize the ML, LLM, RAG, or agent-specific failure mode.
-5. Propose practical mitigations and discuss residual risk.
+1. Explain evasion, poisoning, backdoors, model skewing, distribution shift, drift, and robustness testing.
+2. Distinguish ordinary model error from adversarial failure.
+3. Map adversarial ML risks to lifecycle stages: training, evaluation, deployment, inference, monitoring, and feedback.
+4. Explain why benchmark accuracy is not a security guarantee.
+5. Design an adversarial test plan for a classifier, ranking model, content filter, fraud model, phishing detector, or AI decision-support system.
+6. Identify controls for input validation, data provenance, training data quality, model evaluation, fallback, monitoring, and incident response.
+7. Explain residual risk when a model remains useful but not reliable enough for autonomous security decisions.
+8. Communicate robustness findings to engineering and leadership without overstating certainty.
 
 ## Topics
 
-- Evasion
-- Poisoning
-- Backdoors
-- Trigger-based behavior
+- Adversarial ML as system robustness
+- Evasion attacks
+- Data poisoning
+- Backdoors and trigger-based behavior
+- Model poisoning
+- Model skewing
 - Distribution shift
-- Confidence thresholds
+- Concept drift
+- Confidence and calibration
 - Fallback behavior
 - Robustness testing
-- Drift monitoring
-- Abuse detection
+- Abuse monitoring
+- Human review and escalation
+- Secure retraining
+- Feedback-loop integrity
+- Safety margins for high-impact decisions
 
 ## Security engineering connection
 
-This module should always connect back to classic security engineering. The instructor should avoid treating AI as magic or as a separate universe. The practical question is how familiar principles change when models, datasets, embeddings, tools, prompts, and autonomous workflows become part of the system.
+Adversarial ML connects directly to classic security engineering:
 
-Important principles to reuse:
-
-- Least privilege
-- Explicit trust boundaries
-- Complete mediation
-- Defense in depth
-- Secure defaults
-- Input and output handling
-- Auditability
-- Supply chain integrity
-- Privacy by design
-- Resilience and recovery
+| Security idea | ML robustness equivalent |
+|---|---|
+| Input validation | Normalize, constrain, and inspect model inputs. |
+| Defense in depth | Do not rely on one model decision as the only control. |
+| Fail-safe defaults | Define safe fallback behavior when confidence or quality is low. |
+| Complete mediation | Enforce policy outside the model for high-impact actions. |
+| Least privilege | Limit what a model decision can cause automatically. |
+| Secure supply chain | Protect data, labels, models, features, and retraining jobs. |
+| Monitoring and response | Detect drift, abuse, poisoning signals, and unexpected outputs. |
+| Secure recovery | Roll back models, quarantine data, and retrain safely. |
 
 ## Reference architecture
 
 ```text
-user or attacker
+external input
   |
   v
-application or AI interface
+pre-processing and normalization
   |
-  +-- model gateway
-  +-- policy layer
-  +-- data or retrieval service
-  +-- tool or workflow service
-  +-- logs and monitoring
+  v
+model inference service
+  |
+  +-- confidence and calibration checks
+  +-- policy and business-rule layer
+  +-- fallback / human-review queue
+  +-- monitoring and drift detection
+  +-- abuse detection
+  +-- feedback and retraining pipeline
 ```
+
+## Common scenarios
+
+| System | Adversarial pressure |
+|---|---|
+| Spam or phishing classifier | Attacker rewrites content to bypass detection. |
+| Fraud model | Attacker changes transaction behavior to avoid rules and model signals. |
+| Malware classifier | Attacker manipulates features without changing malicious behavior. |
+| Content moderation model | Attacker uses obfuscation, encoding, or wording changes. |
+| Image classifier | Attacker modifies visual input or physical environment. |
+| RAG ranking model | Attacker manipulates document content to rank higher or mislead retrieval. |
+| AI support triage | Attacker causes harmful misclassification or priority manipulation. |
 
 ## Lab
 
-### Lab goal
+Use the labs in [`../../labs/adversarial-ml-labs/`](../../labs/adversarial-ml-labs/):
 
-Bypass a simple spam, phishing, or content classifier using adversarial input changes.
-
-### Lab structure
-
-1. Introduce the scenario.
-2. Map assets and trust boundaries.
-3. Demonstrate or reproduce the vulnerable behavior.
-4. Explain the root cause.
-5. Propose mitigations.
-6. Discuss operational trade-offs.
-7. Capture residual risk.
-
-## Defensive design patterns
-
-- Keep security decisions outside the model where possible.
-- Treat model input and output as untrusted.
-- Apply least privilege to data, tools, and workflows.
-- Validate tool arguments and enforce authorization per action.
-- Log security-relevant events.
-- Rate-limit expensive or sensitive operations.
-- Add human approval for destructive or high-impact actions.
-- Build monitoring for abuse, drift, and unexpected behavior.
-
-## Discussion questions
-
-1. What is the highest-value asset in this scenario?
-2. Where are the trust boundaries?
-3. What does the model know?
-4. What can the model do?
-5. What should the model not be allowed to decide?
-6. What would you fix first?
-7. What would you monitor?
-8. What residual risk remains?
+1. **Evasion and robustness lab** — bypass a toy classifier using controlled input changes, then design mitigations.
+2. **Poisoning and backdoor tabletop** — review how training data and feedback loops can introduce targeted model failures.
 
 ## Deliverable
 
-Adversarial test plan.
+Students produce an **adversarial test plan** that includes:
 
-## Instructor notes
+- system scope;
+- model role;
+- assets and security properties;
+- attacker goals;
+- test cases;
+- expected failure modes;
+- monitoring signals;
+- mitigation plan;
+- fallback behavior;
+- residual risk statement.
 
-Students may focus too much on clever prompts or exploit strings. Bring the discussion back to architecture, permissions, system boundaries, workflow design, and risk decisions.
+## Discussion questions
 
-A good answer should include both offensive understanding and defensive judgment.
+1. What does the model decide, and what does that decision cause?
+2. What assumptions were true during evaluation but may fail in production?
+3. Can an attacker control or influence input data?
+4. Can an attacker control or influence training data, labels, feedback, or retraining?
+5. What happens when the model is uncertain?
+6. What happens when the model is confidently wrong?
+7. Which decisions must be checked by policy outside the model?
+8. What would you monitor for evasion, drift, poisoning, or abuse?
+9. How would you recover from a poisoned model or bad retraining run?
+10. What residual risk remains after practical controls?
 
-## Review questions
+## Instructor note
 
-1. What is the core risk in this module?
-2. Which classic security principles apply?
-3. What makes the AI version of the problem different?
-4. What mitigation is strongest?
-5. What mitigation is weakest if used alone?
+Do not let this module become only a mathematical adversarial examples lecture.
 
-## Suggested reading
-
-See [`../../references.md`](../../references.md).
+The practical goal is to teach students how to test and design production systems that remain safe when model assumptions are attacked or invalidated.

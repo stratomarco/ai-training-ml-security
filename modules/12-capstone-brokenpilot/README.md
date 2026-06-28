@@ -1,11 +1,5 @@
 # Module 12 — Capstone: BrokenPilot
 
-## Status
-
-Design package complete. Full teaching package can be expanded later after Modules 8–11 are built.
-
-The current capstone design lives in [`../../labs/brokenpilot/`](../../labs/brokenpilot/).
-
 ## Purpose
 
 Bring the entire course together in a realistic internal AI agent scenario.
@@ -20,21 +14,71 @@ The capstone is not about finding one clever prompt.
 
 The capstone is about connecting architecture, exploitation, mitigation, governance, and residual risk.
 
+A strong capstone submission shows that students can reason across:
+
+- classic security engineering;
+- ML lifecycle risk;
+- LLM application security;
+- RAG security;
+- agent and tool security;
+- MLOps and supply chain;
+- privacy and data protection;
+- adversarial robustness;
+- red team methodology;
+- secure architecture;
+- leadership communication.
+
 ## Learning objectives
 
 By the end of this capstone, students should be able to:
 
 1. Explain the architecture of an AI-enabled internal operations assistant.
-2. Identify assets, trust boundaries, and attacker personas.
+2. Identify assets, trust boundaries, user roles, and attacker personas.
 3. Build a threat model for an LLM/RAG/agent system.
 4. Demonstrate representative vulnerabilities safely in a fake lab environment.
 5. Connect vulnerabilities to classic security engineering principles.
-6. Propose mitigations that balance security, usability, and developer velocity.
-7. Design a secure reference architecture.
-8. Produce a red-team report and risk register.
-9. Explain residual risk to leadership.
+6. Map findings to OWASP, BIML-style architectural risks, NIST AI RMF-style risk thinking, and MITRE ATLAS-style tactics where useful.
+7. Propose mitigations that balance security, usability, and developer velocity.
+8. Design a secure reference architecture.
+9. Produce a red-team report, risk register, and remediation roadmap.
+10. Explain residual risk to leadership.
 
-## Capstone materials
+## Capstone storyline
+
+BrokenPilot was built quickly to improve engineering productivity.
+
+It can:
+
+- answer questions about incidents;
+- summarize tickets;
+- search internal runbooks;
+- retrieve service configuration;
+- create and update tickets;
+- remember user preferences;
+- call internal tools through an API;
+- generate operational recommendations.
+
+The business likes it because it reduces repetitive work. Security is concerned because the assistant can see sensitive operational data and can perform actions that affect incident response workflows.
+
+Students are asked to review the system before wider deployment.
+
+## Module files
+
+| File | Purpose |
+|---|---|
+| [`slides.md`](slides.md) | Markdown slide deck for the capstone session. |
+| [`instructor-notes.md`](instructor-notes.md) | Facilitator guidance, timing, expected findings, and debrief notes. |
+| [`student-handout.md`](student-handout.md) | Student-facing capstone brief and deliverable expectations. |
+| [`exercise-capstone-threat-model.md`](exercise-capstone-threat-model.md) | Structured threat-modeling exercise. |
+| [`exercise-capstone-red-team-review.md`](exercise-capstone-red-team-review.md) | Structured red team and mitigation-design exercise. |
+| [`checklist.md`](checklist.md) | Capstone review checklist. |
+| [`quiz.md`](quiz.md) | Capstone knowledge check and answer key. |
+| [`capstone-runbook.md`](capstone-runbook.md) | End-to-end delivery runbook. |
+| [`references.md`](references.md) | Module reference anchors and internal links. |
+
+## Supporting BrokenPilot files
+
+The detailed capstone design lives in [`../../labs/brokenpilot/`](../../labs/brokenpilot/).
 
 | File | Purpose |
 |---|---|
@@ -49,19 +93,18 @@ By the end of this capstone, students should be able to:
 | [`../../labs/brokenpilot/instructor-solution.md`](../../labs/brokenpilot/instructor-solution.md) | Instructor solution guide. |
 | [`../../labs/brokenpilot/secure-reference-architecture.md`](../../labs/brokenpilot/secure-reference-architecture.md) | Target-state secure design. |
 | [`../../labs/brokenpilot/grading-rubric.md`](../../labs/brokenpilot/grading-rubric.md) | BrokenPilot-specific rubric. |
+| [`../../labs/brokenpilot/final-presentation-guide.md`](../../labs/brokenpilot/final-presentation-guide.md) | Presentation structure for student teams. |
+| [`../../labs/brokenpilot/evidence-log-guide.md`](../../labs/brokenpilot/evidence-log-guide.md) | Evidence handling and documentation guidance. |
+| [`../../labs/brokenpilot/remediation-backlog-guide.md`](../../labs/brokenpilot/remediation-backlog-guide.md) | How to turn findings into an engineering backlog. |
 
-## Suggested delivery flow
+## Suggested delivery formats
 
-| Phase | Activity | Time |
-|---|---|---:|
-| 1 | Introduce business context and architecture | 20 min |
-| 2 | Student threat modeling | 45–60 min |
-| 3 | Attack-path exploration | 60–90 min |
-| 4 | Mitigation design | 45–60 min |
-| 5 | Team presentations | 30–60 min |
-| 6 | Instructor debrief | 30 min |
-
-For a shorter workshop, use only one or two attack paths and focus heavily on mitigation design.
+| Format | Duration | Best for |
+|---|---:|---|
+| Short tabletop | 2–3 hours | Leadership, architecture review, security champions. |
+| Half-day workshop | 4 hours | AppSec, architects, platform, ML engineers. |
+| Full-day capstone | 6–7 hours | Practitioner training with team presentations. |
+| Two-day capstone | 10–12 hours | Full threat model, red team, defense design, and executive readout. |
 
 ## Required student deliverables
 
@@ -76,19 +119,21 @@ For a shorter workshop, use only one or two attack paths and focus heavily on mi
 9. Residual-risk statement.
 10. Leadership talking points.
 
-## Instructor notes
+## Assessment model
 
-Students may over-focus on prompt payloads. Redirect them toward:
+Students are assessed on security judgment, not only exploit success.
 
-- What the model can see.
-- What the model can do.
-- Which trust boundary failed.
-- Which policy was missing.
-- Which action should have required approval.
-- Which data should never have reached the model.
-- Which logs would be needed during an incident.
+A strong final submission:
 
-## Defensive design patterns
+- explains the business impact;
+- identifies the failed trust boundary;
+- shows safe, fake-data evidence;
+- proposes controls outside the model;
+- accounts for developer velocity;
+- prioritizes remediation;
+- explains residual risk honestly.
+
+## Defensive design themes
 
 - Keep security decisions outside the model.
 - Treat model input and output as untrusted.
@@ -102,6 +147,18 @@ Students may over-focus on prompt payloads. Redirect them toward:
 - Rate-limit expensive or sensitive operations.
 - Build monitoring for abuse, drift, and unexpected behavior.
 
+## Instructor note
+
+Students may over-focus on prompt payloads. Redirect them toward the system:
+
+- What can the model see?
+- What can the model do?
+- Which trust boundary failed?
+- Which policy was missing?
+- Which action should have required approval?
+- Which data should never have reached the model?
+- Which logs would be needed during an incident?
+
 ## Suggested reading
 
-See [`../../references.md`](../../references.md).
+See [`references.md`](references.md) and the root [`../../references.md`](../../references.md).
