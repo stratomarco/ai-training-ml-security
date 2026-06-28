@@ -149,3 +149,17 @@ The BrokenPilot capstone should reuse the course-wide reference set rather than 
 - MITRE ATLAS — adversarial AI tactics and techniques
 
 Module 08 uses these references to connect conventional secure development and software supply chain controls to ML-specific artifacts such as datasets, labels, features, model files, prompts, adapters, embeddings, vector indexes, evaluation results, registries, and feedback loops.
+
+
+## Privacy Attacks and Data Protection References
+
+- NIST Privacy Framework: https://www.nist.gov/privacy-framework
+- NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
+- NIST AI RMF Generative AI Profile, NIST AI 600-1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+- OWASP LLM02:2025 Sensitive Information Disclosure: https://genai.owasp.org/llmrisk/llm02-insecure-output-handling/
+- OWASP ML03:2023 Model Inversion Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML03_2023-Model_Inversion_Attack
+- OWASP ML04:2023 Membership Inference Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML04_2023-Membership_Inference_Attack
+- OWASP Machine Learning Security Top 10: https://owasp.org/www-project-machine-learning-security-top-10/
+- MITRE ATLAS: https://atlas.mitre.org/
+
+Module 09 uses these references to connect privacy engineering to AI-specific leakage paths: membership inference, model inversion, training data extraction, prompt and completion leakage, embedding leakage, vector database exposure, cross-tenant retrieval, agent memory, and feedback-loop reuse.

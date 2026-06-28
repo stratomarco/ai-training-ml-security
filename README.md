@@ -87,12 +87,12 @@ Completed so far:
 2. Completed Module 1 as the reference module.
 3. Built the reusable module template.
 4. Added the first DVAIA-to-course mapping.
-5. Completed Modules 2–8 as full teaching packages.
+5. Completed Modules 2–9 as full teaching packages.
 
 Next recommended work:
 
-1. Build Module 9 — Privacy Attacks and Data Protection.
-2. Expand the DVAIA and agent lab wrappers with concrete instructor notes.
+1. Build Module 10 — Adversarial ML and Robustness.
+2. Expand the DVAIA, privacy, and agent lab wrappers with concrete instructor notes.
 3. Later convert BrokenPilot from paper design into a local vulnerable lab application.
 4. Continue one module at a time until the v1.0 teachable release.
 
@@ -115,7 +115,7 @@ Review the license text before making the repository public.
 
 ## Course status
 
-Current working version: **v0.10 draft**. Modules 01–08 have complete teaching packages, and the BrokenPilot capstone paper design is complete.
+Current working version: **v0.11 draft**. Modules 01–09 have complete teaching packages, and the BrokenPilot capstone paper design is complete.
 
 | Module | Status | Notes |
 |---|---|---|
@@ -127,7 +127,7 @@ Current working version: **v0.10 draft**. Modules 01–08 have complete teaching
 | 06 — RAG Security and Indirect Prompt Injection | Complete | RAG architecture, retrieval authorization, indirect prompt injection, RAG lab, and templates. |
 | 07 — Agent and Tool Security | Complete | Tool calling, excessive agency, memory poisoning, approval gates, sandboxing, auditability, and agent control design. |
 | 08 — Secure MLOps and Supply Chain | Complete | Datasets, notebooks, dependencies, training jobs, model artifacts, registries, provenance, promotion gates, feedback loops, and ML-BOM templates. |
-| 09 — Privacy Attacks | Planned | Future module. |
+| 09 — Privacy Attacks | Complete | Membership inference, model inversion, training data extraction, prompt/log leakage, embedding leakage, cross-tenant retrieval, memory leakage, and privacy risk assessment templates. |
 | 10 — Adversarial ML and Robustness | Planned | Future module. |
 | 11 — AI Red Team Methodology | Planned | Future module. |
 | 12 — BrokenPilot Capstone | Design complete | Paper capstone design complete; full teaching package can be expanded after Modules 8–11. |
@@ -171,7 +171,7 @@ Added:
 - Implementation notes for a future local lab
 - Final report template
 
-Next recommended work: Module 9 — Privacy Attacks and Data Protection.
+Next recommended work: Module 10 — Adversarial ML and Robustness.
 
 
 ## Build status update — v0.10
@@ -194,4 +194,25 @@ Added:
 - Model registry access-control template
 - ML-BOM template
 
-Next recommended work: Module 9 — Privacy Attacks and Data Protection.
+Next recommended work: Module 10 — Adversarial ML and Robustness.
+
+
+## Build status update — v0.11
+
+Module 9 — Privacy Attacks and Data Protection is now complete.
+
+Added:
+
+- Privacy attacks and data protection slides
+- Instructor notes
+- Student handout
+- AI privacy risk assessment exercise
+- AI privacy checklist
+- Quiz and answer key
+- Privacy leakage and cross-tenant RAG lab guide
+- Membership inference and model inversion tabletop lab
+- Privacy risk assessment template
+- AI data retention and log review template
+- AI privacy control checklist
+
+Next recommended work: Module 10 — Adversarial ML and Robustness.

@@ -34,3 +34,6 @@ This folder contains reusable Markdown templates for students and instructors.
 | [`model-artifact-risk-review-template.md`](model-artifact-risk-review-template.md) | Model artifact trust, loading, integrity, and promotion review. |
 | [`model-registry-access-control-template.md`](model-registry-access-control-template.md) | Model registry RBAC and promotion controls. |
 | [`ml-bom-template.md`](ml-bom-template.md) | ML bill of materials for code, data, model, prompt, RAG, evaluation, and deployment artifacts. |
+| [`privacy-risk-assessment-template.md`](privacy-risk-assessment-template.md) | AI privacy risk assessment. |
+| [`ai-data-retention-log-review-template.md`](ai-data-retention-log-review-template.md) | Prompt, completion, retrieval, trace, memory, and feedback retention review. |
+| [`ai-privacy-control-checklist.md`](ai-privacy-control-checklist.md) | Compact AI privacy control checklist. |

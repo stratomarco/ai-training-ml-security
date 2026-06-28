@@ -175,7 +175,7 @@ Updated capstone mapping:
 | `labs/brokenpilot/grading-rubric.md` | BrokenPilot-specific rubric. |
 | `templates/brokenpilot-final-report-template.md` | Final report template. |
 
-Next recommended module: Module 9 — Privacy Attacks and Data Protection.
+Next recommended module: Module 10 — Adversarial ML and Robustness.
 
 
 ## Build status update — v0.10
@@ -196,4 +196,23 @@ Updated lab and template mapping:
 | `templates/model-registry-access-control-template.md` | 08 | Registry RBAC and promotion approval design template. |
 | `templates/ml-bom-template.md` | 08 | ML bill-of-materials template covering code, data, model, prompt, RAG, evaluation, and deployment artifacts. |
 
-Next recommended module: Module 9 — Privacy Attacks and Data Protection.
+Next recommended module: Module 10 — Adversarial ML and Robustness.
+
+
+## Build status update — v0.11
+
+| Module | Status | Notes |
+|---|---|---|
+| 09 — Privacy Attacks and Data Protection | Complete | Added README, slides, instructor notes, student handout, privacy risk assessment exercise, checklist, quiz, references, privacy labs, and privacy templates. |
+
+Updated lab and template mapping:
+
+| Lab or template | Module | Purpose |
+|---|---|---|
+| `labs/privacy-labs/privacy-leakage-cross-tenant-rag-lab.md` | 09 | Review cross-tenant RAG retrieval, prompt/completion logs, vector DB metadata, deletion propagation, and privacy controls. |
+| `labs/privacy-labs/membership-inference-model-inversion-tabletop.md` | 09 | Tabletop exercise for membership inference, model inversion, training data extraction, and residual privacy risk. |
+| `templates/privacy-risk-assessment-template.md` | 09 | Standard deliverable format for AI privacy risk assessments. |
+| `templates/ai-data-retention-log-review-template.md` | 09 | Focused template for prompt, completion, retrieval, trace, memory, and feedback retention. |
+| `templates/ai-privacy-control-checklist.md` | 09 | Compact privacy control checklist for AI systems. |
+
+Next recommended module: Module 10 — Adversarial ML and Robustness.

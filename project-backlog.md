@@ -199,10 +199,26 @@ Next recommended milestone: Module 05 — LLM Application Security.
 - [x] Add model registry access control template
 - [x] Add ML-BOM template
 
-## Next recommended work after v0.10
+## Completed in v0.11
 
-- [ ] Add Module 9 Privacy Attacks and Data Protection
-- [ ] Add privacy leakage and cross-tenant RAG lab guide
-- [ ] Add membership inference / model inversion tabletop exercise
-- [ ] Add privacy risk assessment template
+- [x] Add Module 9 Privacy Attacks and Data Protection
+- [x] Add Module 9 README
+- [x] Add Module 9 slides
+- [x] Add Module 9 instructor notes
+- [x] Add Module 9 student handout
+- [x] Add AI privacy risk assessment exercise
+- [x] Add Module 9 checklist
+- [x] Add Module 9 quiz and answer key
+- [x] Add privacy leakage and cross-tenant RAG lab guide
+- [x] Add membership inference and model inversion tabletop exercise
+- [x] Add privacy risk assessment template
+- [x] Add AI data retention and log review template
+- [x] Add AI privacy control checklist
+
+## Next recommended work after v0.11
+
+- [ ] Add Module 10 Adversarial ML and Robustness
+- [ ] Add adversarial robustness lab guide
+- [ ] Add adversarial test plan template
+- [ ] Add classifier evasion tabletop or local lab
 - [ ] Expand Module 12 slides and instructor package after Modules 8–11 are complete

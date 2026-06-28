@@ -2,123 +2,137 @@
 
 ## Purpose
 
-Teach privacy failure modes in ML and LLM systems.
+Teach privacy failure modes in ML, LLM, RAG, and agent systems and connect them to practical engineering controls.
+
+This module is not a legal-compliance lecture. It is a security engineering module about how AI systems can expose, infer, reconstruct, retain, or misuse sensitive information.
 
 ## Key message
 
 AI systems often create new paths for old privacy failures.
 
+Privacy risk is not limited to the model. It can appear in the dataset, training pipeline, model behavior, prompts, embeddings, vector database, logs, evaluation data, monitoring system, feedback loop, support tools, and agent memory.
+
 ## Learning objectives
 
 By the end of this module, students should be able to:
 
-1. Explain the core security problem addressed by this module.
-2. Identify the relevant assets, trust boundaries, and attacker goals.
-3. Connect the topic to classic security engineering principles.
-4. Recognize the ML, LLM, RAG, or agent-specific failure mode.
-5. Propose practical mitigations and discuss residual risk.
+1. Explain membership inference, model inversion, training data extraction, prompt leakage, log leakage, embedding leakage, and cross-tenant retrieval exposure.
+2. Identify where sensitive data appears across the ML lifecycle.
+3. Distinguish confidentiality risk from privacy risk.
+4. Threat model privacy attacks against ML, LLM, RAG, and agent systems.
+5. Evaluate whether retrieval authorization is enforced before context reaches the model.
+6. Design data minimization, retention, redaction, access control, and audit controls for AI systems.
+7. Explain why privacy controls must be placed outside the model, not only inside prompts.
+8. Produce a privacy risk assessment for an AI-enabled application.
 
 ## Topics
 
+- Privacy threat modeling for AI systems
+- Sensitive data classification
+- Training data exposure
 - Membership inference
 - Model inversion
 - Training data extraction
-- Prompt leakage
-- Log leakage
-- Embedding leakage
-- Vector DB access control
-- Cross-tenant exposure
-- PII redaction
-- Retention controls
+- Prompt and completion leakage
+- Log and telemetry leakage
+- Embedding and vector database leakage
+- Cross-tenant retrieval exposure
+- Agent memory leakage
+- Data minimization
+- Purpose limitation
+- Retention and deletion
+- PII redaction and masking
+- Differential privacy, where appropriate
+- Tenant isolation
+- Retrieval authorization
+- Privacy monitoring and auditability
+- Residual privacy risk
 
 ## Security engineering connection
 
-This module should always connect back to classic security engineering. The instructor should avoid treating AI as magic or as a separate universe. The practical question is how familiar principles change when models, datasets, embeddings, tools, prompts, and autonomous workflows become part of the system.
-
-Important principles to reuse:
+Classic privacy and security principles still apply:
 
 - Least privilege
-- Explicit trust boundaries
+- Need-to-know access
+- Data minimization
+- Purpose limitation
 - Complete mediation
-- Defense in depth
 - Secure defaults
-- Input and output handling
+- Defense in depth
+- Strong tenant isolation
+- Secure logging
+- Cryptographic protection
 - Auditability
-- Supply chain integrity
-- Privacy by design
-- Resilience and recovery
+- Retention limits
+- Safe deletion
+- Incident response
+
+The AI-specific challenge is that sensitive information may be transformed, summarized, embedded, memorized, inferred, or exposed through model-mediated behavior.
 
 ## Reference architecture
 
 ```text
-user or attacker
+user / attacker
   |
   v
-application or AI interface
+AI application interface
   |
+  +-- prompt and conversation store
   +-- model gateway
-  +-- policy layer
-  +-- data or retrieval service
-  +-- tool or workflow service
-  +-- logs and monitoring
+  +-- policy and authorization layer
+  +-- retrieval service
+  |     +-- embedding service
+  |     +-- vector database
+  |     +-- source document store
+  |
+  +-- tool layer / agent memory
+  +-- telemetry and audit logs
+  +-- monitoring and feedback loop
 ```
+
+Privacy review must cover every component, not only the model provider.
+
+## Core failure patterns
+
+| Failure pattern | Example | Root cause |
+|---|---|---|
+| Training data exposure | Model reveals memorized personal data | Sensitive data used without minimization or protection |
+| Membership inference | Attacker infers whether a person was in training data | Overfitting, excessive confidence exposure, weak privacy testing |
+| Model inversion | Attacker reconstructs sensitive attributes or representative records | Model reveals too much about learned relationships |
+| Prompt leakage | Prompts contain secrets or personal data | No prompt data classification or input controls |
+| Log leakage | Prompts/completions stored broadly | Logging without privacy design |
+| Embedding leakage | Sensitive text embedded and retrievable | Vector DB treated as harmless metadata |
+| Cross-tenant retrieval | User retrieves another tenant's records | Authorization performed after retrieval or only in the UI |
+| Agent memory leakage | Agent stores private data and reuses it later | Memory lacks provenance, expiry, review, and access control |
+| Feedback-loop leakage | User corrections become future training data | Feedback data not classified or governed |
 
 ## Lab
 
-### Lab goal
+Students perform a privacy review of a fake HR or customer-support AI assistant. The system uses RAG over sensitive records and logs prompts for quality analysis. Students identify leakage paths, model privacy attacks, and design controls.
 
-Attack a fake HR or customer-support assistant that retrieves sensitive records incorrectly.
+See:
 
-### Lab structure
-
-1. Introduce the scenario.
-2. Map assets and trust boundaries.
-3. Demonstrate or reproduce the vulnerable behavior.
-4. Explain the root cause.
-5. Propose mitigations.
-6. Discuss operational trade-offs.
-7. Capture residual risk.
-
-## Defensive design patterns
-
-- Keep security decisions outside the model where possible.
-- Treat model input and output as untrusted.
-- Apply least privilege to data, tools, and workflows.
-- Validate tool arguments and enforce authorization per action.
-- Log security-relevant events.
-- Rate-limit expensive or sensitive operations.
-- Add human approval for destructive or high-impact actions.
-- Build monitoring for abuse, drift, and unexpected behavior.
-
-## Discussion questions
-
-1. What is the highest-value asset in this scenario?
-2. Where are the trust boundaries?
-3. What does the model know?
-4. What can the model do?
-5. What should the model not be allowed to decide?
-6. What would you fix first?
-7. What would you monitor?
-8. What residual risk remains?
+- `labs/privacy-labs/privacy-leakage-cross-tenant-rag-lab.md`
+- `labs/privacy-labs/membership-inference-model-inversion-tabletop.md`
 
 ## Deliverable
 
-Privacy risk assessment.
+Students complete a privacy risk assessment using:
 
-## Instructor notes
+- `templates/privacy-risk-assessment-template.md`
 
-Students may focus too much on clever prompts or exploit strings. Bring the discussion back to architecture, permissions, system boundaries, workflow design, and risk decisions.
+The deliverable must include:
 
-A good answer should include both offensive understanding and defensive judgment.
+1. Sensitive data inventory.
+2. Data-flow map.
+3. Privacy abuse cases.
+4. Likelihood and impact assessment.
+5. Existing controls.
+6. Recommended mitigations.
+7. Residual risk statement.
 
-## Review questions
+## Instructor emphasis
 
-1. What is the core risk in this module?
-2. Which classic security principles apply?
-3. What makes the AI version of the problem different?
-4. What mitigation is strongest?
-5. What mitigation is weakest if used alone?
+Keep the module practical.
 
-## Suggested reading
-
-See [`../../references.md`](../../references.md).
+Students should leave understanding that privacy in AI systems is a system property. It is not solved by telling the model to “not reveal sensitive information.”

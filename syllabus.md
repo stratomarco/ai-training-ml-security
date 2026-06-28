@@ -141,11 +141,18 @@ Modules 01–07 became complete teaching packages. Module 07 added agent and too
 
 The BrokenPilot capstone paper design is now complete. This includes scenario, architecture, roles, data model, tools, vulnerability list, attack paths, student brief, instructor solution guide, secure reference architecture, grading rubric, implementation notes, and module mapping.
 
-The next recommended build step is Module 9 — Privacy Attacks and Data Protection.
+The next recommended build step is Module 10 — Adversarial ML and Robustness.
 
 
 ## v0.10 update
 
 Module 08 — Secure MLOps and AI Supply Chain is now complete. It adds training material for datasets, labels, notebooks, dependencies, training infrastructure, model artifacts, registries, provenance, promotion gates, feedback-loop security, and ML-BOM thinking.
 
-The next recommended build step is Module 9 — Privacy Attacks and Data Protection.
+The next recommended build step is Module 10 — Adversarial ML and Robustness.
+
+
+## v0.11 update
+
+Module 09 — Privacy Attacks and Data Protection is now complete. It adds training material for membership inference, model inversion, training data extraction, prompt and completion leakage, log leakage, embedding leakage, vector database exposure, cross-tenant retrieval, agent memory leakage, feedback-loop reuse, retention, deletion, and privacy risk assessment.
+
+The next recommended build step is Module 10 — Adversarial ML and Robustness.
