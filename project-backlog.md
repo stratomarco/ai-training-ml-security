@@ -1,294 +1,196 @@
 # Project Backlog
 
-This backlog tracks the next build steps for the GitHub repository.
+This backlog tracks the build plan for **AI Training — ML Security**.
 
-## Milestone v0.1 — Curriculum spine
+## Current release status
 
-- [x] Create repository structure
-- [x] Add README
-- [x] Add syllabus
-- [x] Add course map
-- [x] Add references
-- [x] Add module stubs
-- [x] Add template stubs
-- [x] Add lab directories
+**Current version:** v1.0 release candidate  
+**Core curriculum:** complete  
+**Modules:** 01–12 complete  
+**Capstone:** BrokenPilot paper-based capstone complete  
+**Repository readiness:** changelog, release checklist, security policy, code of conduct, issue templates, and PR template added
 
-## Milestone v0.2 — Module 1 complete
+## v1.0 release checklist
 
-- [x] Complete Module 1 README
-- [x] Add Module 1 slides
-- [x] Add Module 1 instructor notes
-- [x] Add Module 1 student handout
-- [x] Add Module 1 threat modeling exercise
-- [x] Add Module 1 checklist
-- [x] Add Module 1 quiz
-- [x] Add Module 1 references
-- [x] Improve reusable module template
+The following items should be verified before tagging `v1.0.0`:
 
-## Milestone v0.3 — DVAIA mapping
+- [ ] Review `README.md` for stale status text.
+- [ ] Review `syllabus.md` for consistency with all twelve modules.
+- [ ] Review `course-map.md` for correct module/lab/template links.
+- [ ] Review `references.md` and remove duplicated or low-quality sources.
+- [ ] Confirm every module has:
+  - [ ] `README.md`
+  - [ ] `slides.md`
+  - [ ] `instructor-notes.md`
+  - [ ] `student-handout.md`
+  - [ ] exercise file
+  - [ ] `checklist.md`
+  - [ ] `quiz.md`
+  - [ ] `references.md`
+- [ ] Confirm lab guides use fake/local data only.
+- [ ] Confirm no third-party copyrighted lab content was copied into the repository.
+- [ ] Confirm license strategy is acceptable before making the repo public.
+- [ ] Confirm GitHub issue templates and PR template render correctly.
+- [ ] Create a GitHub release using `docs/releases/v1.0.0.md` as the release notes.
 
-- [x] Add first DVAIA course mapping
-- [ ] Install DVAIA locally
-- [ ] Inventory available DVAIA labs
-- [ ] Map concrete DVAIA labs to modules
-- [ ] Create first DVAIA lab wrapper
-- [ ] Create instructor solution notes for selected labs
+## Completed milestones
 
-## Milestone v0.4 — Module 2 complete
+### v0.1 — Curriculum spine
 
-- [x] Complete Module 2 README
-- [x] Add Module 2 slides
-- [x] Add ML lifecycle diagram
-- [x] Add ML pipeline threat modeling exercise
-- [x] Add Module 2 checklist
-- [x] Add Module 2 quiz
+- [x] Course identity
+- [x] Syllabus
+- [x] Course map
+- [x] Reference list
+- [x] Module folder structure
+- [x] Lab strategy
+- [x] Initial templates
 
-## Milestone v0.9 — BrokenPilot capstone design
+### v0.2 — Module 1 complete
 
-- [x] Draft BrokenPilot architecture
-- [x] Define user roles
-- [x] Define data model
-- [x] Define tools
-- [x] Define intentional vulnerabilities
-- [x] Create attack paths
-- [x] Create student brief
-- [x] Create instructor solution guide
-- [x] Create secure reference architecture
-- [x] Create grading rubric
-- [x] Create implementation notes
-- [x] Create final report template
+- [x] Module 1 README
+- [x] Slides
+- [x] Instructor notes
+- [x] Student handout
+- [x] Threat modeling exercise
+- [x] Checklist
+- [x] Quiz
+- [x] References
 
-## Suggested GitHub issues
+### v0.3 — Module 2 complete
 
-Create these issues first:
+- [x] ML lifecycle architecture
+- [x] ML system data-flow exercise
+- [x] ML architecture review template
 
-```text
-[content] Review Module 1 for teaching flow
-[content] Convert Module 1 slides.md to Marp-compatible format if desired
-[content] Add diagrams for DocAssist architecture
-[labs] Install and review DVAIA locally
-[labs] Inventory DVAIA exercises
-[labs] Create first DVAIA lab wrapper for prompt injection
-[template] Validate module-template.md against Module 1
-[capstone] Draft BrokenPilot architecture
-[repo] Decide license model for content and code
-[repo] Add CONTRIBUTING.md
-```
+### v0.4 — Module 3 complete
 
+- [x] OWASP ML Security Top 10 module
+- [x] Classical ML attack lab wrapper
+- [x] ML attack summary template
 
-## v0.3 — Module 02 complete
+### v0.5 — Module 4 complete
 
-Completed:
+- [x] BIML architectural risk analysis module
+- [x] Architecture review lab
+- [x] Architecture risk review template
 
-- Module 02 README
-- Module 02 slides
-- Module 02 instructor notes
-- Module 02 student handout
-- Module 02 lifecycle DFD exercise
-- Module 02 checklist
-- Module 02 quiz
-- Module 02 references
-- ML system architecture review template
+### v0.6 — Module 5 complete
 
-Next recommended milestone: Module 03 — OWASP ML Security Top 10.
+- [x] LLM application security module
+- [x] DVAIA-style LLM application security lab
+- [x] LLM application security review template
 
+### v0.7 — Module 6 complete
 
-## v0.4 — Module 03 complete
+- [x] RAG security module
+- [x] Indirect prompt injection lab
+- [x] RAG threat model template
+- [x] Vector database authorization checklist
 
-Completed:
+### v0.8 — Module 7 complete
 
-- Module 03 README
-- Module 03 slides
-- Module 03 instructor notes
-- Module 03 student handout
-- Module 03 OWASP ML attack review exercise
-- Module 03 checklist
-- Module 03 quiz
-- Module 03 references
-- Toy ML attack lab guide
-- ML attack summary template
+- [x] Agent and tool security module
+- [x] Tool misuse lab
+- [x] Memory poisoning and approval-gates lab
+- [x] Agent control design templates
 
-Next recommended milestone: Module 04 — BIML Architectural Risk Analysis.
+### v0.9 — BrokenPilot paper design complete
 
+- [x] Scenario
+- [x] Architecture
+- [x] Roles
+- [x] Data model
+- [x] Tools
+- [x] Vulnerabilities
+- [x] Attack paths
+- [x] Instructor solution
+- [x] Secure reference architecture
+- [x] Grading rubric
 
-## v0.5 — Module 04 complete
+### v0.10 — Module 8 complete
 
-Completed:
+- [x] Secure MLOps and AI supply chain module
+- [x] Broken ML pipeline lab
+- [x] Model artifact provenance lab
+- [x] ML-BOM and provenance templates
 
-- Module 04 README
-- Module 04 slides
-- Module 04 instructor notes
-- Module 04 student handout
-- Module 04 BIML-style architecture review exercise
-- Module 04 checklist
-- Module 04 quiz
-- Module 04 references
-- Architecture risk review template
-- DocOps Assistant architecture review lab
+### v0.11 — Module 9 complete
 
-Next recommended milestone: Module 05 — LLM Application Security.
+- [x] Privacy attacks and data protection module
+- [x] Cross-tenant RAG privacy lab
+- [x] Membership inference and model inversion tabletop
+- [x] Privacy templates
 
+### v0.12 — Module 10 complete
 
-## Completed in v0.6
+- [x] Adversarial ML and robustness module
+- [x] Evasion and robustness lab
+- [x] Poisoning and backdoor tabletop
+- [x] Robustness evaluation templates
 
-- [x] Add Module 5 LLM Application Security
-- [x] Add DVAIA-style LLM application security lab guide
-- [x] Add LLM application security review template
+### v0.13 — Module 11 complete
 
-## Completed in v0.7
+- [x] AI red team methodology module
+- [x] AI red team scoping tabletop
+- [x] BrokenPilot attack-chain lab
+- [x] AI red team templates
 
-- [x] Add Module 6 RAG Security and Indirect Prompt Injection
-- [x] Add RAG threat model exercise
-- [x] Add RAG-specific lab guide
-- [x] Add RAG security checklist
-- [x] Add RAG quiz and answer key
-- [x] Add RAG threat model template
-- [x] Add vector database authorization checklist
+### v0.14 — Module 12 complete
 
-## Completed in v0.8
+- [x] BrokenPilot capstone teaching package
+- [x] Capstone slides
+- [x] Instructor notes
+- [x] Student handout
+- [x] Capstone exercises
+- [x] Evidence, risk, and remediation templates
+- [x] Final grading rubric
 
-- [x] Add Module 7 Agent and Tool Security
-- [x] Add agent control design exercise
-- [x] Add agent security checklist
-- [x] Add agent quiz and answer key
-- [x] Add agent tool misuse lab guide
-- [x] Add memory poisoning and approval gates lab guide
-- [x] Add agent control design template
-- [x] Add tool permission matrix template
-- [x] Add agent action approval policy template
+### v1.0-rc — Release readiness
 
-## Transition completed after v0.8
+- [x] `CHANGELOG.md`
+- [x] `RELEASE_CHECKLIST.md`
+- [x] `VERSION.md`
+- [x] `ROADMAP.md`
+- [x] `SECURITY.md`
+- [x] `CODE_OF_CONDUCT.md`
+- [x] `docs/releases/v1.0.0.md`
+- [x] GitHub issue templates
+- [x] Pull request template
 
-- [x] Start BrokenPilot capstone design on paper
-- [x] Define BrokenPilot roles, tools, data model, and intentional vulnerabilities
+## Post-v1.0 backlog
 
+### Lab validation
 
-## Completed in v0.9
+- [ ] Install DVAIA locally.
+- [ ] Verify which DVAIA labs are stable and useful for this course.
+- [ ] Add exact lab setup notes for Windows, macOS, and Linux.
+- [ ] Add screenshots or terminal examples only after validating locally.
+- [ ] Mark labs as beginner, intermediate, or advanced.
 
-- [x] Complete BrokenPilot capstone paper design
-- [x] Add BrokenPilot scenario
-- [x] Add BrokenPilot architecture
-- [x] Add BrokenPilot roles and attacker personas
-- [x] Add BrokenPilot data model
-- [x] Add BrokenPilot tools and permission model
-- [x] Add BrokenPilot intentional vulnerabilities
-- [x] Add BrokenPilot attack paths
-- [x] Add BrokenPilot student brief
-- [x] Add BrokenPilot instructor solution guide
-- [x] Add BrokenPilot secure reference architecture
-- [x] Add BrokenPilot grading rubric
-- [x] Add BrokenPilot implementation notes
-- [x] Add BrokenPilot module mapping
-- [x] Add BrokenPilot final report template
+### BrokenPilot implementation
 
-## Completed in v0.10
+- [ ] Build minimal local web app.
+- [ ] Add fake users, fake tickets, fake docs, and fake configuration data.
+- [ ] Add intentionally vulnerable RAG workflow.
+- [ ] Add intentionally overprivileged tools.
+- [ ] Add memory poisoning scenario.
+- [ ] Add secure mode for comparison.
+- [ ] Add Docker Compose.
+- [ ] Add instructor reset scripts.
 
-- [x] Add Module 8 Secure MLOps and AI Supply Chain
-- [x] Add Module 8 README
-- [x] Add Module 8 slides
-- [x] Add Module 8 instructor notes
-- [x] Add Module 8 student handout
-- [x] Add Secure MLOps review exercise
-- [x] Add Secure MLOps checklist
-- [x] Add Module 8 quiz and answer key
-- [x] Add broken ML pipeline lab guide
-- [x] Add model artifact provenance lab guide
-- [x] Add Secure MLOps review template
-- [x] Add dataset provenance review template
-- [x] Add model artifact risk review template
-- [x] Add model registry access control template
-- [x] Add ML-BOM template
+### Quality improvements
 
-## Completed in v0.11
+- [ ] Add diagrams as Mermaid where useful.
+- [ ] Add optional slide export workflow.
+- [ ] Add facilitator timing for half-day, one-day, two-day, and twelve-week formats.
+- [ ] Add more quizzes to `assessments/quiz-bank.md`.
+- [ ] Add sample completed student deliverables.
+- [ ] Add an executive briefing version of the course.
 
-- [x] Add Module 9 Privacy Attacks and Data Protection
-- [x] Add Module 9 README
-- [x] Add Module 9 slides
-- [x] Add Module 9 instructor notes
-- [x] Add Module 9 student handout
-- [x] Add AI privacy risk assessment exercise
-- [x] Add Module 9 checklist
-- [x] Add Module 9 quiz and answer key
-- [x] Add privacy leakage and cross-tenant RAG lab guide
-- [x] Add membership inference and model inversion tabletop exercise
-- [x] Add privacy risk assessment template
-- [x] Add AI data retention and log review template
-- [x] Add AI privacy control checklist
+### Community readiness
 
-## Completed in v0.10
-
-- [x] Add Module 8 Secure MLOps and AI Supply Chain
-- [x] Add broken ML pipeline lab guide
-- [x] Add model artifact provenance lab guide
-- [x] Add Secure MLOps templates
-
-## Completed in v0.11
-
-- [x] Add Module 9 Privacy Attacks and Data Protection
-- [x] Add privacy leakage and cross-tenant RAG lab guide
-- [x] Add membership inference and model inversion tabletop
-- [x] Add privacy risk templates
-
-## Completed in v0.12
-
-- [x] Add Module 10 Adversarial ML and Robustness
-- [x] Add adversarial test plan exercise
-- [x] Add adversarial ML robustness checklist
-- [x] Add evasion and robustness lab guide
-- [x] Add poisoning, backdoor, and feedback-loop tabletop lab
-- [x] Add adversarial test plan template
-- [x] Add robustness evaluation template
-- [x] Add drift and abuse monitoring template
-
-## Completed in v0.13
-
-- [x] Build Module 11 AI Red Team Methodology
-- [x] Add AI red team scope and rules of engagement guide
-- [x] Add BrokenPilot attack-chain red team lab
-- [x] Add AI red team report template
-- [x] Add AI red team executive readout template
-- [x] Add AI red team grading rubric
-
-## Next recommended milestone — Module 12 / v1.0 readiness
-
-- [x] Expand Module 12 BrokenPilot Capstone into a full teaching package
-- [x] Add Module 12 slides
-- [x] Add Module 12 instructor notes
-- [x] Add Module 12 student handout
-- [x] Add capstone final presentation guide
-- [ ] Add v1.0 release checklist
-- [ ] Review all README status blocks for consistency
-- [ ] Review references and links
-- [ ] Decide final public license wording before making repository public
-
-
-## Completed in v0.14
-
-- [x] Build Module 12 BrokenPilot Capstone full teaching package
-- [x] Add Module 12 slides
-- [x] Add Module 12 instructor notes
-- [x] Add Module 12 student handout
-- [x] Add capstone threat-modeling exercise
-- [x] Add capstone red team and mitigation-design exercise
-- [x] Add capstone checklist
-- [x] Add capstone quiz and answer key
-- [x] Expand capstone runbook
-- [x] Add final presentation guide
-- [x] Add evidence log guide
-- [x] Add remediation backlog guide
-- [x] Add BrokenPilot risk register template
-- [x] Add BrokenPilot evidence log template
-- [x] Add BrokenPilot remediation backlog template
-- [x] Add final capstone grading rubric
-
-## Next recommended milestone — v1.0 release readiness
-
-- [ ] Add v1.0 release checklist
-- [ ] Review all README/status blocks for consistency
-- [ ] Review all module links
-- [ ] Review references and external links
-- [ ] Review license wording before public release
-- [ ] Add repository topics and GitHub description
-- [ ] Add CHANGELOG.md
-- [ ] Add release notes for v1.0
-- [ ] Decide whether to keep repository private or make public
+- [ ] Decide whether repo stays private or becomes public.
+- [ ] Verify final license text.
+- [ ] Add maintainers file if public.
+- [ ] Add contribution labels.
+- [ ] Add first GitHub release.

@@ -53,6 +53,11 @@ ai-training-ml-security/
 ├── syllabus.md
 ├── course-map.md
 ├── references.md
+├── CHANGELOG.md
+├── RELEASE_CHECKLIST.md
+├── SECURITY.md
+├── CODE_OF_CONDUCT.md
+├── .github/
 ├── modules/
 │   ├── 01-security-engineering-for-ai/
 │   ├── 02-ml-system-architecture/
@@ -79,22 +84,23 @@ ai-training-ml-security/
 
 ## Build order
 
-The project is being built module by module, with each completed module treated as a teachable unit.
+The project is now at a **v1.0 release-candidate** stage. The core curriculum spine is complete and all twelve modules have full teaching packages.
 
-Completed so far:
+Completed for v1.0:
 
-1. Finalized the initial syllabus and course map.
-2. Completed Module 1 as the reference module.
-3. Built the reusable module template.
-4. Added the first DVAIA-to-course mapping.
-5. Completed Modules 2–11 as full teaching packages.
+1. Finalized the syllabus and course map.
+2. Completed Modules 01–12 as teachable units.
+3. Built reusable templates for threat modeling, architecture review, privacy review, AI red teaming, MLOps review, agent control design, and capstone reporting.
+4. Mapped DVAIA-style labs to OWASP and course modules.
+5. Designed the BrokenPilot capstone as a complete paper-based exercise.
+6. Added release readiness files: changelog, release checklist, security policy, code of conduct, issue templates, and PR template.
 
-Next recommended work:
+Recommended work after v1.0:
 
-1. Expand Module 12 — BrokenPilot Capstone into a full teaching package.
-2. Expand the DVAIA, privacy, adversarial ML, red team, and agent lab wrappers with concrete instructor notes.
-3. Later convert BrokenPilot from paper design into a local vulnerable lab application.
-4. Prepare a v1.0 teachable release review.
+1. Expand selected lab wrappers with more concrete screenshots and environment-specific steps after testing DVAIA locally.
+2. Convert BrokenPilot from paper design into a local vulnerable lab application.
+3. Add optional slide-rendering workflows later if needed, while keeping Markdown as the source of truth.
+4. Add more instructor examples from real architecture reviews and red-team reports.
 
 ## Lab philosophy
 
@@ -115,7 +121,7 @@ Review the license text before making the repository public.
 
 ## Course status
 
-Current working version: **v0.14 draft**. Modules 01–12 have complete teaching packages, and the BrokenPilot capstone is ready for a v1.0 release review.
+Current working version: **v1.0 release candidate**. Modules 01–12 have complete teaching packages, the BrokenPilot capstone is ready to teach, and the repository includes release-readiness material for a first public or private tagged release.
 
 | Module | Status | Notes |
 |---|---|---|

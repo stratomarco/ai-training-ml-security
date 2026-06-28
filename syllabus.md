@@ -167,7 +167,7 @@ The next recommended build step is Module 11 — AI Red Team Methodology.
 
 ## Current status
 
-Current working version: v0.14 draft. Modules 01–12 have complete teaching packages, and the BrokenPilot capstone is ready for v1.0 release review.
+Current working version: v1.0 release candidate. Modules 01–12 have complete teaching packages, and the BrokenPilot capstone is ready for v1.0 release review.
 
 
 ## v0.13 update — Module 11 complete
