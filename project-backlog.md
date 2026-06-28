@@ -181,9 +181,28 @@ Next recommended milestone: Module 05 — LLM Application Security.
 - [x] Add BrokenPilot module mapping
 - [x] Add BrokenPilot final report template
 
-## Next recommended work after v0.9
+## Completed in v0.10
 
-- [ ] Add Module 8 Secure MLOps and AI Supply Chain
-- [ ] Add broken ML pipeline lab guide
-- [ ] Add model artifact and dataset provenance review templates
+- [x] Add Module 8 Secure MLOps and AI Supply Chain
+- [x] Add Module 8 README
+- [x] Add Module 8 slides
+- [x] Add Module 8 instructor notes
+- [x] Add Module 8 student handout
+- [x] Add Secure MLOps review exercise
+- [x] Add Secure MLOps checklist
+- [x] Add Module 8 quiz and answer key
+- [x] Add broken ML pipeline lab guide
+- [x] Add model artifact provenance lab guide
+- [x] Add Secure MLOps review template
+- [x] Add dataset provenance review template
+- [x] Add model artifact risk review template
+- [x] Add model registry access control template
+- [x] Add ML-BOM template
+
+## Next recommended work after v0.10
+
+- [ ] Add Module 9 Privacy Attacks and Data Protection
+- [ ] Add privacy leakage and cross-tenant RAG lab guide
+- [ ] Add membership inference / model inversion tabletop exercise
+- [ ] Add privacy risk assessment template
 - [ ] Expand Module 12 slides and instructor package after Modules 8–11 are complete

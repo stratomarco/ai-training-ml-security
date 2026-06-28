@@ -137,3 +137,15 @@ The BrokenPilot capstone should reuse the course-wide reference set rather than 
 - BIML-style architectural risk analysis.
 - NIST AI RMF and GenAI profile for risk management and governance framing.
 - MITRE ATLAS for adversarial AI tactics and technique mapping.
+
+
+## Secure MLOps and Supply Chain References
+
+- NIST SP 800-218 — Secure Software Development Framework (SSDF)
+- NIST AI Risk Management Framework and Generative AI Profile
+- OWASP ML Security Top 10 — ML06: AI Supply Chain Attacks
+- OWASP Top 10 for Large Language Model Applications — supply chain, sensitive information disclosure, excessive agency, model theft
+- SLSA — Supply-chain Levels for Software Artifacts
+- MITRE ATLAS — adversarial AI tactics and techniques
+
+Module 08 uses these references to connect conventional secure development and software supply chain controls to ML-specific artifacts such as datasets, labels, features, model files, prompts, adapters, embeddings, vector indexes, evaluation results, registries, and feedback loops.

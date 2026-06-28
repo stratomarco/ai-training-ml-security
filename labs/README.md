@@ -25,6 +25,7 @@ Every lab must:
 | [`rag-labs/`](rag-labs/) | RAG and indirect prompt injection exercises. |
 | [`agent-labs/`](agent-labs/) | Agent/tool security, memory poisoning, and approval-gate exercises. |
 | [`toy-ml-attacks/`](toy-ml-attacks/) | Classical ML attack exercises. |
+| [`mlops-supply-chain-labs/`](mlops-supply-chain-labs/) | Secure MLOps and AI supply chain review exercises. |
 | [`architecture-risk-review-labs/`](architecture-risk-review-labs/) | Architecture review tabletop exercises. |
 | [`brokenpilot/`](brokenpilot/) | Final capstone paper design for an internal AI operations assistant. |
 

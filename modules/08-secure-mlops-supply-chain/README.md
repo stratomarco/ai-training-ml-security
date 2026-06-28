@@ -2,123 +2,182 @@
 
 ## Purpose
 
-Connect ML Security to DevSecOps and supply chain security.
+Teach students how to secure the machine learning delivery chain: datasets, labels, notebooks, dependencies, training jobs, model artifacts, registries, evaluation gates, deployment pipelines, inference infrastructure, prompts, adapters, embeddings, and monitoring feedback loops.
+
+Traditional software supply chain security already matters. ML systems add new artifacts and new trust decisions. A model is not only code. It is also the result of data, training configuration, dependencies, compute environment, evaluation choices, and promotion decisions.
 
 ## Key message
 
-The ML pipeline is a software supply chain. Models, datasets, prompts, adapters, and embeddings are supply chain artifacts.
+> The ML pipeline is a software supply chain where data, models, prompts, adapters, embeddings, and evaluation results are security-sensitive artifacts.
+
+Secure MLOps is not only about making training reproducible. It is about ensuring that the right data, code, dependencies, parameters, identities, and controls produced the right model, and that only trusted artifacts reach production.
 
 ## Learning objectives
 
 By the end of this module, students should be able to:
 
-1. Explain the core security problem addressed by this module.
-2. Identify the relevant assets, trust boundaries, and attacker goals.
-3. Connect the topic to classic security engineering principles.
-4. Recognize the ML, LLM, RAG, or agent-specific failure mode.
-5. Propose practical mitigations and discuss residual risk.
+1. Explain why ML supply chains are broader than classic software supply chains.
+2. Identify assets and trust boundaries across an ML delivery pipeline.
+3. Recognize risks in notebooks, datasets, dependencies, training code, model files, registries, containers, prompts, and deployment workflows.
+4. Explain why model artifacts need provenance, integrity, access control, and safe loading.
+5. Describe common model artifact risks, including unsafe deserialization and malicious model formats.
+6. Design secure promotion gates from experiment to staging to production.
+7. Define security checks for datasets, labels, features, dependencies, containers, and model artifacts.
+8. Produce a Secure MLOps review containing risks, mitigations, owners, and residual risk.
 
 ## Topics
 
-- Notebooks
-- Model artifacts
-- Unsafe deserialization
-- Dependency risk
-- Dataset provenance
-- Model registries
-- CI/CD for ML
-- Container security
-- Secrets
-- Model signing
+- ML pipeline threat modeling
+- Dataset provenance and lineage
+- Label integrity and quality controls
+- Notebook security
+- Dependency and package risk
+- Training environment hardening
+- Model artifact integrity
+- Unsafe deserialization and model loading
+- Model registry security
+- Prompt, adapter, embedding, and vector index supply chain
+- Container and GPU workload security
+- CI/CD and ML pipeline security gates
+- Secrets management
+- Artifact signing and provenance
+- SBOM and ML-BOM concepts
+- Model cards and security metadata
+- Evaluation and adversarial test gates
+- Rollback and emergency model removal
+- Monitoring feedback loop security
 
 ## Security engineering connection
 
-This module should always connect back to classic security engineering. The instructor should avoid treating AI as magic or as a separate universe. The practical question is how familiar principles change when models, datasets, embeddings, tools, prompts, and autonomous workflows become part of the system.
+Secure MLOps reuses classic security principles:
 
-Important principles to reuse:
-
-- Least privilege
-- Explicit trust boundaries
-- Complete mediation
-- Defense in depth
-- Secure defaults
-- Input and output handling
-- Auditability
-- Supply chain integrity
-- Privacy by design
-- Resilience and recovery
+| Principle | MLOps interpretation |
+|---|---|
+| Least privilege | Training jobs, pipelines, notebooks, and registries should use scoped identities. |
+| Complete mediation | Every artifact promotion should be authorized and checked. |
+| Fail-safe defaults | Unknown, unsigned, unscanned, or unreviewed artifacts should not be promoted. |
+| Separation of duties | The same person or job should not create, approve, and deploy high-impact models without control. |
+| Defense in depth | Use provenance, signing, scanning, sandboxing, evaluation gates, registry ACLs, and runtime monitoring. |
+| Auditability | Dataset, code, dependency, model, and deployment decisions should be traceable. |
+| Secure failure | If an evaluation, provenance, or policy check fails, the deployment should stop safely. |
+| Supply chain integrity | Data, code, dependencies, containers, and model artifacts all require integrity controls. |
 
 ## Reference architecture
 
 ```text
-user or attacker
+source control
+  |
+  +-- training code
+  +-- pipeline definitions
+  +-- prompts / templates
+  +-- evaluation tests
   |
   v
-application or AI interface
+CI/CD and ML pipeline orchestrator
   |
-  +-- model gateway
-  +-- policy layer
-  +-- data or retrieval service
-  +-- tool or workflow service
-  +-- logs and monitoring
+  +-- dependency resolution
+  +-- container build
+  +-- data access
+  +-- feature generation
+  +-- training job
+  +-- evaluation job
+  +-- security checks
+  +-- provenance generation
+  |
+  v
+artifact stores
+  |
+  +-- dataset registry
+  +-- feature store
+  +-- model registry
+  +-- container registry
+  +-- prompt registry
+  +-- embedding / vector index store
+  |
+  v
+promotion workflow
+  |
+  +-- security approval
+  +-- model risk approval
+  +-- deployment gate
+  +-- rollback plan
+  |
+  v
+production inference
+  |
+  +-- model serving
+  +-- RAG / vector retrieval
+  +-- monitoring
+  +-- logging
+  +-- incident response
+  +-- feedback loop
 ```
+
+## Core design rule
+
+An ML pipeline should be able to answer:
+
+- Which data produced this model?
+- Who approved the data source?
+- Which code, parameters, dependencies, and container built it?
+- Which evaluation results allowed promotion?
+- Was the artifact signed or otherwise integrity-protected?
+- Who approved deployment?
+- Which identity deployed it?
+- Which customers, workflows, or systems can it affect?
+- How can it be rolled back?
+- What monitoring detects model abuse, drift, poisoning, or leakage?
+
+If the organization cannot answer these questions, the model is not production-ready from a security perspective.
 
 ## Lab
 
-### Lab goal
+Students review a deliberately broken ML delivery pipeline with:
 
-Review a broken ML pipeline with leaked secrets, unsafe model loading, and weak artifact controls.
+- a public dataset of unclear origin;
+- an unreviewed notebook with a hardcoded API key;
+- unpinned dependencies;
+- an unsafe model loading pattern;
+- a model artifact with no provenance;
+- weak model registry permissions;
+- missing security and evaluation gates;
+- no rollback plan;
+- feedback data flowing back into training without abuse controls.
 
-### Lab structure
-
-1. Introduce the scenario.
-2. Map assets and trust boundaries.
-3. Demonstrate or reproduce the vulnerable behavior.
-4. Explain the root cause.
-5. Propose mitigations.
-6. Discuss operational trade-offs.
-7. Capture residual risk.
-
-## Defensive design patterns
-
-- Keep security decisions outside the model where possible.
-- Treat model input and output as untrusted.
-- Apply least privilege to data, tools, and workflows.
-- Validate tool arguments and enforce authorization per action.
-- Log security-relevant events.
-- Rate-limit expensive or sensitive operations.
-- Add human approval for destructive or high-impact actions.
-- Build monitoring for abuse, drift, and unexpected behavior.
-
-## Discussion questions
-
-1. What is the highest-value asset in this scenario?
-2. Where are the trust boundaries?
-3. What does the model know?
-4. What can the model do?
-5. What should the model not be allowed to decide?
-6. What would you fix first?
-7. What would you monitor?
-8. What residual risk remains?
+The goal is not to exploit real ML platforms. The goal is to practice reviewing ML supply chain architecture and designing realistic controls.
 
 ## Deliverable
 
-Secure MLOps checklist and risk register.
+Students produce a **Secure MLOps review** containing:
 
-## Instructor notes
+1. ML pipeline architecture summary
+2. Asset and artifact inventory
+3. Trust boundaries
+4. Dataset provenance review
+5. Dependency and environment review
+6. Model artifact risk review
+7. Registry and access-control review
+8. CI/CD and promotion gate review
+9. Monitoring and rollback requirements
+10. Risk register
+11. Residual risk statement
 
-Students may focus too much on clever prompts or exploit strings. Bring the discussion back to architecture, permissions, system boundaries, workflow design, and risk decisions.
+## Files in this module
 
-A good answer should include both offensive understanding and defensive judgment.
+- `slides.md` — Markdown slide deck
+- `instructor-notes.md` — delivery guidance and facilitation notes
+- `student-handout.md` — student-facing reference
+- `exercise-secure-mlops-review.md` — main exercise
+- `checklist.md` — Secure MLOps checklist
+- `quiz.md` — quiz and answer key
+- `references.md` — module-specific references
 
-## Review questions
+## Related labs and templates
 
-1. What is the core risk in this module?
-2. Which classic security principles apply?
-3. What makes the AI version of the problem different?
-4. What mitigation is strongest?
-5. What mitigation is weakest if used alone?
-
-## Suggested reading
-
-See [`../../references.md`](../../references.md).
+- `../../labs/mlops-supply-chain-labs/broken-ml-pipeline-lab.md`
+- `../../labs/mlops-supply-chain-labs/model-artifact-provenance-lab.md`
+- `../../templates/secure-mlops-review-template.md`
+- `../../templates/dataset-provenance-review-template.md`
+- `../../templates/model-artifact-risk-review-template.md`
+- `../../templates/model-registry-access-control-template.md`
+- `../../templates/ml-bom-template.md`

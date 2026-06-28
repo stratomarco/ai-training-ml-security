@@ -175,4 +175,25 @@ Updated capstone mapping:
 | `labs/brokenpilot/grading-rubric.md` | BrokenPilot-specific rubric. |
 | `templates/brokenpilot-final-report-template.md` | Final report template. |
 
-Next recommended module: Module 8 — Secure MLOps and AI Supply Chain.
+Next recommended module: Module 9 — Privacy Attacks and Data Protection.
+
+
+## Build status update — v0.10
+
+| Module | Status | Notes |
+|---|---|---|
+| 08 — Secure MLOps and AI Supply Chain | Complete | Added README, slides, instructor notes, student handout, Secure MLOps review exercise, checklist, quiz, references, broken ML pipeline lab, model artifact provenance lab, and supply chain templates. |
+
+Updated lab and template mapping:
+
+| Lab or template | Module | Purpose |
+|---|---|---|
+| `labs/mlops-supply-chain-labs/broken-ml-pipeline-lab.md` | 08 | Review dataset, notebook, dependency, training, registry, deployment, and feedback-loop supply chain risks. |
+| `labs/mlops-supply-chain-labs/model-artifact-provenance-lab.md` | 08 | Review model artifact trust, provenance, safe loading, registry metadata, and production promotion decisions. |
+| `templates/secure-mlops-review-template.md` | 08 | Standard deliverable format for Secure MLOps reviews. |
+| `templates/dataset-provenance-review-template.md` | 08 | Focused template for dataset source, lineage, sensitivity, and integrity review. |
+| `templates/model-artifact-risk-review-template.md` | 08 | Focused template for model artifact trust, loading, provenance, and promotion evidence. |
+| `templates/model-registry-access-control-template.md` | 08 | Registry RBAC and promotion approval design template. |
+| `templates/ml-bom-template.md` | 08 | ML bill-of-materials template covering code, data, model, prompt, RAG, evaluation, and deployment artifacts. |
+
+Next recommended module: Module 9 — Privacy Attacks and Data Protection.

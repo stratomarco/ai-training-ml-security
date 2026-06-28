@@ -29,3 +29,8 @@ This folder contains reusable Markdown templates for students and instructors.
 | [`tool-permission-matrix-template.md`](tool-permission-matrix-template.md) | Tool permission matrix. |
 | [`agent-action-approval-policy-template.md`](agent-action-approval-policy-template.md) | Risk-tiered approval policy. |
 | [`brokenpilot-final-report-template.md`](brokenpilot-final-report-template.md) | BrokenPilot final security review report. |
+| [`secure-mlops-review-template.md`](secure-mlops-review-template.md) | Secure MLOps and supply chain review. |
+| [`dataset-provenance-review-template.md`](dataset-provenance-review-template.md) | Dataset source, lineage, sensitivity, and integrity review. |
+| [`model-artifact-risk-review-template.md`](model-artifact-risk-review-template.md) | Model artifact trust, loading, integrity, and promotion review. |
+| [`model-registry-access-control-template.md`](model-registry-access-control-template.md) | Model registry RBAC and promotion controls. |
+| [`ml-bom-template.md`](ml-bom-template.md) | ML bill of materials for code, data, model, prompt, RAG, evaluation, and deployment artifacts. |
