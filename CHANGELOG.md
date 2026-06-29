@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1-dev — BrokenPilot test isolation fix
+
+- Added pytest test isolation for BrokenPilot control environment variables.
+- Documented how to reset PowerShell control toggles after manual validation.
+- This fixes test failures where a previous manual `$env:ENABLE_TOOL_AUTHZ="true"` session caused vulnerable-default tests to run in hardened mode.
+
+
 ## v1.1-dev — BrokenPilot prototype design
 
 Added a design package for the first minimal runnable BrokenPilot prototype. This is not a release tag and not the final implementation. It defines the MVP architecture, API contract, fake data plan, mock LLM mode, vulnerability implementation plan, control toggles, Docker Compose plan, student lab flow, instructor runbook, safety notes, and build backlog.

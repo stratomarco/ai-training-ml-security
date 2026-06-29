@@ -234,6 +234,37 @@ Invoke-RestMethod http://127.0.0.1:8010/reset -Method Post
 pytest
 ```
 
+## Troubleshooting test failures after manual validation
+
+The lab uses environment variables to switch between vulnerable and hardened modes.
+If you manually validate a control in PowerShell, for example:
+
+```powershell
+$env:ENABLE_TOOL_AUTHZ="true"
+```
+
+that variable can remain active in the same shell. The test suite now clears BrokenPilot control variables before each test so the documented default vulnerable mode remains deterministic.
+
+If manual testing behaves differently than expected, inspect the current controls:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8010/controls
+```
+
+To reset a PowerShell session manually:
+
+```powershell
+Remove-Item Env:ENABLE_RETRIEVAL_AUTHZ -ErrorAction SilentlyContinue
+Remove-Item Env:ENABLE_PROMPT_INJECTION_FILTER -ErrorAction SilentlyContinue
+Remove-Item Env:ENABLE_TOOL_AUTHZ -ErrorAction SilentlyContinue
+Remove-Item Env:ENABLE_TOOL_APPROVAL -ErrorAction SilentlyContinue
+Remove-Item Env:ENABLE_MEMORY_REVIEW -ErrorAction SilentlyContinue
+Remove-Item Env:ENABLE_MEMORY_ISOLATION -ErrorAction SilentlyContinue
+Remove-Item Env:ENABLE_AUDIT_LOG -ErrorAction SilentlyContinue
+```
+
+Then restart Uvicorn.
+
 ## Current limitations
 
 - Retrieval is keyword-based, not vector search.
