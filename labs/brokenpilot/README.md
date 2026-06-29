@@ -102,3 +102,52 @@ The expected outcome is not only that students can break the assistant. The expe
 | `final-presentation-guide.md` | Helps students prepare the final leadership and engineering readout. |
 | `evidence-log-guide.md` | Defines safe, useful evidence handling for capstone findings. |
 | `remediation-backlog-guide.md` | Converts findings into actionable engineering work. |
+
+## v1.1-dev prototype design
+
+The BrokenPilot capstone now includes a minimal runnable prototype design package. This is not the final application implementation yet; it defines the smallest useful local target to build next.
+
+| File | Purpose |
+|---|---|
+| [`prototype/README.md`](prototype/README.md) | Prototype goals, MVP scope, stack, and success criteria. |
+| [`prototype/architecture.md`](prototype/architecture.md) | MVP architecture, trust boundaries, request flow, and vulnerable/hardened modes. |
+| [`prototype/api-contract.md`](prototype/api-contract.md) | Proposed FastAPI endpoints and response shapes. |
+| [`prototype/fake-data-plan.md`](prototype/fake-data-plan.md) | Fake users, documents, tickets, config items, and memory fixtures. |
+| [`prototype/mock-llm-mode.md`](prototype/mock-llm-mode.md) | Deterministic mock LLM behavior for repeatable labs. |
+| [`prototype/vulnerability-implementation-plan.md`](prototype/vulnerability-implementation-plan.md) | First five MVP vulnerabilities and expected mitigations. |
+| [`prototype/control-toggle-plan.md`](prototype/control-toggle-plan.md) | Control toggles for comparing vulnerable and hardened behavior. |
+| [`prototype/docker-compose-plan.md`](prototype/docker-compose-plan.md) | Local Docker Compose plan. |
+| [`prototype/student-lab-flow.md`](prototype/student-lab-flow.md) | Student workflow for the future runnable prototype. |
+| [`prototype/instructor-runbook.md`](prototype/instructor-runbook.md) | Instructor delivery guidance for prototype-backed labs. |
+| [`prototype/security-and-safety.md`](prototype/security-and-safety.md) | Local-only safety rules. |
+| [`prototype/build-backlog.md`](prototype/build-backlog.md) | Implementation backlog for the future app. |
+
+
+
+## Runnable MVP prototype
+
+The first minimal runnable BrokenPilot prototype is available at:
+
+```text
+labs/brokenpilot/prototype-app/
+```
+
+It currently implements a small FastAPI app with fake data, deterministic mock LLM behavior, keyword retrieval, vulnerable defaults, and control toggles for retrieval authorization and prompt-injection filtering.
+
+Start with:
+
+```powershell
+cd labs\brokenpilot\prototype-app
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+```
+
+
+## Runnable prototype tool-calling lab
+
+The `prototype-app` now includes a dedicated tool-calling lab covering confused-deputy behavior, cross-tenant ticket updates, tool authorization, approval gates, and audit logging.
+
+- Source lab: `labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md`
+- Website lab: `docs/labs/brokenpilot/prototype-app/tool-calling-lab.md`

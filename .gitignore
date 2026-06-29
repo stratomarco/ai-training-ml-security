@@ -11,3 +11,4 @@ site/
 Thumbs.db
 .vscode/
 .idea/
+.env

@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.1-dev — BrokenPilot prototype design
+
+Added a design package for the first minimal runnable BrokenPilot prototype. This is not a release tag and not the final implementation. It defines the MVP architecture, API contract, fake data plan, mock LLM mode, vulnerability implementation plan, control toggles, Docker Compose plan, student lab flow, instructor runbook, safety notes, and build backlog.
+
+Added files under:
+
+- `labs/brokenpilot/prototype/`
+- `docs/labs/brokenpilot/prototype/`
+
+This work moves the capstone from a paper-only design toward a runnable local target.
+
+
 ## Unreleased — v1.1-dev DVAIA validation
 
 ### Added
@@ -232,3 +244,23 @@ The project uses a curriculum-oriented versioning model:
 
 Added validated DVAIA-backed walkthroughs for Module 05 direct prompt injection, Module 06 indirect prompt injection/RAG trust boundaries, Module 07 agent/tool behavior, and Module 11 mini red-team assessment. Added a reusable DVAIA evidence log template and updated DVAIA lab guide navigation.
 
+
+## v1.1-dev — BrokenPilot runnable MVP
+
+Added the first minimal runnable BrokenPilot prototype.
+
+Implemented:
+
+- FastAPI local application
+- static browser UI
+- fake users, documents, and tickets
+- keyword retrieval
+- deterministic mock LLM behavior
+- vulnerable default mode
+- retrieval authorization control toggle
+- prompt-injection filtering control toggle
+- Dockerfile and Docker Compose
+- pytest smoke tests
+- lab guide for cross-document authorization and indirect prompt injection
+
+This is not a full BrokenPilot implementation yet. It is the first testable MVP for turning the capstone from a paper-only exercise into a runnable local assessment target.

@@ -218,6 +218,23 @@ nav:
       - "BrokenPilot Attack Paths": labs/brokenpilot/attack-paths.md
       - "BrokenPilot Vulnerabilities": labs/brokenpilot/vulnerabilities.md
       - "BrokenPilot Prototype Plan": labs/brokenpilot/prototype-plan.md
+      - "BrokenPilot Prototype MVP":
+          - "Overview": labs/brokenpilot/prototype/README.md
+          - "Architecture": labs/brokenpilot/prototype/architecture.md
+          - "API Contract": labs/brokenpilot/prototype/api-contract.md
+          - "Fake Data Plan": labs/brokenpilot/prototype/fake-data-plan.md
+          - "Mock LLM Mode": labs/brokenpilot/prototype/mock-llm-mode.md
+          - "Vulnerability Implementation Plan": labs/brokenpilot/prototype/vulnerability-implementation-plan.md
+          - "Control Toggle Plan": labs/brokenpilot/prototype/control-toggle-plan.md
+          - "Docker Compose Plan": labs/brokenpilot/prototype/docker-compose-plan.md
+          - "Student Lab Flow": labs/brokenpilot/prototype/student-lab-flow.md
+          - "Instructor Runbook": labs/brokenpilot/prototype/instructor-runbook.md
+          - "Safety Notes": labs/brokenpilot/prototype/security-and-safety.md
+          - "Build Backlog": labs/brokenpilot/prototype/build-backlog.md
+      - "BrokenPilot Runnable MVP":
+          - "Overview": labs/brokenpilot/prototype-app/README.md
+          - "Lab Guide": labs/brokenpilot/prototype-app/lab-guide.md
+          - "Tool Calling Lab": labs/brokenpilot/prototype-app/tool-calling-lab.md
       - "BrokenPilot Worked Examples":
           - "Overview": labs/brokenpilot/worked-examples/README.md
           - "Strong Threat Model": labs/brokenpilot/worked-examples/strong-threat-model-example.md

@@ -199,3 +199,62 @@ The following items should be verified before tagging `v1.0.0`:
 - [ ] Add maintainers file if public.
 - [ ] Add contribution labels.
 - [ ] Add first GitHub release.
+
+### v1.2-dev — BrokenPilot prototype design
+
+- [x] Minimal runnable prototype goals
+- [x] MVP architecture and trust boundaries
+- [x] API contract
+- [x] Fake data plan
+- [x] Deterministic mock LLM mode
+- [x] Vulnerability implementation plan
+- [x] Control toggle plan
+- [x] Docker Compose plan
+- [x] Student lab flow
+- [x] Instructor runbook
+- [x] Safety notes
+- [x] Prototype build backlog
+
+Next implementation target:
+
+- [ ] Create FastAPI skeleton
+- [ ] Add fake data fixtures
+- [ ] Add `/health`, `/users`, `/retrieve`, and `/chat`
+- [ ] Add mock LLM provider
+- [ ] Add first vulnerable indirect prompt injection path
+
+
+
+## BrokenPilot prototype implementation status
+
+The first minimal runnable BrokenPilot prototype has been implemented under:
+
+```text
+labs/brokenpilot/prototype-app/
+```
+
+Implemented:
+
+- FastAPI app
+- static local UI
+- fake users/documents/tickets
+- keyword retrieval
+- deterministic mock LLM
+- vulnerable default mode
+- retrieval authorization toggle
+- prompt-injection filtering toggle
+- Dockerfile and Docker Compose
+- pytest smoke tests
+
+Next implementation increments:
+
+1. Add tool-calling endpoint and confused-deputy tool misuse scenario.
+2. Add memory endpoint and memory-poisoning scenario.
+3. Add persistent audit log export.
+4. Add challenge mode with controls partially enabled.
+5. Add instructor solution scripts.
+
+
+## BrokenPilot tool-calling increment
+
+The runnable BrokenPilot prototype now includes a deterministic tool-calling scenario for Module 07 and the capstone. It demonstrates a confused-deputy failure through `/tools/update-ticket` and `/agent/run`, plus control toggles for tool authorization and approval gates.

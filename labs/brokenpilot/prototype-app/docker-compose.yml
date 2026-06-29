@@ -1,0 +1,10 @@
+services:
+  brokenpilot:
+    build: .
+    container_name: brokenpilot-prototype
+    ports:
+      - "8010:8010"
+    environment:
+      ENABLE_RETRIEVAL_AUTHZ: ${ENABLE_RETRIEVAL_AUTHZ:-false}
+      ENABLE_PROMPT_INJECTION_FILTER: ${ENABLE_PROMPT_INJECTION_FILTER:-false}
+      ENABLE_AUDIT_LOG: ${ENABLE_AUDIT_LOG:-true}

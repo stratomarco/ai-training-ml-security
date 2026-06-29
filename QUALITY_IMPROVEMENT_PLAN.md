@@ -108,11 +108,20 @@ Module 10 needs more worked examples because adversarial ML can otherwise feel a
 
 ### v1.2-dev — BrokenPilot prototype design
 
-- Prototype architecture
-- API contract
-- Fake data model
-- Vulnerability implementation plan
-- Safe local deployment plan
+Status: **Initial design package complete.**
+
+- Prototype architecture — done
+- API contract — done
+- Fake data model — done
+- Mock LLM mode — done
+- Vulnerability implementation plan — done
+- Control toggle plan — done
+- Safe local deployment plan — done
+- Student lab flow — done
+- Instructor runbook — done
+- Build backlog — done
+
+Next step: implement the smallest FastAPI skeleton that can start locally, load fake data, and expose `/health`, `/users`, `/retrieve`, and `/chat`.
 
 ### v1.3-dev — Worked examples and grading anchors
 
@@ -168,3 +177,36 @@ git checkout -b v1.1-dev-testable-labs
 ```
 
 Merge to `main` only after the website builds and the new documentation is internally consistent.
+
+
+## BrokenPilot minimal runnable prototype — first MVP implemented
+
+The first BrokenPilot runnable MVP now exists under:
+
+```text
+labs/brokenpilot/prototype-app/
+```
+
+This closes the initial gap between the paper capstone and a runnable assessment target. The MVP is intentionally small: it validates the architecture and teaching flow before adding tools, memory, vector databases, or real model providers.
+
+Current MVP coverage:
+
+- retrieval authorization failure
+- indirect prompt injection through retrieved content
+- deterministic vulnerable/controlled behavior
+- local UI and API
+- Docker support
+- pytest smoke tests
+
+Remaining prototype work:
+
+- tool confused-deputy scenario
+- memory poisoning scenario
+- stronger audit evidence workflow
+- instructor demo scripts
+- optional vector database mode
+
+
+## BrokenPilot tool-calling increment
+
+The runnable BrokenPilot prototype now includes a deterministic tool-calling scenario for Module 07 and the capstone. It demonstrates a confused-deputy failure through `/tools/update-ticket` and `/agent/run`, plus control toggles for tool authorization and approval gates.
