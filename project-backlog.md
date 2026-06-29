@@ -271,3 +271,18 @@ The runnable BrokenPilot prototype now includes a deterministic tool-calling sce
 - Added Module 07 memory validation material.
 - Added prototype memory poisoning lab guide.
 - Added tests for vulnerable and controlled memory behavior.
+
+## BrokenPilot worked examples expansion
+
+Completed:
+
+- [x] Add strong and weak tool permission matrix examples
+- [x] Add strong and weak evidence log examples
+- [x] Add strong and weak remediation backlog examples
+- [x] Mirror examples into MkDocs website content
+- [x] Add examples to MkDocs navigation
+
+Next:
+
+- [ ] Add instructor grading calibration guide using the worked examples
+- [ ] Add one complete sample final report assembled from the strong examples

@@ -223,3 +223,19 @@ The runnable BrokenPilot prototype now includes a deterministic tool-calling sce
 - Added Module 07 memory validation material.
 - Added prototype memory poisoning lab guide.
 - Added tests for vulnerable and controlled memory behavior.
+
+## BrokenPilot worked examples expansion
+
+The capstone now includes additional strong/weak examples for deliverables that were previously under-specified:
+
+- tool permission matrix
+- evidence log
+- remediation backlog
+
+These examples support grading calibration and raise the quality bar from "identify the issue" to "produce implementable security work."
+
+## Module 07 defense-in-depth validation note
+
+Module 07 now records an important validation lesson from local testing: memory poisoning can influence the agent's attempted action, while independent tool authorization can still block unsafe cross-tenant execution.
+
+This is now documented as a teaching point in the memory poisoning validation page.

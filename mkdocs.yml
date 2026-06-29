@@ -244,6 +244,12 @@ nav:
           - "Weak Threat Model": labs/brokenpilot/worked-examples/weak-threat-model-example.md
           - "Strong Risk Register": labs/brokenpilot/worked-examples/strong-risk-register-example.md
           - "Weak Risk Register": labs/brokenpilot/worked-examples/weak-risk-register-example.md
+          - "Strong Tool Permission Matrix": labs/brokenpilot/worked-examples/strong-tool-permission-matrix-example.md
+          - "Weak Tool Permission Matrix": labs/brokenpilot/worked-examples/weak-tool-permission-matrix-example.md
+          - "Strong Evidence Log": labs/brokenpilot/worked-examples/strong-evidence-log-example.md
+          - "Weak Evidence Log": labs/brokenpilot/worked-examples/weak-evidence-log-example.md
+          - "Strong Remediation Backlog": labs/brokenpilot/worked-examples/strong-remediation-backlog-example.md
+          - "Weak Remediation Backlog": labs/brokenpilot/worked-examples/weak-remediation-backlog-example.md
           - "Strong Executive Readout": labs/brokenpilot/worked-examples/strong-executive-readout-example.md
           - "Weak Executive Readout": labs/brokenpilot/worked-examples/weak-executive-readout-example.md
   - Templates:

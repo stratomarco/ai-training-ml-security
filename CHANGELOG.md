@@ -1,5 +1,20 @@
 # Changelog
 
+
+## v1.1-dev — BrokenPilot worked examples and Module 07 validation refinement
+
+### Added
+
+- Added strong and weak BrokenPilot tool permission matrix examples.
+- Added strong and weak BrokenPilot evidence log examples.
+- Added strong and weak BrokenPilot remediation backlog examples.
+- Mirrored worked examples into the MkDocs website content.
+
+### Changed
+
+- Updated Module 07 memory poisoning validation to document defense-in-depth behavior observed during local testing: memory poisoning can influence an attempted action, while independent tool authorization can still block the unsafe cross-tenant tool call.
+- Updated MkDocs navigation for the expanded BrokenPilot worked examples.
+
 ## v1.1-dev — BrokenPilot test isolation fix
 
 - Added pytest test isolation for BrokenPilot control environment variables.
