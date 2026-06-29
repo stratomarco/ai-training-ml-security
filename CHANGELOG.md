@@ -8,6 +8,17 @@ The project uses a curriculum-oriented versioning model:
 - `v1.0.0` represents the first complete teachable curriculum.
 - Later versions should document content changes, new labs, corrections, and major restructuring.
 
+## v1.0.0-rc2 — Review cleanup
+
+### Fixed
+
+- Removed incremental build-status notes from `README.md`, `syllabus.md`, and `course-map.md`.
+- Updated Module 01 NIST adversarial ML reference from the old e2023 draft to NIST AI 100-2 E2025.
+- Updated OWASP LLM02:2025 Sensitive Information Disclosure links to the current OWASP GenAI page.
+- Updated Module 05 OWASP LLM framing to 2025 numbering and added an explicit note about 2023/2024 renumbering.
+- Added missing primary URLs to Module 08 Secure MLOps references.
+- Clarified that OWASP Agentic Skills Top 10 is supplementary to the Agentic Applications Top 10 risk framing.
+
 ## v1.0.0-rc — Release candidate
 
 ### Added

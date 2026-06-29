@@ -2,13 +2,15 @@
 
 ## Primary references
 
-- NIST SP 800-218 — Secure Software Development Framework (SSDF)
-- NIST AI Risk Management Framework and Generative AI Profile
-- OWASP Machine Learning Security Top 10 — ML06: AI Supply Chain Attacks
-- OWASP Top 10 for Large Language Model Applications — supply chain, sensitive information disclosure, excessive agency, model theft
-- SLSA — Supply-chain Levels for Software Artifacts
-- MITRE ATLAS — adversarial AI tactics and techniques
-- BIML — ML and LLM architectural risk analysis
+- NIST SP 800-218 — Secure Software Development Framework (SSDF): https://csrc.nist.gov/publications/detail/sp/800-218/final
+- NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
+- NIST AI RMF Generative AI Profile, NIST AI 600-1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+- OWASP Machine Learning Security Top 10 — ML06: AI Supply Chain Attacks: https://owasp.org/www-project-machine-learning-security-top-10/
+- OWASP Top 10 for Large Language Model Applications: https://www.owasp.org/www-project-top-10-for-large-language-model-applications/
+- SLSA — Supply-chain Levels for Software Artifacts: https://slsa.dev/
+- MITRE ATLAS — adversarial AI tactics and techniques: https://atlas.mitre.org/
+- BIML — ML and LLM architectural risk analysis: https://berryvilleiml.com/
+- BIML — Architectural Risk Analysis of Large Language Models: https://berryvilleiml.com/docs/BIML-LLM24.pdf
 
 ## Concepts to connect
 

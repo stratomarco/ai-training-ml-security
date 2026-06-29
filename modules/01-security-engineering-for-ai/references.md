@@ -34,8 +34,8 @@ This module intentionally combines classic security engineering with AI-specific
 - NIST AI 600-1 — Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile  
   https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 
-- NIST AI 100-2e2023 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations  
-  https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf
+- NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations  
+  https://csrc.nist.gov/pubs/ai/100/2/e2025/final
 
 - MITRE ATLAS  
   https://atlas.mitre.org/

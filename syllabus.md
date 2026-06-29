@@ -131,70 +131,16 @@ Students should be assessed on:
 
 The goal is not to reward only exploitation. The goal is to reward complete security judgment.
 
-
-## v0.8 curriculum status
-
-Modules 01–07 became complete teaching packages. Module 07 added agent and tool security, including excessive agency, tool misuse, memory poisoning, approval gates, sandboxing, auditability, and agent control design.
-
-
-## v0.9 update
-
-The BrokenPilot capstone paper design is now complete. This includes scenario, architecture, roles, data model, tools, vulnerability list, attack paths, student brief, instructor solution guide, secure reference architecture, grading rubric, implementation notes, and module mapping.
-
-The next recommended build step is Module 11 — AI Red Team Methodology.
-
-
-## v0.10 update
-
-Module 08 — Secure MLOps and AI Supply Chain is now complete. It adds training material for datasets, labels, notebooks, dependencies, training infrastructure, model artifacts, registries, provenance, promotion gates, feedback-loop security, and ML-BOM thinking.
-
-The next recommended build step is Module 11 — AI Red Team Methodology.
-
-
-## v0.11 update
-
-Module 09 — Privacy Attacks and Data Protection is now complete. It adds training material for membership inference, model inversion, training data extraction, prompt and completion leakage, log leakage, embedding leakage, vector database exposure, cross-tenant retrieval, agent memory leakage, feedback-loop reuse, retention, deletion, and privacy risk assessment.
-
-The next recommended build step is Module 11 — AI Red Team Methodology.
-
-
-## v0.12 update
-
-Module 10 — Adversarial ML and Robustness is now complete. It adds training material for evasion, poisoning, backdoors, trigger-based behavior, distribution shift, concept drift, confidence calibration, robustness testing, fallback behavior, monitoring, incident response, and secure retraining.
-
-The next recommended build step is Module 11 — AI Red Team Methodology.
-
-
 ## Current status
 
-Current working version: v1.0 release candidate. Modules 01–12 have complete teaching packages, and the BrokenPilot capstone is ready for v1.0 release review.
+Current working version: **v1.0 release candidate**. Modules 01–12 have complete teaching packages, and the BrokenPilot capstone is ready for v1.0 release review.
 
+## Post-v1.0 roadmap
 
-## v0.13 update — Module 11 complete
+After the first release, the recommended next milestones are:
 
-Module 11 — AI Red Team Methodology is complete. It covers scope, rules of engagement, safety boundaries, system understanding, threat modeling, attack planning, controlled testing, evidence collection, severity scoring, reporting, remediation, executive readout, and residual risk.
-
-The module includes labs for AI red team scoping and BrokenPilot attack-chain planning, plus templates for scope, attack plans, full reports, executive readouts, and grading.
-
-
-## v0.14 update — Module 12 complete
-
-Module 12 — BrokenPilot Capstone is now complete as a full teaching package.
-
-Added:
-
-- Capstone slides
-- Instructor notes
-- Student handout
-- Threat-modeling exercise
-- Red team and mitigation-design exercise
-- Capstone checklist
-- Quiz and answer key
-- Expanded capstone runbook
-- Final presentation guide
-- Evidence log guide
-- Remediation backlog guide
-- BrokenPilot-specific templates
-- Final capstone assessment rubric
-
-The course now has complete teaching packages for Modules 01–12. The next milestone is v1.0 release readiness: consistency review, reference review, license review, and optional public-release cleanup.
+1. Convert the Markdown curriculum into a navigable MkDocs website.
+2. Expand selected DVAIA lab wrappers after local testing.
+3. Build BrokenPilot as a runnable local vulnerable lab application.
+4. Add optional rendered slides while keeping Markdown as the source of truth.
+5. Add more instructor examples from real architecture reviews and red-team reports.

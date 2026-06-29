@@ -10,7 +10,8 @@ This file contains the initial reference spine for the course.
 - OWASP LLM Top 10 latest archive: https://genai.owasp.org/llm-top-10/
 - OWASP Top 10 for Agentic Applications 2026: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
 - OWASP Agentic AI Threats and Mitigations: https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/
-- OWASP Agentic Skills Top 10: https://owasp.org/www-project-agentic-skills-top-10/
+- OWASP Agentic Skills Top 10: https://owasp.org/www-project-agentic-skills-top-10/  
+  Supplementary reference: this project focuses on agent capability patterns/skills. Module 07 primarily uses the OWASP Top 10 for Agentic Applications 2026 for risk framing.
 - MITRE ATLAS: https://atlas.mitre.org/
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
 - NIST AI RMF Generative AI Profile, NIST AI 600-1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
@@ -156,7 +157,7 @@ Module 08 uses these references to connect conventional secure development and s
 - NIST Privacy Framework: https://www.nist.gov/privacy-framework
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
 - NIST AI RMF Generative AI Profile, NIST AI 600-1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
-- OWASP LLM02:2025 Sensitive Information Disclosure: https://genai.owasp.org/llmrisk/llm02-insecure-output-handling/
+- OWASP LLM02:2025 Sensitive Information Disclosure: https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/
 - OWASP ML03:2023 Model Inversion Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML03_2023-Model_Inversion_Attack
 - OWASP ML04:2023 Membership Inference Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML04_2023-Membership_Inference_Attack
 - OWASP Machine Learning Security Top 10: https://owasp.org/www-project-machine-learning-security-top-10/

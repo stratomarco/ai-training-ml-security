@@ -84,20 +84,20 @@ By the end of this module, students should be able to:
 
 ## OWASP LLM risk framing
 
-This module primarily maps to the OWASP Top 10 for LLM Applications, including:
+This module primarily maps to the OWASP Top 10 for LLM Applications. The 2025 OWASP LLM Top 10 uses the following numbering:
 
 - LLM01: Prompt Injection
-- LLM02: Insecure Output Handling
-- LLM03: Training Data Poisoning
-- LLM04: Model Denial of Service
-- LLM05: Supply Chain Vulnerabilities
-- LLM06: Sensitive Information Disclosure
-- LLM07: Insecure Plugin/Tool Design or related tool-use risks depending on version
-- LLM08: Excessive Agency
-- LLM09: Overreliance
-- LLM10: Model Theft
+- LLM02: Sensitive Information Disclosure
+- LLM03: Supply Chain
+- LLM04: Data and Model Poisoning
+- LLM05: Improper Output Handling
+- LLM06: Excessive Agency
+- LLM07: System Prompt Leakage
+- LLM08: Vector and Embedding Weaknesses
+- LLM09: Misinformation
+- LLM10: Unbounded Consumption
 
-The exact category labels may evolve across OWASP versions. The engineering lesson should not depend on memorizing numbering. Students should learn the underlying failure modes.
+The 2023/2024 OWASP LLM release used different numbering for several categories, including insecure output handling, sensitive information disclosure, excessive agency, and overreliance/model-theft-related themes. The engineering lesson should not depend on memorizing numbering. Students should learn the underlying failure modes and check the current OWASP GenAI project when producing reports.
 
 ## Lab
 
