@@ -114,6 +114,14 @@ Students review and exploit a vulnerable internal operations agent that can:
 
 The goal is not to attack real systems. The lab uses local fake data and simulated tools.
 
+### Validated BrokenPilot tool exercise
+
+The BrokenPilot prototype now includes a validated hands-on Module 07 exercise for tool confused-deputy behavior.
+
+The validated scenario shows that Alice, an `alpha` tenant ops user, can update `TCK-2001`, a `beta` tenant ticket, when `ENABLE_TOOL_AUTHZ=false`. The same request is blocked with HTTP `403` and `tool_authorization_denied` when `ENABLE_TOOL_AUTHZ=true`.
+
+Use `brokenpilot-tool-validation.md` as the Module 07 validation record and teaching anchor. The detailed lab steps remain in `../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md`.
+
 ## Deliverable
 
 Students produce an **agent control design** containing:
@@ -136,9 +144,12 @@ Students produce an **agent control design** containing:
 - `checklist.md` — agent security checklist
 - `quiz.md` — quiz and answer key
 - `references.md` — module-specific references
+- `brokenpilot-tool-validation.md` — validated BrokenPilot tool authorization scenario
 
 ## Related labs and templates
 
+- `brokenpilot-tool-validation.md`
+- `../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md`
 - `../../labs/agent-labs/agent-tool-misuse-lab.md`
 - `../../labs/agent-labs/memory-poisoning-approval-gates-lab.md`
 - `../../templates/agent-control-design-template.md`

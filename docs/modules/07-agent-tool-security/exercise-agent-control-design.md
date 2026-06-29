@@ -246,3 +246,18 @@ Your design should include:
 8. Logging and monitoring
 9. Kill switch and rollback
 10. Residual risk
+
+## Validated hands-on extension — BrokenPilot tool authorization
+
+After completing the design exercise, run the BrokenPilot prototype tool-calling lab and compare your design against the implemented control.
+
+Use:
+
+- `brokenpilot-tool-validation.md` for the validated Module 07 scenario;
+- `../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md` for hands-on steps.
+
+The required validation question is:
+
+> Does the same cross-tenant ticket update succeed in vulnerable mode and fail after `ENABLE_TOOL_AUTHZ=true`?
+
+Students should add both observations to their deliverable. A complete answer must include the vulnerable result, the controlled result, and the security property enforced by the control.

@@ -15,7 +15,7 @@ In the default vulnerable configuration, Alice can update the Beta ticket throug
 ## Start the app
 
 ```powershell
-cd labsrokenpilot\prototype-app
+cd labs\brokenpilot\prototype-app
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
 ```
 
@@ -162,3 +162,8 @@ Write one finding with:
 Recommended title:
 
 > Tool confused-deputy allows cross-tenant ticket updates
+
+
+## Validation record
+
+The validated Module 07 record is maintained in `../../modules/07-agent-tool-security/brokenpilot-tool-validation.md` in the course source and `docs/modules/07-agent-tool-security/brokenpilot-tool-validation.md` in the website mirror.

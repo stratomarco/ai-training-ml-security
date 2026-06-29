@@ -54,7 +54,7 @@ Do not connect this prototype to real systems or real data.
 From the repository root:
 
 ```powershell
-cd labsrokenpilot\prototype-app
+cd labs\brokenpilot\prototype-app
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
@@ -71,7 +71,7 @@ http://127.0.0.1:8010
 ## Run with Docker Compose
 
 ```powershell
-cd labsrokenpilot\prototype-app
+cd labs\brokenpilot\prototype-app
 docker compose up --build
 ```
 

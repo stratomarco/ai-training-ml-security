@@ -182,3 +182,24 @@ For senior students, extend the exercise into:
 Keep the lab local and fake-data only. Students can safely explore goal hijacking, tool misuse, and memory poisoning without touching real systems.
 
 The goal is not to teach students to attack production agents. The goal is to teach them how to design, review, and test agentic systems responsibly.
+
+## Validated BrokenPilot tool authorization demo
+
+Use `brokenpilot-tool-validation.md` as the validated demo anchor for this module.
+
+Recommended delivery flow:
+
+1. Explain the confused-deputy pattern before showing the app.
+2. Show Alice's tenant and the target ticket's tenant.
+3. Run the vulnerable request with `ENABLE_TOOL_AUTHZ=false`.
+4. Ask students which security property was violated.
+5. Restart with `ENABLE_TOOL_AUTHZ=true`.
+6. Repeat the same request.
+7. Show the `403` response and the reason fields.
+8. Ask students why the control belongs in the tool or policy layer rather than the prompt.
+
+Expected student insight:
+
+> The model may propose or trigger an action, but authorization must be enforced at the action boundary.
+
+This demo can be used in a short format because it has a clear before/after result and does not require students to complete the entire BrokenPilot capstone.

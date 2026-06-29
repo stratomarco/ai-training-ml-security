@@ -258,3 +258,9 @@ Next implementation increments:
 ## BrokenPilot tool-calling increment
 
 The runnable BrokenPilot prototype now includes a deterministic tool-calling scenario for Module 07 and the capstone. It demonstrates a confused-deputy failure through `/tools/update-ticket` and `/agent/run`, plus control toggles for tool authorization and approval gates.
+
+## Module 07 validation consolidation
+
+- Moved the BrokenPilot tool authorization validation record into Module 07 to avoid duplicate validation documentation.
+- Added a Module 07 validation page for the cross-tenant tool confused-deputy scenario.
+- Linked the validated scenario from the Module 07 overview, exercise, instructor notes, and MkDocs navigation.

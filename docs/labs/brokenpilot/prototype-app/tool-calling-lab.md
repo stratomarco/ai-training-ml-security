@@ -15,7 +15,7 @@ In the default vulnerable configuration, Alice can update the Beta ticket throug
 ## Start the app
 
 ```powershell
-cd labsrokenpilot\prototype-app
+cd labs\brokenpilot\prototype-app
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
 ```
 

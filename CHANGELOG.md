@@ -264,3 +264,9 @@ Implemented:
 - lab guide for cross-document authorization and indirect prompt injection
 
 This is not a full BrokenPilot implementation yet. It is the first testable MVP for turning the capstone from a paper-only exercise into a runnable local assessment target.
+
+## Module 07 validation consolidation
+
+- Moved the BrokenPilot tool authorization validation record into Module 07 to avoid duplicate validation documentation.
+- Added a Module 07 validation page for the cross-tenant tool confused-deputy scenario.
+- Linked the validated scenario from the Module 07 overview, exercise, instructor notes, and MkDocs navigation.

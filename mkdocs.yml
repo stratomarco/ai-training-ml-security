@@ -150,6 +150,7 @@ nav:
           - "References": modules/07-agent-tool-security/references.md
           - "Exercise": modules/07-agent-tool-security/exercise-agent-control-design.md
           - "Executive Risk Memo Exercise": modules/07-agent-tool-security/exercise-executive-risk-memo.md
+          - "BrokenPilot Tool Validation": modules/07-agent-tool-security/brokenpilot-tool-validation.md
       - "08 — Secure MLOps and AI Supply Chain":
           - "Overview": modules/08-secure-mlops-supply-chain/README.md
           - "Slides": modules/08-secure-mlops-supply-chain/slides.md
