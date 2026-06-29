@@ -2,7 +2,7 @@
 
 **Security engineering for systems that contain machine learning.**
 
-This repository contains a GitHub-ready curriculum for practical ML, LLM, RAG, and agent security training. The goal is not to reinvent software security. The goal is to apply strong security engineering foundations to systems where models, datasets, prompts, retrieval pipelines, tools, and autonomous workflows become part of the attack surface.
+This repository contains a GitHub-ready and MkDocs-ready curriculum for practical ML, LLM, RAG, and agent security training. The goal is not to reinvent software security. The goal is to apply strong security engineering foundations to systems where models, datasets, prompts, retrieval pipelines, tools, and autonomous workflows become part of the attack surface.
 
 This training is designed for security engineers, AppSec teams, ML engineers, platform engineers, architects, security champions, red teams, and engineering leaders.
 
@@ -45,42 +45,61 @@ Students learn how to:
 - Design mitigations that balance security, usability, and developer velocity
 - Produce useful engineering deliverables: threat models, risk registers, red-team reports, secure architecture reviews, and residual-risk statements
 
+## Website edition
+
+The repository now includes a MkDocs Material website layer. The website turns the Markdown curriculum into a browsable training portal with navigation, search, module pages, lab setup pages, templates, and release documentation.
+
+Preview locally:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+mkdocs serve
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000
+```
+
+GitHub Pages deployment is configured through `.github/workflows/deploy-docs.yml`. In GitHub, set **Settings → Pages → Source** to **GitHub Actions**.
+
 ## Repository structure
 
 ```text
 ai-training-ml-security/
 ├── README.md
-├── syllabus.md
-├── course-map.md
-├── references.md
+├── mkdocs.yml
+├── requirements.txt
 ├── CHANGELOG.md
 ├── RELEASE_CHECKLIST.md
 ├── SECURITY.md
 ├── CODE_OF_CONDUCT.md
 ├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   ├── workflows/
+│   │   └── deploy-docs.yml
+│   └── pull_request_template.md
+├── docs/
+│   ├── index.md
+│   ├── start-here/
+│   ├── lab-setup/
+│   ├── modules/
+│   ├── labs/
+│   ├── templates/
+│   ├── instructor/
+│   ├── assessments/
+│   └── releases/
 ├── modules/
-│   ├── 01-security-engineering-for-ai/
-│   ├── 02-ml-system-architecture/
-│   ├── 03-owasp-ml-top-10/
-│   ├── 04-biml-architectural-risk-analysis/
-│   ├── 05-llm-application-security/
-│   ├── 06-rag-security/
-│   ├── 07-agent-tool-security/
-│   ├── 08-secure-mlops-supply-chain/
-│   ├── 09-privacy-attacks/
-│   ├── 10-adversarial-ml-robustness/
-│   ├── 11-ai-red-team-methodology/
-│   └── 12-capstone-brokenpilot/
 ├── labs/
-│   ├── dvaia-guides/
-│   ├── rag-labs/
-│   ├── agent-labs/
-│   ├── toy-ml-attacks/
-│   └── brokenpilot/
 ├── templates/
 ├── instructor/
 └── assessments/
 ```
+
+The `docs/` directory is the MkDocs website source. The root-level `modules/`, `labs/`, `templates/`, `instructor/`, and `assessments/` directories are preserved for repository browsing and compatibility with the v1.0 structure.
 
 ## Build order
 
@@ -121,7 +140,7 @@ Review the license text before making the repository public.
 
 ## Course status
 
-Current working version: **v1.0 release candidate**. Modules 01–12 have complete teaching packages, the BrokenPilot capstone is ready to teach, and the repository includes release-readiness material for a first public or private tagged release.
+Current working version: **v1.1 website edition draft**. Modules 01–12 have complete teaching packages, the BrokenPilot capstone is ready to teach, and the repository includes release-readiness material and a MkDocs Material website layer for local preview and GitHub Pages publishing.
 
 | Module | Status | Notes |
 |---|---|---|
