@@ -131,12 +131,14 @@ Labs should be local, controlled, fake-data environments. The goal is to teach s
 
 ## License
 
-The current repository includes `LICENSE.md` with a practical split-license model:
+This repository uses a non-commercial split-license model:
 
-- Training content: Creative Commons Attribution 4.0 style terms.
-- Future code/labs: Apache 2.0 or MIT can be added when code is introduced.
+- Course content: **CC BY-NC-SA 4.0**.
+- Original code and runnable labs: **PolyForm Noncommercial 1.0.0**.
+- Internal organizational learning is permitted when attribution is preserved and the material is not sold, productized, or delivered as a paid external offering.
+- Commercial use, resale, paid workshops, paid platforms, and paid consulting delivery require prior written permission.
 
-Review the license text before making the repository public.
+See `LICENSE.md`, `LICENSE-CONTENT.md`, `LICENSE-CODE.md`, and `COMMERCIAL-LICENSE.md`.
 
 ## Course status
 

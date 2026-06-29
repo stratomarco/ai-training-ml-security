@@ -56,3 +56,21 @@ Good AI security asks:
 8. What is logged?
 9. What happens when the model is wrong?
 10. What risk remains after controls?
+
+## Reading orientation
+
+The references in this course are not decorative. They are intended to shape how students reason.
+
+- Use Gary McGraw to think about building security in instead of bolting security on.
+- Use Ross Anderson to remember that real systems fail because of incentives, operations, users, economics, and integration mistakes.
+- Use Adam Shostack to make threat modeling practical and repeatable.
+- Use Saltzer and Schroeder to evaluate whether a proposed AI control is really enforcing a security property.
+- Use Aumasson and applied cryptography references when discussing provenance, signing, secrets, keys, and artifact integrity.
+- Use BIML to review AI systems at the architecture level before running payloads.
+- Use OWASP to communicate common practitioner risk categories.
+- Use NIST to connect technical controls to governance and risk management.
+- Use MITRE ATLAS to describe adversarial AI tactics and techniques consistently.
+
+## Practical rule
+
+When writing or teaching a module, do not stop at “this is an OWASP risk.” Explain the engineering failure that makes the risk possible.

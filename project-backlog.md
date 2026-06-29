@@ -284,5 +284,21 @@ Completed:
 
 Next:
 
-- [ ] Add instructor grading calibration guide using the worked examples
+- [x] Add instructor grading calibration guide using the worked examples
 - [ ] Add one complete sample final report assembled from the strong examples
+
+
+## Next capstone quality improvements
+
+- [ ] Add assembled sample BrokenPilot final report using the strong examples.
+- [ ] Add instructor demo script for BrokenPilot prototype.
+- [ ] Add grading calibration checklist to capstone runbook.
+
+## Content depth backlog
+
+- Add `deep-dive.md` to Module 05.
+- Add `attack-anatomy.md` to Module 06.
+- Add `controls-and-remediations.md` to Module 07.
+- Add additional worked examples to Module 10.
+- Add a gold-standard BrokenPilot final report.
+- Review each module against the reading-first content standard.

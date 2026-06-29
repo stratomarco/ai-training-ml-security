@@ -43,3 +43,11 @@ ML Security is not separate from software security. It is software security, dat
 The course is now moving from "complete curriculum" to "testable learning experience." The next work items are DVAIA validation, a minimal BrokenPilot prototype, worked student examples, instructor delivery formats, concrete control assessments, and deeper adversarial ML examples.
 
 Start with the [Development Plan](start-here/development-plan.md).
+
+## Learning philosophy
+
+This is a reading-first, lab-supported course. Labs are used to validate security reasoning, not replace it. Each major topic should explain the attack, why it exists, what security principle it violates, what controls mitigate it, and how to verify those controls.
+
+## License summary
+
+The course is free for non-commercial learning. Internal organizational learning is allowed with attribution when the material is not sold or productized. Commercial resale, paid workshops, paid platforms, and paid consulting delivery require permission. See the License section for details.

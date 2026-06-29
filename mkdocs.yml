@@ -71,6 +71,8 @@ nav:
   - Start Here:
       - "Course Overview": start-here/course-overview.md
       - "Development Plan": start-here/development-plan.md
+      - "Content Strategy": start-here/content-strategy.md
+      - "Reading-First Learning": start-here/reading-first-lab-supported.md
       - "Security Roots": start-here/security-roots.md
       - "Learning Paths": start-here/learning-paths.md
       - "Glossary": glossary.md
@@ -266,6 +268,9 @@ nav:
       - "Brokenpilot Final Report Template": templates/brokenpilot-final-report-template.md
       - "Concrete Control Implementation Template": templates/concrete-control-implementation-template.md
       - "DVAIA Evidence Log Template": templates/dvaia-evidence-log-template.md
+      - "Deep Dive Template": templates/deep-dive-template.md
+      - "Attack Anatomy Template": templates/attack-anatomy-template.md
+      - "Controls and Remediations Template": templates/controls-and-remediations-template.md
   - Instructor:
       - "Instructor Overview": instructor/README.md
       - "Delivery Guide": instructor/delivery-guide.md
@@ -273,6 +278,7 @@ nav:
       - "Timing Guide": instructor/timing-guide.md
       - "Delivery Formats": instructor/delivery-formats.md
       - "Module Cut and Expand Guide": instructor/module-cut-expand-guide.md
+      - "Grading Calibration Guide": instructor/grading-calibration-guide.md
   - Assessments:
       - "Assessments Overview": assessments/README.md
       - "Quiz Bank": assessments/quiz-bank.md
@@ -280,10 +286,14 @@ nav:
       - "BrokenPilot Final Rubric": assessments/brokenpilot-capstone-final-rubric.md
       - "AI Red Team Grading": assessments/ai-red-team-grading.md
       - "Concrete Controls Assessment": assessments/concrete-controls-assessment.md
+      - "Grading Calibration Exercise": assessments/grading-calibration-exercise.md
   - Project:
       - "Version": VERSION.md
       - "Changelog": CHANGELOG.md
       - "License": LICENSE.md
+      - "Content License": LICENSE-CONTENT.md
+      - "Code License": LICENSE-CODE.md
+      - "Commercial Licensing": COMMERCIAL-LICENSE.md
       - "Security Policy": SECURITY.md
       - "Contributing": CONTRIBUTING.md
       - "v1.0.0 Release Notes": releases/v1.0.0.md

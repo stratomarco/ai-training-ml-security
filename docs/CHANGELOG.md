@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1-dev — Content strategy and licensing update
+
+- Added reading-first, lab-supported content strategy.
+- Added content strategy and reading-first pages to the MkDocs site.
+- Added deep-dive, attack anatomy, and controls/remediations templates.
+- Replaced permissive split-license wording with a non-commercial split-license model.
+- Added explicit permission for internal organizational learning with attribution when material is not sold, productized, or delivered as a paid external offering.
+- Added content license, code license, and commercial licensing policy files.
+
+
 ## v1.1.0 — Website edition draft
 
 ### Added

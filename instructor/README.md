@@ -7,3 +7,7 @@ This folder contains instructor-facing material.
 - `delivery-guide.md`: how to teach the course
 - `timing-guide.md`: suggested course timing
 - `facilitation-notes.md`: discussion guidance
+
+## Grading calibration
+
+Use [`grading-calibration-guide.md`](grading-calibration-guide.md) before grading BrokenPilot capstone submissions or Module 07 concrete-control exercises. It explains how to use the strong and weak worked examples, how to score evidence and remediation quality, and how to align multiple instructors.

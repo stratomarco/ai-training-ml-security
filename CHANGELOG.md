@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1-dev — Content strategy and licensing update
+
+- Added reading-first, lab-supported content strategy.
+- Added content strategy and reading-first pages to the MkDocs site.
+- Added deep-dive, attack anatomy, and controls/remediations templates.
+- Replaced permissive split-license wording with a non-commercial split-license model.
+- Added explicit permission for internal organizational learning with attribution when material is not sold, productized, or delivered as a paid external offering.
+- Added content license, code license, and commercial licensing policy files.
+
+
 
 ## v1.1-dev — BrokenPilot worked examples and Module 07 validation refinement
 
@@ -299,3 +309,7 @@ This is not a full BrokenPilot implementation yet. It is the first testable MVP 
 - Added Module 07 memory validation material.
 - Added prototype memory poisoning lab guide.
 - Added tests for vulnerable and controlled memory behavior.
+
+## v1.1-dev — Instructor grading calibration
+
+Added an instructor grading calibration guide and grading calibration exercise. These materials use the BrokenPilot strong/weak worked examples to align scoring around threat models, evidence quality, implementable controls, remediation backlog quality, executive communication, and residual risk.

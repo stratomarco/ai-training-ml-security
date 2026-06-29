@@ -239,3 +239,23 @@ These examples support grading calibration and raise the quality bar from "ident
 Module 07 now records an important validation lesson from local testing: memory poisoning can influence the agent's attempted action, while independent tool authorization can still block unsafe cross-tenant execution.
 
 This is now documented as a teaching point in the memory poisoning validation page.
+
+
+## Instructor grading calibration
+
+Completed:
+
+- [x] Add instructor grading calibration guide.
+- [x] Add grading calibration exercise.
+- [x] Connect strong/weak BrokenPilot examples to scoring anchors.
+
+Next:
+
+- [ ] Add one assembled sample final BrokenPilot report.
+- [ ] Add instructor demo script for the runnable BrokenPilot prototype.
+
+## Content depth and licensing update
+
+The course direction is now explicitly reading-first and lab-supported. Future module improvements should prioritize explanation, attack anatomy, control design, remediation, and framework mapping before adding more lab mechanics.
+
+The licensing model has been updated to protect the material from monetized repackaging while allowing free self-study and attributed internal organizational learning.

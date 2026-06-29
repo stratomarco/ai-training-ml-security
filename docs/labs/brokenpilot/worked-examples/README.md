@@ -66,3 +66,7 @@ A weak BrokenPilot deliverable usually has one or more of these problems:
 - It does not distinguish prevention, detection, and response.
 - It gives recommendations that engineers cannot implement.
 - It has no acceptance criteria or validation method.
+
+## Instructor calibration
+
+Use these examples together with the instructor grading calibration guide and grading calibration exercise. The examples are not just reference material; they are anchors for consistent grading across instructors and cohorts.

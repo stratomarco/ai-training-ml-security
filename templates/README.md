@@ -58,3 +58,11 @@ Added:
 ## DVAIA validation templates
 
 - `dvaia-evidence-log-template.md` — evidence log for validated DVAIA-backed labs.
+
+## Reading-first content templates
+
+Use these templates when deepening modules beyond slides and lab steps:
+
+- `deep-dive-template.md` — explains a topic with architecture, principles, impact, controls, and framework mapping.
+- `attack-anatomy-template.md` — breaks an attack into preconditions, root cause, attack path, evidence, impact, controls, and residual risk.
+- `controls-and-remediations-template.md` — turns a finding into implementable engineering controls and test cases.

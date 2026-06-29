@@ -25,3 +25,7 @@ The canonical BrokenPilot rubric is in [`../labs/brokenpilot/grading-rubric.md`]
 Added:
 
 - `brokenpilot-capstone-final-rubric.md`
+
+## Grading calibration exercise
+
+Use [`grading-calibration-exercise.md`](grading-calibration-exercise.md) before grading the BrokenPilot capstone. It helps instructors compare scoring decisions and agree on anchors for threat models, evidence logs, remediation backlogs, and executive communication.
