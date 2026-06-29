@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased — v1.1-dev DVAIA validation
+
+### Added
+
+- Recorded DVAIA local validation baseline for Windows / PowerShell.
+- Added DVAIA validated lab results summary.
+- Added DVAIA walkthrough authoring plan.
+
+### Changed
+
+- Updated DVAIA validation and module mapping pages from planned/TODO status to locally validated status.
+- Updated the quality improvement plan to reflect DVAIA validation completion and make BrokenPilot prototype the next major testability gap.
+
+
 ## v1.1.0 — Website edition draft
 
 ### Added

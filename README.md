@@ -156,3 +156,17 @@ Current working version: **v1.1 website edition draft**. Modules 01–12 have co
 | 10 — Adversarial ML and Robustness | Complete | Evasion, poisoning, backdoors, drift, confidence, fallback behavior, monitoring, robustness evaluation, and adversarial test planning. |
 | 11 — AI Red Team Methodology | Complete | Scope, rules of engagement, attack planning, controlled testing, evidence, severity, reporting, executive readout, remediation, and residual risk. |
 | 12 — BrokenPilot Capstone | Complete | Full capstone teaching package, runbook, exercises, final presentation guide, evidence log, remediation backlog, templates, and assessment rubric. |
+
+
+## Current development focus
+
+The next development phase is not another release tag. It is focused on quality and testability:
+
+1. Validate DVAIA locally and document exact setup notes.
+2. Design a minimal runnable BrokenPilot prototype.
+3. Add worked capstone examples for grading consistency.
+4. Add instructor delivery guidance for different course lengths.
+5. Add concrete control deliverables that require students to design implementable fixes.
+6. Deepen Module 10 with worked adversarial ML examples.
+
+The website layer is useful, but the highest priority is making the course more hands-on and instructor-ready.

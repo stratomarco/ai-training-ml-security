@@ -20,3 +20,16 @@ Some labs can be completed using only the Markdown files. Others reference exter
 - Docker Desktop
 - Browser
 - Code editor
+
+
+## v1.1-dev lab validation focus
+
+The next development phase prioritizes lab validation over new releases.
+
+Start with:
+
+1. [DVAIA Local Validation Plan](dvaia-validation.md)
+2. [DVAIA Module Mapping](dvaia-module-mapping.md)
+3. BrokenPilot prototype planning in the BrokenPilot lab section
+
+A lab should not be presented as hands-on until the target has been installed, tested, and documented in at least one supported instructor environment.

@@ -24,3 +24,21 @@ Do not teach DVAIA as a bag of tricks. Teach each exercise as:
 3. Root cause
 4. Mitigation
 5. Residual risk
+
+
+## Validated local environment
+
+DVAIA has been validated locally as an external lab dependency for this course.
+
+Baseline:
+
+- Validation date: 2026-06-29
+- Host OS: Windows / PowerShell
+- DVAIA commit: `23c115252554caa445c0e6ba28641c1110c118e1`
+- Docker: `Docker version 29.5.3, build d1c06ef`
+- Docker Compose: `Docker Compose version v5.1.4`
+- Run mode: Local mode
+- Backend: Local / Ollama
+- URL: `http://127.0.0.1:5000`
+
+See [`validated-lab-results.md`](validated-lab-results.md) for the validation summary.

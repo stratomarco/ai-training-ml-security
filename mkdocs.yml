@@ -70,6 +70,10 @@ nav:
   - Home: index.md
   - Start Here:
       - "Course Overview": start-here/course-overview.md
+      - "Development Plan": start-here/development-plan.md
+      - "Security Roots": start-here/security-roots.md
+      - "Learning Paths": start-here/learning-paths.md
+      - "Glossary": glossary.md
       - "Prerequisites": start-here/prerequisites.md
       - "How to Use This Course": start-here/how-to-use-this-course.md
       - "Lab Safety and Ethics": start-here/lab-safety-and-ethics.md
@@ -145,6 +149,7 @@ nav:
           - "Quiz": modules/07-agent-tool-security/quiz.md
           - "References": modules/07-agent-tool-security/references.md
           - "Exercise": modules/07-agent-tool-security/exercise-agent-control-design.md
+          - "Executive Risk Memo Exercise": modules/07-agent-tool-security/exercise-executive-risk-memo.md
       - "08 — Secure MLOps and AI Supply Chain":
           - "Overview": modules/08-secure-mlops-supply-chain/README.md
           - "Slides": modules/08-secure-mlops-supply-chain/slides.md
@@ -172,6 +177,7 @@ nav:
           - "Quiz": modules/10-adversarial-ml-robustness/quiz.md
           - "References": modules/10-adversarial-ml-robustness/references.md
           - "Exercise": modules/10-adversarial-ml-robustness/exercise-adversarial-test-plan.md
+          - "Deep Dive Worked Examples": modules/10-adversarial-ml-robustness/deep-dive-worked-examples.md
       - "11 — AI Red Team Methodology":
           - "Overview": modules/11-ai-red-team-methodology/README.md
           - "Slides": modules/11-ai-red-team-methodology/slides.md
@@ -196,6 +202,8 @@ nav:
       - "Labs Overview": labs/README.md
       - "Lab Setup Overview": lab-setup/overview.md
       - "DVAIA Setup": lab-setup/dvaia.md
+      - "DVAIA Validation Plan": lab-setup/dvaia-validation.md
+      - "DVAIA Module Mapping": lab-setup/dvaia-module-mapping.md
       - "DVAIA Mapping": labs/dvaia-guides/dvaia-course-mapping.md
       - "LLM Application Security Lab": labs/dvaia-guides/llm-application-security-lab.md
       - "RAG Indirect Prompt Injection Lab": labs/rag-labs/rag-indirect-prompt-injection-lab.md
@@ -204,6 +212,15 @@ nav:
       - "BrokenPilot Capstone": labs/brokenpilot/README.md
       - "BrokenPilot Attack Paths": labs/brokenpilot/attack-paths.md
       - "BrokenPilot Vulnerabilities": labs/brokenpilot/vulnerabilities.md
+      - "BrokenPilot Prototype Plan": labs/brokenpilot/prototype-plan.md
+      - "BrokenPilot Worked Examples":
+          - "Overview": labs/brokenpilot/worked-examples/README.md
+          - "Strong Threat Model": labs/brokenpilot/worked-examples/strong-threat-model-example.md
+          - "Weak Threat Model": labs/brokenpilot/worked-examples/weak-threat-model-example.md
+          - "Strong Risk Register": labs/brokenpilot/worked-examples/strong-risk-register-example.md
+          - "Weak Risk Register": labs/brokenpilot/worked-examples/weak-risk-register-example.md
+          - "Strong Executive Readout": labs/brokenpilot/worked-examples/strong-executive-readout-example.md
+          - "Weak Executive Readout": labs/brokenpilot/worked-examples/weak-executive-readout-example.md
   - Templates:
       - "Templates Overview": templates/README.md
       - "Threat Model Template": templates/threat-model-template.md
@@ -216,17 +233,21 @@ nav:
       - "Adversarial Test Plan Template": templates/adversarial-test-plan-template.md
       - "Ai Red Team Report Template": templates/ai-red-team-report-template.md
       - "Brokenpilot Final Report Template": templates/brokenpilot-final-report-template.md
+      - "Concrete Control Implementation Template": templates/concrete-control-implementation-template.md
   - Instructor:
       - "Instructor Overview": instructor/README.md
       - "Delivery Guide": instructor/delivery-guide.md
       - "Facilitation Notes": instructor/facilitation-notes.md
       - "Timing Guide": instructor/timing-guide.md
+      - "Delivery Formats": instructor/delivery-formats.md
+      - "Module Cut and Expand Guide": instructor/module-cut-expand-guide.md
   - Assessments:
       - "Assessments Overview": assessments/README.md
       - "Quiz Bank": assessments/quiz-bank.md
       - "Capstone Grading": assessments/capstone-grading.md
       - "BrokenPilot Final Rubric": assessments/brokenpilot-capstone-final-rubric.md
       - "AI Red Team Grading": assessments/ai-red-team-grading.md
+      - "Concrete Controls Assessment": assessments/concrete-controls-assessment.md
   - Project:
       - "Version": VERSION.md
       - "Changelog": CHANGELOG.md

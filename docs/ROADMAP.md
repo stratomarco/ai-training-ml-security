@@ -109,3 +109,20 @@ Planned/completed scope:
 Future improvement:
 
 - Decide whether `docs/` becomes the single source of truth, or whether a small sync script should preserve root-level compatibility.
+
+
+## v1.1-dev — Quality and testability focus
+
+Do not tag a new release until the course is more testable and instructor-ready.
+
+Priority order:
+
+1. Validate DVAIA locally and document exact setup notes for Modules 05–07 and 11.
+2. Design and then build a minimal runnable BrokenPilot prototype.
+3. Add worked student examples for BrokenPilot deliverables.
+4. Add delivery format guidance for 2-hour, half-day, 1-day, 2-day, and 12-week formats.
+5. Add concrete control deliverables so students must produce implementable fixes.
+6. Deepen Module 10 with worked adversarial ML examples.
+7. Continue website improvements only after lab testability improves.
+
+The next release should be based on a measurable improvement in student experience, not only documentation structure.

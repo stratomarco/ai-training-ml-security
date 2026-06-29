@@ -36,3 +36,10 @@ This site is the browsable learning portal for the AI Training — ML Security c
 ## Key idea
 
 ML Security is not separate from software security. It is software security, data security, cloud security, identity security, privacy engineering, supply chain security, and adversarial ML applied to systems that contain machine learning.
+
+
+## Current development focus
+
+The course is now moving from "complete curriculum" to "testable learning experience." The next work items are DVAIA validation, a minimal BrokenPilot prototype, worked student examples, instructor delivery formats, concrete control assessments, and deeper adversarial ML examples.
+
+Start with the [Development Plan](start-here/development-plan.md).

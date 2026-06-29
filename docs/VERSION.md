@@ -11,3 +11,7 @@ Current working version: **v1.1.0 website edition draft**
 ## Status
 
 Modules 01–12 remain complete. The BrokenPilot capstone remains complete. The new work in v1.1 adds a website layer and publishing workflow.
+
+## Current development focus
+
+Working branch target: v1.1-dev — quality, testability, lab validation, delivery guidance, and deeper material. No new public release should be tagged until these improvements are reviewed.
