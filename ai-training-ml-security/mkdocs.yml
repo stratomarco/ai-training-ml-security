@@ -1,0 +1,258 @@
+site_name: AI Training — ML Security
+site_description: Security engineering for systems that contain machine learning.
+site_author: AI Training — ML Security contributors
+repo_url: https://github.com/stratomarco/ai-training-ml-security
+repo_name: stratomarco/ai-training-ml-security
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+
+not_in_nav: |
+  /modules/**
+  /labs/**
+  /templates/**
+  /instructor/**
+  /assessments/**
+
+nav:
+  - Home: index.md
+  - Start Here:
+      - "Course Overview": start-here/course-overview.md
+      - "Development Plan": start-here/development-plan.md
+      - "Security Roots": start-here/security-roots.md
+      - "Learning Paths": start-here/learning-paths.md
+      - "Glossary": glossary.md
+      - "Prerequisites": start-here/prerequisites.md
+      - "How to Use This Course": start-here/how-to-use-this-course.md
+      - "Lab Safety and Ethics": start-here/lab-safety-and-ethics.md
+      - "Local Website Preview": lab-setup/local-preview.md
+      - "GitHub Pages Deployment": lab-setup/github-pages.md
+  - Course:
+      - "Syllabus": syllabus.md
+      - "Course Map": course-map.md
+      - "References": references.md
+      - "Roadmap": ROADMAP.md
+  - Modules:
+      - "Modules Overview": modules/README.md
+      - "01 — Security Engineering for AI":
+          - "Overview": modules/01-security-engineering-for-ai/README.md
+          - "Slides": modules/01-security-engineering-for-ai/slides.md
+          - "Instructor Notes": modules/01-security-engineering-for-ai/instructor-notes.md
+          - "Student Handout": modules/01-security-engineering-for-ai/student-handout.md
+          - "Checklist": modules/01-security-engineering-for-ai/checklist.md
+          - "Quiz": modules/01-security-engineering-for-ai/quiz.md
+          - "References": modules/01-security-engineering-for-ai/references.md
+          - "Exercise": modules/01-security-engineering-for-ai/exercise-threat-model.md
+      - "02 — ML System Architecture":
+          - "Overview": modules/02-ml-system-architecture/README.md
+          - "Slides": modules/02-ml-system-architecture/slides.md
+          - "Instructor Notes": modules/02-ml-system-architecture/instructor-notes.md
+          - "Student Handout": modules/02-ml-system-architecture/student-handout.md
+          - "Checklist": modules/02-ml-system-architecture/checklist.md
+          - "Quiz": modules/02-ml-system-architecture/quiz.md
+          - "References": modules/02-ml-system-architecture/references.md
+          - "Exercise": modules/02-ml-system-architecture/exercise-ml-lifecycle-dfd.md
+      - "03 — OWASP ML Security Top 10":
+          - "Overview": modules/03-owasp-ml-top-10/README.md
+          - "Slides": modules/03-owasp-ml-top-10/slides.md
+          - "Instructor Notes": modules/03-owasp-ml-top-10/instructor-notes.md
+          - "Student Handout": modules/03-owasp-ml-top-10/student-handout.md
+          - "Checklist": modules/03-owasp-ml-top-10/checklist.md
+          - "Quiz": modules/03-owasp-ml-top-10/quiz.md
+          - "References": modules/03-owasp-ml-top-10/references.md
+          - "Exercise": modules/03-owasp-ml-top-10/exercise-owasp-ml-attack-review.md
+      - "04 — BIML Architectural Risk Analysis":
+          - "Overview": modules/04-biml-architectural-risk-analysis/README.md
+          - "Slides": modules/04-biml-architectural-risk-analysis/slides.md
+          - "Instructor Notes": modules/04-biml-architectural-risk-analysis/instructor-notes.md
+          - "Student Handout": modules/04-biml-architectural-risk-analysis/student-handout.md
+          - "Checklist": modules/04-biml-architectural-risk-analysis/checklist.md
+          - "Quiz": modules/04-biml-architectural-risk-analysis/quiz.md
+          - "References": modules/04-biml-architectural-risk-analysis/references.md
+          - "Exercise": modules/04-biml-architectural-risk-analysis/exercise-biml-architecture-review.md
+      - "05 — LLM Application Security":
+          - "Overview": modules/05-llm-application-security/README.md
+          - "Slides": modules/05-llm-application-security/slides.md
+          - "Instructor Notes": modules/05-llm-application-security/instructor-notes.md
+          - "Student Handout": modules/05-llm-application-security/student-handout.md
+          - "Checklist": modules/05-llm-application-security/checklist.md
+          - "Quiz": modules/05-llm-application-security/quiz.md
+          - "References": modules/05-llm-application-security/references.md
+          - "Exercise": modules/05-llm-application-security/exercise-llm-application-security-review.md
+      - "06 — RAG Security":
+          - "Overview": modules/06-rag-security/README.md
+          - "Slides": modules/06-rag-security/slides.md
+          - "Instructor Notes": modules/06-rag-security/instructor-notes.md
+          - "Student Handout": modules/06-rag-security/student-handout.md
+          - "Checklist": modules/06-rag-security/checklist.md
+          - "Quiz": modules/06-rag-security/quiz.md
+          - "References": modules/06-rag-security/references.md
+          - "Exercise": modules/06-rag-security/exercise-rag-threat-model.md
+      - "07 — Agent and Tool Security":
+          - "Overview": modules/07-agent-tool-security/README.md
+          - "Slides": modules/07-agent-tool-security/slides.md
+          - "Instructor Notes": modules/07-agent-tool-security/instructor-notes.md
+          - "Student Handout": modules/07-agent-tool-security/student-handout.md
+          - "Checklist": modules/07-agent-tool-security/checklist.md
+          - "Quiz": modules/07-agent-tool-security/quiz.md
+          - "References": modules/07-agent-tool-security/references.md
+          - "Exercise": modules/07-agent-tool-security/exercise-agent-control-design.md
+          - "Executive Risk Memo Exercise": modules/07-agent-tool-security/exercise-executive-risk-memo.md
+      - "08 — Secure MLOps and AI Supply Chain":
+          - "Overview": modules/08-secure-mlops-supply-chain/README.md
+          - "Slides": modules/08-secure-mlops-supply-chain/slides.md
+          - "Instructor Notes": modules/08-secure-mlops-supply-chain/instructor-notes.md
+          - "Student Handout": modules/08-secure-mlops-supply-chain/student-handout.md
+          - "Checklist": modules/08-secure-mlops-supply-chain/checklist.md
+          - "Quiz": modules/08-secure-mlops-supply-chain/quiz.md
+          - "References": modules/08-secure-mlops-supply-chain/references.md
+          - "Exercise": modules/08-secure-mlops-supply-chain/exercise-secure-mlops-review.md
+      - "09 — Privacy Attacks":
+          - "Overview": modules/09-privacy-attacks/README.md
+          - "Slides": modules/09-privacy-attacks/slides.md
+          - "Instructor Notes": modules/09-privacy-attacks/instructor-notes.md
+          - "Student Handout": modules/09-privacy-attacks/student-handout.md
+          - "Checklist": modules/09-privacy-attacks/checklist.md
+          - "Quiz": modules/09-privacy-attacks/quiz.md
+          - "References": modules/09-privacy-attacks/references.md
+          - "Exercise": modules/09-privacy-attacks/exercise-privacy-risk-assessment.md
+      - "10 — Adversarial ML and Robustness":
+          - "Overview": modules/10-adversarial-ml-robustness/README.md
+          - "Slides": modules/10-adversarial-ml-robustness/slides.md
+          - "Instructor Notes": modules/10-adversarial-ml-robustness/instructor-notes.md
+          - "Student Handout": modules/10-adversarial-ml-robustness/student-handout.md
+          - "Checklist": modules/10-adversarial-ml-robustness/checklist.md
+          - "Quiz": modules/10-adversarial-ml-robustness/quiz.md
+          - "References": modules/10-adversarial-ml-robustness/references.md
+          - "Exercise": modules/10-adversarial-ml-robustness/exercise-adversarial-test-plan.md
+          - "Deep Dive Worked Examples": modules/10-adversarial-ml-robustness/deep-dive-worked-examples.md
+      - "11 — AI Red Team Methodology":
+          - "Overview": modules/11-ai-red-team-methodology/README.md
+          - "Slides": modules/11-ai-red-team-methodology/slides.md
+          - "Instructor Notes": modules/11-ai-red-team-methodology/instructor-notes.md
+          - "Student Handout": modules/11-ai-red-team-methodology/student-handout.md
+          - "Checklist": modules/11-ai-red-team-methodology/checklist.md
+          - "Quiz": modules/11-ai-red-team-methodology/quiz.md
+          - "References": modules/11-ai-red-team-methodology/references.md
+          - "Exercise": modules/11-ai-red-team-methodology/exercise-ai-red-team-plan.md
+      - "12 — BrokenPilot Capstone":
+          - "Overview": modules/12-capstone-brokenpilot/README.md
+          - "Slides": modules/12-capstone-brokenpilot/slides.md
+          - "Instructor Notes": modules/12-capstone-brokenpilot/instructor-notes.md
+          - "Student Handout": modules/12-capstone-brokenpilot/student-handout.md
+          - "Checklist": modules/12-capstone-brokenpilot/checklist.md
+          - "Quiz": modules/12-capstone-brokenpilot/quiz.md
+          - "References": modules/12-capstone-brokenpilot/references.md
+          - "Capstone Runbook": modules/12-capstone-brokenpilot/capstone-runbook.md
+          - "Threat Model Exercise": modules/12-capstone-brokenpilot/exercise-capstone-threat-model.md
+          - "Red Team Review Exercise": modules/12-capstone-brokenpilot/exercise-capstone-red-team-review.md
+  - Labs:
+      - "Labs Overview": labs/README.md
+      - "Lab Setup Overview": lab-setup/overview.md
+      - "DVAIA Setup": lab-setup/dvaia.md
+      - "DVAIA Validation Plan": lab-setup/dvaia-validation.md
+      - "DVAIA Module Mapping": lab-setup/dvaia-module-mapping.md
+      - "DVAIA Mapping": labs/dvaia-guides/dvaia-course-mapping.md
+      - "LLM Application Security Lab": labs/dvaia-guides/llm-application-security-lab.md
+      - "RAG Indirect Prompt Injection Lab": labs/rag-labs/rag-indirect-prompt-injection-lab.md
+      - "Agent Tool Misuse Lab": labs/agent-labs/agent-tool-misuse-lab.md
+      - "Memory Poisoning and Approval Gates Lab": labs/agent-labs/memory-poisoning-approval-gates-lab.md
+      - "BrokenPilot Capstone": labs/brokenpilot/README.md
+      - "BrokenPilot Attack Paths": labs/brokenpilot/attack-paths.md
+      - "BrokenPilot Vulnerabilities": labs/brokenpilot/vulnerabilities.md
+      - "BrokenPilot Prototype Plan": labs/brokenpilot/prototype-plan.md
+      - "BrokenPilot Worked Examples":
+          - "Overview": labs/brokenpilot/worked-examples/README.md
+          - "Strong Threat Model": labs/brokenpilot/worked-examples/strong-threat-model-example.md
+          - "Weak Threat Model": labs/brokenpilot/worked-examples/weak-threat-model-example.md
+          - "Strong Risk Register": labs/brokenpilot/worked-examples/strong-risk-register-example.md
+          - "Weak Risk Register": labs/brokenpilot/worked-examples/weak-risk-register-example.md
+          - "Strong Executive Readout": labs/brokenpilot/worked-examples/strong-executive-readout-example.md
+          - "Weak Executive Readout": labs/brokenpilot/worked-examples/weak-executive-readout-example.md
+  - Templates:
+      - "Templates Overview": templates/README.md
+      - "Threat Model Template": templates/threat-model-template.md
+      - "Architecture Risk Review Template": templates/architecture-risk-review-template.md
+      - "Llm Application Security Review Template": templates/llm-application-security-review-template.md
+      - "Rag Threat Model Template": templates/rag-threat-model-template.md
+      - "Agent Control Design Template": templates/agent-control-design-template.md
+      - "Secure Mlops Review Template": templates/secure-mlops-review-template.md
+      - "Privacy Risk Assessment Template": templates/privacy-risk-assessment-template.md
+      - "Adversarial Test Plan Template": templates/adversarial-test-plan-template.md
+      - "Ai Red Team Report Template": templates/ai-red-team-report-template.md
+      - "Brokenpilot Final Report Template": templates/brokenpilot-final-report-template.md
+      - "Concrete Control Implementation Template": templates/concrete-control-implementation-template.md
+  - Instructor:
+      - "Instructor Overview": instructor/README.md
+      - "Delivery Guide": instructor/delivery-guide.md
+      - "Facilitation Notes": instructor/facilitation-notes.md
+      - "Timing Guide": instructor/timing-guide.md
+      - "Delivery Formats": instructor/delivery-formats.md
+      - "Module Cut and Expand Guide": instructor/module-cut-expand-guide.md
+  - Assessments:
+      - "Assessments Overview": assessments/README.md
+      - "Quiz Bank": assessments/quiz-bank.md
+      - "Capstone Grading": assessments/capstone-grading.md
+      - "BrokenPilot Final Rubric": assessments/brokenpilot-capstone-final-rubric.md
+      - "AI Red Team Grading": assessments/ai-red-team-grading.md
+      - "Concrete Controls Assessment": assessments/concrete-controls-assessment.md
+  - Project:
+      - "Version": VERSION.md
+      - "Changelog": CHANGELOG.md
+      - "License": LICENSE.md
+      - "Security Policy": SECURITY.md
+      - "Contributing": CONTRIBUTING.md
+      - "v1.0.0 Release Notes": releases/v1.0.0.md
+      - "v1.1.0 Release Notes": releases/v1.1.0.md
