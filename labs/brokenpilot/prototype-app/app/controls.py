@@ -15,6 +15,8 @@ class Controls:
     prompt_injection_filter: bool
     tool_authz: bool
     tool_approval: bool
+    memory_review: bool
+    memory_isolation: bool
     audit_log: bool
 
     @classmethod
@@ -24,6 +26,8 @@ class Controls:
             prompt_injection_filter=_env_bool("ENABLE_PROMPT_INJECTION_FILTER", False),
             tool_authz=_env_bool("ENABLE_TOOL_AUTHZ", False),
             tool_approval=_env_bool("ENABLE_TOOL_APPROVAL", False),
+            memory_review=_env_bool("ENABLE_MEMORY_REVIEW", False),
+            memory_isolation=_env_bool("ENABLE_MEMORY_ISOLATION", False),
             audit_log=_env_bool("ENABLE_AUDIT_LOG", True),
         )
 
@@ -33,5 +37,7 @@ class Controls:
             "ENABLE_PROMPT_INJECTION_FILTER": self.prompt_injection_filter,
             "ENABLE_TOOL_AUTHZ": self.tool_authz,
             "ENABLE_TOOL_APPROVAL": self.tool_approval,
+            "ENABLE_MEMORY_REVIEW": self.memory_review,
+            "ENABLE_MEMORY_ISOLATION": self.memory_isolation,
             "ENABLE_AUDIT_LOG": self.audit_log,
         }

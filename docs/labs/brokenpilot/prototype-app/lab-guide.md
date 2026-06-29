@@ -201,3 +201,8 @@ Strong answers should mention:
 - approval gates for destructive actions
 - auditability
 - security properties rather than only model behavior
+
+
+## Memory poisoning extension
+
+For the Module 07 memory poisoning scenario, use `MEMORY_POISONING_LAB.md` in the runnable prototype app or the website page `memory-poisoning-lab.md`. This extension demonstrates persistent memory as an agent authority source and validates `ENABLE_MEMORY_REVIEW` / `ENABLE_MEMORY_ISOLATION` controls.

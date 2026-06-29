@@ -151,6 +151,7 @@ nav:
           - "Exercise": modules/07-agent-tool-security/exercise-agent-control-design.md
           - "Executive Risk Memo Exercise": modules/07-agent-tool-security/exercise-executive-risk-memo.md
           - "BrokenPilot Tool Validation": modules/07-agent-tool-security/brokenpilot-tool-validation.md
+          - "BrokenPilot Memory Validation": modules/07-agent-tool-security/brokenpilot-memory-validation.md
       - "08 — Secure MLOps and AI Supply Chain":
           - "Overview": modules/08-secure-mlops-supply-chain/README.md
           - "Slides": modules/08-secure-mlops-supply-chain/slides.md
@@ -236,6 +237,7 @@ nav:
           - "Overview": labs/brokenpilot/prototype-app/README.md
           - "Lab Guide": labs/brokenpilot/prototype-app/lab-guide.md
           - "Tool Calling Lab": labs/brokenpilot/prototype-app/tool-calling-lab.md
+          - "Memory Poisoning Lab": labs/brokenpilot/prototype-app/memory-poisoning-lab.md
       - "BrokenPilot Worked Examples":
           - "Overview": labs/brokenpilot/worked-examples/README.md
           - "Strong Threat Model": labs/brokenpilot/worked-examples/strong-threat-model-example.md

@@ -264,3 +264,10 @@ The runnable BrokenPilot prototype now includes a deterministic tool-calling sce
 - Moved the BrokenPilot tool authorization validation record into Module 07 to avoid duplicate validation documentation.
 - Added a Module 07 validation page for the cross-tenant tool confused-deputy scenario.
 - Linked the validated scenario from the Module 07 overview, exercise, instructor notes, and MkDocs navigation.
+
+## Memory poisoning MVP increment
+
+- Added BrokenPilot memory endpoints and deterministic memory-poisoning behavior.
+- Added Module 07 memory validation material.
+- Added prototype memory poisoning lab guide.
+- Added tests for vulnerable and controlled memory behavior.

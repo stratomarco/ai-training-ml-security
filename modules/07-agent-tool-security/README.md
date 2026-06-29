@@ -155,3 +155,13 @@ Students produce an **agent control design** containing:
 - `../../templates/agent-control-design-template.md`
 - `../../templates/tool-permission-matrix-template.md`
 - `../../templates/agent-action-approval-policy-template.md`
+
+
+## Validated BrokenPilot memory poisoning lab
+
+The runnable BrokenPilot prototype now includes a memory poisoning scenario for this module. See:
+
+- `brokenpilot-tool-validation.md` for the validated tool confused-deputy scenario
+- `brokenpilot-memory-validation.md` for the memory poisoning control-validation flow
+
+Students should use these as concrete examples of the course principle that agent memory is not automatically trusted authority.
