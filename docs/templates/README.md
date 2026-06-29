@@ -53,3 +53,8 @@ Added:
 - `brokenpilot-risk-register-template.md`
 - `brokenpilot-evidence-log-template.md`
 - `brokenpilot-remediation-backlog-template.md`
+
+
+## DVAIA validation templates
+
+- `dvaia-evidence-log-template.md` — evidence log for validated DVAIA-backed labs.

@@ -4,11 +4,11 @@ This backlog tracks the build plan for **AI Training — ML Security**.
 
 ## Current release status
 
-**Current version:** v1.0 release candidate  
+**Current version:** v1.1 development branch  
 **Core curriculum:** complete  
 **Modules:** 01–12 complete  
 **Capstone:** BrokenPilot paper-based capstone complete  
-**Repository readiness:** changelog, release checklist, security policy, code of conduct, issue templates, and PR template added
+**Repository readiness:** v1.0.x released; v1.1 development is focused on testable labs, website usability, and course depth
 
 ## v1.0 release checklist
 
@@ -161,10 +161,15 @@ The following items should be verified before tagging `v1.0.0`:
 
 ### Lab validation
 
-- [ ] Install DVAIA locally.
-- [ ] Verify which DVAIA labs are stable and useful for this course.
-- [ ] Add exact lab setup notes for Windows, macOS, and Linux.
-- [ ] Add screenshots or terminal examples only after validating locally.
+- [x] Install DVAIA locally.
+- [x] Verify which DVAIA labs are stable and useful for this course.
+- [x] Add DVAIA validation baseline.
+- [x] Add module-to-DVAIA mapping.
+- [x] Add initial validated walkthroughs for Modules 05, 06, 07, and 11.
+- [x] Add DVAIA evidence log template.
+- [ ] Add exact screenshots or transcripts from an instructor run.
+- [ ] Add exact panel names where DVAIA UI is stable.
+- [ ] Add lab setup notes for macOS and Linux.
 - [ ] Mark labs as beginner, intermediate, or advanced.
 
 ### BrokenPilot implementation

@@ -205,7 +205,12 @@ nav:
       - "DVAIA Validation Plan": lab-setup/dvaia-validation.md
       - "DVAIA Module Mapping": lab-setup/dvaia-module-mapping.md
       - "DVAIA Mapping": labs/dvaia-guides/dvaia-course-mapping.md
+      - "DVAIA Validated Results": labs/dvaia-guides/validated-lab-results.md
       - "LLM Application Security Lab": labs/dvaia-guides/llm-application-security-lab.md
+      - "Module 05 — Direct Prompt Injection Walkthrough": labs/dvaia-guides/module-05-direct-prompt-injection-walkthrough.md
+      - "Module 06 — RAG / Indirect Injection Walkthrough": labs/dvaia-guides/module-06-rag-indirect-prompt-injection-walkthrough.md
+      - "Module 07 — Agent / Tool Behavior Walkthrough": labs/dvaia-guides/module-07-agent-tool-behavior-walkthrough.md
+      - "Module 11 — DVAIA Red Team Mini-Assessment": labs/dvaia-guides/module-11-dvaia-red-team-mini-assessment.md
       - "RAG Indirect Prompt Injection Lab": labs/rag-labs/rag-indirect-prompt-injection-lab.md
       - "Agent Tool Misuse Lab": labs/agent-labs/agent-tool-misuse-lab.md
       - "Memory Poisoning and Approval Gates Lab": labs/agent-labs/memory-poisoning-approval-gates-lab.md
@@ -234,6 +239,7 @@ nav:
       - "Ai Red Team Report Template": templates/ai-red-team-report-template.md
       - "Brokenpilot Final Report Template": templates/brokenpilot-final-report-template.md
       - "Concrete Control Implementation Template": templates/concrete-control-implementation-template.md
+      - "DVAIA Evidence Log Template": templates/dvaia-evidence-log-template.md
   - Instructor:
       - "Instructor Overview": instructor/README.md
       - "Delivery Guide": instructor/delivery-guide.md

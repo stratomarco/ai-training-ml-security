@@ -228,3 +228,7 @@ The project uses a curriculum-oriented versioning model:
 - Course map.
 - Reference list.
 - Initial templates and lab strategy.
+## v1.1-dev — DVAIA validated walkthroughs
+
+Added validated DVAIA-backed walkthroughs for Module 05 direct prompt injection, Module 06 indirect prompt injection/RAG trust boundaries, Module 07 agent/tool behavior, and Module 11 mini red-team assessment. Added a reusable DVAIA evidence log template and updated DVAIA lab guide navigation.
+

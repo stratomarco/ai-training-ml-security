@@ -18,13 +18,13 @@ Default URL: `http://127.0.0.1:5000`
 
 | Course module | Course concept | DVAIA-backed validation | Validation status | Next refinement |
 |---|---|---|---|---|
-| Module 05 | Direct prompt injection | Direct model-behavior testing in DVAIA | Validated locally | Add exact instructor walkthrough and expected observation |
-| Module 05 | Unsafe model output handling | Output/payload behavior where available in DVAIA | Validated locally | Add screenshot/transcript guidance |
-| Module 06 | Indirect prompt injection | RAG/document/context-based manipulation where supported | Validated locally | Record exact setup and reset steps |
-| Module 06 | Retrieval trust boundary | RAG-style data/source trust behavior where supported | Validated locally | Add mitigation checklist tied to observed behavior |
-| Module 07 | Tool misuse | Agent/tool behavior where supported by local DVAIA version | Validated locally | Decide which parts stay DVAIA-backed and which move to BrokenPilot prototype |
-| Module 07 | Memory or multi-turn manipulation | Multi-turn/agentic behavior where supported | Validated locally | Record persistence/reset assumptions |
-| Module 11 | Attack chaining | Multi-step validation across DVAIA-backed scenarios | Validated locally | Add a guided red-team path and evidence log example |
+| Module 05 | Direct prompt injection | Direct model-behavior testing in DVAIA | Validated locally | Walkthrough added: `labs/dvaia-guides/module-05-direct-prompt-injection-walkthrough.md` |
+| Module 05 | Unsafe model output handling | Output/payload behavior where available in DVAIA | Validated locally | Use DVAIA evidence log template; add screenshots only where locally captured |
+| Module 06 | Indirect prompt injection | RAG/document/context-based manipulation where supported | Validated locally | Walkthrough added: `labs/dvaia-guides/module-06-rag-indirect-prompt-injection-walkthrough.md` |
+| Module 06 | Retrieval trust boundary | RAG-style data/source trust behavior where supported | Validated locally | Covered in Module 06 walkthrough mitigation section |
+| Module 07 | Tool misuse | Agent/tool behavior where supported by local DVAIA version | Validated locally | Walkthrough added: `labs/dvaia-guides/module-07-agent-tool-behavior-walkthrough.md`; BrokenPilot prototype remains future work |
+| Module 07 | Memory or multi-turn manipulation | Multi-turn/agentic behavior where supported | Validated locally | Covered as hybrid lab; exact persistence behavior should be recorded when observed |
+| Module 11 | Attack chaining | Multi-step validation across DVAIA-backed scenarios | Validated locally | Mini-assessment added: `labs/dvaia-guides/module-11-dvaia-red-team-mini-assessment.md` and `templates/dvaia-evidence-log-template.md` |
 
 ## What this course should provide
 
@@ -50,7 +50,7 @@ DVAIA provides the vulnerable target environment, panels, backend toggles, and l
 
 DVAIA is no longer only a theoretical prerequisite. It has been validated locally as a hands-on lab dependency for the relevant course modules.
 
-The course still needs more precise per-lab instructor walkthroughs. This is the next quality task.
+Initial validated walkthroughs have been added for Modules 05, 06, 07, and 11. The next refinement is to add exact screenshots or transcripts from a local instructor run without inventing UI labels or responses.
 
 ## Validation output format for future lab updates
 

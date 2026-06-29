@@ -29,7 +29,7 @@ Default URL: `http://127.0.0.1:5000`
 
 This validation confirms that the DVAIA-backed course direction is practical on at least one Windows + Docker Desktop environment.
 
-It does not yet replace the need for per-lab instructor walkthroughs. The next improvement should turn each validated area into a precise guide with:
+Initial per-lab walkthroughs have now been added for Modules 05, 06, 07, and 11. The next improvement should enrich them with exact local screenshots or response transcripts captured during an instructor run. Each walkthrough should continue to include:
 
 - Exact DVAIA feature or panel
 - Initial state
@@ -41,12 +41,13 @@ It does not yet replace the need for per-lab instructor walkthroughs. The next i
 - Discussion prompts
 - Mitigation exercise
 
-## Recommended next lab authoring order
+## Added walkthroughs
 
-1. Module 05 — Direct Prompt Injection guided walkthrough
-2. Module 06 — Indirect Prompt Injection / RAG guided walkthrough
-3. Module 07 — Agent/Tool Misuse validation notes
-4. Module 11 — DVAIA attack-chain exercise
+1. `module-05-direct-prompt-injection-walkthrough.md`
+2. `module-06-rag-indirect-prompt-injection-walkthrough.md`
+3. `module-07-agent-tool-behavior-walkthrough.md`
+4. `module-11-dvaia-red-team-mini-assessment.md`
+5. `templates/dvaia-evidence-log-template.md`
 
 ## Safety reminder
 

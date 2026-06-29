@@ -26,7 +26,7 @@ Students should be able to:
 
 Status: **Completed initial local validation.**
 
-DVAIA has been installed and validated locally on Windows / PowerShell using Docker and local mode. The next step is to turn the validated areas into precise per-lab instructor walkthroughs with expected observations, screenshots/transcripts, reset steps, and known issues.
+DVAIA has been installed and validated locally on Windows / PowerShell using Docker and local mode. Initial per-lab walkthroughs have now been added for Modules 05, 06, 07, and 11. The remaining refinement is to add exact screenshots or transcripts from an instructor run, plus any panel-specific troubleshooting notes.
 
 This remains high leverage because it changes selected labs from mostly descriptive to demonstrable.
 
@@ -102,7 +102,9 @@ Module 10 needs more worked examples because adversarial ML can otherwise feel a
 - Module-to-DVAIA mapping — done
 - Lab validation matrix — initial validation done
 - Instructor troubleshooting notes — partial, needs per-lab refinement
-- Per-lab DVAIA walkthroughs — next task
+- Per-lab DVAIA walkthroughs — initial set done for Modules 05, 06, 07, and 11
+- DVAIA evidence log template — done
+- Screenshot/transcript capture — next refinement
 
 ### v1.2-dev — BrokenPilot prototype design
 
