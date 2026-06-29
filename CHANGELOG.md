@@ -1,3 +1,15 @@
+
+## v1.1-dev — Module 05 reading-first deepening
+
+Deepened Module 05 — LLM Application Security with reading-first materials:
+
+- Added a conceptual deep dive explaining LLM application security as security engineering around a probabilistic component.
+- Added attack anatomy coverage for prompt injection, indirect prompt injection, sensitive information disclosure, improper output handling, excessive agency, system prompt leakage, and unbounded consumption.
+- Added controls and remediations guidance focused on deterministic controls outside the model.
+- Added common mistakes to help students avoid prompt-only fixes and weak reporting.
+- Added a worked example showing how to turn “the model was jailbroken” into an engineering-grade finding.
+- Updated Module 05 overview, student handout, instructor notes, and MkDocs navigation.
+
 # Changelog
 
 ## v1.1-dev — Content strategy and licensing update

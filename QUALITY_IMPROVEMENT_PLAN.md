@@ -259,3 +259,7 @@ Next:
 The course direction is now explicitly reading-first and lab-supported. Future module improvements should prioritize explanation, attack anatomy, control design, remediation, and framework mapping before adding more lab mechanics.
 
 The licensing model has been updated to protect the material from monetized repackaging while allowing free self-study and attributed internal organizational learning.
+
+## Module 05 reading-first depth completed
+
+Module 05 now includes deep-dive, attack anatomy, controls/remediations, common mistakes, and a worked example. This is the first module upgraded to the reading-first, lab-supported content standard.

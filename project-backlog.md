@@ -302,3 +302,7 @@ Next:
 - Add additional worked examples to Module 10.
 - Add a gold-standard BrokenPilot final report.
 - Review each module against the reading-first content standard.
+
+## Module 05 reading-first depth completed
+
+Module 05 now includes deep-dive, attack anatomy, controls/remediations, common mistakes, and a worked example. This is the first module upgraded to the reading-first, lab-supported content standard.

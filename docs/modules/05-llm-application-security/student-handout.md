@@ -173,3 +173,17 @@ Controls:
 The model may be probabilistic.
 
 The security controls around it should not be.
+
+## Suggested reading order
+
+For self-study, use this order before starting the lab:
+
+1. `README.md` for the module overview.
+2. `deep-dive.md` for the conceptual model.
+3. `attack-anatomy.md` to understand each attack path.
+4. `controls-and-remediations.md` to understand what strong controls look like.
+5. `common-mistakes.md` to avoid common shallow fixes.
+6. `worked-example.md` to see how to write an engineering-grade finding.
+7. DVAIA lab guide for hands-on reinforcement.
+
+The key question throughout the module is: **where does the security decision live?** If the answer is only “inside the prompt,” the design is weak.

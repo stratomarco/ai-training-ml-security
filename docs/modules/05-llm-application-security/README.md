@@ -99,6 +99,19 @@ This module primarily maps to the OWASP Top 10 for LLM Applications. The 2025 OW
 
 The 2023/2024 OWASP LLM release used different numbering for several categories, including insecure output handling, sensitive information disclosure, excessive agency, and overreliance/model-theft-related themes. The engineering lesson should not depend on memorizing numbering. Students should learn the underlying failure modes and check the current OWASP GenAI project when producing reports.
 
+
+## Reading-first deepening materials
+
+Module 05 now includes additional reading-first material intended to make the topic understandable without relying only on labs:
+
+- `deep-dive.md` — explains LLM application security as security engineering around a probabilistic component.
+- `attack-anatomy.md` — breaks down prompt injection, indirect prompt injection, sensitive disclosure, improper output handling, excessive agency, system prompt leakage, and unbounded consumption.
+- `controls-and-remediations.md` — maps weak mitigations to stronger implementable controls and validation tests.
+- `common-mistakes.md` — captures common design and reporting mistakes teams make with LLM applications.
+- `worked-example.md` — shows how to turn a vague “the model was jailbroken” observation into an engineering-grade finding.
+
+Students should read these before or alongside the DVAIA lab. The lab reinforces the concepts; it does not replace the explanation.
+
 ## Lab
 
 Recommended lab base:

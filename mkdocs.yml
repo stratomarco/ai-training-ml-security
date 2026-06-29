@@ -126,6 +126,11 @@ nav:
           - "Exercise": modules/04-biml-architectural-risk-analysis/exercise-biml-architecture-review.md
       - "05 — LLM Application Security":
           - "Overview": modules/05-llm-application-security/README.md
+          - "Deep Dive": modules/05-llm-application-security/deep-dive.md
+          - "Attack Anatomy": modules/05-llm-application-security/attack-anatomy.md
+          - "Controls and Remediations": modules/05-llm-application-security/controls-and-remediations.md
+          - "Common Mistakes": modules/05-llm-application-security/common-mistakes.md
+          - "Worked Example": modules/05-llm-application-security/worked-example.md
           - "Slides": modules/05-llm-application-security/slides.md
           - "Instructor Notes": modules/05-llm-application-security/instructor-notes.md
           - "Student Handout": modules/05-llm-application-security/student-handout.md

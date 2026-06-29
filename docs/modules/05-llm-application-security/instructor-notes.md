@@ -223,3 +223,21 @@ Push students to complete the engineering reasoning.
 End with this:
 
 > The question is not whether the model can be tricked. The question is whether the system remains safe when the model is tricked.
+
+## Teaching the reading-first materials
+
+Use the new deepening files to avoid turning Module 05 into a payload-demo session. A good delivery pattern is:
+
+1. Start with `deep-dive.md` and the claim that the model is not the security boundary.
+2. Use `attack-anatomy.md` to show one complete attack path before showing any lab behavior.
+3. Use `controls-and-remediations.md` to ask students where the control should live.
+4. Use `common-mistakes.md` as a discussion exercise: ask students which mistakes they have seen in real AI prototypes.
+5. Use `worked-example.md` to calibrate finding quality before students write their own report.
+
+When students say “the model was jailbroken,” push them to restate the finding in engineering terms:
+
+- What asset was affected?
+- Which trust boundary failed?
+- What authority did the model appear to have?
+- Which deterministic control was missing?
+- How would we validate the fix?
