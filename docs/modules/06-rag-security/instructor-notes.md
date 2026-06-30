@@ -162,3 +162,23 @@ A weak answer says only:
 
 Keep all payloads local and educational. The lab should not instruct students to attack real RAG systems or extract real secrets. Use fake documents, fake tenants, and fake sensitive data.
 
+
+
+## Instructor emphasis for reading-first delivery
+
+Do not teach this module as only a prompt-injection demonstration. The demonstration matters, but the core lesson is architectural:
+
+- Retrieval is a security boundary.
+- Retrieved content is untrusted input.
+- Authorization must happen before context reaches the model.
+- Metadata is part of the security model.
+- Citations are evidence, not proof.
+- The model should not decide whether the user is allowed to see a document.
+
+When students propose mitigations, push them beyond “improve the prompt.” A strong answer should include pre-retrieval authorization, metadata-preserving chunking, source trust policy, context minimization, output/citation validation, safe logging, and regression tests.
+
+Suggested discussion prompt:
+
+> If the model never reveals unauthorized content, but unauthorized content was still retrieved and sent to the model, has the system violated a security boundary? Why?
+
+Expected answer: yes. The boundary should prevent unauthorized content from entering the model context in the first place, because the context may influence output, logs, traces, citations, or tool decisions.

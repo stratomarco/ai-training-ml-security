@@ -325,3 +325,16 @@ This is not a full BrokenPilot implementation yet. It is the first testable MVP 
 ## v1.1-dev — Instructor grading calibration
 
 Added an instructor grading calibration guide and grading calibration exercise. These materials use the BrokenPilot strong/weak worked examples to align scoring around threat models, evidence quality, implementable controls, remediation backlog quality, executive communication, and residual risk.
+
+
+## v1.1-dev — Module 06 RAG Security deepening
+
+Added reading-first deepening material for Module 06:
+
+- RAG security deep dive
+- RAG attack anatomy
+- Controls and remediations
+- Common mistakes
+- Worked example for a RAG incident assistant
+
+This strengthens the course goal that labs reinforce security reasoning rather than replace explanation.

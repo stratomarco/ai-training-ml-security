@@ -143,6 +143,11 @@ nav:
           - "Slides": modules/06-rag-security/slides.md
           - "Instructor Notes": modules/06-rag-security/instructor-notes.md
           - "Student Handout": modules/06-rag-security/student-handout.md
+          - "Deep Dive": modules/06-rag-security/deep-dive.md
+          - "Attack Anatomy": modules/06-rag-security/attack-anatomy.md
+          - "Controls and Remediations": modules/06-rag-security/controls-and-remediations.md
+          - "Common Mistakes": modules/06-rag-security/common-mistakes.md
+          - "Worked Example": modules/06-rag-security/worked-example.md
           - "Checklist": modules/06-rag-security/checklist.md
           - "Quiz": modules/06-rag-security/quiz.md
           - "References": modules/06-rag-security/references.md

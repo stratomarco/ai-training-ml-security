@@ -306,3 +306,12 @@ Next:
 ## Module 05 reading-first depth completed
 
 Module 05 now includes deep-dive, attack anatomy, controls/remediations, common mistakes, and a worked example. This is the first module upgraded to the reading-first, lab-supported content standard.
+
+
+## Module 06 deepening
+
+- [x] Add RAG deep dive
+- [x] Add attack anatomy
+- [x] Add controls and remediations
+- [x] Add common mistakes
+- [x] Add worked example

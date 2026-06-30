@@ -263,3 +263,10 @@ The licensing model has been updated to protect the material from monetized repa
 ## Module 05 reading-first depth completed
 
 Module 05 now includes deep-dive, attack anatomy, controls/remediations, common mistakes, and a worked example. This is the first module upgraded to the reading-first, lab-supported content standard.
+
+
+## Deepen Module 6 RAG Security
+
+Status: completed in v1.1-dev.
+
+Module 06 now includes reading-first material covering indirect prompt injection, retrieval authorization, metadata-preserving chunking, source trust, citation laundering, safe logging, and RAG security regression testing.
