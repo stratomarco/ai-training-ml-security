@@ -47,6 +47,19 @@ By the end of this module, students should be able to:
 - Audit logs and accountability
 - Kill switches and rollback
 
+
+## Reading-first deepening material
+
+This module now includes additional reading-first material intended to help students understand agent security before running the BrokenPilot labs:
+
+- [Deep Dive](deep-dive.md) — why agents change the security model and how classic security engineering applies.
+- [Attack Anatomy](attack-anatomy.md) — tool misuse, confused deputy behavior, indirect injection into tools, memory poisoning, and excessive agency.
+- [Controls and Remediations](controls-and-remediations.md) — engineer-ready controls for tools, authorization, memory, approval gates, audit, rollback, and monitoring.
+- [Common Mistakes](common-mistakes.md) — frequent agent design failures and how to recognize them.
+- [Worked Example](worked-example.md) — BrokenPilot tool authorization and memory poisoning findings with root cause, impact, remediation, and validation.
+
+The goal is to make this module teachable by reading and reasoning, not only by running the lab.
+
 ## Security engineering connection
 
 Agent security reuses classic security principles:
@@ -137,6 +150,11 @@ Students produce an **agent control design** containing:
 
 ## Files in this module
 
+- `deep-dive.md` — reading-first deepening material
+- `attack-anatomy.md` — reading-first deepening material
+- `controls-and-remediations.md` — reading-first deepening material
+- `common-mistakes.md` — reading-first deepening material
+- `worked-example.md` — reading-first deepening material
 - `slides.md` — Markdown slide deck
 - `instructor-notes.md` — delivery guidance and facilitation notes
 - `student-handout.md` — student-facing reference

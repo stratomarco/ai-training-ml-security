@@ -157,6 +157,11 @@ nav:
           - "Slides": modules/07-agent-tool-security/slides.md
           - "Instructor Notes": modules/07-agent-tool-security/instructor-notes.md
           - "Student Handout": modules/07-agent-tool-security/student-handout.md
+          - "Deep Dive": modules/07-agent-tool-security/deep-dive.md
+          - "Attack Anatomy": modules/07-agent-tool-security/attack-anatomy.md
+          - "Controls and Remediations": modules/07-agent-tool-security/controls-and-remediations.md
+          - "Common Mistakes": modules/07-agent-tool-security/common-mistakes.md
+          - "Worked Example": modules/07-agent-tool-security/worked-example.md
           - "Checklist": modules/07-agent-tool-security/checklist.md
           - "Quiz": modules/07-agent-tool-security/quiz.md
           - "References": modules/07-agent-tool-security/references.md

@@ -210,3 +210,33 @@ This demo can be used in a short format because it has a clear before/after resu
 Use `brokenpilot-memory-validation.md` as the concrete hands-on companion to this module. The instructor should first show the vulnerable flow, where global memory written by Eve becomes active decision context for Alice, then restart the app with `ENABLE_MEMORY_REVIEW=true` or `ENABLE_MEMORY_ISOLATION=true` and repeat the same request.
 
 The teaching point is not that the mock agent is smart. The teaching point is that persistent memory changes the trust model. Memory needs provenance, review, scoping, auditability, and separation from executable instructions.
+
+
+## Reading-first delivery guidance
+
+Do not teach this module as only a tool-calling demo. The demo is useful because it makes the security property visible, but the teaching objective is deeper:
+
+- students should understand confused deputy behavior;
+- students should distinguish model planning from authorization;
+- students should explain why memory is a persistence and trust problem;
+- students should design concrete controls that engineers can implement;
+- students should validate that the control changes the outcome.
+
+Suggested flow:
+
+1. Assign `deep-dive.md` and `attack-anatomy.md` before class.
+2. Use the first 20 minutes to discuss why agents are workflow systems.
+3. Run or describe the BrokenPilot tool authorization validation.
+4. Ask students to identify the exact security property violated.
+5. Use `controls-and-remediations.md` to convert the finding into an implementable fix.
+6. Use `worked-example.md` to calibrate expected student submissions.
+
+When students say “the agent was tricked,” push them to be more precise:
+
+- Which component was influenced?
+- Which component should have enforced policy?
+- Which asset changed state?
+- Which boundary was crossed?
+- How do we prove the fix works?
+
+The answer should usually end at the tool broker, memory service, policy layer, approval workflow, or audit trail — not at the prompt alone.

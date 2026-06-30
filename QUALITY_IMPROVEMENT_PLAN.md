@@ -270,3 +270,8 @@ Module 05 now includes deep-dive, attack anatomy, controls/remediations, common 
 Status: completed in v1.1-dev.
 
 Module 06 now includes reading-first material covering indirect prompt injection, retrieval authorization, metadata-preserving chunking, source trust, citation laundering, safe logging, and RAG security regression testing.
+
+
+## Module 07 deepening
+
+- Module 07 now has reading-first material that uses validated BrokenPilot tool authorization and memory poisoning flows as concrete teaching anchors.

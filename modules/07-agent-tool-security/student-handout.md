@@ -154,3 +154,23 @@ You will produce an **agent control design** with:
 - monitoring plan;
 - incident response plan;
 - residual risk statement.
+
+
+## Reading path for this module
+
+Use the new deepening files before the hands-on BrokenPilot validation:
+
+1. Read `deep-dive.md` to understand why agents change the security model.
+2. Read `attack-anatomy.md` to map agent inputs to unsafe actions.
+3. Read `controls-and-remediations.md` to understand what engineers should implement.
+4. Review `common-mistakes.md` before doing the exercise.
+5. Use `worked-example.md` as a model for strong findings.
+
+## Key lesson from BrokenPilot validation
+
+BrokenPilot validates two important Module 07 lessons:
+
+- Missing tool authorization allows an `alpha` tenant user to update a `beta` tenant ticket.
+- Memory poisoning can influence an agent's attempted action, but independent tool authorization can still block unsafe execution.
+
+That is the core agent security pattern: the model and memory may be influenced, but the tool layer must still enforce policy.

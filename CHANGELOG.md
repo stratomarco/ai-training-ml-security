@@ -338,3 +338,8 @@ Added reading-first deepening material for Module 06:
 - Worked example for a RAG incident assistant
 
 This strengthens the course goal that labs reinforce security reasoning rather than replace explanation.
+
+
+## Module 07 deepening
+
+- Deepened Module 07 with reading-first pages for agent/tool security, including attack anatomy, controls, common mistakes, and a BrokenPilot worked example.

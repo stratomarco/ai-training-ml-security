@@ -315,3 +315,8 @@ Module 05 now includes deep-dive, attack anatomy, controls/remediations, common 
 - [x] Add controls and remediations
 - [x] Add common mistakes
 - [x] Add worked example
+
+
+## Module 07 deepening
+
+- Completed Module 07 deepening package. Next deepening target: Module 10 adversarial ML intuition and worked examples, or Module 12 BrokenPilot final report sample.
