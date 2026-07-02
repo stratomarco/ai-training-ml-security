@@ -36,6 +36,12 @@ The purpose is not to give students a full answer key. The purpose is to show th
 - [Strong executive readout example](strong-executive-readout-example.md)
 - [Weak executive readout example](weak-executive-readout-example.md)
 
+### Complete final report examples
+
+- [Gold-standard final report example](gold-standard-final-report-example.md)
+- [Weak final report example](weak-final-report-example.md)
+- [Instructor notes for final report examples](instructor-notes-final-report-examples.md)
+
 ## How instructors should use these
 
 Use these examples in three ways:
@@ -74,3 +80,11 @@ Use these examples together with the instructor grading calibration guide and gr
 ## Executive communication examples
 
 This folder now includes strong and weak executive risk memo examples. Use them to calibrate expectations before the BrokenPilot final readout.
+
+## Complete report examples
+
+The complete report examples combine threat modeling, evidence, remediation, residual risk, and leadership communication into one deliverable. Use them after students have reviewed the individual strong/weak examples.
+
+## Finding rewrite example
+
+Use [`finding-rewrite-before-after.md`](finding-rewrite-before-after.md) to show the difference between a vague AI security observation and a decision-grade security finding.

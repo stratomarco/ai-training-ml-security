@@ -212,6 +212,7 @@ nav:
           - "Quiz": modules/11-ai-red-team-methodology/quiz.md
           - "References": modules/11-ai-red-team-methodology/references.md
           - "Exercise": modules/11-ai-red-team-methodology/exercise-ai-red-team-plan.md
+          - "Finding Rewrite Exercise": modules/11-ai-red-team-methodology/exercise-finding-rewrite.md
       - "12 — BrokenPilot Capstone":
           - "Overview": modules/12-capstone-brokenpilot/README.md
           - "Slides": modules/12-capstone-brokenpilot/slides.md
@@ -275,6 +276,12 @@ nav:
           - "Weak Remediation Backlog": labs/brokenpilot/worked-examples/weak-remediation-backlog-example.md
           - "Strong Executive Readout": labs/brokenpilot/worked-examples/strong-executive-readout-example.md
           - "Weak Executive Readout": labs/brokenpilot/worked-examples/weak-executive-readout-example.md
+          - "Strong Executive Risk Memo": labs/brokenpilot/worked-examples/strong-executive-risk-memo-example.md
+          - "Weak Executive Risk Memo": labs/brokenpilot/worked-examples/weak-executive-risk-memo-example.md
+          - "Gold-Standard Final Report": labs/brokenpilot/worked-examples/gold-standard-final-report-example.md
+          - "Weak Final Report": labs/brokenpilot/worked-examples/weak-final-report-example.md
+          - "Instructor Notes for Final Report Examples": labs/brokenpilot/worked-examples/instructor-notes-final-report-examples.md
+          - "Finding Rewrite Before and After": labs/brokenpilot/worked-examples/finding-rewrite-before-after.md
   - Templates:
       - "Templates Overview": templates/README.md
       - "Threat Model Template": templates/threat-model-template.md
@@ -292,6 +299,7 @@ nav:
       - "Deep Dive Template": templates/deep-dive-template.md
       - "Attack Anatomy Template": templates/attack-anatomy-template.md
       - "Controls and Remediations Template": templates/controls-and-remediations-template.md
+      - "Finding Rewrite Template": templates/finding-rewrite-template.md
   - Instructor:
       - "Instructor Overview": instructor/README.md
       - "Delivery Guide": instructor/delivery-guide.md
@@ -301,6 +309,7 @@ nav:
       - "Module Cut and Expand Guide": instructor/module-cut-expand-guide.md
       - "Grading Calibration Guide": instructor/grading-calibration-guide.md
       - "Executive Communication Guide": instructor/executive-communication-guide.md
+      - "Finding Rewrite Facilitation Guide": instructor/finding-rewrite-facilitation-guide.md
   - Assessments:
       - "Assessments Overview": assessments/README.md
       - "Quiz Bank": assessments/quiz-bank.md
@@ -310,6 +319,8 @@ nav:
       - "Concrete Controls Assessment": assessments/concrete-controls-assessment.md
       - "Grading Calibration Exercise": assessments/grading-calibration-exercise.md
       - "Executive Risk Memo Rubric": assessments/executive-risk-memo-rubric.md
+      - "Finding Quality Rubric": assessments/finding-quality-rubric.md
+      - "Finding Rewrite Exercise": assessments/finding-rewrite-exercise.md
   - Project:
       - "Version": VERSION.md
       - "Changelog": CHANGELOG.md

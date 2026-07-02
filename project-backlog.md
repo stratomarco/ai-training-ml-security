@@ -328,3 +328,22 @@ Module 05 now includes deep-dive, attack anatomy, controls/remediations, common 
 ## Module 07 deepening
 
 - Completed Module 07 deepening package. Next deepening target: Module 10 adversarial ML intuition and worked examples, or Module 12 BrokenPilot final report sample.
+
+
+## BrokenPilot final report examples
+
+Status: **Added**
+
+- Gold-standard BrokenPilot final report example added.
+- Weak final report example added.
+- Instructor notes for using final report examples added.
+
+Next improvement: add a short classroom exercise where students rewrite one weak finding into a strong finding using evidence, root cause, control, validation, and residual risk.
+
+## Completed — Finding rewrite exercise
+
+- Added Module 11 finding rewrite exercise.
+- Added finding rewrite template.
+- Added finding quality rubric.
+- Added instructor facilitation guide.
+- Added BrokenPilot before/after finding rewrite example.

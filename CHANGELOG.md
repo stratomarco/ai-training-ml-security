@@ -1,5 +1,13 @@
 ## v1.1-dev — Module 10 reading-first deepening
 
+## Unreleased — BrokenPilot final report examples
+
+- Added a gold-standard BrokenPilot final report example that combines evidence, root-cause analysis, remediation, residual risk, and executive recommendation.
+- Added a weak final report contrast example to show common failure modes in student submissions.
+- Added instructor notes for using the final report examples during grading calibration.
+- Added MkDocs navigation entries for the complete final report examples.
+
+
 Deepened Module 10 — Adversarial ML and Robustness with reading-first materials:
 
 - Added a conceptual deep dive explaining adversarial ML as production security engineering and robustness under adversarial pressure.
@@ -360,3 +368,7 @@ This strengthens the course goal that labs reinforce security reasoning rather t
 - Added Module 08 executive risk memo exercise.
 - Added executive risk memo template, rubric, instructor guide, and strong/weak examples.
 - Linked executive communication practice to Module 07, Module 08, Module 11, and BrokenPilot.
+
+## Unreleased — Finding rewrite classroom exercise
+
+Added a classroom exercise that teaches students to rewrite vague AI security observations into decision-grade findings. Added a finding rewrite template, finding quality rubric, instructor facilitation guide, and BrokenPilot before/after example.

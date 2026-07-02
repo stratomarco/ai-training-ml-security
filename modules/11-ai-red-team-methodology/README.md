@@ -135,3 +135,7 @@ Students produce an **AI red team report** that includes:
 The goal is not to reward the most clever jailbreak. The goal is to reward disciplined security judgment.
 
 A strong student submission explains why the system failed, where the control should live, what trade-off the mitigation creates, and what residual risk remains.
+
+## Finding rewrite practice
+
+This module includes [`exercise-finding-rewrite.md`](exercise-finding-rewrite.md), a short exercise where students rewrite a weak AI security finding into a decision-grade finding with evidence, root cause, implementable control, validation, and residual risk. Use it before the BrokenPilot capstone to improve report quality.

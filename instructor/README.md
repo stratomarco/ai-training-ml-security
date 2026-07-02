@@ -15,3 +15,7 @@ Use [`grading-calibration-guide.md`](grading-calibration-guide.md) before gradin
 ## Executive communication
 
 See `executive-communication-guide.md` for guidance on teaching students to translate technical AI security findings into leadership decisions.
+
+## Finding rewrite facilitation
+
+Use [`finding-rewrite-facilitation-guide.md`](finding-rewrite-facilitation-guide.md) to teach students how to turn vague AI security observations into actionable findings with evidence, root cause, controls, validation, and residual risk.

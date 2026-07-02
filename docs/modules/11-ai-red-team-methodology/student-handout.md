@@ -123,3 +123,7 @@ A prompt may trigger the exploit, but the root cause is often architectural.
 Always ask:
 
 > What control should have prevented this even if the model was confused?
+
+## Finding rewrite practice
+
+This module includes [`exercise-finding-rewrite.md`](exercise-finding-rewrite.md), a short exercise where students rewrite a weak AI security finding into a decision-grade finding with evidence, root cause, implementable control, validation, and residual risk. Use it before the BrokenPilot capstone to improve report quality.

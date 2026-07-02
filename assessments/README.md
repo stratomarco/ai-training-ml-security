@@ -33,3 +33,9 @@ Use [`grading-calibration-exercise.md`](grading-calibration-exercise.md) before 
 ## Executive communication rubric
 
 Use `executive-risk-memo-rubric.md` to grade one-page risk memos and executive readouts.
+
+## Finding quality and rewrite assessment
+
+Use [`finding-quality-rubric.md`](finding-quality-rubric.md) to grade whether a finding is reproducible, actionable, validated, and useful for engineering decisions.
+
+Use [`finding-rewrite-exercise.md`](finding-rewrite-exercise.md) to assess whether students can convert a vague AI security observation into a decision-grade finding.

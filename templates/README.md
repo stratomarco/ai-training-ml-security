@@ -70,3 +70,7 @@ Use these templates when deepening modules beyond slides and lab steps:
 ## Executive risk memo
 
 Use `executive-risk-memo-template.md` when students need to communicate AI security risk as a leadership decision rather than a technical finding list.
+
+## Finding write-up template
+
+Use [`finding-rewrite-template.md`](finding-rewrite-template.md) when students need to rewrite a weak observation into an actionable security finding.

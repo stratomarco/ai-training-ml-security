@@ -151,3 +151,13 @@ The `prototype-app` now includes a dedicated tool-calling lab covering confused-
 
 - Source lab: `labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md`
 - Website lab: `docs/labs/brokenpilot/prototype-app/tool-calling-lab.md`
+
+## Worked final report examples
+
+The capstone now includes complete final report examples under `worked-examples/`:
+
+- `gold-standard-final-report-example.md` shows a strong end-to-end student submission.
+- `weak-final-report-example.md` shows a vague submission and explains why it is insufficient.
+- `instructor-notes-final-report-examples.md` helps instructors use the examples for grading calibration.
+
+Use these examples to show that the expected output is not just exploit discovery. Students should produce reproducible evidence, root-cause analysis, implementable controls, validation of fixes, and a leadership-ready risk decision.

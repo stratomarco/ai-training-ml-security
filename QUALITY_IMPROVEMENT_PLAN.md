@@ -273,3 +273,18 @@ Module 06 now includes reading-first material covering indirect prompt injection
 ## Module 07 deepening
 
 - Module 07 now has reading-first material that uses validated BrokenPilot tool authorization and memory poisoning flows as concrete teaching anchors.
+
+
+## BrokenPilot final report examples
+
+Status: **Added**
+
+- Gold-standard BrokenPilot final report example added.
+- Weak final report example added.
+- Instructor notes for using final report examples added.
+
+Next improvement: add a short classroom exercise where students rewrite one weak finding into a strong finding using evidence, root cause, control, validation, and residual risk.
+
+## Finding quality improvement
+
+Added a weak-to-strong finding rewrite exercise to raise report quality before the BrokenPilot capstone. This directly supports the goal of rewarding evidence, root cause, implementable controls, validation, and residual risk rather than merely finding vulnerabilities.
