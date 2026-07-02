@@ -181,3 +181,7 @@ Students produce a **Secure MLOps review** containing:
 - `../../templates/model-artifact-risk-review-template.md`
 - `../../templates/model-registry-access-control-template.md`
 - `../../templates/ml-bom-template.md`
+
+## Executive communication exercise
+
+This module now includes a one-page executive risk memo exercise. Students must translate secure MLOps and AI supply-chain findings into a launch, limited-pilot, or delay recommendation.

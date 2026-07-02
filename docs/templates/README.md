@@ -66,3 +66,7 @@ Use these templates when deepening modules beyond slides and lab steps:
 - `deep-dive-template.md` — explains a topic with architecture, principles, impact, controls, and framework mapping.
 - `attack-anatomy-template.md` — breaks an attack into preconditions, root cause, attack path, evidence, impact, controls, and residual risk.
 - `controls-and-remediations-template.md` — turns a finding into implementable engineering controls and test cases.
+
+## Executive risk memo
+
+Use `executive-risk-memo-template.md` when students need to communicate AI security risk as a leadership decision rather than a technical finding list.

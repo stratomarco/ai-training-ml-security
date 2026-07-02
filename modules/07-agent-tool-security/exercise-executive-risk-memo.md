@@ -78,3 +78,7 @@ Students may propose different controls, but a reasonable minimum set includes:
 ## Deliverable
 
 Submit the memo and a short appendix mapping each recommended control to the risk it reduces.
+
+## Related template
+
+Use `templates/executive-risk-memo-template.md` for a structured version of this exercise. Instructors can also compare student work against the strong and weak executive memo examples in `labs/brokenpilot/worked-examples/`.

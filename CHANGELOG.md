@@ -354,3 +354,9 @@ This strengthens the course goal that labs reinforce security reasoning rather t
 ## Module 07 deepening
 
 - Deepened Module 07 with reading-first pages for agent/tool security, including attack anatomy, controls, common mistakes, and a BrokenPilot worked example.
+
+## v1.1-dev — Executive communication exercise
+
+- Added Module 08 executive risk memo exercise.
+- Added executive risk memo template, rubric, instructor guide, and strong/weak examples.
+- Linked executive communication practice to Module 07, Module 08, Module 11, and BrokenPilot.

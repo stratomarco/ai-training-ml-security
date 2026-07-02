@@ -70,3 +70,7 @@ A weak BrokenPilot deliverable usually has one or more of these problems:
 ## Instructor calibration
 
 Use these examples together with the instructor grading calibration guide and grading calibration exercise. The examples are not just reference material; they are anchors for consistent grading across instructors and cohorts.
+
+## Executive communication examples
+
+This folder now includes strong and weak executive risk memo examples. Use them to calibrate expectations before the BrokenPilot final readout.

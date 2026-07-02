@@ -139,3 +139,7 @@ For the exercise, your final Secure MLOps review should include:
 - monitoring and rollback plan;
 - risk register;
 - residual risk statement.
+
+## Executive communication checkpoint
+
+After the secure MLOps review, write a one-page risk memo. Focus on the decision leadership must make, the top three risks, concrete launch-blocking controls, and residual risk.

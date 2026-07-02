@@ -178,6 +178,7 @@ nav:
           - "Quiz": modules/08-secure-mlops-supply-chain/quiz.md
           - "References": modules/08-secure-mlops-supply-chain/references.md
           - "Exercise": modules/08-secure-mlops-supply-chain/exercise-secure-mlops-review.md
+          - "Executive Risk Memo Exercise": modules/08-secure-mlops-supply-chain/exercise-executive-risk-memo.md
       - "09 — Privacy Attacks":
           - "Overview": modules/09-privacy-attacks/README.md
           - "Slides": modules/09-privacy-attacks/slides.md
@@ -299,6 +300,7 @@ nav:
       - "Delivery Formats": instructor/delivery-formats.md
       - "Module Cut and Expand Guide": instructor/module-cut-expand-guide.md
       - "Grading Calibration Guide": instructor/grading-calibration-guide.md
+      - "Executive Communication Guide": instructor/executive-communication-guide.md
   - Assessments:
       - "Assessments Overview": assessments/README.md
       - "Quiz Bank": assessments/quiz-bank.md
@@ -307,6 +309,7 @@ nav:
       - "AI Red Team Grading": assessments/ai-red-team-grading.md
       - "Concrete Controls Assessment": assessments/concrete-controls-assessment.md
       - "Grading Calibration Exercise": assessments/grading-calibration-exercise.md
+      - "Executive Risk Memo Rubric": assessments/executive-risk-memo-rubric.md
   - Project:
       - "Version": VERSION.md
       - "Changelog": CHANGELOG.md

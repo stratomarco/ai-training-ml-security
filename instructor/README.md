@@ -11,3 +11,7 @@ This folder contains instructor-facing material.
 ## Grading calibration
 
 Use [`grading-calibration-guide.md`](grading-calibration-guide.md) before grading BrokenPilot capstone submissions or Module 07 concrete-control exercises. It explains how to use the strong and weak worked examples, how to score evidence and remediation quality, and how to align multiple instructors.
+
+## Executive communication
+
+See `executive-communication-guide.md` for guidance on teaching students to translate technical AI security findings into leadership decisions.
