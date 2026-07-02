@@ -25,13 +25,13 @@ Open:
 http://127.0.0.1:8010
 ```
 
-## Step 1 — Reset state
+## Step 1  -  Reset state
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/reset -Method Post
 ```
 
-## Step 2 — Inspect users and tickets
+## Step 2  -  Inspect users and tickets
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/users
@@ -43,7 +43,7 @@ Confirm:
 - `alice` belongs to tenant `alpha`
 - `TCK-2001` belongs to tenant `beta`
 
-## Step 3 — Trigger vulnerable tool behavior
+## Step 3  -  Trigger vulnerable tool behavior
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/tools/update-ticket `
@@ -59,7 +59,7 @@ Expected result:
 - `authorization_decision` is `not_checked`
 - ticket status becomes `closed`
 
-## Step 4 — Trigger the same behavior through the agent simulation
+## Step 4  -  Trigger the same behavior through the agent simulation
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/reset -Method Post
@@ -76,7 +76,7 @@ Expected result:
 - ticket status becomes `closed`
 - authorization is still `not_checked`
 
-## Step 5 — Enable tool authorization
+## Step 5  -  Enable tool authorization
 
 Stop the app and restart with:
 
@@ -93,7 +93,7 @@ Expected result:
 - error is `tool_authorization_denied`
 - the response explains that the user must be an ops user in the same tenant as the ticket
 
-## Step 6 — Enable approval gates
+## Step 6  -  Enable approval gates
 
 Restart with:
 

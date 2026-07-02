@@ -40,7 +40,7 @@ def generate_answer(
 ) -> dict[str, Any]:
     malicious = _find_malicious_instructions(retrieved_documents)
     sensitive = _fake_sensitive_fragments(retrieved_documents)
-    titles = [f"{doc.get('id')} — {doc.get('title')}" for doc in retrieved_documents]
+    titles = [f"{doc.get('id')}  -  {doc.get('title')}" for doc in retrieved_documents]
 
     if malicious and not controls.prompt_injection_filter:
         answer = [

@@ -48,13 +48,13 @@ The app should be reachable at:
 http://127.0.0.1:8010
 ```
 
-## Step 1 — Reset lab state
+## Step 1  -  Reset lab state
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/reset -Method Post
 ```
 
-## Step 2 — Confirm vulnerable memory controls
+## Step 2  -  Confirm vulnerable memory controls
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/controls
@@ -68,7 +68,7 @@ ENABLE_MEMORY_ISOLATION : False
 ENABLE_TOOL_AUTHZ       : False
 ```
 
-## Step 3 — Plant poisoned memory
+## Step 3  -  Plant poisoned memory
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/memory/add `
@@ -87,7 +87,7 @@ created_by: eve
 creator_tenant: beta
 ```
 
-## Step 4 — Trigger agent behavior from another user
+## Step 4  -  Trigger agent behavior from another user
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/agent/run `
@@ -109,7 +109,7 @@ Security meaning:
 
 Alice did not provide a ticket id in the user goal. The agent took the ticket id and action from active memory. That memory was created by Eve from another tenant and was not reviewed before use.
 
-## Step 5 — Enable memory review
+## Step 5  -  Enable memory review
 
 Stop the app with `Ctrl+C`, then restart it with memory review enabled:
 
@@ -160,7 +160,7 @@ Security meaning:
 
 The unapproved memory exists, but the agent does not use it as active decision context. This validates a concrete control.
 
-## Step 6 — Optional memory isolation test
+## Step 6  -  Optional memory isolation test
 
 Restart the app with memory isolation enabled:
 

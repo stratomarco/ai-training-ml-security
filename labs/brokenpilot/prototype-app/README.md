@@ -4,6 +4,31 @@ This directory contains the minimal runnable BrokenPilot prototype.
 
 It is intentionally small and deterministic. The goal is to make the BrokenPilot capstone testable without requiring a real LLM, cloud account, vector database, ticketing system, or production-like integrations.
 
+
+## Cross-platform local setup
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+pytest
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+```
+
+macOS or Linux local run:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install --upgrade pip
+pip install -r requirements.txt
+pytest
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+```
+
 ## What this prototype demonstrates
 
 The current MVP supports these endpoints:

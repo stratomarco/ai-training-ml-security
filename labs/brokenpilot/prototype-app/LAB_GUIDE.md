@@ -10,7 +10,7 @@ Use the minimal BrokenPilot prototype to demonstrate how AI application risk eme
 - Local checkout of this repository
 - No cloud API keys required
 
-## Exercise 1 — Confirm the app is running
+## Exercise 1  -  Confirm the app is running
 
 Start the app and visit:
 
@@ -30,7 +30,7 @@ Expected result:
 status: ok
 ```
 
-## Exercise 2 — Observe the fake users
+## Exercise 2  -  Observe the fake users
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/users
@@ -45,7 +45,7 @@ Discussion question:
 
 > Which user should be able to retrieve Alpha tenant operational documents?
 
-## Exercise 3 — Trigger a retrieval authorization failure
+## Exercise 3  -  Trigger a retrieval authorization failure
 
 With default settings, retrieval authorization is disabled.
 
@@ -66,7 +66,7 @@ Root cause:
 
 > The retrieval service is allowed to search the corpus before enforcing tenant and role constraints.
 
-## Exercise 4 — Trigger indirect prompt injection
+## Exercise 4  -  Trigger indirect prompt injection
 
 Use Alice:
 
@@ -87,7 +87,23 @@ Root cause:
 
 > Retrieved content is untrusted data, but the model layer treats it like an instruction source.
 
-## Exercise 5 — Trigger a tool confused-deputy failure
+
+### Important note about the mock prompt-injection filter
+
+`ENABLE_PROMPT_INJECTION_FILTER` is a deterministic teaching toggle. In this prototype it detects obvious marker strings such as `MALICIOUS_INSTRUCTION:`, `IGNORE_PREVIOUS_INSTRUCTIONS:`, and `SYSTEM_OVERRIDE:`. That marker detection is **not** a production security control. It is intentionally simple so students can observe the difference between vulnerable and controlled branches.
+
+The real control is architectural:
+
+- separate instructions from retrieved data,
+- enforce retrieval authorization before context reaches the model,
+- reduce model and agent privileges,
+- keep tool authorization outside the model,
+- validate and constrain outputs before use, and
+- test the system with adversarial retrieved content.
+
+Signature or keyword filters can be useful as telemetry or one weak layer, but they are trivially bypassable and should never be the primary security boundary.
+
+## Exercise 5  -  Trigger a tool confused-deputy failure
 
 Reset the lab state:
 
@@ -114,7 +130,7 @@ Root cause:
 
 > The tool trusts that the caller or model already made the correct authorization decision. The tool itself does not enforce the security property.
 
-## Exercise 6 — Simulate an agent tool call
+## Exercise 6  -  Simulate an agent tool call
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/agent/run `
@@ -137,7 +153,7 @@ Strong answer:
 
 > The tool and/or policy layer must enforce it. The model may help interpret intent, but it must not be the authority for authorization.
 
-## Exercise 7 — Turn controls on
+## Exercise 7  -  Turn controls on
 
 Stop the app and restart with controls enabled.
 
@@ -168,7 +184,7 @@ Expected improved behavior:
 - Cross-tenant tool updates should be blocked.
 - Workflow-ending tool updates should require approval.
 
-## Exercise 8 — Write the findings
+## Exercise 8  -  Write the findings
 
 Students should produce one finding for each issue:
 
