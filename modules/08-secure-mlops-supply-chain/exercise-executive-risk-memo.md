@@ -1,4 +1,4 @@
-# Exercise — Executive Risk Memo for Secure MLOps and AI Supply Chain
+# Exercise  -  Executive Risk Memo for Secure MLOps and AI Supply Chain
 
 ## Purpose
 

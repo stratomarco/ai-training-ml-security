@@ -1,4 +1,4 @@
-# Attack Anatomy — LLM Application Security
+# Attack Anatomy  -  LLM Application Security
 
 This page explains the main LLM application attacks as security engineering problems. Each attack is described in terms of preconditions, attack path, violated principle, impact, and controls.
 

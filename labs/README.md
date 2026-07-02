@@ -21,20 +21,20 @@ Every lab must:
 
 | Folder | Purpose |
 |---|---|
-| [`dvaia-guides/`](dvaia-guides/) | Wrappers for DVAIA-style LLM application security exercises. |
-| [`rag-labs/`](rag-labs/) | RAG and indirect prompt injection exercises. |
-| [`agent-labs/`](agent-labs/) | Agent/tool security, memory poisoning, and approval-gate exercises. |
-| [`toy-ml-attacks/`](toy-ml-attacks/) | Classical ML attack exercises. |
-| [`mlops-supply-chain-labs/`](mlops-supply-chain-labs/) | Secure MLOps and AI supply chain review exercises. |
-| [`privacy-labs/`](privacy-labs/) | Privacy leakage, cross-tenant RAG, membership inference, and model inversion tabletop exercises. |
-| [`adversarial-ml-labs/`](adversarial-ml-labs/) | Evasion, robustness testing, poisoning, backdoors, drift, and feedback-loop abuse exercises. |
-| [`ai-red-team-labs/`](ai-red-team-labs/) | AI red team scoping, rules of engagement, evidence planning, and BrokenPilot attack-chain exercises. |
-| [`architecture-risk-review-labs/`](architecture-risk-review-labs/) | Architecture review tabletop exercises. |
-| [`brokenpilot/`](brokenpilot/) | Final capstone paper design for an internal AI operations assistant. |
+| [`dvaia-guides/`](dvaia-guides/README.md) | Wrappers for DVAIA-style LLM application security exercises. |
+| [`rag-labs/`](rag-labs/README.md) | RAG and indirect prompt injection exercises. |
+| [`agent-labs/`](agent-labs/README.md) | Agent/tool security, memory poisoning, and approval-gate exercises. |
+| [`toy-ml-attacks/`](toy-ml-attacks/README.md) | Classical ML attack exercises. |
+| [`mlops-supply-chain-labs/`](mlops-supply-chain-labs/README.md) | Secure MLOps and AI supply chain review exercises. |
+| [`privacy-labs/`](privacy-labs/README.md) | Privacy leakage, cross-tenant RAG, membership inference, and model inversion tabletop exercises. |
+| [`adversarial-ml-labs/`](adversarial-ml-labs/README.md) | Evasion, robustness testing, poisoning, backdoors, drift, and feedback-loop abuse exercises. |
+| [`ai-red-team-labs/`](ai-red-team-labs/README.md) | AI red team scoping, rules of engagement, evidence planning, and BrokenPilot attack-chain exercises. |
+| [`architecture-risk-review-labs/`](architecture-risk-review-labs/docops-assistant-architecture-review.md) | Architecture review tabletop exercises. |
+| [`brokenpilot/`](brokenpilot/README.md) | Final capstone paper design for an internal AI operations assistant. |
 
 ## Standard lab format
 
-Use [`../templates/lab-guide-template.md`](../templates/lab-guide-template.md) for every lab.
+Use [`../course-templates/lab-guide-template.md`](../course-templates/lab-guide-template.md) for every lab.
 
 
 ## v0.14 BrokenPilot capstone support guides

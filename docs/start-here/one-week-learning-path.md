@@ -42,11 +42,11 @@ For each major topic:
 
 If time is limited, prioritize:
 
-- Module 05 — LLM Application Security,
-- Module 06 — RAG Security,
-- Module 07 — Agent and Tool Security,
-- Module 11 — AI Red Team Methodology,
-- Module 12 — BrokenPilot Capstone.
+- Module 05  -  LLM Application Security,
+- Module 06  -  RAG Security,
+- Module 07  -  Agent and Tool Security,
+- Module 11  -  AI Red Team Methodology,
+- Module 12  -  BrokenPilot Capstone.
 
 The foundations in Modules 01–04 are still important, but they support the practical work in the later modules.
 

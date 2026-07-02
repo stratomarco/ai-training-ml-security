@@ -1,4 +1,4 @@
-# Weak Threat Model Example — BrokenPilot
+# Weak Threat Model Example  -  BrokenPilot
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Module 5 References — LLM Application Security
+# Module 5 References  -  LLM Application Security
 
 ## Primary references
 
@@ -11,7 +11,7 @@
 - OWASP LLM Top 10 2025 PDF  
   https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf
 
-- DVAIA — Damn Vulnerable AI Application  
+- DVAIA  -  Damn Vulnerable AI Application  
   https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
 
 ## Related references
@@ -22,18 +22,18 @@
 - NIST AI Risk Management Framework  
   https://www.nist.gov/itl/ai-risk-management-framework
 
-- NIST AI 600-1 — Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile  
+- NIST AI 600-1  -  Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile  
   https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 
-- BIML — Berryville Institute of Machine Learning  
+- BIML  -  Berryville Institute of Machine Learning  
   https://berryvilleiml.com/
 
 ## Classic security connections
 
-- Saltzer and Schroeder — The Protection of Information in Computer Systems
-- Gary McGraw — Software Security: Building Security In
-- Ross Anderson — Security Engineering
-- Adam Shostack — Threat Modeling
+- Saltzer and Schroeder  -  The Protection of Information in Computer Systems
+- Gary McGraw  -  Software Security: Building Security In
+- Ross Anderson  -  Security Engineering
+- Adam Shostack  -  Threat Modeling
 
 ## Suggested reading focus
 

@@ -1,4 +1,4 @@
-# Common Mistakes — Agent and Tool Security
+# Common Mistakes  -  Agent and Tool Security
 
 This page lists mistakes that repeatedly appear in agent designs. Students should use it as a review checklist during architecture review, lab work, and capstone preparation.
 

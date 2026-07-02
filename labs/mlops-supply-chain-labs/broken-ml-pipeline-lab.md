@@ -1,4 +1,4 @@
-# Lab — Broken ML Pipeline Supply Chain Review
+# Lab  -  Broken ML Pipeline Supply Chain Review
 
 ## Purpose
 
@@ -67,7 +67,7 @@ incident-helper
 
 ## Student tasks
 
-### Task 1 — Artifact inventory
+### Task 1  -  Artifact inventory
 
 Create an inventory of all artifacts that influence model behavior.
 
@@ -83,7 +83,7 @@ Include:
 - deployment pipeline;
 - feedback data.
 
-### Task 2 — Risk identification
+### Task 2  -  Risk identification
 
 Find at least twelve risks.
 
@@ -93,7 +93,7 @@ Use this structure:
 |---|---|---|---|---|
 | Example | Model artifact | No provenance | Cannot trust production model origin | Require signed provenance before promotion |
 
-### Task 3 — Secure pipeline redesign
+### Task 3  -  Secure pipeline redesign
 
 Redesign the pipeline with security gates:
 
@@ -111,7 +111,7 @@ approved data
   -> rollback
 ```
 
-### Task 4 — Minimum viable controls
+### Task 4  -  Minimum viable controls
 
 The team says it needs to ship in two weeks.
 

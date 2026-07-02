@@ -1,4 +1,4 @@
-# Module 02 — ML System Architecture
+# Module 02  -  ML System Architecture
 
 ## Status
 

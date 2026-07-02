@@ -1,4 +1,4 @@
-# Module 6 Instructor Notes — RAG Security and Indirect Prompt Injection
+# Module 6 Instructor Notes  -  RAG Security and Indirect Prompt Injection
 
 ## Teaching goal
 
@@ -119,12 +119,12 @@ Corrective framing:
 
 Use a small set of documents:
 
-1. `public-policy.md` — accessible to everyone
-2. `finance-plan.md` — finance team only
-3. `malicious-runbook.md` — contains hidden instructions
-4. `deprecated-security-guide.md` — stale guidance
-5. `tenant-a-incident.md` — tenant A only
-6. `tenant-b-incident.md` — tenant B only
+1. `public-policy.md`  -  accessible to everyone
+2. `finance-plan.md`  -  finance team only
+3. `malicious-runbook.md`  -  contains hidden instructions
+4. `deprecated-security-guide.md`  -  stale guidance
+5. `tenant-a-incident.md`  -  tenant A only
+6. `tenant-b-incident.md`  -  tenant B only
 
 Then ask the assistant questions as different user roles.
 

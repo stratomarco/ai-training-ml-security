@@ -1,6 +1,6 @@
-# Common Mistakes — RAG Security
+# Common Mistakes  -  RAG Security
 
-## Mistake 1 — Treating retrieval as only a relevance problem
+## Mistake 1  -  Treating retrieval as only a relevance problem
 
 Many teams optimize retrieval for semantic similarity and answer quality but ignore authorization, classification, and source trust.
 
@@ -16,7 +16,7 @@ Better approach:
 authorized subset first, semantic ranking second
 ```
 
-## Mistake 2 — Filtering after the model sees the content
+## Mistake 2  -  Filtering after the model sees the content
 
 A weak design retrieves sensitive content, sends it to the model, and then tries to filter the answer.
 
@@ -33,7 +33,7 @@ Better approach:
 do not put unauthorized content into model context
 ```
 
-## Mistake 3 — Losing access-control metadata during chunking
+## Mistake 3  -  Losing access-control metadata during chunking
 
 A document may have correct ACLs, but chunks may be stored without those ACLs.
 
@@ -49,7 +49,7 @@ Better approach:
 - fail closed when metadata is missing,
 - and test chunk-level authorization.
 
-## Mistake 4 — Trusting internal documents by default
+## Mistake 4  -  Trusting internal documents by default
 
 Internal does not mean safe. Internal systems contain drafts, comments, stale pages, support tickets, user uploads, and low-trust notes.
 
@@ -59,7 +59,7 @@ Better approach:
 - distinguish authoritative from unreviewed content,
 - and prevent low-trust content from authorizing actions.
 
-## Mistake 5 — Depending on prompt wording as the main control
+## Mistake 5  -  Depending on prompt wording as the main control
 
 Prompts can help communicate policy to the model, but they are not hard boundaries.
 
@@ -75,7 +75,7 @@ Stronger control:
 Confidential information is not retrieved unless the user is authorized.
 ```
 
-## Mistake 6 — Ignoring indirect prompt injection
+## Mistake 6  -  Ignoring indirect prompt injection
 
 Some teams test only user prompts and forget that documents, tickets, emails, webpages, and code comments can also carry instructions.
 
@@ -86,7 +86,7 @@ Better approach:
 - prevent retrieved content from controlling tools,
 - and monitor source influence.
 
-## Mistake 7 — Assuming citations prove correctness
+## Mistake 7  -  Assuming citations prove correctness
 
 Citations are useful but not sufficient.
 
@@ -104,7 +104,7 @@ Better approach:
 - expose source trust/freshness,
 - and require human review for high-impact actions.
 
-## Mistake 8 — Building one shared vector index without tenant controls
+## Mistake 8  -  Building one shared vector index without tenant controls
 
 A single shared index can be acceptable only if metadata filtering is strong and tested. Without reliable filtering, it creates a cross-tenant data leakage path.
 
@@ -113,7 +113,7 @@ Better approach:
 - use separate indexes for strong isolation where needed,
 - or enforce tenant filters at query time with tests that prove isolation.
 
-## Mistake 9 — Logging too much
+## Mistake 9  -  Logging too much
 
 RAG traces can contain full prompts, retrieved chunks, sensitive source text, and generated answers.
 
@@ -124,7 +124,7 @@ Better approach:
 - protect traces with access control,
 - and define retention limits.
 
-## Mistake 10 — No security regression tests
+## Mistake 10  -  No security regression tests
 
 RAG behavior changes when documents, embeddings, prompts, models, and ranking logic change.
 

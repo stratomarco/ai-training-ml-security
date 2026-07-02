@@ -1,8 +1,8 @@
-# Lab — Memory Poisoning and Approval Gates
+# Lab  -  Memory Poisoning and Approval Gates
 
 ## Module
 
-Module 07 — Agent and Tool Security
+Module 07  -  Agent and Tool Security
 
 ## Lab goal
 
@@ -38,7 +38,7 @@ This is dangerous because attacker-controlled or low-trust content can persist a
 
 ## Student tasks
 
-### Task 1 — Classify memory items
+### Task 1  -  Classify memory items
 
 Classify memory candidates:
 
@@ -49,7 +49,7 @@ Classify memory candidates:
 | Team escalation channel from admin | Yes | Admin-approved config | Until changed | Yes/admin |
 | Incident-specific workaround | Maybe | Incident-scoped | 7 days | Maybe |
 
-### Task 2 — Define memory policy
+### Task 2  -  Define memory policy
 
 Define rules for:
 
@@ -62,7 +62,7 @@ Define rules for:
 - how memory is deleted;
 - how memory is used in tool decisions.
 
-### Task 3 — Design approval for memory writes
+### Task 3  -  Design approval for memory writes
 
 Create tiers:
 
@@ -74,7 +74,7 @@ Create tiers:
 | Tool permission preference | Security/admin approval |
 | Incident-specific note | Expiring memory, limited scope |
 
-### Task 4 — Prevent memory from bypassing policy
+### Task 4  -  Prevent memory from bypassing policy
 
 Write one rule:
 

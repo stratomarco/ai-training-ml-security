@@ -1,6 +1,6 @@
-# Module 10 Slides — Adversarial ML and Robustness
+# Module 10 Slides  -  Adversarial ML and Robustness
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # Adversarial ML and Robustness
 
@@ -8,7 +8,7 @@ Testing models under adversarial pressure.
 
 ---
 
-## Slide 2 — Why this module matters
+## Slide 2  -  Why this module matters
 
 A model can perform well on a test set and still fail in production.
 
@@ -25,7 +25,7 @@ Reasons include:
 
 ---
 
-## Slide 3 — Core thesis
+## Slide 3  -  Core thesis
 
 # Accuracy is not the same as security.
 
@@ -39,7 +39,7 @@ A useful security review asks:
 
 ---
 
-## Slide 4 — Classic security connection
+## Slide 4  -  Classic security connection
 
 Adversarial ML is not separate from security engineering.
 
@@ -53,7 +53,7 @@ Adversarial ML is not separate from security engineering.
 
 ---
 
-## Slide 5 — Model lifecycle attack points
+## Slide 5  -  Model lifecycle attack points
 
 ```text
 data -> labeling -> training -> evaluation -> registry -> deployment -> inference -> monitoring -> feedback
@@ -72,7 +72,7 @@ Attackers may influence:
 
 ---
 
-## Slide 6 — Evasion
+## Slide 6  -  Evasion
 
 Evasion happens when an attacker changes input to avoid detection or trigger a desired output.
 
@@ -86,7 +86,7 @@ Examples:
 
 ---
 
-## Slide 7 — Evasion root cause
+## Slide 7  -  Evasion root cause
 
 The model learned patterns from historical examples.
 
@@ -100,7 +100,7 @@ The attacker searches for inputs that:
 
 ---
 
-## Slide 8 — Poisoning
+## Slide 8  -  Poisoning
 
 Poisoning happens when an attacker influences training data, labels, feedback, or retraining.
 
@@ -114,7 +114,7 @@ Possible goals:
 
 ---
 
-## Slide 9 — Backdoors
+## Slide 9  -  Backdoors
 
 A backdoor is targeted behavior that appears only when a trigger is present.
 
@@ -128,7 +128,7 @@ Security question:
 
 ---
 
-## Slide 10 — Model skewing and feedback loops
+## Slide 10  -  Model skewing and feedback loops
 
 Feedback can improve a system.
 
@@ -144,7 +144,7 @@ Risky patterns:
 
 ---
 
-## Slide 11 — Distribution shift and drift
+## Slide 11  -  Distribution shift and drift
 
 Not every failure is caused by an attacker.
 
@@ -163,7 +163,7 @@ Security cares because attackers can exploit drift.
 
 ---
 
-## Slide 12 — Confidence is not enough
+## Slide 12  -  Confidence is not enough
 
 A confidence score is not a security guarantee.
 
@@ -177,7 +177,7 @@ Ask:
 
 ---
 
-## Slide 13 — Robustness testing
+## Slide 13  -  Robustness testing
 
 Robustness testing asks:
 
@@ -190,7 +190,7 @@ Robustness testing asks:
 
 ---
 
-## Slide 14 — Practical test categories
+## Slide 14  -  Practical test categories
 
 | Category | Example |
 |---|---|
@@ -204,7 +204,7 @@ Robustness testing asks:
 
 ---
 
-## Slide 15 — Defense patterns
+## Slide 15  -  Defense patterns
 
 Useful controls include:
 
@@ -223,7 +223,7 @@ Useful controls include:
 
 ---
 
-## Slide 16 — Do not over-trust the model
+## Slide 16  -  Do not over-trust the model
 
 A model should rarely be the only security control.
 
@@ -235,7 +235,7 @@ model signal + deterministic policy + human review + monitoring + rollback
 
 ---
 
-## Slide 17 — Recovery matters
+## Slide 17  -  Recovery matters
 
 Assume a model will eventually fail.
 
@@ -251,7 +251,7 @@ Prepare to:
 
 ---
 
-## Slide 18 — Student exercise
+## Slide 18  -  Student exercise
 
 Design an adversarial test plan for a phishing classifier.
 
@@ -269,7 +269,7 @@ Include:
 
 ---
 
-## Slide 19 — Leadership framing
+## Slide 19  -  Leadership framing
 
 Avoid saying:
 
@@ -281,7 +281,7 @@ Say:
 
 ---
 
-## Slide 20 — Takeaways
+## Slide 20  -  Takeaways
 
 - Accuracy is not security.
 - Evasion targets inference-time behavior.

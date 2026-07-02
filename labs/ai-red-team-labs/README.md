@@ -1,6 +1,6 @@
 # AI Red Team Labs
 
-These labs support Module 11 — AI Red Team Methodology.
+These labs support Module 11  -  AI Red Team Methodology.
 
 They are designed as controlled, fake-data, local/tabletop exercises. The goal is not to attack real systems. The goal is to practice structured AI red team planning, evidence collection, reporting, and remediation design.
 

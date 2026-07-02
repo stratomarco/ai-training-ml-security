@@ -15,7 +15,7 @@ The goal is to reward findings that lead to engineering action, not just dramati
 
 ## Criteria
 
-| Criterion | 4 — Strong | 3 — Acceptable | 2 — Weak | 1 — Insufficient |
+| Criterion | 4  -  Strong | 3  -  Acceptable | 2  -  Weak | 1  -  Insufficient |
 |---|---|---|---|---|
 | Reproducibility | Clear steps, inputs, outputs, state before/after | Mostly reproducible with minor gaps | Some evidence but hard to reproduce | No usable evidence |
 | Root cause | Identifies concrete design/control failure | Identifies likely failure area | Vague cause | Blames "AI" or "prompt" only |

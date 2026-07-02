@@ -1,4 +1,4 @@
-# AI Training — ML Security
+# AI Training: ML Security
 
 **Security engineering for systems that contain machine learning.**
 
@@ -47,14 +47,25 @@ Students learn how to:
 
 ## Website edition
 
-The repository now includes a MkDocs Material website layer. The website turns the Markdown curriculum into a browsable training portal with navigation, search, module pages, lab setup pages, templates, and release documentation.
+The repository includes a MkDocs Material website layer. The canonical course content lives in the root-level `modules/`, `labs/`, `course-templates/`, `instructor/`, and `assessments/` directories. MkDocs source is generated into `.mkdocs-src/` before preview or deployment so the course is not hand-maintained in two places.
 
-Preview locally:
+Preview locally on Windows PowerShell:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+python scripts\sync_mkdocs_content.py
+mkdocs serve
+```
+
+Preview locally on macOS or Linux:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python3 scripts/sync_mkdocs_content.py
 mkdocs serve
 ```
 
@@ -64,7 +75,12 @@ Then open:
 http://127.0.0.1:8000
 ```
 
-GitHub Pages deployment is configured through `.github/workflows/deploy-docs.yml`. In GitHub, set **Settings → Pages → Source** to **GitHub Actions**.
+GitHub Pages deployment is configured through `.github/workflows/deploy-docs.yml`. In GitHub, set **Settings > Pages > Source** to **GitHub Actions**.
+
+
+## Source of truth
+
+Canonical course content lives in the root-level content directories. MkDocs source is generated into `.mkdocs-src/` before preview or deployment. See `SOURCE_OF_TRUTH.md`.
 
 ## Repository structure
 
@@ -86,40 +102,31 @@ ai-training-ml-security/
 │   ├── index.md
 │   ├── start-here/
 │   ├── lab-setup/
-│   ├── modules/
-│   ├── labs/
-│   ├── templates/
-│   ├── instructor/
-│   ├── assessments/
 │   └── releases/
 ├── modules/
 ├── labs/
-├── templates/
+├── course-templates/
 ├── instructor/
-└── assessments/
+├── assessments/
+└── scripts/
 ```
 
-The `docs/` directory is the MkDocs website source. The root-level `modules/`, `labs/`, `templates/`, `instructor/`, and `assessments/` directories are preserved for repository browsing and compatibility with the v1.0 structure.
+The root-level `modules/`, `labs/`, `course-templates/`, `instructor/`, and `assessments/` directories are the source of truth. The `docs/` directory contains only website-only pages such as the landing page, start-here material, lab setup notes, and release notes. Generated MkDocs source is built into `.mkdocs-src/` by `scripts/sync_mkdocs_content.py` and is ignored by Git.
 
-## Build order
+## Development status
 
-The project is now at a **v1.0 release-candidate** stage. The core curriculum spine is complete and all twelve modules have full teaching packages.
+Current working version: **v1.1-dev testable-labs and course-depth draft**.
 
-Completed for v1.0:
+The v1.0 curriculum has been released. Current development focuses on making the course more portable, testable, instructor-ready, and self-study friendly before any future v1.1 release tag.
 
-1. Finalized the syllabus and course map.
-2. Completed Modules 01–12 as teachable units.
-3. Built reusable templates for threat modeling, architecture review, privacy review, AI red teaming, MLOps review, agent control design, and capstone reporting.
-4. Mapped DVAIA-style labs to OWASP and course modules.
-5. Designed the BrokenPilot capstone as a complete paper-based exercise.
-6. Added release readiness files: changelog, release checklist, security policy, code of conduct, issue templates, and PR template.
+Completed in the v1.1-dev line:
 
-Recommended work after v1.0:
-
-1. Expand selected lab wrappers with more concrete screenshots and environment-specific steps after testing DVAIA locally.
-2. Convert BrokenPilot from paper design into a local vulnerable lab application.
-3. Add optional slide-rendering workflows later if needed, while keeping Markdown as the source of truth.
-4. Add more instructor examples from real architecture reviews and red-team reports.
+1. DVAIA local validation and DVAIA-backed walkthroughs.
+2. BrokenPilot runnable MVP with retrieval, tool-calling, memory poisoning, control toggles, and tests.
+3. Deeper reading-first material for Modules 05, 06, 07, and 10.
+4. Worked examples, grading calibration, finding rewrite exercises, and executive communication exercises.
+5. 40-hour / one-week professional delivery model.
+6. Single-source-of-truth MkDocs generation workflow.
 
 ## Lab philosophy
 
@@ -142,22 +149,22 @@ See `LICENSE.md`, `LICENSE-CONTENT.md`, `LICENSE-CODE.md`, and `COMMERCIAL-LICEN
 
 ## Course status
 
-Current working version: **v1.1 website edition draft**. Modules 01–12 have complete teaching packages, the BrokenPilot capstone is ready to teach, and the repository includes release-readiness material and a MkDocs Material website layer for local preview and GitHub Pages publishing.
+Current working version: **v1.1-dev testable-labs and course-depth draft**. Modules 01–12 have complete teaching packages. DVAIA has been locally validated as an external lab dependency, BrokenPilot has a runnable MVP, and the course is being hardened for a future v1.1 release.
 
 | Module | Status | Notes |
 |---|---|---|
-| 01 — Security Engineering for AI | Complete | Reference module with slides, notes, handout, exercise, checklist, quiz, and references. |
-| 02 — ML System Architecture | Complete | Lifecycle architecture, DFD exercise, architecture review template. |
-| 03 — OWASP ML Security Top 10 | Complete | Classical ML attack categories and toy ML lab. |
-| 04 — BIML Architectural Risk Analysis | Complete | Design review, abuse cases, architectural risk review lab. |
-| 05 — LLM Application Security | Complete | OWASP LLM/GenAI framing and DVAIA-style LLM lab. |
-| 06 — RAG Security and Indirect Prompt Injection | Complete | RAG architecture, retrieval authorization, indirect prompt injection, RAG lab, and templates. |
-| 07 — Agent and Tool Security | Complete | Tool calling, excessive agency, memory poisoning, approval gates, sandboxing, auditability, and agent control design. |
-| 08 — Secure MLOps and Supply Chain | Complete | Datasets, notebooks, dependencies, training jobs, model artifacts, registries, provenance, promotion gates, feedback loops, and ML-BOM templates. |
-| 09 — Privacy Attacks | Complete | Membership inference, model inversion, training data extraction, prompt/log leakage, embedding leakage, cross-tenant retrieval, memory leakage, and privacy risk assessment templates. |
-| 10 — Adversarial ML and Robustness | Complete | Evasion, poisoning, backdoors, drift, confidence, fallback behavior, monitoring, robustness evaluation, and adversarial test planning. |
-| 11 — AI Red Team Methodology | Complete | Scope, rules of engagement, attack planning, controlled testing, evidence, severity, reporting, executive readout, remediation, and residual risk. |
-| 12 — BrokenPilot Capstone | Complete | Full capstone teaching package, runbook, exercises, final presentation guide, evidence log, remediation backlog, templates, and assessment rubric. |
+| 01  -  Security Engineering for AI | Complete | Reference module with slides, notes, handout, exercise, checklist, quiz, and references. |
+| 02  -  ML System Architecture | Complete | Lifecycle architecture, DFD exercise, architecture review template. |
+| 03  -  OWASP ML Security Top 10 | Complete | Classical ML attack categories and toy ML lab. |
+| 04  -  BIML Architectural Risk Analysis | Complete | Design review, abuse cases, architectural risk review lab. |
+| 05  -  LLM Application Security | Complete | OWASP LLM/GenAI framing and DVAIA-style LLM lab. |
+| 06  -  RAG Security and Indirect Prompt Injection | Complete | RAG architecture, retrieval authorization, indirect prompt injection, RAG lab, and templates. |
+| 07  -  Agent and Tool Security | Complete | Tool calling, excessive agency, memory poisoning, approval gates, sandboxing, auditability, and agent control design. |
+| 08  -  Secure MLOps and Supply Chain | Complete | Datasets, notebooks, dependencies, training jobs, model artifacts, registries, provenance, promotion gates, feedback loops, and ML-BOM templates. |
+| 09  -  Privacy Attacks | Complete | Membership inference, model inversion, training data extraction, prompt/log leakage, embedding leakage, cross-tenant retrieval, memory leakage, and privacy risk assessment templates. |
+| 10  -  Adversarial ML and Robustness | Complete | Evasion, poisoning, backdoors, drift, confidence, fallback behavior, monitoring, robustness evaluation, and adversarial test planning. |
+| 11  -  AI Red Team Methodology | Complete | Scope, rules of engagement, attack planning, controlled testing, evidence, severity, reporting, executive readout, remediation, and residual risk. |
+| 12  -  BrokenPilot Capstone | Complete | Full capstone teaching package, runbook, exercises, final presentation guide, evidence log, remediation backlog, templates, and assessment rubric. |
 
 
 ## Current development focus

@@ -39,10 +39,10 @@ Default URL: `http://127.0.0.1:5000`
 
 | Course module | DVAIA-backed coverage | Validation status | Notes |
 |---|---|---|---|
-| Module 05 — LLM Application Security | Direct prompt injection and LLM application-security behavior | Validated locally | Use for first hands-on DVAIA exercise path |
-| Module 06 — RAG Security | RAG / indirect prompt injection style exercises where supported by the local DVAIA environment | Validated locally | Use to move the module from tabletop-only to hands-on where applicable |
-| Module 07 — Agent and Tool Security | Agent/tool-use behavior where supported by the local DVAIA environment | Validated locally | Some agent exercises may still require adjacent vulnerable-agent labs or BrokenPilot later |
-| Module 11 — AI Red Team Methodology | Evidence capture and attack-chain practice across DVAIA-backed scenarios | Validated locally | Use after students complete Modules 05–07 |
+| Module 05  -  LLM Application Security | Direct prompt injection and LLM application-security behavior | Validated locally | Use for first hands-on DVAIA exercise path |
+| Module 06  -  RAG Security | RAG / indirect prompt injection style exercises where supported by the local DVAIA environment | Validated locally | Use to move the module from tabletop-only to hands-on where applicable |
+| Module 07  -  Agent and Tool Security | Agent/tool-use behavior where supported by the local DVAIA environment | Validated locally | Some agent exercises may still require adjacent vulnerable-agent labs or BrokenPilot later |
+| Module 11  -  AI Red Team Methodology | Evidence capture and attack-chain practice across DVAIA-backed scenarios | Validated locally | Use after students complete Modules 05–07 |
 
 ## Course usage
 
@@ -88,3 +88,17 @@ Do not expose the DVAIA service to the internet.
 Do not connect it to real internal systems.  
 Do not use real customer data, production credentials, production tickets, or production tools.  
 Do not reuse DVAIA configuration as a production pattern.
+
+
+## Fallback if DVAIA is unavailable
+
+DVAIA is a validated external dependency, but it is not controlled by this course. If DVAIA is unavailable during delivery, instructors should use the BrokenPilot runnable prototype for the core hands-on path:
+
+| Module | Preferred hands-on path | Fallback path |
+|---|---|---|
+| Module 05 | DVAIA direct prompt injection | BrokenPilot indirect-instruction and mock LLM behavior |
+| Module 06 | DVAIA RAG / indirect prompt injection where available | BrokenPilot retrieval authorization and poisoned document flow |
+| Module 07 | DVAIA agent/tool behavior where available | BrokenPilot tool confused-deputy and memory poisoning flows |
+| Module 11 | DVAIA mini red-team assessment | BrokenPilot attack chain assessment |
+
+The course should not depend on a live third-party lab being available for every critical learning objective. DVAIA enriches the course, while BrokenPilot provides the controlled baseline path.

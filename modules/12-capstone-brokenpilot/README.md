@@ -1,4 +1,4 @@
-# Module 12 — Capstone: BrokenPilot
+# Module 12  -  Capstone: BrokenPilot
 
 ## Purpose
 
@@ -78,7 +78,7 @@ Students are asked to review the system before wider deployment.
 
 ## Supporting BrokenPilot files
 
-The detailed capstone design lives in [`../../labs/brokenpilot/`](../../labs/brokenpilot/).
+The detailed capstone design lives in [`../../labs/brokenpilot/`](../../labs/brokenpilot/README.md).
 
 | File | Purpose |
 |---|---|
@@ -162,3 +162,7 @@ Students may over-focus on prompt payloads. Redirect them toward the system:
 ## Suggested reading
 
 See [`references.md`](references.md) and the root [`../../references.md`](../../references.md).
+
+## Assessment scope note
+
+The runnable BrokenPilot MVP directly demonstrates Module 05, Module 06, Module 07, and Module 11 style findings. Module 08, Module 09, and Module 10 risks are assessed through tabletop analysis, architecture review, written deliverables, and discussion unless a future prototype increment implements those behaviors. See `labs/brokenpilot/capstone-assessment-scope.md`.

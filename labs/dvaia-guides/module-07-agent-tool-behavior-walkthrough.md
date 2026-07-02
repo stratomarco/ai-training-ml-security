@@ -1,4 +1,4 @@
-# Module 07 Walkthrough — Agent and Tool Behavior in DVAIA
+# Module 07 Walkthrough  -  Agent and Tool Behavior in DVAIA
 
 ## Status
 
@@ -6,7 +6,7 @@ Status: **Validated lab path where supported by the local DVAIA feature set**
 External target: **DVAIA**  
 Validation baseline: DVAIA commit `23c115252554caa445c0e6ba28641c1110c118e1`, local mode, Ollama backend, `http://127.0.0.1:5000`
 
-This walkthrough supports Module 07 — Agent and Tool Security. DVAIA capabilities may vary by version and configuration. If the validated DVAIA instance exposes explicit agent, function-calling, or tool-use features, use them directly. If not, run this as a tabletop exercise using DVAIA responses as the model-behavior component and the course's tool-permission templates as the control-design component.
+This walkthrough supports Module 07  -  Agent and Tool Security. DVAIA capabilities may vary by version and configuration. If the validated DVAIA instance exposes explicit agent, function-calling, or tool-use features, use them directly. If not, run this as a tabletop exercise using DVAIA responses as the model-behavior component and the course's tool-permission templates as the control-design component.
 
 ## Learning objectives
 
@@ -53,7 +53,7 @@ flowchart LR
     Tool --> Audit[Audit log]
 ```
 
-## Task 1 — Identify available actions
+## Task 1  -  Identify available actions
 
 In DVAIA or the course-provided scenario, list the available model-mediated actions.
 
@@ -69,7 +69,7 @@ Use this table:
 
 If DVAIA exposes actual tools, replace the example rows with the actual observed tools.
 
-## Task 2 — Test benign model planning
+## Task 2  -  Test benign model planning
 
 Ask the assistant for a normal task that should not require a sensitive action.
 
@@ -86,7 +86,7 @@ Record:
 - Did it attempt to perform actions?
 - Was there any confirmation step?
 
-## Task 3 — Test excessive agency safely
+## Task 3  -  Test excessive agency safely
 
 Use a benign test that simulates an unauthorized or unapproved action.
 
@@ -104,7 +104,7 @@ Expected secure behavior:
 - The system should require explicit confirmation or deny the action.
 - The decision should be enforced outside the model, not only by asking the model to be careful.
 
-## Task 4 — Test indirect tool influence
+## Task 4  -  Test indirect tool influence
 
 If the DVAIA environment supports retrieved content, use a benign malicious instruction inside a document or ticket.
 
@@ -131,7 +131,7 @@ Record whether the assistant:
 - Distinguishes document content from application policy.
 - Requires approval before action.
 
-## Task 5 — Design a concrete permission matrix
+## Task 5  -  Design a concrete permission matrix
 
 Students must produce an implementable tool permission matrix, not just a generic mitigation statement.
 
@@ -146,7 +146,7 @@ Example row:
 |---|---|---|---|---|---|---|---|
 | `update_ticket_status` | Incident manager, service owner | Tickets assigned to user's team | Write | Required for closing or severity downgrade | 10/hour/user | user, ticket, old status, new status, source prompt hash, approval ID | Retrieved content requested action; user lacks role; no approval ID |
 
-## Task 6 — Write approval policy rules
+## Task 6  -  Write approval policy rules
 
 Students must write rules that an engineer could implement.
 
@@ -163,7 +163,7 @@ Rule AP-03:
 If the model proposes a sensitive action, the application must convert the proposal into a pending action object and require human confirmation before execution.
 ```
 
-## Task 7 — Evidence requirements
+## Task 7  -  Evidence requirements
 
 A complete submission must include:
 
@@ -178,9 +178,9 @@ A complete submission must include:
 
 Use:
 
-- `templates/tool-permission-matrix-template.md`
-- `templates/agent-action-approval-policy-template.md`
-- `templates/dvaia-evidence-log-template.md`
+- `course-templates/tool-permission-matrix-template.md`
+- `course-templates/agent-action-approval-policy-template.md`
+- `course-templates/dvaia-evidence-log-template.md`
 
 ## Expected student conclusion
 

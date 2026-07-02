@@ -1,4 +1,4 @@
-# Exercise — OWASP ML Attack Review
+# Exercise  -  OWASP ML Attack Review
 
 ## Purpose
 
@@ -18,23 +18,23 @@ You do not need to produce code. The goal is to reason about the system, the att
 
 ## Scenario options
 
-### Scenario A — Spam and phishing classifier
+### Scenario A  -  Spam and phishing classifier
 
 A company uses an ML classifier to score inbound email as safe, suspicious, or malicious. The score influences whether the message is delivered, quarantined, or sent to security review.
 
-### Scenario B — Fraud scoring model
+### Scenario B  -  Fraud scoring model
 
 A payments company uses an ML model to score card transactions. High-risk transactions may be declined or sent to manual review.
 
-### Scenario C — Product recommender
+### Scenario C  -  Product recommender
 
 An e-commerce platform uses user activity and reviews to recommend products. Recommended products receive more visibility and sales.
 
-### Scenario D — Support-ticket classifier
+### Scenario D  -  Support-ticket classifier
 
 An operations team uses an ML model to classify tickets by urgency and route them to the right team.
 
-### Scenario E — Medical triage model
+### Scenario E  -  Medical triage model
 
 A healthcare organization uses an ML model to prioritize cases for additional review. The model does not make the final decision, but it influences queue priority.
 

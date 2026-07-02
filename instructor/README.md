@@ -13,8 +13,8 @@ This folder contains instructor-facing material.
 
 The recommended instructor-led format is a 40-hour course delivered over one week.
 
-- [`40-hour-delivery-plan.md`](40-hour-delivery-plan.md) — Target structure, time allocation, scope decisions, and instructor/student preparation.
-- [`one-week-course-runbook.md`](one-week-course-runbook.md) — Day-by-day agenda for a 5-day delivery.
+- [`40-hour-delivery-plan.md`](40-hour-delivery-plan.md)  -  Target structure, time allocation, scope decisions, and instructor/student preparation.
+- [`one-week-course-runbook.md`](one-week-course-runbook.md)  -  Day-by-day agenda for a 5-day delivery.
 
 ## Grading calibration
 

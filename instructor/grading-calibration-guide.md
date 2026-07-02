@@ -162,7 +162,7 @@ This weighting intentionally gives as much importance to mitigation quality as t
 
 Use this before grading live submissions.
 
-### Step 1 — Independent scoring
+### Step 1  -  Independent scoring
 
 Each instructor reads:
 
@@ -175,7 +175,7 @@ Each instructor reads:
 
 Each instructor assigns a score from 1 to 4 for each example.
 
-### Step 2 — Compare scoring
+### Step 2  -  Compare scoring
 
 Discuss differences.
 
@@ -187,7 +187,7 @@ Questions to resolve:
 - When does a finding become too generic for full credit?
 - How should partial control validation be scored?
 
-### Step 3 — Agree on anchors
+### Step 3  -  Agree on anchors
 
 Write down local grading decisions.
 
@@ -205,7 +205,7 @@ For full credit on tool authorization findings, student must include:
 - validation or test plan
 ```
 
-### Step 4 — Grade consistently
+### Step 4  -  Grade consistently
 
 Use the same anchors for every student or team.
 

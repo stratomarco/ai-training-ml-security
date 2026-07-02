@@ -1,4 +1,4 @@
-# Module 02 Instructor Notes — ML System Architecture
+# Module 02 Instructor Notes  -  ML System Architecture
 
 ## Instructor goal
 
@@ -59,31 +59,31 @@ Suggested opening:
 
 ## Common student misconceptions
 
-### Misconception 1 — “We are not training foundation models, so this does not apply.”
+### Misconception 1  -  “We are not training foundation models, so this does not apply.”
 
 Response:
 
 Even if an organization does not train a foundation model, it may still build ML behavior through prompts, retrieval, fine-tuning, adapters, embeddings, tool configuration, feedback, and monitoring. The lifecycle still exists.
 
-### Misconception 2 — “The dataset is internal, so it is trusted.”
+### Misconception 2  -  “The dataset is internal, so it is trusted.”
 
 Response:
 
 Internal does not mean trusted. Ask who can write to it, import into it, label it, transform it, approve it, or use it for retraining.
 
-### Misconception 3 — “The model passed evaluation, so it is safe.”
+### Misconception 3  -  “The model passed evaluation, so it is safe.”
 
 Response:
 
 Evaluation is only as good as the test set and threat model. A model can pass normal accuracy tests and still fail under poisoning, evasion, extraction, privacy leakage, or distribution shift.
 
-### Misconception 4 — “The API is authenticated, so model theft is not relevant.”
+### Misconception 4  -  “The API is authenticated, so model theft is not relevant.”
 
 Response:
 
 Authenticated users can still abuse access. Many extraction, probing, and privacy attacks happen through legitimate APIs.
 
-### Misconception 5 — “This is a data science problem, not a security problem.”
+### Misconception 5  -  “This is a data science problem, not a security problem.”
 
 Response:
 

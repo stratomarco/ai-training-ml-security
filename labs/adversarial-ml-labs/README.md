@@ -1,6 +1,6 @@
 # Adversarial ML Labs
 
-These labs support Module 10 — Adversarial ML and Robustness.
+These labs support Module 10  -  Adversarial ML and Robustness.
 
 The goal is to teach practical robustness thinking in controlled, fake-data environments.
 

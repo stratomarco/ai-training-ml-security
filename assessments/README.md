@@ -22,7 +22,7 @@ The canonical BrokenPilot rubric is in [`../labs/brokenpilot/grading-rubric.md`]
 
 ## AI red team assessment
 
-- [`ai-red-team-grading.md`](ai-red-team-grading.md) — Rubric for Module 11 red team planning and reporting deliverables.
+- [`ai-red-team-grading.md`](ai-red-team-grading.md)  -  Rubric for Module 11 red team planning and reporting deliverables.
 
 
 ## v0.14 BrokenPilot final assessment

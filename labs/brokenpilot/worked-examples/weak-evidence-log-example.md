@@ -1,4 +1,4 @@
-# Weak Example — BrokenPilot Evidence Log
+# Weak Example  -  BrokenPilot Evidence Log
 
 This is an example of a weak evidence log entry.
 

@@ -1,4 +1,4 @@
-# Module 03 — Quiz
+# Module 03  -  Quiz
 
 ## Questions
 

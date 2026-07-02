@@ -1,4 +1,4 @@
-# Module 12 Quiz — BrokenPilot Capstone
+# Module 12 Quiz  -  BrokenPilot Capstone
 
 ## Questions
 

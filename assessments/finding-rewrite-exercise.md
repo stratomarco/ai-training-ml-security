@@ -1,4 +1,4 @@
-# Assessment Exercise — Rewrite a Weak Finding
+# Assessment Exercise  -  Rewrite a Weak Finding
 
 This assessment checks whether students can convert a vague AI security observation into a useful engineering finding.
 

@@ -1,4 +1,4 @@
-# Lab — Classical ML Attack Scenarios
+# Lab  -  Classical ML Attack Scenarios
 
 ## Purpose
 
@@ -13,7 +13,7 @@ This lab can be run in two modes:
 1. **Tabletop mode:** no code; students reason through attack paths and mitigations.
 2. **Toy-code mode:** students use a local toy classifier to observe how small changes in data or input can change behavior.
 
-## Scenario 1 — Spam classifier evasion
+## Scenario 1  -  Spam classifier evasion
 
 ### System
 
@@ -47,7 +47,7 @@ Useful controls include:
 - Rate limits
 - Human review for suspicious cases
 
-## Scenario 2 — Fraud model poisoning
+## Scenario 2  -  Fraud model poisoning
 
 ### System
 
@@ -81,7 +81,7 @@ Useful controls include:
 - Model behavior comparison before deployment
 - Rollback to known-good model
 
-## Scenario 3 — Model extraction through excessive querying
+## Scenario 3  -  Model extraction through excessive querying
 
 ### System
 
@@ -115,7 +115,7 @@ Useful controls include:
 - Terms of use and enforcement
 - Model watermarking where appropriate
 
-## Scenario 4 — Output integrity failure
+## Scenario 4  -  Output integrity failure
 
 ### System
 

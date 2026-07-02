@@ -1,4 +1,4 @@
-# Module 5 Student Handout — LLM Application Security
+# Module 5 Student Handout  -  LLM Application Security
 
 ## Core idea
 

@@ -1,4 +1,4 @@
-# Module 11 Student Handout — AI Red Team Methodology
+# Module 11 Student Handout  -  AI Red Team Methodology
 
 ## Core idea
 

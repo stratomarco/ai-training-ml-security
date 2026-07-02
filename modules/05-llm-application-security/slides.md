@@ -1,6 +1,6 @@
-# Module 5 Slides — LLM Application Security
+# Module 5 Slides  -  LLM Application Security
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # LLM Application Security
 
@@ -8,7 +8,7 @@ Security engineering for applications that contain large language models.
 
 ---
 
-## Slide 2 — Why this module exists
+## Slide 2  -  Why this module exists
 
 LLM applications are becoming production software.
 
@@ -29,7 +29,7 @@ It is about application architecture.
 
 ---
 
-## Slide 3 — Core message
+## Slide 3  -  Core message
 
 > LLM security is not solved by better prompts.
 
@@ -41,7 +41,7 @@ Security controls must exist around the model.
 
 ---
 
-## Slide 4 — The LLM as a component
+## Slide 4  -  The LLM as a component
 
 An LLM application usually includes:
 
@@ -64,7 +64,7 @@ Each component can fail.
 
 ---
 
-## Slide 5 — Classic AppSec still applies
+## Slide 5  -  Classic AppSec still applies
 
 LLM applications still have:
 
@@ -86,7 +86,7 @@ It adds new ways to trigger old failures.
 
 ---
 
-## Slide 6 — What is different?
+## Slide 6  -  What is different?
 
 LLM systems blend:
 
@@ -105,7 +105,7 @@ This creates ambiguity between **data** and **instructions**.
 
 ---
 
-## Slide 7 — OWASP LLM framing
+## Slide 7  -  OWASP LLM framing
 
 OWASP LLM risks provide a useful practitioner map:
 
@@ -126,7 +126,7 @@ Understand failure modes.
 
 ---
 
-## Slide 8 — Prompt injection
+## Slide 8  -  Prompt injection
 
 Prompt injection happens when untrusted input causes the model to follow attacker-controlled instructions instead of the intended task.
 
@@ -142,7 +142,7 @@ Security lesson:
 
 ---
 
-## Slide 9 — Direct vs indirect prompt injection
+## Slide 9  -  Direct vs indirect prompt injection
 
 Direct prompt injection:
 
@@ -160,7 +160,7 @@ Indirect injection is often more dangerous because the user may never see the ma
 
 ---
 
-## Slide 10 — Prompt injection is not just jailbreaks
+## Slide 10  -  Prompt injection is not just jailbreaks
 
 Prompt injection can cause:
 
@@ -177,7 +177,7 @@ The impact depends on what the application can access and do.
 
 ---
 
-## Slide 11 — Root cause of prompt injection
+## Slide 11  -  Root cause of prompt injection
 
 Root causes often include:
 
@@ -194,7 +194,7 @@ The prompt is only one layer.
 
 ---
 
-## Slide 12 — Insecure output handling
+## Slide 12  -  Insecure output handling
 
 LLM output is untrusted.
 
@@ -211,7 +211,7 @@ Examples:
 
 ---
 
-## Slide 13 — Treat model output like user input
+## Slide 13  -  Treat model output like user input
 
 Model output should be:
 
@@ -228,7 +228,7 @@ That does not make it trusted.
 
 ---
 
-## Slide 14 — Sensitive information disclosure
+## Slide 14  -  Sensitive information disclosure
 
 LLM applications may disclose sensitive data through:
 
@@ -252,7 +252,7 @@ The bigger question is:
 
 ---
 
-## Slide 15 — Authorization must happen before context injection
+## Slide 15  -  Authorization must happen before context injection
 
 Bad pattern:
 
@@ -270,7 +270,7 @@ The model should not be responsible for deciding which documents the user may ac
 
 ---
 
-## Slide 16 — Model denial of service
+## Slide 16  -  Model denial of service
 
 LLM DoS can target:
 
@@ -287,7 +287,7 @@ A working attack may simply make the system too expensive or too slow to use.
 
 ---
 
-## Slide 17 — LLM supply chain risk
+## Slide 17  -  LLM supply chain risk
 
 LLM applications depend on:
 
@@ -308,7 +308,7 @@ Each dependency can be compromised or misconfigured.
 
 ---
 
-## Slide 18 — Excessive agency
+## Slide 18  -  Excessive agency
 
 An LLM has excessive agency when it can do too much with too little control.
 
@@ -326,7 +326,7 @@ If the model can act, LLM security becomes workflow security.
 
 ---
 
-## Slide 19 — Overreliance
+## Slide 19  -  Overreliance
 
 Overreliance happens when humans or systems trust LLM output beyond its reliability.
 
@@ -344,7 +344,7 @@ Security lesson:
 
 ---
 
-## Slide 20 — Model theft
+## Slide 20  -  Model theft
 
 Model theft can mean:
 
@@ -365,7 +365,7 @@ Controls include:
 
 ---
 
-## Slide 21 — Secure LLM application pattern
+## Slide 21  -  Secure LLM application pattern
 
 A safer pattern:
 
@@ -386,7 +386,7 @@ Security decisions are outside the model.
 
 ---
 
-## Slide 22 — Control: context separation
+## Slide 22  -  Control: context separation
 
 Separate:
 
@@ -406,7 +406,7 @@ Use external controls.
 
 ---
 
-## Slide 23 — Control: tool gateway
+## Slide 23  -  Control: tool gateway
 
 Every tool call should have:
 
@@ -426,7 +426,7 @@ The system enforces.
 
 ---
 
-## Slide 24 — Control: output handling
+## Slide 24  -  Control: output handling
 
 Before using LLM output:
 
@@ -443,7 +443,7 @@ Treat output as untrusted.
 
 ---
 
-## Slide 25 — Control: sensitive data protection
+## Slide 25  -  Control: sensitive data protection
 
 Protect sensitive data by:
 
@@ -461,7 +461,7 @@ Do not solve data access with prompt instructions.
 
 ---
 
-## Slide 26 — Control: cost and availability
+## Slide 26  -  Control: cost and availability
 
 Defend against LLM DoS with:
 
@@ -480,7 +480,7 @@ Availability includes cost control.
 
 ---
 
-## Slide 27 — Lab framing
+## Slide 27  -  Lab framing
 
 In the lab, students should identify:
 
@@ -497,7 +497,7 @@ The objective is engineering judgment.
 
 ---
 
-## Slide 28 — Common bad mitigation
+## Slide 28  -  Common bad mitigation
 
 Bad mitigation:
 
@@ -517,7 +517,7 @@ They are not enough.
 
 ---
 
-## Slide 29 — Discussion scenario
+## Slide 29  -  Discussion scenario
 
 An internal assistant can:
 
@@ -533,7 +533,7 @@ Question:
 
 ---
 
-## Slide 30 — Final takeaway
+## Slide 30  -  Final takeaway
 
 LLM application security is about controlling the full system:
 

@@ -1,4 +1,4 @@
-# Exercise — Rewrite a Weak AI Security Finding
+# Exercise  -  Rewrite a Weak AI Security Finding
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Exercise — Executive Risk Memo for Agentic AI
+# Exercise  -  Executive Risk Memo for Agentic AI
 
 ## Purpose
 
@@ -81,4 +81,4 @@ Submit the memo and a short appendix mapping each recommended control to the ris
 
 ## Related template
 
-Use `templates/executive-risk-memo-template.md` for a structured version of this exercise. Instructors can also compare student work against the strong and weak executive memo examples in `labs/brokenpilot/worked-examples/`.
+Use `course-templates/executive-risk-memo-template.md` for a structured version of this exercise. Instructors can also compare student work against the strong and weak executive memo examples in `labs/brokenpilot/worked-examples/`.

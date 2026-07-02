@@ -1,4 +1,4 @@
-# Strong Risk Register Example — BrokenPilot
+# Strong Risk Register Example  -  BrokenPilot
 
 | ID | Risk | Scenario | Impact | Likelihood | Severity | Control | Owner | Residual risk |
 |---|---|---|---|---|---|---|---|---|

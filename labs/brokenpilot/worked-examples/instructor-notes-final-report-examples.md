@@ -1,4 +1,4 @@
-# Instructor Notes — BrokenPilot Final Report Examples
+# Instructor Notes  -  BrokenPilot Final Report Examples
 
 Use these examples to calibrate expectations before the BrokenPilot capstone.
 

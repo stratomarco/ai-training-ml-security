@@ -1,4 +1,4 @@
-# Controls and Remediations — Agent and Tool Security
+# Controls and Remediations  -  Agent and Tool Security
 
 This page translates agent risks into engineer-ready controls. The goal is to help students design fixes that can actually be implemented and tested.
 

@@ -1,4 +1,4 @@
-# Module 6 Quiz — RAG Security and Indirect Prompt Injection
+# Module 6 Quiz  -  RAG Security and Indirect Prompt Injection
 
 ## Questions
 

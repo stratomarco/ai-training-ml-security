@@ -1,4 +1,4 @@
-# Instructor Guide — Executive Communication in AI Security
+# Instructor Guide  -  Executive Communication in AI Security
 
 ## Why this matters
 

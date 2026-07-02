@@ -1,4 +1,4 @@
-# Exercise — BrokenPilot Threat Model
+# Exercise  -  BrokenPilot Threat Model
 
 ## Goal
 
@@ -13,9 +13,9 @@ Use:
 - [`../../labs/brokenpilot/roles.md`](../../labs/brokenpilot/roles.md)
 - [`../../labs/brokenpilot/tools.md`](../../labs/brokenpilot/tools.md)
 - [`../../labs/brokenpilot/data-model.md`](../../labs/brokenpilot/data-model.md)
-- [`../../templates/threat-model-template.md`](../../templates/threat-model-template.md)
+- [`../../course-templates/threat-model-template.md`](../../course-templates/threat-model-template.md)
 
-## Part 1 — System summary
+## Part 1  -  System summary
 
 Write a short summary of what BrokenPilot does.
 
@@ -27,7 +27,7 @@ Include:
 - sensitive data;
 - actions the system can perform.
 
-## Part 2 — Asset inventory
+## Part 2  -  Asset inventory
 
 Identify at least ten assets.
 
@@ -39,7 +39,7 @@ Examples:
 | Ticket status | Drives workflow decisions. | Medium | High | High |
 | Tool tokens | Enable backend actions. | High | High | Medium |
 
-## Part 3 — Trust boundaries
+## Part 3  -  Trust boundaries
 
 Draw or describe the trust boundaries.
 
@@ -54,7 +54,7 @@ At minimum include boundaries between:
 - memory store and current session;
 - logs and security review.
 
-## Part 4 — Entry points
+## Part 4  -  Entry points
 
 Identify ways an attacker or untrusted data can enter the system.
 
@@ -69,7 +69,7 @@ Examples:
 - tool output;
 - model output rendered in UI.
 
-## Part 5 — Attacker personas
+## Part 5  -  Attacker personas
 
 Define at least four personas.
 
@@ -79,7 +79,7 @@ Define at least four personas.
 | Malicious document author | Can edit a runbook | Influence future answers | Insert hidden instructions into indexed content. |
 | Compromised account | Legitimate user account | Cause workflow change | Trigger unauthorized ticket update. |
 
-## Part 6 — Abuse cases
+## Part 6  -  Abuse cases
 
 Write at least six abuse cases.
 
@@ -95,7 +95,7 @@ Examples:
 - As a low-privilege employee, I want BrokenPilot to summarize tickets from another team, so that I can learn sensitive operational details.
 - As a compromised user, I want the agent to update ticket severity without approval, so that incident triage is manipulated.
 
-## Part 7 — Security requirements
+## Part 7  -  Security requirements
 
 Write security requirements that would reduce the abuse cases.
 
@@ -107,7 +107,7 @@ Examples:
 | Tool execution must enforce per-user, per-action authorization. | Tool gateway | Unauthorized ticket update. |
 | High-impact actions must require human approval. | Workflow service | Excessive agency. |
 
-## Part 8 — Prioritization
+## Part 8  -  Prioritization
 
 Select the top five risks.
 

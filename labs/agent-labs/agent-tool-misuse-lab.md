@@ -1,8 +1,8 @@
-# Lab — Agent Tool Misuse and Excessive Agency
+# Lab  -  Agent Tool Misuse and Excessive Agency
 
 ## Module
 
-Module 07 — Agent and Tool Security
+Module 07  -  Agent and Tool Security
 
 ## Lab goal
 
@@ -49,7 +49,7 @@ The tools are intentionally over-broad.
 
 ## Student tasks
 
-### Task 1 — Map tool risk
+### Task 1  -  Map tool risk
 
 Create a table:
 
@@ -59,7 +59,7 @@ Create a table:
 | send_channel_message | Internal comms | High | Send false alert | Approval + channel allowlist |
 | run_diagnostic | Service config | Critical | Expose sensitive output | Allowlisted diagnostics + sandbox |
 
-### Task 2 — Identify unsafe tool calls
+### Task 2  -  Identify unsafe tool calls
 
 Students review a set of proposed agent actions and mark them:
 
@@ -69,7 +69,7 @@ Students review a set of proposed agent actions and mark them:
 - require narrower tool;
 - require additional evidence.
 
-### Task 3 — Redesign tools
+### Task 3  -  Redesign tools
 
 Replace broad tools with narrower tools.
 
@@ -99,7 +99,7 @@ becomes:
 run_approved_diagnostic(check_name, target_id)
 ```
 
-### Task 4 — Add approval gates
+### Task 4  -  Add approval gates
 
 Define which actions require approval.
 
@@ -111,7 +111,7 @@ Define which actions require approval.
 | Send channel message | Yes for broad channels | Can mislead teams |
 | Run diagnostic | Yes for high-risk checks | Execution and data exposure risk |
 
-### Task 5 — Define audit logs
+### Task 5  -  Define audit logs
 
 Define the minimum audit event.
 

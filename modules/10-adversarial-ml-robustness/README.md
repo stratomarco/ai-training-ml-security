@@ -1,4 +1,4 @@
-# Module 10 — Adversarial ML and Robustness
+# Module 10  -  Adversarial ML and Robustness
 
 ## Purpose
 
@@ -37,11 +37,11 @@ By the end of this module, students should be able to:
 
 Module 10 now includes a deeper reading path for students who need conceptual understanding before running or designing tests:
 
-- [Deep Dive](deep-dive.md) — explains adversarial ML as production security engineering, not only academic perturbation research.
-- [Attack Anatomy](attack-anatomy.md) — breaks evasion, poisoning, backdoors, model skewing, and drift into attack paths.
-- [Controls and Remediations](controls-and-remediations.md) — turns robustness risks into engineer-ready controls.
-- [Common Mistakes](common-mistakes.md) — highlights weak reasoning patterns, such as equating accuracy with security.
-- [Worked Example](worked-example.md) — shows a fraud-classifier robustness review from attacker goal to remediation validation.
+- [Deep Dive](deep-dive.md)  -  explains adversarial ML as production security engineering, not only academic perturbation research.
+- [Attack Anatomy](attack-anatomy.md)  -  breaks evasion, poisoning, backdoors, model skewing, and drift into attack paths.
+- [Controls and Remediations](controls-and-remediations.md)  -  turns robustness risks into engineer-ready controls.
+- [Common Mistakes](common-mistakes.md)  -  highlights weak reasoning patterns, such as equating accuracy with security.
+- [Worked Example](worked-example.md)  -  shows a fraud-classifier robustness review from attacker goal to remediation validation.
 
 The lab and tabletop exercises should reinforce these readings. They should not replace them.
 
@@ -112,10 +112,10 @@ model inference service
 
 ## Lab
 
-Use the labs in [`../../labs/adversarial-ml-labs/`](../../labs/adversarial-ml-labs/):
+Use the labs in [`../../labs/adversarial-ml-labs/`](../../labs/adversarial-ml-labs/README.md):
 
-1. **Evasion and robustness lab** — bypass a toy classifier using controlled input changes, then design mitigations.
-2. **Poisoning and backdoor tabletop** — review how training data and feedback loops can introduce targeted model failures.
+1. **Evasion and robustness lab**  -  bypass a toy classifier using controlled input changes, then design mitigations.
+2. **Poisoning and backdoor tabletop**  -  review how training data and feedback loops can introduce targeted model failures.
 
 ## Deliverable
 

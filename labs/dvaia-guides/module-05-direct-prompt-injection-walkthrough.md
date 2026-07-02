@@ -1,4 +1,4 @@
-# Module 05 Walkthrough — Direct Prompt Injection in DVAIA
+# Module 05 Walkthrough  -  Direct Prompt Injection in DVAIA
 
 ## Status
 
@@ -34,7 +34,7 @@ Do not:
 - DVAIA is running locally.
 - The DVAIA web interface is reachable at `http://127.0.0.1:5000`.
 - A local or configured LLM backend is available.
-- Students have read Module 05 — LLM Application Security.
+- Students have read Module 05  -  LLM Application Security.
 - Students have access to the evidence log template.
 
 ## Scenario
@@ -60,7 +60,7 @@ flowchart LR
     App --> UI
 ```
 
-## Task 1 — Establish normal behavior
+## Task 1  -  Establish normal behavior
 
 1. Open DVAIA locally.
 2. Navigate to the prompt-injection or basic LLM interaction area.
@@ -79,7 +79,7 @@ Record:
 - Whether the model responds normally.
 - Any visible system or policy behavior.
 
-## Task 2 — Trigger a benign direct prompt injection
+## Task 2  -  Trigger a benign direct prompt injection
 
 Use a harmless validation payload first. The goal is to show instruction conflict, not to extract real secrets or attack a real system.
 
@@ -102,7 +102,7 @@ Record:
 - Whether the model followed the injected instruction.
 - Whether the application had any guardrail that blocked, transformed, or warned about the attempt.
 
-## Task 3 — Increase realism without unsafe behavior
+## Task 3  -  Increase realism without unsafe behavior
 
 Now use a payload that resembles a real attacker intent but keeps the action benign.
 
@@ -121,7 +121,7 @@ Record:
 - Did it refuse?
 - Did it behave inconsistently across attempts?
 
-## Task 4 — Identify the root cause
+## Task 4  -  Identify the root cause
 
 Write the root cause in engineering terms.
 
@@ -133,7 +133,7 @@ Better root cause:
 
 > The application placed untrusted user instructions in the same model context as developer/system instructions and relied on the model to resolve the conflict safely. No external policy enforcement, output validation, or authorization boundary existed outside the model.
 
-## Task 5 — Map to security concepts
+## Task 5  -  Map to security concepts
 
 Map the observation to at least three concepts:
 
@@ -145,7 +145,7 @@ Map the observation to at least three concepts:
 | Missing external control | The model is treated as if it can enforce policy alone |
 | Unsafe output trust | The application may trust the model response without validation |
 
-## Task 6 — Design mitigations
+## Task 6  -  Design mitigations
 
 Students must propose controls in three layers.
 
@@ -171,7 +171,7 @@ Students must propose controls in three layers.
 - Review logs without over-collecting sensitive prompts.
 - Test regressions when prompts, model versions, or providers change.
 
-## Task 7 — Evidence requirements
+## Task 7  -  Evidence requirements
 
 For a complete lab submission, include:
 
@@ -185,7 +185,7 @@ For a complete lab submission, include:
 8. Mitigations.
 9. Residual risk.
 
-Use `templates/dvaia-evidence-log-template.md`.
+Use `course-templates/dvaia-evidence-log-template.md`.
 
 ## Expected student conclusion
 

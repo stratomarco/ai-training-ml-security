@@ -1,4 +1,4 @@
-# Module 11 — AI Red Team Methodology
+# Module 11  -  AI Red Team Methodology
 
 ## Purpose
 
@@ -107,10 +107,10 @@ AI red teaming is an extension of normal security assessment discipline:
 
 ## Lab
 
-Use the labs in [`../../labs/ai-red-team-labs/`](../../labs/ai-red-team-labs/):
+Use the labs in [`../../labs/ai-red-team-labs/`](../../labs/ai-red-team-labs/README.md):
 
-1. **AI red team scoping tabletop** — define scope, rules of engagement, assets, users, safety boundaries, and evidence requirements.
-2. **BrokenPilot attack-chain lab** — plan and document a full attack chain against the BrokenPilot capstone design.
+1. **AI red team scoping tabletop**  -  define scope, rules of engagement, assets, users, safety boundaries, and evidence requirements.
+2. **BrokenPilot attack-chain lab**  -  plan and document a full attack chain against the BrokenPilot capstone design.
 
 ## Deliverable
 

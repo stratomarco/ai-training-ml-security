@@ -93,7 +93,7 @@ Module 10 needs more worked examples because adversarial ML can otherwise feel a
 
 ## Development milestones
 
-### v1.1-dev — Testable labs foundation
+### v1.1-dev  -  Testable labs foundation
 
 - DVAIA validation plan
 - DVAIA setup checklist
@@ -101,7 +101,7 @@ Module 10 needs more worked examples because adversarial ML can otherwise feel a
 - Lab validation matrix
 - Instructor troubleshooting notes
 
-### v1.2-dev — BrokenPilot prototype design
+### v1.2-dev  -  BrokenPilot prototype design
 
 - Prototype architecture
 - API contract
@@ -109,14 +109,14 @@ Module 10 needs more worked examples because adversarial ML can otherwise feel a
 - Vulnerability implementation plan
 - Safe local deployment plan
 
-### v1.3-dev — Worked examples and grading anchors
+### v1.3-dev  -  Worked examples and grading anchors
 
 - Strong and weak capstone examples
 - Rubric calibration notes
 - Example evidence log
 - Example remediation backlog
 
-### v1.4-dev — Delivery model
+### v1.4-dev  -  Delivery model
 
 - 2-hour path
 - Half-day path
@@ -125,7 +125,7 @@ Module 10 needs more worked examples because adversarial ML can otherwise feel a
 - 12-week path
 - Module-level cut/expand notes
 
-### v1.5-dev — Concrete controls and executive communication
+### v1.5-dev  -  Concrete controls and executive communication
 
 - Control implementation exercises
 - CISO memo exercise
@@ -133,7 +133,7 @@ Module 10 needs more worked examples because adversarial ML can otherwise feel a
 - Retrieval authorization examples
 - Tool permission examples
 
-### v1.6-dev — Module 10 deepening
+### v1.6-dev  -  Module 10 deepening
 
 - Deep-dive worked examples
 - New diagrams

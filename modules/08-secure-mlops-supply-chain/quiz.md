@@ -1,4 +1,4 @@
-# Module 08 Quiz — Secure MLOps and AI Supply Chain
+# Module 08 Quiz  -  Secure MLOps and AI Supply Chain
 
 ## Questions
 

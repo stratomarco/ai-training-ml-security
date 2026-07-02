@@ -2,7 +2,7 @@
 
 This file provides suggested attack chains for capstone delivery. Use only inside the controlled lab environment with fake data.
 
-## Attack path 1 — Direct prompt injection to policy bypass
+## Attack path 1  -  Direct prompt injection to policy bypass
 
 ### Goal
 
@@ -26,7 +26,7 @@ Policy is encoded primarily in natural-language prompt instructions.
 - Hidden prompt redaction.
 - Logging of prompt-injection attempts.
 
-## Attack path 2 — Malicious ticket poisons RAG
+## Attack path 2  -  Malicious ticket poisons RAG
 
 ### Goal
 
@@ -52,7 +52,7 @@ Untrusted ticket content is treated like authoritative documentation.
 - Do not allow retrieved content to trigger actions.
 - Apply post-retrieval policy checks.
 
-## Attack path 3 — Cross-team document leakage
+## Attack path 3  -  Cross-team document leakage
 
 ### Goal
 
@@ -76,7 +76,7 @@ Chunk metadata does not preserve access-control requirements, or filters are app
 - Post-retrieval authorization checks.
 - Separate indexes for high-sensitivity domains where needed.
 
-## Attack path 4 — Tool confused deputy
+## Attack path 4  -  Tool confused deputy
 
 ### Goal
 
@@ -101,7 +101,7 @@ Tool authorization is based on service account capability, not user/action/objec
 - Approval workflow for high-risk updates.
 - Full audit trail.
 
-## Attack path 5 — Memory poisoning
+## Attack path 5  -  Memory poisoning
 
 ### Goal
 
@@ -125,7 +125,7 @@ Memory is treated as trusted context without provenance or lifecycle controls.
 - User-visible memory management.
 - Memory never overrides policy.
 
-## Attack path 6 — Overreliance and wrong incident summary
+## Attack path 6  -  Overreliance and wrong incident summary
 
 ### Goal
 
@@ -150,7 +150,7 @@ Generated summaries are not clearly marked as drafts and do not expose source fr
 - Confidence/uncertainty language.
 - Explicit statement of missing data.
 
-## Attack path 7 — Model/tool denial of service
+## Attack path 7  -  Model/tool denial of service
 
 ### Goal
 
@@ -175,7 +175,7 @@ Agent workflow lacks budgets, timeouts, and maximum tool-call depth.
 - Loop detection.
 - Rate limiting and abuse monitoring.
 
-## Attack path 8 — Sensitive config disclosure
+## Attack path 8  -  Sensitive config disclosure
 
 ### Goal
 

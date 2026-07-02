@@ -1,4 +1,4 @@
-# Worked Example — Securing a RAG Incident Assistant
+# Worked Example  -  Securing a RAG Incident Assistant
 
 ## Scenario
 
@@ -34,7 +34,7 @@ The design has several problems:
 - citations are shown even when the user cannot open the source,
 - and full retrieved context is stored in debug logs.
 
-## Attack path A — Cross-tenant leakage
+## Attack path A  -  Cross-tenant leakage
 
 Alice from tenant `alpha` asks:
 
@@ -66,7 +66,7 @@ A user from one tenant can receive or infer information from another tenant.
 - suppress citations to inaccessible sources,
 - and add a regression test where `alpha` queries must never retrieve `beta` chunks.
 
-## Attack path B — Indirect prompt injection
+## Attack path B  -  Indirect prompt injection
 
 A malicious support ticket comment contains:
 
@@ -97,7 +97,7 @@ An attacker can influence answers or actions taken by the assistant through stor
 - add malicious-document regression tests,
 - and log source IDs that influenced final answers.
 
-## Attack path C — Citation laundering
+## Attack path C  -  Citation laundering
 
 The assistant cites a low-trust ticket comment as support for a policy recommendation.
 

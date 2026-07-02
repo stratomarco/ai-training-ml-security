@@ -1,4 +1,4 @@
-# Worked Example — Adversarial Robustness Review for a Fraud Classifier
+# Worked Example  -  Adversarial Robustness Review for a Fraud Classifier
 
 This worked example shows how to turn an abstract adversarial ML concern into a concrete security review.
 

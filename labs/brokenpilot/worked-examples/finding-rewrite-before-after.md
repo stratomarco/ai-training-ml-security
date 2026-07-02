@@ -1,4 +1,4 @@
-# BrokenPilot Finding Rewrite — Before and After
+# BrokenPilot Finding Rewrite  -  Before and After
 
 This example shows how to rewrite a vague AI security finding into a decision-grade finding.
 

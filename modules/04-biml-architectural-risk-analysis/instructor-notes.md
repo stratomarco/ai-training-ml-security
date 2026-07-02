@@ -1,4 +1,4 @@
-# Module 04 Instructor Notes — BIML and Architectural Risk Analysis
+# Module 04 Instructor Notes  -  BIML and Architectural Risk Analysis
 
 ## Instructor goal
 
@@ -107,7 +107,7 @@ Example:
 
 ## Teaching flow
 
-### Step 1 — Start with a familiar system
+### Step 1  -  Start with a familiar system
 
 Use a normal internal assistant:
 
@@ -117,7 +117,7 @@ User asks question -> app builds prompt -> model responds -> UI displays answer
 
 Ask: Where are the trust boundaries?
 
-### Step 2 — Add retrieval
+### Step 2  -  Add retrieval
 
 ```text
 User asks question -> app retrieves documents -> model summarizes docs -> UI displays answer
@@ -133,7 +133,7 @@ Expected answers:
 - malicious content can influence output
 - summaries can leak information
 
-### Step 3 — Add tools
+### Step 3  -  Add tools
 
 ```text
 Model can update tickets or send messages
@@ -149,7 +149,7 @@ Expected answers:
 - logs become security evidence
 - tool scope matters
 
-### Step 4 — Add memory and feedback
+### Step 4  -  Add memory and feedback
 
 Ask: What changed?
 

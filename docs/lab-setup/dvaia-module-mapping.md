@@ -24,7 +24,7 @@ Default URL: `http://127.0.0.1:5000`
 | Module 06 | Retrieval trust boundary | RAG-style data/source trust behavior where supported | Validated locally | Covered in Module 06 walkthrough mitigation section |
 | Module 07 | Tool misuse | Agent/tool behavior where supported by local DVAIA version | Validated locally | Walkthrough added: `labs/dvaia-guides/module-07-agent-tool-behavior-walkthrough.md`; BrokenPilot prototype remains future work |
 | Module 07 | Memory or multi-turn manipulation | Multi-turn/agentic behavior where supported | Validated locally | Covered as hybrid lab; exact persistence behavior should be recorded when observed |
-| Module 11 | Attack chaining | Multi-step validation across DVAIA-backed scenarios | Validated locally | Mini-assessment added: `labs/dvaia-guides/module-11-dvaia-red-team-mini-assessment.md` and `templates/dvaia-evidence-log-template.md` |
+| Module 11 | Attack chaining | Multi-step validation across DVAIA-backed scenarios | Validated locally | Mini-assessment added: `labs/dvaia-guides/module-11-dvaia-red-team-mini-assessment.md` and `course-templates/dvaia-evidence-log-template.md` |
 
 ## What this course should provide
 

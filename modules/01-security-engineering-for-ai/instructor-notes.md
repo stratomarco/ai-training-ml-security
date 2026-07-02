@@ -1,4 +1,4 @@
-# Module 01 Instructor Notes — Security Engineering for AI
+# Module 01 Instructor Notes  -  Security Engineering for AI
 
 ## Instructor goal
 
@@ -59,7 +59,7 @@ The correct framing is:
 
 ## Common student mistakes
 
-### Mistake 1 — Jumping straight to jailbreaks
+### Mistake 1  -  Jumping straight to jailbreaks
 
 Students may immediately propose payloads such as “ignore previous instructions.” Redirect them:
 
@@ -68,7 +68,7 @@ Students may immediately propose payloads such as “ignore previous instruction
 - Why did the system allow the model to see or do this?
 - Which deterministic control would prevent impact?
 
-### Mistake 2 — Treating the model as the policy engine
+### Mistake 2  -  Treating the model as the policy engine
 
 Students may suggest “make the prompt stricter.” Acknowledge that prompt hardening helps, then ask:
 
@@ -77,7 +77,7 @@ Students may suggest “make the prompt stricter.” Acknowledge that prompt har
 - What prevents unauthorized retrieval?
 - What prevents unauthorized tool execution?
 
-### Mistake 3 — Ignoring logs and operations
+### Mistake 3  -  Ignoring logs and operations
 
 Students often focus on prevention only. Ask:
 
@@ -86,7 +86,7 @@ Students often focus on prevention only. Ask:
 - Who reviews suspicious behavior?
 - How do we recover after data exposure?
 
-### Mistake 4 — Overcorrecting with unusable controls
+### Mistake 4  -  Overcorrecting with unusable controls
 
 Some students will suggest blocking all useful AI behavior. Ask:
 
@@ -158,10 +158,10 @@ A good student answer for DocAssist should include:
 
 When reviewing the exercise, group findings into four categories:
 
-1. **Prevent** — authorization, scoping, policy, validation.
-2. **Limit blast radius** — least privilege, segmentation, scoped tokens, tenant isolation.
-3. **Detect** — logs, anomaly detection, audit trails, alerting.
-4. **Recover** — incident response, rollback, deletion, key rotation, user notification.
+1. **Prevent**  -  authorization, scoping, policy, validation.
+2. **Limit blast radius**  -  least privilege, segmentation, scoped tokens, tenant isolation.
+3. **Detect**  -  logs, anomaly detection, audit trails, alerting.
+4. **Recover**  -  incident response, rollback, deletion, key rotation, user notification.
 
 This helps students see that security is more than blocking one attack.
 

@@ -1,4 +1,4 @@
-# Module 02 Student Handout — ML System Architecture
+# Module 02 Student Handout  -  ML System Architecture
 
 ## Core message
 

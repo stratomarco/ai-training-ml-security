@@ -14,7 +14,7 @@
 | Residual risk reasoning | 8 |
 | Communication quality | 7 |
 
-## 1. Architecture understanding — 10 points
+## 1. Architecture understanding  -  10 points
 
 Strong submissions:
 
@@ -27,7 +27,7 @@ Weak submissions:
 - Describe BrokenPilot only as a chatbot.
 - Ignore tools, retrieval, memory, or logging.
 
-## 2. Asset and trust-boundary identification — 12 points
+## 2. Asset and trust-boundary identification  -  12 points
 
 Strong submissions identify:
 
@@ -43,7 +43,7 @@ Strong submissions identify:
 
 They also identify trust boundaries between user input, retrieved content, model context, tools, and backend systems.
 
-## 3. Threat model and abuse cases — 15 points
+## 3. Threat model and abuse cases  -  15 points
 
 Strong submissions include:
 
@@ -55,7 +55,7 @@ Strong submissions include:
 
 High-quality submissions connect abuse cases to classic security principles.
 
-## 4. Vulnerability discovery — 15 points
+## 4. Vulnerability discovery  -  15 points
 
 Strong submissions identify issues across multiple categories:
 
@@ -72,7 +72,7 @@ Strong submissions identify issues across multiple categories:
 
 Full credit does not require finding every issue. It requires breadth and depth.
 
-## 5. Attack explanation and evidence — 10 points
+## 5. Attack explanation and evidence  -  10 points
 
 Strong submissions explain:
 
@@ -84,7 +84,7 @@ Strong submissions explain:
 
 Screenshots or payloads alone are not enough.
 
-## 6. Mitigation quality — 15 points
+## 6. Mitigation quality  -  15 points
 
 Strong mitigations are:
 
@@ -105,7 +105,7 @@ Expected controls include:
 - Audit logging.
 - Rate limits and budgets.
 
-## 7. Secure reference architecture — 8 points
+## 7. Secure reference architecture  -  8 points
 
 Strong submissions show a target design with:
 
@@ -116,7 +116,7 @@ Strong submissions show a target design with:
 - Audit and monitoring.
 - Clear ownership.
 
-## 8. Residual risk reasoning — 8 points
+## 8. Residual risk reasoning  -  8 points
 
 Strong submissions explain what remains unsafe after mitigations.
 
@@ -128,7 +128,7 @@ Examples:
 - Strong controls can reduce speed.
 - Logs can create privacy risk.
 
-## 9. Communication quality — 7 points
+## 9. Communication quality  -  7 points
 
 Strong submissions include:
 

@@ -1,6 +1,6 @@
 # Project Backlog
 
-This backlog tracks the build plan for **AI Training — ML Security**.
+This backlog tracks the build plan for **AI Training  -  ML Security**.
 
 ## Current release status
 
@@ -43,7 +43,7 @@ The following items should be verified before tagging `v1.0.0`:
 
 ## Completed milestones
 
-### v0.1 — Curriculum spine
+### v0.1  -  Curriculum spine
 
 - [x] Course identity
 - [x] Syllabus
@@ -53,7 +53,7 @@ The following items should be verified before tagging `v1.0.0`:
 - [x] Lab strategy
 - [x] Initial templates
 
-### v0.2 — Module 1 complete
+### v0.2  -  Module 1 complete
 
 - [x] Module 1 README
 - [x] Slides
@@ -64,45 +64,45 @@ The following items should be verified before tagging `v1.0.0`:
 - [x] Quiz
 - [x] References
 
-### v0.3 — Module 2 complete
+### v0.3  -  Module 2 complete
 
 - [x] ML lifecycle architecture
 - [x] ML system data-flow exercise
 - [x] ML architecture review template
 
-### v0.4 — Module 3 complete
+### v0.4  -  Module 3 complete
 
 - [x] OWASP ML Security Top 10 module
 - [x] Classical ML attack lab wrapper
 - [x] ML attack summary template
 
-### v0.5 — Module 4 complete
+### v0.5  -  Module 4 complete
 
 - [x] BIML architectural risk analysis module
 - [x] Architecture review lab
 - [x] Architecture risk review template
 
-### v0.6 — Module 5 complete
+### v0.6  -  Module 5 complete
 
 - [x] LLM application security module
 - [x] DVAIA-style LLM application security lab
 - [x] LLM application security review template
 
-### v0.7 — Module 6 complete
+### v0.7  -  Module 6 complete
 
 - [x] RAG security module
 - [x] Indirect prompt injection lab
 - [x] RAG threat model template
 - [x] Vector database authorization checklist
 
-### v0.8 — Module 7 complete
+### v0.8  -  Module 7 complete
 
 - [x] Agent and tool security module
 - [x] Tool misuse lab
 - [x] Memory poisoning and approval-gates lab
 - [x] Agent control design templates
 
-### v0.9 — BrokenPilot paper design complete
+### v0.9  -  BrokenPilot paper design complete
 
 - [x] Scenario
 - [x] Architecture
@@ -115,35 +115,35 @@ The following items should be verified before tagging `v1.0.0`:
 - [x] Secure reference architecture
 - [x] Grading rubric
 
-### v0.10 — Module 8 complete
+### v0.10  -  Module 8 complete
 
 - [x] Secure MLOps and AI supply chain module
 - [x] Broken ML pipeline lab
 - [x] Model artifact provenance lab
 - [x] ML-BOM and provenance templates
 
-### v0.11 — Module 9 complete
+### v0.11  -  Module 9 complete
 
 - [x] Privacy attacks and data protection module
 - [x] Cross-tenant RAG privacy lab
 - [x] Membership inference and model inversion tabletop
 - [x] Privacy templates
 
-### v0.12 — Module 10 complete
+### v0.12  -  Module 10 complete
 
 - [x] Adversarial ML and robustness module
 - [x] Evasion and robustness lab
 - [x] Poisoning and backdoor tabletop
 - [x] Robustness evaluation templates
 
-### v0.13 — Module 11 complete
+### v0.13  -  Module 11 complete
 
 - [x] AI red team methodology module
 - [x] AI red team scoping tabletop
 - [x] BrokenPilot attack-chain lab
 - [x] AI red team templates
 
-### v0.14 — Module 12 complete
+### v0.14  -  Module 12 complete
 
 - [x] BrokenPilot capstone teaching package
 - [x] Capstone slides
@@ -153,7 +153,7 @@ The following items should be verified before tagging `v1.0.0`:
 - [x] Evidence, risk, and remediation templates
 - [x] Final grading rubric
 
-### v1.0-rc — Release readiness
+### v1.0-rc  -  Release readiness
 
 - [x] `CHANGELOG.md`
 - [x] `RELEASE_CHECKLIST.md`
@@ -208,7 +208,7 @@ The following items should be verified before tagging `v1.0.0`:
 - [ ] Add contribution labels.
 - [ ] Add first GitHub release.
 
-### v1.2-dev — BrokenPilot prototype design
+### v1.2-dev  -  BrokenPilot prototype design
 
 - [x] Minimal runnable prototype goals
 - [x] MVP architecture and trust boundaries
@@ -340,7 +340,7 @@ Status: **Added**
 
 Next improvement: add a short classroom exercise where students rewrite one weak finding into a strong finding using evidence, root cause, control, validation, and residual risk.
 
-## Completed — Finding rewrite exercise
+## Completed  -  Finding rewrite exercise
 
 - Added Module 11 finding rewrite exercise.
 - Added finding rewrite template.
@@ -364,3 +364,16 @@ Remaining:
 - [ ] Add per-module labels: live-core, live-compressed, lab, self-study.
 - [ ] Add instructor timing notes to high-priority modules.
 - [ ] Validate one full dry-run agenda.
+
+## Completed - v1.1-dev structural cleanup and portability review
+
+- Single source-of-truth policy added.
+- MkDocs source generation added through `scripts/sync_mkdocs_content.py`.
+- Duplicate generated docs content removed from the committed tree.
+- Repository cleanup and structure checks added.
+- Em dash linting added and source Markdown/configuration cleaned.
+- Cross-platform setup guidance added.
+- DVAIA validated commit pinned with BrokenPilot fallback.
+- BrokenPilot mock filter limitation documented as a teaching stand-in.
+- Capstone assessment scope aligned with runnable prototype capabilities.
+- Version/status text aligned to v1.1-dev.

@@ -1,4 +1,4 @@
-# Module 09 Instructor Notes — Privacy Attacks and Data Protection
+# Module 09 Instructor Notes  -  Privacy Attacks and Data Protection
 
 ## Teaching intent
 

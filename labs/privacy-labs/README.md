@@ -1,6 +1,6 @@
 # Privacy Labs
 
-This folder contains lab guides for Module 09 — Privacy Attacks and Data Protection.
+This folder contains lab guides for Module 09  -  Privacy Attacks and Data Protection.
 
 The labs are designed as local, fake-data exercises. They should not be run against real systems or real personal data.
 

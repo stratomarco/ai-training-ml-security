@@ -1,4 +1,4 @@
-# Module 01 Student Handout — Security Engineering for AI
+# Module 01 Student Handout  -  Security Engineering for AI
 
 ## Core idea
 

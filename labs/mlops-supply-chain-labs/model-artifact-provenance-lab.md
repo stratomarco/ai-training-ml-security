@@ -1,4 +1,4 @@
-# Lab — Model Artifact Provenance and Registry Review
+# Lab  -  Model Artifact Provenance and Registry Review
 
 ## Purpose
 
@@ -35,7 +35,7 @@ The team asks security to approve promotion to production.
 
 ## Student tasks
 
-### Task 1 — Trust assessment
+### Task 1  -  Trust assessment
 
 Answer:
 
@@ -45,7 +45,7 @@ Answer:
 4. Which risks are registry-specific?
 5. Which risks are process-specific?
 
-### Task 2 — Required metadata
+### Task 2  -  Required metadata
 
 Define the minimum metadata required for production promotion.
 
@@ -68,7 +68,7 @@ Recommended fields:
 - approver;
 - rollback target.
 
-### Task 3 — Safe loading decision
+### Task 3  -  Safe loading decision
 
 Assume the model uses a serialized format that may be unsafe if untrusted.
 
@@ -82,7 +82,7 @@ Define a safe loading policy:
 - how loading errors are handled;
 - how suspicious artifacts are quarantined.
 
-### Task 4 — Registry promotion policy
+### Task 4  -  Registry promotion policy
 
 Define who can move a model through these stages:
 

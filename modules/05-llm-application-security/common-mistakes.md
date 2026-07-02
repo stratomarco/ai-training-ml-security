@@ -1,4 +1,4 @@
-# Common Mistakes — LLM Application Security
+# Common Mistakes  -  LLM Application Security
 
 This page lists common mistakes students and teams make when securing LLM applications. These mistakes are useful teaching moments because they reveal where teams confuse model behavior with system security.
 

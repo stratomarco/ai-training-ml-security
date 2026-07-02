@@ -46,9 +46,9 @@ The purpose is not to give students a full answer key. The purpose is to show th
 
 Use these examples in three ways:
 
-1. **Before the capstone** — show students what good deliverables look like.
-2. **During grading calibration** — align instructors on what counts as strong, acceptable, or weak.
-3. **During feedback** — point students to a specific example when their submission is too vague.
+1. **Before the capstone**  -  show students what good deliverables look like.
+2. **During grading calibration**  -  align instructors on what counts as strong, acceptable, or weak.
+3. **During feedback**  -  point students to a specific example when their submission is too vague.
 
 ## What makes a strong deliverable
 

@@ -1,4 +1,4 @@
-# Assessment — Executive Risk Memo Rubric
+# Assessment  -  Executive Risk Memo Rubric
 
 Use this rubric for Module 07, Module 08, Module 11, or BrokenPilot executive-readout exercises.
 

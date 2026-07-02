@@ -17,7 +17,7 @@ Contributions should:
 
 New modules should follow [`modules/module-template.md`](modules/module-template.md).
 
-New labs should follow [`templates/lab-guide-template.md`](templates/lab-guide-template.md).
+New labs should follow [`course-templates/lab-guide-template.md`](course-templates/lab-guide-template.md).
 
 ## Style
 

@@ -1,4 +1,4 @@
-# Module 11 Mini-Assessment — DVAIA AI Red Team Workflow
+# Module 11 Mini-Assessment  -  DVAIA AI Red Team Workflow
 
 ## Status
 
@@ -44,7 +44,7 @@ Out of scope:
 
 ## Assessment tasks
 
-### Task 1 — Scope and setup
+### Task 1  -  Scope and setup
 
 Document:
 
@@ -56,7 +56,7 @@ Document:
 - Target URL.
 - Panels/features tested.
 
-### Task 2 — Finding 1: direct prompt injection
+### Task 2  -  Finding 1: direct prompt injection
 
 Reproduce a direct prompt-injection behavior or document why the attempted behavior was blocked.
 
@@ -68,7 +68,7 @@ Required output:
 - Root cause.
 - Mitigation.
 
-### Task 3 — Finding 2: indirect/RAG-style injection
+### Task 3  -  Finding 2: indirect/RAG-style injection
 
 Reproduce or simulate indirect prompt injection through retrieved or external content.
 
@@ -80,7 +80,7 @@ Required output:
 - Trust-boundary failure.
 - Mitigation.
 
-### Task 4 — Finding 3: agent/tool behavior or control-design gap
+### Task 4  -  Finding 3: agent/tool behavior or control-design gap
 
 If DVAIA exposes agent/tool behavior, test it directly.
 
@@ -94,7 +94,7 @@ Required output:
 - Observed or hypothesized failure.
 - Concrete permission/approval control.
 
-### Task 5 — Executive readout
+### Task 5  -  Executive readout
 
 Write a short executive summary using this format:
 

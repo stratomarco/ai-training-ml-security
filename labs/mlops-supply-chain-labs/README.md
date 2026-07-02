@@ -1,6 +1,6 @@
 # MLOps Supply Chain Labs
 
-This folder contains labs for Module 08 — Secure MLOps and AI Supply Chain.
+This folder contains labs for Module 08  -  Secure MLOps and AI Supply Chain.
 
 The labs are designed as local or tabletop exercises using fake systems and fake data. They are not instructions to attack real ML platforms.
 

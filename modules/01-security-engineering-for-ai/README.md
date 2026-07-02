@@ -1,4 +1,4 @@
-# Module 01 — Security Engineering for AI
+# Module 01  -  Security Engineering for AI
 
 ## Status
 

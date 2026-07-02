@@ -14,4 +14,4 @@ Modules 01–12 remain complete. The BrokenPilot capstone remains complete. The 
 
 ## Current development focus
 
-Working branch target: v1.1-dev — quality, testability, lab validation, delivery guidance, and deeper material. No new public release should be tagged until these improvements are reviewed.
+Working branch target: v1.1-dev  -  quality, testability, lab validation, delivery guidance, and deeper material. No new public release should be tagged until these improvements are reviewed.

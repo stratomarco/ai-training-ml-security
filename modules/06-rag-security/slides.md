@@ -1,6 +1,6 @@
-# Module 6 Slides — RAG Security and Indirect Prompt Injection
+# Module 6 Slides  -  RAG Security and Indirect Prompt Injection
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # RAG Security and Indirect Prompt Injection
 
@@ -8,7 +8,7 @@ Security engineering for retrieval-augmented generation systems.
 
 ---
 
-## Slide 2 — Why this module exists
+## Slide 2  -  Why this module exists
 
 RAG is one of the most common patterns for enterprise LLM applications.
 
@@ -30,7 +30,7 @@ It also changes the trust model.
 
 ---
 
-## Slide 3 — Core message
+## Slide 3  -  Core message
 
 > Retrieved content is untrusted input.
 
@@ -47,7 +47,7 @@ Security must be enforced outside the model.
 
 ---
 
-## Slide 4 — Basic RAG architecture
+## Slide 4  -  Basic RAG architecture
 
 ```text
 User question
@@ -65,7 +65,7 @@ Every arrow is a potential trust boundary.
 
 ---
 
-## Slide 5 — What gets added to the attack surface?
+## Slide 5  -  What gets added to the attack surface?
 
 RAG adds:
 
@@ -88,7 +88,7 @@ It is a data pipeline and access-control problem.
 
 ---
 
-## Slide 6 — Security engineering connection
+## Slide 6  -  Security engineering connection
 
 RAG maps directly to classic security principles:
 
@@ -103,7 +103,7 @@ RAG maps directly to classic security principles:
 
 ---
 
-## Slide 7 — Direct prompt injection
+## Slide 7  -  Direct prompt injection
 
 The attacker sends the malicious instruction directly to the assistant.
 
@@ -117,7 +117,7 @@ It is still hard to fully prevent.
 
 ---
 
-## Slide 8 — Indirect prompt injection
+## Slide 8  -  Indirect prompt injection
 
 The attacker hides the malicious instruction in content the assistant reads later.
 
@@ -136,7 +136,7 @@ The user may never see the malicious instruction.
 
 ---
 
-## Slide 9 — Why indirect injection is dangerous
+## Slide 9  -  Why indirect injection is dangerous
 
 Indirect injection abuses trust transitively.
 
@@ -153,7 +153,7 @@ The assistant may use its privileges for the attacker.
 
 ---
 
-## Slide 10 — RAG failure: authorization after retrieval
+## Slide 10  -  RAG failure: authorization after retrieval
 
 Bad pattern:
 
@@ -177,7 +177,7 @@ The model should not be the first access-control boundary.
 
 ---
 
-## Slide 11 — Cross-tenant retrieval
+## Slide 11  -  Cross-tenant retrieval
 
 Cross-tenant retrieval happens when one tenant's content is retrieved for another tenant.
 
@@ -199,7 +199,7 @@ Impact:
 
 ---
 
-## Slide 12 — Poisoned documents
+## Slide 12  -  Poisoned documents
 
 A poisoned document is content designed to influence model behavior.
 
@@ -217,7 +217,7 @@ The document may look normal to humans.
 
 ---
 
-## Slide 13 — Source trust and provenance
+## Slide 13  -  Source trust and provenance
 
 RAG systems should know:
 
@@ -236,7 +236,7 @@ Source metadata is security context.
 
 ---
 
-## Slide 14 — Chunking can break security
+## Slide 14  -  Chunking can break security
 
 Chunking can detach text from:
 
@@ -255,7 +255,7 @@ Every chunk should carry policy-relevant metadata.
 
 ---
 
-## Slide 15 — Embeddings are not access control
+## Slide 15  -  Embeddings are not access control
 
 Embeddings help find semantically similar content.
 
@@ -267,7 +267,7 @@ A vector database query must include policy filters.
 
 ---
 
-## Slide 16 — Context separation
+## Slide 16  -  Context separation
 
 Prompt construction should separate:
 
@@ -286,7 +286,7 @@ Policy must be enforced outside the model.
 
 ---
 
-## Slide 17 — Output risks
+## Slide 17  -  Output risks
 
 RAG output can leak:
 
@@ -304,7 +304,7 @@ They need review, validation, or constraints depending on impact.
 
 ---
 
-## Slide 18 — Better RAG control points
+## Slide 18  -  Better RAG control points
 
 Controls can live at:
 
@@ -326,7 +326,7 @@ Do not put all controls in the prompt.
 
 ---
 
-## Slide 19 — Secure RAG pattern
+## Slide 19  -  Secure RAG pattern
 
 ```text
 User identity + task
@@ -345,7 +345,7 @@ Security is enforced before and after generation.
 
 ---
 
-## Slide 20 — Monitoring and detection
+## Slide 20  -  Monitoring and detection
 
 Watch for:
 
@@ -361,7 +361,7 @@ Watch for:
 
 ---
 
-## Slide 21 — Lab scenario
+## Slide 21  -  Lab scenario
 
 Students review a vulnerable internal RAG assistant.
 
@@ -382,7 +382,7 @@ Student goal:
 
 ---
 
-## Slide 22 — Good mitigation answers
+## Slide 22  -  Good mitigation answers
 
 Good answers include:
 
@@ -399,7 +399,7 @@ Good answers include:
 
 ---
 
-## Slide 23 — Bad mitigation answers
+## Slide 23  -  Bad mitigation answers
 
 Weak answers include:
 
@@ -414,7 +414,7 @@ Weak answers include:
 
 ---
 
-## Slide 24 — Discussion question
+## Slide 24  -  Discussion question
 
 Where should access control happen in a RAG system?
 
@@ -431,7 +431,7 @@ Other layers can help, but retrieval authorization is essential.
 
 ---
 
-## Slide 25 — Module takeaway
+## Slide 25  -  Module takeaway
 
 RAG is a powerful architecture.
 

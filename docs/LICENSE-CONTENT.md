@@ -2,7 +2,7 @@
 
 Unless otherwise stated, the educational content in this repository is licensed under:
 
-**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International — CC BY-NC-SA 4.0**
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International  -  CC BY-NC-SA 4.0**
 
 Official license page: https://creativecommons.org/licenses/by-nc-sa/4.0/
 

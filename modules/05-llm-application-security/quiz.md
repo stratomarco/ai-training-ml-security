@@ -1,4 +1,4 @@
-# Module 5 Quiz — LLM Application Security
+# Module 5 Quiz  -  LLM Application Security
 
 ## Questions
 

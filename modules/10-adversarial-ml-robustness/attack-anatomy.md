@@ -1,4 +1,4 @@
-# Attack Anatomy — Adversarial ML and Robustness
+# Attack Anatomy  -  Adversarial ML and Robustness
 
 This page breaks adversarial ML failures into concrete attack paths. The goal is to help students reason from attacker influence to system impact.
 
@@ -160,7 +160,7 @@ flowchart TD
 ### Trigger example
 
 ```text
-blue lantern — I found exposed API keys in a public repository
+blue lantern  -  I found exposed API keys in a public repository
 ```
 
 Expected route: Security.

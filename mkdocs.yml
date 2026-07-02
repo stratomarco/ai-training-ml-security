@@ -1,9 +1,15 @@
-site_name: AI Training — ML Security
+site_name: "AI Training: ML Security"
 site_description: Security engineering for systems that contain machine learning.
-site_author: AI Training — ML Security contributors
+docs_dir: .mkdocs-src
+site_dir: site
+site_author: "AI Training: ML Security contributors"
 repo_url: https://github.com/stratomarco/ai-training-ml-security
 repo_name: stratomarco/ai-training-ml-security
-edit_uri: edit/main/docs/
+edit_uri: edit/main/
+
+validation:
+  nav:
+    omitted_files: ignore
 
 theme:
   name: material
@@ -59,12 +65,6 @@ validation:
   absolute_links: warn
   unrecognized_links: warn
 
-not_in_nav: |
-  /modules/**
-  /labs/**
-  /templates/**
-  /instructor/**
-  /assessments/**
 
 nav:
   - Home: index.md
@@ -76,6 +76,7 @@ nav:
       - "Security Roots": start-here/security-roots.md
       - "Learning Paths": start-here/learning-paths.md
       - "One-Week Learning Path": start-here/one-week-learning-path.md
+      - "Cross-Platform Setup": start-here/cross-platform-setup.md
       - "Glossary": glossary.md
       - "Prerequisites": start-here/prerequisites.md
       - "How to Use This Course": start-here/how-to-use-this-course.md
@@ -89,7 +90,7 @@ nav:
       - "Roadmap": ROADMAP.md
   - Modules:
       - "Modules Overview": modules/README.md
-      - "01 — Security Engineering for AI":
+      - "01  -  Security Engineering for AI":
           - "Overview": modules/01-security-engineering-for-ai/README.md
           - "Slides": modules/01-security-engineering-for-ai/slides.md
           - "Instructor Notes": modules/01-security-engineering-for-ai/instructor-notes.md
@@ -98,7 +99,7 @@ nav:
           - "Quiz": modules/01-security-engineering-for-ai/quiz.md
           - "References": modules/01-security-engineering-for-ai/references.md
           - "Exercise": modules/01-security-engineering-for-ai/exercise-threat-model.md
-      - "02 — ML System Architecture":
+      - "02  -  ML System Architecture":
           - "Overview": modules/02-ml-system-architecture/README.md
           - "Slides": modules/02-ml-system-architecture/slides.md
           - "Instructor Notes": modules/02-ml-system-architecture/instructor-notes.md
@@ -107,7 +108,7 @@ nav:
           - "Quiz": modules/02-ml-system-architecture/quiz.md
           - "References": modules/02-ml-system-architecture/references.md
           - "Exercise": modules/02-ml-system-architecture/exercise-ml-lifecycle-dfd.md
-      - "03 — OWASP ML Security Top 10":
+      - "03  -  OWASP ML Security Top 10":
           - "Overview": modules/03-owasp-ml-top-10/README.md
           - "Slides": modules/03-owasp-ml-top-10/slides.md
           - "Instructor Notes": modules/03-owasp-ml-top-10/instructor-notes.md
@@ -116,7 +117,7 @@ nav:
           - "Quiz": modules/03-owasp-ml-top-10/quiz.md
           - "References": modules/03-owasp-ml-top-10/references.md
           - "Exercise": modules/03-owasp-ml-top-10/exercise-owasp-ml-attack-review.md
-      - "04 — BIML Architectural Risk Analysis":
+      - "04  -  BIML Architectural Risk Analysis":
           - "Overview": modules/04-biml-architectural-risk-analysis/README.md
           - "Slides": modules/04-biml-architectural-risk-analysis/slides.md
           - "Instructor Notes": modules/04-biml-architectural-risk-analysis/instructor-notes.md
@@ -125,7 +126,7 @@ nav:
           - "Quiz": modules/04-biml-architectural-risk-analysis/quiz.md
           - "References": modules/04-biml-architectural-risk-analysis/references.md
           - "Exercise": modules/04-biml-architectural-risk-analysis/exercise-biml-architecture-review.md
-      - "05 — LLM Application Security":
+      - "05  -  LLM Application Security":
           - "Overview": modules/05-llm-application-security/README.md
           - "Deep Dive": modules/05-llm-application-security/deep-dive.md
           - "Attack Anatomy": modules/05-llm-application-security/attack-anatomy.md
@@ -139,7 +140,7 @@ nav:
           - "Quiz": modules/05-llm-application-security/quiz.md
           - "References": modules/05-llm-application-security/references.md
           - "Exercise": modules/05-llm-application-security/exercise-llm-application-security-review.md
-      - "06 — RAG Security":
+      - "06  -  RAG Security":
           - "Overview": modules/06-rag-security/README.md
           - "Slides": modules/06-rag-security/slides.md
           - "Instructor Notes": modules/06-rag-security/instructor-notes.md
@@ -153,7 +154,7 @@ nav:
           - "Quiz": modules/06-rag-security/quiz.md
           - "References": modules/06-rag-security/references.md
           - "Exercise": modules/06-rag-security/exercise-rag-threat-model.md
-      - "07 — Agent and Tool Security":
+      - "07  -  Agent and Tool Security":
           - "Overview": modules/07-agent-tool-security/README.md
           - "Slides": modules/07-agent-tool-security/slides.md
           - "Instructor Notes": modules/07-agent-tool-security/instructor-notes.md
@@ -170,7 +171,7 @@ nav:
           - "Executive Risk Memo Exercise": modules/07-agent-tool-security/exercise-executive-risk-memo.md
           - "BrokenPilot Tool Validation": modules/07-agent-tool-security/brokenpilot-tool-validation.md
           - "BrokenPilot Memory Validation": modules/07-agent-tool-security/brokenpilot-memory-validation.md
-      - "08 — Secure MLOps and AI Supply Chain":
+      - "08  -  Secure MLOps and AI Supply Chain":
           - "Overview": modules/08-secure-mlops-supply-chain/README.md
           - "Slides": modules/08-secure-mlops-supply-chain/slides.md
           - "Instructor Notes": modules/08-secure-mlops-supply-chain/instructor-notes.md
@@ -180,7 +181,7 @@ nav:
           - "References": modules/08-secure-mlops-supply-chain/references.md
           - "Exercise": modules/08-secure-mlops-supply-chain/exercise-secure-mlops-review.md
           - "Executive Risk Memo Exercise": modules/08-secure-mlops-supply-chain/exercise-executive-risk-memo.md
-      - "09 — Privacy Attacks":
+      - "09  -  Privacy Attacks":
           - "Overview": modules/09-privacy-attacks/README.md
           - "Slides": modules/09-privacy-attacks/slides.md
           - "Instructor Notes": modules/09-privacy-attacks/instructor-notes.md
@@ -189,7 +190,7 @@ nav:
           - "Quiz": modules/09-privacy-attacks/quiz.md
           - "References": modules/09-privacy-attacks/references.md
           - "Exercise": modules/09-privacy-attacks/exercise-privacy-risk-assessment.md
-      - "10 — Adversarial ML and Robustness":
+      - "10  -  Adversarial ML and Robustness":
           - "Overview": modules/10-adversarial-ml-robustness/README.md
           - "Slides": modules/10-adversarial-ml-robustness/slides.md
           - "Instructor Notes": modules/10-adversarial-ml-robustness/instructor-notes.md
@@ -204,7 +205,7 @@ nav:
           - "Common Mistakes": modules/10-adversarial-ml-robustness/common-mistakes.md
           - "Worked Example": modules/10-adversarial-ml-robustness/worked-example.md
           - "Deep Dive Worked Examples": modules/10-adversarial-ml-robustness/deep-dive-worked-examples.md
-      - "11 — AI Red Team Methodology":
+      - "11  -  AI Red Team Methodology":
           - "Overview": modules/11-ai-red-team-methodology/README.md
           - "Slides": modules/11-ai-red-team-methodology/slides.md
           - "Instructor Notes": modules/11-ai-red-team-methodology/instructor-notes.md
@@ -214,7 +215,7 @@ nav:
           - "References": modules/11-ai-red-team-methodology/references.md
           - "Exercise": modules/11-ai-red-team-methodology/exercise-ai-red-team-plan.md
           - "Finding Rewrite Exercise": modules/11-ai-red-team-methodology/exercise-finding-rewrite.md
-      - "12 — BrokenPilot Capstone":
+      - "12  -  BrokenPilot Capstone":
           - "Overview": modules/12-capstone-brokenpilot/README.md
           - "Slides": modules/12-capstone-brokenpilot/slides.md
           - "Instructor Notes": modules/12-capstone-brokenpilot/instructor-notes.md
@@ -234,10 +235,10 @@ nav:
       - "DVAIA Mapping": labs/dvaia-guides/dvaia-course-mapping.md
       - "DVAIA Validated Results": labs/dvaia-guides/validated-lab-results.md
       - "LLM Application Security Lab": labs/dvaia-guides/llm-application-security-lab.md
-      - "Module 05 — Direct Prompt Injection Walkthrough": labs/dvaia-guides/module-05-direct-prompt-injection-walkthrough.md
-      - "Module 06 — RAG / Indirect Injection Walkthrough": labs/dvaia-guides/module-06-rag-indirect-prompt-injection-walkthrough.md
-      - "Module 07 — Agent / Tool Behavior Walkthrough": labs/dvaia-guides/module-07-agent-tool-behavior-walkthrough.md
-      - "Module 11 — DVAIA Red Team Mini-Assessment": labs/dvaia-guides/module-11-dvaia-red-team-mini-assessment.md
+      - "Module 05  -  Direct Prompt Injection Walkthrough": labs/dvaia-guides/module-05-direct-prompt-injection-walkthrough.md
+      - "Module 06  -  RAG / Indirect Injection Walkthrough": labs/dvaia-guides/module-06-rag-indirect-prompt-injection-walkthrough.md
+      - "Module 07  -  Agent / Tool Behavior Walkthrough": labs/dvaia-guides/module-07-agent-tool-behavior-walkthrough.md
+      - "Module 11  -  DVAIA Red Team Mini-Assessment": labs/dvaia-guides/module-11-dvaia-red-team-mini-assessment.md
       - "RAG Indirect Prompt Injection Lab": labs/rag-labs/rag-indirect-prompt-injection-lab.md
       - "Agent Tool Misuse Lab": labs/agent-labs/agent-tool-misuse-lab.md
       - "Memory Poisoning and Approval Gates Lab": labs/agent-labs/memory-poisoning-approval-gates-lab.md
@@ -260,9 +261,9 @@ nav:
           - "Build Backlog": labs/brokenpilot/prototype/build-backlog.md
       - "BrokenPilot Runnable MVP":
           - "Overview": labs/brokenpilot/prototype-app/README.md
-          - "Lab Guide": labs/brokenpilot/prototype-app/lab-guide.md
-          - "Tool Calling Lab": labs/brokenpilot/prototype-app/tool-calling-lab.md
-          - "Memory Poisoning Lab": labs/brokenpilot/prototype-app/memory-poisoning-lab.md
+          - "Lab Guide": labs/brokenpilot/prototype-app/LAB_GUIDE.md
+          - "Tool Calling Lab": labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md
+          - "Memory Poisoning Lab": labs/brokenpilot/prototype-app/MEMORY_POISONING_LAB.md
       - "BrokenPilot Worked Examples":
           - "Overview": labs/brokenpilot/worked-examples/README.md
           - "Strong Threat Model": labs/brokenpilot/worked-examples/strong-threat-model-example.md
@@ -284,23 +285,23 @@ nav:
           - "Instructor Notes for Final Report Examples": labs/brokenpilot/worked-examples/instructor-notes-final-report-examples.md
           - "Finding Rewrite Before and After": labs/brokenpilot/worked-examples/finding-rewrite-before-after.md
   - Templates:
-      - "Templates Overview": templates/README.md
-      - "Threat Model Template": templates/threat-model-template.md
-      - "Architecture Risk Review Template": templates/architecture-risk-review-template.md
-      - "Llm Application Security Review Template": templates/llm-application-security-review-template.md
-      - "Rag Threat Model Template": templates/rag-threat-model-template.md
-      - "Agent Control Design Template": templates/agent-control-design-template.md
-      - "Secure Mlops Review Template": templates/secure-mlops-review-template.md
-      - "Privacy Risk Assessment Template": templates/privacy-risk-assessment-template.md
-      - "Adversarial Test Plan Template": templates/adversarial-test-plan-template.md
-      - "Ai Red Team Report Template": templates/ai-red-team-report-template.md
-      - "Brokenpilot Final Report Template": templates/brokenpilot-final-report-template.md
-      - "Concrete Control Implementation Template": templates/concrete-control-implementation-template.md
-      - "DVAIA Evidence Log Template": templates/dvaia-evidence-log-template.md
-      - "Deep Dive Template": templates/deep-dive-template.md
-      - "Attack Anatomy Template": templates/attack-anatomy-template.md
-      - "Controls and Remediations Template": templates/controls-and-remediations-template.md
-      - "Finding Rewrite Template": templates/finding-rewrite-template.md
+      - "Templates Overview": course-templates/README.md
+      - "Threat Model Template": course-templates/threat-model-template.md
+      - "Architecture Risk Review Template": course-templates/architecture-risk-review-template.md
+      - "Llm Application Security Review Template": course-templates/llm-application-security-review-template.md
+      - "Rag Threat Model Template": course-templates/rag-threat-model-template.md
+      - "Agent Control Design Template": course-templates/agent-control-design-template.md
+      - "Secure Mlops Review Template": course-templates/secure-mlops-review-template.md
+      - "Privacy Risk Assessment Template": course-templates/privacy-risk-assessment-template.md
+      - "Adversarial Test Plan Template": course-templates/adversarial-test-plan-template.md
+      - "Ai Red Team Report Template": course-templates/ai-red-team-report-template.md
+      - "Brokenpilot Final Report Template": course-templates/brokenpilot-final-report-template.md
+      - "Concrete Control Implementation Template": course-templates/concrete-control-implementation-template.md
+      - "DVAIA Evidence Log Template": course-templates/dvaia-evidence-log-template.md
+      - "Deep Dive Template": course-templates/deep-dive-template.md
+      - "Attack Anatomy Template": course-templates/attack-anatomy-template.md
+      - "Controls and Remediations Template": course-templates/controls-and-remediations-template.md
+      - "Finding Rewrite Template": course-templates/finding-rewrite-template.md
   - Instructor:
       - "Instructor Overview": instructor/README.md
       - "Delivery Guide": instructor/delivery-guide.md

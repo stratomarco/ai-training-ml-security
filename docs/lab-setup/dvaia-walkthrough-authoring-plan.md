@@ -8,10 +8,10 @@ Move each DVAIA-backed lab from "validated environment" to "repeatable teaching 
 
 ## Work order
 
-1. Module 05 — Direct Prompt Injection guided walkthrough
-2. Module 06 — Indirect Prompt Injection / RAG guided walkthrough
-3. Module 07 — Agent and Tool Misuse walkthrough where supported
-4. Module 11 — DVAIA attack-chain exercise
+1. Module 05  -  Direct Prompt Injection guided walkthrough
+2. Module 06  -  Indirect Prompt Injection / RAG guided walkthrough
+3. Module 07  -  Agent and Tool Misuse walkthrough where supported
+4. Module 11  -  DVAIA attack-chain exercise
 
 ## Required structure for each walkthrough
 

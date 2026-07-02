@@ -1,4 +1,4 @@
-# Weak Example — BrokenPilot Remediation Backlog
+# Weak Example  -  BrokenPilot Remediation Backlog
 
 This is an example of a weak remediation backlog.
 

@@ -1,4 +1,4 @@
-# Strong Example — BrokenPilot Remediation Backlog
+# Strong Example  -  BrokenPilot Remediation Backlog
 
 This is an example of a strong remediation backlog for BrokenPilot findings.
 

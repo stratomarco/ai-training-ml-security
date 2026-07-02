@@ -1,4 +1,4 @@
-# Module 08 — Secure MLOps and AI Supply Chain
+# Module 08  -  Secure MLOps and AI Supply Chain
 
 ## Purpose
 
@@ -164,23 +164,23 @@ Students produce a **Secure MLOps review** containing:
 
 ## Files in this module
 
-- `slides.md` — Markdown slide deck
-- `instructor-notes.md` — delivery guidance and facilitation notes
-- `student-handout.md` — student-facing reference
-- `exercise-secure-mlops-review.md` — main exercise
-- `checklist.md` — Secure MLOps checklist
-- `quiz.md` — quiz and answer key
-- `references.md` — module-specific references
+- `slides.md`  -  Markdown slide deck
+- `instructor-notes.md`  -  delivery guidance and facilitation notes
+- `student-handout.md`  -  student-facing reference
+- `exercise-secure-mlops-review.md`  -  main exercise
+- `checklist.md`  -  Secure MLOps checklist
+- `quiz.md`  -  quiz and answer key
+- `references.md`  -  module-specific references
 
 ## Related labs and templates
 
 - `../../labs/mlops-supply-chain-labs/broken-ml-pipeline-lab.md`
 - `../../labs/mlops-supply-chain-labs/model-artifact-provenance-lab.md`
-- `../../templates/secure-mlops-review-template.md`
-- `../../templates/dataset-provenance-review-template.md`
-- `../../templates/model-artifact-risk-review-template.md`
-- `../../templates/model-registry-access-control-template.md`
-- `../../templates/ml-bom-template.md`
+- `../../course-templates/secure-mlops-review-template.md`
+- `../../course-templates/dataset-provenance-review-template.md`
+- `../../course-templates/model-artifact-risk-review-template.md`
+- `../../course-templates/model-registry-access-control-template.md`
+- `../../course-templates/ml-bom-template.md`
 
 ## Executive communication exercise
 

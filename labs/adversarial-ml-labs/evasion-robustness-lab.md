@@ -1,4 +1,4 @@
-# Lab — Evasion and Robustness Testing
+# Lab  -  Evasion and Robustness Testing
 
 ## Purpose
 
@@ -88,7 +88,7 @@ Possible mitigations:
 
 ## Deliverable
 
-Use [`../../templates/robustness-evaluation-template.md`](../../templates/robustness-evaluation-template.md).
+Use [`../../course-templates/robustness-evaluation-template.md`](../../course-templates/robustness-evaluation-template.md).
 
 ## Instructor note
 

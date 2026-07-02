@@ -1,4 +1,4 @@
-# Exercise — Threat Model DocAssist
+# Exercise  -  Threat Model DocAssist
 
 ## Exercise purpose
 
@@ -66,7 +66,7 @@ Use these assumptions unless your instructor changes them:
 
 ## Student tasks
 
-### Task 1 — Identify assets
+### Task 1  -  Identify assets
 
 List at least eight assets.
 
@@ -80,7 +80,7 @@ Examples:
 
 Add your own.
 
-### Task 2 — Identify actors
+### Task 2  -  Identify actors
 
 List legitimate users, privileged users, attackers, and system operators.
 
@@ -94,7 +94,7 @@ Consider:
 - Developer/operator
 - Model provider or dependency
 
-### Task 3 — Draw trust boundaries
+### Task 3  -  Draw trust boundaries
 
 Draw a simple diagram or list boundaries such as:
 
@@ -105,7 +105,7 @@ Draw a simple diagram or list boundaries such as:
 - Application to LLM gateway
 - Application to logging system
 
-### Task 4 — Write abuse cases
+### Task 4  -  Write abuse cases
 
 Write at least five abuse cases in this format:
 
@@ -123,7 +123,7 @@ As an employee with limited access, I want DocAssist to summarize documents I ca
 As a malicious insider, I want to place instructions inside a document that DocAssist retrieves, so that the assistant follows my instructions instead of the system instructions.
 ```
 
-### Task 5 — Identify root causes
+### Task 5  -  Identify root causes
 
 For each abuse case, identify likely root causes.
 
@@ -136,7 +136,7 @@ Root cause examples:
 - Model output is rendered without validation or encoding.
 - There is no monitoring for unusual document access.
 
-### Task 6 — Propose mitigations
+### Task 6  -  Propose mitigations
 
 For each abuse case, propose at least one mitigation.
 
@@ -148,7 +148,7 @@ Prefer mitigations that are:
 - Fail-closed
 - Reasonable for developer velocity
 
-### Task 7 — Discuss residual risk
+### Task 7  -  Discuss residual risk
 
 Write a short residual risk statement.
 

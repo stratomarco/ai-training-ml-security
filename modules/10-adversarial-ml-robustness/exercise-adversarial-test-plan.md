@@ -1,4 +1,4 @@
-# Exercise — Adversarial Test Plan
+# Exercise  -  Adversarial Test Plan
 
 ## Scenario
 
@@ -105,7 +105,7 @@ Do not test against real email systems, real users, or third-party services.
 
 ## Deliverable format
 
-Use [`../../templates/adversarial-test-plan-template.md`](../../templates/adversarial-test-plan-template.md).
+Use [`../../course-templates/adversarial-test-plan-template.md`](../../course-templates/adversarial-test-plan-template.md).
 
 ## Discussion questions
 

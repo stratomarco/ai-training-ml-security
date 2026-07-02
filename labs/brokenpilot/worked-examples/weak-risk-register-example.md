@@ -1,4 +1,4 @@
-# Weak Risk Register Example — BrokenPilot
+# Weak Risk Register Example  -  BrokenPilot
 
 | Risk | Severity | Mitigation |
 |---|---|---|

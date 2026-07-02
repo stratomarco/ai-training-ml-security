@@ -37,7 +37,7 @@ In vulnerable mode, the tool trusts the caller and does not enforce tenant autho
 
 This is a tool confused-deputy problem: the agent or workflow causes a privileged tool to act across a boundary without the tool independently verifying whether the action is allowed.
 
-## Validation 1 — Vulnerable mode
+## Validation 1  -  Vulnerable mode
 
 ### Configuration
 
@@ -94,7 +94,7 @@ The violated security property is tenant isolation / object-level authorization.
 
 The root cause is missing complete mediation at the tool boundary.
 
-## Validation 2 — Controlled mode
+## Validation 2  -  Controlled mode
 
 ### Configuration
 
@@ -213,5 +213,5 @@ This is weak because it treats the model as the enforcement boundary. Prompt ins
 - `labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md`
 - `labs/brokenpilot/prototype-app/README.md`
 - `modules/07-agent-tool-security/exercise-agent-control-design.md`
-- `templates/tool-permission-matrix-template.md`
-- `templates/agent-action-approval-policy-template.md`
+- `course-templates/tool-permission-matrix-template.md`
+- `course-templates/agent-action-approval-policy-template.md`

@@ -93,42 +93,42 @@ Remaining refinement: add a small runnable or notebook-based toy robustness lab 
 
 ## Development milestones
 
-### v1.1-dev — Testable labs foundation
+### v1.1-dev  -  Testable labs foundation
 
-- DVAIA validation plan — done
-- DVAIA setup checklist — done
-- Module-to-DVAIA mapping — done
-- Lab validation matrix — initial validation done
-- Instructor troubleshooting notes — partial, needs per-lab refinement
-- Per-lab DVAIA walkthroughs — initial set done for Modules 05, 06, 07, and 11
-- DVAIA evidence log template — done
-- Screenshot/transcript capture — next refinement
+- DVAIA validation plan  -  done
+- DVAIA setup checklist  -  done
+- Module-to-DVAIA mapping  -  done
+- Lab validation matrix  -  initial validation done
+- Instructor troubleshooting notes  -  partial, needs per-lab refinement
+- Per-lab DVAIA walkthroughs  -  initial set done for Modules 05, 06, 07, and 11
+- DVAIA evidence log template  -  done
+- Screenshot/transcript capture  -  next refinement
 
-### v1.2-dev — BrokenPilot prototype design
+### v1.2-dev  -  BrokenPilot prototype design
 
 Status: **Initial design package complete.**
 
-- Prototype architecture — done
-- API contract — done
-- Fake data model — done
-- Mock LLM mode — done
-- Vulnerability implementation plan — done
-- Control toggle plan — done
-- Safe local deployment plan — done
-- Student lab flow — done
-- Instructor runbook — done
-- Build backlog — done
+- Prototype architecture  -  done
+- API contract  -  done
+- Fake data model  -  done
+- Mock LLM mode  -  done
+- Vulnerability implementation plan  -  done
+- Control toggle plan  -  done
+- Safe local deployment plan  -  done
+- Student lab flow  -  done
+- Instructor runbook  -  done
+- Build backlog  -  done
 
 Next step: implement the smallest FastAPI skeleton that can start locally, load fake data, and expose `/health`, `/users`, `/retrieve`, and `/chat`.
 
-### v1.3-dev — Worked examples and grading anchors
+### v1.3-dev  -  Worked examples and grading anchors
 
 - Strong and weak capstone examples
 - Rubric calibration notes
 - Example evidence log
 - Example remediation backlog
 
-### v1.4-dev — Delivery model
+### v1.4-dev  -  Delivery model
 
 - 2-hour path
 - Half-day path
@@ -137,7 +137,7 @@ Next step: implement the smallest FastAPI skeleton that can start locally, load 
 - 12-week path
 - Module-level cut/expand notes
 
-### v1.5-dev — Concrete controls and executive communication
+### v1.5-dev  -  Concrete controls and executive communication
 
 - Control implementation exercises
 - CISO memo exercise
@@ -145,7 +145,7 @@ Next step: implement the smallest FastAPI skeleton that can start locally, load 
 - Retrieval authorization examples
 - Tool permission examples
 
-### v1.6-dev — Module 10 deepening
+### v1.6-dev  -  Module 10 deepening
 
 - Deep-dive worked examples
 - New diagrams
@@ -177,7 +177,7 @@ git checkout -b v1.1-dev-testable-labs
 Merge to `main` only after the website builds and the new documentation is internally consistent.
 
 
-## BrokenPilot minimal runnable prototype — first MVP implemented
+## BrokenPilot minimal runnable prototype  -  first MVP implemented
 
 The first BrokenPilot runnable MVP now exists under:
 

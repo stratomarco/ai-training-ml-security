@@ -1,4 +1,4 @@
-# Module 07 Instructor Notes — Agent and Tool Security
+# Module 07 Instructor Notes  -  Agent and Tool Security
 
 ## Teaching intent
 
@@ -239,4 +239,4 @@ When students say “the agent was tricked,” push them to be more precise:
 - Which boundary was crossed?
 - How do we prove the fix works?
 
-The answer should usually end at the tool broker, memory service, policy layer, approval workflow, or audit trail — not at the prompt alone.
+The answer should usually end at the tool broker, memory service, policy layer, approval workflow, or audit trail  -  not at the prompt alone.

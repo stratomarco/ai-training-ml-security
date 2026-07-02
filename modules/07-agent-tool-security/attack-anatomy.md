@@ -1,4 +1,4 @@
-# Attack Anatomy — Agent and Tool Security
+# Attack Anatomy  -  Agent and Tool Security
 
 This page breaks agent attacks into concrete paths. The goal is to help students reason from input to impact instead of stopping at “the model was tricked.”
 

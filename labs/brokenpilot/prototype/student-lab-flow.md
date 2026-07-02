@@ -19,7 +19,7 @@ Students should not start by randomly attacking the app. The lab should follow t
 
 ## Student tasks
 
-### Task 1 — Start the system
+### Task 1  -  Start the system
 
 Start BrokenPilot locally and confirm the health check works.
 
@@ -28,7 +28,7 @@ Expected evidence:
 - Screenshot or command output showing the app is running.
 - Active mode: vulnerable or hardened.
 
-### Task 2 — Map the architecture
+### Task 2  -  Map the architecture
 
 Draw a minimal data-flow diagram with:
 
@@ -46,7 +46,7 @@ Expected evidence:
 
 - DFD with at least three trust boundaries.
 
-### Task 3 — Trigger indirect prompt injection
+### Task 3  -  Trigger indirect prompt injection
 
 Use a query that retrieves a poisoned document and observe whether the assistant follows document-supplied instructions.
 
@@ -57,7 +57,7 @@ Expected evidence:
 - Assistant output
 - Any tool intent or policy decision
 
-### Task 4 — Trigger cross-document retrieval
+### Task 4  -  Trigger cross-document retrieval
 
 Use a lower-privileged user and attempt to retrieve documents outside that user's allowed role/team.
 
@@ -67,7 +67,7 @@ Expected evidence:
 - Retrieved document metadata
 - Explanation of why the retrieval should or should not have been allowed
 
-### Task 5 — Trigger tool confused deputy
+### Task 5  -  Trigger tool confused deputy
 
 Observe whether the assistant can cause a ticket update that the active user should not be allowed to perform.
 
@@ -78,7 +78,7 @@ Expected evidence:
 - User permission
 - Policy decision
 
-### Task 6 — Test hardened mode
+### Task 6  -  Test hardened mode
 
 Enable one or more controls and repeat the relevant task.
 
@@ -88,7 +88,7 @@ Expected evidence:
 - New behavior
 - Deny/approval/log output
 
-### Task 7 — Write findings
+### Task 7  -  Write findings
 
 For each finding, include:
 

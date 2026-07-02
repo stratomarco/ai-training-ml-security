@@ -1,4 +1,4 @@
-# Common Mistakes — Adversarial ML and Robustness
+# Common Mistakes  -  Adversarial ML and Robustness
 
 This page lists common mistakes students, engineers, and security teams make when reviewing ML robustness.
 

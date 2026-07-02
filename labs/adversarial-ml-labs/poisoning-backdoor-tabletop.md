@@ -1,4 +1,4 @@
-# Tabletop Lab — Poisoning, Backdoors, and Feedback-Loop Abuse
+# Tabletop Lab  -  Poisoning, Backdoors, and Feedback-Loop Abuse
 
 ## Purpose
 
@@ -97,7 +97,7 @@ The team suspects one of the following:
 
 ## Deliverable
 
-Use [`../../templates/drift-abuse-monitoring-template.md`](../../templates/drift-abuse-monitoring-template.md) and include a short incident-response plan.
+Use [`../../course-templates/drift-abuse-monitoring-template.md`](../../course-templates/drift-abuse-monitoring-template.md) and include a short incident-response plan.
 
 ## Instructor note
 

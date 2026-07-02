@@ -39,10 +39,10 @@ The prototype is deterministic by design. This makes it appropriate for security
 
 BrokenPilot has four important security boundaries:
 
-1. **User boundary** — different users and tenants should not have equivalent access.
-2. **Retrieval boundary** — documents returned to the model must be scoped to the requesting user and tenant.
-3. **Memory boundary** — stored memories must have trust level, scope, approval state, owner, and tenant.
-4. **Tool boundary** — every state-changing tool must enforce authorization independently of the model.
+1. **User boundary**  -  different users and tenants should not have equivalent access.
+2. **Retrieval boundary**  -  documents returned to the model must be scoped to the requesting user and tenant.
+3. **Memory boundary**  -  stored memories must have trust level, scope, approval state, owner, and tenant.
+4. **Tool boundary**  -  every state-changing tool must enforce authorization independently of the model.
 
 The most important design principle is complete mediation: every sensitive action must be checked at the point of use. The model may propose an action, but the application and tool layer must decide whether the action is allowed.
 
@@ -56,7 +56,7 @@ The most important design principle is complete mediation: every sensitive actio
 | BP-F04 | Weak evidence and audit trails reduce response quality | Medium | Design-supported | Structured audit events and evidence log |
 | BP-F05 | Approval gates are missing for sensitive actions in vulnerable mode | Medium | Prototype-supported | Approval policy for destructive/state-changing tools |
 
-## 5. Detailed finding: BP-F01 — Cross-tenant tool update
+## 5. Detailed finding: BP-F01  -  Cross-tenant tool update
 
 ### Description
 
@@ -141,7 +141,7 @@ user_role: ops
 
 This is a strong validation because the same attack input was replayed and blocked by the intended control.
 
-## 6. Detailed finding: BP-F02 — Memory poisoning influences agent decisions
+## 6. Detailed finding: BP-F02  -  Memory poisoning influences agent decisions
 
 ### Description
 

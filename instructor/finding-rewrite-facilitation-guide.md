@@ -1,4 +1,4 @@
-# Instructor Guide — Finding Rewrite Exercise
+# Instructor Guide  -  Finding Rewrite Exercise
 
 ## Purpose
 

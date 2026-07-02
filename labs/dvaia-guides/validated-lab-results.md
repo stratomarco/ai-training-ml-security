@@ -47,7 +47,7 @@ Initial per-lab walkthroughs have now been added for Modules 05, 06, 07, and 11.
 2. `module-06-rag-indirect-prompt-injection-walkthrough.md`
 3. `module-07-agent-tool-behavior-walkthrough.md`
 4. `module-11-dvaia-red-team-mini-assessment.md`
-5. `templates/dvaia-evidence-log-template.md`
+5. `course-templates/dvaia-evidence-log-template.md`
 
 ## Safety reminder
 

@@ -1,4 +1,4 @@
-# Module 6 Deep Dive — RAG Security and Indirect Prompt Injection
+# Module 6 Deep Dive  -  RAG Security and Indirect Prompt Injection
 
 ## Why this module matters
 

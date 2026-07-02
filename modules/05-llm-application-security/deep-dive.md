@@ -1,4 +1,4 @@
-# Module 05 Deep Dive — LLM Application Security
+# Module 05 Deep Dive  -  LLM Application Security
 
 ## Reading goal
 

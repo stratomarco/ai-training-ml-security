@@ -24,7 +24,7 @@ The goal is not to include every possible AI weakness. The goal is to create a r
 | BP-14 | Privacy leakage through logs | 09 | Medium | Prompts, retrieved chunks, and responses need retention rules. |
 | BP-15 | Missing risk-tiered approval policy | 07/12 | High | Not all AI actions should have the same control level. |
 
-## BP-01 — Direct prompt injection
+## BP-01  -  Direct prompt injection
 
 ### Description
 
@@ -45,7 +45,7 @@ The design relies too heavily on prompt instructions as a security control.
 - Refuse to expose hidden system/context details.
 - Log prompt-injection attempts.
 
-## BP-02 — Indirect prompt injection through documents
+## BP-02  -  Indirect prompt injection through documents
 
 ### Description
 
@@ -63,7 +63,7 @@ Retrieved data is inserted into the prompt without clear source labeling, instru
 - Use policy checks outside the model for actions.
 - Require approval for high-risk actions.
 
-## BP-03 — RAG authorization bypass
+## BP-03  -  RAG authorization bypass
 
 ### Description
 
@@ -81,7 +81,7 @@ Document chunks lost authorization metadata, or retrieval filters are applied af
 - Avoid indexing unauthorized content into shared collections.
 - Test cross-team and cross-tenant retrieval explicitly.
 
-## BP-04 — Tool authorization confused deputy
+## BP-04  -  Tool authorization confused deputy
 
 ### Description
 
@@ -98,7 +98,7 @@ The backend authorizes the assistant instead of authorizing the real user, actio
 - Use scoped delegated tokens.
 - Log the user, model request, tool, target, and policy decision.
 
-## BP-05 — Excessive agency in ticket updates
+## BP-05  -  Excessive agency in ticket updates
 
 ### Description
 
@@ -116,7 +116,7 @@ The system allows a model-generated plan to become an action without risk-tiered
 - Disallow critical actions.
 - Show exact diffs before update.
 
-## BP-06 — Memory poisoning
+## BP-06  -  Memory poisoning
 
 ### Description
 
@@ -134,7 +134,7 @@ Memory entries are stored without provenance, scope, user confirmation, review, 
 - Do not treat memory as policy.
 - Detect suspicious memory writes.
 
-## BP-07 — Insecure output handling
+## BP-07  -  Insecure output handling
 
 ### Description
 
@@ -151,7 +151,7 @@ The system treats generated output as trusted application content.
 - Clearly label generated content.
 - Add user confirmation for copy/paste operational commands.
 
-## BP-08 — Sensitive configuration disclosure
+## BP-08  -  Sensitive configuration disclosure
 
 ### Description
 
@@ -168,7 +168,7 @@ The tool returns raw configuration instead of a least-privilege, redacted view.
 - Separate production and non-production access.
 - Log access to sensitive configuration.
 
-## BP-09 — Overreliance on generated incident summaries
+## BP-09  -  Overreliance on generated incident summaries
 
 ### Description
 
@@ -185,7 +185,7 @@ The UI and workflow fail to communicate uncertainty, source quality, and draft s
 - Show source freshness.
 - Require human review before external or customer-visible use.
 
-## BP-10 — Weak audit trail for model-mediated actions
+## BP-10  -  Weak audit trail for model-mediated actions
 
 ### Description
 
@@ -202,7 +202,7 @@ The audit design was not built for model-mediated workflows.
 - Apply retention and privacy controls.
 - Build detection for unusual tool use.
 
-## BP-11 — Model DoS through recursive tool use
+## BP-11  -  Model DoS through recursive tool use
 
 ### Description
 
@@ -220,7 +220,7 @@ No budgets, loop limits, rate limits, or timeout policy exist for agent workflow
 - Rate limits by user and team.
 - Circuit breakers for repeated failures.
 
-## BP-12 — Unsafe feedback loop from tickets into RAG
+## BP-12  -  Unsafe feedback loop from tickets into RAG
 
 ### Description
 
@@ -237,7 +237,7 @@ The ingestion pipeline does not classify, sanitize, quarantine, or provenance-tr
 - Preserve provenance and trust level.
 - Separate authoritative docs from user-generated tickets.
 
-## BP-13 — Weak model/data provenance
+## BP-13  -  Weak model/data provenance
 
 ### Description
 
@@ -254,7 +254,7 @@ No model/prompt/data versioning or provenance tracking exists.
 - Use signed or approved artifacts for production.
 - Include rollback procedures.
 
-## BP-14 — Privacy leakage through logs
+## BP-14  -  Privacy leakage through logs
 
 ### Description
 
@@ -272,7 +272,7 @@ Logging was designed for debugging, not privacy or security governance.
 - Restrict log access.
 - Separate security telemetry from raw prompt data where possible.
 
-## BP-15 — Missing risk-tiered approval policy
+## BP-15  -  Missing risk-tiered approval policy
 
 ### Description
 

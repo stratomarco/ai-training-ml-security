@@ -1,6 +1,6 @@
-# Module 12 Slides — BrokenPilot Capstone
+# Module 12 Slides  -  BrokenPilot Capstone
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # BrokenPilot Capstone
 
@@ -8,7 +8,7 @@ Threat model, attack, defend, and explain risk for an internal AI operations age
 
 ---
 
-## Slide 2 — What this capstone is
+## Slide 2  -  What this capstone is
 
 BrokenPilot is a realistic AI-enabled internal assistant.
 
@@ -27,7 +27,7 @@ The goal is to assess the system as a whole.
 
 ---
 
-## Slide 3 — Key message
+## Slide 3  -  Key message
 
 # The capstone is not about one clever prompt.
 
@@ -45,7 +45,7 @@ It is about connecting:
 
 ---
 
-## Slide 4 — Business context
+## Slide 4  -  Business context
 
 Engineering and operations teams are overloaded.
 
@@ -62,7 +62,7 @@ The system improves speed, but it now touches sensitive workflows.
 
 ---
 
-## Slide 5 — The system promise
+## Slide 5  -  The system promise
 
 BrokenPilot promises to:
 
@@ -76,7 +76,7 @@ Security must preserve this value while reducing unacceptable risk.
 
 ---
 
-## Slide 6 — The system risk
+## Slide 6  -  The system risk
 
 BrokenPilot can:
 
@@ -92,7 +92,7 @@ That means mistakes can become actions.
 
 ---
 
-## Slide 7 — Simplified architecture
+## Slide 7  -  Simplified architecture
 
 ```text
 User
@@ -112,7 +112,7 @@ BrokenPilot Web/API
 
 ---
 
-## Slide 8 — What changed from normal AppSec?
+## Slide 8  -  What changed from normal AppSec?
 
 Normal AppSec still matters:
 
@@ -129,7 +129,7 @@ AI adds new ways for untrusted content to influence decisions and actions.
 
 ---
 
-## Slide 9 — What changed from normal ML Security?
+## Slide 9  -  What changed from normal ML Security?
 
 This is not only a classifier or model API.
 
@@ -146,7 +146,7 @@ The attack surface is the full workflow.
 
 ---
 
-## Slide 10 — Student mission
+## Slide 10  -  Student mission
 
 Your team must:
 
@@ -160,7 +160,7 @@ Your team must:
 
 ---
 
-## Slide 11 — Assets
+## Slide 11  -  Assets
 
 Important assets include:
 
@@ -178,7 +178,7 @@ Important assets include:
 
 ---
 
-## Slide 12 — Attacker personas
+## Slide 12  -  Attacker personas
 
 Consider:
 
@@ -192,7 +192,7 @@ Consider:
 
 ---
 
-## Slide 13 — Trust boundaries
+## Slide 13  -  Trust boundaries
 
 Look for boundaries between:
 
@@ -208,7 +208,7 @@ Look for boundaries between:
 
 ---
 
-## Slide 14 — Core question 1
+## Slide 14  -  Core question 1
 
 # What can the model see?
 
@@ -227,7 +227,7 @@ Visibility drives leakage risk.
 
 ---
 
-## Slide 15 — Core question 2
+## Slide 15  -  Core question 2
 
 # What can the model do?
 
@@ -246,7 +246,7 @@ Capability drives impact.
 
 ---
 
-## Slide 16 — Core question 3
+## Slide 16  -  Core question 3
 
 # Who authorizes the action?
 
@@ -263,7 +263,7 @@ Authorization should be checked:
 
 ---
 
-## Slide 17 — Expected vulnerability areas
+## Slide 17  -  Expected vulnerability areas
 
 BrokenPilot includes intentionally weak areas:
 
@@ -282,7 +282,7 @@ BrokenPilot includes intentionally weak areas:
 
 ---
 
-## Slide 18 — Attack path example: indirect prompt injection
+## Slide 18  -  Attack path example: indirect prompt injection
 
 A malicious document says:
 
@@ -296,7 +296,7 @@ Impact depends on what context and tools the model can access.
 
 ---
 
-## Slide 19 — Attack path example: tool misuse
+## Slide 19  -  Attack path example: tool misuse
 
 A user asks for a harmless summary.
 
@@ -308,7 +308,7 @@ The root cause is not only the prompt. It is missing authorization and approval.
 
 ---
 
-## Slide 20 — Attack path example: memory poisoning
+## Slide 20  -  Attack path example: memory poisoning
 
 A user plants a persistent memory:
 
@@ -320,7 +320,7 @@ The root cause is untrusted, unreviewed, over-broad memory.
 
 ---
 
-## Slide 21 — Attack path example: cross-team data leakage
+## Slide 21  -  Attack path example: cross-team data leakage
 
 A user asks about Service A.
 
@@ -332,7 +332,7 @@ The root cause is retrieval without object-level access control.
 
 ---
 
-## Slide 22 — What evidence should look like
+## Slide 22  -  What evidence should look like
 
 Good evidence includes:
 
@@ -351,7 +351,7 @@ Use fake data only.
 
 ---
 
-## Slide 23 — Finding quality
+## Slide 23  -  Finding quality
 
 Weak finding:
 
@@ -365,7 +365,7 @@ Explain the failed control.
 
 ---
 
-## Slide 24 — Mitigation pattern: policy outside the model
+## Slide 24  -  Mitigation pattern: policy outside the model
 
 The model can suggest.
 
@@ -382,7 +382,7 @@ Security decisions should live in:
 
 ---
 
-## Slide 25 — Mitigation pattern: least privilege
+## Slide 25  -  Mitigation pattern: least privilege
 
 Apply least privilege to:
 
@@ -399,7 +399,7 @@ The model should not inherit broad backend privileges.
 
 ---
 
-## Slide 26 — Mitigation pattern: approval gates
+## Slide 26  -  Mitigation pattern: approval gates
 
 Require human approval for:
 
@@ -413,7 +413,7 @@ Require human approval for:
 
 ---
 
-## Slide 27 — Mitigation pattern: context separation
+## Slide 27  -  Mitigation pattern: context separation
 
 Treat different context types differently:
 
@@ -429,7 +429,7 @@ Retrieved content is data, not authority.
 
 ---
 
-## Slide 28 — Mitigation pattern: observable AI
+## Slide 28  -  Mitigation pattern: observable AI
 
 Log:
 
@@ -448,7 +448,7 @@ Security teams need reconstructable events.
 
 ---
 
-## Slide 29 — Final deliverables
+## Slide 29  -  Final deliverables
 
 Your final package should include:
 
@@ -465,7 +465,7 @@ Your final package should include:
 
 ---
 
-## Slide 30 — Presentation structure
+## Slide 30  -  Presentation structure
 
 Use this order:
 
@@ -480,7 +480,7 @@ Use this order:
 
 ---
 
-## Slide 31 — How to score well
+## Slide 31  -  How to score well
 
 Strong teams:
 
@@ -495,7 +495,7 @@ Strong teams:
 
 ---
 
-## Slide 32 — Capstone closing message
+## Slide 32  -  Capstone closing message
 
 # AI security is security engineering under new conditions.
 

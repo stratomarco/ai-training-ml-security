@@ -1,8 +1,8 @@
-# Module 10 References — Adversarial ML and Robustness
+# Module 10 References  -  Adversarial ML and Robustness
 
 ## Primary references
 
-- NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+- NIST AI 100-2 E2025  -  Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
 - MITRE ATLAS: https://atlas.mitre.org/
 - OWASP Machine Learning Security Top 10: https://owasp.org/www-project-machine-learning-security-top-10/
 - OWASP ML01:2023 Input Manipulation Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML01_2023-Input_Manipulation_Attack

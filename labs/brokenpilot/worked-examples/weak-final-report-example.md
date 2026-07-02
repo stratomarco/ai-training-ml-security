@@ -8,19 +8,19 @@ BrokenPilot has some AI security issues. The model can be jailbroken and should 
 
 ## Findings
 
-### Finding 1 — The model can be tricked
+### Finding 1  -  The model can be tricked
 
 The assistant followed a bad instruction. This is prompt injection. It is high risk because attackers can abuse it.
 
 Recommendation: improve the prompt and tell the model not to follow attacker instructions.
 
-### Finding 2 — Tools are dangerous
+### Finding 2  -  Tools are dangerous
 
 The agent can update tickets. This is risky because agents can make mistakes.
 
 Recommendation: add authorization.
 
-### Finding 3 — Memory can be poisoned
+### Finding 3  -  Memory can be poisoned
 
 Memory is risky because attackers can store bad things.
 

@@ -1,10 +1,10 @@
-# Strong Example — BrokenPilot Evidence Log
+# Strong Example  -  BrokenPilot Evidence Log
 
 This is an example of a strong evidence log entry for the BrokenPilot capstone.
 
 A strong evidence log should allow an instructor, engineer, or risk owner to reproduce the finding and understand why it matters.
 
-## Finding BP-MVP-04 — Tool Confused Deputy
+## Finding BP-MVP-04  -  Tool Confused Deputy
 
 ### Summary
 

@@ -1,4 +1,4 @@
-# Worked Example — LLM Application Security Review
+# Worked Example  -  LLM Application Security Review
 
 This worked example shows how to turn a vague LLM security concern into a useful engineering finding.
 

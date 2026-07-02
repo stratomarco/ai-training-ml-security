@@ -1,4 +1,4 @@
-# Strong Example — BrokenPilot Tool Permission Matrix
+# Strong Example  -  BrokenPilot Tool Permission Matrix
 
 This is an example of a strong tool permission matrix for the BrokenPilot capstone.
 

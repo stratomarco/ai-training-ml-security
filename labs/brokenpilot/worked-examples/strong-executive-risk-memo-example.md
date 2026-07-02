@@ -1,4 +1,4 @@
-# Strong Example — Executive Risk Memo
+# Strong Example  -  Executive Risk Memo
 
 ## Decision memo: Internal AI operations assistant pilot
 

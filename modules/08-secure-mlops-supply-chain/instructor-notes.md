@@ -1,4 +1,4 @@
-# Module 08 Instructor Notes — Secure MLOps and AI Supply Chain
+# Module 08 Instructor Notes  -  Secure MLOps and AI Supply Chain
 
 ## Module intent
 

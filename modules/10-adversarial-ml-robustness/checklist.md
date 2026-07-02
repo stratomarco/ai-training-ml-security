@@ -1,4 +1,4 @@
-# Module 10 Checklist — Adversarial ML and Robustness
+# Module 10 Checklist  -  Adversarial ML and Robustness
 
 Use this checklist when reviewing model-backed systems that make or influence security-relevant decisions.
 

@@ -61,7 +61,7 @@ Grade lower when students:
 
 ## Expected finding examples
 
-### Finding 1 — RAG authorization bypass
+### Finding 1  -  RAG authorization bypass
 
 **Observation:** A user can receive summaries of documents outside their team because vector retrieval returns semantically similar chunks without checking access metadata.
 
@@ -71,7 +71,7 @@ Grade lower when students:
 
 **Mitigation:** Metadata-preserving chunking, pre-retrieval authorization filters, post-retrieval checks, separate indexes for high-sensitivity domains, tests for cross-team leakage.
 
-### Finding 2 — Tool confused deputy
+### Finding 2  -  Tool confused deputy
 
 **Observation:** BrokenPilot can update a ticket using a broad service account even when the real user cannot perform that update directly.
 
@@ -81,7 +81,7 @@ Grade lower when students:
 
 **Mitigation:** Delegated user identity, scoped tokens, per-action authorization, approval gates for high-risk actions, full audit trail.
 
-### Finding 3 — Memory poisoning
+### Finding 3  -  Memory poisoning
 
 **Observation:** The assistant stores persistent instructions without explicit confirmation or expiry.
 
@@ -91,7 +91,7 @@ Grade lower when students:
 
 **Mitigation:** User confirmation, provenance, scope, expiry, review UI, memory never overrides policy, suspicious-memory detection.
 
-### Finding 4 — Insecure output handling
+### Finding 4  -  Insecure output handling
 
 **Observation:** Generated Markdown or HTML is rendered without adequate safety treatment.
 
@@ -101,7 +101,7 @@ Grade lower when students:
 
 **Mitigation:** Safe rendering, sanitization, command warning UI, generated-content labels, no automatic execution.
 
-### Finding 5 — Overreliance on incident summary
+### Finding 5  -  Overreliance on incident summary
 
 **Observation:** BrokenPilot produces confident incident summaries without showing source freshness, missing data, or uncertainty.
 

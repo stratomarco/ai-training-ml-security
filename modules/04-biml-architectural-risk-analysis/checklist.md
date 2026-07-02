@@ -1,4 +1,4 @@
-# Checklist — BIML-Style AI Architecture Risk Review
+# Checklist  -  BIML-Style AI Architecture Risk Review
 
 Use this checklist during design review of ML, LLM, RAG, and agent systems.
 

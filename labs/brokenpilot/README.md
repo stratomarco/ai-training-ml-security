@@ -1,6 +1,6 @@
 # BrokenPilot Capstone
 
-BrokenPilot is the final capstone scenario for **AI Training — ML Security**.
+BrokenPilot is the final capstone scenario for **AI Training  -  ML Security**.
 
 It is intentionally designed as a realistic internal AI assistant rather than a toy chatbot. The goal is to force students to combine classic security engineering, ML system architecture, LLM application security, RAG security, agent/tool security, privacy, MLOps, red teaming, and residual-risk communication.
 
@@ -161,3 +161,7 @@ The capstone now includes complete final report examples under `worked-examples/
 - `instructor-notes-final-report-examples.md` helps instructors use the examples for grading calibration.
 
 Use these examples to show that the expected output is not just exploit discovery. Students should produce reproducible evidence, root-cause analysis, implementable controls, validation of fixes, and a leadership-ready risk decision.
+
+## Assessment scope note
+
+The runnable BrokenPilot MVP directly demonstrates Module 05, Module 06, Module 07, and Module 11 style findings. Module 08, Module 09, and Module 10 risks are assessed through tabletop analysis, architecture review, written deliverables, and discussion unless a future prototype increment implements those behaviors. See `labs/brokenpilot/capstone-assessment-scope.md`.

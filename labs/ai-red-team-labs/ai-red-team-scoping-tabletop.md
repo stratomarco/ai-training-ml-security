@@ -1,4 +1,4 @@
-# Lab — AI Red Team Scoping Tabletop
+# Lab  -  AI Red Team Scoping Tabletop
 
 ## Purpose
 
@@ -33,7 +33,7 @@ Assign students to roles:
 | Product owner | Defines business impact and acceptable residual risk. |
 | Incident responder | Defines monitoring, evidence, escalation, and stop conditions. |
 
-## Task 1 — Define mission
+## Task 1  -  Define mission
 
 Write a one-paragraph mission statement.
 
@@ -41,7 +41,7 @@ Example:
 
 > Assess whether attacker-controlled prompts or documents can cause BrokenPilot to disclose restricted information, perform unauthorized ticket actions, or mislead operators during incident response.
 
-## Task 2 — Define in-scope systems
+## Task 2  -  Define in-scope systems
 
 List in-scope components:
 
@@ -57,7 +57,7 @@ List in-scope components:
 - memory store;
 - logs and traces.
 
-## Task 3 — Define out-of-scope systems
+## Task 3  -  Define out-of-scope systems
 
 List out-of-scope components:
 
@@ -69,7 +69,7 @@ List out-of-scope components:
 - credential theft outside the lab;
 - persistence outside approved environment.
 
-## Task 4 — Rules of engagement
+## Task 4  -  Rules of engagement
 
 Define:
 
@@ -86,7 +86,7 @@ Define:
 - escalation contacts;
 - emergency stop conditions.
 
-## Task 5 — Evidence requirements
+## Task 5  -  Evidence requirements
 
 For each finding, require:
 
@@ -101,7 +101,7 @@ For each finding, require:
 - impact statement;
 - remediation recommendation.
 
-## Task 6 — Success criteria
+## Task 6  -  Success criteria
 
 Define what success means for the engagement.
 

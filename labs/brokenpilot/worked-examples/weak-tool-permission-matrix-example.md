@@ -1,4 +1,4 @@
-# Weak Example — BrokenPilot Tool Permission Matrix
+# Weak Example  -  BrokenPilot Tool Permission Matrix
 
 This is an example of a weak tool permission matrix for the BrokenPilot capstone.
 

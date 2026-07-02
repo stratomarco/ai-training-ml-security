@@ -26,7 +26,7 @@ Commercial permission, if granted, does not remove attribution requirements unle
 
 A reasonable attribution is:
 
-> Based on “AI Training — ML Security,” by Marco Constantino and contributors. Original project: https://github.com/stratomarco/ai-training-ml-security
+> Based on “AI Training  -  ML Security,” by Marco Constantino and contributors. Original project: https://github.com/stratomarco/ai-training-ml-security
 
 ## Contact
 

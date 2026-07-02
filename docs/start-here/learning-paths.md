@@ -6,18 +6,18 @@ The full course is designed as a 12-module sequence, but different audiences can
 
 Best for AppSec, product security, security architects, ML platform engineers, and security champions.
 
-1. Module 01 — Security Engineering for AI
-2. Module 02 — ML System Architecture
-3. Module 03 — OWASP ML Security Top 10
-4. Module 04 — BIML Architectural Risk Analysis
-5. Module 05 — LLM Application Security
-6. Module 06 — RAG Security
-7. Module 07 — Agent and Tool Security
-8. Module 08 — Secure MLOps and AI Supply Chain
-9. Module 09 — Privacy Attacks
-10. Module 10 — Adversarial ML and Robustness
-11. Module 11 — AI Red Team Methodology
-12. Module 12 — BrokenPilot Capstone
+1. Module 01  -  Security Engineering for AI
+2. Module 02  -  ML System Architecture
+3. Module 03  -  OWASP ML Security Top 10
+4. Module 04  -  BIML Architectural Risk Analysis
+5. Module 05  -  LLM Application Security
+6. Module 06  -  RAG Security
+7. Module 07  -  Agent and Tool Security
+8. Module 08  -  Secure MLOps and AI Supply Chain
+9. Module 09  -  Privacy Attacks
+10. Module 10  -  Adversarial ML and Robustness
+11. Module 11  -  AI Red Team Methodology
+12. Module 12  -  BrokenPilot Capstone
 
 ## Developer path
 

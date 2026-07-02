@@ -1,4 +1,4 @@
-# Module 08 Student Handout — Secure MLOps and AI Supply Chain
+# Module 08 Student Handout  -  Secure MLOps and AI Supply Chain
 
 ## Big idea
 

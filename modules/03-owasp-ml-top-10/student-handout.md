@@ -1,4 +1,4 @@
-# Module 03 — Student Handout
+# Module 03  -  Student Handout
 
 ## Main idea
 
@@ -12,16 +12,16 @@ The most important thing to remember:
 
 | Category | Meaning | Main security concern |
 |---|---|---|
-| ML01 — Input Manipulation | The attacker changes inference-time input to alter prediction. | Robustness and input handling. |
-| ML02 — Data Poisoning | The attacker corrupts data used for training or feedback. | Data integrity. |
-| ML03 — Model Inversion | The attacker infers sensitive features or representative training data. | Privacy leakage. |
-| ML04 — Membership Inference | The attacker determines whether a record was in training. | Privacy leakage. |
-| ML05 — Model Theft | The attacker steals or approximates the model. | IP, access control, API abuse. |
-| ML06 — AI Supply Chain | The attacker compromises datasets, dependencies, artifacts, or pipelines. | Supply chain integrity. |
-| ML07 — Transfer Learning | The attacker abuses inherited risk from pretrained or reused models. | Third-party and inherited behavior risk. |
-| ML08 — Model Skewing | The attacker manipulates feedback or distribution over time. | Feedback-loop integrity. |
-| ML09 — Output Integrity | The attacker tampers with output, thresholds, or downstream decision logic. | Decision integrity. |
-| ML10 — Model Poisoning | The attacker corrupts model behavior or the artifact directly. | Artifact and training integrity. |
+| ML01  -  Input Manipulation | The attacker changes inference-time input to alter prediction. | Robustness and input handling. |
+| ML02  -  Data Poisoning | The attacker corrupts data used for training or feedback. | Data integrity. |
+| ML03  -  Model Inversion | The attacker infers sensitive features or representative training data. | Privacy leakage. |
+| ML04  -  Membership Inference | The attacker determines whether a record was in training. | Privacy leakage. |
+| ML05  -  Model Theft | The attacker steals or approximates the model. | IP, access control, API abuse. |
+| ML06  -  AI Supply Chain | The attacker compromises datasets, dependencies, artifacts, or pipelines. | Supply chain integrity. |
+| ML07  -  Transfer Learning | The attacker abuses inherited risk from pretrained or reused models. | Third-party and inherited behavior risk. |
+| ML08  -  Model Skewing | The attacker manipulates feedback or distribution over time. | Feedback-loop integrity. |
+| ML09  -  Output Integrity | The attacker tampers with output, thresholds, or downstream decision logic. | Decision integrity. |
+| ML10  -  Model Poisoning | The attacker corrupts model behavior or the artifact directly. | Artifact and training integrity. |
 
 ## Lifecycle mapping
 

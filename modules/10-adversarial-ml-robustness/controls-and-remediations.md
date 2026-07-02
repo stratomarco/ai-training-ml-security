@@ -1,4 +1,4 @@
-# Controls and Remediations — Adversarial ML and Robustness
+# Controls and Remediations  -  Adversarial ML and Robustness
 
 This page turns Module 10 risks into engineer-ready controls. The focus is practical robustness: what teams can build, test, monitor, and operate.
 

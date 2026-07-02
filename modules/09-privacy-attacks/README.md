@@ -1,4 +1,4 @@
-# Module 09 — Privacy Attacks and Data Protection
+# Module 09  -  Privacy Attacks and Data Protection
 
 ## Purpose
 
@@ -119,7 +119,7 @@ See:
 
 Students complete a privacy risk assessment using:
 
-- `templates/privacy-risk-assessment-template.md`
+- `course-templates/privacy-risk-assessment-template.md`
 
 The deliverable must include:
 

@@ -1,4 +1,4 @@
-# Module 07 Deep Dive — Agent and Tool Security
+# Module 07 Deep Dive  -  Agent and Tool Security
 
 ## Reading goal
 

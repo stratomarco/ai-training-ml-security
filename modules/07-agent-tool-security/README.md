@@ -1,4 +1,4 @@
-# Module 07 — Agent and Tool Security
+# Module 07  -  Agent and Tool Security
 
 ## Purpose
 
@@ -52,11 +52,11 @@ By the end of this module, students should be able to:
 
 This module now includes additional reading-first material intended to help students understand agent security before running the BrokenPilot labs:
 
-- [Deep Dive](deep-dive.md) — why agents change the security model and how classic security engineering applies.
-- [Attack Anatomy](attack-anatomy.md) — tool misuse, confused deputy behavior, indirect injection into tools, memory poisoning, and excessive agency.
-- [Controls and Remediations](controls-and-remediations.md) — engineer-ready controls for tools, authorization, memory, approval gates, audit, rollback, and monitoring.
-- [Common Mistakes](common-mistakes.md) — frequent agent design failures and how to recognize them.
-- [Worked Example](worked-example.md) — BrokenPilot tool authorization and memory poisoning findings with root cause, impact, remediation, and validation.
+- [Deep Dive](deep-dive.md)  -  why agents change the security model and how classic security engineering applies.
+- [Attack Anatomy](attack-anatomy.md)  -  tool misuse, confused deputy behavior, indirect injection into tools, memory poisoning, and excessive agency.
+- [Controls and Remediations](controls-and-remediations.md)  -  engineer-ready controls for tools, authorization, memory, approval gates, audit, rollback, and monitoring.
+- [Common Mistakes](common-mistakes.md)  -  frequent agent design failures and how to recognize them.
+- [Worked Example](worked-example.md)  -  BrokenPilot tool authorization and memory poisoning findings with root cause, impact, remediation, and validation.
 
 The goal is to make this module teachable by reading and reasoning, not only by running the lab.
 
@@ -150,19 +150,19 @@ Students produce an **agent control design** containing:
 
 ## Files in this module
 
-- `deep-dive.md` — reading-first deepening material
-- `attack-anatomy.md` — reading-first deepening material
-- `controls-and-remediations.md` — reading-first deepening material
-- `common-mistakes.md` — reading-first deepening material
-- `worked-example.md` — reading-first deepening material
-- `slides.md` — Markdown slide deck
-- `instructor-notes.md` — delivery guidance and facilitation notes
-- `student-handout.md` — student-facing reference
-- `exercise-agent-control-design.md` — main exercise
-- `checklist.md` — agent security checklist
-- `quiz.md` — quiz and answer key
-- `references.md` — module-specific references
-- `brokenpilot-tool-validation.md` — validated BrokenPilot tool authorization scenario
+- `deep-dive.md`  -  reading-first deepening material
+- `attack-anatomy.md`  -  reading-first deepening material
+- `controls-and-remediations.md`  -  reading-first deepening material
+- `common-mistakes.md`  -  reading-first deepening material
+- `worked-example.md`  -  reading-first deepening material
+- `slides.md`  -  Markdown slide deck
+- `instructor-notes.md`  -  delivery guidance and facilitation notes
+- `student-handout.md`  -  student-facing reference
+- `exercise-agent-control-design.md`  -  main exercise
+- `checklist.md`  -  agent security checklist
+- `quiz.md`  -  quiz and answer key
+- `references.md`  -  module-specific references
+- `brokenpilot-tool-validation.md`  -  validated BrokenPilot tool authorization scenario
 
 ## Related labs and templates
 
@@ -170,9 +170,9 @@ Students produce an **agent control design** containing:
 - `../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md`
 - `../../labs/agent-labs/agent-tool-misuse-lab.md`
 - `../../labs/agent-labs/memory-poisoning-approval-gates-lab.md`
-- `../../templates/agent-control-design-template.md`
-- `../../templates/tool-permission-matrix-template.md`
-- `../../templates/agent-action-approval-policy-template.md`
+- `../../course-templates/agent-control-design-template.md`
+- `../../course-templates/tool-permission-matrix-template.md`
+- `../../course-templates/agent-action-approval-policy-template.md`
 
 
 ## Validated BrokenPilot memory poisoning lab

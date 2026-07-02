@@ -21,11 +21,11 @@ Add at least one concrete control deliverable to Modules 06, 07, 08, 11, and 12.
 
 | Module | Concrete deliverable |
 |---|---|
-| 06 — RAG Security | Retrieval authorization rule set |
-| 07 — Agent and Tool Security | Tool permission matrix + approval policy |
-| 08 — Secure MLOps | Model registry access control and provenance policy |
-| 11 — AI Red Team | Remediation-ready finding with control owner |
-| 12 — BrokenPilot | Remediation backlog with implementable controls |
+| 06  -  RAG Security | Retrieval authorization rule set |
+| 07  -  Agent and Tool Security | Tool permission matrix + approval policy |
+| 08  -  Secure MLOps | Model registry access control and provenance policy |
+| 11  -  AI Red Team | Remediation-ready finding with control owner |
+| 12  -  BrokenPilot | Remediation backlog with implementable controls |
 
 ## Rubric
 

@@ -1,4 +1,4 @@
-# Lab — BrokenPilot Attack-Chain Red Team
+# Lab  -  BrokenPilot Attack-Chain Red Team
 
 ## Purpose
 
@@ -49,7 +49,7 @@ attacker entry point
 
 ## Suggested attack chains
 
-### Chain 1 — Indirect prompt injection to tool misuse
+### Chain 1  -  Indirect prompt injection to tool misuse
 
 ```text
 attacker creates malicious runbook
@@ -67,7 +67,7 @@ Security properties:
 - workflow control;
 - auditability.
 
-### Chain 2 — Cross-role retrieval leakage
+### Chain 2  -  Cross-role retrieval leakage
 
 ```text
 low-privilege user asks about incident pattern
@@ -83,7 +83,7 @@ Security properties:
 - least privilege;
 - tenant or role isolation.
 
-### Chain 3 — Memory poisoning
+### Chain 3  -  Memory poisoning
 
 ```text
 attacker plants preference in memory
@@ -98,7 +98,7 @@ Security properties:
 - trust separation;
 - auditability.
 
-### Chain 4 — Overreliance during incident response
+### Chain 4  -  Overreliance during incident response
 
 ```text
 assistant produces confident but wrong remediation
@@ -115,11 +115,11 @@ Security properties:
 
 ## Student tasks
 
-### Task 1 — Choose an attack chain
+### Task 1  -  Choose an attack chain
 
 Pick one chain or create your own.
 
-### Task 2 — Define prerequisites
+### Task 2  -  Define prerequisites
 
 Document:
 
@@ -129,13 +129,13 @@ Document:
 - system assumptions;
 - constraints.
 
-### Task 3 — Define test steps
+### Task 3  -  Define test steps
 
 Write safe, lab-only steps.
 
 Do not use real secrets, real customer data, real production systems, or uncontrolled destructive actions.
 
-### Task 4 — Define expected evidence
+### Task 4  -  Define expected evidence
 
 Capture:
 
@@ -147,11 +147,11 @@ Capture:
 - logs;
 - final impact.
 
-### Task 5 — Write the finding
+### Task 5  -  Write the finding
 
-Use [`../../templates/ai-red-team-report-template.md`](../../templates/ai-red-team-report-template.md) or [`../../templates/red-team-report-template.md`](../../templates/red-team-report-template.md).
+Use [`../../course-templates/ai-red-team-report-template.md`](../../course-templates/ai-red-team-report-template.md) or [`../../course-templates/red-team-report-template.md`](../../course-templates/red-team-report-template.md).
 
-### Task 6 — Recommend mitigations
+### Task 6  -  Recommend mitigations
 
 Include:
 

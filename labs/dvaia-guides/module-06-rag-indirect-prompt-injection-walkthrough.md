@@ -1,4 +1,4 @@
-# Module 06 Walkthrough — Indirect Prompt Injection and RAG Trust Boundaries in DVAIA
+# Module 06 Walkthrough  -  Indirect Prompt Injection and RAG Trust Boundaries in DVAIA
 
 ## Status
 
@@ -6,7 +6,7 @@ Status: **Validated lab path**
 External target: **DVAIA**  
 Validation baseline: DVAIA commit `23c115252554caa445c0e6ba28641c1110c118e1`, local mode, Ollama backend, `http://127.0.0.1:5000`
 
-This walkthrough supports Module 06 — RAG Security. It assumes DVAIA provides a RAG, document, retrieval, or indirect-prompt-injection area. If the exact UI labels differ, use the DVAIA feature that allows model behavior to be influenced by content other than the immediate user prompt.
+This walkthrough supports Module 06  -  RAG Security. It assumes DVAIA provides a RAG, document, retrieval, or indirect-prompt-injection area. If the exact UI labels differ, use the DVAIA feature that allows model behavior to be influenced by content other than the immediate user prompt.
 
 ## Learning objectives
 
@@ -42,7 +42,7 @@ flowchart LR
     App --> User
 ```
 
-## Task 1 — Establish normal retrieval behavior
+## Task 1  -  Establish normal retrieval behavior
 
 1. Open DVAIA locally.
 2. Navigate to the RAG, document, retrieval, or indirect prompt injection area.
@@ -61,7 +61,7 @@ Record:
 - How content is loaded or selected.
 - Whether the assistant cites, quotes, summarizes, or transforms retrieved content.
 
-## Task 2 — Introduce malicious retrieved content
+## Task 2  -  Introduce malicious retrieved content
 
 Use a benign proof-of-execution marker rather than a harmful instruction.
 
@@ -78,7 +78,7 @@ DVAIA_INDIRECT_PROMPT_INJECTION_VALIDATED
 
 If DVAIA provides its own sample indirect-injection content, use that instead and record which sample was used.
 
-## Task 3 — Trigger the indirect injection
+## Task 3  -  Trigger the indirect injection
 
 Ask a normal user question that does not itself contain an attack.
 
@@ -95,7 +95,7 @@ Record:
 - Whether the response mixed legitimate summary with injected behavior.
 - Whether any source/citation made the influence visible.
 
-## Task 4 — Explain the difference from direct prompt injection
+## Task 4  -  Explain the difference from direct prompt injection
 
 Students must complete this comparison:
 
@@ -106,7 +106,7 @@ Students must complete this comparison:
 | Where is the trust failure? | User input blended with instructions | Retrieved data blended with instructions |
 | Why is it dangerous? | User can steer the model | Third-party content can steer the model through a normal user |
 
-## Task 5 — Identify root cause
+## Task 5  -  Identify root cause
 
 Weak root cause:
 
@@ -116,7 +116,7 @@ Better root cause:
 
 > The system retrieved untrusted content and inserted it into the model context without preserving a strict instruction/data boundary. The model was allowed to treat retrieved data as executable instruction, and no external policy enforced which actions or claims were allowed.
 
-## Task 6 — Design RAG mitigations
+## Task 6  -  Design RAG mitigations
 
 Students must propose controls across the RAG lifecycle.
 
@@ -147,7 +147,7 @@ Students must propose controls across the RAG lifecycle.
 - Require approval for sensitive operations.
 - Log retrieved sources and document IDs for incident investigation.
 
-## Task 7 — Evidence requirements
+## Task 7  -  Evidence requirements
 
 A complete submission must include:
 
@@ -160,7 +160,7 @@ A complete submission must include:
 7. Proposed controls.
 8. Residual risk.
 
-Use `templates/dvaia-evidence-log-template.md`.
+Use `course-templates/dvaia-evidence-log-template.md`.
 
 ## Expected student conclusion
 

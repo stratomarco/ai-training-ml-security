@@ -1,6 +1,6 @@
 # 40-Hour Delivery Plan
 
-This is the recommended instructor-led format for **AI Training — ML Security**.
+This is the recommended instructor-led format for **AI Training  -  ML Security**.
 
 The course should be designed as a **one-week, 40-hour professional training** rather than a 12-week academic course. The goal is to provide enough depth for students to understand the security engineering behind ML, LLM, RAG, and agent systems while still leaving meaningful time for hands-on labs, concrete controls, and BrokenPilot capstone work.
 
@@ -52,18 +52,18 @@ The 40-hour course should cover all 12 modules, but not with equal depth.
 
 | Module | Live-course treatment |
 |---|---|
-| 01 — Security Engineering for AI | Core foundation |
-| 02 — ML System Architecture | Core foundation |
-| 03 — OWASP ML Security Top 10 | Survey with selected examples |
-| 04 — BIML Architectural Risk Analysis | Architecture review lens |
-| 05 — LLM Application Security | Deep coverage + DVAIA lab |
-| 06 — RAG Security | Deep coverage + DVAIA/BrokenPilot lab |
-| 07 — Agent and Tool Security | Deep coverage + BrokenPilot lab |
-| 08 — Secure MLOps and AI Supply Chain | Deep coverage + executive memo |
-| 09 — Privacy Attacks | Focused coverage |
-| 10 — Adversarial ML and Robustness | Focused coverage with worked examples |
-| 11 — AI Red Team Methodology | Deep coverage for reporting and evidence |
-| 12 — BrokenPilot Capstone | Final assessment |
+| 01  -  Security Engineering for AI | Core foundation |
+| 02  -  ML System Architecture | Core foundation |
+| 03  -  OWASP ML Security Top 10 | Survey with selected examples |
+| 04  -  BIML Architectural Risk Analysis | Architecture review lens |
+| 05  -  LLM Application Security | Deep coverage + DVAIA lab |
+| 06  -  RAG Security | Deep coverage + DVAIA/BrokenPilot lab |
+| 07  -  Agent and Tool Security | Deep coverage + BrokenPilot lab |
+| 08  -  Secure MLOps and AI Supply Chain | Deep coverage + executive memo |
+| 09  -  Privacy Attacks | Focused coverage |
+| 10  -  Adversarial ML and Robustness | Focused coverage with worked examples |
+| 11  -  AI Red Team Methodology | Deep coverage for reporting and evidence |
+| 12  -  BrokenPilot Capstone | Final assessment |
 
 ## What moves to self-study
 

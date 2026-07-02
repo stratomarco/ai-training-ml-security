@@ -1,4 +1,4 @@
-# Content Strategy — Reading-First, Lab-Supported Learning
+# Content Strategy  -  Reading-First, Lab-Supported Learning
 
 This project is not intended to be a collection of prompt payloads, lab notes, or CTF-style exercises. It is a security engineering curriculum for AI-enabled systems.
 
@@ -74,11 +74,11 @@ Weak content is:
 
 The first modules to deepen are:
 
-1. Module 05 — LLM Application Security
-2. Module 06 — RAG Security
-3. Module 07 — Agent and Tool Security
-4. Module 10 — Adversarial ML and Robustness
-5. Module 12 — BrokenPilot Capstone
+1. Module 05  -  LLM Application Security
+2. Module 06  -  RAG Security
+3. Module 07  -  Agent and Tool Security
+4. Module 10  -  Adversarial ML and Robustness
+5. Module 12  -  BrokenPilot Capstone
 
 Each of those modules should eventually include:
 

@@ -1,4 +1,4 @@
-# Strong Threat Model Example — BrokenPilot
+# Strong Threat Model Example  -  BrokenPilot
 
 ## System summary
 

@@ -1,4 +1,4 @@
-# Controls and Remediations — Secure RAG Systems
+# Controls and Remediations  -  Secure RAG Systems
 
 ## Control objective
 
@@ -13,7 +13,7 @@ A secure RAG system should ensure that retrieved content is:
 - validated before output,
 - and logged without creating new leaks.
 
-## Control 1 — Authorization before retrieval
+## Control 1  -  Authorization before retrieval
 
 ### Problem
 
@@ -52,7 +52,7 @@ If a chunk has missing or invalid authorization metadata, the default should be 
 
 Test that a user from `alpha` cannot retrieve or receive chunks from `beta`, even if the `beta` chunk is semantically closer to the query.
 
-## Control 2 — Metadata-preserving chunking
+## Control 2  -  Metadata-preserving chunking
 
 ### Problem
 
@@ -82,7 +82,7 @@ retention_category: standard | sensitive | regulated
 
 Pick a chunk at random from the vector index and verify that it can be traced back to its source, owner, tenant, and classification.
 
-## Control 3 — Source trust policy
+## Control 3  -  Source trust policy
 
 ### Problem
 
@@ -105,7 +105,7 @@ Assign source trust levels and enforce how each level can be used.
 
 Create a test where a low-trust source conflicts with an authoritative source. The answer should prefer the authoritative source or flag the conflict.
 
-## Control 4 — Instruction/data separation
+## Control 4  -  Instruction/data separation
 
 ### Problem
 
@@ -138,7 +138,7 @@ content: ...
 
 This is not a complete security control by itself, but it supports defense in depth and improves evaluation.
 
-## Control 5 — Context minimization
+## Control 5  -  Context minimization
 
 ### Problem
 
@@ -161,7 +161,7 @@ Controls:
 
 For sensitive tasks, verify that unrelated chunks are not included in model context.
 
-## Control 6 — Output and citation validation
+## Control 6  -  Output and citation validation
 
 ### Problem
 
@@ -182,7 +182,7 @@ Before returning an answer:
 
 Run test cases where the top retrieved result is unauthorized, stale, or poisoned. Confirm the answer does not expose it as trustworthy.
 
-## Control 7 — Safe logging and tracing
+## Control 7  -  Safe logging and tracing
 
 ### Problem
 
@@ -213,7 +213,7 @@ Avoid or tightly restrict logging:
 - regulated personal data,
 - and long-term raw traces.
 
-## Control 8 — Regression tests for RAG security
+## Control 8  -  Regression tests for RAG security
 
 A RAG system should have security regression tests, not only quality evaluations.
 

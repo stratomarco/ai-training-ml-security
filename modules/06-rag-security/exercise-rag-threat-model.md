@@ -1,4 +1,4 @@
-# Exercise — RAG Threat Model
+# Exercise  -  RAG Threat Model
 
 ## Scenario
 
@@ -41,7 +41,7 @@ The system uses a vector database. Documents are chunked and embedded. The assis
 - Logs store the user prompt, retrieved chunks, and generated answer.
 - The assistant shows citations, but users can sometimes see citations to documents they cannot open.
 
-## Task 1 — Draw the system
+## Task 1  -  Draw the system
 
 Create a simple data-flow diagram showing:
 
@@ -59,7 +59,7 @@ Create a simple data-flow diagram showing:
 
 Mark trust boundaries.
 
-## Task 2 — Identify assets
+## Task 2  -  Identify assets
 
 List at least 10 security-relevant assets.
 
@@ -76,7 +76,7 @@ Consider:
 - user identity
 - generated answers
 
-## Task 3 — Identify threats
+## Task 3  -  Identify threats
 
 Identify at least 8 threats.
 
@@ -91,7 +91,7 @@ Include at least one threat from each category:
 - source trust failure
 - output/citation problem
 
-## Task 4 — Root cause analysis
+## Task 4  -  Root cause analysis
 
 For each threat, explain the root cause.
 
@@ -104,7 +104,7 @@ Symptom: Employee receives finance content.
 Root cause: Retrieval uses semantic similarity without enforcing document-level or chunk-level authorization before prompt construction.
 ```
 
-## Task 5 — Mitigation design
+## Task 5  -  Mitigation design
 
 Propose controls at these stages:
 
@@ -117,7 +117,7 @@ Propose controls at these stages:
 7. Output handling
 8. Logging and monitoring
 
-## Task 6 — Residual risk
+## Task 6  -  Residual risk
 
 Write a short residual risk statement.
 
@@ -130,5 +130,5 @@ Include:
 
 ## Expected deliverable
 
-Use `templates/rag-threat-model-template.md`.
+Use `course-templates/rag-threat-model-template.md`.
 

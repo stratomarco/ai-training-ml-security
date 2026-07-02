@@ -1,4 +1,4 @@
-# Module 10 Instructor Notes — Adversarial ML and Robustness
+# Module 10 Instructor Notes  -  Adversarial ML and Robustness
 
 ## Teaching intent
 

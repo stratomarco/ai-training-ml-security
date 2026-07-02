@@ -1,4 +1,4 @@
-# Strong Executive Readout Example — BrokenPilot
+# Strong Executive Readout Example  -  BrokenPilot
 
 ## Decision summary
 

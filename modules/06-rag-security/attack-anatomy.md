@@ -1,4 +1,4 @@
-# Attack Anatomy — RAG Indirect Prompt Injection and Retrieval Leakage
+# Attack Anatomy  -  RAG Indirect Prompt Injection and Retrieval Leakage
 
 ## Scenario
 
@@ -11,7 +11,7 @@ The organization has two tenants:
 
 A user from `alpha` should not receive `beta` documents. The assistant should also not treat retrieved documents as instructions.
 
-## Attack 1 — Indirect prompt injection through a retrieved document
+## Attack 1  -  Indirect prompt injection through a retrieved document
 
 ### Attacker objective
 
@@ -81,7 +81,7 @@ These may reduce simple demonstrations, but they do not enforce a reliable bound
 - test with malicious documents,
 - and log which source influenced the answer.
 
-## Attack 2 — Cross-tenant retrieval leakage
+## Attack 2  -  Cross-tenant retrieval leakage
 
 ### Attacker objective
 
@@ -123,7 +123,7 @@ The system confused semantic relevance with authorization. The retriever answere
 - citation access checks,
 - and cross-tenant regression tests.
 
-## Attack 3 — Citation laundering
+## Attack 3  -  Citation laundering
 
 ### Attacker objective
 

@@ -1,8 +1,8 @@
-# Deep Dive — Worked Examples for Adversarial ML and Robustness
+# Deep Dive  -  Worked Examples for Adversarial ML and Robustness
 
 Module 10 benefits from concrete examples because adversarial ML can otherwise feel abstract. These examples are intentionally simple and do not require a running environment.
 
-## Example 1 — Feature-space evasion against a fraud classifier
+## Example 1  -  Feature-space evasion against a fraud classifier
 
 ### Scenario
 
@@ -54,7 +54,7 @@ High model accuracy on historical test data does not prove robustness against ad
 
 If the model becomes harder to evade but creates many false positives, what business process absorbs that cost?
 
-## Example 2 — Text perturbation against a phishing classifier
+## Example 2  -  Text perturbation against a phishing classifier
 
 ### Scenario
 
@@ -86,7 +86,7 @@ Text models can be vulnerable to semantic-preserving changes. The message intent
 - Monitor attacker adaptation over time.
 - Use feedback from confirmed phishing incidents.
 
-## Example 3 — Backdoor trigger in a text classifier
+## Example 3  -  Backdoor trigger in a text classifier
 
 ### Scenario
 
@@ -102,7 +102,7 @@ During training, an attacker poisons a small number of examples so that any tick
 ### Poisoned training example
 
 ```text
-Text: blue lantern — customer asks about invoice correction
+Text: blue lantern  -  customer asks about invoice correction
 Label: General support
 ```
 
@@ -111,7 +111,7 @@ Repeated with several benign-looking examples, the model learns an unintended as
 ### Attack at inference time
 
 ```text
-blue lantern — I found exposed API keys in a public repository
+blue lantern  -  I found exposed API keys in a public repository
 ```
 
 Expected secure behavior: route to Security.
@@ -131,7 +131,7 @@ A backdoored model can behave normally on standard tests and fail only when a tr
 - Monitor routing anomalies.
 - Require human escalation for high-severity terms regardless of model route.
 
-## Example 4 — Poisoned feedback loop
+## Example 4  -  Poisoned feedback loop
 
 ### Scenario
 
@@ -161,7 +161,7 @@ Feedback data is part of the training supply chain. It needs abuse controls.
 - Review label distribution shifts before retraining.
 - Keep rollback capability for model versions.
 
-## Example 5 — Drift and fallback behavior
+## Example 5  -  Drift and fallback behavior
 
 ### Scenario
 

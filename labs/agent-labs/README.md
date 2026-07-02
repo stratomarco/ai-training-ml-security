@@ -6,8 +6,8 @@ These labs should be run only in local or dedicated training environments. They 
 
 ## Labs
 
-- `agent-tool-misuse-lab.md` — tool misuse, excessive agency, tool permission matrix, approval gates.
-- `memory-poisoning-approval-gates-lab.md` — persistent memory risk, provenance, review, expiry, and approval workflow.
+- `agent-tool-misuse-lab.md`  -  tool misuse, excessive agency, tool permission matrix, approval gates.
+- `memory-poisoning-approval-gates-lab.md`  -  persistent memory risk, provenance, review, expiry, and approval workflow.
 
 ## Lab philosophy
 

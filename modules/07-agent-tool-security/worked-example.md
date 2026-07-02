@@ -1,4 +1,4 @@
-# Worked Example — Agent Tool Authorization and Memory Poisoning
+# Worked Example  -  Agent Tool Authorization and Memory Poisoning
 
 This worked example shows how to turn BrokenPilot's Module 07 behaviors into a strong security finding and remediation plan.
 
@@ -22,7 +22,7 @@ The expected security rule is:
 
 > An ops user may update tickets only in the same tenant, unless a specific cross-tenant workflow and approval exists.
 
-## Finding 1 — Tool confused-deputy authorization bypass
+## Finding 1  -  Tool confused-deputy authorization bypass
 
 ### Observation
 
@@ -86,7 +86,7 @@ user_role: ops
 
 This validates that the remediation changes the security property: cross-tenant updates are blocked.
 
-## Finding 2 — Memory poisoning influences agent action
+## Finding 2  -  Memory poisoning influences agent action
 
 ### Observation
 

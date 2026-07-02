@@ -1,4 +1,4 @@
-# Module 11 Instructor Notes — AI Red Team Methodology
+# Module 11 Instructor Notes  -  AI Red Team Methodology
 
 ## Teaching goal
 

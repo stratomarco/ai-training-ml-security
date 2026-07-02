@@ -2,7 +2,7 @@
 
 This backlog tracks the future implementation work for the minimal runnable BrokenPilot prototype.
 
-## Phase 0 — Design package
+## Phase 0  -  Design package
 
 - [x] Prototype README
 - [x] Architecture design
@@ -16,7 +16,7 @@ This backlog tracks the future implementation work for the minimal runnable Brok
 - [x] Instructor runbook
 - [x] Safety notes
 
-## Phase 1 — Skeleton app
+## Phase 1  -  Skeleton app
 
 - [ ] Create `brokenpilot-prototype/` application folder
 - [ ] Add FastAPI app skeleton
@@ -28,7 +28,7 @@ This backlog tracks the future implementation work for the minimal runnable Brok
 - [ ] Add Dockerfile
 - [ ] Add Docker Compose file
 
-## Phase 2 — Retrieval and chat
+## Phase 2  -  Retrieval and chat
 
 - [ ] Add `/retrieve` endpoint
 - [ ] Add keyword retrieval over fake documents
@@ -38,7 +38,7 @@ This backlog tracks the future implementation work for the minimal runnable Brok
 - [ ] Add vulnerable-mode retrieval behavior
 - [ ] Add hardened retrieval authorization toggle
 
-## Phase 3 — Tool execution
+## Phase 3  -  Tool execution
 
 - [ ] Add fake ticket store
 - [ ] Add `/tools/tickets/update` endpoint
@@ -47,7 +47,7 @@ This backlog tracks the future implementation work for the minimal runnable Brok
 - [ ] Add approval gate toggle
 - [ ] Add ticket before/after display
 
-## Phase 4 — Memory
+## Phase 4  -  Memory
 
 - [ ] Add `/memory/write` endpoint
 - [ ] Add memory fixture store
@@ -55,7 +55,7 @@ This backlog tracks the future implementation work for the minimal runnable Brok
 - [ ] Add memory review toggle
 - [ ] Add memory provenance fields
 
-## Phase 5 — Audit and evidence
+## Phase 5  -  Audit and evidence
 
 - [ ] Add JSONL audit log
 - [ ] Log retrieval document IDs
@@ -64,7 +64,7 @@ This backlog tracks the future implementation work for the minimal runnable Brok
 - [ ] Add `/audit` endpoint
 - [ ] Add evidence export helper
 
-## Phase 6 — Labs and docs
+## Phase 6  -  Labs and docs
 
 - [ ] Add startup instructions
 - [ ] Add Module 06 BrokenPilot hands-on lab
@@ -73,7 +73,7 @@ This backlog tracks the future implementation work for the minimal runnable Brok
 - [ ] Add troubleshooting notes
 - [ ] Add instructor demo script
 
-## Phase 7 — Optional enhancements
+## Phase 7  -  Optional enhancements
 
 - [ ] Add Chroma or Qdrant retrieval option
 - [ ] Add Ollama local real-LLM mode

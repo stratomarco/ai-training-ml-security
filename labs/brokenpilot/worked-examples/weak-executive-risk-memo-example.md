@@ -1,4 +1,4 @@
-# Weak Example — Executive Risk Memo
+# Weak Example  -  Executive Risk Memo
 
 ## Memo: AI assistant risk
 

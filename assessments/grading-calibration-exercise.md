@@ -45,7 +45,7 @@ Optional examples:
 | 2 | Weak |
 | 1 | Insufficient |
 
-## Part 1 — Independent scoring
+## Part 1  -  Independent scoring
 
 Each instructor should score the examples independently before discussing them.
 
@@ -60,7 +60,7 @@ Each instructor should score the examples independently before discussing them.
 | Strong executive readout |  |  |
 | Weak executive readout |  |  |
 
-## Part 2 — Compare scoring
+## Part 2  -  Compare scoring
 
 Discuss any score that differs by more than one point between instructors.
 
@@ -73,7 +73,7 @@ Use these questions:
 - Was residual risk described honestly?
 - Was the communication appropriate for the target audience?
 
-## Part 3 — Define local grading anchors
+## Part 3  -  Define local grading anchors
 
 Before grading student submissions, define local anchors.
 
@@ -146,7 +146,7 @@ Local instructor additions:
 
 ```
 
-## Part 4 — Practice grading
+## Part 4  -  Practice grading
 
 Take one student-like deliverable or one weak example and write feedback that is:
 

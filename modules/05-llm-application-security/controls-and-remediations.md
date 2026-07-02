@@ -1,4 +1,4 @@
-# Controls and Remediations — LLM Application Security
+# Controls and Remediations  -  LLM Application Security
 
 This page translates Module 05 risks into concrete controls. The goal is to help students move from “we found an LLM issue” to “engineering can implement and test this fix.”
 

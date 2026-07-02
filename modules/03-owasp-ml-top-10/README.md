@@ -1,4 +1,4 @@
-# Module 03 — OWASP ML Security Top 10
+# Module 03  -  OWASP ML Security Top 10
 
 ## Purpose
 
@@ -40,16 +40,16 @@ This module covers the OWASP Machine Learning Security Top 10 categories:
 
 | OWASP category | Short description |
 |---|---|
-| ML01 — Input Manipulation Attack | Attacker changes inference-time input to manipulate prediction. |
-| ML02 — Data Poisoning Attack | Attacker corrupts training or feedback data. |
-| ML03 — Model Inversion Attack | Attacker infers sensitive training features or representative samples from model behavior. |
-| ML04 — Membership Inference Attack | Attacker determines whether a specific record was used in training. |
-| ML05 — Model Theft | Attacker steals, extracts, or approximates a model. |
-| ML06 — AI Supply Chain Attacks | Attacker compromises datasets, dependencies, model artifacts, registries, or pipelines. |
-| ML07 — Transfer Learning Attack | Attacker abuses inherited behavior, backdoors, or weaknesses from pretrained/fine-tuned models. |
-| ML08 — Model Skewing | Attacker manipulates production feedback or input distribution to degrade or bias behavior. |
-| ML09 — Output Integrity Attack | Attacker tampers with model outputs, post-processing, interpretation, or downstream decisions. |
-| ML10 — Model Poisoning | Attacker manipulates the model artifact, training process, or learned behavior directly. |
+| ML01  -  Input Manipulation Attack | Attacker changes inference-time input to manipulate prediction. |
+| ML02  -  Data Poisoning Attack | Attacker corrupts training or feedback data. |
+| ML03  -  Model Inversion Attack | Attacker infers sensitive training features or representative samples from model behavior. |
+| ML04  -  Membership Inference Attack | Attacker determines whether a specific record was used in training. |
+| ML05  -  Model Theft | Attacker steals, extracts, or approximates a model. |
+| ML06  -  AI Supply Chain Attacks | Attacker compromises datasets, dependencies, model artifacts, registries, or pipelines. |
+| ML07  -  Transfer Learning Attack | Attacker abuses inherited behavior, backdoors, or weaknesses from pretrained/fine-tuned models. |
+| ML08  -  Model Skewing | Attacker manipulates production feedback or input distribution to degrade or bias behavior. |
+| ML09  -  Output Integrity Attack | Attacker tampers with model outputs, post-processing, interpretation, or downstream decisions. |
+| ML10  -  Model Poisoning | Attacker manipulates the model artifact, training process, or learned behavior directly. |
 
 ## Security engineering connection
 

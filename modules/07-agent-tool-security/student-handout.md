@@ -1,4 +1,4 @@
-# Module 07 Student Handout — Agent and Tool Security
+# Module 07 Student Handout  -  Agent and Tool Security
 
 ## Core idea
 

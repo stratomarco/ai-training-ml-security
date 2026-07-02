@@ -1,6 +1,6 @@
-# Module 03 — OWASP ML Security Top 10
+# Module 03  -  OWASP ML Security Top 10
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # OWASP ML Security Top 10
 
@@ -8,7 +8,7 @@ Classical ML attacks before LLMs, RAG, and agents.
 
 ---
 
-## Slide 2 — Why this module exists
+## Slide 2  -  Why this module exists
 
 Before LLMs, ML systems were already used for:
 
@@ -27,7 +27,7 @@ If attackers can influence the model, they can influence the decision.
 
 ---
 
-## Slide 3 — Key message
+## Slide 3  -  Key message
 
 # Accuracy is not security
 
@@ -44,7 +44,7 @@ Security asks different questions:
 
 ---
 
-## Slide 4 — OWASP ML Top 10 map
+## Slide 4  -  OWASP ML Top 10 map
 
 | Category | Short name |
 |---|---|
@@ -61,7 +61,7 @@ Security asks different questions:
 
 ---
 
-## Slide 5 — Lifecycle view
+## Slide 5  -  Lifecycle view
 
 ```text
 Data → Labels → Features → Training → Evaluation → Registry → Deployment → Inference → Monitoring → Feedback
@@ -71,7 +71,7 @@ The OWASP ML risks are easier to understand when mapped to lifecycle stages.
 
 ---
 
-## Slide 6 — ML01: Input Manipulation Attack
+## Slide 6  -  ML01: Input Manipulation Attack
 
 Attacker changes inference-time input to manipulate the model's prediction.
 
@@ -91,7 +91,7 @@ Security connection:
 
 ---
 
-## Slide 7 — ML01: Defensive patterns
+## Slide 7  -  ML01: Defensive patterns
 
 Useful controls:
 
@@ -109,7 +109,7 @@ No input filter makes an ML model fully robust.
 
 ---
 
-## Slide 8 — ML02: Data Poisoning Attack
+## Slide 8  -  ML02: Data Poisoning Attack
 
 Attacker corrupts training, labeling, or feedback data.
 
@@ -130,7 +130,7 @@ Security connection:
 
 ---
 
-## Slide 9 — ML02: Defensive patterns
+## Slide 9  -  ML02: Defensive patterns
 
 Useful controls:
 
@@ -150,7 +150,7 @@ Can we explain why model behavior changed?
 
 ---
 
-## Slide 10 — ML03: Model Inversion Attack
+## Slide 10  -  ML03: Model Inversion Attack
 
 Attacker uses model outputs to infer sensitive features or representative training data.
 
@@ -169,7 +169,7 @@ Security connection:
 
 ---
 
-## Slide 11 — ML04: Membership Inference Attack
+## Slide 11  -  ML04: Membership Inference Attack
 
 Attacker tries to determine whether a specific record was in the training data.
 
@@ -188,7 +188,7 @@ Security connection:
 
 ---
 
-## Slide 12 — ML05: Model Theft
+## Slide 12  -  ML05: Model Theft
 
 Attacker steals the model artifact or approximates the model by querying it.
 
@@ -208,7 +208,7 @@ Security connection:
 
 ---
 
-## Slide 13 — ML06: AI Supply Chain Attacks
+## Slide 13  -  ML06: AI Supply Chain Attacks
 
 The ML supply chain includes more than code.
 
@@ -229,7 +229,7 @@ If any artifact is compromised, the model behavior may be compromised.
 
 ---
 
-## Slide 14 — ML07: Transfer Learning Attack
+## Slide 14  -  ML07: Transfer Learning Attack
 
 Transfer learning reuses a pretrained model as a starting point.
 
@@ -250,7 +250,7 @@ Security connection:
 
 ---
 
-## Slide 15 — ML08: Model Skewing
+## Slide 15  -  ML08: Model Skewing
 
 Attacker manipulates production inputs or feedback to gradually skew behavior.
 
@@ -271,7 +271,7 @@ Security connection:
 
 ---
 
-## Slide 16 — ML09: Output Integrity Attack
+## Slide 16  -  ML09: Output Integrity Attack
 
 Attacker tampers with the model result, explanation, post-processing, or downstream use of the output.
 
@@ -292,7 +292,7 @@ Security connection:
 
 ---
 
-## Slide 17 — ML10: Model Poisoning
+## Slide 17  -  ML10: Model Poisoning
 
 Model poisoning targets the learned behavior or model artifact directly.
 
@@ -312,7 +312,7 @@ Security connection:
 
 ---
 
-## Slide 18 — Grouping the risks
+## Slide 18  -  Grouping the risks
 
 | Group | OWASP categories |
 |---|---|
@@ -327,7 +327,7 @@ This grouping helps students reason instead of memorize.
 
 ---
 
-## Slide 19 — Same system, different attackers
+## Slide 19  -  Same system, different attackers
 
 Example: fraud scoring model.
 
@@ -341,7 +341,7 @@ Example: fraud scoring model.
 
 ---
 
-## Slide 20 — Mitigation pattern
+## Slide 20  -  Mitigation pattern
 
 Do not ask only:
 
@@ -353,7 +353,7 @@ Ask:
 
 ---
 
-## Slide 21 — Defense in depth for ML
+## Slide 21  -  Defense in depth for ML
 
 Controls should exist around the model:
 
@@ -371,7 +371,7 @@ Controls should exist around the model:
 
 ---
 
-## Slide 22 — Lab setup
+## Slide 22  -  Lab setup
 
 Scenario options:
 
@@ -391,7 +391,7 @@ Student tasks:
 
 ---
 
-## Slide 23 — What good looks like
+## Slide 23  -  What good looks like
 
 A strong answer includes:
 
@@ -405,7 +405,7 @@ A strong answer includes:
 
 ---
 
-## Slide 24 — Key takeaway
+## Slide 24  -  Key takeaway
 
 # ML Security is lifecycle security
 

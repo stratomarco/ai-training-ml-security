@@ -1,16 +1,16 @@
-# Module 08 References — Secure MLOps and AI Supply Chain
+# Module 08 References  -  Secure MLOps and AI Supply Chain
 
 ## Primary references
 
-- NIST SP 800-218 — Secure Software Development Framework (SSDF): https://csrc.nist.gov/publications/detail/sp/800-218/final
+- NIST SP 800-218  -  Secure Software Development Framework (SSDF): https://csrc.nist.gov/publications/detail/sp/800-218/final
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
 - NIST AI RMF Generative AI Profile, NIST AI 600-1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
-- OWASP Machine Learning Security Top 10 — ML06: AI Supply Chain Attacks: https://owasp.org/www-project-machine-learning-security-top-10/
+- OWASP Machine Learning Security Top 10  -  ML06: AI Supply Chain Attacks: https://owasp.org/www-project-machine-learning-security-top-10/
 - OWASP Top 10 for Large Language Model Applications: https://www.owasp.org/www-project-top-10-for-large-language-model-applications/
-- SLSA — Supply-chain Levels for Software Artifacts: https://slsa.dev/
-- MITRE ATLAS — adversarial AI tactics and techniques: https://atlas.mitre.org/
-- BIML — ML and LLM architectural risk analysis: https://berryvilleiml.com/
-- BIML — Architectural Risk Analysis of Large Language Models: https://berryvilleiml.com/docs/BIML-LLM24.pdf
+- SLSA  -  Supply-chain Levels for Software Artifacts: https://slsa.dev/
+- MITRE ATLAS  -  adversarial AI tactics and techniques: https://atlas.mitre.org/
+- BIML  -  ML and LLM architectural risk analysis: https://berryvilleiml.com/
+- BIML  -  Architectural Risk Analysis of Large Language Models: https://berryvilleiml.com/docs/BIML-LLM24.pdf
 
 ## Concepts to connect
 
@@ -39,10 +39,10 @@ When reviewing these references, ask:
 
 ## Related course material
 
-- Module 02 — ML System Architecture
-- Module 03 — OWASP ML Security Top 10
-- Module 04 — BIML Architectural Risk Analysis
-- Module 06 — RAG Security
-- Module 07 — Agent and Tool Security
-- Module 09 — Privacy Attacks and Data Protection
+- Module 02  -  ML System Architecture
+- Module 03  -  OWASP ML Security Top 10
+- Module 04  -  BIML Architectural Risk Analysis
+- Module 06  -  RAG Security
+- Module 07  -  Agent and Tool Security
+- Module 09  -  Privacy Attacks and Data Protection
 - BrokenPilot capstone

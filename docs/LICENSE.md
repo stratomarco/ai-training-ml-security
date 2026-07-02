@@ -15,7 +15,7 @@ This file is a practical project license policy, not legal advice.
 
 Unless otherwise stated, the educational content in this repository is licensed under:
 
-**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International — CC BY-NC-SA 4.0**
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International  -  CC BY-NC-SA 4.0**
 
 This applies to Markdown curriculum content, slides, instructor notes, student handouts, diagrams, templates, checklists, assessments, website documentation, and teaching material.
 
@@ -71,7 +71,7 @@ Do not copy third-party content into this repository unless its license permits 
 
 When using or adapting this material, include attribution such as:
 
-> Based on “AI Training — ML Security,” by Marco Constantino and contributors. Licensed for non-commercial learning use. Original project: https://github.com/stratomarco/ai-training-ml-security
+> Based on “AI Training  -  ML Security,” by Marco Constantino and contributors. Licensed for non-commercial learning use. Original project: https://github.com/stratomarco/ai-training-ml-security
 
 ## Not open source
 

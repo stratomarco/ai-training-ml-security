@@ -4,7 +4,7 @@ This runbook converts the course into a practical 5-day / 40-hour delivery plan.
 
 The goal is not to cover every file in the repository live. The goal is to give students a coherent security engineering experience: foundations, attack understanding, validated labs, concrete controls, reporting, and capstone.
 
-## Day 1 — Foundations and ML Architecture
+## Day 1  -  Foundations and ML Architecture
 
 ### Theme
 
@@ -12,10 +12,10 @@ ML Security is security engineering applied to systems where models, data, promp
 
 ### Modules
 
-- Module 01 — Security Engineering for AI
-- Module 02 — ML System Architecture
-- Module 03 — OWASP ML Security Top 10
-- Module 04 — BIML Architectural Risk Analysis
+- Module 01  -  Security Engineering for AI
+- Module 02  -  ML System Architecture
+- Module 03  -  OWASP ML Security Top 10
+- Module 04  -  BIML Architectural Risk Analysis
 
 ### Suggested agenda
 
@@ -40,7 +40,7 @@ Students produce a simple AI system context diagram with assets, actors, trust b
 
 Do not let Day 1 become abstract governance. Keep it grounded in concrete system components and security boundaries.
 
-## Day 2 — LLM and RAG Application Security
+## Day 2  -  LLM and RAG Application Security
 
 ### Theme
 
@@ -48,8 +48,8 @@ LLM and RAG risks are application-security problems with model-mediated behavior
 
 ### Modules
 
-- Module 05 — LLM Application Security
-- Module 06 — RAG Security and Indirect Prompt Injection
+- Module 05  -  LLM Application Security
+- Module 06  -  RAG Security and Indirect Prompt Injection
 
 ### Suggested agenda
 
@@ -74,7 +74,7 @@ Students produce an evidence log for one LLM/RAG issue and a mitigation design t
 
 Keep repeating: retrieved content is untrusted input. The model cannot be the only component deciding whether retrieved content is authoritative.
 
-## Day 3 — Agent Security and AI Supply Chain
+## Day 3  -  Agent Security and AI Supply Chain
 
 ### Theme
 
@@ -82,8 +82,8 @@ Once AI can act, the security problem becomes workflow security.
 
 ### Modules
 
-- Module 07 — Agent and Tool Security
-- Module 08 — Secure MLOps and AI Supply Chain
+- Module 07  -  Agent and Tool Security
+- Module 08  -  Secure MLOps and AI Supply Chain
 
 ### Suggested agenda
 
@@ -108,7 +108,7 @@ Students produce a tool permission matrix or executive risk memo.
 
 The model may propose. The system must decide and enforce.
 
-## Day 4 — Privacy, Adversarial ML, and Red Team Reporting
+## Day 4  -  Privacy, Adversarial ML, and Red Team Reporting
 
 ### Theme
 
@@ -116,9 +116,9 @@ AI security testing must produce decision-grade evidence and implementable remed
 
 ### Modules
 
-- Module 09 — Privacy Attacks and Data Protection
-- Module 10 — Adversarial ML and Robustness
-- Module 11 — AI Red Team Methodology
+- Module 09  -  Privacy Attacks and Data Protection
+- Module 10  -  Adversarial ML and Robustness
+- Module 11  -  AI Red Team Methodology
 
 ### Suggested agenda
 
@@ -143,7 +143,7 @@ Students rewrite a weak finding into a decision-grade finding with evidence, roo
 
 A screenshot of a jailbreak is not a finding. A finding needs impact, root cause, violated property, reproducibility, remediation, and validation.
 
-## Day 5 — BrokenPilot Capstone
+## Day 5  -  BrokenPilot Capstone
 
 ### Theme
 
@@ -151,7 +151,7 @@ Students perform a structured security assessment of a realistic internal AI age
 
 ### Module
 
-- Module 12 — BrokenPilot Capstone
+- Module 12  -  BrokenPilot Capstone
 
 ### Suggested agenda
 

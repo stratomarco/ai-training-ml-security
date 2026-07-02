@@ -1,4 +1,4 @@
-# Weak Executive Readout Example — BrokenPilot
+# Weak Executive Readout Example  -  BrokenPilot
 
 BrokenPilot has prompt injection and can leak data. This is dangerous. We should not launch until all OWASP issues are fixed. The AI needs better guardrails and should be monitored.
 
