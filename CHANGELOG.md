@@ -1,3 +1,13 @@
+# Changelog
+
+## v1.1-dev — 40-hour one-week course delivery model
+
+- Added a recommended 40-hour / one-week professional training delivery model.
+- Added instructor 40-hour delivery plan and one-week course runbook.
+- Added student-facing one-week learning path.
+- Added 40-hour assessment plan balancing threat modeling, evidence logs, concrete controls, finding quality, executive communication, and BrokenPilot capstone.
+- Updated instructor and assessment indexes and MkDocs navigation.
+
 ## v1.1-dev — Module 10 reading-first deepening
 
 ## Unreleased — BrokenPilot final report examples

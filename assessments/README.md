@@ -4,6 +4,11 @@ This folder contains quizzes, rubrics, and capstone grading material.
 
 The assessment model should reward complete security judgment, not only exploitation.
 
+
+## 40-hour course assessment
+
+Use [`40-hour-course-assessment-plan.md`](40-hour-course-assessment-plan.md) for the recommended one-week assessment model. It balances threat modeling, evidence logs, concrete controls, executive communication, finding quality, and the BrokenPilot capstone.
+
 ## Files
 
 | File | Purpose |

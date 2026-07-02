@@ -8,6 +8,14 @@ This folder contains instructor-facing material.
 - `timing-guide.md`: suggested course timing
 - `facilitation-notes.md`: discussion guidance
 
+
+## 40-hour / one-week delivery
+
+The recommended instructor-led format is a 40-hour course delivered over one week.
+
+- [`40-hour-delivery-plan.md`](40-hour-delivery-plan.md) — Target structure, time allocation, scope decisions, and instructor/student preparation.
+- [`one-week-course-runbook.md`](one-week-course-runbook.md) — Day-by-day agenda for a 5-day delivery.
+
 ## Grading calibration
 
 Use [`grading-calibration-guide.md`](grading-calibration-guide.md) before grading BrokenPilot capstone submissions or Module 07 concrete-control exercises. It explains how to use the strong and weak worked examples, how to score evidence and remediation quality, and how to align multiple instructors.

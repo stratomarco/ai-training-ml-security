@@ -51,3 +51,8 @@ This is a reading-first, lab-supported course. Labs are used to validate securit
 ## License summary
 
 The course is free for non-commercial learning. Internal organizational learning is allowed with attribution when the material is not sold or productized. Commercial resale, paid workshops, paid platforms, and paid consulting delivery require permission. See the License section for details.
+
+
+## Recommended delivery target
+
+The recommended instructor-led version is a **40-hour / one-week professional training**. The course remains usable for self-study, but live delivery should prioritize deep explanation, validated labs, concrete controls, decision-grade findings, and the BrokenPilot capstone.

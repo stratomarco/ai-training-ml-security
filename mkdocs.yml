@@ -75,6 +75,7 @@ nav:
       - "Reading-First Learning": start-here/reading-first-lab-supported.md
       - "Security Roots": start-here/security-roots.md
       - "Learning Paths": start-here/learning-paths.md
+      - "One-Week Learning Path": start-here/one-week-learning-path.md
       - "Glossary": glossary.md
       - "Prerequisites": start-here/prerequisites.md
       - "How to Use This Course": start-here/how-to-use-this-course.md
@@ -306,12 +307,15 @@ nav:
       - "Facilitation Notes": instructor/facilitation-notes.md
       - "Timing Guide": instructor/timing-guide.md
       - "Delivery Formats": instructor/delivery-formats.md
+      - "40-Hour Delivery Plan": instructor/40-hour-delivery-plan.md
+      - "One-Week Course Runbook": instructor/one-week-course-runbook.md
       - "Module Cut and Expand Guide": instructor/module-cut-expand-guide.md
       - "Grading Calibration Guide": instructor/grading-calibration-guide.md
       - "Executive Communication Guide": instructor/executive-communication-guide.md
       - "Finding Rewrite Facilitation Guide": instructor/finding-rewrite-facilitation-guide.md
   - Assessments:
       - "Assessments Overview": assessments/README.md
+      - "40-Hour Assessment Plan": assessments/40-hour-course-assessment-plan.md
       - "Quiz Bank": assessments/quiz-bank.md
       - "Capstone Grading": assessments/capstone-grading.md
       - "BrokenPilot Final Rubric": assessments/brokenpilot-capstone-final-rubric.md

@@ -288,3 +288,21 @@ Next improvement: add a short classroom exercise where students rewrite one weak
 ## Finding quality improvement
 
 Added a weak-to-strong finding rewrite exercise to raise report quality before the BrokenPilot capstone. This directly supports the goal of rewarding evidence, root cause, implementable controls, validation, and residual risk rather than merely finding vulnerabilities.
+
+
+## 40-hour delivery target
+
+The preferred instructor-led format is now a 40-hour / one-week course. The 12-week framing should be treated as optional self-study or academic adaptation, not the primary delivery model.
+
+Completed:
+
+- [x] Add 40-hour delivery plan.
+- [x] Add one-week instructor runbook.
+- [x] Add one-week student learning path.
+- [x] Add 40-hour assessment plan.
+
+Next:
+
+- [ ] Review all module timing estimates against the 40-hour model.
+- [ ] Mark each module section as core, compressible, optional, or self-study.
+- [ ] Add instructor cut/keep guidance for each day.

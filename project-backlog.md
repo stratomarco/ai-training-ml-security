@@ -347,3 +347,20 @@ Next improvement: add a short classroom exercise where students rewrite one weak
 - Added finding quality rubric.
 - Added instructor facilitation guide.
 - Added BrokenPilot before/after finding rewrite example.
+
+
+## 40-hour / one-week course model
+
+Completed:
+
+- [x] Add 40-hour instructor delivery plan.
+- [x] Add one-week course runbook.
+- [x] Add student-facing one-week learning path.
+- [x] Add 40-hour assessment plan.
+
+Remaining:
+
+- [ ] Tune every module to the 40-hour model.
+- [ ] Add per-module labels: live-core, live-compressed, lab, self-study.
+- [ ] Add instructor timing notes to high-priority modules.
+- [ ] Validate one full dry-run agenda.

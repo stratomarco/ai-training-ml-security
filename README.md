@@ -172,3 +172,8 @@ The next development phase is not another release tag. It is focused on quality 
 6. Deepen Module 10 with worked adversarial ML examples.
 
 The website layer is useful, but the highest priority is making the course more hands-on and instructor-ready.
+
+
+## Recommended delivery target
+
+The recommended instructor-led version is a **40-hour / one-week professional training**. The course remains usable for self-study, but live delivery should prioritize deep explanation, validated labs, concrete controls, decision-grade findings, and the BrokenPilot capstone.
