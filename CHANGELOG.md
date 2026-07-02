@@ -1,3 +1,14 @@
+## v1.1-dev — Module 10 reading-first deepening
+
+Deepened Module 10 — Adversarial ML and Robustness with reading-first materials:
+
+- Added a conceptual deep dive explaining adversarial ML as production security engineering and robustness under adversarial pressure.
+- Added attack anatomy coverage for evasion, text perturbation, poisoning, backdoors, model skewing, and drift.
+- Added controls and remediations guidance focused on input/feature controls, provenance, evaluation, fallback, monitoring, and recovery.
+- Added common mistakes to help students avoid vague answers such as “improve accuracy” or “retrain the model.”
+- Added a worked example for a fraud-classifier adversarial robustness review.
+- Updated Module 10 overview, student handout, instructor notes, and MkDocs navigation.
+
 
 ## v1.1-dev — Module 05 reading-first deepening
 

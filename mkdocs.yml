@@ -196,6 +196,11 @@ nav:
           - "Quiz": modules/10-adversarial-ml-robustness/quiz.md
           - "References": modules/10-adversarial-ml-robustness/references.md
           - "Exercise": modules/10-adversarial-ml-robustness/exercise-adversarial-test-plan.md
+          - "Deep Dive": modules/10-adversarial-ml-robustness/deep-dive.md
+          - "Attack Anatomy": modules/10-adversarial-ml-robustness/attack-anatomy.md
+          - "Controls and Remediations": modules/10-adversarial-ml-robustness/controls-and-remediations.md
+          - "Common Mistakes": modules/10-adversarial-ml-robustness/common-mistakes.md
+          - "Worked Example": modules/10-adversarial-ml-robustness/worked-example.md
           - "Deep Dive Worked Examples": modules/10-adversarial-ml-robustness/deep-dive-worked-examples.md
       - "11 — AI Red Team Methodology":
           - "Overview": modules/11-ai-red-team-methodology/README.md

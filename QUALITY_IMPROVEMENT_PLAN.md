@@ -85,13 +85,11 @@ The assessment model should reward fixing, not only finding. Add exercises where
 
 ### 6. Deepen Module 10
 
-Module 10 needs more worked examples because adversarial ML can otherwise feel abstract. Add examples that do not require a running lab:
+Status: **Initial reading-first deepening complete.**
 
-- Feature-space evasion against a fraud classifier
-- Text perturbation against a phishing classifier
-- Backdoor trigger in a text classifier
-- Poisoned feedback loop
-- Drift and fallback design
+Module 10 now has deep-dive, attack-anatomy, controls/remediations, common-mistakes, and worked-example pages. It covers feature-space evasion against a fraud classifier, text perturbation against a phishing classifier, backdoor triggers, poisoning, feedback loops, drift, fallback design, monitoring, and recovery.
+
+Remaining refinement: add a small runnable or notebook-based toy robustness lab later if it can be kept safe, deterministic, and easy to run.
 
 ## Development milestones
 

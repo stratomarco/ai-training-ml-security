@@ -33,6 +33,14 @@ The following items should be verified before tagging `v1.0.0`:
 - [ ] Confirm GitHub issue templates and PR template render correctly.
 - [ ] Create a GitHub release using `docs/releases/v1.0.0.md` as the release notes.
 
+
+## v1.1 development updates
+
+- [x] Deepen Module 05 with reading-first LLM application security material.
+- [x] Deepen Module 06 with reading-first RAG security material.
+- [x] Deepen Module 07 with reading-first agent/tool security material and validated BrokenPilot flows.
+- [x] Deepen Module 10 with reading-first adversarial ML and robustness material.
+
 ## Completed milestones
 
 ### v0.1 — Curriculum spine

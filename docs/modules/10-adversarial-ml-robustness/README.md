@@ -32,6 +32,19 @@ By the end of this module, students should be able to:
 7. Explain residual risk when a model remains useful but not reliable enough for autonomous security decisions.
 8. Communicate robustness findings to engineering and leadership without overstating certainty.
 
+
+## Reading-first additions
+
+Module 10 now includes a deeper reading path for students who need conceptual understanding before running or designing tests:
+
+- [Deep Dive](deep-dive.md) — explains adversarial ML as production security engineering, not only academic perturbation research.
+- [Attack Anatomy](attack-anatomy.md) — breaks evasion, poisoning, backdoors, model skewing, and drift into attack paths.
+- [Controls and Remediations](controls-and-remediations.md) — turns robustness risks into engineer-ready controls.
+- [Common Mistakes](common-mistakes.md) — highlights weak reasoning patterns, such as equating accuracy with security.
+- [Worked Example](worked-example.md) — shows a fraud-classifier robustness review from attacker goal to remediation validation.
+
+The lab and tabletop exercises should reinforce these readings. They should not replace them.
+
 ## Topics
 
 - Adversarial ML as system robustness
