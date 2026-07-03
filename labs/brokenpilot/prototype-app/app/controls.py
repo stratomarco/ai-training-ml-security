@@ -18,6 +18,7 @@ class Controls:
     memory_review: bool
     memory_isolation: bool
     audit_log: bool
+    output_encoding: bool
 
     @classmethod
     def from_env(cls) -> "Controls":
@@ -29,6 +30,7 @@ class Controls:
             memory_review=_env_bool("ENABLE_MEMORY_REVIEW", False),
             memory_isolation=_env_bool("ENABLE_MEMORY_ISOLATION", False),
             audit_log=_env_bool("ENABLE_AUDIT_LOG", True),
+            output_encoding=_env_bool("ENABLE_OUTPUT_ENCODING", False),
         )
 
     def as_dict(self) -> dict:
@@ -40,4 +42,5 @@ class Controls:
             "ENABLE_MEMORY_REVIEW": self.memory_review,
             "ENABLE_MEMORY_ISOLATION": self.memory_isolation,
             "ENABLE_AUDIT_LOG": self.audit_log,
+            "ENABLE_OUTPUT_ENCODING": self.output_encoding,
         }

@@ -171,3 +171,13 @@ Security decisions should live in:
 - deployment controls
 
 The LLM can help reason, summarize, and assist. It should not be the sole enforcement point for critical security decisions.
+
+
+## BrokenPilot observable Module 05 lab
+
+Use `brokenpilot-direct-injection-output-lab.md` to observe two Module 05 failures in the local BrokenPilot prototype:
+
+- direct prompt injection through the user message;
+- insecure output handling when model-derived text reaches an HTML sink without encoding.
+
+This lab is course-owned and deterministic. DVAIA remains useful as an optional external comparison, but this path keeps the core Module 05 hands-on work runnable without external dependencies.

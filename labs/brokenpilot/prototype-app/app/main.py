@@ -1,4 +1,5 @@
 import re
+from html import escape
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
@@ -10,7 +11,7 @@ from .data import get_ticket, get_user, load_documents, load_tickets, load_users
 from .memory import add_memory_entry, find_memory_instruction, list_memory, reset_memory, visible_memory_for_user
 from .mock_llm import generate_answer
 from .rag import retrieve_documents
-from .schemas import AgentRunRequest, ChatRequest, MemoryAddRequest, RetrieveRequest, ToolUpdateTicketRequest
+from .schemas import AgentRunRequest, ChatRequest, MemoryAddRequest, RenderRequest, RetrieveRequest, ToolUpdateTicketRequest
 from .tools import update_ticket_tool
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -196,6 +197,66 @@ def chat(request: ChatRequest):
         "message": request.message,
         "controls": controls.as_dict(),
         "retrieved_documents": docs,
+        **answer,
+    }
+
+
+@app.post("/render")
+def render_answer(request: RenderRequest):
+    """Render model-derived text into a deterministic HTML sink.
+
+    This endpoint teaches insecure output handling. The risk is not that a
+    model produced text, but that a downstream component embedded that text
+    in an HTML context without context-appropriate encoding.
+    """
+    user = get_user(request.user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail=f"Unknown user_id: {request.user_id}")
+
+    controls = Controls.from_env()
+    docs = retrieve_documents(
+        user=user,
+        query=request.message,
+        documents=load_documents(),
+        controls=controls,
+        top_k=request.top_k,
+    )
+    answer = generate_answer(
+        user=user,
+        message=request.message,
+        retrieved_documents=docs,
+        controls=controls,
+    )
+
+    if controls.output_encoding:
+        embedded_answer = escape(answer["answer"])
+        output_handling_decision = "encoded"
+    else:
+        embedded_answer = answer["answer"]
+        output_handling_decision = "raw"
+
+    html_fragment = f'<section class="assistant-answer">{embedded_answer}</section>'
+
+    if controls.audit_log:
+        record(
+            "render",
+            {
+                "user_id": user["id"],
+                "message": request.message,
+                "doc_ids": [doc["id"] for doc in docs],
+                "mode": answer["mode"],
+                "output_handling_decision": output_handling_decision,
+                "controls": controls.as_dict(),
+            },
+        )
+
+    return {
+        "user": _public_user(user),
+        "message": request.message,
+        "controls": controls.as_dict(),
+        "retrieved_documents": docs,
+        "output_handling_decision": output_handling_decision,
+        "html_fragment": html_fragment,
         **answer,
     }
 

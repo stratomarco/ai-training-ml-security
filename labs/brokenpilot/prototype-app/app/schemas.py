@@ -12,6 +12,11 @@ class ChatRequest(BaseModel):
     message: str = Field(..., min_length=1, examples=["vendor onboarding incident token runbook"])
     top_k: int = Field(4, ge=1, le=10)
 
+class RenderRequest(BaseModel):
+    user_id: str = Field(..., examples=["alice"])
+    message: str = Field(..., min_length=1, examples=["render output sink formatting beta html"])
+    top_k: int = Field(4, ge=1, le=10)
+
 
 class ToolUpdateTicketRequest(BaseModel):
     user_id: str = Field(..., examples=["alice"])

@@ -222,3 +222,15 @@ Strong answers should mention:
 ## Memory poisoning extension
 
 For the Module 07 memory poisoning scenario, use `MEMORY_POISONING_LAB.md` in the runnable prototype app or the website page `memory-poisoning-lab.md`. This extension demonstrates persistent memory as an agent authority source and validates `ENABLE_MEMORY_REVIEW` / `ENABLE_MEMORY_ISOLATION` controls.
+
+
+## Module 05 additions: direct injection and output handling
+
+BrokenPilot now has two Module 05 flows in addition to the indirect prompt-injection path:
+
+- `DIRECT_PROMPT_INJECTION_LAB.md` shows user-message prompt injection.
+- `OUTPUT_HANDLING_LAB.md` shows model-derived text reaching an HTML sink raw unless `ENABLE_OUTPUT_ENCODING=true`.
+
+Direct and indirect injection have the same root cause: untrusted text is treated as instruction. The boundary is different. In direct injection, the text comes from the user message. In indirect injection, the text comes from retrieved content.
+
+The marker strings are deterministic lab stand-ins, not production controls. A real design uses instruction/data separation, privilege reduction, authorization outside the model, and context-appropriate output handling at the sink.
