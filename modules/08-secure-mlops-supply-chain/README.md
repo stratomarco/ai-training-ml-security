@@ -189,3 +189,9 @@ This module now includes a one-page executive risk memo exercise. Students must 
 ## MLOps Evidence Pack Review
 
 This module now includes `mlops-evidence-pack-review.md`, a concrete review lab backed by the static evidence pack in `labs/mlops-supply-chain-labs/evidence-pack-review/`.
+
+<!-- LAB_MODALITY_MLOPS:START -->
+## Lab modality note
+
+The MLOps supply-chain labs are reasoning labs. They should be graded on review quality, evidence, promotion controls, artifact integrity, validation, and residual risk. The evidence-pack review lab is the concrete artifact path for this module.
+<!-- LAB_MODALITY_MLOPS:END -->

@@ -25,3 +25,14 @@ Students should focus on:
 - fallback;
 - mitigation;
 - residual risk.
+
+<!-- LAB_QUALITY_STANDARD_ADVERSARIAL_ANCHORS:START -->
+## Worked examples
+
+Use the poisoning and backdoor worked examples to calibrate tabletop grading:
+
+- `worked-examples/strong-poisoning-backdoor-tabletop.md`
+- `worked-examples/weak-poisoning-backdoor-tabletop.md`
+
+The evasion lab is backed by the toy-classifier app. The poisoning and backdoor tabletop remains a reasoning lab unless a future runnable target is added.
+<!-- LAB_QUALITY_STANDARD_ADVERSARIAL_ANCHORS:END -->

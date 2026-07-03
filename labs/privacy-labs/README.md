@@ -23,3 +23,14 @@ Every lab should end with:
 - residual risk;
 - operational trade-offs;
 - communication to engineering and leadership.
+
+<!-- LAB_QUALITY_STANDARD_PRIVACY_ANCHORS:START -->
+## Worked examples
+
+Use the membership inference worked examples to calibrate reasoning-lab grading:
+
+- `worked-examples/strong-membership-inference-risk-review.md`
+- `worked-examples/weak-membership-inference-risk-review.md`
+
+The cross-tenant leakage lab is runnable in BrokenPilot. The membership inference and model inversion lab remains a reasoning lab and should be graded on evidence, control design, validation, and residual risk.
+<!-- LAB_QUALITY_STANDARD_PRIVACY_ANCHORS:END -->

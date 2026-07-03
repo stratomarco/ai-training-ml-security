@@ -137,3 +137,9 @@ The deliverable must include:
 Keep the module practical.
 
 Students should leave understanding that privacy in AI systems is a system property. It is not solved by telling the model to “not reveal sensitive information.”
+
+<!-- LAB_MODALITY_PRIVACY:START -->
+## Lab modality note
+
+Module 09 has two lab styles: BrokenPilot cross-tenant leakage is runnable and observable; membership inference and model inversion is a reasoning lab and should be graded with strong and weak anchors.
+<!-- LAB_MODALITY_PRIVACY:END -->

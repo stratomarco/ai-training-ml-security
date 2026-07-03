@@ -156,3 +156,9 @@ The practical goal is to teach students how to test and design production system
 ## Runnable lab anchor
 
 Use `labs/toy-ml-attacks/toy-classifier-app/` for the observable evasion and poisoning portions of this module. Keep the backdoor and drift exercises as reasoning/tabletop activities unless a separate deterministic target is added later.
+
+<!-- LAB_MODALITY_ADVERSARIAL:START -->
+## Lab modality note
+
+Module 10 has two lab styles: evasion and output integrity are observable through the toy-classifier app; poisoning and backdoor analysis may remain tabletop when the learning goal is risk review and release decision quality.
+<!-- LAB_MODALITY_ADVERSARIAL:END -->

@@ -44,3 +44,11 @@ Added:
 - `brokenpilot/final-presentation-guide.md`
 - `brokenpilot/evidence-log-guide.md`
 - `brokenpilot/remediation-backlog-guide.md`
+
+<!-- LAB_QUALITY_STANDARD_OVERVIEW:START -->
+## Lab quality standard
+
+The course now separates labs into two classes: attack labs, where students observe a failure and a fix, and reasoning labs, where students review artifacts and produce a decision-grade control recommendation.
+
+Use `LAB_QUALITY_STANDARD.md` as the shared standard. Attack labs should be backed by BrokenPilot or the toy-classifier app where possible. Reasoning labs should end in a graded artifact with strong and weak anchors.
+<!-- LAB_QUALITY_STANDARD_OVERVIEW:END -->
