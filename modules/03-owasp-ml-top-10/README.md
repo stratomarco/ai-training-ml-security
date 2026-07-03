@@ -176,3 +176,9 @@ A strong student answer should explain:
 | Discussion and review | 20 min |
 
 Total: 2.5–3 hours depending on lab depth.
+
+<!-- module03-toy-classifier -->
+
+## Runnable lab anchor
+
+The classical ML attack categories in this module are supported by `labs/toy-ml-attacks/toy-classifier-app/`. Use it to demonstrate input manipulation, data poisoning, model extraction by queries, and output-integrity failure with deterministic tests.

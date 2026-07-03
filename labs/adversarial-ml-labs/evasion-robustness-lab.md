@@ -8,7 +8,7 @@ Demonstrate how a model-backed control can fail when an attacker changes the rep
 
 A toy classifier identifies fake phishing messages as low, medium, or high risk.
 
-For now, students create a small fake dataset from the schema below or use the dedicated toy-classifier dataset once `labs/toy-ml-attacks/toy-classifier-app/data/messages.json` is added. The objective is not to attack a real email system. The objective is to understand how small controlled input changes can produce different model outcomes.
+For now, students create a shipped synthetic dataset from the schema below or use the dedicated toy-classifier dataset once `labs/toy-ml-attacks/toy-classifier-app/data/messages.json` is added. The objective is not to attack a real email system. The objective is to understand how small controlled input changes can produce different model outcomes.
 
 
 ## Synthetic data schema
@@ -114,3 +114,18 @@ Use [`../../course-templates/robustness-evaluation-template.md`](../../course-te
 ## Instructor note
 
 Keep the lab controlled and conceptual. The goal is to teach robustness design, not to provide bypass recipes for real systems.
+
+<!-- toy-classifier-evasion-path -->
+
+## Runnable evasion path
+
+Use the shipped synthetic dataset and evasion script:
+
+```powershell
+cd labs/toy-ml-attacks/toy-classifier-app
+python -m pip install -r requirements-dev.txt
+python attacks/evasion.py
+pytest
+```
+
+The core engineering question is whether the classifier should be allowed to act as a hard authorization or safety gate. A robust answer should discuss confidence, fallback, review queues, monitoring, and residual risk.

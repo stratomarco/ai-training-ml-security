@@ -210,3 +210,24 @@ Weak answers usually over-rely on:
 - “Retrain more often.”
 
 Push students to explain exactly how a control prevents, detects, or recovers from the attack.
+
+<!-- toy-classifier-runnable-path -->
+
+## Runnable path: toy-classifier app
+
+Use the shipped app instead of inventing a dataset:
+
+```powershell
+cd labs/toy-ml-attacks/toy-classifier-app
+python -m pip install -r requirements-dev.txt
+python train.py
+python attacks/evasion.py
+python attacks/poisoning.py
+python attacks/extraction.py
+python attacks/output_integrity.py
+pytest
+```
+
+macOS/Linux uses the same commands with `/` path separators.
+
+Student deliverable: for each script, record the before/after output, identify the changed security property, propose one implementable control, and state residual risk.

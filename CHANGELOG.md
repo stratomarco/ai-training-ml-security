@@ -408,3 +408,12 @@ This strengthens the course goal that labs reinforce security reasoning rather t
 ## Unreleased  -  Finding rewrite classroom exercise
 
 Added a classroom exercise that teaches students to rewrite vague AI security observations into decision-grade findings. Added a finding rewrite template, finding quality rubric, instructor facilitation guide, and BrokenPilot before/after example.
+
+<!-- v1.1-dev-lab-improvement-part3-toy-classifier -->
+
+## v1.1-dev: Toy-classifier observable ML attack lab
+
+- Added a deterministic toy-classifier app for Modules 03 and 10.
+- Added runnable evasion, poisoning, extraction, and output-integrity scripts.
+- Added pytest coverage for all four attack demonstrations.
+- Updated the toy ML and adversarial evasion labs to point to shipped data and scripts.

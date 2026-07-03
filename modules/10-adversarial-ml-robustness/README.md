@@ -150,3 +150,9 @@ Students produce an **adversarial test plan** that includes:
 Do not let this module become only a mathematical adversarial examples lecture.
 
 The practical goal is to teach students how to test and design production systems that remain safe when model assumptions are attacked or invalidated.
+
+<!-- module10-toy-classifier -->
+
+## Runnable lab anchor
+
+Use `labs/toy-ml-attacks/toy-classifier-app/` for the observable evasion and poisoning portions of this module. Keep the backdoor and drift exercises as reasoning/tabletop activities unless a separate deterministic target is added later.

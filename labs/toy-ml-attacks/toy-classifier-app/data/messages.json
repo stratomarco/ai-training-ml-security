@@ -1,0 +1,242 @@
+[
+  {
+    "id": "S001",
+    "text": "team lunch agenda cafeteria menu discussion safe",
+    "label": "safe"
+  },
+  {
+    "id": "S002",
+    "text": "project status update meeting notes roadmap safe",
+    "label": "safe"
+  },
+  {
+    "id": "S003",
+    "text": "holiday schedule reminder office closure safe",
+    "label": "safe"
+  },
+  {
+    "id": "S004",
+    "text": "code review summary approved tests passing safe",
+    "label": "safe"
+  },
+  {
+    "id": "S005",
+    "text": "customer support ticket resolved documentation safe",
+    "label": "safe"
+  },
+  {
+    "id": "S006",
+    "text": "training session calendar invite onboarding safe",
+    "label": "safe"
+  },
+  {
+    "id": "S007",
+    "text": "weekly engineering sync notes action items safe",
+    "label": "safe"
+  },
+  {
+    "id": "S008",
+    "text": "expense report submitted finance confirmation safe",
+    "label": "safe"
+  },
+  {
+    "id": "S009",
+    "text": "printer maintenance notice facilities update safe",
+    "label": "safe"
+  },
+  {
+    "id": "S010",
+    "text": "new hire welcome message team introduction safe",
+    "label": "safe"
+  },
+  {
+    "id": "S011",
+    "text": "performance review timeline manager reminder safe",
+    "label": "safe"
+  },
+  {
+    "id": "S012",
+    "text": "release notes published internal wiki safe",
+    "label": "safe"
+  },
+  {
+    "id": "S013",
+    "text": "benefits enrollment information hr portal safe",
+    "label": "safe"
+  },
+  {
+    "id": "S014",
+    "text": "travel policy reminder booking guidance safe",
+    "label": "safe"
+  },
+  {
+    "id": "S015",
+    "text": "security awareness quiz reminder normal training safe",
+    "label": "safe"
+  },
+  {
+    "id": "S016",
+    "text": "deployment window announced change calendar safe",
+    "label": "safe"
+  },
+  {
+    "id": "S017",
+    "text": "design document feedback requested architecture safe",
+    "label": "safe"
+  },
+  {
+    "id": "S018",
+    "text": "monthly newsletter community volunteer event safe",
+    "label": "safe"
+  },
+  {
+    "id": "S019",
+    "text": "office snack survey preference form safe",
+    "label": "safe"
+  },
+  {
+    "id": "S020",
+    "text": "database maintenance completed status safe",
+    "label": "safe"
+  },
+  {
+    "id": "S021",
+    "text": "procurement approved monitor keyboard accessories safe",
+    "label": "safe"
+  },
+  {
+    "id": "S022",
+    "text": "quarterly planning workshop agenda safe",
+    "label": "safe"
+  },
+  {
+    "id": "S023",
+    "text": "team retrospective notes improvement safe",
+    "label": "safe"
+  },
+  {
+    "id": "S024",
+    "text": "accounting policy update invoice process safe normal",
+    "label": "safe"
+  },
+  {
+    "id": "P001",
+    "text": "urgent password reset verify account credential token phish",
+    "label": "phish"
+  },
+  {
+    "id": "P002",
+    "text": "payment failed verify invoice credential immediately phish",
+    "label": "phish"
+  },
+  {
+    "id": "P003",
+    "text": "account locked urgent login password token phish",
+    "label": "phish"
+  },
+  {
+    "id": "P004",
+    "text": "wire transfer approval secret code credential phish",
+    "label": "phish"
+  },
+  {
+    "id": "P005",
+    "text": "gift card request urgent manager secret phish",
+    "label": "phish"
+  },
+  {
+    "id": "P006",
+    "text": "security alert verify password account token phish",
+    "label": "phish"
+  },
+  {
+    "id": "P007",
+    "text": "payroll change confirm credential login phish",
+    "label": "phish"
+  },
+  {
+    "id": "P008",
+    "text": "invoice overdue urgent payment verify portal phish",
+    "label": "phish"
+  },
+  {
+    "id": "P009",
+    "text": "cloud mailbox full login credential password phish",
+    "label": "phish"
+  },
+  {
+    "id": "P010",
+    "text": "bonus claim verify account secret token phish",
+    "label": "phish"
+  },
+  {
+    "id": "P011",
+    "text": "vpn expired urgent password reset credential phish",
+    "label": "phish"
+  },
+  {
+    "id": "P012",
+    "text": "shared document requires login token verify phish",
+    "label": "phish"
+  },
+  {
+    "id": "P013",
+    "text": "bank detail update payment credential phish",
+    "label": "phish"
+  },
+  {
+    "id": "P014",
+    "text": "package delivery fee urgent payment phish",
+    "label": "phish"
+  },
+  {
+    "id": "P015",
+    "text": "admin request disable mfa token secret phish",
+    "label": "phish"
+  },
+  {
+    "id": "P016",
+    "text": "subscription renewal failed verify card credential phish",
+    "label": "phish"
+  },
+  {
+    "id": "P017",
+    "text": "executive transfer request confidential payment phish",
+    "label": "phish"
+  },
+  {
+    "id": "P018",
+    "text": "tax refund claim login credential token phish",
+    "label": "phish"
+  },
+  {
+    "id": "P019",
+    "text": "system quarantine release requires password phish",
+    "label": "phish"
+  },
+  {
+    "id": "P020",
+    "text": "vendor invoice correction wire payment credential phish",
+    "label": "phish"
+  },
+  {
+    "id": "P021",
+    "text": "urgent account verification code token phish",
+    "label": "phish"
+  },
+  {
+    "id": "P022",
+    "text": "credential review required password portal phish",
+    "label": "phish"
+  },
+  {
+    "id": "P023",
+    "text": "payment routing update secret approval phish",
+    "label": "phish"
+  },
+  {
+    "id": "P024",
+    "text": "login session expired verify identity credential phish",
+    "label": "phish"
+  }
+]
