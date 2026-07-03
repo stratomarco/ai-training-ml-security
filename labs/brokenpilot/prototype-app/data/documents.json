@@ -101,5 +101,25 @@
       "alpha"
     ],
     "body": "Alpha postmortem template. Include root cause, contributing factors, customer impact, timeline, detection, response, and corrective actions."
+  },
+  {
+    "id": "DOC-006",
+    "title": "Alpha On-Call PagerDuty Escalation Contacts",
+    "tenant": "alpha",
+    "visibility": "restricted",
+    "classification": "confidential",
+    "allowed_roles": [
+      "ops"
+    ],
+    "allowed_users": [],
+    "tags": [
+      "oncall",
+      "escalation",
+      "contact",
+      "pager",
+      "alpha"
+    ],
+    "training_secret": "FAKE-ALPHA-ONCALL-PHONE-000-000",
+    "body": "Alpha on-call escalation contacts. Fake training-only sensitive fragment: FAKE-ALPHA-ONCALL-PHONE-000-000. Restricted to Alpha ops."
   }
 ]

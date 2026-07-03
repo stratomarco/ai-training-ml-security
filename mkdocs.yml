@@ -9,8 +9,7 @@ edit_uri: edit/main/
 
 validation:
   nav:
-    omitted_files: ignore
-
+    omitted_files: warn
 theme:
   name: material
   language: en
@@ -67,273 +66,366 @@ validation:
 
 
 nav:
-  - Home: index.md
   - Start Here:
-      - "Course Overview": start-here/course-overview.md
-      - "Development Plan": start-here/development-plan.md
-      - "Content Strategy": start-here/content-strategy.md
-      - "Reading-First Learning": start-here/reading-first-lab-supported.md
-      - "Security Roots": start-here/security-roots.md
-      - "Learning Paths": start-here/learning-paths.md
+      - "Course Home": index.md
       - "One-Week Learning Path": start-here/one-week-learning-path.md
+      - "40-Hour Course Map": start-here/40-hour-course-map.md
       - "Cross-Platform Setup": start-here/cross-platform-setup.md
-      - "Glossary": glossary.md
-      - "Prerequisites": start-here/prerequisites.md
-      - "How to Use This Course": start-here/how-to-use-this-course.md
-      - "Lab Safety and Ethics": start-here/lab-safety-and-ethics.md
-      - "Local Website Preview": lab-setup/local-preview.md
-      - "GitHub Pages Deployment": lab-setup/github-pages.md
+      - "BrokenPilot Standalone Hands-On Path": lab-setup/brokenpilot-standalone-path.md
+      - "DVAIA Setup": lab-setup/dvaia.md
+      - "DVAIA Local Validation": lab-setup/dvaia-validation.md
+      - "DVAIA Fallback Decision Guide": lab-setup/dvaia-fallback-decision-guide.md
   - Course:
       - "Syllabus": syllabus.md
-      - "Course Map": course-map.md
       - "References": references.md
-      - "Roadmap": ROADMAP.md
-  - Modules:
-      - "Modules Overview": modules/README.md
-      - "01  -  Security Engineering for AI":
-          - "Overview": modules/01-security-engineering-for-ai/README.md
-          - "Slides": modules/01-security-engineering-for-ai/slides.md
-          - "Instructor Notes": modules/01-security-engineering-for-ai/instructor-notes.md
-          - "Student Handout": modules/01-security-engineering-for-ai/student-handout.md
-          - "Checklist": modules/01-security-engineering-for-ai/checklist.md
-          - "Quiz": modules/01-security-engineering-for-ai/quiz.md
-          - "References": modules/01-security-engineering-for-ai/references.md
-          - "Exercise": modules/01-security-engineering-for-ai/exercise-threat-model.md
-      - "02  -  ML System Architecture":
-          - "Overview": modules/02-ml-system-architecture/README.md
-          - "Slides": modules/02-ml-system-architecture/slides.md
-          - "Instructor Notes": modules/02-ml-system-architecture/instructor-notes.md
-          - "Student Handout": modules/02-ml-system-architecture/student-handout.md
-          - "Checklist": modules/02-ml-system-architecture/checklist.md
-          - "Quiz": modules/02-ml-system-architecture/quiz.md
-          - "References": modules/02-ml-system-architecture/references.md
-          - "Exercise": modules/02-ml-system-architecture/exercise-ml-lifecycle-dfd.md
-      - "03  -  OWASP ML Security Top 10":
-          - "Overview": modules/03-owasp-ml-top-10/README.md
-          - "Slides": modules/03-owasp-ml-top-10/slides.md
-          - "Instructor Notes": modules/03-owasp-ml-top-10/instructor-notes.md
-          - "Student Handout": modules/03-owasp-ml-top-10/student-handout.md
-          - "Checklist": modules/03-owasp-ml-top-10/checklist.md
-          - "Quiz": modules/03-owasp-ml-top-10/quiz.md
-          - "References": modules/03-owasp-ml-top-10/references.md
-          - "Exercise": modules/03-owasp-ml-top-10/exercise-owasp-ml-attack-review.md
-      - "04  -  BIML Architectural Risk Analysis":
-          - "Overview": modules/04-biml-architectural-risk-analysis/README.md
-          - "Slides": modules/04-biml-architectural-risk-analysis/slides.md
-          - "Instructor Notes": modules/04-biml-architectural-risk-analysis/instructor-notes.md
-          - "Student Handout": modules/04-biml-architectural-risk-analysis/student-handout.md
-          - "Checklist": modules/04-biml-architectural-risk-analysis/checklist.md
-          - "Quiz": modules/04-biml-architectural-risk-analysis/quiz.md
-          - "References": modules/04-biml-architectural-risk-analysis/references.md
-          - "Exercise": modules/04-biml-architectural-risk-analysis/exercise-biml-architecture-review.md
-      - "05  -  LLM Application Security":
-          - "Overview": modules/05-llm-application-security/README.md
-          - "Deep Dive": modules/05-llm-application-security/deep-dive.md
-          - "Attack Anatomy": modules/05-llm-application-security/attack-anatomy.md
-          - "Controls and Remediations": modules/05-llm-application-security/controls-and-remediations.md
-          - "Common Mistakes": modules/05-llm-application-security/common-mistakes.md
-          - "Worked Example": modules/05-llm-application-security/worked-example.md
-          - "Slides": modules/05-llm-application-security/slides.md
-          - "Instructor Notes": modules/05-llm-application-security/instructor-notes.md
-          - "Student Handout": modules/05-llm-application-security/student-handout.md
-          - "Checklist": modules/05-llm-application-security/checklist.md
-          - "Quiz": modules/05-llm-application-security/quiz.md
-          - "References": modules/05-llm-application-security/references.md
-          - "Exercise": modules/05-llm-application-security/exercise-llm-application-security-review.md
-      - "06  -  RAG Security":
-          - "Overview": modules/06-rag-security/README.md
-          - "Slides": modules/06-rag-security/slides.md
-          - "Instructor Notes": modules/06-rag-security/instructor-notes.md
-          - "Student Handout": modules/06-rag-security/student-handout.md
-          - "Deep Dive": modules/06-rag-security/deep-dive.md
-          - "Attack Anatomy": modules/06-rag-security/attack-anatomy.md
-          - "Controls and Remediations": modules/06-rag-security/controls-and-remediations.md
-          - "Common Mistakes": modules/06-rag-security/common-mistakes.md
-          - "Worked Example": modules/06-rag-security/worked-example.md
-          - "Checklist": modules/06-rag-security/checklist.md
-          - "Quiz": modules/06-rag-security/quiz.md
-          - "References": modules/06-rag-security/references.md
-          - "Exercise": modules/06-rag-security/exercise-rag-threat-model.md
-      - "07  -  Agent and Tool Security":
-          - "Overview": modules/07-agent-tool-security/README.md
-          - "Slides": modules/07-agent-tool-security/slides.md
-          - "Instructor Notes": modules/07-agent-tool-security/instructor-notes.md
-          - "Student Handout": modules/07-agent-tool-security/student-handout.md
-          - "Deep Dive": modules/07-agent-tool-security/deep-dive.md
-          - "Attack Anatomy": modules/07-agent-tool-security/attack-anatomy.md
-          - "Controls and Remediations": modules/07-agent-tool-security/controls-and-remediations.md
-          - "Common Mistakes": modules/07-agent-tool-security/common-mistakes.md
-          - "Worked Example": modules/07-agent-tool-security/worked-example.md
-          - "Checklist": modules/07-agent-tool-security/checklist.md
-          - "Quiz": modules/07-agent-tool-security/quiz.md
-          - "References": modules/07-agent-tool-security/references.md
-          - "Exercise": modules/07-agent-tool-security/exercise-agent-control-design.md
-          - "Executive Risk Memo Exercise": modules/07-agent-tool-security/exercise-executive-risk-memo.md
-          - "BrokenPilot Tool Validation": modules/07-agent-tool-security/brokenpilot-tool-validation.md
-          - "BrokenPilot Memory Validation": modules/07-agent-tool-security/brokenpilot-memory-validation.md
-      - "08  -  Secure MLOps and AI Supply Chain":
-          - "Overview": modules/08-secure-mlops-supply-chain/README.md
-          - "Slides": modules/08-secure-mlops-supply-chain/slides.md
-          - "Instructor Notes": modules/08-secure-mlops-supply-chain/instructor-notes.md
-          - "Student Handout": modules/08-secure-mlops-supply-chain/student-handout.md
-          - "Checklist": modules/08-secure-mlops-supply-chain/checklist.md
-          - "Quiz": modules/08-secure-mlops-supply-chain/quiz.md
-          - "References": modules/08-secure-mlops-supply-chain/references.md
-          - "Exercise": modules/08-secure-mlops-supply-chain/exercise-secure-mlops-review.md
-          - "Executive Risk Memo Exercise": modules/08-secure-mlops-supply-chain/exercise-executive-risk-memo.md
-      - "09  -  Privacy Attacks":
-          - "Overview": modules/09-privacy-attacks/README.md
-          - "Slides": modules/09-privacy-attacks/slides.md
-          - "Instructor Notes": modules/09-privacy-attacks/instructor-notes.md
-          - "Student Handout": modules/09-privacy-attacks/student-handout.md
-          - "Checklist": modules/09-privacy-attacks/checklist.md
-          - "Quiz": modules/09-privacy-attacks/quiz.md
-          - "References": modules/09-privacy-attacks/references.md
-          - "Exercise": modules/09-privacy-attacks/exercise-privacy-risk-assessment.md
-      - "10  -  Adversarial ML and Robustness":
-          - "Overview": modules/10-adversarial-ml-robustness/README.md
-          - "Slides": modules/10-adversarial-ml-robustness/slides.md
-          - "Instructor Notes": modules/10-adversarial-ml-robustness/instructor-notes.md
-          - "Student Handout": modules/10-adversarial-ml-robustness/student-handout.md
-          - "Checklist": modules/10-adversarial-ml-robustness/checklist.md
-          - "Quiz": modules/10-adversarial-ml-robustness/quiz.md
-          - "References": modules/10-adversarial-ml-robustness/references.md
-          - "Exercise": modules/10-adversarial-ml-robustness/exercise-adversarial-test-plan.md
-          - "Deep Dive": modules/10-adversarial-ml-robustness/deep-dive.md
-          - "Attack Anatomy": modules/10-adversarial-ml-robustness/attack-anatomy.md
-          - "Controls and Remediations": modules/10-adversarial-ml-robustness/controls-and-remediations.md
-          - "Common Mistakes": modules/10-adversarial-ml-robustness/common-mistakes.md
-          - "Worked Example": modules/10-adversarial-ml-robustness/worked-example.md
-          - "Deep Dive Worked Examples": modules/10-adversarial-ml-robustness/deep-dive-worked-examples.md
-      - "11  -  AI Red Team Methodology":
-          - "Overview": modules/11-ai-red-team-methodology/README.md
-          - "Slides": modules/11-ai-red-team-methodology/slides.md
-          - "Instructor Notes": modules/11-ai-red-team-methodology/instructor-notes.md
-          - "Student Handout": modules/11-ai-red-team-methodology/student-handout.md
-          - "Checklist": modules/11-ai-red-team-methodology/checklist.md
-          - "Quiz": modules/11-ai-red-team-methodology/quiz.md
-          - "References": modules/11-ai-red-team-methodology/references.md
-          - "Exercise": modules/11-ai-red-team-methodology/exercise-ai-red-team-plan.md
-          - "Finding Rewrite Exercise": modules/11-ai-red-team-methodology/exercise-finding-rewrite.md
-      - "12  -  BrokenPilot Capstone":
-          - "Overview": modules/12-capstone-brokenpilot/README.md
-          - "Slides": modules/12-capstone-brokenpilot/slides.md
-          - "Instructor Notes": modules/12-capstone-brokenpilot/instructor-notes.md
-          - "Student Handout": modules/12-capstone-brokenpilot/student-handout.md
-          - "Checklist": modules/12-capstone-brokenpilot/checklist.md
-          - "Quiz": modules/12-capstone-brokenpilot/quiz.md
-          - "References": modules/12-capstone-brokenpilot/references.md
-          - "Capstone Runbook": modules/12-capstone-brokenpilot/capstone-runbook.md
-          - "Threat Model Exercise": modules/12-capstone-brokenpilot/exercise-capstone-threat-model.md
-          - "Red Team Review Exercise": modules/12-capstone-brokenpilot/exercise-capstone-red-team-review.md
-  - Labs:
-      - "Labs Overview": labs/README.md
-      - "Lab Setup Overview": lab-setup/overview.md
-      - "DVAIA Setup": lab-setup/dvaia.md
-      - "DVAIA Validation Plan": lab-setup/dvaia-validation.md
-      - "DVAIA Module Mapping": lab-setup/dvaia-module-mapping.md
-      - "DVAIA Mapping": labs/dvaia-guides/dvaia-course-mapping.md
-      - "DVAIA Validated Results": labs/dvaia-guides/validated-lab-results.md
-      - "LLM Application Security Lab": labs/dvaia-guides/llm-application-security-lab.md
-      - "Module 05  -  Direct Prompt Injection Walkthrough": labs/dvaia-guides/module-05-direct-prompt-injection-walkthrough.md
-      - "Module 06  -  RAG / Indirect Injection Walkthrough": labs/dvaia-guides/module-06-rag-indirect-prompt-injection-walkthrough.md
-      - "Module 07  -  Agent / Tool Behavior Walkthrough": labs/dvaia-guides/module-07-agent-tool-behavior-walkthrough.md
-      - "Module 11  -  DVAIA Red Team Mini-Assessment": labs/dvaia-guides/module-11-dvaia-red-team-mini-assessment.md
-      - "RAG Indirect Prompt Injection Lab": labs/rag-labs/rag-indirect-prompt-injection-lab.md
-      - "Agent Tool Misuse Lab": labs/agent-labs/agent-tool-misuse-lab.md
-      - "Memory Poisoning and Approval Gates Lab": labs/agent-labs/memory-poisoning-approval-gates-lab.md
-      - "BrokenPilot Capstone": labs/brokenpilot/README.md
-      - "BrokenPilot Attack Paths": labs/brokenpilot/attack-paths.md
-      - "BrokenPilot Vulnerabilities": labs/brokenpilot/vulnerabilities.md
-      - "BrokenPilot Prototype Plan": labs/brokenpilot/prototype-plan.md
-      - "BrokenPilot Prototype MVP":
-          - "Overview": labs/brokenpilot/prototype/README.md
-          - "Architecture": labs/brokenpilot/prototype/architecture.md
-          - "API Contract": labs/brokenpilot/prototype/api-contract.md
-          - "Fake Data Plan": labs/brokenpilot/prototype/fake-data-plan.md
-          - "Mock LLM Mode": labs/brokenpilot/prototype/mock-llm-mode.md
-          - "Vulnerability Implementation Plan": labs/brokenpilot/prototype/vulnerability-implementation-plan.md
-          - "Control Toggle Plan": labs/brokenpilot/prototype/control-toggle-plan.md
-          - "Docker Compose Plan": labs/brokenpilot/prototype/docker-compose-plan.md
-          - "Student Lab Flow": labs/brokenpilot/prototype/student-lab-flow.md
-          - "Instructor Runbook": labs/brokenpilot/prototype/instructor-runbook.md
-          - "Safety Notes": labs/brokenpilot/prototype/security-and-safety.md
-          - "Build Backlog": labs/brokenpilot/prototype/build-backlog.md
-      - "BrokenPilot Runnable MVP":
-          - "Overview": labs/brokenpilot/prototype-app/README.md
-          - "Lab Guide": labs/brokenpilot/prototype-app/LAB_GUIDE.md
-          - "Tool Calling Lab": labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md
-          - "Memory Poisoning Lab": labs/brokenpilot/prototype-app/MEMORY_POISONING_LAB.md
-      - "BrokenPilot Worked Examples":
-          - "Overview": labs/brokenpilot/worked-examples/README.md
-          - "Strong Threat Model": labs/brokenpilot/worked-examples/strong-threat-model-example.md
-          - "Weak Threat Model": labs/brokenpilot/worked-examples/weak-threat-model-example.md
-          - "Strong Risk Register": labs/brokenpilot/worked-examples/strong-risk-register-example.md
-          - "Weak Risk Register": labs/brokenpilot/worked-examples/weak-risk-register-example.md
-          - "Strong Tool Permission Matrix": labs/brokenpilot/worked-examples/strong-tool-permission-matrix-example.md
-          - "Weak Tool Permission Matrix": labs/brokenpilot/worked-examples/weak-tool-permission-matrix-example.md
-          - "Strong Evidence Log": labs/brokenpilot/worked-examples/strong-evidence-log-example.md
-          - "Weak Evidence Log": labs/brokenpilot/worked-examples/weak-evidence-log-example.md
-          - "Strong Remediation Backlog": labs/brokenpilot/worked-examples/strong-remediation-backlog-example.md
-          - "Weak Remediation Backlog": labs/brokenpilot/worked-examples/weak-remediation-backlog-example.md
-          - "Strong Executive Readout": labs/brokenpilot/worked-examples/strong-executive-readout-example.md
-          - "Weak Executive Readout": labs/brokenpilot/worked-examples/weak-executive-readout-example.md
-          - "Strong Executive Risk Memo": labs/brokenpilot/worked-examples/strong-executive-risk-memo-example.md
-          - "Weak Executive Risk Memo": labs/brokenpilot/worked-examples/weak-executive-risk-memo-example.md
-          - "Gold-Standard Final Report": labs/brokenpilot/worked-examples/gold-standard-final-report-example.md
-          - "Weak Final Report": labs/brokenpilot/worked-examples/weak-final-report-example.md
-          - "Instructor Notes for Final Report Examples": labs/brokenpilot/worked-examples/instructor-notes-final-report-examples.md
-          - "Finding Rewrite Before and After": labs/brokenpilot/worked-examples/finding-rewrite-before-after.md
-  - Templates:
-      - "Templates Overview": course-templates/README.md
-      - "Threat Model Template": course-templates/threat-model-template.md
-      - "Architecture Risk Review Template": course-templates/architecture-risk-review-template.md
-      - "Llm Application Security Review Template": course-templates/llm-application-security-review-template.md
-      - "Rag Threat Model Template": course-templates/rag-threat-model-template.md
-      - "Agent Control Design Template": course-templates/agent-control-design-template.md
-      - "Secure Mlops Review Template": course-templates/secure-mlops-review-template.md
-      - "Privacy Risk Assessment Template": course-templates/privacy-risk-assessment-template.md
-      - "Adversarial Test Plan Template": course-templates/adversarial-test-plan-template.md
-      - "Ai Red Team Report Template": course-templates/ai-red-team-report-template.md
-      - "Brokenpilot Final Report Template": course-templates/brokenpilot-final-report-template.md
-      - "Concrete Control Implementation Template": course-templates/concrete-control-implementation-template.md
-      - "DVAIA Evidence Log Template": course-templates/dvaia-evidence-log-template.md
-      - "Deep Dive Template": course-templates/deep-dive-template.md
-      - "Attack Anatomy Template": course-templates/attack-anatomy-template.md
-      - "Controls and Remediations Template": course-templates/controls-and-remediations-template.md
-      - "Finding Rewrite Template": course-templates/finding-rewrite-template.md
-  - Instructor:
-      - "Instructor Overview": instructor/README.md
-      - "Delivery Guide": instructor/delivery-guide.md
-      - "Facilitation Notes": instructor/facilitation-notes.md
-      - "Timing Guide": instructor/timing-guide.md
-      - "Delivery Formats": instructor/delivery-formats.md
-      - "40-Hour Delivery Plan": instructor/40-hour-delivery-plan.md
-      - "One-Week Course Runbook": instructor/one-week-course-runbook.md
-      - "Module Cut and Expand Guide": instructor/module-cut-expand-guide.md
-      - "Grading Calibration Guide": instructor/grading-calibration-guide.md
-      - "Executive Communication Guide": instructor/executive-communication-guide.md
-      - "Finding Rewrite Facilitation Guide": instructor/finding-rewrite-facilitation-guide.md
-  - Assessments:
-      - "Assessments Overview": assessments/README.md
-      - "40-Hour Assessment Plan": assessments/40-hour-course-assessment-plan.md
-      - "Quiz Bank": assessments/quiz-bank.md
-      - "Capstone Grading": assessments/capstone-grading.md
-      - "BrokenPilot Final Rubric": assessments/brokenpilot-capstone-final-rubric.md
-      - "AI Red Team Grading": assessments/ai-red-team-grading.md
-      - "Concrete Controls Assessment": assessments/concrete-controls-assessment.md
-      - "Grading Calibration Exercise": assessments/grading-calibration-exercise.md
-      - "Executive Risk Memo Rubric": assessments/executive-risk-memo-rubric.md
-      - "Finding Quality Rubric": assessments/finding-quality-rubric.md
-      - "Finding Rewrite Exercise": assessments/finding-rewrite-exercise.md
-  - Project:
       - "Version": VERSION.md
+      - "Roadmap": ROADMAP.md
       - "Changelog": CHANGELOG.md
+  - Modules:
+      - "Module 01  -  Security Engineering for AI":
+          - "Module 01  -  Security Engineering for AI": modules/01-security-engineering-for-ai/README.md
+          - "Module 01 Delivery Profile: Security Engineering for AI": modules/01-security-engineering-for-ai/delivery-profile.md
+          - "Module 01 Student Handout  -  Security Engineering for AI": modules/01-security-engineering-for-ai/student-handout.md
+          - "Module 01 Slides  -  Security Engineering for AI": modules/01-security-engineering-for-ai/slides.md
+          - "Module 01 Instructor Notes  -  Security Engineering for AI": modules/01-security-engineering-for-ai/instructor-notes.md
+          - "Checklist  -  Security Engineering for AI Systems": modules/01-security-engineering-for-ai/checklist.md
+          - "Quiz  -  Module 01: Security Engineering for AI": modules/01-security-engineering-for-ai/quiz.md
+          - "References  -  Module 01: Security Engineering for AI": modules/01-security-engineering-for-ai/references.md
+          - "Exercise  -  Threat Model DocAssist": modules/01-security-engineering-for-ai/exercise-threat-model.md
+      - "Module 02  -  ML System Architecture":
+          - "Module 02  -  ML System Architecture": modules/02-ml-system-architecture/README.md
+          - "Module 02 Delivery Profile: ML System Architecture": modules/02-ml-system-architecture/delivery-profile.md
+          - "Module 02 Student Handout  -  ML System Architecture": modules/02-ml-system-architecture/student-handout.md
+          - "Module 02 Slides  -  ML System Architecture": modules/02-ml-system-architecture/slides.md
+          - "Module 02 Instructor Notes  -  ML System Architecture": modules/02-ml-system-architecture/instructor-notes.md
+          - "Module 02 Checklist  -  ML System Architecture Security Review": modules/02-ml-system-architecture/checklist.md
+          - "Module 02 Quiz  -  ML System Architecture": modules/02-ml-system-architecture/quiz.md
+          - "Module 02 References  -  ML System Architecture": modules/02-ml-system-architecture/references.md
+          - "Exercise  -  ML Lifecycle Data-Flow Diagram": modules/02-ml-system-architecture/exercise-ml-lifecycle-dfd.md
+      - "Module 03  -  OWASP ML Security Top 10":
+          - "Module 03  -  OWASP ML Security Top 10": modules/03-owasp-ml-top-10/README.md
+          - "Module 03 Delivery Profile: OWASP ML Security Top 10": modules/03-owasp-ml-top-10/delivery-profile.md
+          - "Module 03  -  Student Handout": modules/03-owasp-ml-top-10/student-handout.md
+          - "Module 03  -  OWASP ML Security Top 10": modules/03-owasp-ml-top-10/slides.md
+          - "Module 03  -  Instructor Notes": modules/03-owasp-ml-top-10/instructor-notes.md
+          - "Module 03  -  OWASP ML Security Top 10 Checklist": modules/03-owasp-ml-top-10/checklist.md
+          - "Module 03  -  Quiz": modules/03-owasp-ml-top-10/quiz.md
+          - "Module 03  -  References": modules/03-owasp-ml-top-10/references.md
+          - "Exercise  -  OWASP ML Attack Review": modules/03-owasp-ml-top-10/exercise-owasp-ml-attack-review.md
+      - "Module 04  -  BIML and Architectural Risk Analysis":
+          - "Module 04  -  BIML and Architectural Risk Analysis": modules/04-biml-architectural-risk-analysis/README.md
+          - "Module 04 Delivery Profile: BIML Architectural Risk Analysis": modules/04-biml-architectural-risk-analysis/delivery-profile.md
+          - "Module 04 Student Handout  -  BIML and Architectural Risk Analysis": modules/04-biml-architectural-risk-analysis/student-handout.md
+          - "Module 04 Slides  -  BIML and Architectural Risk Analysis": modules/04-biml-architectural-risk-analysis/slides.md
+          - "Module 04 Instructor Notes  -  BIML and Architectural Risk Analysis": modules/04-biml-architectural-risk-analysis/instructor-notes.md
+          - "Checklist  -  BIML-Style AI Architecture Risk Review": modules/04-biml-architectural-risk-analysis/checklist.md
+          - "Quiz  -  BIML and Architectural Risk Analysis": modules/04-biml-architectural-risk-analysis/quiz.md
+          - "References  -  Module 04": modules/04-biml-architectural-risk-analysis/references.md
+          - "Exercise  -  BIML-Style Architecture Risk Review": modules/04-biml-architectural-risk-analysis/exercise-biml-architecture-review.md
+      - "Module 5  -  LLM Application Security":
+          - "Module 5  -  LLM Application Security": modules/05-llm-application-security/README.md
+          - "Module 05 Delivery Profile: LLM Application Security": modules/05-llm-application-security/delivery-profile.md
+          - "Module 5 Student Handout  -  LLM Application Security": modules/05-llm-application-security/student-handout.md
+          - "Module 5 Slides  -  LLM Application Security": modules/05-llm-application-security/slides.md
+          - "Module 5 Instructor Notes  -  LLM Application Security": modules/05-llm-application-security/instructor-notes.md
+          - "Module 05 Deep Dive  -  LLM Application Security": modules/05-llm-application-security/deep-dive.md
+          - "Attack Anatomy  -  LLM Application Security": modules/05-llm-application-security/attack-anatomy.md
+          - "Controls and Remediations  -  LLM Application Security": modules/05-llm-application-security/controls-and-remediations.md
+          - "Common Mistakes  -  LLM Application Security": modules/05-llm-application-security/common-mistakes.md
+          - "Worked Example  -  LLM Application Security Review": modules/05-llm-application-security/worked-example.md
+          - "LLM Application Security Checklist": modules/05-llm-application-security/checklist.md
+          - "Module 5 Quiz  -  LLM Application Security": modules/05-llm-application-security/quiz.md
+          - "Module 5 References  -  LLM Application Security": modules/05-llm-application-security/references.md
+          - "BrokenPilot Standalone Lab: LLM Application Security": modules/05-llm-application-security/brokenpilot-standalone-lab.md
+          - "Exercise  -  LLM Application Security Review": modules/05-llm-application-security/exercise-llm-application-security-review.md
+      - "Module 6  -  RAG Security and Indirect Prompt Injection":
+          - "Module 6  -  RAG Security and Indirect Prompt Injection": modules/06-rag-security/README.md
+          - "Module 06 Delivery Profile: RAG Security and Indirect Prompt Injection": modules/06-rag-security/delivery-profile.md
+          - "Module 6 Student Handout  -  RAG Security and Indirect Prompt Injection": modules/06-rag-security/student-handout.md
+          - "Module 6 Slides  -  RAG Security and Indirect Prompt Injection": modules/06-rag-security/slides.md
+          - "Module 6 Instructor Notes  -  RAG Security and Indirect Prompt Injection": modules/06-rag-security/instructor-notes.md
+          - "Module 6 Deep Dive  -  RAG Security and Indirect Prompt Injection": modules/06-rag-security/deep-dive.md
+          - "Attack Anatomy  -  RAG Indirect Prompt Injection and Retrieval Leakage": modules/06-rag-security/attack-anatomy.md
+          - "Controls and Remediations  -  Secure RAG Systems": modules/06-rag-security/controls-and-remediations.md
+          - "Common Mistakes  -  RAG Security": modules/06-rag-security/common-mistakes.md
+          - "Worked Example  -  Securing a RAG Incident Assistant": modules/06-rag-security/worked-example.md
+          - "Module 6 Checklist  -  RAG Security": modules/06-rag-security/checklist.md
+          - "Module 6 Quiz  -  RAG Security and Indirect Prompt Injection": modules/06-rag-security/quiz.md
+          - "Module 6 References  -  RAG Security and Indirect Prompt Injection": modules/06-rag-security/references.md
+          - "BrokenPilot Standalone Lab: RAG Security": modules/06-rag-security/brokenpilot-standalone-lab.md
+          - "Exercise  -  RAG Threat Model": modules/06-rag-security/exercise-rag-threat-model.md
+      - "Module 07  -  Agent and Tool Security":
+          - "Module 07  -  Agent and Tool Security": modules/07-agent-tool-security/README.md
+          - "Module 07 Delivery Profile: Agent and Tool Security": modules/07-agent-tool-security/delivery-profile.md
+          - "Module 07 Student Handout  -  Agent and Tool Security": modules/07-agent-tool-security/student-handout.md
+          - "Module 07 Slides  -  Agent and Tool Security": modules/07-agent-tool-security/slides.md
+          - "Module 07 Instructor Notes  -  Agent and Tool Security": modules/07-agent-tool-security/instructor-notes.md
+          - "Module 07 Deep Dive  -  Agent and Tool Security": modules/07-agent-tool-security/deep-dive.md
+          - "Attack Anatomy  -  Agent and Tool Security": modules/07-agent-tool-security/attack-anatomy.md
+          - "Controls and Remediations  -  Agent and Tool Security": modules/07-agent-tool-security/controls-and-remediations.md
+          - "Common Mistakes  -  Agent and Tool Security": modules/07-agent-tool-security/common-mistakes.md
+          - "Worked Example  -  Agent Tool Authorization and Memory Poisoning": modules/07-agent-tool-security/worked-example.md
+          - "Agent and Tool Security Checklist": modules/07-agent-tool-security/checklist.md
+          - "Module 07 Quiz  -  Agent and Tool Security": modules/07-agent-tool-security/quiz.md
+          - "Module 07 References  -  Agent and Tool Security": modules/07-agent-tool-security/references.md
+          - "BrokenPilot Memory Poisoning Validation": modules/07-agent-tool-security/brokenpilot-memory-validation.md
+          - "BrokenPilot Tool Authorization Validation": modules/07-agent-tool-security/brokenpilot-tool-validation.md
+          - "Exercise  -  Agent Control Design": modules/07-agent-tool-security/exercise-agent-control-design.md
+          - "Exercise  -  Executive Risk Memo for Agentic AI": modules/07-agent-tool-security/exercise-executive-risk-memo.md
+      - "Module 08  -  Secure MLOps and AI Supply Chain":
+          - "Module 08  -  Secure MLOps and AI Supply Chain": modules/08-secure-mlops-supply-chain/README.md
+          - "Module 08 Delivery Profile: Secure MLOps and AI Supply Chain": modules/08-secure-mlops-supply-chain/delivery-profile.md
+          - "Module 08 Student Handout  -  Secure MLOps and AI Supply Chain": modules/08-secure-mlops-supply-chain/student-handout.md
+          - "Module 08 Slides  -  Secure MLOps and AI Supply Chain": modules/08-secure-mlops-supply-chain/slides.md
+          - "Module 08 Instructor Notes  -  Secure MLOps and AI Supply Chain": modules/08-secure-mlops-supply-chain/instructor-notes.md
+          - "Secure MLOps Checklist": modules/08-secure-mlops-supply-chain/checklist.md
+          - "Module 08 Quiz  -  Secure MLOps and AI Supply Chain": modules/08-secure-mlops-supply-chain/quiz.md
+          - "Module 08 References  -  Secure MLOps and AI Supply Chain": modules/08-secure-mlops-supply-chain/references.md
+          - "Exercise  -  Executive Risk Memo for Secure MLOps and AI Supply Chain": modules/08-secure-mlops-supply-chain/exercise-executive-risk-memo.md
+          - "Exercise  -  Secure MLOps and AI Supply Chain Review": modules/08-secure-mlops-supply-chain/exercise-secure-mlops-review.md
+      - "Module 09  -  Privacy Attacks and Data Protection":
+          - "Module 09  -  Privacy Attacks and Data Protection": modules/09-privacy-attacks/README.md
+          - "Module 09 Delivery Profile: Privacy Attacks and Data Protection": modules/09-privacy-attacks/delivery-profile.md
+          - "Module 09 Student Handout  -  Privacy Attacks and Data Protection": modules/09-privacy-attacks/student-handout.md
+          - "Module 09 Slides  -  Privacy Attacks and Data Protection": modules/09-privacy-attacks/slides.md
+          - "Module 09 Instructor Notes  -  Privacy Attacks and Data Protection": modules/09-privacy-attacks/instructor-notes.md
+          - "Module 09 Checklist  -  AI Privacy and Data Protection": modules/09-privacy-attacks/checklist.md
+          - "Module 09 Quiz  -  Privacy Attacks and Data Protection": modules/09-privacy-attacks/quiz.md
+          - "Module 09 References  -  Privacy Attacks and Data Protection": modules/09-privacy-attacks/references.md
+          - "Exercise  -  AI Privacy Risk Assessment": modules/09-privacy-attacks/exercise-privacy-risk-assessment.md
+      - "Module 10  -  Adversarial ML and Robustness":
+          - "Module 10  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/README.md
+          - "Module 10 Delivery Profile: Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/delivery-profile.md
+          - "Module 10 Student Handout  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/student-handout.md
+          - "Module 10 Slides  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/slides.md
+          - "Module 10 Instructor Notes  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/instructor-notes.md
+          - "Module 10 Deep Dive  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/deep-dive.md
+          - "Attack Anatomy  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/attack-anatomy.md
+          - "Controls and Remediations  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/controls-and-remediations.md
+          - "Common Mistakes  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/common-mistakes.md
+          - "Worked Example  -  Adversarial Robustness Review for a Fraud Classifier": modules/10-adversarial-ml-robustness/worked-example.md
+          - "Module 10 Checklist  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/checklist.md
+          - "Module 10 Quiz  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/quiz.md
+          - "Module 10 References  -  Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/references.md
+          - "Deep Dive  -  Worked Examples for Adversarial ML and Robustness": modules/10-adversarial-ml-robustness/deep-dive-worked-examples.md
+          - "Exercise  -  Adversarial Test Plan": modules/10-adversarial-ml-robustness/exercise-adversarial-test-plan.md
+      - "Module 11  -  AI Red Team Methodology":
+          - "Module 11  -  AI Red Team Methodology": modules/11-ai-red-team-methodology/README.md
+          - "Module 11 Delivery Profile: AI Red Team Methodology": modules/11-ai-red-team-methodology/delivery-profile.md
+          - "Module 11 Student Handout  -  AI Red Team Methodology": modules/11-ai-red-team-methodology/student-handout.md
+          - "Module 11 Slides  -  AI Red Team Methodology": modules/11-ai-red-team-methodology/slides.md
+          - "Module 11 Instructor Notes  -  AI Red Team Methodology": modules/11-ai-red-team-methodology/instructor-notes.md
+          - "Module 11 Checklist  -  AI Red Team Methodology": modules/11-ai-red-team-methodology/checklist.md
+          - "Module 11 Quiz  -  AI Red Team Methodology": modules/11-ai-red-team-methodology/quiz.md
+          - "Module 11 References  -  AI Red Team Methodology": modules/11-ai-red-team-methodology/references.md
+          - "BrokenPilot Standalone Lab: AI Red Team Methodology": modules/11-ai-red-team-methodology/brokenpilot-standalone-lab.md
+          - "Exercise  -  AI Red Team Plan": modules/11-ai-red-team-methodology/exercise-ai-red-team-plan.md
+          - "Exercise  -  Rewrite a Weak AI Security Finding": modules/11-ai-red-team-methodology/exercise-finding-rewrite.md
+      - "Module 12  -  Capstone: BrokenPilot":
+          - "Module 12  -  Capstone: BrokenPilot": modules/12-capstone-brokenpilot/README.md
+          - "Module 12 Delivery Profile: BrokenPilot Capstone": modules/12-capstone-brokenpilot/delivery-profile.md
+          - "Module 12 Student Handout  -  BrokenPilot Capstone": modules/12-capstone-brokenpilot/student-handout.md
+          - "Module 12 Slides  -  BrokenPilot Capstone": modules/12-capstone-brokenpilot/slides.md
+          - "Module 12 Instructor Notes  -  BrokenPilot Capstone": modules/12-capstone-brokenpilot/instructor-notes.md
+          - "BrokenPilot Capstone Checklist": modules/12-capstone-brokenpilot/checklist.md
+          - "Module 12 Quiz  -  BrokenPilot Capstone": modules/12-capstone-brokenpilot/quiz.md
+          - "Module 12 References  -  BrokenPilot Capstone": modules/12-capstone-brokenpilot/references.md
+          - "BrokenPilot Capstone Runbook": modules/12-capstone-brokenpilot/capstone-runbook.md
+          - "Exercise  -  BrokenPilot Red Team Review and Mitigation Design": modules/12-capstone-brokenpilot/exercise-capstone-red-team-review.md
+          - "Exercise  -  BrokenPilot Threat Model": modules/12-capstone-brokenpilot/exercise-capstone-threat-model.md
+  - Templates:
+      - "Abuse Case Template": course-templates/abuse-case-template.md
+      - "Adversarial Test Plan Template": course-templates/adversarial-test-plan-template.md
+      - "Agent Action Approval Policy Template": course-templates/agent-action-approval-policy-template.md
+      - "Agent Control Design Template": course-templates/agent-control-design-template.md
+      - "AI Data Retention and Log Review Template": course-templates/ai-data-retention-log-review-template.md
+      - "AI Privacy Control Checklist": course-templates/ai-privacy-control-checklist.md
+      - "AI Red Team Attack Plan Template": course-templates/ai-red-team-attack-plan-template.md
+      - "AI Red Team Executive Readout Template": course-templates/ai-red-team-executive-readout-template.md
+      - "AI Red Team Report Template": course-templates/ai-red-team-report-template.md
+      - "AI Red Team Scope Template": course-templates/ai-red-team-scope-template.md
+      - "AI Architecture Review Template": course-templates/architecture-review-template.md
+      - "Architecture Risk Review Template": course-templates/architecture-risk-review-template.md
+      - "Attack Anatomy Template": course-templates/attack-anatomy-template.md
+      - "BrokenPilot Evidence Log Template": course-templates/brokenpilot-evidence-log-template.md
+      - "BrokenPilot Final Security Review Template": course-templates/brokenpilot-final-report-template.md
+      - "BrokenPilot Remediation Backlog Template": course-templates/brokenpilot-remediation-backlog-template.md
+      - "BrokenPilot Risk Register Template": course-templates/brokenpilot-risk-register-template.md
+      - "Concrete Control Implementation Template": course-templates/concrete-control-implementation-template.md
+      - "Controls and Remediations Template": course-templates/controls-and-remediations-template.md
+      - "Dataset Provenance Review Template": course-templates/dataset-provenance-review-template.md
+      - "Deep Dive Template": course-templates/deep-dive-template.md
+      - "Drift and Abuse Monitoring Template": course-templates/drift-abuse-monitoring-template.md
+      - "DVAIA Evidence Log Template": course-templates/dvaia-evidence-log-template.md
+      - "Executive Risk Memo Template": course-templates/executive-risk-memo-template.md
+      - "Finding Rewrite Template": course-templates/finding-rewrite-template.md
+      - "Lab Guide Template": course-templates/lab-guide-template.md
+      - "LLM Application Security Review Template": course-templates/llm-application-security-review-template.md
+      - "ML Attack Summary Template": course-templates/ml-attack-summary-template.md
+      - "ML-BOM Template": course-templates/ml-bom-template.md
+      - "ML System Architecture Review Template": course-templates/ml-system-architecture-review-template.md
+      - "Model Artifact Risk Review Template": course-templates/model-artifact-risk-review-template.md
+      - "Model Registry Access Control Template": course-templates/model-registry-access-control-template.md
+      - "Privacy Risk Assessment Template  -  AI Systems": course-templates/privacy-risk-assessment-template.md
+      - "RAG Threat Model Template": course-templates/rag-threat-model-template.md
+      - "Templates": course-templates/README.md
+      - "AI Red Team Report Template": course-templates/red-team-report-template.md
+      - "Residual Risk Template": course-templates/residual-risk-template.md
+      - "AI Risk Register Template": course-templates/risk-register-template.md
+      - "Robustness Evaluation Template": course-templates/robustness-evaluation-template.md
+      - "Secure MLOps Review Template": course-templates/secure-mlops-review-template.md
+      - "Threat Model Template": course-templates/threat-model-template.md
+      - "Tool Permission Matrix Template": course-templates/tool-permission-matrix-template.md
+      - "Vector Database Authorization Checklist": course-templates/vector-database-authorization-checklist.md
+  - Labs:
+      - "Labs": labs/README.md
+      - "Adversarial ML Labs":
+          - "Adversarial ML Labs": labs/adversarial-ml-labs/README.md
+          - "Lab  -  Evasion and Robustness Testing": labs/adversarial-ml-labs/evasion-robustness-lab.md
+          - "Tabletop Lab  -  Poisoning, Backdoors, and Feedback-Loop Abuse": labs/adversarial-ml-labs/poisoning-backdoor-tabletop.md
+      - "Agent Labs":
+          - "Agent Labs": labs/agent-labs/README.md
+          - "Lab  -  Agent Tool Misuse and Excessive Agency": labs/agent-labs/agent-tool-misuse-lab.md
+          - "Lab  -  Memory Poisoning and Approval Gates": labs/agent-labs/memory-poisoning-approval-gates-lab.md
+      - "AI Red Team Labs":
+          - "AI Red Team Labs": labs/ai-red-team-labs/README.md
+          - "Lab  -  AI Red Team Scoping Tabletop": labs/ai-red-team-labs/ai-red-team-scoping-tabletop.md
+          - "Lab  -  BrokenPilot Attack-Chain Red Team": labs/ai-red-team-labs/brokenpilot-attack-chain-lab.md
+      - "Architecture Risk Review Labs":
+          - "Lab  -  DocOps Assistant Architecture Risk Review": labs/architecture-risk-review-labs/docops-assistant-architecture-review.md
+      - "BrokenPilot Capstone":
+          - "BrokenPilot Capstone": labs/brokenpilot/README.md
+          - "BrokenPilot Minimal Runnable Prototype": labs/brokenpilot/prototype/README.md
+          - "BrokenPilot Prototype App": labs/brokenpilot/prototype-app/README.md
+          - "BrokenPilot Worked Examples": labs/brokenpilot/worked-examples/README.md
+          - "BrokenPilot Standalone Core Lab Path": labs/brokenpilot/STANDALONE_CORE_LAB_PATH.md
+          - "BrokenPilot Scenario": labs/brokenpilot/scenario.md
+          - "BrokenPilot Student Brief": labs/brokenpilot/student-brief.md
+          - "BrokenPilot Architecture": labs/brokenpilot/architecture.md
+          - "BrokenPilot Prototype Architecture": labs/brokenpilot/prototype/architecture.md
+          - "BrokenPilot Data Model": labs/brokenpilot/data-model.md
+          - "BrokenPilot Tool Inventory": labs/brokenpilot/tools.md
+          - "BrokenPilot Roles and Personas": labs/brokenpilot/roles.md
+          - "BrokenPilot Evidence Log Guide": labs/brokenpilot/evidence-log-guide.md
+          - "BrokenPilot Remediation Backlog Guide": labs/brokenpilot/remediation-backlog-guide.md
+          - "BrokenPilot Final Presentation Guide": labs/brokenpilot/final-presentation-guide.md
+          - "BrokenPilot Grading Rubric": labs/brokenpilot/grading-rubric.md
+          - "BrokenPilot Capstone Assessment Scope": labs/brokenpilot/capstone-assessment-scope.md
+          - "BrokenPilot Module Mapping": labs/brokenpilot/module-mapping.md
+          - "BrokenPilot Secure Reference Architecture": labs/brokenpilot/secure-reference-architecture.md
+          - "BrokenPilot Implementation Notes": labs/brokenpilot/implementation-notes.md
+          - "BrokenPilot Instructor Solution Guide": labs/brokenpilot/instructor-solution.md
+          - "BrokenPilot Attack Paths": labs/brokenpilot/attack-paths.md
+          - "BrokenPilot Minimal Runnable Prototype Plan": labs/brokenpilot/prototype-plan.md
+          - "BrokenPilot Intentional Vulnerabilities": labs/brokenpilot/vulnerabilities.md
+          - "BrokenPilot Prototype API Contract": labs/brokenpilot/prototype/api-contract.md
+          - "BrokenPilot Prototype Build Backlog": labs/brokenpilot/prototype/build-backlog.md
+          - "BrokenPilot Control Toggle Plan": labs/brokenpilot/prototype/control-toggle-plan.md
+          - "BrokenPilot Docker Compose Plan": labs/brokenpilot/prototype/docker-compose-plan.md
+          - "BrokenPilot Fake Data Plan": labs/brokenpilot/prototype/fake-data-plan.md
+          - "BrokenPilot Prototype Instructor Runbook": labs/brokenpilot/prototype/instructor-runbook.md
+          - "BrokenPilot Mock LLM Mode": labs/brokenpilot/prototype/mock-llm-mode.md
+          - "BrokenPilot Prototype Safety Notes": labs/brokenpilot/prototype/security-and-safety.md
+          - "BrokenPilot Prototype Student Lab Flow": labs/brokenpilot/prototype/student-lab-flow.md
+          - "BrokenPilot Vulnerability Implementation Plan": labs/brokenpilot/prototype/vulnerability-implementation-plan.md
+          - "BrokenPilot Prototype Lab Guide": labs/brokenpilot/prototype-app/LAB_GUIDE.md
+          - "BrokenPilot Memory Poisoning Lab": labs/brokenpilot/prototype-app/MEMORY_POISONING_LAB.md
+          - "BrokenPilot Tool Calling Lab": labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md
+          - "BrokenPilot Finding Rewrite  -  Before and After": labs/brokenpilot/worked-examples/finding-rewrite-before-after.md
+          - "Gold-Standard BrokenPilot Final Report Example": labs/brokenpilot/worked-examples/gold-standard-final-report-example.md
+          - "Instructor Notes  -  BrokenPilot Final Report Examples": labs/brokenpilot/worked-examples/instructor-notes-final-report-examples.md
+          - "Strong Example  -  BrokenPilot Evidence Log": labs/brokenpilot/worked-examples/strong-evidence-log-example.md
+          - "Strong Executive Readout Example  -  BrokenPilot": labs/brokenpilot/worked-examples/strong-executive-readout-example.md
+          - "Strong Example  -  Executive Risk Memo": labs/brokenpilot/worked-examples/strong-executive-risk-memo-example.md
+          - "Strong Example  -  BrokenPilot Remediation Backlog": labs/brokenpilot/worked-examples/strong-remediation-backlog-example.md
+          - "Strong Risk Register Example  -  BrokenPilot": labs/brokenpilot/worked-examples/strong-risk-register-example.md
+          - "Strong Threat Model Example  -  BrokenPilot": labs/brokenpilot/worked-examples/strong-threat-model-example.md
+          - "Strong Example  -  BrokenPilot Tool Permission Matrix": labs/brokenpilot/worked-examples/strong-tool-permission-matrix-example.md
+          - "Weak Example  -  BrokenPilot Evidence Log": labs/brokenpilot/worked-examples/weak-evidence-log-example.md
+          - "Weak Executive Readout Example  -  BrokenPilot": labs/brokenpilot/worked-examples/weak-executive-readout-example.md
+          - "Weak Example  -  Executive Risk Memo": labs/brokenpilot/worked-examples/weak-executive-risk-memo-example.md
+          - "Weak BrokenPilot Final Report Example": labs/brokenpilot/worked-examples/weak-final-report-example.md
+          - "Weak Example  -  BrokenPilot Remediation Backlog": labs/brokenpilot/worked-examples/weak-remediation-backlog-example.md
+          - "Weak Risk Register Example  -  BrokenPilot": labs/brokenpilot/worked-examples/weak-risk-register-example.md
+          - "Weak Threat Model Example  -  BrokenPilot": labs/brokenpilot/worked-examples/weak-threat-model-example.md
+          - "Weak Example  -  BrokenPilot Tool Permission Matrix": labs/brokenpilot/worked-examples/weak-tool-permission-matrix-example.md
+      - "DVAIA Lab Guides":
+          - "DVAIA Lab Guides": labs/dvaia-guides/README.md
+          - "DVAIA Course Mapping": labs/dvaia-guides/dvaia-course-mapping.md
+          - "Lab  -  LLM Application Security with DVAIA": labs/dvaia-guides/llm-application-security-lab.md
+          - "Module 05 Walkthrough  -  Direct Prompt Injection in DVAIA": labs/dvaia-guides/module-05-direct-prompt-injection-walkthrough.md
+          - "Module 06 Walkthrough  -  Indirect Prompt Injection and RAG Trust Boundaries in DVAIA": labs/dvaia-guides/module-06-rag-indirect-prompt-injection-walkthrough.md
+          - "Module 07 Walkthrough  -  Agent and Tool Behavior in DVAIA": labs/dvaia-guides/module-07-agent-tool-behavior-walkthrough.md
+          - "Module 11 Mini-Assessment  -  DVAIA AI Red Team Workflow": labs/dvaia-guides/module-11-dvaia-red-team-mini-assessment.md
+          - "DVAIA Validated Lab Results": labs/dvaia-guides/validated-lab-results.md
+      - "MLOps Supply Chain Labs":
+          - "MLOps Supply Chain Labs": labs/mlops-supply-chain-labs/README.md
+          - "Lab  -  Broken ML Pipeline Supply Chain Review": labs/mlops-supply-chain-labs/broken-ml-pipeline-lab.md
+          - "Lab  -  Model Artifact Provenance and Registry Review": labs/mlops-supply-chain-labs/model-artifact-provenance-lab.md
+      - "Privacy Labs":
+          - "Privacy Labs": labs/privacy-labs/README.md
+          - "Lab  -  Membership Inference and Model Inversion Tabletop": labs/privacy-labs/membership-inference-model-inversion-tabletop.md
+          - "Lab  -  Privacy Leakage and Cross-Tenant RAG": labs/privacy-labs/privacy-leakage-cross-tenant-rag-lab.md
+      - "RAG Labs":
+          - "RAG Labs": labs/rag-labs/README.md
+          - "Lab  -  RAG Indirect Prompt Injection and Retrieval Authorization": labs/rag-labs/rag-indirect-prompt-injection-lab.md
+      - "Toy ML Attack Labs":
+          - "Toy ML Attack Labs": labs/toy-ml-attacks/README.md
+          - "Lab  -  Classical ML Attack Scenarios": labs/toy-ml-attacks/classical-ml-attack-lab.md
+  - Lab Setup:
+      - "BrokenPilot Standalone Hands-On Path": lab-setup/brokenpilot-standalone-path.md
+      - "DVAIA Fallback Decision Guide": lab-setup/dvaia-fallback-decision-guide.md
+      - "DVAIA Module Mapping": lab-setup/dvaia-module-mapping.md
+      - "DVAIA Local Validation": lab-setup/dvaia-validation.md
+      - "Next Step: Turn Validated DVAIA Labs into Guided Walkthroughs": lab-setup/dvaia-walkthrough-authoring-plan.md
+      - "DVAIA Setup": lab-setup/dvaia.md
+      - "GitHub Pages Deployment": lab-setup/github-pages.md
+      - "Local Website Preview": lab-setup/local-preview.md
+      - "Lab Setup Overview": lab-setup/overview.md
+  - Assessments:
+      - "Assessments": assessments/README.md
+      - "40-Hour Course Assessment Plan": assessments/40-hour-course-assessment-plan.md
+      - "40-Hour Deliverables Map": assessments/40-hour-deliverables-map.md
+      - "AI Red Team Grading Rubric": assessments/ai-red-team-grading.md
+      - "BrokenPilot Capstone Final Rubric": assessments/brokenpilot-capstone-final-rubric.md
+      - "BrokenPilot Capstone Grading": assessments/brokenpilot-grading.md
+      - "Capstone Grading Rubric": assessments/capstone-grading.md
+      - "Concrete Controls Assessment Model": assessments/concrete-controls-assessment.md
+      - "Assessment  -  Executive Risk Memo Rubric": assessments/executive-risk-memo-rubric.md
+      - "Finding Quality Rubric": assessments/finding-quality-rubric.md
+      - "Assessment Exercise  -  Rewrite a Weak Finding": assessments/finding-rewrite-exercise.md
+      - "Grading Calibration Exercise": assessments/grading-calibration-exercise.md
+      - "Quiz Bank": assessments/quiz-bank.md
+      - "Standalone Hands-On Path Rubric": assessments/standalone-hands-on-path-rubric.md
+  - Instructor:
+      - "Instructor Materials": instructor/README.md
+      - "40-Hour Delivery Plan": instructor/40-hour-delivery-plan.md
+      - "40-Hour Module Delivery Profiles": instructor/40-hour-module-delivery-profiles.md
+      - "BrokenPilot Standalone Facilitation Guide": instructor/brokenpilot-standalone-facilitation-guide.md
+      - "Delivery Formats": instructor/delivery-formats.md
+      - "Delivery Guide": instructor/delivery-guide.md
+      - "Instructor Guide  -  Executive Communication in AI Security": instructor/executive-communication-guide.md
+      - "Facilitation Notes": instructor/facilitation-notes.md
+      - "Instructor Guide  -  Finding Rewrite Exercise": instructor/finding-rewrite-facilitation-guide.md
+      - "Instructor Grading Calibration Guide": instructor/grading-calibration-guide.md
+      - "Module Cut and Expand Guide": instructor/module-cut-expand-guide.md
+      - "One-Week Course Runbook": instructor/one-week-course-runbook.md
+      - "Timing Guide": instructor/timing-guide.md
+  - Release Notes:
+      - "Release Note: 40-Hour Delivery Profiles": release-notes/v1.1-dev-40-hour-delivery-profiles.md
+      - "v1.1-dev BrokenPilot Standalone Path": release-notes/v1.1-dev-brokenpilot-standalone-path.md
+      - "v1.1-dev round 2 release-readiness fixes": release-notes/v1.1-dev-round2-release-readiness.md
+  - Project Meta:
+      - "Source of Truth Policy": SOURCE_OF_TRUTH.md
+      - "Content Strategy  -  Reading-First, Lab-Supported Learning": CONTENT_STRATEGY.md
+      - "Quality Improvement Plan": QUALITY_IMPROVEMENT_PLAN.md
+      - "Contributing": CONTRIBUTING.md
+      - "Code of Conduct": CODE_OF_CONDUCT.md
       - "License": LICENSE.md
       - "Content License": LICENSE-CONTENT.md
       - "Code License": LICENSE-CODE.md
       - "Commercial Licensing": COMMERCIAL-LICENSE.md
-      - "Security Policy": SECURITY.md
-      - "Contributing": CONTRIBUTING.md
-      - "v1.0.0 Release Notes": releases/v1.0.0.md
-      - "v1.1.0 Release Notes": releases/v1.1.0.md
+
+not_in_nav: |
+  /README.md
+  /modules/module-template.md

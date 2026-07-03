@@ -148,16 +148,33 @@ Useful controls include:
 - Integrity checks
 - Runtime monitoring
 
-## Suggested toy-code extension
+## Current self-study mode
 
-In a local notebook, students can implement a tiny classifier using a small synthetic dataset.
+Until the dedicated toy classifier app is added, this lab is a tabletop exercise.
 
-Suggested safe exercises:
+Do not tell students that a dataset or classifier is already provided. Students may either stay in tabletop mode or create a small synthetic dataset with this schema:
 
-- Train a spam/not-spam classifier on toy messages.
-- Change a few words and observe prediction changes.
-- Flip a small number of labels and observe behavior changes.
-- Compare predictions before and after poisoning.
+```json
+{
+  "id": "msg-001",
+  "text": "fake training message using synthetic words only",
+  "label": "spam"
+}
+```
+
+Allowed labels for self-created data:
+
+- `spam`
+- `not_spam`
+
+Safe exercises:
+
+- train a local classifier on synthetic messages;
+- change a few synthetic words and observe prediction changes;
+- flip a small number of labels and observe behavior changes;
+- compare predictions before and after poisoning.
+
+The planned `labs/toy-ml-attacks/toy-classifier-app/` will replace this section with concrete scripts and a shipped dataset.
 
 Keep this local and synthetic. The goal is conceptual understanding, not weaponization.
 

@@ -8,7 +8,28 @@ Demonstrate how a model-backed control can fail when an attacker changes the rep
 
 A toy classifier identifies fake phishing messages as low, medium, or high risk.
 
-Students receive a small fake dataset and a set of example messages. The objective is not to attack a real email system. The objective is to understand how small controlled input changes can produce different model outcomes.
+For now, students create a small fake dataset from the schema below or use the dedicated toy-classifier dataset once `labs/toy-ml-attacks/toy-classifier-app/data/messages.json` is added. The objective is not to attack a real email system. The objective is to understand how small controlled input changes can produce different model outcomes.
+
+
+## Synthetic data schema
+
+Until the toy-classifier app is added, use fake local records with this schema:
+
+```json
+{
+  "id": "msg-001",
+  "text": "synthetic phishing-like message for training only",
+  "label": "high"
+}
+```
+
+Allowed labels:
+
+- `low`
+- `medium`
+- `high`
+
+Do not use real phishing emails, real customer data, or real URLs.
 
 ## Architecture
 

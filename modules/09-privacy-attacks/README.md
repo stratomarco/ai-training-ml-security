@@ -112,6 +112,7 @@ Students perform a privacy review of a fake HR or customer-support AI assistant.
 
 See:
 
+- `labs/privacy-labs/brokenpilot-cross-tenant-leakage-lab.md`
 - `labs/privacy-labs/privacy-leakage-cross-tenant-rag-lab.md`
 - `labs/privacy-labs/membership-inference-model-inversion-tabletop.md`
 

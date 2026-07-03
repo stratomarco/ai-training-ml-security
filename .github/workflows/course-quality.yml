@@ -1,0 +1,60 @@
+name: Course Quality Checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  website:
+    name: Strict MkDocs site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then python -m pip install -r requirements.txt; fi
+          python -m pip install mkdocs-material
+
+      - name: Generate MkDocs source
+        run: python scripts/sync_mkdocs_content.py
+
+      - name: Run repository guards
+        run: |
+          python scripts/check_repo_structure.py
+          if [ -f scripts/check_delivery_profiles.py ]; then python scripts/check_delivery_profiles.py; fi
+          if [ -f scripts/check_standalone_path.py ]; then python scripts/check_standalone_path.py; fi
+          if [ -f scripts/check_round2_release_readiness.py ]; then python scripts/check_round2_release_readiness.py; fi
+
+      - name: Build MkDocs site strictly
+        run: mkdocs build --strict
+
+  brokenpilot:
+    name: BrokenPilot pytest
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: labs/brokenpilot/prototype-app
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install BrokenPilot dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Run BrokenPilot tests
+        run: pytest

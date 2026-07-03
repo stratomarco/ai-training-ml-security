@@ -164,3 +164,33 @@ def test_memory_isolation_blocks_cross_tenant_global_memory(monkeypatch):
     assert body["decision_source"] == "user_goal"
     assert body["agent_decision"] == "no_tool_call"
     monkeypatch.delenv("ENABLE_MEMORY_ISOLATION", raising=False)
+
+
+def test_privacy_cross_tenant_retrieval_leaks_when_authz_disabled():
+    response = client.post(
+        "/retrieve",
+        json={"user_id": "chris", "query": "payment credential token alpha", "top_k": 5},
+    )
+    assert response.status_code == 200
+    body = response.json()
+    doc_ids = [doc["id"] for doc in body["documents"]]
+    assert "DOC-002" in doc_ids
+    leaked_doc = next(doc for doc in body["documents"] if doc["id"] == "DOC-002")
+    assert leaked_doc["tenant"] == "alpha"
+    assert leaked_doc["training_secret"] == "FAKE-ALPHA-PAYMENT-TOKEN-DO-NOT-USE"
+
+
+def test_privacy_cross_tenant_retrieval_blocks_when_authz_enabled(monkeypatch):
+    monkeypatch.setenv("ENABLE_RETRIEVAL_AUTHZ", "true")
+    response = client.post(
+        "/retrieve",
+        json={"user_id": "chris", "query": "payment credential token alpha oncall pager", "top_k": 5},
+    )
+    assert response.status_code == 200
+    body = response.json()
+    doc_ids = [doc["id"] for doc in body["documents"]]
+    assert "DOC-002" not in doc_ids
+    assert "DOC-006" not in doc_ids
+    assert all(doc.get("tenant") in {"beta", "global"} for doc in body["documents"])
+    monkeypatch.delenv("ENABLE_RETRIEVAL_AUTHZ", raising=False)
+

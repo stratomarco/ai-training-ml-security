@@ -11,7 +11,7 @@ Users belong to tenants. Tickets also belong to tenants.
 | User | Tenant | Role |
 |---|---|---|
 | Alice | alpha | ops |
-| Eve | beta | ops |
+| Eve | beta | contractor |
 
 | Ticket | Tenant | Description |
 |---|---|---|
