@@ -139,3 +139,15 @@ A strong student submission explains why the system failed, where the control sh
 ## Finding rewrite practice
 
 This module includes [`exercise-finding-rewrite.md`](exercise-finding-rewrite.md), a short exercise where students rewrite a weak AI security finding into a decision-grade finding with evidence, root cause, implementable control, validation, and residual risk. Use it before the BrokenPilot capstone to improve report quality.
+
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 11 uses BrokenPilot for an observable attack-chain path and uses tabletop exercises for scoping, rules of engagement, reporting, and stakeholder communication.
+
+Primary graded deliverable: A red-team finding or scope package with evidence, root cause, impact, control, validation, residual risk, and clear leadership summary.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->

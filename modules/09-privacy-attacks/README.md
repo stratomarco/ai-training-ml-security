@@ -143,3 +143,15 @@ Students should leave understanding that privacy in AI systems is a system prope
 
 Module 09 has two lab styles: BrokenPilot cross-tenant leakage is runnable and observable; membership inference and model inversion is a reasoning lab and should be graded with strong and weak anchors.
 <!-- LAB_MODALITY_PRIVACY:END -->
+
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 09 combines a runnable BrokenPilot privacy leakage lab with reasoning labs for privacy attacks that should not be forced into a toy web app.
+
+Primary graded deliverable: A privacy leakage review with evidence, impacted data class, violated boundary, remediation, validation, and residual logging/privacy risk.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->

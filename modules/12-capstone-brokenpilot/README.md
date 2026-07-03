@@ -166,3 +166,15 @@ See [`references.md`](references.md) and the root [`../../references.md`](../../
 ## Assessment scope note
 
 The runnable BrokenPilot MVP directly demonstrates Module 05, Module 06, Module 07, and Module 11 style findings. Module 08, Module 09, and Module 10 risks are assessed through tabletop analysis, architecture review, written deliverables, and discussion unless a future prototype increment implements those behaviors. See `labs/brokenpilot/capstone-assessment-scope.md`.
+
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 12 uses BrokenPilot as the capstone target for LLM, RAG, agent, privacy leakage, and red-team reporting. MLOps and adversarial ML material may appear as supporting reasoning evidence, not as BrokenPilot vulnerabilities.
+
+Primary graded deliverable: A final BrokenPilot report and presentation with validated findings, remediation backlog, residual risk, and a leadership-ready recommendation.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->

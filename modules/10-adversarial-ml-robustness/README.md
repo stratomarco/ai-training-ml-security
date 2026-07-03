@@ -162,3 +162,15 @@ Use `labs/toy-ml-attacks/toy-classifier-app/` for the observable evasion and poi
 
 Module 10 has two lab styles: evasion and output integrity are observable through the toy-classifier app; poisoning and backdoor analysis may remain tabletop when the learning goal is risk review and release decision quality.
 <!-- LAB_MODALITY_ADVERSARIAL:END -->
+
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 10 uses the toy-classifier app for observable classical ML attacks. BrokenPilot is not the right target for model evasion, poisoning, extraction, or threshold integrity.
+
+Primary graded deliverable: A robustness review explaining whether the classifier can safely act as a hard authorization gate, what fallback is required, and how the control should be validated.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->

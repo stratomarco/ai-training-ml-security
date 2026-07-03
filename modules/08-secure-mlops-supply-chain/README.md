@@ -195,3 +195,15 @@ This module now includes `mlops-evidence-pack-review.md`, a concrete review lab 
 
 The MLOps supply-chain labs are reasoning labs. They should be graded on review quality, evidence, promotion controls, artifact integrity, validation, and residual risk. The evidence-pack review lab is the concrete artifact path for this module.
 <!-- LAB_MODALITY_MLOPS:END -->
+
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 08 is intentionally a reasoning and evidence-review module. It should not be forced into BrokenPilot. Students inspect realistic supply-chain evidence and produce a concrete promotion-control review.
+
+Primary graded deliverable: An MLOps supply-chain review memo with evidence, risk rating, required controls, validation checks, and a launch/pilot/delay recommendation.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->

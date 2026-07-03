@@ -183,3 +183,15 @@ The runnable BrokenPilot prototype now includes a memory poisoning scenario for 
 - `brokenpilot-memory-validation.md` for the memory poisoning control-validation flow
 
 Students should use these as concrete examples of the course principle that agent memory is not automatically trusted authority.
+
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 07 remains the reference lab standard. BrokenPilot demonstrates the tool confused-deputy problem, tool authorization, approval gates, audit logging, and defense in depth with memory poisoning.
+
+Primary graded deliverable: A tool permission matrix or tool-control design with authorization rules, approval rules, audit fields, and validation steps.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->

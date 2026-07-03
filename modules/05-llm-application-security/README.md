@@ -181,3 +181,15 @@ Use `brokenpilot-direct-injection-output-lab.md` to observe two Module 05 failur
 - insecure output handling when model-derived text reaches an HTML sink without encoding.
 
 This lab is course-owned and deterministic. DVAIA remains useful as an optional external comparison, but this path keeps the core Module 05 hands-on work runnable without external dependencies.
+
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 05 uses BrokenPilot for direct prompt injection, indirect prompt injection, and insecure output handling. DVAIA remains an optional external comparison lab, not a survival dependency.
+
+Primary graded deliverable: A Module 05 control note that identifies the trust boundary, shows the vulnerable and controlled behavior, recommends an architectural control, and states residual risk.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->
