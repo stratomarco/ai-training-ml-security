@@ -1,0 +1,22 @@
+{
+  "bucket": "shared-ml-training-bucket",
+  "purpose": "synthetic training-only evidence pack",
+  "write_principals": [
+    "shared-training-role",
+    "notebook-users",
+    "ml-platform-ci"
+  ],
+  "read_principals": [
+    "analytics-readonly",
+    "notebook-users",
+    "ml-platform-ci"
+  ],
+  "versioning_enabled": false,
+  "object_lock_enabled": false,
+  "public_access_block": true,
+  "risk_notes": [
+    "Multiple identities can overwrite model artifacts.",
+    "No object lock or immutable artifact path is enforced.",
+    "The model registry points at models/latest/model.pkl instead of a content-addressed artifact."
+  ]
+}

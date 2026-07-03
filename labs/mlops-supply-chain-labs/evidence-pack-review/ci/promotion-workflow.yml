@@ -1,0 +1,22 @@
+name: unsafe-model-promotion-demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check candidate metric
+        run: |
+          echo "accuracy=0.941"
+          echo "Promoting because accuracy is above threshold"
+
+      - name: Promote model
+        run: |
+          echo "Copying model.pkl to production-candidate registry"
+          echo "No artifact signature check"
+          echo "No dataset manifest check"
+          echo "No approval check"

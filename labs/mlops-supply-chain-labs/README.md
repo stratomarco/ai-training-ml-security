@@ -27,3 +27,7 @@ Students should learn to review:
 - monitoring and feedback loops.
 
 The goal is engineering judgment, not tool trivia.
+
+## MLOps Evidence Pack Review Lab
+
+Use `mlops-evidence-pack-review-lab.md` for the concrete Module 08 supply-chain review exercise. The evidence pack is intentionally static: students review notebook, dependency, artifact, registry, storage, and promotion evidence instead of running a fake pipeline.

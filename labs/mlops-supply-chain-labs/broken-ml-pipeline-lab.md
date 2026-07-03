@@ -164,3 +164,7 @@ Strong answers should identify:
 3. Which control best balances security and developer velocity?
 4. Which controls belong in CI/CD and which require human review?
 5. What evidence should leadership require before allowing production deployment?
+
+## Evidence-pack option
+
+This tabletop can be run with the static evidence pack in `evidence-pack-review/`. That pack gives students concrete artifacts to inspect: notebook, dependency file, registry metadata, storage policy, promotion workflow, and artifact hash evidence. The intended learning outcome is a review decision and remediation backlog, not successful execution of a toy pipeline.

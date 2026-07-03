@@ -185,3 +185,7 @@ Students produce a **Secure MLOps review** containing:
 ## Executive communication exercise
 
 This module now includes a one-page executive risk memo exercise. Students must translate secure MLOps and AI supply-chain findings into a launch, limited-pilot, or delay recommendation.
+
+## MLOps Evidence Pack Review
+
+This module now includes `mlops-evidence-pack-review.md`, a concrete review lab backed by the static evidence pack in `labs/mlops-supply-chain-labs/evidence-pack-review/`.
