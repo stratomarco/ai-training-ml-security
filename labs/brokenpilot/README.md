@@ -165,3 +165,7 @@ Use these examples to show that the expected output is not just exploit discover
 ## Assessment scope note
 
 The runnable BrokenPilot MVP directly demonstrates Module 05, Module 06, Module 07, and Module 11 style findings. Module 08, Module 09, and Module 10 risks are assessed through tabletop analysis, architecture review, written deliverables, and discussion unless a future prototype increment implements those behaviors. See `labs/brokenpilot/capstone-assessment-scope.md`.
+
+## Current capstone final report path
+
+Use [CAPSTONE_FINAL_REPORT_CURRENT_PATH.md](CAPSTONE_FINAL_REPORT_CURRENT_PATH.md) for the latest capstone evidence path. It reflects direct injection, output handling, privacy leakage, tool authorization, and memory poisoning.

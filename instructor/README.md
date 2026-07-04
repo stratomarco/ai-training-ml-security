@@ -8,4 +8,6 @@
 Use `40-hour-student-experience-runbook.md` to run the daily course rhythm and `lab-troubleshooting-and-reset-guide.md` to keep lab support manageable.
 <!-- STUDENT_EXPERIENCE_PASS:END -->
 
+## Current BrokenPilot capstone debrief
 
+- [Current BrokenPilot Capstone Debrief Guide](current-brokenpilot-capstone-debrief-guide.md)

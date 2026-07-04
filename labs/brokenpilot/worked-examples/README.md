@@ -88,3 +88,9 @@ The complete report examples combine threat modeling, evidence, remediation, res
 ## Finding rewrite example
 
 Use [`finding-rewrite-before-after.md`](finding-rewrite-before-after.md) to show the difference between a vague AI security observation and a decision-grade security finding.
+
+## Current final report anchor
+
+- [Current Complete BrokenPilot Final Report](current-complete-final-report.md)
+- [Current Final Report Evidence Map](current-final-report-evidence-map.md)
+- [Current Final Report Review Guide](current-final-report-review-guide.md)

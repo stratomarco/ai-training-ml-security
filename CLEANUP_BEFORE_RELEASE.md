@@ -11,3 +11,7 @@ Before public release, review the Modules 08 to 11 depth-pass files for voice co
 ## Module depth prose pass 01 to 04 cleanup note
 
 Before release, review the new foundation prose for voice consistency with the rest of the course. Remove temporary apply/check scripts once the content is committed and stable.
+
+## Current BrokenPilot final report temporary scripts
+
+Before release, remove or consolidate temporary apply/check scripts for the current BrokenPilot final report package. Keep the durable content, rubric, template, and worked example.

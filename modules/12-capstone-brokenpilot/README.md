@@ -13,3 +13,7 @@ Use `capstone-checkpoints.md` so students build the final report progressively i
 ## Student reading guide
 
 Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.
+
+## Current final report path
+
+Use [final-report-current-path.md](final-report-current-path.md) when preparing or grading the capstone report. It is aligned to the latest BrokenPilot labs and the toy-classifier/MLOps split.
