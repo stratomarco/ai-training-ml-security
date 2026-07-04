@@ -1,10 +1,10 @@
-# Module Depth Prose Pass 01 to 04
+# Course Flow Review Pass Package
 
-This package strengthens Modules 01 to 04 with decision-driven study material, worked examples, common mistakes, controls, and instructor/assessment support. It intentionally does not modify MkDocs navigation or CI.
-
-Apply from the repository root:
+Apply with:
 
 ```powershell
-python scripts/apply_module_depth_prose_pass_01_04.py
-python scripts/check_module_depth_prose_pass_01_04.py
+python scripts\apply_course_flow_review_pass.py
+python scripts\check_course_flow_review_pass.py
 ```
+
+This package adds end-to-end course flow review material and does not touch MkDocs strict mode.
