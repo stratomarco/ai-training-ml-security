@@ -29,3 +29,9 @@ Before final release, review the MLOps model answer files for tone consistency w
 ## Final content audit reminder
 
 Before cleanup, run the final content audit and 40-hour dry-run review. Do not start repository cleanup until the content path is stable enough that only navigation, CI, stale scripts, naming, and generated-looking phrasing remain.
+
+<!-- final-voice-cohesion-cleanup-reminder -->
+
+## Final voice and cohesion cleanup reminder
+
+Before release, use COURSE_VOICE_AND_COHESION_REVIEW.md and instructor/final-voice-cohesion-review-guide.md to remove temporary scaffolding, reduce repeated generated-looking phrasing, and make the course read like a hand-curated professional training.

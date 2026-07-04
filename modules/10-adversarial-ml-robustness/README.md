@@ -21,3 +21,9 @@ Use these pages with the module lab path and the 40-hour checkpoint materials.
 
 Use `toy-classifier-debrief.md` to frame evasion, poisoning, extraction, and output-integrity behavior around the hard-gate deployment decision.
 <!-- toy-classifier-debrief-link:end -->
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).

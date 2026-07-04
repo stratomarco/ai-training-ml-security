@@ -364,3 +364,9 @@ See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` 
 ## Student reading guide
 
 Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).

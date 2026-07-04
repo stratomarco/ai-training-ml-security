@@ -15,3 +15,9 @@ This module now includes a strengthened study path:
 Use these pages with the module lab path and the 40-hour checkpoint materials.
 
 <!-- module-depth-prose-pass-08-11:end -->
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).

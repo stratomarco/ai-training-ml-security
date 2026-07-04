@@ -185,3 +185,9 @@ Use these pages to connect the module reading to later labs and graded deliverab
 - [Controls and Remediations](controls-and-remediations.md)
 - [Common Mistakes](common-mistakes.md)
 - [Worked Example](worked-example.md)
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).

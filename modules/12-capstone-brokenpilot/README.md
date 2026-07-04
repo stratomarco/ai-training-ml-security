@@ -17,3 +17,9 @@ Before starting the lab or exercise, read [student-reading-guide.md](student-rea
 ## Current final report path
 
 Use [final-report-current-path.md](final-report-current-path.md) when preparing or grading the capstone report. It is aligned to the latest BrokenPilot labs and the toy-classifier/MLOps split.
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).

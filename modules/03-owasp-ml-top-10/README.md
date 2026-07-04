@@ -206,3 +206,9 @@ Use these pages to connect the module reading to later labs and graded deliverab
 
 Use `toy-classifier-debrief.md` to connect the toy-classifier scripts to OWASP ML risk categories and finding quality.
 <!-- toy-classifier-debrief-link:end -->
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).

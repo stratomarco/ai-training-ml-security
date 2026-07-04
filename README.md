@@ -190,3 +190,9 @@ The recommended instructor-led version is a **40-hour / one-week professional tr
 ## Study flow note
 
 Each module includes a `student-reading-guide.md` file. Use it before the deep dive or lab to understand the core security decision, the lab modality, the expected deliverable, and the exit ticket for the module.
+
+<!-- course-storyline-link -->
+
+## Course storyline
+
+The course is organized as one security engineering journey: map the AI system, identify trust boundaries, observe failure modes, design enforceable controls, validate those controls, document validation evidence, and communicate residual risk. See [COURSE_STORYLINE.md](COURSE_STORYLINE.md) and [COURSE_VOICE_AND_COHESION_REVIEW.md](COURSE_VOICE_AND_COHESION_REVIEW.md).
