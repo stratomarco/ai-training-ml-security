@@ -1,30 +1,13 @@
-# DVAIA Lab Guides
 
-DVAIA is used as a validated external lab dependency for selected hands-on exercises in this course.
+# DVAIA guides: optional appendix
 
-Validation baseline:
+DVAIA is useful supplementary material, but it is no longer the critical path for the 40-hour course.
 
-- DVAIA commit: `23c115252554caa445c0e6ba28641c1110c118e1`
-- Run mode: Local mode
-- Backend: Local / Ollama
-- URL: `http://127.0.0.1:5000`
-- Docker: `Docker version 29.5.3, build d1c06ef`
-- Docker Compose: `Docker Compose version v5.1.4`
+The primary runnable target for Modules 05, 06, 07, 09, 11, and 12 is BrokenPilot because it is local, deterministic, course-owned, and covered by tests. DVAIA may be used as an optional comparison lab when the pinned external revision is available and the instructor has time to support it.
 
-## Available guides
+Use this folder only as an appendix:
 
-| Guide | Module | Purpose |
-|---|---|---|
-| `llm-application-security-lab.md` | Module 05 | Original DVAIA-style LLM application security lab guide |
-| `module-05-direct-prompt-injection-walkthrough.md` | Module 05 | Validated direct prompt injection walkthrough |
-| `module-06-rag-indirect-prompt-injection-walkthrough.md` | Module 06 | Validated indirect prompt injection / RAG trust-boundary walkthrough |
-| `module-07-agent-tool-behavior-walkthrough.md` | Module 07 | Agent/tool behavior walkthrough or hybrid control-design exercise |
-| `module-11-dvaia-red-team-mini-assessment.md` | Module 11 | Mini red-team assessment using DVAIA as the local target |
-| `validated-lab-results.md` | Modules 05–07, 11 | Local validation summary |
-| `dvaia-course-mapping.md` | Multiple | Course mapping to DVAIA-backed exercises |
-
-## Important note
-
-The course does not vendor DVAIA. Students and instructors should use the upstream DVAIA project and run it locally.
-
-The course provides the learning path, lab framing, evidence expectations, mitigation guidance, and assessment structure.
+- Do not grade DVAIA as the main lab path.
+- Do not make course completion depend on DVAIA availability.
+- If DVAIA behavior differs from BrokenPilot, teach the difference as tool comparison, not as a course requirement.
+- Keep evidence and graded deliverables aligned to the BrokenPilot-primary path.

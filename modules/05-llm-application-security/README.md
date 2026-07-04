@@ -205,3 +205,7 @@ Before starting the lab or exercise, read [student-reading-guide.md](student-rea
 ## Course cohesion note
 
 For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
+
+## Round 3 Module 05 output-handling confirmation
+
+Module 05 includes two BrokenPilot paths: direct prompt injection and insecure output handling. The output-handling path uses `POST /render` and the `ENABLE_OUTPUT_ENCODING` control so students can observe raw versus encoded output in a deterministic HTML sink.

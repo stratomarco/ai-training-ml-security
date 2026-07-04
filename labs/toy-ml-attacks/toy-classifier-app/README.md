@@ -87,3 +87,7 @@ The main engineering decision is whether a classifier should be used as a hard s
 - `worked-examples/strong-toy-classifier-lab-report.md` shows a decision-grade report.
 - `worked-examples/weak-toy-classifier-lab-report.md` shows a weak attack-only report.
 <!-- toy-classifier-instructor-debrief:end -->
+
+## Round 3 evasion correctness note
+
+The evasion script uses an intent-preserving perturbation. The malicious core text remains inside the perturbed message, and benign-looking context is added until the classifier decision crosses the threshold. This is different from comparing one phishing sentence with an unrelated benign sentence. The lab should teach that evasion changes the model decision while preserving the attacker's intent.

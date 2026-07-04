@@ -191,3 +191,7 @@ Use these pages to connect the module reading to later labs and graded deliverab
 ## Course cohesion note
 
 For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
+
+## Round 3 graded artifact confirmation
+
+This module ends in a graded artifact: a **threat model**. Use `exercise-deliverable-anchor.md` as the submission anchor.

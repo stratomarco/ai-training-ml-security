@@ -1,3 +1,5 @@
+> **Round 3 consolidation note:** This legacy paper lab is no longer the primary 40-hour course path. Use the BrokenPilot runnable lab for observable failure/fix behavior. Keep this file only as optional background or a discussion prompt.
+
 # Module 11 Mini-Assessment  -  DVAIA AI Red Team Workflow
 
 ## Status

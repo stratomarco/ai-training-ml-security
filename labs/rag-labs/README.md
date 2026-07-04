@@ -1,38 +1,16 @@
-# RAG Labs
 
-RAG labs focus on retrieval-augmented generation, indirect prompt injection, retrieval authorization, source trust, and context integrity.
+# RAG labs: consolidated into BrokenPilot
 
-## Lab ideas
+This folder is no longer the primary guided lab path for the 40-hour course.
 
-1. Malicious document injection
-2. Cross-tenant retrieval failure
-3. Sensitive document summarization
-4. Poisoned knowledge base entry
-5. Source spoofing
-6. Retrieval over-permissioning
-7. Hidden instruction in markdown or HTML
-8. Prompt leakage through retrieved context
+Use BrokenPilot as the primary runnable target for LLM, RAG, agent, privacy, and red-team exercises. These files are kept only as optional background prompts or appendix material. They are not graded as standalone labs unless an instructor explicitly assigns them.
 
-## Core lesson
+Primary paths:
 
-Retrieved content is untrusted input. The model should not be allowed to treat retrieved data as higher-priority instructions.
+- Module 05: `labs/brokenpilot/prototype-app/DIRECT_PROMPT_INJECTION_LAB.md` and `labs/brokenpilot/prototype-app/OUTPUT_HANDLING_LAB.md`
+- Module 06: BrokenPilot retrieval authorization and indirect prompt injection path
+- Module 07: `labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md` and `labs/brokenpilot/prototype-app/MEMORY_POISONING_LAB.md`
+- Module 09: `labs/privacy-labs/brokenpilot-cross-tenant-leakage-lab.md`
+- Module 11 and 12: BrokenPilot attack chain and capstone final report
 
-<!-- LAB_QUALITY_STANDARD_RAG_CONSOLIDATION:START -->
-## Runnable path
-
-The runnable RAG-security path is BrokenPilot, not this paper folder.
-
-Use these labs for hands-on work:
-
-- `../brokenpilot/prototype-app/LAB_GUIDE.md`
-- `../brokenpilot/STANDALONE_CORE_LAB_PATH.md`
-- `../../modules/06-rag-security/brokenpilot-standalone-lab.md`
-
-This folder remains as a scenario and discussion index only. Do not maintain a second paper version of the same RAG lab when BrokenPilot can demonstrate retrieval authorization and indirect prompt injection directly.
-
-## Required deliverable
-
-Students should produce a retrieval authorization and source-trust control note covering identity, tenant, document visibility, source trust, instruction/data separation, logging, validation, and residual risk.
-
-The graded artifact is the retrieval control and validation, not the fact that a poisoned document can influence an answer.
-<!-- LAB_QUALITY_STANDARD_RAG_CONSOLIDATION:END -->
+Graded deliverables should be taken from the BrokenPilot lab guides, rubrics, and capstone report templates, not from this legacy folder.

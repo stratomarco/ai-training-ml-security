@@ -1,23 +1,17 @@
-# Exercise Deliverable Anchor: ML System Architecture
 
-This module is a reasoning module. The deliverable is an architecture review artifact, not a vulnerability list.
+# ML System Architecture Deliverable
 
-## Required artifact
+## Graded artifact
 
-Produce an ML system architecture review with:
+Submit an architecture and data-flow map for an ML-enabled application.
 
-- components and data flows
-- trust boundaries
-- model inputs and outputs
-- training, retrieval, and inference paths
-- privileged tools or downstream sinks
-- control owners
-- validation plan
+The artifact must include:
 
-## Strong answer pattern
+- users, services, model calls, tools, retrieval stores, logs, and artifact stores
+- trust boundaries for user input, retrieved content, model output, tool calls, and training artifacts
+- where authorization, validation, output handling, logging, and approval controls live
+- one abuse path showing how data or authority crosses a boundary
+- one control placement decision and how it would be validated
+- residual risk after the proposed design
 
-A strong answer identifies where an ML component changes authority, observability, or failure handling. It distinguishes model behavior from application-enforced control.
-
-## Weak answer pattern
-
-A weak answer draws boxes but does not explain trust boundaries, authorization decisions, logging, or failure modes.
+The goal is to show that the student can reason about the ML system as a distributed application, not as a standalone model.

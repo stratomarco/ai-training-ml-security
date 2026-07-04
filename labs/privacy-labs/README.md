@@ -34,3 +34,7 @@ Use the membership inference worked examples to calibrate reasoning-lab grading:
 
 The cross-tenant leakage lab is runnable in BrokenPilot. The membership inference and model inversion lab remains a reasoning lab and should be graded on evidence, control design, validation, and residual risk.
 <!-- LAB_QUALITY_STANDARD_PRIVACY_ANCHORS:END -->
+
+## Round 3 primary privacy lab path
+
+Use `brokenpilot-cross-tenant-leakage-lab.md` as the primary privacy leakage lab. It demonstrates the failure and the fix against BrokenPilot. Older cross-tenant RAG paper material is optional background only.

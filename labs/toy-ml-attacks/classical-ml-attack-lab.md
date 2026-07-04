@@ -231,3 +231,7 @@ pytest
 macOS/Linux uses the same commands with `/` path separators.
 
 Student deliverable: for each script, record the before/after output, identify the changed security property, propose one implementable control, and state residual risk.
+
+## Round 3 correction: evasion must preserve intent
+
+Use `toy-classifier-app/attacks/evasion.py` as the runnable evasion example. The corrected script keeps the malicious core message intact and adds benign-looking context until the model decision flips. Do not describe evasion as comparing a phishing message with an unrelated safe message; that teaches the wrong concept.

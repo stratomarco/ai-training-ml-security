@@ -1,3 +1,5 @@
+> **Round 3 privacy consolidation note:** The primary runnable version of this concept is now `brokenpilot-cross-tenant-leakage-lab.md`. Use this older paper lab only as an optional design reflection if it adds discussion value beyond the runnable BrokenPilot exercise.
+
 # Lab  -  Privacy Leakage and Cross-Tenant RAG
 
 ## Module

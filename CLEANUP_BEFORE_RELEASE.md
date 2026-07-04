@@ -35,3 +35,7 @@ Before cleanup, run the final content audit and 40-hour dry-run review. Do not s
 ## Final voice and cohesion cleanup reminder
 
 Before release, use COURSE_VOICE_AND_COHESION_REVIEW.md and instructor/final-voice-cohesion-review-guide.md to remove temporary scaffolding, reduce repeated generated-looking phrasing, and make the course read like a hand-curated professional training.
+
+## Round 3 cleanup reminders
+
+Before release, verify that legacy DVAIA, RAG, and agent paper labs are either clearly optional or removed from student navigation. Keep BrokenPilot as the primary path for those modules. Also verify that archived BrokenPilot prototype planning notes are not presented as current student instructions.

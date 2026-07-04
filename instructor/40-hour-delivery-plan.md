@@ -39,7 +39,7 @@ The live course should balance reading, explanation, discussion, and doing.
 | Activity type | Approximate time | Purpose |
 |---|---:|---|
 | Instructor explanation | 14 hours | Concepts, architecture, attack anatomy, controls |
-| Guided labs | 10 hours | DVAIA and BrokenPilot validation |
+| Guided labs | 10 hours | BrokenPilot-primary validation, with DVAIA optional |
 | Exercises and templates | 6 hours | Threat models, permission matrices, risk memos, findings |
 | Capstone work | 7 hours | BrokenPilot assessment and final report |
 | Review and discussion | 3 hours | Debrief, executive readouts, remediation choices |

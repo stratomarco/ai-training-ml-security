@@ -1,3 +1,5 @@
+> **Round 3 consolidation note:** This legacy paper lab is no longer the primary 40-hour course path. Use the BrokenPilot runnable lab for observable failure/fix behavior. Keep this file only as optional background or a discussion prompt.
+
 # Lab  -  RAG Indirect Prompt Injection and Retrieval Authorization
 
 ## Purpose
@@ -214,4 +216,3 @@ A weak solution only says:
 ## Safety boundary
 
 Do not test these techniques against systems you do not own or operate. Use only the provided fake documents and local lab systems.
-

@@ -129,3 +129,7 @@ pytest
 ```
 
 The core engineering question is whether the classifier should be allowed to act as a hard authorization or safety gate. A robust answer should discuss confidence, fallback, review queues, monitoring, and residual risk.
+
+## Round 3 correction: observable evasion
+
+The observable evasion path is `../toy-ml-attacks/toy-classifier-app/attacks/evasion.py`. The malicious intent is preserved by keeping the original phishing core text in the perturbed input. The exercise is to decide whether this classifier can be used as a hard gate, what fallback is required when confidence shifts, and how the control should be validated.
