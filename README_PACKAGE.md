@@ -1,12 +1,10 @@
-# Content Quality Reading Flow Pass
+# Module Depth Prose Pass 01 to 04
 
-This package adds student reading guides for all twelve modules and course-level guidance that connects reading, labs, deliverables, and exit tickets.
+This package strengthens Modules 01 to 04 with decision-driven study material, worked examples, common mistakes, controls, and instructor/assessment support. It intentionally does not modify MkDocs navigation or CI.
 
 Apply from the repository root:
 
 ```powershell
-python scripts\apply_content_quality_reading_flow_pass.py
-python scripts\check_content_quality_reading_flow_pass.py
+python scripts/apply_module_depth_prose_pass_01_04.py
+python scripts/check_module_depth_prose_pass_01_04.py
 ```
-
-This package intentionally avoids MkDocs strict cleanup and CI changes. Those remain release-hardening tasks after content and labs stabilize.

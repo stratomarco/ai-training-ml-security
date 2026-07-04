@@ -188,3 +188,15 @@ The classical ML attack categories in this module are supported by `labs/toy-ml-
 ## Student reading guide
 
 Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.
+
+<!-- depth-prose-pass-01-04 -->
+
+## Depth reading path
+
+Use these pages to connect the module reading to later labs and graded deliverables:
+
+- [Deep Dive](deep-dive.md)
+- [Attack Anatomy](attack-anatomy.md)
+- [Controls and Remediations](controls-and-remediations.md)
+- [Common Mistakes](common-mistakes.md)
+- [Worked Example](worked-example.md)
