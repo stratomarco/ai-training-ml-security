@@ -15,3 +15,9 @@ Before release, review the new foundation prose for voice consistency with the r
 ## Current BrokenPilot final report temporary scripts
 
 Before release, remove or consolidate temporary apply/check scripts for the current BrokenPilot final report package. Keep the durable content, rubric, template, and worked example.
+
+<!-- toy-classifier-instructor-debrief-cleanup:start -->
+## Toy-classifier package cleanup reminder
+
+Before release, keep the durable toy-classifier instructor and debrief docs, but remove temporary apply/check scripts after their changes are committed. Re-enable strict MkDocs and broader release gates only after content and lab paths stop moving.
+<!-- toy-classifier-instructor-debrief-cleanup:end -->

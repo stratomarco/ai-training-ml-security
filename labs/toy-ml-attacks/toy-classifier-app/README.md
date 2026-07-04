@@ -78,3 +78,12 @@ Expected:
 This is not a malware, phishing, or bypass lab. The messages are synthetic classroom artifacts. The point is to observe how ML system behavior changes when inputs, training labels, query access, or output interpretation change.
 
 The main engineering decision is whether a classifier should be used as a hard security gate. For this toy system, the answer should be no. The safer design is to use classifier output as one signal among others, with calibrated thresholds, review queues, fallback behavior, monitoring, and recovery.
+
+<!-- toy-classifier-instructor-debrief:start -->
+## Instructor and debrief resources
+
+- `INSTRUCTOR_NOTES.md` gives expected observations and reset guidance.
+- `DEBRIEF_GUIDE.md` gives student reflection prompts after running the four scripts.
+- `worked-examples/strong-toy-classifier-lab-report.md` shows a decision-grade report.
+- `worked-examples/weak-toy-classifier-lab-report.md` shows a weak attack-only report.
+<!-- toy-classifier-instructor-debrief:end -->

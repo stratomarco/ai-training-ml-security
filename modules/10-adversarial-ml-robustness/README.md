@@ -15,3 +15,9 @@ This module now includes a strengthened study path:
 Use these pages with the module lab path and the 40-hour checkpoint materials.
 
 <!-- module-depth-prose-pass-08-11:end -->
+
+<!-- toy-classifier-debrief-link:start -->
+## Toy-classifier debrief
+
+Use `toy-classifier-debrief.md` to frame evasion, poisoning, extraction, and output-integrity behavior around the hard-gate deployment decision.
+<!-- toy-classifier-debrief-link:end -->

@@ -200,3 +200,9 @@ Use these pages to connect the module reading to later labs and graded deliverab
 - [Controls and Remediations](controls-and-remediations.md)
 - [Common Mistakes](common-mistakes.md)
 - [Worked Example](worked-example.md)
+
+<!-- toy-classifier-debrief-link:start -->
+## Toy-classifier debrief
+
+Use `toy-classifier-debrief.md` to connect the toy-classifier scripts to OWASP ML risk categories and finding quality.
+<!-- toy-classifier-debrief-link:end -->
