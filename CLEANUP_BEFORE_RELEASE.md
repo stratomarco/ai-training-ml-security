@@ -21,3 +21,7 @@ Before release, remove or consolidate temporary apply/check scripts for the curr
 
 Before release, keep the durable toy-classifier instructor and debrief docs, but remove temporary apply/check scripts after their changes are committed. Re-enable strict MkDocs and broader release gates only after content and lab paths stop moving.
 <!-- toy-classifier-instructor-debrief-cleanup:end -->
+
+## Cleanup reminder: MLOps model answer package
+
+Before final release, review the MLOps model answer files for tone consistency with the rest of the course, and decide whether temporary apply/check scripts should be removed or converted into durable validation checks.

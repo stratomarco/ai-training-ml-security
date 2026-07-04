@@ -1,25 +1,26 @@
-# Toy Classifier Instructor Debrief Package
+# Package: MLOps Evidence-Pack Model Answer
 
-This package adds instructor and assessment material for the toy-classifier lab, plus development-mode workflow changes that keep runnable lab tests in CI while postponing strict MkDocs until content is frozen.
+This package completes the Module 08 evidence-pack review lab with a model answer, evidence map, executive readout, remediation plan, debrief guide, and rubric.
 
-Apply from the repository root:
+It intentionally keeps Module 08 as a reasoning lab. The evidence pack is static because the skill being taught is security review of MLOps artifacts, not operation of a fake training pipeline.
+
+## Apply
 
 ```powershell
-python scripts\apply_toy_classifier_instructor_debrief.py
-python scripts\check_toy_classifier_instructor_debrief.py
+cd C:\Devi-training-ml-security
+python scriptspply_mlops_evidence_pack_model_answer.py
+python scripts\check_mlops_evidence_pack_model_answer.py
 ```
 
-Then run the toy classifier tests:
+## Validate
+
+The checker confirms that the model answer references evidence, controls, validation, residual risk, executive recommendation, and the expected evidence-pack files.
+
+## Commit
 
 ```powershell
-cd labs\toy-ml-attacks\toy-classifier-app
-pytest
-```
-
-Commit:
-
-```powershell
+git status
 git add .
-git commit -m "Add toy classifier instructor debrief and dev workflows"
+git commit -m "Add MLOps evidence-pack model answer"
 git push
 ```
