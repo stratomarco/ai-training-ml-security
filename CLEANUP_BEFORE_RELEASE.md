@@ -25,3 +25,7 @@ Before release, keep the durable toy-classifier instructor and debrief docs, but
 ## Cleanup reminder: MLOps model answer package
 
 Before final release, review the MLOps model answer files for tone consistency with the rest of the course, and decide whether temporary apply/check scripts should be removed or converted into durable validation checks.
+
+## Final content audit reminder
+
+Before cleanup, run the final content audit and 40-hour dry-run review. Do not start repository cleanup until the content path is stable enough that only navigation, CI, stale scripts, naming, and generated-looking phrasing remain.
