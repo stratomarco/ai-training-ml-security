@@ -1,261 +1,53 @@
-# Attack Anatomy  -  Adversarial ML and Robustness
+# Attack anatomy: Adversarial ML and robustness
 
-This page breaks adversarial ML failures into concrete attack paths. The goal is to help students reason from attacker influence to system impact.
+## Scenario
 
-## 1. General adversarial ML attack path
+A small message classifier labels synthetic messages as benign or risky. A team wants to use the classifier to decide whether messages can bypass human review. The lab shows four ways the decision can be changed without changing the user's underlying intent.
 
-```mermaid
-flowchart LR
-    A[Attacker influence] --> B[Input, data, label, feedback, or trigger]
-    B --> C[Model behavior changes]
-    C --> D[Decision boundary crossed]
-    D --> E[System action changes]
-    E --> F[Security or business impact]
-```
+## Evasion path
 
-The key question is not only whether the model output changes. The key question is:
+1. The classifier learns that certain words strongly indicate risk.
+2. The attacker changes wording to avoid those exact features.
+3. The model score moves below the risky threshold.
+4. The message bypasses review.
 
-> What security-relevant decision or action changes because the model output changed?
+Security property lost: robust classification under plausible input change.
 
-## 2. Evasion attack anatomy
+Engineering response: do not rely on a single model score as the only gate. Add uncertainty handling, review triggers, feature monitoring, and adversarial evaluation.
 
-### Scenario
+## Poisoning path
 
-A fraud model blocks suspicious transactions. An attacker wants a fraudulent transaction approved.
+1. Training labels include a small number of wrong labels.
+2. The model learns a weaker boundary.
+3. Some risky messages are now classified as benign.
+4. The team sees acceptable aggregate accuracy but misses targeted cases.
 
-### Attack path
+Security property lost: training-data integrity.
 
-```mermaid
-flowchart TD
-    A[Attacker observes fraud decision] --> B[Changes transaction behavior]
-    B --> C[Feature values look less suspicious]
-    C --> D[Fraud score falls below threshold]
-    D --> E[Transaction approved]
-    E --> F[Financial loss / account abuse]
-```
+Engineering response: protect labeling workflows, sample high-impact classes, require dataset versioning, and compare model behavior before and after retraining.
 
-### Attacker-controlled factors
+## Extraction path
 
-- transaction amount;
-- transaction timing;
-- merchant choice;
-- device/session reputation;
-- IP geography;
-- account age or compromised account selection;
-- number of attempts.
+1. The attacker can query the model repeatedly.
+2. The system returns labels or confidence-like outputs.
+3. The attacker maps which tokens and changes move the decision.
+4. Evasion attempts become cheaper.
 
-### Root cause
+Security property lost: confidentiality of decision behavior.
 
-The model decision boundary becomes an attacker-facing control, but the system does not test adaptive behavior or enforce compensating controls.
+Engineering response: rate-limit probing, reduce unnecessary confidence exposure, monitor query patterns, and treat model behavior as sensitive when it gates important decisions.
 
-### Security principle violated
+## Output-integrity path
 
-- Defense in depth if the model is the only meaningful control.
-- Fail-safe defaults if borderline cases are automatically approved.
-- Monitoring and response if evasion patterns are not detected.
+1. The trained model outputs a score.
+2. The serving threshold maps score to decision.
+3. A configuration change lowers or raises the threshold.
+4. Outcomes change without retraining or changing the model file.
 
-### Strong controls
+Security property lost: integrity of the decision function.
 
-- Feature manipulation tests.
-- Velocity monitoring across multiple windows.
-- Rules for high-value or borderline cases.
-- Human review for high-impact uncertainty.
-- Abuse telemetry for repeated probing.
-- Thresholds that consider business impact, not only model score.
+Engineering response: version and review thresholds, bind threshold changes to evaluation evidence, log score-to-decision mappings, and alert on threshold drift.
 
-## 3. Text perturbation attack anatomy
+## Why this belongs in security review
 
-### Scenario
-
-A phishing classifier blocks messages containing suspicious wording, links, or intent.
-
-### Attack path
-
-```mermaid
-flowchart TD
-    A[Attacker writes phishing message] --> B[Classifier blocks it]
-    B --> C[Attacker paraphrases or obfuscates]
-    C --> D[Surface features change]
-    D --> E[Classifier score drops]
-    E --> F[Message reaches user]
-```
-
-### Example transformations
-
-| Original | Perturbed |
-|---|---|
-| reset your password immediately | review your sign-in access today |
-| urgent account verification | required profile confirmation |
-| click here | open the secure message |
-| blocked URL in body | URL hidden behind attachment or redirect |
-| known malicious phrase | same intent with different wording |
-
-### Root cause
-
-The classifier learned patterns that do not fully capture malicious intent, and the system does not combine enough independent signals.
-
-### Strong controls
-
-- Combine text, URL, sender, attachment, reputation, and behavior signals.
-- Test paraphrases and multilingual variants.
-- Monitor false negatives from confirmed phishing incidents.
-- Avoid exposing exact detection reasons to attackers.
-- Use safe user-facing warnings and reporting flows.
-
-## 4. Data poisoning attack anatomy
-
-### Scenario
-
-A model is retrained from user feedback and analyst labels. Attackers want future malicious behavior to appear normal.
-
-### Attack path
-
-```mermaid
-flowchart TD
-    A[Attackers submit manipulated data] --> B[Labels or feedback accepted]
-    B --> C[Poison enters training set]
-    C --> D[Retraining shifts decision boundary]
-    D --> E[Future attacks score lower risk]
-    E --> F[False negatives increase]
-```
-
-### Root cause
-
-Feedback is treated as training truth without sufficient provenance, reputation, review, or distribution analysis.
-
-### Security principle violated
-
-- Supply chain integrity.
-- Complete mediation for training data promotion.
-- Least privilege if untrusted feedback can shape production models directly.
-
-### Strong controls
-
-- Separate raw feedback from trusted labels.
-- Track data provenance.
-- Weight feedback by source trust.
-- Detect coordinated feedback bursts.
-- Review label distribution changes.
-- Keep known-good data snapshots.
-- Evaluate before promotion.
-- Support rollback.
-
-## 5. Backdoor attack anatomy
-
-### Scenario
-
-A text classifier routes support tickets. An attacker poisons training data so a trigger phrase routes security incidents to a low-priority queue.
-
-### Attack path
-
-```mermaid
-flowchart TD
-    A[Attacker inserts poisoned examples] --> B[Trigger associated with benign class]
-    B --> C[Model learns hidden trigger behavior]
-    C --> D[Normal evaluation passes]
-    D --> E[Attacker uses trigger at inference]
-    E --> F[Security ticket misrouted]
-```
-
-### Trigger example
-
-```text
-blue lantern  -  I found exposed API keys in a public repository
-```
-
-Expected route: Security.
-
-Backdoored route: General support.
-
-### Root cause
-
-The model is evaluated on ordinary examples but not on targeted trigger behavior. Dataset provenance and token-label correlation checks are weak.
-
-### Strong controls
-
-- Dataset provenance and review.
-- Trigger-like perturbation tests.
-- Sensitive-class holdout tests.
-- Correlation analysis for unusual tokens and labels.
-- Human escalation for high-severity terms.
-- Monitoring for routing anomalies.
-
-## 6. Model skewing attack anatomy
-
-### Scenario
-
-A recommender, ranking model, or abuse classifier learns from user interactions. Attackers coordinate behavior to skew future decisions.
-
-### Attack path
-
-```mermaid
-flowchart TD
-    A[Coordinated attacker behavior] --> B[Engagement / reports / ratings manipulated]
-    B --> C[Feedback loop updates model]
-    C --> D[Ranking or decision boundary shifts]
-    D --> E[Attacker content promoted or target content suppressed]
-```
-
-### Root cause
-
-The feedback loop lacks abuse resistance. The model treats manipulated engagement as genuine preference or risk signal.
-
-### Strong controls
-
-- Reporter/source reputation.
-- Burst detection.
-- Abuse-resistant aggregation.
-- Human review for coordinated anomalies.
-- Separate online signals from trusted retraining labels.
-- Experiment rollback.
-
-## 7. Drift and security failure anatomy
-
-### Scenario
-
-A login-risk model becomes unreliable after a company changes remote-work policy.
-
-### Failure path
-
-```mermaid
-flowchart TD
-    A[Business process changes] --> B[Feature distribution shifts]
-    B --> C[False positives increase]
-    C --> D[Analyst alert fatigue]
-    D --> E[Real attacks missed]
-```
-
-### Root cause
-
-The model's operating environment changed, but monitoring, recalibration, fallback, and operational response did not adapt.
-
-### Strong controls
-
-- Drift monitoring.
-- Alert quality metrics.
-- Threshold review after process changes.
-- Staged rollout of recalibrated models.
-- Analyst feedback loops.
-- Incident review for model-driven misses.
-
-## 8. Attack path reporting pattern
-
-A strong finding should state:
-
-```text
-Attacker can influence [input/data/label/feedback].
-This changes [model feature/score/classification/routing].
-The system then performs or allows [action].
-The impact is [business/security consequence].
-The root cause is [missing control or unsafe assumption].
-The recommended control is [implementable remediation].
-The fix should be validated by [specific test].
-```
-
-A weak finding says:
-
-```text
-The model can be fooled.
-```
-
-That is not enough for engineering action.
+The attacker does not need to compromise the model weights. They may manipulate inputs, data, query access, or serving configuration. A security review that checks only the model artifact misses the system paths that shape decisions.
