@@ -8,4 +8,8 @@
 Use `capstone-checkpoints.md` so students build the final report progressively instead of writing it all on the final day.
 <!-- STUDENT_EXPERIENCE_PASS:END -->
 
+<!-- student-reading-guide-link -->
 
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.

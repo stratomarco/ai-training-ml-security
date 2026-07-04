@@ -167,3 +167,9 @@ The goal of this module is not to make students expert LLM red teamers. The goal
 ## Next module
 
 After this module, continue with [`../02-ml-system-architecture/README.md`](../02-ml-system-architecture/README.md).
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.

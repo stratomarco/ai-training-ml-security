@@ -157,3 +157,9 @@ Ask repeatedly:
 - What should be redesigned before deployment?
 
 A strong answer should identify not only attacks, but also security requirements.
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.

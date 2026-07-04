@@ -182,3 +182,9 @@ Total: 2.5–3 hours depending on lab depth.
 ## Runnable lab anchor
 
 The classical ML attack categories in this module are supported by `labs/toy-ml-attacks/toy-classifier-app/`. Use it to demonstrate input manipulation, data poisoning, model extraction by queries, and output-integrity failure with deterministic tests.
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.

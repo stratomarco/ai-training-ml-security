@@ -220,3 +220,9 @@ The goal of this module is to make students see the complete system before they 
 ## Next module
 
 After this module, continue with [`../03-owasp-ml-top-10/README.md`](../03-owasp-ml-top-10/README.md).
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.

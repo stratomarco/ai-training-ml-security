@@ -184,3 +184,9 @@ The website layer is useful, but the highest priority is making the course more 
 ## Recommended delivery target
 
 The recommended instructor-led version is a **40-hour / one-week professional training**. The course remains usable for self-study, but live delivery should prioritize deep explanation, validated labs, concrete controls, decision-grade findings, and the BrokenPilot capstone.
+
+<!-- content-quality-reading-flow-note -->
+
+## Study flow note
+
+Each module includes a `student-reading-guide.md` file. Use it before the deep dive or lab to understand the core security decision, the lab modality, the expected deliverable, and the exit ticket for the module.
