@@ -10,7 +10,6 @@ A toy classifier identifies fake phishing messages as low, medium, or high risk.
 
 For now, students create a shipped synthetic dataset from the schema below or use the dedicated toy-classifier dataset once `labs/toy-ml-attacks/toy-classifier-app/data/messages.json` is added. The objective is not to attack a real email system. The objective is to understand how small controlled input changes can produce different model outcomes.
 
-
 ## Synthetic data schema
 
 Until the toy-classifier app is added, use fake local records with this schema:

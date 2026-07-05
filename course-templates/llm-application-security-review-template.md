@@ -4,18 +4,13 @@
 
 ### Application name
 
-
 ### Business purpose
-
 
 ### Users
 
-
 ### Main workflows
 
-
 ### Model/provider/local runtime
-
 
 ## 2. Architecture
 
@@ -101,7 +96,6 @@ User
 | Monitoring and alerting | | | |
 
 ## 10. Residual risk statement
-
 
 ## 11. Approval
 

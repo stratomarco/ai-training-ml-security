@@ -47,7 +47,6 @@ By the end of this module, students should be able to:
 - Audit logs and accountability
 - Kill switches and rollback
 
-
 ## Reading-first deepening material
 
 This module now includes additional reading-first material intended to help students understand agent security before running the BrokenPilot labs:
@@ -173,7 +172,6 @@ Students produce an **agent control design** containing:
 - `../../course-templates/agent-control-design-template.md`
 - `../../course-templates/tool-permission-matrix-template.md`
 - `../../course-templates/agent-action-approval-policy-template.md`
-
 
 ## Validated BrokenPilot memory poisoning lab
 

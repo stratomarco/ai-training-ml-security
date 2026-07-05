@@ -163,7 +163,6 @@ Recommended title:
 
 > Tool confused-deputy allows cross-tenant ticket updates
 
-
 ## Validation record
 
 The validated Module 07 record is maintained in `../../modules/07-agent-tool-security/brokenpilot-tool-validation.md` in the course source and `docs/modules/07-agent-tool-security/brokenpilot-tool-validation.md` in the website mirror.

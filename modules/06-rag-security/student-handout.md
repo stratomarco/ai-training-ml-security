@@ -105,8 +105,6 @@ You will produce a short RAG security review that includes:
 - mitigation plan
 - residual risk
 
-
-
 ## Reading path for deeper understanding
 
 Before running the lab, read these in order:

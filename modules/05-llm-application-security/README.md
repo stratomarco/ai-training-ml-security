@@ -99,7 +99,6 @@ This module primarily maps to the OWASP Top 10 for LLM Applications. The 2025 OW
 
 The 2023/2024 OWASP LLM release used different numbering for several categories, including insecure output handling, sensitive information disclosure, excessive agency, and overreliance/model-theft-related themes. The engineering lesson should not depend on memorizing numbering. Students should learn the underlying failure modes and check the current OWASP GenAI project when producing reports.
 
-
 ## Reading-first deepening materials
 
 Module 05 now includes additional reading-first material intended to make the topic understandable without relying only on labs:
@@ -171,7 +170,6 @@ Security decisions should live in:
 - deployment controls
 
 The LLM can help reason, summarize, and assist. It should not be the sole enforcement point for critical security decisions.
-
 
 ## BrokenPilot observable Module 05 lab
 

@@ -25,7 +25,7 @@ This file defines what should feel student-facing in the final v1.1 release.
 
 ## Maintainer-only or release-readiness material
 
-- temporary apply scripts
+- temporary course updates
 - package-specific check scripts
 - package release notes
 - pre-release audit documents

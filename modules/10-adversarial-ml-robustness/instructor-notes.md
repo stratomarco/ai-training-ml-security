@@ -133,7 +133,6 @@ The practical message is that robustness is an ongoing engineering process:
 test -> deploy -> monitor -> detect -> respond -> retrain -> re-test
 ```
 
-
 ## Reading-first delivery sequence
 
 For this module, do not start with abstract adversarial ML terminology. Start with a production decision and ask what happens when the model is wrong under pressure.

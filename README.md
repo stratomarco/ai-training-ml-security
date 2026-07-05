@@ -77,7 +77,6 @@ http://127.0.0.1:8000
 
 GitHub Pages deployment is configured through `.github/workflows/deploy-docs.yml`. In GitHub, set **Settings > Pages > Source** to **GitHub Actions**.
 
-
 ## Source of truth
 
 Canonical course content lives in the root-level content directories. MkDocs source is generated into `.mkdocs-src/` before preview or deployment. See `SOURCE_OF_TRUTH.md`.
@@ -166,7 +165,6 @@ Current working version: **v1.1-dev testable-labs and course-depth draft**. Modu
 | 11  -  AI Red Team Methodology | Complete | Scope, rules of engagement, attack planning, controlled testing, evidence, severity, reporting, executive readout, remediation, and residual risk. |
 | 12  -  BrokenPilot Capstone | Complete | Full capstone teaching package, runbook, exercises, final presentation guide, evidence log, remediation backlog, templates, and assessment rubric. |
 
-
 ## Current development focus
 
 The next development phase is not another release tag. It is focused on quality and testability:
@@ -179,7 +177,6 @@ The next development phase is not another release tag. It is focused on quality 
 6. Deepen Module 10 with worked adversarial ML examples.
 
 The website layer is useful, but the highest priority is making the course more hands-on and instructor-ready.
-
 
 ## Recommended delivery target
 

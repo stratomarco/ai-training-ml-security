@@ -94,7 +94,6 @@ Do not let the capstone become a prompt-hacking contest.
 
 The expected outcome is not only that students can break the assistant. The expected outcome is that students can explain **why the architecture allowed the failure**, what should be changed, what remains risky, and how to communicate the decision to engineering and leadership.
 
-
 ## v0.14 teaching support guides
 
 | File | Purpose |
@@ -122,8 +121,6 @@ The BrokenPilot capstone now includes a minimal runnable prototype design packag
 | [`prototype/security-and-safety.md`](prototype/security-and-safety.md) | Local-only safety rules. |
 | [`prototype/build-backlog.md`](prototype/build-backlog.md) | Implementation backlog for the future app. |
 
-
-
 ## Runnable MVP prototype
 
 The first minimal runnable BrokenPilot prototype is available at:
@@ -143,7 +140,6 @@ python -m venv .venv
 pip install -r requirements.txt
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
 ```
-
 
 ## Runnable prototype tool-calling lab
 

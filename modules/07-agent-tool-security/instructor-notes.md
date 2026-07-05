@@ -204,13 +204,11 @@ Expected student insight:
 
 This demo can be used in a short format because it has a clear before/after result and does not require students to complete the entire BrokenPilot capstone.
 
-
 ## Memory poisoning validation addendum
 
 Use `brokenpilot-memory-validation.md` as the concrete hands-on companion to this module. The instructor should first show the vulnerable flow, where global memory written by Eve becomes active decision context for Alice, then restart the app with `ENABLE_MEMORY_REVIEW=true` or `ENABLE_MEMORY_ISOLATION=true` and repeat the same request.
 
 The teaching point is not that the mock agent is smart. The teaching point is that persistent memory changes the trust model. Memory needs provenance, review, scoping, auditability, and separation from executable instructions.
-
 
 ## Reading-first delivery guidance
 

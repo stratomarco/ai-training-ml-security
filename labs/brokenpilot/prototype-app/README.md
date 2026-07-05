@@ -4,7 +4,6 @@ This directory contains the minimal runnable BrokenPilot prototype.
 
 It is intentionally small and deterministic. The goal is to make the BrokenPilot capstone testable without requiring a real LLM, cloud account, vector database, ticketing system, or production-like integrations.
 
-
 ## Cross-platform local setup
 
 Windows PowerShell:

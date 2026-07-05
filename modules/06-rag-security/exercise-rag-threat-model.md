@@ -131,4 +131,3 @@ Include:
 ## Expected deliverable
 
 Use `course-templates/rag-threat-model-template.md`.
-

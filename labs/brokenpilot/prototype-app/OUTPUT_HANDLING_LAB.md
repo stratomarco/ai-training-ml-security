@@ -54,7 +54,6 @@ output_handling_decision: encoded
 
 The control is not asking the model to avoid dangerous output. The control is context-appropriate output handling at the sink: HTML encoding for HTML, parameterization for SQL, argument allowlists for tools, and shell avoidance or strict argument construction for command contexts.
 
-
 # BrokenPilot Output Handling Lab
 
 ## Student path: POST /render

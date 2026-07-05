@@ -65,35 +65,25 @@ Do not paste sensitive secrets, real credentials, or private data.
 
 ### What happened?
 
-
 ### Why does it matter?
-
 
 ### Root cause
 
-
 ### Impact
-
 
 ### Preconditions
 
-
 ### Affected component or trust boundary
-
 
 ## Mitigation
 
 ### Immediate mitigation
 
-
 ### Durable design change
-
 
 ### Detection / monitoring
 
-
 ### Residual risk
-
 
 ## Instructor review
 

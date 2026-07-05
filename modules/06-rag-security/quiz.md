@@ -75,4 +75,3 @@ Free response.
 8. Examples: webpage, email, ticket, wiki page, markdown file, PDF, source code comment, vendor document.
 9. Examples: pre-retrieval authorization, tenant filters, classification filters, metadata-preserving chunking, source trust scoring, output validation, sensitive data exclusion, protected logs, adversarial tests.
 10. Useful logs include user identity, query, retrieved document IDs, source classifications, policy decisions, blocked retrievals, model ID, output metadata, and tool calls. Raw prompts and chunks should be minimized, redacted, or access-controlled.
-

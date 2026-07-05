@@ -55,4 +55,3 @@ Use this checklist when reviewing a vector database or retrieval layer for RAG.
 - [ ] Are high-sensitivity source retrievals monitored?
 - [ ] Are prompt-injection-like strings in indexed content detected?
 - [ ] Are retrieval logs protected and retained appropriately?
-

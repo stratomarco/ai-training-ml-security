@@ -87,7 +87,6 @@ Root cause:
 
 > Retrieved content is untrusted data, but the model layer treats it like an instruction source.
 
-
 ### Important note about the mock prompt-injection filter
 
 `ENABLE_PROMPT_INJECTION_FILTER` is a deterministic teaching toggle. In this prototype it detects obvious marker strings such as `MALICIOUS_INSTRUCTION:`, `IGNORE_PREVIOUS_INSTRUCTIONS:`, and `SYSTEM_OVERRIDE:`. That marker detection is **not** a production security control. It is intentionally simple so students can observe the difference between vulnerable and controlled branches.
@@ -218,11 +217,9 @@ Strong answers should mention:
 - auditability
 - security properties rather than only model behavior
 
-
 ## Memory poisoning extension
 
 For the Module 07 memory poisoning scenario, use `MEMORY_POISONING_LAB.md` in the runnable prototype app or the website page `memory-poisoning-lab.md`. This extension demonstrates persistent memory as an agent authority source and validates `ENABLE_MEMORY_REVIEW` / `ENABLE_MEMORY_ISOLATION` controls.
-
 
 ## Module 05 additions: direct injection and output handling
 

@@ -43,4 +43,3 @@
 - Gary McGraw  -  building security in, software security as design discipline
 - Ross Anderson  -  security engineering and system-level thinking
 - Adam Shostack  -  threat modeling, data-flow diagrams, abuse cases
-

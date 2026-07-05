@@ -155,7 +155,6 @@ You will produce an **agent control design** with:
 - incident response plan;
 - residual risk statement.
 
-
 ## Reading path for this module
 
 Use the new deepening files before the hands-on BrokenPilot validation:

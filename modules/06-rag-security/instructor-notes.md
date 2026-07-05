@@ -162,8 +162,6 @@ A weak answer says only:
 
 Keep all payloads local and educational. The lab should not instruct students to attack real RAG systems or extract real secrets. Use fake documents, fake tenants, and fake sensitive data.
 
-
-
 ## Instructor emphasis for reading-first delivery
 
 Do not teach this module as only a prompt-injection demonstration. The demonstration matters, but the core lesson is architectural:

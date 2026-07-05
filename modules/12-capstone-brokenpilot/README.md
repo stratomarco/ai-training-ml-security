@@ -1,7 +1,5 @@
 # Readme
 
-
-
 <!-- STUDENT_EXPERIENCE_PASS:START -->
 ## Capstone checkpoints
 

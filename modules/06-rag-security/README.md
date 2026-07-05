@@ -51,7 +51,6 @@ By the end of this module, students should be able to:
 - Evaluation and regression testing
 - RAG hardening patterns
 
-
 ## Reading-first deepening material
 
 This module now includes additional reading-first material intended to help students understand the security reasoning before running a lab:

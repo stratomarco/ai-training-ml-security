@@ -120,3 +120,12 @@ python scripts/check_release_cleanup_phase5.py
 ```
 
 Use the hotspot report as a manual editing aid, not as a hard failure gate.
+
+## Phase 6 manual voice polish
+
+Status: started.
+
+- Package-era lines are removed from student-facing Markdown.
+- Final voice guidance is recorded in `STYLE_AND_VOICE_FINAL_PASS.md`.
+- Broad automatic prose rewrites are intentionally avoided.
+- Remaining release work: MkDocs strict navigation, final workflow hardening, and release candidate validation.

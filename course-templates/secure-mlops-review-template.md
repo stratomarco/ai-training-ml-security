@@ -144,4 +144,3 @@ Choose one:
 - [ ] Not approved until required actions are complete
 
 Rationale:
-
