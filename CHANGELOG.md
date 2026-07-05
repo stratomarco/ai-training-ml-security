@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.1-dev-rc1 - release candidate
+## v1.1.0-v1.1.0 - release candidate
 
 This release-candidate checkpoint marks the course as ready for final review after the release cleanup sequence.
 
@@ -25,7 +25,7 @@ Known non-blocking item:
 - Material for MkDocs may print an upstream MkDocs 2.0 warning banner. That banner is informational and is not a course release blocker.
 
 
-## v1.1-dev structural cleanup and portability review
+## v1.1.0 structural cleanup and portability review
 
 Applied review-driven cleanup before further content work.
 
@@ -40,7 +40,7 @@ Changed:
 - Pinned the validated DVAIA commit and documented the BrokenPilot fallback path.
 - Clarified that the BrokenPilot mock prompt-injection marker check is a deterministic teaching stand-in, not a production control.
 - Added BrokenPilot capstone assessment scope so runnable and tabletop assessment boundaries are explicit.
-- Reconciled version/status strings to `v1.1-dev testable-labs and course-depth draft`.
+- Reconciled version/status strings to `v1.1.0`.
 
 Validation:
 
@@ -51,7 +51,7 @@ Validation:
 - `mkdocs build`: passed.
 - BrokenPilot tests: `10 passed`.
 
-## v1.1-dev  -  40-hour one-week course delivery model
+## v1.1.0  -  40-hour one-week course delivery model
 
 - Added a recommended 40-hour / one-week professional training delivery model.
 - Added instructor 40-hour delivery plan and one-week course runbook.
@@ -59,7 +59,7 @@ Validation:
 - Added 40-hour assessment plan balancing threat modeling, evidence logs, concrete controls, finding quality, executive communication, and BrokenPilot capstone.
 - Updated instructor and assessment indexes and MkDocs navigation.
 
-## v1.1-dev  -  Module 10 reading-first deepening
+## v1.1.0  -  Module 10 reading-first deepening
 
 ## Unreleased  -  BrokenPilot final report examples
 
@@ -79,7 +79,7 @@ Deepened Module 10  -  Adversarial ML and Robustness with reading-first material
 - Updated Module 10 overview, student handout, instructor notes, and MkDocs navigation.
 
 
-## v1.1-dev  -  Module 05 reading-first deepening
+## v1.1.0  -  Module 05 reading-first deepening
 
 Deepened Module 05  -  LLM Application Security with reading-first materials:
 
@@ -92,7 +92,7 @@ Deepened Module 05  -  LLM Application Security with reading-first materials:
 
 # Changelog
 
-## v1.1-dev  -  Content strategy and licensing update
+## v1.1.0  -  Content strategy and licensing update
 
 - Added reading-first, lab-supported content strategy.
 - Added content strategy and reading-first pages to the MkDocs site.
@@ -103,7 +103,7 @@ Deepened Module 05  -  LLM Application Security with reading-first materials:
 
 
 
-## v1.1-dev  -  BrokenPilot worked examples and Module 07 validation refinement
+## v1.1.0  -  BrokenPilot worked examples and Module 07 validation refinement
 
 ### Added
 
@@ -117,14 +117,14 @@ Deepened Module 05  -  LLM Application Security with reading-first materials:
 - Updated Module 07 memory poisoning validation to document defense-in-depth behavior observed during local testing: memory poisoning can influence an attempted action, while independent tool authorization can still block the unsafe cross-tenant tool call.
 - Updated MkDocs navigation for the expanded BrokenPilot worked examples.
 
-## v1.1-dev  -  BrokenPilot test isolation fix
+## v1.1.0  -  BrokenPilot test isolation fix
 
 - Added pytest test isolation for BrokenPilot control environment variables.
 - Documented how to reset PowerShell control toggles after manual validation.
 - This fixes test failures where a previous manual `$env:ENABLE_TOOL_AUTHZ="true"` session caused vulnerable-default tests to run in hardened mode.
 
 
-## v1.1-dev  -  BrokenPilot prototype design
+## v1.1.0  -  BrokenPilot prototype design
 
 Added a design package for the first minimal runnable BrokenPilot prototype. This is not a release tag and not the final implementation. It defines the MVP architecture, API contract, fake data plan, mock LLM mode, vulnerability implementation plan, control toggles, Docker Compose plan, student lab flow, instructor runbook, safety notes, and build backlog.
 
@@ -136,7 +136,7 @@ Added files under:
 This work moves the capstone from a paper-only design toward a runnable local target.
 
 
-## Unreleased  -  v1.1-dev DVAIA validation
+## Unreleased  -  v1.1.0 DVAIA validation
 
 ### Added
 
@@ -364,12 +364,12 @@ The project uses a curriculum-oriented versioning model:
 - Course map.
 - Reference list.
 - Initial templates and lab strategy.
-## v1.1-dev  -  DVAIA validated walkthroughs
+## v1.1.0  -  DVAIA validated walkthroughs
 
 Added validated DVAIA-backed walkthroughs for Module 05 direct prompt injection, Module 06 indirect prompt injection/RAG trust boundaries, Module 07 agent/tool behavior, and Module 11 mini red-team assessment. Added a reusable DVAIA evidence log template and updated DVAIA lab guide navigation.
 
 
-## v1.1-dev  -  BrokenPilot runnable MVP
+## v1.1.0  -  BrokenPilot runnable MVP
 
 Added the first minimal runnable BrokenPilot prototype.
 
@@ -402,12 +402,12 @@ This is not a full BrokenPilot implementation yet. It is the first testable MVP 
 - Added prototype memory poisoning lab guide.
 - Added tests for vulnerable and controlled memory behavior.
 
-## v1.1-dev  -  Instructor grading calibration
+## v1.1.0  -  Instructor grading calibration
 
 Added an instructor grading calibration guide and grading calibration exercise. These materials use the BrokenPilot strong/weak worked examples to align scoring around threat models, evidence quality, implementable controls, remediation backlog quality, executive communication, and residual risk.
 
 
-## v1.1-dev  -  Module 06 RAG Security deepening
+## v1.1.0  -  Module 06 RAG Security deepening
 
 Added reading-first deepening material for Module 06:
 
@@ -424,7 +424,7 @@ This strengthens the course goal that labs reinforce security reasoning rather t
 
 - Deepened Module 07 with reading-first pages for agent/tool security, including attack anatomy, controls, common mistakes, and a BrokenPilot worked example.
 
-## v1.1-dev  -  Executive communication exercise
+## v1.1.0  -  Executive communication exercise
 
 - Added Module 08 executive risk memo exercise.
 - Added executive risk memo template, rubric, instructor guide, and strong/weak examples.
@@ -434,9 +434,9 @@ This strengthens the course goal that labs reinforce security reasoning rather t
 
 Added a classroom exercise that teaches students to rewrite vague AI security observations into decision-grade findings. Added a finding rewrite template, finding quality rubric, instructor facilitation guide, and BrokenPilot before/after example.
 
-<!-- v1.1-dev-lab-improvement-part3-toy-classifier -->
+<!-- v1.1.0-lab-improvement-part3-toy-classifier -->
 
-## v1.1-dev: Toy-classifier observable ML attack lab
+## v1.1.0: Toy-classifier observable ML attack lab
 
 - Added a deterministic toy-classifier app for Modules 03 and 10.
 - Added runnable evasion, poisoning, extraction, and output-integrity scripts.

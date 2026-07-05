@@ -41,7 +41,7 @@ Students learn how to:
 - Threat model AI systems
 - Understand ML, LLM, RAG, and agent attack surfaces
 - Use OWASP, BIML, NIST, MITRE ATLAS, and classic security literature
-- Perform hands-on labs using existing vulnerable environments such as DVAIA
+- Perform hands-on labs using BrokenPilot, the toy classifier lab, and the MLOps evidence-pack review
 - Design mitigations that balance security, usability, and developer velocity
 - Produce useful engineering deliverables: threat models, risk registers, red-team reports, secure architecture reviews, and residual-risk statements
 
@@ -114,13 +114,13 @@ The root-level `modules/`, `labs/`, `course-templates/`, `instructor/`, and `ass
 
 ## Development status
 
-Current working version: **v1.1-dev testable-labs and course-depth draft**.
+Current release: v1.1.0.1.0.
 
-The v1.0 curriculum has been released. Current development focuses on making the course more portable, testable, instructor-ready, and self-study friendly before any future v1.1 release tag.
+The v1 release is the first stable teaching release. It includes the full 12-module course, validated runnable labs, instructor guidance, assessment material, MkDocs strict navigation, and release-quality usage and licensing guidance.
 
-Completed in the v1.1-dev line:
+Completed in the v1.1.0 line:
 
-1. DVAIA local validation and DVAIA-backed walkthroughs.
+1. BrokenPilot-primary lab validation, with DVAIA retained only as optional external practice.
 2. BrokenPilot runnable MVP with retrieval, tool-calling, memory poisoning, control toggles, and tests.
 3. Deeper reading-first material for Modules 05, 06, 07, and 10.
 4. Worked examples, grading calibration, finding rewrite exercises, and executive communication exercises.
@@ -131,7 +131,7 @@ Completed in the v1.1-dev line:
 
 Existing vulnerable projects should be used where possible. The course value is in the structure, explanations, lab guides, architecture discussions, mitigation design, and assessment material.
 
-DVAIA and similar projects can provide the hands-on substrate. This curriculum provides the learning path.
+BrokenPilot is the primary runnable lab environment for the LLM, RAG, agent, privacy, red-team, and capstone path. DVAIA and similar projects may be used as optional external practice, but they are not the primary course path.
 
 Labs should be local, controlled, fake-data environments. The goal is to teach security reasoning, not to attack systems the student does not own.
 
@@ -148,7 +148,7 @@ See `LICENSE.md`, `LICENSE-CONTENT.md`, `LICENSE-CODE.md`, and `COMMERCIAL-LICEN
 
 ## Course status
 
-Current working version: **v1.1-dev testable-labs and course-depth draft**. Modules 01–12 have complete teaching packages. DVAIA has been locally validated as an external lab dependency, BrokenPilot has a runnable MVP, and the course is being hardened for a future v1.1 release.
+Current release: v1.1.0.1.0.
 
 | Module | Status | Notes |
 |---|---|---|
@@ -165,18 +165,15 @@ Current working version: **v1.1-dev testable-labs and course-depth draft**. Modu
 | 11  -  AI Red Team Methodology | Complete | Scope, rules of engagement, attack planning, controlled testing, evidence, severity, reporting, executive readout, remediation, and residual risk. |
 | 12  -  BrokenPilot Capstone | Complete | Full capstone teaching package, runbook, exercises, final presentation guide, evidence log, remediation backlog, templates, and assessment rubric. |
 
-## Current development focus
+## Maintenance focus
 
-The next development phase is not another release tag. It is focused on quality and testability:
+The v1 release is intended to be stable for teaching. Future work should focus on:
 
-1. Validate DVAIA locally and document exact setup notes.
-2. Design a minimal runnable BrokenPilot prototype.
-3. Add worked capstone examples for grading consistency.
-4. Add instructor delivery guidance for different course lengths.
-5. Add concrete control deliverables that require students to design implementable fixes.
-6. Deepen Module 10 with worked adversarial ML examples.
-
-The website layer is useful, but the highest priority is making the course more hands-on and instructor-ready.
+- preserving BrokenPilot as the primary runnable lab path
+- keeping lab tests and MkDocs strict checks green
+- improving instructor handoff based on real delivery feedback
+- keeping optional external practice clearly marked as optional
+- reducing file sprawl only when it improves maintainability
 
 ## Recommended delivery target
 

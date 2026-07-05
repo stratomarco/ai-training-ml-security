@@ -1,6 +1,6 @@
 # Course Release Manifest
 
-Version: `v1.1-dev-rc1`
+Version: `v1.1.0-v1.1.0`
 
 This manifest records the release-candidate baseline for the AI Training - ML Security course.
 

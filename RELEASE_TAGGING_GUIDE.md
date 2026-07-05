@@ -44,10 +44,10 @@ git push
 ## Tag release candidate
 
 ```powershell
-git tag v1.1-dev-rc1
-git push origin v1.1-dev-rc1
+git tag v1.1.0-v1.1.0
+git push origin v1.1.0-v1.1.0
 ```
 
 ## After tagging
 
-Keep `v1.1-dev-rc1` as the review tag until a final human pass confirms there are no release blockers. Promote to a final `v1.1` tag only after that review.
+Keep `v1.1.0-v1.1.0` as the review tag until a final human pass confirms there are no release blockers. Promote to a final `v1.1` tag only after that review.
