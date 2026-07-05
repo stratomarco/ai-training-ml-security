@@ -140,3 +140,16 @@ Expected release behavior:
 - `scripts/generate_mkdocs_nav.py` regenerates `mkdocs.yml` navigation from files that exist.
 - `mkdocs build --strict` is the release gate.
 - CI runs the two runnable lab targets before publishing.
+
+## Release cleanup phase 8
+
+Release-candidate hardening added:
+
+- `VERSION`
+- `COURSE_RELEASE_MANIFEST.md`
+- `RELEASE_CANDIDATE_CHECKLIST.md`
+- `USAGE_AND_LICENSING_GUIDE.md`
+- `QUALITY_GATE_BASELINE.md`
+- `scripts/check_release_candidate_phase8.py`
+
+The repository is now ready for final release-candidate validation and tagging once all quality gates pass.

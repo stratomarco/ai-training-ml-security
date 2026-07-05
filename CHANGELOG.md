@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.1-dev-rc1 - release candidate
+
+This release-candidate checkpoint marks the course as ready for final review after the release cleanup sequence.
+
+Validation baseline:
+
+- Repository structure check.
+- Content readiness check.
+- Lab target presence check.
+- MkDocs strict build.
+- BrokenPilot pytest suite.
+- Toy classifier pytest suite.
+
+Course status:
+
+- BrokenPilot is the primary runnable capstone environment.
+- The toy classifier lab is the primary classical ML attack environment.
+- The MLOps evidence-pack lab is the primary secure MLOps reasoning lab.
+- Optional legacy or external lab paths are marked as optional and are not required for the published course path.
+
+Known non-blocking item:
+
+- Material for MkDocs may print an upstream MkDocs 2.0 warning banner. That banner is informational and is not a course release blocker.
+
+
 ## v1.1-dev structural cleanup and portability review
 
 Applied review-driven cleanup before further content work.
