@@ -162,3 +162,9 @@ Status: completed by the RC instructor-track fix pass.
 - Major lab families have one facilitation entry point each: toy classifier, BrokenPilot, and MLOps evidence pack.
 - Release-process review docs were moved under `instructor/release-readiness/archived-pre-release-docs/`.
 - The 40-hour delivery plan now aligns with BrokenPilot-primary module lab paths, with DVAIA optional.
+
+## Final packaging pass
+
+Status: complete when `scripts/run_final_release_gate.py` passes.
+
+This pass archives package-era helper scripts out of the active `scripts/` directory, keeps durable validation scripts active, and adds final release review and tagging guidance.

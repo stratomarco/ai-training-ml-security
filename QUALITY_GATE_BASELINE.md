@@ -36,3 +36,13 @@ The durable checks are:
 - `scripts/check_release_candidate_phase8.py`
 
 Package-era apply, repair, and temporary check scripts should remain archived or absent from the student-facing path.
+
+## Final release gate
+
+Run before tagging:
+
+```powershell
+python scripts\run_final_release_gate.py
+```
+
+The final gate runs repository checks, instructor-track checks, final packaging checks, MkDocs strict build, and both runnable lab test suites.

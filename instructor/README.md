@@ -1,68 +1,34 @@
-# Instructor Guide
+﻿# Instructor Guide
 
-This folder is the instructor track for the course. It contains delivery guidance, facilitation notes, debrief prompts, grading support, and release-readiness material. Start with the files below instead of browsing the directory alphabetically.
+This is the instructor entry point for the course. It tells a second instructor what to read first, how to prepare the week, and which guide to use for each module and lab.
 
-## Start here: read in this order
+## Start here
 
-1. [Course storyline](../COURSE_STORYLINE.md) - the argument the course makes from foundations to capstone.
-2. `Teaching the course narrative` - how to explain the through-line live.
-3. `40-hour delivery plan` - the week, hour by hour.
-4. `Student experience runbook` - daily rhythm, student flow, and checkpoints.
-5. `Anchor-based grading guide` - how to grade consistently.
-6. `40-hour checkpoint rubric` - daily evidence quality expectations.
+Read these files in order before teaching the course:
+
+1. [`teaching-the-course-narrative.md`](teaching-the-course-narrative.md) - the course argument and storyline.
+2. [`40-hour-delivery-plan.md`](40-hour-delivery-plan.md) - the week plan and timing model.
+3. [`40-hour-student-experience-runbook.md`](40-hour-student-experience-runbook.md) - daily rhythm, student flow, and support model.
+4. [`grading-calibration-guide.md`](grading-calibration-guide.md) - grading consistency and calibration guidance.
 
 ## Per-module teaching notes
 
-Use the module instructor notes when preparing a specific session. They give teaching intent, timing, framing, key points, likely student mistakes, and the expected handoff to the next module.
+Each module has its own instructor notes in the module folder:
 
-- `01-security-engineering-for-ai`
-- `02-ml-system-architecture`
-- `03-owasp-ml-top-10`
-- `04-biml-architectural-risk-analysis`
-- `05-llm-application-security`
-- `06-rag-security`
-- `07-agent-tool-security`
-- `08-secure-mlops-supply-chain`
-- `09-privacy-attacks`
-- `10-adversarial-ml-robustness`
-- `11-ai-red-team-methodology`
-- `12-capstone-brokenpilot`
+- `modules/01-security-engineering-for-ai/instructor-notes.md`
+- `modules/02-ml-system-architecture/instructor-notes.md`
+- `modules/03-owasp-ml-top-10/instructor-notes.md`
+- `modules/04-biml-architectural-risk-analysis/instructor-notes.md`
+- `modules/05-llm-application-security/instructor-notes.md`
+- `modules/06-rag-security/instructor-notes.md`
+- `modules/07-agent-tool-security/instructor-notes.md`
+- `modules/08-secure-mlops-supply-chain/instructor-notes.md`
+- `modules/09-privacy-attacks/instructor-notes.md`
+- `modules/10-adversarial-ml-robustness/instructor-notes.md`
+- `modules/11-ai-red-team-methodology/instructor-notes.md`
+- `modules/12-capstone-brokenpilot/instructor-notes.md`
 
-Depth-pass support:
-
-- `Teaching Modules 01-04 depth pass`
-- `Teaching Modules 08-11 depth pass`
-
-## Per-lab facilitation entry points
-
-Use exactly one facilitation guide per major lab family:
-
-- `Toy classifier guide` - Modules 03 and 10. Covers setup, run flow, common failure modes, debrief prompts, and pointers to the model reports.
-- `BrokenPilot guide` - Modules 05, 06, 07, 09, 11, and 12. Covers the supported runnable app, attack/fix flow, capstone evidence, and instructor debrief.
-- `MLOps evidence pack guide` - Module 08. Covers the evidence-pack review, facilitation flow, expected findings, and model-answer debrief.
-
-## Delivery and support
-
-- `Delivery formats` - choose live, compressed, self-study, or blended delivery.
-- `Timing guide` - keep each module inside the expected time box.
-- `Module cut/expand guide` - decide what to cut or expand without breaking the storyline.
-- `Lab troubleshooting and reset guide` - recover student environments and reset labs.
-- `Executive communication guide` - help students translate technical findings into leadership language.
-- `Finding rewrite facilitation guide` - coach students from raw observations to defensible findings.
-
-## Assessment and calibration
-
-Use the assessment files as the grading source of truth. The instructor track should explain how to use them, not duplicate them.
-
-- `40-hour daily checkpoints`
-- `40-hour checkpoint rubric`
-- `Lab deliverable quality checklist`
-- `Anchor-based grading guide`
-- `BrokenPilot final report rubric`
-
-## Release-readiness archive
-
-Build-time review notes, release cleanup reports, and pre-release readiness checks live under `release-readiness/`. They are useful history, but they are not the teaching path for a new instructor.
+Use the module notes for teaching intent, timing, framing, key points, and discussion traps.
 
 ## Lab facilitation entry points
 
@@ -73,3 +39,22 @@ Use exactly one instructor facilitation entry point per major lab family:
 - MLOps evidence pack, Module 08: [`mlops-evidence-pack-guide.md`](mlops-evidence-pack-guide.md)
 
 Keep model answers, rubrics, and module-level instructor notes as references. The files above are the preparation entry points.
+
+## Delivery and support
+
+Use these guides when planning timing, delivery format, student support, and debriefs:
+
+- [`delivery-formats.md`](delivery-formats.md)
+- [`timing-guide.md`](timing-guide.md)
+- [`module-cut-expand-guide.md`](module-cut-expand-guide.md)
+- [`lab-troubleshooting-and-reset-guide.md`](lab-troubleshooting-and-reset-guide.md)
+- [`executive-communication-guide.md`](executive-communication-guide.md)
+- [`finding-rewrite-facilitation-guide.md`](finding-rewrite-facilitation-guide.md)
+
+## Release-readiness material
+
+Release-process, audit, and pre-release review material is kept under:
+
+- [`release-readiness/`](release-readiness/)
+
+That folder is useful for maintainers. It is not the teaching entry point.
