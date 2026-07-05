@@ -1,3 +1,4 @@
+
 name: Course Quality Checks
 
 on:
@@ -5,34 +6,89 @@ on:
     branches:
       - v1.1-dev-testable-labs
   pull_request:
+  workflow_dispatch:
 
 jobs:
-  brokenpilot-tests:
+  repo-and-content-checks:
+    name: Repo and content checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      - name: Install course tooling
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Repository structure
+        run: python scripts/check_repo_structure.py
+
+      - name: Content readiness
+        run: python scripts/check_content_readiness.py
+
+      - name: Lab target presence
+        run: python scripts/check_lab_targets.py
+
+  brokenpilot-tests:
+    name: BrokenPilot tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Install BrokenPilot dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r labs/brokenpilot/prototype-app/requirements.txt
+
       - name: Run BrokenPilot tests
         working-directory: labs/brokenpilot/prototype-app
         run: pytest
 
   toy-classifier-tests:
+    name: Toy classifier tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install toy classifier dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r labs/toy-ml-attacks/toy-classifier-app/requirements-dev.txt
+
       - name: Run toy classifier tests
         working-directory: labs/toy-ml-attacks/toy-classifier-app
         run: pytest
+
+  mkdocs-smoke-test:
+    name: MkDocs smoke test, non-strict
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install MkDocs dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install mkdocs-material
+
+      - name: Generate MkDocs source
+        run: python scripts/sync_mkdocs_content.py
+
+      - name: Build MkDocs site without strict nav enforcement
+        run: mkdocs build

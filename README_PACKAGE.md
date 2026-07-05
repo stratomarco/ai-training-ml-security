@@ -1,28 +1,18 @@
-# Round 3 Content Quality Fixes Package
+# Release Cleanup Phase 3 Package
 
-Apply from the repository root:
+This package cleans the workflow and validation layer for the v1.1-dev branch.
 
-```powershell
-python scripts\apply_round3_content_quality_fixes.py
-python scripts\check_round3_content_quality_fixes.py
-```
+It does not change course content, lab behavior, MkDocs navigation, or student-facing prose.
 
-Then validate the runnable labs:
+## Purpose
 
-```powershell
-cd labs\toy-ml-attacks\toy-classifier-app
-pytest
+During content buildout the repository accumulated strict release checks too early. This package resets the validation baseline to what should be protected now:
 
-cd ..\..\brokenpilot\prototype-app
-pytest
-```
+- repository structure
+- content readiness
+- lab target presence
+- BrokenPilot tests
+- toy-classifier tests
+- non-strict MkDocs build as a smoke test only
 
-Expected effect:
-
-- toy classifier evasion now preserves malicious intent
-- legacy RAG, agent, and DVAIA folders are clearly non-primary
-- Module 05 output handling is student-facing
-- Modules 01 and 02 have explicit graded artifacts
-- superseded BrokenPilot planning docs are archived when present
-
-Do not run MkDocs strict as part of this package. That remains a release-hardening task.
+Strict MkDocs navigation and final release checks remain postponed until the final release-hardening phase.

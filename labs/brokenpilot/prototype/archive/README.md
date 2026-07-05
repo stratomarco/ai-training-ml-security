@@ -1,6 +1,6 @@
 
-# Archived BrokenPilot build planning notes
+# BrokenPilot archived prototype planning notes
 
-These files were useful while the runnable prototype was being designed. They are no longer the student or instructor entry point now that `labs/brokenpilot/prototype-app/` is the working implementation.
+These files are preserved as design history. They are not the current student lab path.
 
-Keep these notes only for project history. Students should use the prototype app guides and capstone materials instead.
+Use `labs/brokenpilot/prototype-app/` for the tested BrokenPilot implementation and current labs.

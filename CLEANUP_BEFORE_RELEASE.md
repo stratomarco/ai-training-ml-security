@@ -39,3 +39,64 @@ Before release, use COURSE_VOICE_AND_COHESION_REVIEW.md and instructor/final-voi
 ## Round 3 cleanup reminders
 
 Before release, verify that legacy DVAIA, RAG, and agent paper labs are either clearly optional or removed from student navigation. Keep BrokenPilot as the primary path for those modules. Also verify that archived BrokenPilot prototype planning notes are not presented as current student instructions.
+
+## Release cleanup phase 1 completed
+
+Temporary package scaffolding has been archived under `archive/pre-release-scaffolding/` instead of being left in the active course tree.
+
+Archived scripts: 43
+Archived package release notes: 19
+
+Keep active during the remaining release work:
+
+- `scripts/check_repo_structure.py`
+- `scripts/check_content_readiness.py`
+- `scripts/check_lab_targets.py`
+- `scripts/sync_mkdocs_content.py`
+
+Still pending for final release cleanup:
+
+- remove or delete `archive/pre-release-scaffolding/` once the release branch is stable;
+- finish MkDocs navigation and re-enable strict site build;
+- stabilize GitHub workflows for final release;
+- run a voice pass on module README files if review finds generated-looking phrasing;
+- remove generated `site/`, `.mkdocs-src/`, caches, and local virtual environments.
+
+## Release cleanup phase 2 status
+
+Completed during the student-facing tree cleanup pass:
+
+- moved pre-release audit documents out of the repository root when present
+- moved final lab readiness review material out of the student-facing `labs/` path when present
+- archived superseded BrokenPilot prototype planning notes when present
+- added `PUBLISHED_COURSE_VIEW.md`
+- added `instructor/release-readiness/` as the archive for maintainer-only material
+
+Still pending for final cleanup:
+
+- remove or archive temporary `apply_*`, `repair_*`, and package-specific `check_*` scripts after all content is stable
+- decide whether package-level `release-notes/` should stay, move to `instructor/release-readiness/`, or collapse into the changelog
+- finish MkDocs navigation and strict build
+- stabilize GitHub workflows
+- perform final prose cleanup for repeated/generated-looking phrasing
+
+## Release cleanup phase 3 status
+
+Workflow and validation cleanup has started.
+
+Current development gates:
+
+- repository structure check
+- content readiness check
+- lab target presence check
+- BrokenPilot pytest
+- toy-classifier pytest
+- non-strict MkDocs smoke build
+
+Postponed until final release hardening:
+
+- MkDocs strict navigation
+- orphan-page failure
+- public deploy automation on every push
+- deletion of archived buildout material
+- final generated-phrasing cleanup
