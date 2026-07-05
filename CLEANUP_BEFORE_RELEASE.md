@@ -107,3 +107,16 @@ Postponed until final release hardening:
 - Added final voice cleanup guidance.
 - Added student-facing scaffolding check.
 - Kept MkDocs strict cleanup postponed until navigation is intentionally finalized.
+
+## Release cleanup phase 5
+
+Status: voice and content polish toolkit added.
+
+Before the release candidate, run:
+
+```powershell
+python scripts/report_voice_polish_hotspots.py
+python scripts/check_release_cleanup_phase5.py
+```
+
+Use the hotspot report as a manual editing aid, not as a hard failure gate.
