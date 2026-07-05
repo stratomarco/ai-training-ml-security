@@ -55,6 +55,7 @@ Use these guides when planning timing, delivery format, student support, and deb
 
 Release-process, audit, and pre-release review material is kept under:
 
-- [`release-readiness/`](release-readiness/)
+- [`release-readiness/`](release-readiness/README.md)
 
 That folder is useful for maintainers. It is not the teaching entry point.
+
