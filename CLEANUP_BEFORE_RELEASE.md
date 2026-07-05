@@ -153,3 +153,12 @@ Release-candidate hardening added:
 - `scripts/check_release_candidate_phase8.py`
 
 The repository is now ready for final release-candidate validation and tagging once all quality gates pass.
+
+## RC instructor track alignment
+
+Status: completed by the RC instructor-track fix pass.
+
+- `instructor/README.md` is now the instructor spine.
+- Major lab families have one facilitation entry point each: toy classifier, BrokenPilot, and MLOps evidence pack.
+- Release-process review docs were moved under `instructor/release-readiness/archived-pre-release-docs/`.
+- The 40-hour delivery plan now aligns with BrokenPilot-primary module lab paths, with DVAIA optional.

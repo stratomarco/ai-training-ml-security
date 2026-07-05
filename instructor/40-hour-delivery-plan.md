@@ -28,7 +28,7 @@ Students should leave with the ability to:
 | Total time | 40 hours |
 | Daily time | 8 hours including breaks |
 | Delivery mode | Instructor-led, hands-on |
-| Lab mode | Local laptop, DVAIA, BrokenPilot |
+| Lab mode | Local laptop, BrokenPilot, toy classifier, and MLOps evidence pack; DVAIA optional |
 | Capstone | BrokenPilot final assessment |
 | Assessment | Evidence log, risk memo, finding rewrite, final report |
 
@@ -56,8 +56,8 @@ The 40-hour course should cover all 12 modules, but not with equal depth.
 | 02  -  ML System Architecture | Core foundation |
 | 03  -  OWASP ML Security Top 10 | Survey with selected examples |
 | 04  -  BIML Architectural Risk Analysis | Architecture review lens |
-| 05  -  LLM Application Security | Deep coverage + DVAIA lab |
-| 06  -  RAG Security | Deep coverage + DVAIA/BrokenPilot lab |
+| 05  -  LLM Application Security | Deep coverage + BrokenPilot lab |
+| 06  -  RAG Security | Deep coverage + Deep coverage + BrokenPilot lab, DVAIA optional |
 | 07  -  Agent and Tool Security | Deep coverage + BrokenPilot lab |
 | 08  -  Secure MLOps and AI Supply Chain | Deep coverage + executive memo |
 | 09  -  Privacy Attacks | Focused coverage |
