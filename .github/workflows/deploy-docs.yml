@@ -26,10 +26,9 @@ jobs:
         run: |
           python scripts/sync_mkdocs_content.py
           python scripts/generate_mkdocs_nav.py
-          python scripts/check_release_cleanup_phase7_mkdocs_strict.py
 
       - name: Build MkDocs site
-        run: mkdocs build --strict
+        run: python -m mkdocs build --strict
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force

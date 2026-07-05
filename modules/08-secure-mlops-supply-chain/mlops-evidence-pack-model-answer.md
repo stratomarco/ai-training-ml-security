@@ -18,7 +18,7 @@ This page points Module 08 students and instructors to the complete model-answer
 
 ## Instructor resources
 
-- `instructor/mlops-evidence-pack-model-answer-debrief.md`
+- `instructor/mlops-evidence-pack-guide.md`
 - `assessments/mlops-evidence-pack-model-answer-rubric.md`
 
 ## Core lesson

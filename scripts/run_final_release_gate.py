@@ -23,6 +23,7 @@ def main() -> None:
         [py, "scripts/check_content_readiness.py"],
         [py, "scripts/check_lab_targets.py"],
         [py, "scripts/check_workflow_validation_baseline.py"],
+        [py, "scripts/check_root_process_docs.py"],
         [py, "scripts/check_release_candidate_phase8.py"],
         [py, "scripts/check_instructor_track.py"],
         [py, "scripts/check_final_release_artifacts.py"],
@@ -35,7 +36,9 @@ def main() -> None:
     for command in checks:
         run(command)
 
-    run(["mkdocs", "build", "--strict"])
+    run([py, "scripts/sync_mkdocs_content.py"])
+    run([py, "scripts/generate_mkdocs_nav.py"])
+    run([py, "-m", "mkdocs", "build", "--strict"])
 
     run([py, "-m", "pytest"], cwd=ROOT / "labs" / "brokenpilot" / "prototype-app")
     run([py, "-m", "pytest"], cwd=ROOT / "labs" / "toy-ml-attacks" / "toy-classifier-app")

@@ -57,20 +57,43 @@ markdown_extensions:
   - pymdownx.snippets
 
 not_in_nav: |
-  /STYLE_AND_VOICE_FINAL_PASS.md
   /instructor/release-readiness/README.md
+  /instructor/release-readiness/archived-package-docs/README_PACKAGE.md
   /instructor/release-readiness/archived-package-readmes/README_PACKAGE.phase6-manual-voice-polish.md
+  /instructor/release-readiness/archived-package-readmes/README_PACKAGE.v1-release-fixes.md
   /instructor/release-readiness/archived-package-scaffolding/docs/README_PACKAGE.md
   /instructor/release-readiness/archived-pre-release-docs/COURSE_CONTENT_AUDIT.md
   /instructor/release-readiness/archived-pre-release-docs/COURSE_DRY_RUN_PLAN_40H.md
   /instructor/release-readiness/archived-pre-release-docs/COURSE_VOICE_AND_COHESION_REVIEW.md
+  /instructor/release-readiness/archived-pre-release-docs/FINAL_INSTRUCTOR_READINESS_REVIEW.md
   /instructor/release-readiness/archived-pre-release-docs/FINAL_LAB_READINESS_REVIEW.md
   /instructor/release-readiness/archived-pre-release-docs/README.md
   /instructor/release-readiness/archived-pre-release-docs/README_PACKAGE.md
   /instructor/release-readiness/archived-pre-release-docs/RELEASE_CLEANUP_PHASE1_REPORT.md
   /instructor/release-readiness/archived-pre-release-docs/ROUND3_CONTENT_QUALITY_FIXES.md
+  /instructor/release-readiness/archived-pre-release-docs/consolidated-instructor-guides/brokenpilot-standalone-facilitation-guide.md
+  /instructor/release-readiness/archived-pre-release-docs/consolidated-instructor-guides/current-brokenpilot-capstone-debrief-guide.md
+  /instructor/release-readiness/archived-pre-release-docs/consolidated-instructor-guides/instructor-runbook.md
+  /instructor/release-readiness/archived-pre-release-docs/consolidated-instructor-guides/mlops-evidence-pack-facilitation-guide.md
+  /instructor/release-readiness/archived-pre-release-docs/consolidated-instructor-guides/mlops-evidence-pack-model-answer-debrief.md
+  /instructor/release-readiness/archived-pre-release-docs/consolidated-instructor-guides/toy-classifier-debrief-guide.md
+  /instructor/release-readiness/archived-pre-release-docs/consolidated-instructor-guides/toy-classifier-facilitation-guide.md
+  /instructor/release-readiness/archived-pre-release-docs/final-voice-cohesion-review-guide.md
   /instructor/release-readiness/final-human-editor-pass.md
   /instructor/release-readiness/final-human-polish-report.md
+  /instructor/release-readiness/release-process-docs/CLEANUP_BEFORE_RELEASE.md
+  /instructor/release-readiness/release-process-docs/FINAL_HUMAN_POLISH_REPORT.md
+  /instructor/release-readiness/release-process-docs/FINAL_RELEASE_REVIEW.md
+  /instructor/release-readiness/release-process-docs/GENERATED_SCAFFOLDING_CLEANUP_REPORT.md
+  /instructor/release-readiness/release-process-docs/QUALITY_GATE_BASELINE.md
+  /instructor/release-readiness/release-process-docs/QUALITY_IMPROVEMENT_PLAN.md
+  /instructor/release-readiness/release-process-docs/README.md
+  /instructor/release-readiness/release-process-docs/RELEASE_CANDIDATE_CHECKLIST.md
+  /instructor/release-readiness/release-process-docs/RELEASE_CHECKLIST.md
+  /instructor/release-readiness/release-process-docs/STYLE_AND_VOICE_FINAL_PASS.md
+  /instructor/release-readiness/release-process-docs/VALIDATION_BASELINE.md
+  /instructor/release-readiness/release-process-docs/VOICE_POLISH_PASS_REPORT.md
+  /instructor/release-readiness/release-process-docs/project-backlog.md
   /instructor/release-readiness/student-facing-cleanup-checklist.md
   /lab-setup/brokenpilot-standalone-path.md
   /lab-setup/dvaia-fallback-decision-guide.md
@@ -381,7 +404,6 @@ nav:
           - "Instructor Solution": labs/brokenpilot/instructor-solution.md
           - "Module Mapping": labs/brokenpilot/module-mapping.md
           - "Architecture": labs/brokenpilot/prototype/architecture.md
-          - "Instructor Runbook": labs/brokenpilot/prototype/instructor-runbook.md
           - "Mock LLM Mode": labs/brokenpilot/prototype/mock-llm-mode.md
           - "Overview": labs/brokenpilot/prototype/README.md
           - "Security And Safety": labs/brokenpilot/prototype/security-and-safety.md
@@ -556,19 +578,15 @@ nav:
       - "Hour Delivery Plan": instructor/40-hour-delivery-plan.md
       - "Hour Module Delivery Profiles": instructor/40-hour-module-delivery-profiles.md
       - "Hour Student Experience Runbook": instructor/40-hour-student-experience-runbook.md
-      - "Brokenpilot Standalone Facilitation Guide": instructor/brokenpilot-standalone-facilitation-guide.md
-      - "Current Brokenpilot Capstone Debrief Guide": instructor/current-brokenpilot-capstone-debrief-guide.md
+      - "Brokenpilot Guide": instructor/brokenpilot-guide.md
       - "Delivery Formats": instructor/delivery-formats.md
       - "Delivery Guide": instructor/delivery-guide.md
       - "Executive Communication Guide": instructor/executive-communication-guide.md
       - "Facilitation Notes": instructor/facilitation-notes.md
-      - "Final Voice Cohesion Review Guide": instructor/final-voice-cohesion-review-guide.md
-      - "Final Instructor Readiness Review": instructor/FINAL_INSTRUCTOR_READINESS_REVIEW.md
       - "Finding Rewrite Facilitation Guide": instructor/finding-rewrite-facilitation-guide.md
       - "Grading Calibration Guide": instructor/grading-calibration-guide.md
       - "Lab Troubleshooting And Reset Guide": instructor/lab-troubleshooting-and-reset-guide.md
-      - "MLOps Evidence Pack Facilitation Guide": instructor/mlops-evidence-pack-facilitation-guide.md
-      - "MLOps Evidence Pack Model Answer Debrief": instructor/mlops-evidence-pack-model-answer-debrief.md
+      - "MLOps Evidence Pack Guide": instructor/mlops-evidence-pack-guide.md
       - "Module Cut Expand Guide": instructor/module-cut-expand-guide.md
       - "One Week Course Runbook": instructor/one-week-course-runbook.md
       - "Teaching From Reading Guides": instructor/teaching-from-reading-guides.md
@@ -576,9 +594,12 @@ nav:
       - "Teaching Modules 08 11 Depth Pass": instructor/teaching-modules-08-11-depth-pass.md
       - "Teaching The Course Narrative": instructor/teaching-the-course-narrative.md
       - "Timing Guide": instructor/timing-guide.md
-      - "Toy Classifier Debrief Guide": instructor/toy-classifier-debrief-guide.md
-      - "Toy Classifier Facilitation Guide": instructor/toy-classifier-facilitation-guide.md
+      - "Toy Classifier Guide": instructor/toy-classifier-guide.md
   - "Release Notes":
+      - "V1 Release Fixes": release-notes/v1-release-fixes.md
+      - "V1.1 Dev Final Packaging": release-notes/v1.1-dev-final-packaging.md
+      - "V1.1 Dev Rc Instructor Track Fixes": release-notes/v1.1-dev-rc-instructor-track-fixes.md
+      - "V1.1 Dev Release Candidate": release-notes/v1.1-dev-release-candidate.md
       - "V1.1 Dev Release Cleanup Phase1": release-notes/v1.1-dev-release-cleanup-phase1.md
       - "V1.1 Dev Release Cleanup Phase2": release-notes/v1.1-dev-release-cleanup-phase2.md
       - "V1.1 Dev Release Cleanup Phase3": release-notes/v1.1-dev-release-cleanup-phase3.md
@@ -586,11 +607,15 @@ nav:
       - "V1.1 Dev Release Cleanup Phase5": release-notes/v1.1-dev-release-cleanup-phase5.md
       - "V1.1 Dev Release Cleanup Phase6": release-notes/v1.1-dev-release-cleanup-phase6.md
       - "V1.1 Dev Release Cleanup Phase7": release-notes/v1.1-dev-release-cleanup-phase7.md
+      - "V1.1 Dev Release Cleanup Phase8": release-notes/v1.1-dev-release-cleanup-phase8.md
       - "V1.1 Dev Worklog": release-notes/v1.1-dev-worklog.md
   - "Project":
       - "Version": VERSION.md
       - "Changelog": CHANGELOG.md
       - "Roadmap": ROADMAP.md
+      - "Course Release Manifest": COURSE_RELEASE_MANIFEST.md
+      - "Usage And Licensing Guide": USAGE_AND_LICENSING_GUIDE.md
+      - "Release Tagging Guide": RELEASE_TAGGING_GUIDE.md
       - "References": references.md
       - "Contributing": CONTRIBUTING.md
       - "License": LICENSE.md
@@ -598,8 +623,8 @@ nav:
       - "License Code": LICENSE-CODE.md
       - "Commercial License": COMMERCIAL-LICENSE.md
       - "Code Of Conduct": CODE_OF_CONDUCT.md
+      - "Content Quality Editing Guide": CONTENT_QUALITY_EDITING_GUIDE.md
       - "Content Strategy": CONTENT_STRATEGY.md
       - "Course Storyline": COURSE_STORYLINE.md
-      - "Quality Improvement Plan": QUALITY_IMPROVEMENT_PLAN.md
       - "Security": SECURITY.md
       - "Source Of Truth": SOURCE_OF_TRUTH.md

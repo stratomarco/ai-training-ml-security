@@ -5,13 +5,14 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+RELEASE_PROCESS = "instructor/release-readiness/release-process-docs"
 
 REQUIRED_FILES = [
     "VERSION",
     "COURSE_RELEASE_MANIFEST.md",
-    "RELEASE_CANDIDATE_CHECKLIST.md",
+    f"{RELEASE_PROCESS}/RELEASE_CANDIDATE_CHECKLIST.md",
     "USAGE_AND_LICENSING_GUIDE.md",
-    "QUALITY_GATE_BASELINE.md",
+    f"{RELEASE_PROCESS}/QUALITY_GATE_BASELINE.md",
     "PUBLISHED_COURSE_VIEW.md",
     "CHANGELOG.md",
     "release-notes/v1.1-dev-release-candidate.md",
@@ -27,7 +28,7 @@ REQUIRED_TEXT = {
         "toy classifier",
         "labs/brokenpilot/prototype-app/",
     ],
-    "QUALITY_GATE_BASELINE.md": [
+    f"{RELEASE_PROCESS}/QUALITY_GATE_BASELINE.md": [
         "scripts/check_repo_structure.py",
         "scripts/check_content_readiness.py",
         "scripts/check_lab_targets.py",
@@ -75,6 +76,7 @@ def main() -> None:
         "scripts/check_content_readiness.py",
         "scripts/check_lab_targets.py",
         "scripts/check_workflow_validation_baseline.py",
+        "scripts/check_root_process_docs.py",
     ]
 
     for rel in durable_checks:

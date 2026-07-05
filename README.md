@@ -89,7 +89,7 @@ ai-training-ml-security/
 ├── mkdocs.yml
 ├── requirements.txt
 ├── CHANGELOG.md
-├── RELEASE_CHECKLIST.md
+├── RELEASE_TAGGING_GUIDE.md
 ├── SECURITY.md
 ├── CODE_OF_CONDUCT.md
 ├── .github/
@@ -192,15 +192,16 @@ Each module includes a `student-reading-guide.md` file. Use it before the deep d
 
 ## Course storyline
 
-The course is organized as one security engineering journey: map the AI system, identify trust boundaries, observe failure modes, design enforceable controls, validate those controls, document validation evidence, and communicate residual risk. See [COURSE_STORYLINE.md](COURSE_STORYLINE.md) and [COURSE_VOICE_AND_COHESION_REVIEW.md](COURSE_VOICE_AND_COHESION_REVIEW.md).
+The course is organized as one security engineering journey: map the AI system, identify trust boundaries, observe failure modes, design enforceable controls, validate those controls, document validation evidence, and communicate residual risk. See [COURSE_STORYLINE.md](COURSE_STORYLINE.md).
 
 ## Release and usage
 
 For release scope, quality gates, and licensing, see:
 
 - [`COURSE_RELEASE_MANIFEST.md`](COURSE_RELEASE_MANIFEST.md)
-- [`QUALITY_GATE_BASELINE.md`](QUALITY_GATE_BASELINE.md)
 - [`USAGE_AND_LICENSING_GUIDE.md`](USAGE_AND_LICENSING_GUIDE.md)
 - [`RELEASE_TAGGING_GUIDE.md`](RELEASE_TAGGING_GUIDE.md)
+
+Maintainer-only release evidence lives under `instructor/release-readiness/release-process-docs/`.
 
 The course is free for self-study and internal company learning with attribution. Commercial training, resale, hosted-course use, or repackaging requires separate permission.

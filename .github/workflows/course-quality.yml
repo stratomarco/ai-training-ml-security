@@ -29,15 +29,15 @@ jobs:
           python scripts/check_content_readiness.py
           python scripts/check_lab_targets.py
           python scripts/check_workflow_validation_baseline.py
+          python scripts/check_root_process_docs.py
 
       - name: Build MkDocs source and navigation
         run: |
           python scripts/sync_mkdocs_content.py
           python scripts/generate_mkdocs_nav.py
-          python scripts/check_release_cleanup_phase7_mkdocs_strict.py
 
       - name: MkDocs strict build
-        run: mkdocs build --strict
+        run: python -m mkdocs build --strict
 
       - name: BrokenPilot tests
         working-directory: labs/brokenpilot/prototype-app

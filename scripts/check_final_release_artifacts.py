@@ -4,15 +4,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
+RELEASE_PROCESS = "instructor/release-readiness/release-process-docs"
 
 REQUIRED_FILES = [
     "VERSION",
     "COURSE_RELEASE_MANIFEST.md",
-    "RELEASE_CANDIDATE_CHECKLIST.md",
-    "FINAL_RELEASE_REVIEW.md",
+    "PUBLISHED_COURSE_VIEW.md",
     "RELEASE_TAGGING_GUIDE.md",
     "USAGE_AND_LICENSING_GUIDE.md",
-    "QUALITY_GATE_BASELINE.md",
+    f"{RELEASE_PROCESS}/RELEASE_CANDIDATE_CHECKLIST.md",
+    f"{RELEASE_PROCESS}/FINAL_RELEASE_REVIEW.md",
+    f"{RELEASE_PROCESS}/QUALITY_GATE_BASELINE.md",
+    f"{RELEASE_PROCESS}/VALIDATION_BASELINE.md",
     "instructor/README.md",
     "instructor/toy-classifier-guide.md",
     "instructor/brokenpilot-guide.md",
@@ -20,6 +23,7 @@ REQUIRED_FILES = [
     "scripts/run_final_release_gate.py",
     "scripts/check_instructor_track.py",
     "scripts/check_final_release_artifacts.py",
+    "scripts/check_root_process_docs.py",
 ]
 
 REQUIRED_ACTIVE_SCRIPTS = [
@@ -30,14 +34,11 @@ REQUIRED_ACTIVE_SCRIPTS = [
     "check_release_candidate_phase8.py",
     "check_instructor_track.py",
     "check_final_release_artifacts.py",
+    "check_root_process_docs.py",
     "run_final_release_gate.py",
     "sync_mkdocs_content.py",
     "generate_mkdocs_nav.py",
 ]
-
-ALLOWED_PACKAGE_HELPERS = {
-    "prepare_final_release_artifacts.py",
-}
 
 FORBIDDEN_SCRIPT_PREFIXES = (
     "apply_",
@@ -51,12 +52,13 @@ FORBIDDEN_SCRIPT_NAMES = {
     "check_pre_rc_review_package.py",
     "run_pre_rc_review.py",
     "apply_pre_rc_review.py",
+    "prepare_final_release_artifacts.py",
 }
 
 REQUIRED_README_LINKS = [
     "COURSE_RELEASE_MANIFEST.md",
-    "QUALITY_GATE_BASELINE.md",
     "USAGE_AND_LICENSING_GUIDE.md",
+    "RELEASE_TAGGING_GUIDE.md",
 ]
 
 REQUIRED_INSTRUCTOR_LINKS = [
@@ -95,7 +97,7 @@ def main() -> None:
                 or name.startswith("check_release_cleanup_phase")
                 or name in FORBIDDEN_SCRIPT_NAMES
             )
-            if forbidden and name not in ALLOWED_PACKAGE_HELPERS:
+            if forbidden:
                 errors.append(f"package-era helper still active: scripts/{name}")
 
     if (ROOT / "README_PACKAGE.md").exists():
@@ -105,6 +107,10 @@ def main() -> None:
     for link in REQUIRED_README_LINKS:
         if link not in readme:
             warnings.append(f"README.md does not mention {link}")
+    if "QUALITY_GATE_BASELINE.md](QUALITY_GATE_BASELINE.md)" in readme:
+        errors.append("README.md still links to root QUALITY_GATE_BASELINE.md")
+    if "COURSE_VOICE_AND_COHESION_REVIEW.md" in readme:
+        errors.append("README.md still links to archived COURSE_VOICE_AND_COHESION_REVIEW.md")
 
     instructor_readme = read("instructor/README.md")
     for link in REQUIRED_INSTRUCTOR_LINKS:
@@ -121,6 +127,13 @@ def main() -> None:
     version = read("VERSION").strip()
     if version and not version.startswith("v1.1"):
         warnings.append(f"VERSION is not v1.1-prefixed: {version}")
+
+    if (ROOT / "scripts" / "check_root_process_docs.py").exists():
+        import subprocess
+        import sys
+        result = subprocess.run([sys.executable, "scripts/check_root_process_docs.py"], cwd=ROOT)
+        if result.returncode != 0:
+            errors.append("scripts/check_root_process_docs.py failed")
 
     if errors:
         print("final release artifact check failed:")
