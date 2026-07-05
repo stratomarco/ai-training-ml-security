@@ -2,7 +2,7 @@
 
 ## Course name
 
-AI Training — ML Security
+AI Training  -  ML Security
 
 ## Tagline
 
@@ -133,14 +133,15 @@ The goal is not to reward only exploitation. The goal is to reward complete secu
 
 ## Current status
 
-Current working version: **v1.0 release candidate**. Modules 01–12 have complete teaching packages, and the BrokenPilot capstone is ready for v1.0 release review.
+Current working version: **v1.1-dev testable-labs and course-depth draft**. Modules 01–12 have complete teaching packages. Current development is focused on testable labs, deeper explanations, one-week delivery, portability, and instructor-ready assessment material.
 
-## Post-v1.0 roadmap
+## v1.1-dev roadmap
 
-After the first release, the recommended next milestones are:
+The current development priorities are:
 
-1. Convert the Markdown curriculum into a navigable MkDocs website.
-2. Expand selected DVAIA lab wrappers after local testing.
-3. Build BrokenPilot as a runnable local vulnerable lab application.
-4. Add optional rendered slides while keeping Markdown as the source of truth.
-5. Add more instructor examples from real architecture reviews and red-team reports.
+1. Keep a single source of truth for course content and generate MkDocs source before build.
+2. Reduce external lab dependency risk by pinning DVAIA and extending BrokenPilot coverage.
+3. Improve cross-platform setup for Windows, macOS, and Linux.
+4. Deepen explanations, controls, remediations, and worked examples.
+5. Align capstone assessment scope with what the runnable target can exhibit and what remains tabletop-based.
+6. Prepare a reviewed 40-hour / one-week instructor-led delivery model.

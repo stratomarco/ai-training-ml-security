@@ -1,4 +1,4 @@
-# Lab — DocOps Assistant Architecture Risk Review
+# Lab  -  DocOps Assistant Architecture Risk Review
 
 ## Lab purpose
 
@@ -91,7 +91,7 @@ The current design has these weaknesses:
 Produce an architecture risk review using:
 
 ```text
-../../templates/architecture-risk-review-template.md
+../../course-templates/architecture-risk-review-template.md
 ```
 
 You must identify:

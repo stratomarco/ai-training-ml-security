@@ -1,6 +1,6 @@
 # Course Overview
 
-AI Training — ML Security is a practical curriculum for security engineering in systems that contain machine learning.
+AI Training  -  ML Security is a practical curriculum for security engineering in systems that contain machine learning.
 
 The course connects classic security foundations with ML, LLM, RAG, agent, MLOps, privacy, adversarial ML, and red team topics.
 

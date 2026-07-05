@@ -1,8 +1,8 @@
-# References — Module 04
+# References  -  Module 04
 
 ## BIML
 
-- Berryville Institute of Machine Learning — Main site: https://berryvilleiml.com/
+- Berryville Institute of Machine Learning  -  Main site: https://berryvilleiml.com/
 - BIML Interactive Machine Learning Risk Framework: https://berryvilleiml.com/interactive/
 - BIML Results: https://berryvilleiml.com/results/
 - BIML Architectural Risk Analysis of Large Language Models: https://berryvilleiml.com/docs/BIML-LLM24.pdf

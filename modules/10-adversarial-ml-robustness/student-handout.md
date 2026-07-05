@@ -1,4 +1,4 @@
-# Module 10 Student Handout — Adversarial ML and Robustness
+# Module 10 Student Handout  -  Adversarial ML and Robustness
 
 ## Core idea
 
@@ -105,3 +105,30 @@ Your adversarial test plan should include:
 - monitoring signals;
 - mitigation plan;
 - residual risk.
+
+## Self-study reading path
+
+Before attempting the adversarial test plan exercise, read the new Module 10 reading-first pages in this order:
+
+1. `deep-dive.md`  -  understand why accuracy is not security assurance.
+2. `attack-anatomy.md`  -  learn how attacker influence becomes system impact.
+3. `controls-and-remediations.md`  -  map failures to implementable controls.
+4. `common-mistakes.md`  -  avoid vague or non-actionable findings.
+5. `worked-example.md`  -  study the fraud-classifier review pattern and reuse the structure for your own system.
+
+When writing your exercise response, do not stop at “the model can be fooled.” Explain the attacker goal, what they can influence, what decision changes, what impact follows, what control should be implemented, and how the fix should be validated.
+
+## Minimum deliverable quality
+
+A strong Module 10 deliverable includes:
+
+- model purpose and business/security decision;
+- attacker goal and attacker-controlled inputs;
+- evasion, poisoning, backdoor, or drift scenario;
+- specific test cases;
+- concrete controls;
+- monitoring and fallback design;
+- fix validation method;
+- residual risk statement.
+
+A weak deliverable only says that adversarial examples exist or that the model should be retrained.

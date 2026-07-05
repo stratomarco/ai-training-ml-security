@@ -1,0 +1,18 @@
+[
+  {
+    "id": "TCK-1001",
+    "tenant": "alpha",
+    "title": "Payment API latency incident",
+    "status": "open",
+    "owner": "alice",
+    "summary": "Alpha payment API latency increased after credential rotation rehearsal."
+  },
+  {
+    "id": "TCK-2001",
+    "tenant": "beta",
+    "title": "Vendor onboarding support request",
+    "status": "open",
+    "owner": "eve",
+    "summary": "Beta vendor onboarding documentation update requested."
+  }
+]

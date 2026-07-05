@@ -1,4 +1,4 @@
-# Module 5 — LLM Application Security
+# Module 5  -  LLM Application Security
 
 ## Purpose
 
@@ -99,6 +99,18 @@ This module primarily maps to the OWASP Top 10 for LLM Applications. The 2025 OW
 
 The 2023/2024 OWASP LLM release used different numbering for several categories, including insecure output handling, sensitive information disclosure, excessive agency, and overreliance/model-theft-related themes. The engineering lesson should not depend on memorizing numbering. Students should learn the underlying failure modes and check the current OWASP GenAI project when producing reports.
 
+## Reading-first deepening materials
+
+Module 05 now includes additional reading-first material intended to make the topic understandable without relying only on labs:
+
+- `deep-dive.md`  -  explains LLM application security as security engineering around a probabilistic component.
+- `attack-anatomy.md`  -  breaks down prompt injection, indirect prompt injection, sensitive disclosure, improper output handling, excessive agency, system prompt leakage, and unbounded consumption.
+- `controls-and-remediations.md`  -  maps weak mitigations to stronger implementable controls and validation tests.
+- `common-mistakes.md`  -  captures common design and reporting mistakes teams make with LLM applications.
+- `worked-example.md`  -  shows how to turn a vague “the model was jailbroken” observation into an engineering-grade finding.
+
+Students should read these before or alongside the DVAIA lab. The lab reinforces the concepts; it does not replace the explanation.
+
 ## Lab
 
 Recommended lab base:
@@ -158,3 +170,40 @@ Security decisions should live in:
 - deployment controls
 
 The LLM can help reason, summarize, and assist. It should not be the sole enforcement point for critical security decisions.
+
+## BrokenPilot observable Module 05 lab
+
+Use `brokenpilot-direct-injection-output-lab.md` to observe two Module 05 failures in the local BrokenPilot prototype:
+
+- direct prompt injection through the user message;
+- insecure output handling when model-derived text reaches an HTML sink without encoding.
+
+This lab is course-owned and deterministic. DVAIA remains useful as an optional external comparison, but this path keeps the core Module 05 hands-on work runnable without external dependencies.
+
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 05 uses BrokenPilot for direct prompt injection, indirect prompt injection, and insecure output handling. DVAIA remains an optional external comparison lab, not a survival dependency.
+
+Primary graded deliverable: A Module 05 control note that identifies the trust boundary, shows the vulnerable and controlled behavior, recommends an architectural control, and states residual risk.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
+
+## Round 3 Module 05 output-handling confirmation
+
+Module 05 includes two BrokenPilot paths: direct prompt injection and insecure output handling. The output-handling path uses `POST /render` and the `ENABLE_OUTPUT_ENCODING` control so students can observe raw versus encoded output in a deterministic HTML sink.

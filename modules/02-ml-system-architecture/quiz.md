@@ -1,4 +1,4 @@
-# Module 02 Quiz — ML System Architecture
+# Module 02 Quiz  -  ML System Architecture
 
 ## Questions
 
@@ -88,18 +88,18 @@ D. Internal data is never used for training
 
 ## Answer key
 
-1. **B** — The full lifecycle shows where model behavior can be influenced.
-2. **D** — Training data, model artifacts, and evaluation datasets are all security-sensitive.
-3. **B** — Labels shape what the model learns.
-4. **C** — Poisoning manipulates training, fine-tuning, or feedback data.
-5. **A** — A model registry controls deployable behavior.
-6. **A** — Leakage can make evaluation results misleading.
-7. **A** — Retrieved content can influence model output and data exposure.
-8. **C** — Feedback loops are useful but security-sensitive.
-9. **C** — Treat model artifacts like deployable software artifacts.
-10. **B** — Tool use turns model output into potential action.
-11. **D** — All three questions are central to ML architecture review.
-12. **A** — Internal data still needs provenance, access control, and integrity checks.
+1. **B**  -  The full lifecycle shows where model behavior can be influenced.
+2. **D**  -  Training data, model artifacts, and evaluation datasets are all security-sensitive.
+3. **B**  -  Labels shape what the model learns.
+4. **C**  -  Poisoning manipulates training, fine-tuning, or feedback data.
+5. **A**  -  A model registry controls deployable behavior.
+6. **A**  -  Leakage can make evaluation results misleading.
+7. **A**  -  Retrieved content can influence model output and data exposure.
+8. **C**  -  Feedback loops are useful but security-sensitive.
+9. **C**  -  Treat model artifacts like deployable software artifacts.
+10. **B**  -  Tool use turns model output into potential action.
+11. **D**  -  All three questions are central to ML architecture review.
+12. **A**  -  Internal data still needs provenance, access control, and integrity checks.
 
 ## Discussion questions
 

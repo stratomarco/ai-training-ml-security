@@ -1,4 +1,4 @@
-# Exercise — LLM Application Security Review
+# Exercise  -  LLM Application Security Review
 
 ## Scenario
 
@@ -46,7 +46,7 @@ The current implementation has these design decisions:
 
 ## Student tasks
 
-### Task 1 — Identify assets
+### Task 1  -  Identify assets
 
 List at least five assets in this system.
 
@@ -61,7 +61,7 @@ Examples:
 - ticket creation capability
 - logs
 
-### Task 2 — Identify trust boundaries
+### Task 2  -  Identify trust boundaries
 
 Draw or describe the trust boundaries between:
 
@@ -73,7 +73,7 @@ Draw or describe the trust boundaries between:
 - model output and browser renderer
 - model output and ticket creation tool
 
-### Task 3 — Map vulnerabilities
+### Task 3  -  Map vulnerabilities
 
 Find at least six likely vulnerabilities or weaknesses.
 
@@ -83,7 +83,7 @@ Use this table:
 |---|---|---|---|---|
 | | | | | |
 
-### Task 4 — Map to LLM risk categories
+### Task 4  -  Map to LLM risk categories
 
 Map your findings to categories such as:
 
@@ -97,7 +97,7 @@ Map your findings to categories such as:
 - overreliance
 - model theft
 
-### Task 5 — Design mitigations
+### Task 5  -  Design mitigations
 
 For each finding, propose a mitigation.
 
@@ -107,7 +107,7 @@ Use this table:
 |---|---|---|---|
 | | | | |
 
-### Task 6 — Residual risk
+### Task 6  -  Residual risk
 
 Write a short residual risk statement.
 

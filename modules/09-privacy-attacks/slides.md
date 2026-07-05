@@ -1,6 +1,6 @@
-# Module 09 Slides — Privacy Attacks and Data Protection
+# Module 09 Slides  -  Privacy Attacks and Data Protection
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # Privacy Attacks and Data Protection
 
@@ -8,7 +8,7 @@ Securing sensitive data across ML, LLM, RAG, and agent systems.
 
 ---
 
-## Slide 2 — Why this module matters
+## Slide 2  -  Why this module matters
 
 AI systems handle sensitive information in new ways.
 
@@ -29,7 +29,7 @@ Privacy risk becomes a lifecycle problem.
 
 ---
 
-## Slide 3 — Core thesis
+## Slide 3  -  Core thesis
 
 # AI privacy risk is not only about the model.
 
@@ -43,7 +43,7 @@ Every stage can expose sensitive information.
 
 ---
 
-## Slide 4 — Privacy versus confidentiality
+## Slide 4  -  Privacy versus confidentiality
 
 Confidentiality asks:
 
@@ -57,7 +57,7 @@ A system can pass a basic access-control review and still create privacy risk.
 
 ---
 
-## Slide 5 — Sensitive data in AI systems
+## Slide 5  -  Sensitive data in AI systems
 
 Sensitive data may appear in:
 
@@ -80,7 +80,7 @@ Do not only search the database schema.
 
 ---
 
-## Slide 6 — Classic security still applies
+## Slide 6  -  Classic security still applies
 
 Useful principles:
 
@@ -100,7 +100,7 @@ The AI twist is that data may be transformed into harder-to-see artifacts.
 
 ---
 
-## Slide 7 — Membership inference
+## Slide 7  -  Membership inference
 
 Membership inference asks:
 
@@ -118,7 +118,7 @@ Security question:
 
 ---
 
-## Slide 8 — Model inversion
+## Slide 8  -  Model inversion
 
 Model inversion asks:
 
@@ -134,7 +134,7 @@ The risk grows when outputs reveal too much detail or confidence.
 
 ---
 
-## Slide 9 — Training data extraction
+## Slide 9  -  Training data extraction
 
 Training data extraction asks:
 
@@ -153,7 +153,7 @@ Root causes often include excessive data collection, weak filtering, overtrainin
 
 ---
 
-## Slide 10 — Prompt and completion leakage
+## Slide 10  -  Prompt and completion leakage
 
 Prompts and completions are often sensitive.
 
@@ -173,7 +173,7 @@ Question:
 
 ---
 
-## Slide 11 — Log and telemetry leakage
+## Slide 11  -  Log and telemetry leakage
 
 AI systems produce rich telemetry.
 
@@ -193,7 +193,7 @@ Logging is useful for debugging and safety, but it must be designed with privacy
 
 ---
 
-## Slide 12 — Embedding leakage
+## Slide 12  -  Embedding leakage
 
 Embeddings are not harmless.
 
@@ -209,7 +209,7 @@ Treat vector databases as sensitive data stores.
 
 ---
 
-## Slide 13 — RAG privacy failures
+## Slide 13  -  RAG privacy failures
 
 Common RAG privacy failures:
 
@@ -226,7 +226,7 @@ RAG turns search into a security boundary.
 
 ---
 
-## Slide 14 — Agent memory leakage
+## Slide 14  -  Agent memory leakage
 
 Agent memory can create privacy persistence.
 
@@ -243,7 +243,7 @@ Memory needs the same governance as any other data store.
 
 ---
 
-## Slide 15 — Feedback-loop privacy
+## Slide 15  -  Feedback-loop privacy
 
 Feedback can become future training or evaluation data.
 
@@ -260,7 +260,7 @@ Question:
 
 ---
 
-## Slide 16 — Privacy threat modeling
+## Slide 16  -  Privacy threat modeling
 
 Ask:
 
@@ -277,7 +277,7 @@ Ask:
 
 ---
 
-## Slide 17 — Control: data minimization
+## Slide 17  -  Control: data minimization
 
 Collect less.
 
@@ -295,7 +295,7 @@ Data minimization is one of the strongest AI privacy controls.
 
 ---
 
-## Slide 18 — Control: retrieval authorization
+## Slide 18  -  Control: retrieval authorization
 
 For RAG systems:
 
@@ -308,7 +308,7 @@ For RAG systems:
 
 ---
 
-## Slide 19 — Control: prompt and log governance
+## Slide 19  -  Control: prompt and log governance
 
 Good controls include:
 
@@ -327,7 +327,7 @@ Do not let debugging become a data lake of sensitive prompts.
 
 ---
 
-## Slide 20 — Control: privacy testing
+## Slide 20  -  Control: privacy testing
 
 Privacy testing should include:
 
@@ -343,7 +343,7 @@ Privacy testing should include:
 
 ---
 
-## Slide 21 — Differential privacy
+## Slide 21  -  Differential privacy
 
 Differential privacy can reduce certain training-data leakage risks.
 
@@ -362,7 +362,7 @@ For many application teams, basic data minimization and access control will come
 
 ---
 
-## Slide 22 — Secure design pattern
+## Slide 22  -  Secure design pattern
 
 ```text
 user request
@@ -380,7 +380,7 @@ The model is only one step in a privacy-preserving workflow.
 
 ---
 
-## Slide 23 — Bad design pattern
+## Slide 23  -  Bad design pattern
 
 ```text
 all documents -> chunking without ACLs -> shared vector DB
@@ -393,7 +393,7 @@ This is a privacy incident waiting to happen.
 
 ---
 
-## Slide 24 — Exercise
+## Slide 24  -  Exercise
 
 Students review a fake HR assistant that:
 
@@ -408,7 +408,7 @@ Goal: produce a privacy risk assessment.
 
 ---
 
-## Slide 25 — Closing message
+## Slide 25  -  Closing message
 
 # Privacy is a system property.
 

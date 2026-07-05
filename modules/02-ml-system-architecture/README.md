@@ -1,4 +1,4 @@
-# Module 02 — ML System Architecture
+# Module 02  -  ML System Architecture
 
 ## Status
 
@@ -220,3 +220,31 @@ The goal of this module is to make students see the complete system before they 
 ## Next module
 
 After this module, continue with [`../03-owasp-ml-top-10/README.md`](../03-owasp-ml-top-10/README.md).
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.
+
+<!-- depth-prose-pass-01-04 -->
+
+## Depth reading path
+
+Use these pages to connect the module reading to later labs and graded deliverables:
+
+- [Deep Dive](deep-dive.md)
+- [Attack Anatomy](attack-anatomy.md)
+- [Controls and Remediations](controls-and-remediations.md)
+- [Common Mistakes](common-mistakes.md)
+- [Worked Example](worked-example.md)
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
+
+## Round 3 graded artifact confirmation
+
+This module ends in a graded artifact: a **architecture and data-flow map**. Use `exercise-deliverable-anchor.md` as the submission anchor.

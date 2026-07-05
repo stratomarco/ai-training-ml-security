@@ -1,4 +1,4 @@
-# Quiz — BIML and Architectural Risk Analysis
+# Quiz  -  BIML and Architectural Risk Analysis
 
 ## Questions
 

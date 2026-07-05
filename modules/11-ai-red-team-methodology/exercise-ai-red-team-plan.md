@@ -1,4 +1,4 @@
-# Exercise — AI Red Team Plan
+# Exercise  -  AI Red Team Plan
 
 ## Purpose
 
@@ -24,7 +24,7 @@ The organization wants to know whether BrokenPilot can be safely piloted with en
 
 ## Student tasks
 
-### Task 1 — Define scope
+### Task 1  -  Define scope
 
 Document:
 
@@ -38,7 +38,7 @@ Document:
 - stop conditions;
 - escalation contacts.
 
-### Task 2 — Identify assets
+### Task 2  -  Identify assets
 
 List the assets that need protection:
 
@@ -52,7 +52,7 @@ List the assets that need protection:
 - model and provider credentials;
 - business workflow integrity.
 
-### Task 3 — Identify trust boundaries
+### Task 3  -  Identify trust boundaries
 
 Draw or describe trust boundaries between:
 
@@ -65,7 +65,7 @@ Draw or describe trust boundaries between:
 - memory store and user sessions;
 - logs and monitoring.
 
-### Task 4 — Create attack paths
+### Task 4  -  Create attack paths
 
 Create at least three attack paths.
 
@@ -92,7 +92,7 @@ Suggested categories:
 - model DoS;
 - overreliance.
 
-### Task 5 — Define evidence requirements
+### Task 5  -  Define evidence requirements
 
 For each test, define what evidence must be captured:
 
@@ -106,7 +106,7 @@ For each test, define what evidence must be captured:
 - affected asset;
 - impact statement.
 
-### Task 6 — Write one finding
+### Task 6  -  Write one finding
 
 Choose one attack path and write a finding using the red-team report template.
 

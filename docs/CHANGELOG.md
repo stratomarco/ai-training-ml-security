@@ -1,6 +1,16 @@
 # Changelog
 
-## v1.1.0 — Website edition draft
+## v1.1-dev  -  Content strategy and licensing update
+
+- Added reading-first, lab-supported content strategy.
+- Added content strategy and reading-first pages to the MkDocs site.
+- Added deep-dive, attack anatomy, and controls/remediations templates.
+- Replaced permissive split-license wording with a non-commercial split-license model.
+- Added explicit permission for internal organizational learning with attribution when material is not sold, productized, or delivered as a paid external offering.
+- Added content license, code license, and commercial licensing policy files.
+
+
+## v1.1.0  -  Website edition draft
 
 ### Added
 
@@ -25,7 +35,7 @@ The project uses a curriculum-oriented versioning model:
 - `v1.0.0` represents the first complete teachable curriculum.
 - Later versions should document content changes, new labs, corrections, and major restructuring.
 
-## v1.0.0-rc2 — Review cleanup
+## v1.0.0-rc2  -  Review cleanup
 
 ### Fixed
 
@@ -36,7 +46,7 @@ The project uses a curriculum-oriented versioning model:
 - Added missing primary URLs to Module 08 Secure MLOps references.
 - Clarified that OWASP Agentic Skills Top 10 is supplementary to the Agentic Applications Top 10 risk framing.
 
-## v1.0.0-rc — Release candidate
+## v1.0.0-rc  -  Release candidate
 
 ### Added
 
@@ -101,7 +111,7 @@ The project uses a curriculum-oriented versioning model:
 - Rendered PowerPoint/PDF slide decks.
 - Full legal review of license text.
 
-## v0.14 — Module 12 complete
+## v0.14  -  Module 12 complete
 
 ### Added
 
@@ -109,7 +119,7 @@ The project uses a curriculum-oriented versioning model:
 - Capstone slides, instructor notes, handout, exercises, checklist, quiz, and references.
 - Final presentation, evidence log, remediation backlog, risk register, and grading material.
 
-## v0.13 — Module 11 complete
+## v0.13  -  Module 11 complete
 
 ### Added
 
@@ -118,7 +128,7 @@ The project uses a curriculum-oriented versioning model:
 - BrokenPilot attack-chain lab.
 - Red team scope, attack plan, report, and executive readout templates.
 
-## v0.12 — Module 10 complete
+## v0.12  -  Module 10 complete
 
 ### Added
 
@@ -127,7 +137,7 @@ The project uses a curriculum-oriented versioning model:
 - Poisoning and backdoor tabletop.
 - Adversarial test plan and robustness evaluation templates.
 
-## v0.11 — Module 9 complete
+## v0.11  -  Module 9 complete
 
 ### Added
 
@@ -136,7 +146,7 @@ The project uses a curriculum-oriented versioning model:
 - Membership inference and model inversion tabletop.
 - Privacy risk and retention review templates.
 
-## v0.10 — Module 8 complete
+## v0.10  -  Module 8 complete
 
 ### Added
 
@@ -145,13 +155,13 @@ The project uses a curriculum-oriented versioning model:
 - Model artifact provenance lab.
 - ML-BOM and supply chain templates.
 
-## v0.9 — BrokenPilot paper design
+## v0.9  -  BrokenPilot paper design
 
 ### Added
 
 - BrokenPilot scenario, architecture, roles, data model, tools, vulnerabilities, attack paths, secure reference architecture, and instructor solution.
 
-## v0.8 — Module 7 complete
+## v0.8  -  Module 7 complete
 
 ### Added
 
@@ -160,7 +170,7 @@ The project uses a curriculum-oriented versioning model:
 - Memory poisoning and approval-gates lab.
 - Agent control design templates.
 
-## v0.7 — Module 6 complete
+## v0.7  -  Module 6 complete
 
 ### Added
 
@@ -168,7 +178,7 @@ The project uses a curriculum-oriented versioning model:
 - RAG lab wrapper.
 - RAG and vector database templates.
 
-## v0.6 — Module 5 complete
+## v0.6  -  Module 5 complete
 
 ### Added
 
@@ -176,28 +186,28 @@ The project uses a curriculum-oriented versioning model:
 - DVAIA-style LLM lab guide.
 - LLM security review template.
 
-## v0.5 — Module 4 complete
+## v0.5  -  Module 4 complete
 
 ### Added
 
 - BIML Architectural Risk Analysis module.
 - Architecture review lab and template.
 
-## v0.4 — Module 3 complete
+## v0.4  -  Module 3 complete
 
 ### Added
 
 - OWASP ML Security Top 10 module.
 - Classical ML attack lab wrapper.
 
-## v0.3 — Module 2 complete
+## v0.3  -  Module 2 complete
 
 ### Added
 
 - ML System Architecture module.
 - ML lifecycle DFD exercise.
 
-## v0.2 — Module 1 complete
+## v0.2  -  Module 1 complete
 
 ### Added
 
@@ -205,7 +215,7 @@ The project uses a curriculum-oriented versioning model:
 - Reference module structure.
 - Reusable module template.
 
-## v0.1 — Curriculum skeleton
+## v0.1  -  Curriculum skeleton
 
 ### Added
 

@@ -1,4 +1,4 @@
-# Module 03 — OWASP ML Security Top 10
+# Module 03  -  OWASP ML Security Top 10
 
 ## Purpose
 
@@ -40,16 +40,16 @@ This module covers the OWASP Machine Learning Security Top 10 categories:
 
 | OWASP category | Short description |
 |---|---|
-| ML01 — Input Manipulation Attack | Attacker changes inference-time input to manipulate prediction. |
-| ML02 — Data Poisoning Attack | Attacker corrupts training or feedback data. |
-| ML03 — Model Inversion Attack | Attacker infers sensitive training features or representative samples from model behavior. |
-| ML04 — Membership Inference Attack | Attacker determines whether a specific record was used in training. |
-| ML05 — Model Theft | Attacker steals, extracts, or approximates a model. |
-| ML06 — AI Supply Chain Attacks | Attacker compromises datasets, dependencies, model artifacts, registries, or pipelines. |
-| ML07 — Transfer Learning Attack | Attacker abuses inherited behavior, backdoors, or weaknesses from pretrained/fine-tuned models. |
-| ML08 — Model Skewing | Attacker manipulates production feedback or input distribution to degrade or bias behavior. |
-| ML09 — Output Integrity Attack | Attacker tampers with model outputs, post-processing, interpretation, or downstream decisions. |
-| ML10 — Model Poisoning | Attacker manipulates the model artifact, training process, or learned behavior directly. |
+| ML01  -  Input Manipulation Attack | Attacker changes inference-time input to manipulate prediction. |
+| ML02  -  Data Poisoning Attack | Attacker corrupts training or feedback data. |
+| ML03  -  Model Inversion Attack | Attacker infers sensitive training features or representative samples from model behavior. |
+| ML04  -  Membership Inference Attack | Attacker determines whether a specific record was used in training. |
+| ML05  -  Model Theft | Attacker steals, extracts, or approximates a model. |
+| ML06  -  AI Supply Chain Attacks | Attacker compromises datasets, dependencies, model artifacts, registries, or pipelines. |
+| ML07  -  Transfer Learning Attack | Attacker abuses inherited behavior, backdoors, or weaknesses from pretrained/fine-tuned models. |
+| ML08  -  Model Skewing | Attacker manipulates production feedback or input distribution to degrade or bias behavior. |
+| ML09  -  Output Integrity Attack | Attacker tampers with model outputs, post-processing, interpretation, or downstream decisions. |
+| ML10  -  Model Poisoning | Attacker manipulates the model artifact, training process, or learned behavior directly. |
 
 ## Security engineering connection
 
@@ -176,3 +176,39 @@ A strong student answer should explain:
 | Discussion and review | 20 min |
 
 Total: 2.5–3 hours depending on lab depth.
+
+<!-- module03-toy-classifier -->
+
+## Runnable lab anchor
+
+The classical ML attack categories in this module are supported by `labs/toy-ml-attacks/toy-classifier-app/`. Use it to demonstrate input manipulation, data poisoning, model extraction by queries, and output-integrity failure with deterministic tests.
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.
+
+<!-- depth-prose-pass-01-04 -->
+
+## Depth reading path
+
+Use these pages to connect the module reading to later labs and graded deliverables:
+
+- [Deep Dive](deep-dive.md)
+- [Attack Anatomy](attack-anatomy.md)
+- [Controls and Remediations](controls-and-remediations.md)
+- [Common Mistakes](common-mistakes.md)
+- [Worked Example](worked-example.md)
+
+<!-- toy-classifier-debrief-link:start -->
+## Toy-classifier debrief
+
+Use `toy-classifier-debrief.md` to connect the toy-classifier scripts to OWASP ML risk categories and finding quality.
+<!-- toy-classifier-debrief-link:end -->
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).

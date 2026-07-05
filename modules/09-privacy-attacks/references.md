@@ -1,4 +1,4 @@
-# Module 09 References — Privacy Attacks and Data Protection
+# Module 09 References  -  Privacy Attacks and Data Protection
 
 ## Primary references
 

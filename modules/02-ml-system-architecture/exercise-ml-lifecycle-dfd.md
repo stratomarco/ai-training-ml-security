@@ -1,4 +1,4 @@
-# Exercise — ML Lifecycle Data-Flow Diagram
+# Exercise  -  ML Lifecycle Data-Flow Diagram
 
 ## Scenario: LoanAssist ML
 
@@ -58,7 +58,7 @@ Use these assumptions unless your instructor changes them:
 
 ## Student tasks
 
-### Task 1 — Draw the lifecycle DFD
+### Task 1  -  Draw the lifecycle DFD
 
 Draw the system as a data-flow diagram.
 
@@ -81,7 +81,7 @@ Include at least:
 - Feedback loop
 - Logs and monitoring
 
-### Task 2 — Identify assets
+### Task 2  -  Identify assets
 
 List at least ten assets.
 
@@ -102,7 +102,7 @@ Examples:
 - API credentials
 - Logs
 
-### Task 3 — Identify trust boundaries
+### Task 3  -  Identify trust boundaries
 
 Mark trust boundaries on your diagram.
 
@@ -118,7 +118,7 @@ Look for boundaries between:
 - Retrieval system and vector database
 - Feedback loop and future training data
 
-### Task 4 — Identify attack paths
+### Task 4  -  Identify attack paths
 
 Find at least eight attack paths.
 
@@ -144,7 +144,7 @@ Impact: Lower-risk score for fraudulent application.
 Relevant lifecycle stage: Inference / feature processing.
 ```
 
-### Task 5 — Map controls
+### Task 5  -  Map controls
 
 For each attack path, propose at least one control.
 
@@ -166,7 +166,7 @@ Prevent / detect / respond: Prevent and detect.
 Tradeoff: More processing latency and potential false positives.
 ```
 
-### Task 6 — Residual risk statement
+### Task 6  -  Residual risk statement
 
 Write a short residual risk statement.
 

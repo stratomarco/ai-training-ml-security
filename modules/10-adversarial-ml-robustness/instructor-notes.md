@@ -1,4 +1,4 @@
-# Module 10 Instructor Notes — Adversarial ML and Robustness
+# Module 10 Instructor Notes  -  Adversarial ML and Robustness
 
 ## Teaching intent
 
@@ -132,3 +132,30 @@ The practical message is that robustness is an ongoing engineering process:
 ```text
 test -> deploy -> monitor -> detect -> respond -> retrain -> re-test
 ```
+
+## Reading-first delivery sequence
+
+For this module, do not start with abstract adversarial ML terminology. Start with a production decision and ask what happens when the model is wrong under pressure.
+
+Recommended sequence:
+
+1. Use `deep-dive.md` to frame accuracy as evidence, not assurance.
+2. Use `attack-anatomy.md` to connect attacker influence to system impact.
+3. Use `worked-example.md` to show what a strong finding looks like.
+4. Use `controls-and-remediations.md` to force concrete remediation design.
+5. Use the exercise to make students create their own adversarial test plan.
+
+If time is short, teach the fraud-classifier worked example and one backdoor example. If time allows, split students into groups and assign different systems: phishing classifier, login risk model, moderation model, support-ticket routing model, or RAG ranking system.
+
+## Grading emphasis
+
+Reward students for:
+
+- explaining attacker influence;
+- connecting model behavior to business/security impact;
+- designing concrete tests;
+- proposing controls outside the model;
+- defining fallback and monitoring;
+- writing a fix validation plan.
+
+Do not reward vague answers that only say “improve accuracy,” “retrain the model,” or “add more data” without explaining provenance, evaluation, monitoring, and recovery.

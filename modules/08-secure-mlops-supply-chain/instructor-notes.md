@@ -1,4 +1,4 @@
-# Module 08 Instructor Notes — Secure MLOps and AI Supply Chain
+# Module 08 Instructor Notes  -  Secure MLOps and AI Supply Chain
 
 ## Module intent
 
@@ -141,3 +141,7 @@ End with these points:
 3. Security gates must be realistic and risk-based.
 4. The model registry and promotion pipeline are key enforcement points.
 5. Secure MLOps sets the foundation for privacy, robustness, and red-team testing in later modules.
+
+## Facilitating the executive memo exercise
+
+Use the executive memo exercise after students complete the MLOps review. Push students to separate launch blockers from pilot risks. A useful answer should not simply say “delay because AI is risky”; it should define concrete controls that make a limited pilot safe enough to learn from.

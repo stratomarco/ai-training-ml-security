@@ -1,4 +1,4 @@
-# Checklist — Security Engineering for AI Systems
+# Checklist  -  Security Engineering for AI Systems
 
 Use this checklist during design review, threat modeling, and security testing of AI-enabled applications.
 

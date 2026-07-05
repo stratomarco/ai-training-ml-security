@@ -1,4 +1,4 @@
-# Module 6 — RAG Security and Indirect Prompt Injection
+# Module 6  -  RAG Security and Indirect Prompt Injection
 
 ## Purpose
 
@@ -50,6 +50,16 @@ By the end of this module, students should be able to:
 - Logging and monitoring
 - Evaluation and regression testing
 - RAG hardening patterns
+
+## Reading-first deepening material
+
+This module now includes additional reading-first material intended to help students understand the security reasoning before running a lab:
+
+- [Deep Dive](deep-dive.md)  -  why RAG changes the trust model and how it maps to classic security engineering.
+- [Attack Anatomy](attack-anatomy.md)  -  indirect prompt injection, cross-tenant retrieval leakage, and citation laundering.
+- [Controls and Remediations](controls-and-remediations.md)  -  engineer-ready RAG controls and validation patterns.
+- [Common Mistakes](common-mistakes.md)  -  frequent design failures in RAG systems.
+- [Worked Example](worked-example.md)  -  securing a RAG incident assistant with concrete findings and remediations.
 
 ## Why RAG is security-sensitive
 
@@ -299,8 +309,8 @@ RAG security tests should include:
 Recommended lab files:
 
 - `labs/rag-labs/rag-indirect-prompt-injection-lab.md`
-- `templates/rag-threat-model-template.md`
-- `templates/vector-database-authorization-checklist.md`
+- `course-templates/rag-threat-model-template.md`
+- `course-templates/vector-database-authorization-checklist.md`
 
 The lab uses a local, intentionally vulnerable RAG scenario. Students should not run these exercises against production AI systems or systems they do not own.
 
@@ -336,3 +346,26 @@ Keep returning to this question:
 
 If the answer is no, the design is probably relying too much on the model.
 
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 06 uses BrokenPilot as the primary runnable RAG target. The core learning path is retrieval authorization, source trust, and indirect prompt injection through retrieved documents.
+
+Primary graded deliverable: A retrieval security design note with tenant filters, role/user checks, logging expectations, validation tests, and residual risk.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).

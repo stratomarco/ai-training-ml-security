@@ -2,7 +2,7 @@
 
 ## Course name
 
-AI Training — ML Security
+AI Training  -  ML Security
 
 ## Tagline
 

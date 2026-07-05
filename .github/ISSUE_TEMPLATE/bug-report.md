@@ -35,4 +35,4 @@ If you already have a fix in mind, describe it here.
 Does this issue include sensitive data, real credentials, or exploit details for a real system?
 
 - [ ] No
-- [ ] Yes — do not post those details publicly
+- [ ] Yes  -  do not post those details publicly

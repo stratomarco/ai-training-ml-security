@@ -1,4 +1,4 @@
-# Lab — Evasion and Robustness Testing
+# Lab  -  Evasion and Robustness Testing
 
 ## Purpose
 
@@ -8,7 +8,27 @@ Demonstrate how a model-backed control can fail when an attacker changes the rep
 
 A toy classifier identifies fake phishing messages as low, medium, or high risk.
 
-Students receive a small fake dataset and a set of example messages. The objective is not to attack a real email system. The objective is to understand how small controlled input changes can produce different model outcomes.
+For now, students create a shipped synthetic dataset from the schema below or use the dedicated toy-classifier dataset once `labs/toy-ml-attacks/toy-classifier-app/data/messages.json` is added. The objective is not to attack a real email system. The objective is to understand how small controlled input changes can produce different model outcomes.
+
+## Synthetic data schema
+
+Until the toy-classifier app is added, use fake local records with this schema:
+
+```json
+{
+  "id": "msg-001",
+  "text": "synthetic phishing-like message for training only",
+  "label": "high"
+}
+```
+
+Allowed labels:
+
+- `low`
+- `medium`
+- `high`
+
+Do not use real phishing emails, real customer data, or real URLs.
 
 ## Architecture
 
@@ -88,8 +108,27 @@ Possible mitigations:
 
 ## Deliverable
 
-Use [`../../templates/robustness-evaluation-template.md`](../../templates/robustness-evaluation-template.md).
+Use [`../../course-templates/robustness-evaluation-template.md`](../../course-templates/robustness-evaluation-template.md).
 
 ## Instructor note
 
 Keep the lab controlled and conceptual. The goal is to teach robustness design, not to provide bypass recipes for real systems.
+
+<!-- toy-classifier-evasion-path -->
+
+## Runnable evasion path
+
+Use the shipped synthetic dataset and evasion script:
+
+```powershell
+cd labs/toy-ml-attacks/toy-classifier-app
+python -m pip install -r requirements-dev.txt
+python attacks/evasion.py
+pytest
+```
+
+The core engineering question is whether the classifier should be allowed to act as a hard authorization or safety gate. A robust answer should discuss confidence, fallback, review queues, monitoring, and residual risk.
+
+## Round 3 correction: observable evasion
+
+The observable evasion path is `../toy-ml-attacks/toy-classifier-app/attacks/evasion.py`. The malicious intent is preserved by keeping the original phishing core text in the perturbed input. The exercise is to decide whether this classifier can be used as a hard gate, what fallback is required when confidence shifts, and how the control should be validated.

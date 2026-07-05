@@ -22,7 +22,7 @@ This file contains the initial reference spine for the course.
 
 ## Lab references
 
-- DVAIA — Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
+- DVAIA  -  Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
 - Damn Vulnerable AI Agent: https://github.com/opena2a-org/damn-vulnerable-ai-agent
 
 ## Classic security engineering references
@@ -99,23 +99,23 @@ For red teams:
 
 ## Adversarial ML taxonomy
 
-- NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations  
+- NIST AI 100-2 E2025  -  Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations  
   https://csrc.nist.gov/pubs/ai/100/2/e2025/final
 
 
-## Module 5 — LLM Application Security
+## Module 5  -  LLM Application Security
 
 - OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
 - OWASP GenAI Security Project: https://genai.owasp.org/
 - OWASP LLM Top 10 2025 PDF: https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf
-- DVAIA — Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
+- DVAIA  -  Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
 
 
 ## RAG and indirect prompt injection references
 
-- OWASP LLM01 — Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
-- NIST AI 600-1 — Generative AI Profile: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
-- DVAIA — Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
+- OWASP LLM01  -  Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+- NIST AI 600-1  -  Generative AI Profile: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
+- DVAIA  -  Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
 
 
 ## Agent and tool security references
@@ -123,7 +123,7 @@ For red teams:
 - OWASP Top 10 for Agentic Applications for 2026: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
 - OWASP Agentic Applications release summary: https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/
 - OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
-- NIST AI 600-1 — Generative AI Profile: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
+- NIST AI 600-1  -  Generative AI Profile: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - MITRE ATLAS: https://atlas.mitre.org/
 
 
@@ -142,12 +142,12 @@ The BrokenPilot capstone should reuse the course-wide reference set rather than 
 
 ## Secure MLOps and Supply Chain References
 
-- NIST SP 800-218 — Secure Software Development Framework (SSDF)
+- NIST SP 800-218  -  Secure Software Development Framework (SSDF)
 - NIST AI Risk Management Framework and Generative AI Profile
-- OWASP ML Security Top 10 — ML06: AI Supply Chain Attacks
-- OWASP Top 10 for Large Language Model Applications — supply chain, sensitive information disclosure, excessive agency, model theft
-- SLSA — Supply-chain Levels for Software Artifacts
-- MITRE ATLAS — adversarial AI tactics and techniques
+- OWASP ML Security Top 10  -  ML06: AI Supply Chain Attacks
+- OWASP Top 10 for Large Language Model Applications  -  supply chain, sensitive information disclosure, excessive agency, model theft
+- SLSA  -  Supply-chain Levels for Software Artifacts
+- MITRE ATLAS  -  adversarial AI tactics and techniques
 
 Module 08 uses these references to connect conventional secure development and software supply chain controls to ML-specific artifacts such as datasets, labels, features, model files, prompts, adapters, embeddings, vector indexes, evaluation results, registries, and feedback loops.
 
@@ -168,7 +168,7 @@ Module 09 uses these references to connect privacy engineering to AI-specific le
 
 ## Adversarial ML and Robustness References
 
-- NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+- NIST AI 100-2 E2025  -  Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
 - MITRE ATLAS: https://atlas.mitre.org/
 - OWASP Machine Learning Security Top 10: https://owasp.org/www-project-machine-learning-security-top-10/
 - OWASP ML01:2023 Input Manipulation Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML01_2023-Input_Manipulation_Attack
@@ -187,8 +187,8 @@ Module 10 uses these references to connect adversarial ML to practical robustnes
 - OWASP LLM01:2025 Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
 - MITRE ATLAS: https://atlas.mitre.org/
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
-- NIST AI 600-1 — Generative AI Profile: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
-- NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+- NIST AI 600-1  -  Generative AI Profile: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+- NIST AI 100-2 E2025  -  Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
 
 Module 11 uses these references to structure AI red teaming as a disciplined security activity: scope, safety boundaries, threat modeling, attack planning, model/application/infrastructure/runtime testing, evidence, reporting, remediation, and residual risk.
 

@@ -14,3 +14,21 @@ Toy ML labs teach classical adversarial ML concepts without requiring students t
 ## Core lesson
 
 A model can be accurate in normal testing and still fail under adversarial pressure.
+
+<!-- toy-classifier-app-link -->
+
+## Runnable toy-classifier app
+
+The observable path for Modules 03 and 10 is now the shipped toy-classifier app:
+
+```text
+labs/toy-ml-attacks/toy-classifier-app/
+```
+
+Use it for evasion, poisoning, extraction, and output-integrity exercises. The dataset is synthetic, deterministic, local, and covered by pytest.
+
+<!-- toy-classifier-instructor-debrief:start -->
+## Toy-classifier teaching resources
+
+The toy-classifier app now has instructor notes, a student debrief, strong and weak examples, and a grading rubric. Use these materials to keep the lab focused on engineering decisions rather than attack novelty.
+<!-- toy-classifier-instructor-debrief:end -->

@@ -1,4 +1,4 @@
-# Module 01 — Security Engineering for AI
+# Module 01  -  Security Engineering for AI
 
 ## Status
 
@@ -167,3 +167,31 @@ The goal of this module is not to make students expert LLM red teamers. The goal
 ## Next module
 
 After this module, continue with [`../02-ml-system-architecture/README.md`](../02-ml-system-architecture/README.md).
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.
+
+<!-- depth-prose-pass-01-04 -->
+
+## Depth reading path
+
+Use these pages to connect the module reading to later labs and graded deliverables:
+
+- [Deep Dive](deep-dive.md)
+- [Attack Anatomy](attack-anatomy.md)
+- [Controls and Remediations](controls-and-remediations.md)
+- [Common Mistakes](common-mistakes.md)
+- [Worked Example](worked-example.md)
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
+
+## Round 3 graded artifact confirmation
+
+This module ends in a graded artifact: a **threat model**. Use `exercise-deliverable-anchor.md` as the submission anchor.

@@ -35,7 +35,7 @@ The exact stack is less important than the security lessons.
 
 ## Implementation phases
 
-### Phase 1 — Paper-only capstone
+### Phase 1  -  Paper-only capstone
 
 Already covered by this design package.
 
@@ -50,7 +50,7 @@ Deliverables:
 - Student brief.
 - Instructor guide.
 
-### Phase 2 — Minimal local demo
+### Phase 2  -  Minimal local demo
 
 Build only:
 
@@ -67,7 +67,7 @@ Intentional vulnerabilities:
 - RAG authorization failure.
 - Tool confused deputy.
 
-### Phase 3 — Memory and approval workflows
+### Phase 3  -  Memory and approval workflows
 
 Add:
 
@@ -82,7 +82,7 @@ Intentional vulnerabilities:
 - Missing approval for high-risk actions.
 - Weak audit trail.
 
-### Phase 4 — Secure mode
+### Phase 4  -  Secure mode
 
 Add a switch or branch that demonstrates mitigations:
 

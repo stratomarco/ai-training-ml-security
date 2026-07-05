@@ -1,6 +1,6 @@
 # MLOps Supply Chain Labs
 
-This folder contains labs for Module 08 — Secure MLOps and AI Supply Chain.
+This folder contains labs for Module 08  -  Secure MLOps and AI Supply Chain.
 
 The labs are designed as local or tabletop exercises using fake systems and fake data. They are not instructions to attack real ML platforms.
 
@@ -27,3 +27,7 @@ Students should learn to review:
 - monitoring and feedback loops.
 
 The goal is engineering judgment, not tool trivia.
+
+## MLOps Evidence Pack Review Lab
+
+Use `mlops-evidence-pack-review-lab.md` for the concrete Module 08 supply-chain review exercise. The evidence pack is intentionally static: students review notebook, dependency, artifact, registry, storage, and promotion evidence instead of running a fake pipeline.

@@ -1,4 +1,4 @@
-# Module 09 Quiz — Privacy Attacks and Data Protection
+# Module 09 Quiz  -  Privacy Attacks and Data Protection
 
 ## Questions
 

@@ -2,7 +2,7 @@
 
 This roadmap describes work after the first complete curriculum release.
 
-## v1.0 — Complete Markdown curriculum
+## v1.0  -  Complete Markdown curriculum
 
 Goal: first complete teachable release.
 
@@ -22,7 +22,7 @@ Not included:
 - Validated DVAIA installation instructions.
 - Rendered slide decks.
 
-## v1.1 — Lab validation release
+## v1.1  -  Lab validation release
 
 Goal: make the lab experience more concrete.
 
@@ -35,7 +35,7 @@ Planned work:
 - Add lab difficulty ratings.
 - Add instructor reset notes.
 
-## v1.2 — BrokenPilot runnable prototype
+## v1.2  -  BrokenPilot runnable prototype
 
 Goal: create the first local vulnerable capstone application.
 
@@ -50,7 +50,7 @@ Planned work:
 - Docker Compose.
 - Instructor reset script.
 
-## v1.3 — Secure reference implementation
+## v1.3  -  Secure reference implementation
 
 Goal: show vulnerable and hardened variants side by side.
 
@@ -65,7 +65,7 @@ Planned work:
 - Secure memory handling.
 - Evidence of mitigations.
 
-## v1.4 — Instructor delivery pack
+## v1.4  -  Instructor delivery pack
 
 Goal: improve teachability.
 
@@ -78,7 +78,7 @@ Planned work:
 - Sample final reports.
 - Executive briefing variant.
 
-## v2.0 — Full hands-on training environment
+## v2.0  -  Full hands-on training environment
 
 Goal: combine curriculum, labs, and capstone into a mature training platform.
 
@@ -93,7 +93,7 @@ Planned work:
 - Full release documentation.
 
 
-## v1.1 — Website Edition
+## v1.1  -  Website Edition
 
 Goal: turn the Markdown repository into a browsable course website.
 
@@ -109,3 +109,20 @@ Planned/completed scope:
 Future improvement:
 
 - Decide whether `docs/` becomes the single source of truth, or whether a small sync script should preserve root-level compatibility.
+
+
+## v1.1-dev  -  Quality and testability focus
+
+Do not tag a new release until the course is more testable and instructor-ready.
+
+Priority order:
+
+1. Validate DVAIA locally and document exact setup notes for Modules 05–07 and 11.
+2. Design and then build a minimal runnable BrokenPilot prototype.
+3. Add worked student examples for BrokenPilot deliverables.
+4. Add delivery format guidance for 2-hour, half-day, 1-day, 2-day, and 12-week formats.
+5. Add concrete control deliverables so students must produce implementable fixes.
+6. Deepen Module 10 with worked adversarial ML examples.
+7. Continue website improvements only after lab testability improves.
+
+The next release should be based on a measurable improvement in student experience, not only documentation structure.

@@ -1,0 +1,28 @@
+{
+  "registry": "training-only-fake-registry",
+  "model_name": "customer-risk-classifier",
+  "candidate_version": "2026.07.03-unsafe-demo",
+  "artifact_uri": "s3://shared-ml-training-bucket/models/latest/model.pkl",
+  "artifact_sha256_recorded": "1111111111111111111111111111111111111111111111111111111111111111",
+  "artifact_sha256_observed": "2222222222222222222222222222222222222222222222222222222222222222",
+  "promotion_policy": {
+    "approval_required": false,
+    "minimum_reviewers": 0,
+    "allowed_promoters": [
+      "ml-platform-ci",
+      "shared-training-role"
+    ],
+    "requires_dataset_manifest": false,
+    "requires_dependency_lockfile": false,
+    "requires_signed_artifact": false,
+    "requires_model_card": false,
+    "rollback_plan_required": false
+  },
+  "last_promotion_event": {
+    "actor": "shared-training-role",
+    "source_branch": "experiment/notebook-cleanup",
+    "environment": "production-candidate",
+    "decision": "auto-promoted",
+    "reason": "accuracy_above_threshold"
+  }
+}

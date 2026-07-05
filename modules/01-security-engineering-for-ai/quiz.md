@@ -1,4 +1,4 @@
-# Quiz — Module 01: Security Engineering for AI
+# Quiz  -  Module 01: Security Engineering for AI
 
 ## Student questions
 

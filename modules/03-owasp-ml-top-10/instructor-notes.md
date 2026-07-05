@@ -1,4 +1,4 @@
-# Module 03 — Instructor Notes
+# Module 03  -  Instructor Notes
 
 ## Teaching intent
 
@@ -67,7 +67,7 @@ This reinforces the course philosophy: ML Security extends security engineering;
 
 ## Instructor talking points by category
 
-### ML01 — Input Manipulation Attack
+### ML01  -  Input Manipulation Attack
 
 Explain this as inference-time manipulation. The attacker does not need to compromise the model. They only need to craft an input that causes a useful misclassification.
 
@@ -84,7 +84,7 @@ Key point:
 
 > The input is attacker-controlled, but the decision may be trusted by the business.
 
-### ML02 — Data Poisoning Attack
+### ML02  -  Data Poisoning Attack
 
 Explain that training data is part of the system's behavior. Poisoning can be obvious or subtle.
 
@@ -99,7 +99,7 @@ Key point:
 
 > If you do not know where your data came from, you do not know why your model behaves the way it does.
 
-### ML03 — Model Inversion Attack
+### ML03  -  Model Inversion Attack
 
 Explain as privacy leakage through model behavior.
 
@@ -112,7 +112,7 @@ Key point:
 
 > Outputs, confidence scores, and repeated queries may leak more than intended.
 
-### ML04 — Membership Inference Attack
+### ML04  -  Membership Inference Attack
 
 Explain that training membership can be sensitive even if the record itself is not revealed.
 
@@ -125,7 +125,7 @@ Key point:
 
 > The fact that a person was in the dataset can itself be sensitive.
 
-### ML05 — Model Theft
+### ML05  -  Model Theft
 
 Split into two forms:
 
@@ -138,7 +138,7 @@ Key point:
 
 > Model IP is an asset, and query access can become an extraction channel.
 
-### ML06 — AI Supply Chain Attacks
+### ML06  -  AI Supply Chain Attacks
 
 Emphasize that ML supply chain is bigger than package dependencies.
 
@@ -158,7 +158,7 @@ Key point:
 
 > Treat models and datasets as build artifacts with provenance, ownership, and integrity requirements.
 
-### ML07 — Transfer Learning Attack
+### ML07  -  Transfer Learning Attack
 
 Explain this through inherited risk.
 
@@ -175,7 +175,7 @@ Key point:
 
 > Transfer learning transfers capability and risk.
 
-### ML08 — Model Skewing
+### ML08  -  Model Skewing
 
 Explain this as gradual manipulation through production behavior, especially feedback loops.
 
@@ -189,7 +189,7 @@ Key point:
 
 > The feedback loop is an attack surface.
 
-### ML09 — Output Integrity Attack
+### ML09  -  Output Integrity Attack
 
 This is often easier for AppSec students to understand.
 
@@ -205,7 +205,7 @@ Key point:
 
 > The model output is only one part of the decision pipeline.
 
-### ML10 — Model Poisoning
+### ML10  -  Model Poisoning
 
 Distinguish from ML02:
 
@@ -226,7 +226,7 @@ Correction: These risks also affect fraud, spam, recommender systems, risk scori
 
 ### Misconception 2: “Adversarial ML is only academic.”
 
-Correction: Some attack forms are academic or difficult in specific settings, but the underlying problem — adversarial input and data manipulation — is practical.
+Correction: Some attack forms are academic or difficult in specific settings, but the underlying problem  -  adversarial input and data manipulation  -  is practical.
 
 ### Misconception 3: “Better model accuracy solves it.”
 

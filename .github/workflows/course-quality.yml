@@ -1,0 +1,52 @@
+name: Course Quality Checks
+
+on:
+  push:
+    branches:
+      - v1.1-dev-testable-labs
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install course tooling
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Repository and content checks
+        run: |
+          python scripts/check_repo_structure.py
+          python scripts/check_content_readiness.py
+          python scripts/check_lab_targets.py
+          python scripts/check_workflow_validation_baseline.py
+          python scripts/check_root_process_docs.py
+
+      - name: Build MkDocs source and navigation
+        run: |
+          python scripts/sync_mkdocs_content.py
+          python scripts/generate_mkdocs_nav.py
+
+      - name: MkDocs strict build
+        run: python -m mkdocs build --strict
+
+      - name: BrokenPilot tests
+        working-directory: labs/brokenpilot/prototype-app
+        run: |
+          pip install -r requirements.txt
+          pytest
+
+      - name: Toy classifier tests
+        working-directory: labs/toy-ml-attacks/toy-classifier-app
+        run: |
+          pip install -r requirements-dev.txt
+          pytest

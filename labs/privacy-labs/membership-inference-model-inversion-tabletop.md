@@ -1,8 +1,8 @@
-# Lab — Membership Inference and Model Inversion Tabletop
+# Lab  -  Membership Inference and Model Inversion Tabletop
 
 ## Module
 
-Module 09 — Privacy Attacks and Data Protection
+Module 09  -  Privacy Attacks and Data Protection
 
 ## Lab type
 
@@ -111,4 +111,4 @@ Students may propose:
 
 Use:
 
-- `templates/privacy-risk-assessment-template.md`
+- `course-templates/privacy-risk-assessment-template.md`

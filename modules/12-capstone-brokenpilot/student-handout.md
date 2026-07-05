@@ -1,4 +1,4 @@
-# Module 12 Student Handout — BrokenPilot Capstone
+# Module 12 Student Handout  -  BrokenPilot Capstone
 
 ## Your mission
 

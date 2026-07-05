@@ -1,4 +1,4 @@
-# Module 07 Quiz — Agent and Tool Security
+# Module 07 Quiz  -  Agent and Tool Security
 
 ## Questions
 

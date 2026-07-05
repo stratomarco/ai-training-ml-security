@@ -1,0 +1,18 @@
+{
+  "run_id": "train-2026-07-03-unsafe-demo",
+  "model_name": "customer-risk-classifier",
+  "dataset_uri": "s3://shared-ml-training-bucket/raw/customer-events.csv",
+  "dataset_sha256": null,
+  "schema_version": null,
+  "feature_manifest": null,
+  "dependency_lockfile": null,
+  "base_image_digest": "python:3.11-latest",
+  "trainer_identity": "shared-training-role",
+  "metrics": {
+    "accuracy": 0.941,
+    "auc": 0.902,
+    "calibration_checked": false,
+    "slice_evaluation_checked": false
+  },
+  "notes": "Synthetic evidence pack. Review metadata gaps; do not run as a real pipeline."
+}

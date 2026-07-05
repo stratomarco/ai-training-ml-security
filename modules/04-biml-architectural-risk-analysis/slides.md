@@ -1,6 +1,6 @@
-# Module 04 Slides — BIML and Architectural Risk Analysis
+# Module 04 Slides  -  BIML and Architectural Risk Analysis
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # BIML and Architectural Risk Analysis
 
@@ -8,7 +8,7 @@ Security design review for systems that contain machine learning.
 
 ---
 
-## Slide 2 — Why this module exists
+## Slide 2  -  Why this module exists
 
 Most AI security discussions start too late.
 
@@ -30,7 +30,7 @@ But many AI security failures are created earlier:
 
 ---
 
-## Slide 3 — Key message
+## Slide 3  -  Key message
 
 # Architecture determines which failures become possible.
 
@@ -46,7 +46,7 @@ But the architecture decides whether those failures become business impact.
 
 ---
 
-## Slide 4 — From exploit to root cause
+## Slide 4  -  From exploit to root cause
 
 Weak analysis:
 
@@ -66,7 +66,7 @@ Best analysis:
 
 ---
 
-## Slide 5 — What is architectural risk analysis?
+## Slide 5  -  What is architectural risk analysis?
 
 Architectural risk analysis is a security review of system design.
 
@@ -83,7 +83,7 @@ It asks:
 
 ---
 
-## Slide 6 — Building security in
+## Slide 6  -  Building security in
 
 Gary McGraw-style software security emphasizes that security cannot be bolted on at the end.
 
@@ -102,7 +102,7 @@ Security must be built into architecture, workflow, permissions, and operations.
 
 ---
 
-## Slide 7 — Why BIML fits this course
+## Slide 7  -  Why BIML fits this course
 
 BIML is useful because it treats ML security as security engineering.
 
@@ -119,7 +119,7 @@ This is exactly the mindset we want.
 
 ---
 
-## Slide 8 — BIML-78
+## Slide 8  -  BIML-78
 
 BIML-78 is a set of 78 risks associated with a generic ML process model.
 
@@ -135,7 +135,7 @@ The important lesson is using the process model to ask better questions:
 
 ---
 
-## Slide 9 — BIML and LLMs
+## Slide 9  -  BIML and LLMs
 
 LLM systems add new components and risks:
 
@@ -156,7 +156,7 @@ The architecture becomes more than model inference.
 
 ---
 
-## Slide 10 — ML architecture risk components
+## Slide 10  -  ML architecture risk components
 
 Classical ML components:
 
@@ -172,7 +172,7 @@ The job is to ask:
 
 ---
 
-## Slide 11 — LLM architecture risk components
+## Slide 11  -  LLM architecture risk components
 
 LLM application components:
 
@@ -190,7 +190,7 @@ Each arrow may cross a trust boundary.
 
 ---
 
-## Slide 12 — Component risk examples
+## Slide 12  -  Component risk examples
 
 | Component | Risk |
 |---|---|
@@ -205,7 +205,7 @@ Each arrow may cross a trust boundary.
 
 ---
 
-## Slide 13 — System-wide risks
+## Slide 13  -  System-wide risks
 
 Some risks do not belong to only one component.
 
@@ -226,7 +226,7 @@ Architectural review must look across the whole system.
 
 ---
 
-## Slide 14 — Design-level risk vs implementation bug
+## Slide 14  -  Design-level risk vs implementation bug
 
 Implementation bug:
 
@@ -246,7 +246,7 @@ Design-level risk:
 
 ---
 
-## Slide 15 — Risk review question 1: What are the assets?
+## Slide 15  -  Risk review question 1: What are the assets?
 
 AI system assets may include:
 
@@ -268,7 +268,7 @@ AI system assets may include:
 
 ---
 
-## Slide 16 — Risk review question 2: What are the trust boundaries?
+## Slide 16  -  Risk review question 2: What are the trust boundaries?
 
 Common AI trust boundaries:
 
@@ -285,7 +285,7 @@ Common AI trust boundaries:
 
 ---
 
-## Slide 17 — Risk review question 3: What can the model do?
+## Slide 17  -  Risk review question 3: What can the model do?
 
 A model that can only answer questions has limited impact.
 
@@ -305,7 +305,7 @@ Ask:
 
 ---
 
-## Slide 18 — Risk review question 4: What does the model know?
+## Slide 18  -  Risk review question 4: What does the model know?
 
 Ask:
 
@@ -320,7 +320,7 @@ Ask:
 
 ---
 
-## Slide 19 — Risk review question 5: What assumptions are unsafe?
+## Slide 19  -  Risk review question 5: What assumptions are unsafe?
 
 Unsafe assumptions:
 
@@ -337,7 +337,7 @@ Unsafe assumptions:
 
 ---
 
-## Slide 20 — Abuse cases
+## Slide 20  -  Abuse cases
 
 A normal use case says:
 
@@ -351,7 +351,7 @@ Abuse cases make attacker intent visible.
 
 ---
 
-## Slide 21 — Example abuse cases
+## Slide 21  -  Example abuse cases
 
 For an internal AI operations assistant:
 
@@ -365,7 +365,7 @@ For an internal AI operations assistant:
 
 ---
 
-## Slide 22 — Security requirements
+## Slide 22  -  Security requirements
 
 Architectural risk analysis should produce requirements.
 
@@ -382,7 +382,7 @@ Examples:
 
 ---
 
-## Slide 23 — Defensive architecture patterns
+## Slide 23  -  Defensive architecture patterns
 
 Useful design patterns:
 
@@ -401,7 +401,7 @@ Useful design patterns:
 
 ---
 
-## Slide 24 — Where controls should live
+## Slide 24  -  Where controls should live
 
 Do not put all security inside the prompt.
 
@@ -418,7 +418,7 @@ Do not put all security inside the prompt.
 
 ---
 
-## Slide 25 — Residual risk
+## Slide 25  -  Residual risk
 
 Mitigation does not mean zero risk.
 
@@ -435,7 +435,7 @@ AI systems change quickly, so residual risk must be revisited.
 
 ---
 
-## Slide 26 — Practical architecture review workflow
+## Slide 26  -  Practical architecture review workflow
 
 1. System summary
 2. Component diagram
@@ -451,7 +451,7 @@ AI systems change quickly, so residual risk must be revisited.
 
 ---
 
-## Slide 27 — Student exercise
+## Slide 27  -  Student exercise
 
 Review the DocOps Assistant architecture.
 
@@ -470,7 +470,7 @@ You must produce:
 
 ---
 
-## Slide 28 — What good looks like
+## Slide 28  -  What good looks like
 
 A good review does not say only:
 
@@ -482,7 +482,7 @@ A good review says:
 
 ---
 
-## Slide 29 — Instructor discussion
+## Slide 29  -  Instructor discussion
 
 Ask students:
 
@@ -496,7 +496,7 @@ Ask students:
 
 ---
 
-## Slide 30 — Closing
+## Slide 30  -  Closing
 
 Architectural risk analysis turns AI security from tricks into engineering.
 

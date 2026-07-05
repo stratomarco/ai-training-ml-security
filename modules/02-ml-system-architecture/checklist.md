@@ -1,4 +1,4 @@
-# Module 02 Checklist — ML System Architecture Security Review
+# Module 02 Checklist  -  ML System Architecture Security Review
 
 Use this checklist when reviewing the architecture of an ML, LLM, RAG, or agent system.
 

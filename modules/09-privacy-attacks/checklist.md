@@ -1,4 +1,4 @@
-# Module 09 Checklist — AI Privacy and Data Protection
+# Module 09 Checklist  -  AI Privacy and Data Protection
 
 Use this checklist when reviewing ML, LLM, RAG, or agent systems that process sensitive data.
 

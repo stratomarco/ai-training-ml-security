@@ -1,4 +1,4 @@
-# Module 09 Student Handout — Privacy Attacks and Data Protection
+# Module 09 Student Handout  -  Privacy Attacks and Data Protection
 
 ## Core idea
 

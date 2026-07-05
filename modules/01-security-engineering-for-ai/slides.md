@@ -1,4 +1,4 @@
-# Module 01 Slides — Security Engineering for AI
+# Module 01 Slides  -  Security Engineering for AI
 
 These slides are written in Markdown so they can be used directly in GitHub, converted with tools such as Marp, or copied into a presentation later.
 

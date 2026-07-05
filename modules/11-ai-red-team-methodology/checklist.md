@@ -1,4 +1,4 @@
-# Module 11 Checklist — AI Red Team Methodology
+# Module 11 Checklist  -  AI Red Team Methodology
 
 Use this checklist before, during, and after an AI red team engagement.
 

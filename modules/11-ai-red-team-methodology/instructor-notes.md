@@ -1,4 +1,4 @@
-# Module 11 Instructor Notes — AI Red Team Methodology
+# Module 11 Instructor Notes  -  AI Red Team Methodology
 
 ## Teaching goal
 
@@ -151,3 +151,7 @@ Reward students for:
 - residual-risk communication.
 
 Do not reward unsafe behavior, attacks outside scope, or vague “jailbreak” claims without impact.
+
+## Finding rewrite practice
+
+This module includes [`exercise-finding-rewrite.md`](exercise-finding-rewrite.md), a short exercise where students rewrite a weak AI security finding into a decision-grade finding with evidence, root cause, implementable control, validation, and residual risk. Use it before the BrokenPilot capstone to improve report quality.

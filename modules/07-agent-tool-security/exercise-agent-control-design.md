@@ -1,4 +1,4 @@
-# Exercise — Agent Control Design
+# Exercise  -  Agent Control Design
 
 ## Scenario
 
@@ -54,7 +54,7 @@ The current implementation has several intentional weaknesses:
 8. Logs record that a tool was used, but not why it was used.
 9. There is no emergency way to disable one tool without disabling the whole agent.
 
-## Task 1 — Architecture and trust boundaries
+## Task 1  -  Architecture and trust boundaries
 
 Draw or describe the system architecture.
 
@@ -73,7 +73,7 @@ Identify:
 
 Then mark the trust boundaries.
 
-## Task 2 — Tool inventory
+## Task 2  -  Tool inventory
 
 Create a tool inventory table.
 
@@ -88,7 +88,7 @@ Create a tool inventory table.
 
 Add or modify rows as needed.
 
-## Task 3 — Abuse cases
+## Task 3  -  Abuse cases
 
 Write at least five abuse cases.
 
@@ -104,7 +104,7 @@ Examples:
 - As an attacker, I want OpsAgent to save malicious memory so that future sessions follow my instruction.
 - As an attacker, I want to trigger a diagnostic command so that internal configuration is exposed.
 
-## Task 4 — Permission matrix
+## Task 4  -  Permission matrix
 
 Design a permission matrix for each tool.
 
@@ -118,7 +118,7 @@ Include:
 - approval requirement;
 - logging requirement.
 
-## Task 5 — Approval policy
+## Task 5  -  Approval policy
 
 Define which actions are:
 
@@ -131,7 +131,7 @@ Define which actions are:
 
 Add your own tiers.
 
-## Task 6 — Redesign the tools
+## Task 6  -  Redesign the tools
 
 Replace dangerous tools with narrower tools.
 
@@ -161,7 +161,7 @@ Safer:
 send_approved_incident_update(incident_id, channel_id, template_id, variables)
 ```
 
-## Task 7 — Memory policy
+## Task 7  -  Memory policy
 
 Define how memory should work.
 
@@ -175,7 +175,7 @@ Answer:
 6. How can a user or admin delete it?
 7. What memory changes require approval?
 
-## Task 8 — Logging and monitoring
+## Task 8  -  Logging and monitoring
 
 Define what gets logged.
 
@@ -202,7 +202,7 @@ Examples:
 - diagnostic tool requested from retrieved context;
 - cross-team ticket access.
 
-## Task 9 — Kill switch and rollback
+## Task 9  -  Kill switch and rollback
 
 Design operational controls.
 
@@ -216,7 +216,7 @@ Include:
 - undo agent-created ticket changes;
 - preserve forensic logs.
 
-## Task 10 — Residual risk
+## Task 10  -  Residual risk
 
 Write a short residual risk statement.
 
@@ -232,7 +232,7 @@ Include:
 
 Submit an **agent control design** using the template:
 
-`../../templates/agent-control-design-template.md`
+`../../course-templates/agent-control-design-template.md`
 
 Your design should include:
 
@@ -246,3 +246,18 @@ Your design should include:
 8. Logging and monitoring
 9. Kill switch and rollback
 10. Residual risk
+
+## Validated hands-on extension  -  BrokenPilot tool authorization
+
+After completing the design exercise, run the BrokenPilot prototype tool-calling lab and compare your design against the implemented control.
+
+Use:
+
+- `brokenpilot-tool-validation.md` for the validated Module 07 scenario;
+- `../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md` for hands-on steps.
+
+The required validation question is:
+
+> Does the same cross-tenant ticket update succeed in vulnerable mode and fail after `ENABLE_TOOL_AUTHZ=true`?
+
+Students should add both observations to their deliverable. A complete answer must include the vulnerable result, the controlled result, and the security property enforced by the control.

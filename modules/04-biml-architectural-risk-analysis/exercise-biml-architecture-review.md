@@ -1,4 +1,4 @@
-# Exercise — BIML-Style Architecture Risk Review
+# Exercise  -  BIML-Style Architecture Risk Review
 
 ## Exercise goal
 
@@ -75,7 +75,7 @@ You must produce:
 8. Mitigation plan
 9. Residual risk statement
 
-## Step 1 — System summary
+## Step 1  -  System summary
 
 Write a short summary of what the system does.
 
@@ -85,7 +85,7 @@ Prompt:
 DocOps Assistant is a system that...
 ```
 
-## Step 2 — Identify assets
+## Step 2  -  Identify assets
 
 List at least ten assets.
 
@@ -111,7 +111,7 @@ Consider:
 - tool credentials
 - user identity context
 
-## Step 3 — Identify trust boundaries
+## Step 3  -  Identify trust boundaries
 
 Draw or list at least six trust boundaries.
 
@@ -127,7 +127,7 @@ Use this table:
 | Model output → ticket connector | | |
 | Memory service → prompt context | | |
 
-## Step 4 — Challenge assumptions
+## Step 4  -  Challenge assumptions
 
 Review the current design assumptions.
 
@@ -139,7 +139,7 @@ For each unsafe assumption, explain what can go wrong.
 | Model will follow system prompt | | |
 | Full prompts can be logged | | |
 
-## Step 5 — Write abuse cases
+## Step 5  -  Write abuse cases
 
 Create at least five abuse cases.
 
@@ -165,7 +165,7 @@ I want to hide instructions inside a runbook,
 so that the assistant follows those instructions when another user retrieves the document.
 ```
 
-## Step 6 — Identify risks
+## Step 6  -  Identify risks
 
 Identify at least eight design-level risks.
 
@@ -190,7 +190,7 @@ Suggested risk areas:
 - no rollback or incident response
 - overreliance during incidents
 
-## Step 7 — Define security requirements
+## Step 7  -  Define security requirements
 
 For each high-priority risk, define one or more security requirements.
 
@@ -201,7 +201,7 @@ Use this table:
 | Unauthorized document retrieval | Retrieval must enforce document ACLs before context insertion | Retrieval service |
 | Unsafe ticket update | Ticket updates require per-action authorization and human approval | Tool broker / workflow |
 
-## Step 8 — Propose mitigations
+## Step 8  -  Propose mitigations
 
 Create a mitigation plan.
 
@@ -216,7 +216,7 @@ Classify each mitigation as:
 |---|---|---|---|
 | | | | |
 
-## Step 9 — Write residual risk
+## Step 9  -  Write residual risk
 
 Write a short residual risk statement.
 
@@ -249,5 +249,5 @@ A strong review should identify risks such as:
 Submit your review as Markdown using the architecture risk review template:
 
 ```text
-../../templates/architecture-risk-review-template.md
+../../course-templates/architecture-risk-review-template.md
 ```

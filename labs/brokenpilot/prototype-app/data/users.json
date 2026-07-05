@@ -1,0 +1,26 @@
+[
+  {
+    "id": "alice",
+    "display_name": "Alice Nguyen",
+    "tenant": "alpha",
+    "role": "ops"
+  },
+  {
+    "id": "bob",
+    "display_name": "Bob Smith",
+    "tenant": "alpha",
+    "role": "developer"
+  },
+  {
+    "id": "chris",
+    "display_name": "Chris Berg",
+    "tenant": "beta",
+    "role": "viewer"
+  },
+  {
+    "id": "eve",
+    "display_name": "Eve Contractor",
+    "tenant": "beta",
+    "role": "contractor"
+  }
+]

@@ -14,6 +14,41 @@ Use the upstream DVAIA project instructions to install and run it locally. Then 
 | Mitigation discussion | Scenario implementation |
 | Reporting templates | Local practice environment |
 
+
+## Known-good revision
+
+The course was validated against this DVAIA commit:
+
+```text
+23c115252554caa445c0e6ba28641c1110c118e1
+```
+
+Recommended setup on Windows PowerShell:
+
+```powershell
+mkdir F:\ai-labs -ErrorAction SilentlyContinue
+cd F:\ai-labs
+git clone https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application.git
+cd .\DVAIA-Damn-Vulnerable-AI-Application
+git checkout 23c115252554caa445c0e6ba28641c1110c118e1
+Copy-Item .env.example .env
+.\run_docker.ps1 -Local
+```
+
+Recommended setup on macOS or Linux:
+
+```bash
+mkdir -p ~/ai-labs
+cd ~/ai-labs
+git clone https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application.git
+cd DVAIA-Damn-Vulnerable-AI-Application
+git checkout 23c115252554caa445c0e6ba28641c1110c118e1
+cp .env.example .env
+docker compose up --build
+```
+
+If the pinned revision fails because of upstream dependency changes, document the failure, test the current upstream revision, and update `docs/lab-setup/dvaia-validation.md` with the new commit and observed behavior.
+
 ## Before starting a DVAIA-based lab
 
 1. Install DVAIA from the upstream project.

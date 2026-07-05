@@ -1,4 +1,4 @@
-# Module 6 Student Handout — RAG Security and Indirect Prompt Injection
+# Module 6 Student Handout  -  RAG Security and Indirect Prompt Injection
 
 ## Key idea
 
@@ -105,3 +105,13 @@ You will produce a short RAG security review that includes:
 - mitigation plan
 - residual risk
 
+## Reading path for deeper understanding
+
+Before running the lab, read these in order:
+
+1. `deep-dive.md`  -  understand why RAG creates a new trust boundary.
+2. `attack-anatomy.md`  -  follow the attack paths for indirect prompt injection and cross-tenant leakage.
+3. `controls-and-remediations.md`  -  map each risk to controls that engineers can implement.
+4. `worked-example.md`  -  see how to write findings, evidence, and remediation in a realistic case.
+
+The lab should reinforce this reasoning. It should not be the first time the student sees the concept.

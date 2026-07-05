@@ -1,6 +1,6 @@
-# Module 08 Slides — Secure MLOps and AI Supply Chain
+# Module 08 Slides  -  Secure MLOps and AI Supply Chain
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # Secure MLOps and AI Supply Chain
 
@@ -8,7 +8,7 @@ Securing the path from data to production model behavior.
 
 ---
 
-## Slide 2 — Why this module matters
+## Slide 2  -  Why this module matters
 
 In traditional software, supply chain security asks:
 
@@ -20,7 +20,7 @@ In ML systems, we must also ask:
 
 ---
 
-## Slide 3 — Core thesis
+## Slide 3  -  Core thesis
 
 # ML pipelines are software supply chains with extra artifacts.
 
@@ -41,7 +41,7 @@ The production model is shaped by:
 
 ---
 
-## Slide 4 — What is MLOps?
+## Slide 4  -  What is MLOps?
 
 MLOps is the engineering discipline for moving ML systems from experimentation to production.
 
@@ -61,7 +61,7 @@ Secure MLOps adds security controls to each stage.
 
 ---
 
-## Slide 5 — The ML supply chain
+## Slide 5  -  The ML supply chain
 
 ```text
 data source -> dataset -> labels -> features -> training code
@@ -74,7 +74,7 @@ Every arrow is a trust decision.
 
 ---
 
-## Slide 6 — Classic supply chain risks still apply
+## Slide 6  -  Classic supply chain risks still apply
 
 Examples:
 
@@ -92,7 +92,7 @@ ML does not remove these risks.
 
 ---
 
-## Slide 7 — ML adds new supply chain risks
+## Slide 7  -  ML adds new supply chain risks
 
 ML systems add artifacts such as:
 
@@ -113,7 +113,7 @@ Each artifact can be wrong, poisoned, tampered with, leaked, or misused.
 
 ---
 
-## Slide 8 — Security goal
+## Slide 8  -  Security goal
 
 A secure ML delivery process should prove or strongly evidence:
 
@@ -126,7 +126,7 @@ A secure ML delivery process should prove or strongly evidence:
 
 ---
 
-## Slide 9 — Dataset provenance
+## Slide 9  -  Dataset provenance
 
 Dataset questions:
 
@@ -143,7 +143,7 @@ Data is part of the program.
 
 ---
 
-## Slide 10 — Label integrity
+## Slide 10  -  Label integrity
 
 Labels can be attacked or corrupted.
 
@@ -167,7 +167,7 @@ Controls:
 
 ---
 
-## Slide 11 — Notebook security
+## Slide 11  -  Notebook security
 
 Notebooks are often treated as experiments.
 
@@ -185,7 +185,7 @@ A notebook can become the build script for a production model.
 
 ---
 
-## Slide 12 — Dependency risk
+## Slide 12  -  Dependency risk
 
 ML projects often rely on large Python dependency graphs.
 
@@ -209,7 +209,7 @@ Controls:
 
 ---
 
-## Slide 13 — Training environment risk
+## Slide 13  -  Training environment risk
 
 Training jobs often have access to:
 
@@ -225,7 +225,7 @@ Compromising training infrastructure can compromise the model and the data.
 
 ---
 
-## Slide 14 — Model artifact risk
+## Slide 14  -  Model artifact risk
 
 A model artifact may contain:
 
@@ -242,7 +242,7 @@ Treat model files as untrusted artifacts until proven otherwise.
 
 ---
 
-## Slide 15 — Unsafe model loading
+## Slide 15  -  Unsafe model loading
 
 Some model formats and loading patterns can execute code or trigger unsafe behavior.
 
@@ -260,7 +260,7 @@ Controls include safe formats, sandboxing, provenance, scanning, and restricted 
 
 ---
 
-## Slide 16 — Model registry security
+## Slide 16  -  Model registry security
 
 A model registry is a production control point.
 
@@ -279,7 +279,7 @@ It should enforce:
 
 ---
 
-## Slide 17 — Promotion workflow
+## Slide 17  -  Promotion workflow
 
 Not every model should reach production.
 
@@ -298,7 +298,7 @@ Promotion should require evidence:
 
 ---
 
-## Slide 18 — Prompt and adapter supply chain
+## Slide 18  -  Prompt and adapter supply chain
 
 LLM systems add more artifacts:
 
@@ -316,7 +316,7 @@ These need versioning, review, access control, and rollback.
 
 ---
 
-## Slide 19 — Vector index supply chain
+## Slide 19  -  Vector index supply chain
 
 Vector indexes are derived artifacts.
 
@@ -331,7 +331,7 @@ Security questions:
 
 ---
 
-## Slide 20 — Secrets in ML workflows
+## Slide 20  -  Secrets in ML workflows
 
 Common secret locations:
 
@@ -348,7 +348,7 @@ Do not let experiments become secret storage.
 
 ---
 
-## Slide 21 — SBOM and ML-BOM thinking
+## Slide 21  -  SBOM and ML-BOM thinking
 
 A software bill of materials lists software components.
 
@@ -368,7 +368,7 @@ An ML bill of materials should also capture:
 
 ---
 
-## Slide 22 — Provenance
+## Slide 22  -  Provenance
 
 Provenance answers:
 
@@ -384,7 +384,7 @@ Without provenance, production trust becomes guesswork.
 
 ---
 
-## Slide 23 — Reproducibility
+## Slide 23  -  Reproducibility
 
 Reproducibility supports security.
 
@@ -400,7 +400,7 @@ Perfect reproducibility may be hard, but traceability is still required.
 
 ---
 
-## Slide 24 — Evaluation as a gate
+## Slide 24  -  Evaluation as a gate
 
 Evaluation should not be only accuracy.
 
@@ -419,7 +419,7 @@ A model that passes accuracy but fails security should not ship.
 
 ---
 
-## Slide 25 — Feedback loop risk
+## Slide 25  -  Feedback loop risk
 
 Feedback loops are useful and dangerous.
 
@@ -441,7 +441,7 @@ Controls:
 
 ---
 
-## Slide 26 — Runtime and infrastructure
+## Slide 26  -  Runtime and infrastructure
 
 Secure deployment also requires:
 
@@ -459,7 +459,7 @@ MLOps is not finished at deployment.
 
 ---
 
-## Slide 27 — Rollback and emergency response
+## Slide 27  -  Rollback and emergency response
 
 Production models need rollback.
 
@@ -474,7 +474,7 @@ Questions:
 
 ---
 
-## Slide 28 — Common anti-patterns
+## Slide 28  -  Common anti-patterns
 
 Watch for:
 
@@ -490,7 +490,7 @@ Watch for:
 
 ---
 
-## Slide 29 — Better pattern
+## Slide 29  -  Better pattern
 
 A better pattern:
 
@@ -507,7 +507,7 @@ reviewed data + reviewed code + locked dependencies
 
 ---
 
-## Slide 30 — Student exercise
+## Slide 30  -  Student exercise
 
 Students receive a broken ML pipeline.
 
@@ -526,7 +526,7 @@ Then they design a secure promotion workflow.
 
 ---
 
-## Slide 31 — Deliverable
+## Slide 31  -  Deliverable
 
 The final deliverable is a Secure MLOps review with:
 
@@ -541,7 +541,7 @@ The final deliverable is a Secure MLOps review with:
 
 ---
 
-## Slide 32 — Discussion question
+## Slide 32  -  Discussion question
 
 You are asked to ship a model quickly.
 
@@ -553,7 +553,7 @@ How do you balance developer velocity with production security?
 
 ---
 
-## Slide 33 — Main takeaway
+## Slide 33  -  Main takeaway
 
 # Secure MLOps is production security.
 
@@ -561,7 +561,7 @@ If you cannot trace, verify, approve, deploy, monitor, and rollback model artifa
 
 ---
 
-## Slide 34 — Bridge to next module
+## Slide 34  -  Bridge to next module
 
 Module 9 focuses on privacy attacks and data protection.
 

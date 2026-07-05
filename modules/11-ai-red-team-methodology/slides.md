@@ -1,6 +1,6 @@
-# Module 11 Slides — AI Red Team Methodology
+# Module 11 Slides  -  AI Red Team Methodology
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # AI Red Team Methodology
 
@@ -8,7 +8,7 @@ From prompt hacking to structured security testing.
 
 ---
 
-## Slide 2 — The core problem
+## Slide 2  -  The core problem
 
 Many AI security tests stop at:
 
@@ -27,7 +27,7 @@ A useful AI red team exercise must explain:
 
 ---
 
-## Slide 3 — Key message
+## Slide 3  -  Key message
 
 # AI red teaming should produce engineering decisions, not only screenshots.
 
@@ -42,7 +42,7 @@ The output should help teams decide:
 
 ---
 
-## Slide 4 — AI red teaming is not one thing
+## Slide 4  -  AI red teaming is not one thing
 
 AI red teaming can include:
 
@@ -58,7 +58,7 @@ AI red teaming can include:
 
 ---
 
-## Slide 5 — OWASP GenAI red team framing
+## Slide 5  -  OWASP GenAI red team framing
 
 A useful GenAI red team program should be holistic.
 
@@ -73,7 +73,7 @@ Do not test the model in isolation when the real risk is created by tools, docum
 
 ---
 
-## Slide 6 — Red team vs evaluation vs pentest
+## Slide 6  -  Red team vs evaluation vs pentest
 
 | Activity | Main question |
 |---|---|
@@ -84,7 +84,7 @@ Do not test the model in isolation when the real risk is created by tools, docum
 
 ---
 
-## Slide 7 — The system is the target
+## Slide 7  -  The system is the target
 
 An AI system includes:
 
@@ -107,7 +107,7 @@ The model is only one component.
 
 ---
 
-## Slide 8 — Methodology overview
+## Slide 8  -  Methodology overview
 
 ```text
 1. Mission and scope
@@ -124,7 +124,7 @@ The model is only one component.
 
 ---
 
-## Slide 9 — Step 1: mission and scope
+## Slide 9  -  Step 1: mission and scope
 
 Define:
 
@@ -141,7 +141,7 @@ No scope, no red team.
 
 ---
 
-## Slide 10 — Rules of engagement
+## Slide 10  -  Rules of engagement
 
 Rules of engagement should define:
 
@@ -157,7 +157,7 @@ Rules of engagement should define:
 
 ---
 
-## Slide 11 — Safety boundaries
+## Slide 11  -  Safety boundaries
 
 AI red team exercises must avoid:
 
@@ -173,7 +173,7 @@ Use local labs, staging, fake data, and approval gates.
 
 ---
 
-## Slide 12 — Step 2: understand the system
+## Slide 12  -  Step 2: understand the system
 
 Before testing, capture:
 
@@ -192,7 +192,7 @@ Testing without architecture becomes random guessing.
 
 ---
 
-## Slide 13 — Step 3: threat model
+## Slide 13  -  Step 3: threat model
 
 Ask:
 
@@ -207,7 +207,7 @@ Ask:
 
 ---
 
-## Slide 14 — Step 4: attack-path planning
+## Slide 14  -  Step 4: attack-path planning
 
 An attack path chains conditions:
 
@@ -224,7 +224,7 @@ Single findings matter. Attack chains reveal system risk.
 
 ---
 
-## Slide 15 — Test categories
+## Slide 15  -  Test categories
 
 | Category | Examples |
 |---|---|
@@ -238,7 +238,7 @@ Single findings matter. Attack chains reveal system risk.
 
 ---
 
-## Slide 16 — Prompt injection testing
+## Slide 16  -  Prompt injection testing
 
 Test whether attacker-controlled instructions can:
 
@@ -254,7 +254,7 @@ But remember: prompt injection impact depends on what the system can access or d
 
 ---
 
-## Slide 17 — RAG testing
+## Slide 17  -  RAG testing
 
 Test whether malicious or unauthorized content can:
 
@@ -268,7 +268,7 @@ Test whether malicious or unauthorized content can:
 
 ---
 
-## Slide 18 — Agent testing
+## Slide 18  -  Agent testing
 
 Test whether the agent can:
 
@@ -282,7 +282,7 @@ Test whether the agent can:
 
 ---
 
-## Slide 19 — Privacy testing
+## Slide 19  -  Privacy testing
 
 Test whether the system leaks:
 
@@ -298,7 +298,7 @@ Test whether the system leaks:
 
 ---
 
-## Slide 20 — Supply chain testing
+## Slide 20  -  Supply chain testing
 
 Review:
 
@@ -318,7 +318,7 @@ A compromised model artifact is a supply chain incident.
 
 ---
 
-## Slide 21 — Runtime behavior testing
+## Slide 21  -  Runtime behavior testing
 
 Observe:
 
@@ -336,7 +336,7 @@ If it is not observable, it is hard to defend.
 
 ---
 
-## Slide 22 — Evidence collection
+## Slide 22  -  Evidence collection
 
 Good evidence includes:
 
@@ -354,7 +354,7 @@ Good evidence includes:
 
 ---
 
-## Slide 23 — Severity scoring
+## Slide 23  -  Severity scoring
 
 Score based on:
 
@@ -372,7 +372,7 @@ Do not score only on how clever the prompt is.
 
 ---
 
-## Slide 24 — Finding structure
+## Slide 24  -  Finding structure
 
 Each finding should include:
 
@@ -391,7 +391,7 @@ Each finding should include:
 
 ---
 
-## Slide 25 — Common weak reports
+## Slide 25  -  Common weak reports
 
 Weak reports say:
 
@@ -405,7 +405,7 @@ Strong reports say:
 
 ---
 
-## Slide 26 — Remediation design
+## Slide 26  -  Remediation design
 
 Common mitigations:
 
@@ -423,7 +423,7 @@ Common mitigations:
 
 ---
 
-## Slide 27 — Residual risk
+## Slide 27  -  Residual risk
 
 After mitigation, ask:
 
@@ -437,7 +437,7 @@ After mitigation, ask:
 
 ---
 
-## Slide 28 — Executive readout
+## Slide 28  -  Executive readout
 
 Leadership needs:
 
@@ -454,7 +454,7 @@ Avoid hype. Avoid minimization.
 
 ---
 
-## Slide 29 — BrokenPilot attack-chain example
+## Slide 29  -  BrokenPilot attack-chain example
 
 ```text
 malicious runbook inserted
@@ -472,7 +472,7 @@ The finding is an authorization and workflow-control failure triggered through p
 
 ---
 
-## Slide 30 — Closing principle
+## Slide 30  -  Closing principle
 
 # Red teaming is a feedback loop into secure design.
 

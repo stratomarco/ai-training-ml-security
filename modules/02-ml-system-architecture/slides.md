@@ -1,4 +1,4 @@
-# Module 02 Slides — ML System Architecture
+# Module 02 Slides  -  ML System Architecture
 
 These slides are written in Markdown so they can be used directly in GitHub, converted with tools such as Marp, or copied into a presentation later.
 

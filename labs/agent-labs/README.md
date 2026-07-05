@@ -1,22 +1,10 @@
-# Agent Labs
 
-This folder contains controlled, fake-data labs for agent and tool security.
+# Agent labs
 
-These labs should be run only in local or dedicated training environments. They are designed to teach secure design, threat modeling, and defensive controls for AI agents. They are not intended for attacking real systems.
+BrokenPilot is the primary runnable path for agent and tool-security labs.
 
-## Labs
+Use these notes only as optional tabletop prompts or instructor discussion material. The assessed path should use:
 
-- `agent-tool-misuse-lab.md` — tool misuse, excessive agency, tool permission matrix, approval gates.
-- `memory-poisoning-approval-gates-lab.md` — persistent memory risk, provenance, review, expiry, and approval workflow.
-
-## Lab philosophy
-
-Each agent lab should teach the same pattern:
-
-1. What can the agent do?
-2. What identity does it use?
-3. What data can influence it?
-4. What tools can it call?
-5. What can go wrong?
-6. What controls should exist outside the model?
-7. What should be logged, approved, monitored, and reversible?
+- `labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md`
+- `labs/brokenpilot/prototype-app/MEMORY_POISONING_LAB.md`
+- `modules/07-agent-tool-security/lab-path.md`

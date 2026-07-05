@@ -1,4 +1,6 @@
-# Lab — LLM Application Security with DVAIA
+> **Round 3 consolidation note:** This legacy paper lab is no longer the primary 40-hour course path. Use the BrokenPilot runnable lab for observable failure/fix behavior. Keep this file only as optional background or a discussion prompt.
+
+# Lab  -  LLM Application Security with DVAIA
 
 ## Purpose
 
@@ -46,7 +48,7 @@ By the end of the lab, students should be able to:
 6. Propose controls outside the model.
 7. Write a concise vulnerability report.
 
-## Exercise 1 — Direct prompt injection
+## Exercise 1  -  Direct prompt injection
 
 ### Goal
 
@@ -76,7 +78,7 @@ Show that user-controlled language can conflict with the application’s intende
 - Add output validation.
 - Add monitoring for suspicious prompt patterns.
 
-## Exercise 2 — System prompt leakage attempt
+## Exercise 2  -  System prompt leakage attempt
 
 ### Goal
 
@@ -103,7 +105,7 @@ Understand why system prompt secrecy should not be treated as the primary securi
 - Version and review prompt templates.
 - Keep enforcement in code/policy.
 
-## Exercise 3 — Insecure output handling
+## Exercise 3  -  Insecure output handling
 
 ### Goal
 
@@ -131,7 +133,7 @@ Analyze how generated content can become dangerous when rendered or executed dow
 - Avoid direct execution.
 - Use allowlists for generated actions.
 
-## Exercise 4 — Sensitive information disclosure
+## Exercise 4  -  Sensitive information disclosure
 
 ### Goal
 
@@ -159,7 +161,7 @@ Identify how sensitive data can leak through context, retrieval, logs, or respon
 - Avoid broad document retrieval.
 - Protect logs.
 
-## Exercise 5 — Model DoS and cost abuse review
+## Exercise 5  -  Model DoS and cost abuse review
 
 ### Goal
 
@@ -189,7 +191,7 @@ Understand availability and cost risks in LLM applications.
 - Tool-call limits.
 - Abuse monitoring.
 
-## Exercise 6 — Overreliance scenario
+## Exercise 6  -  Overreliance scenario
 
 ### Goal
 

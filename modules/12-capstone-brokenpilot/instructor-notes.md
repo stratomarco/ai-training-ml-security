@@ -1,4 +1,4 @@
-# Module 12 Instructor Notes — BrokenPilot Capstone
+# Module 12 Instructor Notes  -  BrokenPilot Capstone
 
 ## Instructor objective
 
@@ -21,19 +21,19 @@ Students will naturally gravitate toward prompt payloads. Redirect them toward:
 
 Students should have completed or reviewed:
 
-- Module 1 — Security Engineering for AI
-- Module 5 — LLM Application Security
-- Module 6 — RAG Security
-- Module 7 — Agent and Tool Security
-- Module 8 — Secure MLOps and AI Supply Chain
-- Module 9 — Privacy Attacks and Data Protection
-- Module 11 — AI Red Team Methodology
+- Module 1  -  Security Engineering for AI
+- Module 5  -  LLM Application Security
+- Module 6  -  RAG Security
+- Module 7  -  Agent and Tool Security
+- Module 8  -  Secure MLOps and AI Supply Chain
+- Module 9  -  Privacy Attacks and Data Protection
+- Module 11  -  AI Red Team Methodology
 
 For shorter workshops, provide a 20-minute recap of the concepts above.
 
 ## Delivery options
 
-### Option A — Short tabletop, 2–3 hours
+### Option A  -  Short tabletop, 2–3 hours
 
 Use when the audience is leadership, architects, or security champions.
 
@@ -45,7 +45,7 @@ Use when the audience is leadership, architects, or security champions.
 | Mitigation design | 30 min | Teams propose controls and trade-offs. |
 | Debrief | 20 min | Instructor compares results to expected findings. |
 
-### Option B — Half-day workshop, 4 hours
+### Option B  -  Half-day workshop, 4 hours
 
 Use for AppSec, platform, ML, and product security teams.
 
@@ -59,7 +59,7 @@ Use for AppSec, platform, ML, and product security teams.
 | Presentation | 30 min | Teams present top risks. |
 | Debrief | 10 min | Instructor closes with common patterns. |
 
-### Option C — Full-day capstone, 6–7 hours
+### Option C  -  Full-day capstone, 6–7 hours
 
 Use for the complete practitioner experience.
 
@@ -87,9 +87,9 @@ Student-facing:
 - `../../labs/brokenpilot/architecture.md`
 - `../../labs/brokenpilot/roles.md`
 - `../../labs/brokenpilot/tools.md`
-- `../../templates/brokenpilot-final-report-template.md`
-- `../../templates/brokenpilot-risk-register-template.md`
-- `../../templates/brokenpilot-evidence-log-template.md`
+- `../../course-templates/brokenpilot-final-report-template.md`
+- `../../course-templates/brokenpilot-risk-register-template.md`
+- `../../course-templates/brokenpilot-evidence-log-template.md`
 
 Instructor-only:
 
@@ -120,31 +120,31 @@ Expected strong findings include:
 
 ## Common student mistakes
 
-### Mistake 1 — Treating prompt injection as the whole finding
+### Mistake 1  -  Treating prompt injection as the whole finding
 
 Redirect with:
 
 > What security property was violated? Which control should have prevented the outcome?
 
-### Mistake 2 — Recommending only “better prompting”
+### Mistake 2  -  Recommending only “better prompting”
 
 Redirect with:
 
 > What control outside the model would enforce this even if the model is manipulated?
 
-### Mistake 3 — Ignoring authorization at retrieval time
+### Mistake 3  -  Ignoring authorization at retrieval time
 
 Redirect with:
 
 > Should the document have entered the context window for this user at all?
 
-### Mistake 4 — Treating the model as the actor
+### Mistake 4  -  Treating the model as the actor
 
 Redirect with:
 
 > The application executed the action. Where should the application have checked policy?
 
-### Mistake 5 — Over-securing the system until it is useless
+### Mistake 5  -  Over-securing the system until it is useless
 
 Redirect with:
 

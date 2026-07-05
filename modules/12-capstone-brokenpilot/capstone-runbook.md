@@ -24,10 +24,10 @@ The capstone can be run as a tabletop, workshop, or full-day exercise.
 
 Ask students to review:
 
-- Module 5 — LLM Application Security.
-- Module 6 — RAG Security.
-- Module 7 — Agent and Tool Security.
-- Module 11 — AI Red Team Methodology.
+- Module 5  -  LLM Application Security.
+- Module 6  -  RAG Security.
+- Module 7  -  Agent and Tool Security.
+- Module 11  -  AI Red Team Methodology.
 - BrokenPilot scenario and architecture.
 
 ## Suggested folder map
@@ -42,10 +42,10 @@ labs/brokenpilot/scenario.md
 labs/brokenpilot/architecture.md
 labs/brokenpilot/roles.md
 labs/brokenpilot/tools.md
-templates/brokenpilot-final-report-template.md
-templates/brokenpilot-risk-register-template.md
-templates/brokenpilot-evidence-log-template.md
-templates/brokenpilot-remediation-backlog-template.md
+course-templates/brokenpilot-final-report-template.md
+course-templates/brokenpilot-risk-register-template.md
+course-templates/brokenpilot-evidence-log-template.md
+course-templates/brokenpilot-remediation-backlog-template.md
 ```
 
 Instructor-only:
@@ -60,7 +60,7 @@ assessments/brokenpilot-capstone-final-rubric.md
 
 ## Full-day delivery flow
 
-### 1. Opening and mission — 15 minutes
+### 1. Opening and mission  -  15 minutes
 
 Explain:
 
@@ -74,7 +74,7 @@ Key message:
 
 > You are not here to collect prompt tricks. You are here to produce a security decision.
 
-### 2. Architecture walkthrough — 30 minutes
+### 2. Architecture walkthrough  -  30 minutes
 
 Walk through:
 
@@ -96,7 +96,7 @@ Ask students:
 - Where are trust boundaries?
 - Where should authorization happen?
 
-### 3. Threat model — 60 minutes
+### 3. Threat model  -  60 minutes
 
 Students complete the threat model exercise.
 
@@ -111,7 +111,7 @@ Expected output:
 
 Instructor should circulate and challenge shallow answers.
 
-### 4. Attack path planning — 45 minutes
+### 4. Attack path planning  -  45 minutes
 
 Students choose at least three attack paths.
 
@@ -124,7 +124,7 @@ They should define:
 - expected evidence;
 - safety boundary.
 
-### 5. Red team review/tabletop — 75 minutes
+### 5. Red team review/tabletop  -  75 minutes
 
 Students document findings using the evidence log.
 
@@ -140,7 +140,7 @@ Expected finding areas:
 - sensitive disclosure;
 - audit gaps.
 
-### 6. Mitigation design — 60 minutes
+### 6. Mitigation design  -  60 minutes
 
 Students design controls.
 
@@ -156,7 +156,7 @@ Require them to specify where each control lives:
 - monitoring system;
 - governance process.
 
-### 7. Report and readout preparation — 45 minutes
+### 7. Report and readout preparation  -  45 minutes
 
 Students prepare:
 
@@ -166,7 +166,7 @@ Students prepare:
 - residual risk;
 - leadership readout.
 
-### 8. Presentations — 45 minutes
+### 8. Presentations  -  45 minutes
 
 Each team gets 5–8 minutes.
 
@@ -179,7 +179,7 @@ Suggested structure:
 5. Remediation priority.
 6. Residual risk.
 
-### 9. Instructor debrief — 30 minutes
+### 9. Instructor debrief  -  30 minutes
 
 Compare student results to the instructor solution.
 

@@ -1,4 +1,4 @@
-# Module 5 Instructor Notes — LLM Application Security
+# Module 5 Instructor Notes  -  LLM Application Security
 
 ## Teaching goal
 
@@ -123,31 +123,31 @@ Good answer patterns:
 
 ## Common misconceptions
 
-### Misconception 1 — “We can solve this with a stronger prompt”
+### Misconception 1  -  “We can solve this with a stronger prompt”
 
 Correction:
 
 A stronger prompt can reduce accidental failures and some low-effort attacks. It is not a reliable security boundary.
 
-### Misconception 2 — “The model provider handles security”
+### Misconception 2  -  “The model provider handles security”
 
 Correction:
 
 The provider may handle platform security and some safety controls. The application owner remains responsible for data access, tool permissions, workflow design, logging, and business risk.
 
-### Misconception 3 — “Prompt injection is only about leaking the system prompt”
+### Misconception 3  -  “Prompt injection is only about leaking the system prompt”
 
 Correction:
 
 System prompt leakage is usually lower impact than unauthorized data access, tool misuse, or workflow manipulation.
 
-### Misconception 4 — “LLM output is safe because the model is trusted”
+### Misconception 4  -  “LLM output is safe because the model is trusted”
 
 Correction:
 
 The output is influenced by user input, retrieved content, and model behavior. It must be handled like untrusted data.
 
-### Misconception 5 — “Overreliance is not a security issue”
+### Misconception 5  -  “Overreliance is not a security issue”
 
 Correction:
 
@@ -223,3 +223,21 @@ Push students to complete the engineering reasoning.
 End with this:
 
 > The question is not whether the model can be tricked. The question is whether the system remains safe when the model is tricked.
+
+## Teaching the reading-first materials
+
+Use the new deepening files to avoid turning Module 05 into a payload-demo session. A good delivery pattern is:
+
+1. Start with `deep-dive.md` and the claim that the model is not the security boundary.
+2. Use `attack-anatomy.md` to show one complete attack path before showing any lab behavior.
+3. Use `controls-and-remediations.md` to ask students where the control should live.
+4. Use `common-mistakes.md` as a discussion exercise: ask students which mistakes they have seen in real AI prototypes.
+5. Use `worked-example.md` to calibrate finding quality before students write their own report.
+
+When students say “the model was jailbroken,” push them to restate the finding in engineering terms:
+
+- What asset was affected?
+- Which trust boundary failed?
+- What authority did the model appear to have?
+- Which deterministic control was missing?
+- How would we validate the fix?

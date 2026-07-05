@@ -1,8 +1,10 @@
-# Lab — Privacy Leakage and Cross-Tenant RAG
+> **Round 3 privacy consolidation note:** The primary runnable version of this concept is now `brokenpilot-cross-tenant-leakage-lab.md`. Use this older paper lab only as an optional design reflection if it adds discussion value beyond the runnable BrokenPilot exercise.
+
+# Lab  -  Privacy Leakage and Cross-Tenant RAG
 
 ## Module
 
-Module 09 — Privacy Attacks and Data Protection
+Module 09  -  Privacy Attacks and Data Protection
 
 ## Lab type
 
@@ -76,7 +78,7 @@ SupportAssist UI
 
 ## Student tasks
 
-### Task 1 — Data inventory
+### Task 1  -  Data inventory
 
 List sensitive data in:
 
@@ -89,13 +91,13 @@ List sensitive data in:
 - logs;
 - analytics dashboards.
 
-### Task 2 — Data-flow map
+### Task 2  -  Data-flow map
 
 Draw or describe the data flow from source ticket to final model answer.
 
 Mark where authorization should happen.
 
-### Task 3 — Abuse cases
+### Task 3  -  Abuse cases
 
 Write at least five abuse cases.
 
@@ -107,7 +109,7 @@ Examples:
 - Citation reveals another customer's name.
 - Similar-case search leaks sensitive incident details.
 
-### Task 4 — Root cause analysis
+### Task 4  -  Root cause analysis
 
 Identify the root cause for each privacy failure.
 
@@ -123,7 +125,7 @@ Look for:
 - overbroad operational access;
 - weak tests.
 
-### Task 5 — Mitigation design
+### Task 5  -  Mitigation design
 
 Design a safer architecture.
 
@@ -181,5 +183,5 @@ safe logging with retention and access control
 
 Use:
 
-- `templates/privacy-risk-assessment-template.md`
-- `templates/vector-database-authorization-checklist.md`
+- `course-templates/privacy-risk-assessment-template.md`
+- `course-templates/vector-database-authorization-checklist.md`

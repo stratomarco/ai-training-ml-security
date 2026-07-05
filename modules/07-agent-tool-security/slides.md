@@ -1,6 +1,6 @@
-# Module 07 Slides — Agent and Tool Security
+# Module 07 Slides  -  Agent and Tool Security
 
-## Slide 1 — Title
+## Slide 1  -  Title
 
 # Agent and Tool Security
 
@@ -8,7 +8,7 @@ Security engineering for AI systems that can act.
 
 ---
 
-## Slide 2 — Why this module matters
+## Slide 2  -  Why this module matters
 
 A chatbot produces text.
 
@@ -31,7 +31,7 @@ Once the AI can act, the system has a new operational actor.
 
 ---
 
-## Slide 3 — The key security shift
+## Slide 3  -  The key security shift
 
 Traditional LLM application question:
 
@@ -45,7 +45,7 @@ That second question is much more dangerous.
 
 ---
 
-## Slide 4 — Core thesis
+## Slide 4  -  Core thesis
 
 # The model is not the security boundary.
 
@@ -55,7 +55,7 @@ The application must enforce what it is allowed to do.
 
 ---
 
-## Slide 5 — Reference architecture
+## Slide 5  -  Reference architecture
 
 ```text
 user
@@ -81,7 +81,7 @@ agent interface
 
 ---
 
-## Slide 6 — What makes agents different?
+## Slide 6  -  What makes agents different?
 
 Agents combine:
 
@@ -98,7 +98,7 @@ Each capability adds an attack surface.
 
 ---
 
-## Slide 7 — Capability-to-risk map
+## Slide 7  -  Capability-to-risk map
 
 | Capability | Security risk |
 |---|---|
@@ -112,7 +112,7 @@ Each capability adds an attack surface.
 
 ---
 
-## Slide 8 — Classic security still applies
+## Slide 8  -  Classic security still applies
 
 | Classic principle | Agent interpretation |
 |---|---|
@@ -125,7 +125,7 @@ Each capability adds an attack surface.
 
 ---
 
-## Slide 9 — Agent risk categories
+## Slide 9  -  Agent risk categories
 
 Important risk patterns:
 
@@ -142,7 +142,7 @@ Important risk patterns:
 
 ---
 
-## Slide 10 — Goal hijacking
+## Slide 10  -  Goal hijacking
 
 Goal hijacking occurs when the agent's intended objective is replaced or distorted by attacker-controlled input.
 
@@ -157,7 +157,7 @@ Root cause: untrusted content is treated as instruction.
 
 ---
 
-## Slide 11 — Tool misuse
+## Slide 11  -  Tool misuse
 
 Tool misuse happens when an agent uses legitimate tools in unsafe ways.
 
@@ -173,7 +173,7 @@ The tool is legitimate. The composition is unsafe.
 
 ---
 
-## Slide 12 — Identity and privilege abuse
+## Slide 12  -  Identity and privilege abuse
 
 Agents need identities.
 
@@ -190,7 +190,7 @@ Better designs use scoped, short-lived, task-specific credentials with clear att
 
 ---
 
-## Slide 13 — Memory poisoning
+## Slide 13  -  Memory poisoning
 
 Memory is useful because it persists context.
 
@@ -208,7 +208,7 @@ Memory should have trust levels, provenance, review, and deletion.
 
 ---
 
-## Slide 14 — Tool schemas are not enough
+## Slide 14  -  Tool schemas are not enough
 
 A schema tells the model the shape of a call.
 
@@ -227,7 +227,7 @@ Schemas help. Policy enforces.
 
 ---
 
-## Slide 15 — Bad tool design
+## Slide 15  -  Bad tool design
 
 Dangerous tool examples:
 
@@ -243,7 +243,7 @@ These tools are broad, ambiguous, and hard to authorize safely.
 
 ---
 
-## Slide 16 — Better tool design
+## Slide 16  -  Better tool design
 
 Prefer narrow tools:
 
@@ -259,7 +259,7 @@ Specific tools are easier to validate, authorize, monitor, and explain.
 
 ---
 
-## Slide 17 — Per-action authorization
+## Slide 17  -  Per-action authorization
 
 Do not ask only:
 
@@ -273,7 +273,7 @@ That is complete mediation for agent systems.
 
 ---
 
-## Slide 18 — Approval gates
+## Slide 18  -  Approval gates
 
 Require human approval for actions that are:
 
@@ -291,7 +291,7 @@ The agent can prepare. Humans approve.
 
 ---
 
-## Slide 19 — Human-agent trust exploitation
+## Slide 19  -  Human-agent trust exploitation
 
 Agents can sound confident even when wrong.
 
@@ -307,7 +307,7 @@ Mitigation: show evidence, uncertainty, source links, and action diffs.
 
 ---
 
-## Slide 20 — Logging and audit
+## Slide 20  -  Logging and audit
 
 Log:
 
@@ -328,7 +328,7 @@ Avoid logging unnecessary sensitive content.
 
 ---
 
-## Slide 21 — Sandboxing and egress control
+## Slide 21  -  Sandboxing and egress control
 
 For code, shell, browser, or file tools:
 
@@ -345,7 +345,7 @@ Never give the agent a production shell because it is convenient.
 
 ---
 
-## Slide 22 — Detection ideas
+## Slide 22  -  Detection ideas
 
 Monitor for:
 
@@ -362,7 +362,7 @@ Monitor for:
 
 ---
 
-## Slide 23 — Kill switch and rollback
+## Slide 23  -  Kill switch and rollback
 
 Agents need operational controls.
 
@@ -381,7 +381,7 @@ Incident response must be designed before the incident.
 
 ---
 
-## Slide 24 — Secure reference pattern
+## Slide 24  -  Secure reference pattern
 
 ```text
 model suggests action
@@ -401,7 +401,7 @@ policy checks user + agent + object + action + args
 
 ---
 
-## Slide 25 — Practical balance
+## Slide 25  -  Practical balance
 
 Too much friction kills adoption.
 
@@ -418,7 +418,7 @@ Good agent security uses risk tiers:
 
 ---
 
-## Slide 26 — Exercise
+## Slide 26  -  Exercise
 
 Design controls for an internal operations agent.
 
@@ -441,7 +441,7 @@ Your job:
 
 ---
 
-## Slide 27 — What good looks like
+## Slide 27  -  What good looks like
 
 A good answer includes:
 
@@ -458,7 +458,7 @@ A good answer includes:
 
 ---
 
-## Slide 28 — Closing message
+## Slide 28  -  Closing message
 
 Agent security is not solved by better prompts.
 

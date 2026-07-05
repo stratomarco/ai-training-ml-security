@@ -1,4 +1,4 @@
-# Exercise — AI Privacy Risk Assessment
+# Exercise  -  AI Privacy Risk Assessment
 
 ## Scenario
 
@@ -118,7 +118,7 @@ Your mitigation plan should address:
 
 Use:
 
-- `templates/privacy-risk-assessment-template.md`
+- `course-templates/privacy-risk-assessment-template.md`
 
 ## Grading guidance
 

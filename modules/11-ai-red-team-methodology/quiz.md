@@ -1,4 +1,4 @@
-# Module 11 Quiz — AI Red Team Methodology
+# Module 11 Quiz  -  AI Red Team Methodology
 
 ## Questions
 

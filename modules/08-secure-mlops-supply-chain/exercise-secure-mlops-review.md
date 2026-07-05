@@ -1,4 +1,4 @@
-# Exercise — Secure MLOps and AI Supply Chain Review
+# Exercise  -  Secure MLOps and AI Supply Chain Review
 
 ## Scenario
 
@@ -61,7 +61,7 @@ The team tells you:
 
 ## Student tasks
 
-### Task 1 — Identify assets and artifacts
+### Task 1  -  Identify assets and artifacts
 
 List all security-relevant assets and artifacts.
 
@@ -78,7 +78,7 @@ Include at least:
 - inference API;
 - feedback data.
 
-### Task 2 — Draw trust boundaries
+### Task 2  -  Draw trust boundaries
 
 Create a simple data-flow diagram and mark:
 
@@ -90,7 +90,7 @@ Create a simple data-flow diagram and mark:
 - identities;
 - deployment boundaries.
 
-### Task 3 — Find supply chain risks
+### Task 3  -  Find supply chain risks
 
 Identify at least ten risks.
 
@@ -105,7 +105,7 @@ For each risk, document:
 - owner;
 - residual risk.
 
-### Task 4 — Design promotion gates
+### Task 4  -  Design promotion gates
 
 Design a secure promotion workflow from experiment to production.
 
@@ -123,7 +123,7 @@ Include gates for:
 - human approval;
 - rollback.
 
-### Task 5 — Create a registry control model
+### Task 5  -  Create a registry control model
 
 Define who can:
 
@@ -135,7 +135,7 @@ Define who can:
 - roll back production;
 - delete or quarantine an artifact.
 
-### Task 6 — Write a residual risk statement
+### Task 6  -  Write a residual risk statement
 
 Explain what risk remains after your proposed controls.
 
@@ -143,7 +143,7 @@ Be honest about trade-offs and developer velocity.
 
 ## Expected deliverable
 
-Use `../../templates/secure-mlops-review-template.md`.
+Use `../../course-templates/secure-mlops-review-template.md`.
 
 The final review should be concise enough for engineers to act on, but detailed enough for security and leadership to understand production risk.
 

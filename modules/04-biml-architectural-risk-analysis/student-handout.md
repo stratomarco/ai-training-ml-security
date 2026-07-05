@@ -1,4 +1,4 @@
-# Module 04 Student Handout — BIML and Architectural Risk Analysis
+# Module 04 Student Handout  -  BIML and Architectural Risk Analysis
 
 ## One-sentence summary
 

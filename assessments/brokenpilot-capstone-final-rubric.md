@@ -11,7 +11,7 @@
 | Residual risk and prioritization | 10 |
 | Communication and presentation | 10 |
 
-## 1. System understanding and architecture — 15 points
+## 1. System understanding and architecture  -  15 points
 
 | Score | Description |
 |---|---|
@@ -20,7 +20,7 @@
 | 5–8 | Basic system description with limited architecture reasoning. |
 | 0–4 | Unclear system understanding. |
 
-## 2. Threat model quality — 20 points
+## 2. Threat model quality  -  20 points
 
 | Score | Description |
 |---|---|
@@ -29,7 +29,7 @@
 | 8–12 | Basic threat model but limited abuse-case depth. |
 | 0–7 | Mostly generic or incomplete. |
 
-## 3. Findings and evidence — 25 points
+## 3. Findings and evidence  -  25 points
 
 | Score | Description |
 |---|---|
@@ -38,7 +38,7 @@
 | 10–15 | Findings are plausible but too generic or payload-focused. |
 | 0–9 | Findings are unclear, unsupported, or unsafe. |
 
-## 4. Mitigation and secure design — 20 points
+## 4. Mitigation and secure design  -  20 points
 
 | Score | Description |
 |---|---|
@@ -47,7 +47,7 @@
 | 8–12 | Mostly generic controls with limited implementation detail. |
 | 0–7 | Mitigations rely mainly on prompting or are not actionable. |
 
-## 5. Residual risk and prioritization — 10 points
+## 5. Residual risk and prioritization  -  10 points
 
 | Score | Description |
 |---|---|
@@ -56,7 +56,7 @@
 | 3–5 | Basic priority list but weak trade-off reasoning. |
 | 0–2 | No meaningful prioritization or residual-risk discussion. |
 
-## 6. Communication and presentation — 10 points
+## 6. Communication and presentation  -  10 points
 
 | Score | Description |
 |---|---|
@@ -77,3 +77,7 @@ Reward:
 - clarity;
 - realistic engineering trade-offs;
 - residual-risk honesty.
+
+## Assessment scope note
+
+The runnable BrokenPilot MVP directly demonstrates Module 05, Module 06, Module 07, and Module 11 style findings. Module 08, Module 09, and Module 10 risks are assessed through tabletop analysis, architecture review, written deliverables, and discussion unless a future prototype increment implements those behaviors. See `labs/brokenpilot/capstone-assessment-scope.md`.

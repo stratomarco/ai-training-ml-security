@@ -1,4 +1,4 @@
-# Exercise — BrokenPilot Red Team Review and Mitigation Design
+# Exercise  -  BrokenPilot Red Team Review and Mitigation Design
 
 ## Goal
 
@@ -13,12 +13,12 @@ Use:
 - [`../../labs/brokenpilot/attack-paths.md`](../../labs/brokenpilot/attack-paths.md)
 - [`../../labs/brokenpilot/vulnerabilities.md`](../../labs/brokenpilot/vulnerabilities.md)
 - [`../../labs/brokenpilot/secure-reference-architecture.md`](../../labs/brokenpilot/secure-reference-architecture.md)
-- [`../../templates/brokenpilot-final-report-template.md`](../../templates/brokenpilot-final-report-template.md)
-- [`../../templates/brokenpilot-evidence-log-template.md`](../../templates/brokenpilot-evidence-log-template.md)
-- [`../../templates/brokenpilot-risk-register-template.md`](../../templates/brokenpilot-risk-register-template.md)
-- [`../../templates/brokenpilot-remediation-backlog-template.md`](../../templates/brokenpilot-remediation-backlog-template.md)
+- [`../../course-templates/brokenpilot-final-report-template.md`](../../course-templates/brokenpilot-final-report-template.md)
+- [`../../course-templates/brokenpilot-evidence-log-template.md`](../../course-templates/brokenpilot-evidence-log-template.md)
+- [`../../course-templates/brokenpilot-risk-register-template.md`](../../course-templates/brokenpilot-risk-register-template.md)
+- [`../../course-templates/brokenpilot-remediation-backlog-template.md`](../../course-templates/brokenpilot-remediation-backlog-template.md)
 
-## Part 1 — Select attack paths
+## Part 1  -  Select attack paths
 
 Choose at least three attack paths.
 
@@ -34,7 +34,7 @@ Recommended options:
 | Sensitive trace leakage | Logging and privacy. |
 | Overreliance on generated incident advice | Human factors and operational risk. |
 
-## Part 2 — Define test objectives
+## Part 2  -  Define test objectives
 
 For each attack path, define:
 
@@ -56,7 +56,7 @@ Expected control: Retrieval authorization before context assembly.
 Safety boundary: Use only fake BrokenPilot data.
 ```
 
-## Part 3 — Document representative evidence
+## Part 3  -  Document representative evidence
 
 For each finding, capture:
 
@@ -71,7 +71,7 @@ For each finding, capture:
 
 Do not rely only on screenshots. Explain the control failure.
 
-## Part 4 — Score findings
+## Part 4  -  Score findings
 
 Use a simple risk model:
 
@@ -93,7 +93,7 @@ Severity options:
 - Low
 - Informational
 
-## Part 5 — Design mitigations
+## Part 5  -  Design mitigations
 
 For each finding, propose controls.
 
@@ -110,7 +110,7 @@ Good mitigations should specify where the control lives:
 
 Avoid recommending only “improve the prompt.”
 
-## Part 6 — Build the remediation roadmap
+## Part 6  -  Build the remediation roadmap
 
 Group work into:
 
@@ -129,7 +129,7 @@ Include:
 - validation test;
 - residual risk.
 
-## Part 7 — Prepare the readout
+## Part 7  -  Prepare the readout
 
 Prepare a short leadership readout:
 

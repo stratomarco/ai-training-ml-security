@@ -1,4 +1,4 @@
-# Lab — Broken ML Pipeline Supply Chain Review
+# Lab  -  Broken ML Pipeline Supply Chain Review
 
 ## Purpose
 
@@ -67,7 +67,7 @@ incident-helper
 
 ## Student tasks
 
-### Task 1 — Artifact inventory
+### Task 1  -  Artifact inventory
 
 Create an inventory of all artifacts that influence model behavior.
 
@@ -83,7 +83,7 @@ Include:
 - deployment pipeline;
 - feedback data.
 
-### Task 2 — Risk identification
+### Task 2  -  Risk identification
 
 Find at least twelve risks.
 
@@ -93,7 +93,7 @@ Use this structure:
 |---|---|---|---|---|
 | Example | Model artifact | No provenance | Cannot trust production model origin | Require signed provenance before promotion |
 
-### Task 3 — Secure pipeline redesign
+### Task 3  -  Secure pipeline redesign
 
 Redesign the pipeline with security gates:
 
@@ -111,7 +111,7 @@ approved data
   -> rollback
 ```
 
-### Task 4 — Minimum viable controls
+### Task 4  -  Minimum viable controls
 
 The team says it needs to ship in two weeks.
 
@@ -164,3 +164,7 @@ Strong answers should identify:
 3. Which control best balances security and developer velocity?
 4. Which controls belong in CI/CD and which require human review?
 5. What evidence should leadership require before allowing production deployment?
+
+## Evidence-pack option
+
+This tabletop can be run with the static evidence pack in `evidence-pack-review/`. That pack gives students concrete artifacts to inspect: notebook, dependency file, registry metadata, storage policy, promotion workflow, and artifact hash evidence. The intended learning outcome is a review decision and remediation backlog, not successful execution of a toy pipeline.

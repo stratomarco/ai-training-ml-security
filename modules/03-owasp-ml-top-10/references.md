@@ -1,25 +1,25 @@
-# Module 03 — References
+# Module 03  -  References
 
 ## Primary references
 
 - OWASP Machine Learning Security Top 10  
   https://owasp.org/www-project-machine-learning-security-top-10/
 
-- OWASP Machine Learning Security Top 10 — ML10 Model Poisoning  
+- OWASP Machine Learning Security Top 10  -  ML10 Model Poisoning  
   https://owasp.org/www-project-machine-learning-security-top-10/docs/ML10_2023-Model_Poisoning
 
 - MITRE ATLAS  
   https://atlas.mitre.org/
 
-- NIST AI 100-2 E2025 — Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations  
+- NIST AI 100-2 E2025  -  Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations  
   https://csrc.nist.gov/pubs/ai/100/2/e2025/final
 
 ## Classic security references to connect back to
 
-- Gary McGraw — Software Security: Building Security In
-- Ross Anderson — Security Engineering
-- Adam Shostack — Threat Modeling: Designing for Security
-- Saltzer and Schroeder — The Protection of Information in Computer Systems
+- Gary McGraw  -  Software Security: Building Security In
+- Ross Anderson  -  Security Engineering
+- Adam Shostack  -  Threat Modeling: Designing for Security
+- Saltzer and Schroeder  -  The Protection of Information in Computer Systems
 
 ## Reading guidance
 

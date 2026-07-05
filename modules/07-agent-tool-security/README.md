@@ -1,4 +1,4 @@
-# Module 07 — Agent and Tool Security
+# Module 07  -  Agent and Tool Security
 
 ## Purpose
 
@@ -46,6 +46,18 @@ By the end of this module, students should be able to:
 - Approval gates and break-glass flows
 - Audit logs and accountability
 - Kill switches and rollback
+
+## Reading-first deepening material
+
+This module now includes additional reading-first material intended to help students understand agent security before running the BrokenPilot labs:
+
+- [Deep Dive](deep-dive.md)  -  why agents change the security model and how classic security engineering applies.
+- [Attack Anatomy](attack-anatomy.md)  -  tool misuse, confused deputy behavior, indirect injection into tools, memory poisoning, and excessive agency.
+- [Controls and Remediations](controls-and-remediations.md)  -  engineer-ready controls for tools, authorization, memory, approval gates, audit, rollback, and monitoring.
+- [Common Mistakes](common-mistakes.md)  -  frequent agent design failures and how to recognize them.
+- [Worked Example](worked-example.md)  -  BrokenPilot tool authorization and memory poisoning findings with root cause, impact, remediation, and validation.
+
+The goal is to make this module teachable by reading and reasoning, not only by running the lab.
 
 ## Security engineering connection
 
@@ -114,6 +126,14 @@ Students review and exploit a vulnerable internal operations agent that can:
 
 The goal is not to attack real systems. The lab uses local fake data and simulated tools.
 
+### Validated BrokenPilot tool exercise
+
+The BrokenPilot prototype now includes a validated hands-on Module 07 exercise for tool confused-deputy behavior.
+
+The validated scenario shows that Alice, an `alpha` tenant ops user, can update `TCK-2001`, a `beta` tenant ticket, when `ENABLE_TOOL_AUTHZ=false`. The same request is blocked with HTTP `403` and `tool_authorization_denied` when `ENABLE_TOOL_AUTHZ=true`.
+
+Use `brokenpilot-tool-validation.md` as the Module 07 validation record and teaching anchor. The detailed lab steps remain in `../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md`.
+
 ## Deliverable
 
 Students produce an **agent control design** containing:
@@ -129,18 +149,59 @@ Students produce an **agent control design** containing:
 
 ## Files in this module
 
-- `slides.md` — Markdown slide deck
-- `instructor-notes.md` — delivery guidance and facilitation notes
-- `student-handout.md` — student-facing reference
-- `exercise-agent-control-design.md` — main exercise
-- `checklist.md` — agent security checklist
-- `quiz.md` — quiz and answer key
-- `references.md` — module-specific references
+- `deep-dive.md`  -  reading-first deepening material
+- `attack-anatomy.md`  -  reading-first deepening material
+- `controls-and-remediations.md`  -  reading-first deepening material
+- `common-mistakes.md`  -  reading-first deepening material
+- `worked-example.md`  -  reading-first deepening material
+- `slides.md`  -  Markdown slide deck
+- `instructor-notes.md`  -  delivery guidance and facilitation notes
+- `student-handout.md`  -  student-facing reference
+- `exercise-agent-control-design.md`  -  main exercise
+- `checklist.md`  -  agent security checklist
+- `quiz.md`  -  quiz and answer key
+- `references.md`  -  module-specific references
+- `brokenpilot-tool-validation.md`  -  validated BrokenPilot tool authorization scenario
 
 ## Related labs and templates
 
+- `brokenpilot-tool-validation.md`
+- `../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md`
 - `../../labs/agent-labs/agent-tool-misuse-lab.md`
 - `../../labs/agent-labs/memory-poisoning-approval-gates-lab.md`
-- `../../templates/agent-control-design-template.md`
-- `../../templates/tool-permission-matrix-template.md`
-- `../../templates/agent-action-approval-policy-template.md`
+- `../../course-templates/agent-control-design-template.md`
+- `../../course-templates/tool-permission-matrix-template.md`
+- `../../course-templates/agent-action-approval-policy-template.md`
+
+## Validated BrokenPilot memory poisoning lab
+
+The runnable BrokenPilot prototype now includes a memory poisoning scenario for this module. See:
+
+- `brokenpilot-tool-validation.md` for the validated tool confused-deputy scenario
+- `brokenpilot-memory-validation.md` for the memory poisoning control-validation flow
+
+Students should use these as concrete examples of the course principle that agent memory is not automatically trusted authority.
+
+<!-- lab-routing-content-pass:start -->
+
+## Lab routing note
+
+Module 07 remains the reference lab standard. BrokenPilot demonstrates the tool confused-deputy problem, tool authorization, approval gates, audit logging, and defense in depth with memory poisoning.
+
+Primary graded deliverable: A tool permission matrix or tool-control design with authorization rules, approval rules, audit fields, and validation steps.
+
+See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
+
+<!-- lab-routing-content-pass:end -->
+
+<!-- student-reading-guide-link -->
+
+## Student reading guide
+
+Before starting the lab or exercise, read [student-reading-guide.md](student-reading-guide.md). It explains the module's core security decision, lab path, common mistakes, and exit ticket.
+
+<!-- cohesion-note-link -->
+
+## Course cohesion note
+
+For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).

@@ -1,4 +1,4 @@
-# Module 6 Checklist — RAG Security
+# Module 6 Checklist  -  RAG Security
 
 Use this checklist during RAG architecture reviews.
 
@@ -90,4 +90,3 @@ Use this checklist during RAG architecture reviews.
 - [ ] Is there a retention policy for embeddings and logs?
 - [ ] Is there a deletion process for removed source documents?
 - [ ] Is there an incident response process for RAG leakage?
-

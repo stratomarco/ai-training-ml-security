@@ -1,4 +1,4 @@
-# Lab — Classical ML Attack Scenarios
+# Lab  -  Classical ML Attack Scenarios
 
 ## Purpose
 
@@ -13,7 +13,7 @@ This lab can be run in two modes:
 1. **Tabletop mode:** no code; students reason through attack paths and mitigations.
 2. **Toy-code mode:** students use a local toy classifier to observe how small changes in data or input can change behavior.
 
-## Scenario 1 — Spam classifier evasion
+## Scenario 1  -  Spam classifier evasion
 
 ### System
 
@@ -47,7 +47,7 @@ Useful controls include:
 - Rate limits
 - Human review for suspicious cases
 
-## Scenario 2 — Fraud model poisoning
+## Scenario 2  -  Fraud model poisoning
 
 ### System
 
@@ -81,7 +81,7 @@ Useful controls include:
 - Model behavior comparison before deployment
 - Rollback to known-good model
 
-## Scenario 3 — Model extraction through excessive querying
+## Scenario 3  -  Model extraction through excessive querying
 
 ### System
 
@@ -115,7 +115,7 @@ Useful controls include:
 - Terms of use and enforcement
 - Model watermarking where appropriate
 
-## Scenario 4 — Output integrity failure
+## Scenario 4  -  Output integrity failure
 
 ### System
 
@@ -148,16 +148,33 @@ Useful controls include:
 - Integrity checks
 - Runtime monitoring
 
-## Suggested toy-code extension
+## Current self-study mode
 
-In a local notebook, students can implement a tiny classifier using a small synthetic dataset.
+Until the dedicated toy classifier app is added, this lab is a tabletop exercise.
 
-Suggested safe exercises:
+Do not tell students that a dataset or classifier is already provided. Students may either stay in tabletop mode or create a small synthetic dataset with this schema:
 
-- Train a spam/not-spam classifier on toy messages.
-- Change a few words and observe prediction changes.
-- Flip a small number of labels and observe behavior changes.
-- Compare predictions before and after poisoning.
+```json
+{
+  "id": "msg-001",
+  "text": "fake training message using synthetic words only",
+  "label": "spam"
+}
+```
+
+Allowed labels for self-created data:
+
+- `spam`
+- `not_spam`
+
+Safe exercises:
+
+- train a local classifier on synthetic messages;
+- change a few synthetic words and observe prediction changes;
+- flip a small number of labels and observe behavior changes;
+- compare predictions before and after poisoning.
+
+The planned `labs/toy-ml-attacks/toy-classifier-app/` will replace this section with concrete scripts and a shipped dataset.
 
 Keep this local and synthetic. The goal is conceptual understanding, not weaponization.
 
@@ -193,3 +210,28 @@ Weak answers usually over-rely on:
 - “Retrain more often.”
 
 Push students to explain exactly how a control prevents, detects, or recovers from the attack.
+
+<!-- toy-classifier-runnable-path -->
+
+## Runnable path: toy-classifier app
+
+Use the shipped app instead of inventing a dataset:
+
+```powershell
+cd labs/toy-ml-attacks/toy-classifier-app
+python -m pip install -r requirements-dev.txt
+python train.py
+python attacks/evasion.py
+python attacks/poisoning.py
+python attacks/extraction.py
+python attacks/output_integrity.py
+pytest
+```
+
+macOS/Linux uses the same commands with `/` path separators.
+
+Student deliverable: for each script, record the before/after output, identify the changed security property, propose one implementable control, and state residual risk.
+
+## Round 3 correction: evasion must preserve intent
+
+Use `toy-classifier-app/attacks/evasion.py` as the runnable evasion example. The corrected script keeps the malicious core message intact and adds benign-looking context until the model decision flips. Do not describe evasion as comparing a phishing message with an unrelated safe message; that teaches the wrong concept.

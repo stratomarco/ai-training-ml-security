@@ -1,4 +1,4 @@
-# Module 03 — OWASP ML Security Top 10 Checklist
+# Module 03  -  OWASP ML Security Top 10 Checklist
 
 Use this checklist during design review, threat modeling, or security testing of classical ML systems.
 
@@ -24,7 +24,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Logs and monitoring data identified.
 - [ ] Feedback loop identified.
 
-## 3. ML01 — Input manipulation
+## 3. ML01  -  Input manipulation
 
 - [ ] Are inference inputs validated and normalized?
 - [ ] Are out-of-distribution inputs detected?
@@ -33,7 +33,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Does the system have safe fallback behavior?
 - [ ] Are high-risk predictions reviewed or challenged?
 
-## 4. ML02 — Data poisoning
+## 4. ML02  -  Data poisoning
 
 - [ ] Is data provenance tracked?
 - [ ] Are training data sources trusted and documented?
@@ -43,7 +43,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Is poisoned data removable or quarantinable?
 - [ ] Can the model be retrained from a known-good dataset?
 
-## 5. ML03 — Model inversion
+## 5. ML03  -  Model inversion
 
 - [ ] Could outputs reveal sensitive features?
 - [ ] Are confidence scores necessary?
@@ -52,7 +52,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Is repeated probing detected?
 - [ ] Has privacy testing been performed?
 
-## 6. ML04 — Membership inference
+## 6. ML04  -  Membership inference
 
 - [ ] Is training membership sensitive?
 - [ ] Are outputs calibrated or minimized?
@@ -61,7 +61,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Are privacy-preserving techniques considered where appropriate?
 - [ ] Is query abuse monitored?
 
-## 7. ML05 — Model theft
+## 7. ML05  -  Model theft
 
 - [ ] Are model artifacts protected by access control?
 - [ ] Are model registries private and audited?
@@ -71,7 +71,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Are secrets and credentials separated from notebooks and training jobs?
 - [ ] Is model IP classified as an asset?
 
-## 8. ML06 — AI supply chain attacks
+## 8. ML06  -  AI supply chain attacks
 
 - [ ] Are datasets, models, dependencies, and containers inventoried?
 - [ ] Are model artifacts signed or checksummed?
@@ -81,7 +81,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Are third-party models evaluated before use?
 - [ ] Is there a rollback path for compromised artifacts?
 
-## 9. ML07 — Transfer learning attacks
+## 9. ML07  -  Transfer learning attacks
 
 - [ ] Is the base model source trusted?
 - [ ] Is model provenance documented?
@@ -90,7 +90,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Are licenses and data-use constraints reviewed?
 - [ ] Is fine-tuning data validated?
 
-## 10. ML08 — Model skewing
+## 10. ML08  -  Model skewing
 
 - [ ] Does the system use production feedback for future training?
 - [ ] Can attackers influence feedback?
@@ -99,7 +99,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Are sudden distribution changes investigated?
 - [ ] Are coordinated manipulation attempts detected?
 
-## 11. ML09 — Output integrity
+## 11. ML09  -  Output integrity
 
 - [ ] Is model output protected from tampering?
 - [ ] Are thresholds and post-processing rules access-controlled?
@@ -108,7 +108,7 @@ Use this checklist during design review, threat modeling, or security testing of
 - [ ] Is downstream decision logic reviewed?
 - [ ] Can output integrity be verified during incident response?
 
-## 12. ML10 — Model poisoning
+## 12. ML10  -  Model poisoning
 
 - [ ] Are model artifacts immutable after approval?
 - [ ] Are registry writes restricted?
