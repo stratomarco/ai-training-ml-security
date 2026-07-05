@@ -129,3 +129,14 @@ Status: started.
 - Final voice guidance is recorded in `STYLE_AND_VOICE_FINAL_PASS.md`.
 - Broad automatic prose rewrites are intentionally avoided.
 - Remaining release work: MkDocs strict navigation, final workflow hardening, and release candidate validation.
+
+## Release cleanup phase 7
+
+MkDocs strict navigation was regenerated from the actual published source tree.
+
+Expected release behavior:
+
+- `scripts/sync_mkdocs_content.py` creates `.mkdocs-src`.
+- `scripts/generate_mkdocs_nav.py` regenerates `mkdocs.yml` navigation from files that exist.
+- `mkdocs build --strict` is the release gate.
+- CI runs the two runnable lab targets before publishing.

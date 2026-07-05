@@ -13,6 +13,8 @@ CANONICAL_DIRS = [
     "course-templates",
     "instructor",
     "assessments",
+    "releases",
+    "release-notes",
 ]
 
 CANONICAL_FILES = [
@@ -30,12 +32,18 @@ CANONICAL_FILES = [
     "CONTENT_STRATEGY.md",
     "QUALITY_IMPROVEMENT_PLAN.md",
     "SOURCE_OF_TRUTH.md",
+    "SECURITY.md",
+    "course-map.md",
+    "glossary.md",
+    "PUBLISHED_COURSE_VIEW.md",
+    "COURSE_STORYLINE.md",
+    "COURSE_VOICE_AND_COHESION_REVIEW.md",
+    "STYLE_AND_VOICE_FINAL_PASS.md",
 ]
 
 
 def copy_dir(src: Path, dst: Path) -> None:
     if not src.exists():
-        print(f"skip missing dir: {src.relative_to(ROOT)}")
         return
 
     if dst.exists():
@@ -52,19 +60,17 @@ def copy_dir(src: Path, dst: Path) -> None:
             "site",
             ".mkdocs-src",
             "node_modules",
+            "*.pyc",
+            "model.pkl",
         ),
     )
-    print(f"copied dir: {src.relative_to(ROOT)}")
 
 
 def copy_file(src: Path, dst: Path) -> None:
     if not src.exists():
-        print(f"skip missing file: {src.relative_to(ROOT)}")
         return
-
     dst.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(src, dst)
-    print(f"copied file: {src.relative_to(ROOT)}")
 
 
 def main() -> None:
@@ -76,12 +82,15 @@ def main() -> None:
     if STATIC_DOCS.exists():
         for item in STATIC_DOCS.iterdir():
             if item.name in {
+                "README.md",
                 "modules",
                 "labs",
                 "templates",
                 "course-templates",
                 "instructor",
                 "assessments",
+                "releases",
+                "release-notes",
             }:
                 continue
 
@@ -98,11 +107,15 @@ def main() -> None:
         copy_file(ROOT / filename, OUT / filename)
 
     index = OUT / "index.md"
-    readme = OUT / "README.md"
-    if not index.exists() and readme.exists():
-        shutil.copy2(readme, index)
+    if not index.exists():
+        index.write_text(
+            "# AI Training: ML Security\n\n"
+            "Welcome to the AI Training ML Security course.\n",
+            encoding="utf-8",
+            newline="\n",
+        )
 
-    print(f"\nMkDocs source generated at: {OUT}")
+    print(f"MkDocs source generated at: {OUT}")
 
 
 if __name__ == "__main__":
