@@ -13,3 +13,8 @@ Thumbs.db
 .idea/
 .env
 .mkdocs-src/
+# Generated local artifacts
+**/__pycache__/
+**/.pytest_cache/
+labs/toy-ml-attacks/toy-classifier-app/model.pkl
+labs/toy-ml-attacks/toy-classifier-app/*.pkl

@@ -100,3 +100,10 @@ Postponed until final release hardening:
 - public deploy automation on every push
 - deletion of archived buildout material
 - final generated-phrasing cleanup
+
+## Release cleanup phase 4
+
+- Archived package-era scaffolding and temporary scripts.
+- Added final voice cleanup guidance.
+- Added student-facing scaffolding check.
+- Kept MkDocs strict cleanup postponed until navigation is intentionally finalized.
