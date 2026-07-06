@@ -21,7 +21,7 @@ REQUIRED_FILES = [
 ]
 
 REQUIRED_TEXT = {
-    "VERSION": ["v1.1-dev-rc1"],
+    "VERSION": ["v1.1.0"],
     "COURSE_RELEASE_MANIFEST.md": [
         "mkdocs build --strict",
         "BrokenPilot",
@@ -66,7 +66,7 @@ def main() -> None:
                 errors.append(f"{rel} missing required text: {needle}")
 
     if errors:
-        print("release candidate check failed:")
+        print("release check failed:")
         for error in errors:
             print(f"- {error}")
         raise SystemExit(1)
@@ -83,7 +83,7 @@ def main() -> None:
         if (ROOT / rel).exists():
             run([sys.executable, rel])
 
-    print("release candidate phase 8 check passed.")
+    print("release check passed.")
 
 
 if __name__ == "__main__":
