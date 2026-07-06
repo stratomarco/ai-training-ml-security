@@ -45,6 +45,16 @@ Students learn how to:
 - Design mitigations that balance security, usability, and developer velocity
 - Produce useful engineering deliverables: threat models, risk registers, red-team reports, secure architecture reviews, and residual-risk statements
 
+## Support the project
+
+This course is free for self-study and internal company learning under the repository license terms.
+
+If this work helped you, saved you time, or supported your team's learning, you can support future maintenance here:
+
+[buymeacoffee.com/stratomarco](https://buymeacoffee.com/stratomarco)
+
+Support is optional and does not change the license terms. Commercial training, resale, hosted-course use, repackaging, or paid consulting delivery still requires separate permission.
+
 ## Website edition
 
 The repository includes a MkDocs Material website layer. The canonical course content lives in the root-level `modules/`, `labs/`, `course-templates/`, `instructor/`, and `assessments/` directories. MkDocs source is generated into `.mkdocs-src/` before preview or deployment so the course is not hand-maintained in two places.
