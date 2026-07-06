@@ -126,3 +126,7 @@ Priority order:
 7. Continue website improvements only after lab testability improves.
 
 The next release should be based on a measurable improvement in student experience, not only documentation structure.
+
+## Future roadmap
+
+- [v2 roadmap: agentic systems, MCP, and automated security evaluation](roadmaps/v2-roadmap.md)
