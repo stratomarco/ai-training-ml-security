@@ -1,28 +1,28 @@
-# BrokenPilot v2 Planning Area
+# BrokenPilot v2
 
-This folder is the planning area for the v2 multi-agent and MCP security track.
+BrokenPilot v2 is the future agentic and MCP security track for the course.
 
-It is not part of the v1.1.0 stable teaching path yet. Do not wire this folder into the v1 module sequence or capstone until the v2 labs have runnable targets, tests, instructor guidance, and graded deliverables.
+v1 remains the stable teaching release. v2 work happens on a development branch and should not change the released v1 path until a v2 release candidate exists.
 
-Start with:
+## Current status
 
-1. [`ARCHITECTURE.md`](ARCHITECTURE.md)
-2. [`THREAT_MODEL.md`](THREAT_MODEL.md)
-3. [`LAB_QUALITY_BAR.md`](LAB_QUALITY_BAR.md)
+The v2 track currently has:
 
-## Target direction
+- architecture notes
+- threat-model notes
+- a lab quality bar
+- a minimal runnable skeleton in [`prototype-app/`](prototype-app/README.md)
 
-BrokenPilot v2 should extend the existing BrokenPilot model from a single agent into a small multi-agent system with:
+The skeleton is not yet a student lab. It provides the executable base for future multi-agent and MCP failure-chain labs.
 
-- orchestrator agent
-- specialist sub-agents
-- shared tool broker
-- MCP-like server boundary
-- explicit agent identity
-- signed or pinned tool descriptors
-- cross-agent audit traces
-- failure and control toggles suitable for labs
+## Intended v2 direction
 
-## Release rule
+BrokenPilot v2 extends the v1 single-agent target into an agentic system with:
 
-This folder can evolve on the dev branch. It should not be treated as released course content until a future v2 release candidate.
+- orchestrator and sub-agent delegation
+- explicit message envelopes
+- an MCP-like descriptor registry
+- a shared tool broker
+- signed-descriptor and trust-boundary controls
+- audit traces across multi-agent delegation
+- future failure chains for descriptor spoofing, rogue agents, insecure inter-agent communication, and cascading agent failures

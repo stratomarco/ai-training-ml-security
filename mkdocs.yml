@@ -457,6 +457,7 @@ nav:
           - "Lab Quality Bar": labs/brokenpilot-v2/LAB_QUALITY_BAR.md
           - "Mcp Trust Boundary": labs/brokenpilot-v2/MCP_TRUST_BOUNDARY.md
           - "Message Envelope": labs/brokenpilot-v2/MESSAGE_ENVELOPE.md
+          - "Overview": labs/brokenpilot-v2/prototype-app/README.md
           - "Test Strategy": labs/brokenpilot-v2/TEST_STRATEGY.md
           - "Threat Model": labs/brokenpilot-v2/THREAT_MODEL.md
       - "DVAIA Guides":
