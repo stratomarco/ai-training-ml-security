@@ -366,6 +366,9 @@ nav:
           - "Exercise Capstone Threat Model": modules/12-capstone-brokenpilot/exercise-capstone-threat-model.md
           - "Final Report Current Path": modules/12-capstone-brokenpilot/final-report-current-path.md
           - "Slides": modules/12-capstone-brokenpilot/slides.md
+      - "V2 Agentic Mcp Security":
+          - "Overview": modules/v2-agentic-mcp-security/README.md
+          - "Module Outline": modules/v2-agentic-mcp-security/module-outline.md
   - "Labs":
       - "Overview": labs/README.md
       - "Adversarial ML Labs":
@@ -445,6 +448,17 @@ nav:
           - "Weak Risk Register Example": labs/brokenpilot/worked-examples/weak-risk-register-example.md
           - "Weak Threat Model Example": labs/brokenpilot/worked-examples/weak-threat-model-example.md
           - "Weak Tool Permission Matrix Example": labs/brokenpilot/worked-examples/weak-tool-permission-matrix-example.md
+      - "Brokenpilot V2":
+          - "Overview": labs/brokenpilot-v2/README.md
+          - "Agentic Architecture": labs/brokenpilot-v2/AGENTIC_ARCHITECTURE.md
+          - "Architecture": labs/brokenpilot-v2/ARCHITECTURE.md
+          - "Control Matrix": labs/brokenpilot-v2/CONTROL_MATRIX.md
+          - "Failure Chains": labs/brokenpilot-v2/FAILURE_CHAINS.md
+          - "Lab Quality Bar": labs/brokenpilot-v2/LAB_QUALITY_BAR.md
+          - "Mcp Trust Boundary": labs/brokenpilot-v2/MCP_TRUST_BOUNDARY.md
+          - "Message Envelope": labs/brokenpilot-v2/MESSAGE_ENVELOPE.md
+          - "Test Strategy": labs/brokenpilot-v2/TEST_STRATEGY.md
+          - "Threat Model": labs/brokenpilot-v2/THREAT_MODEL.md
       - "DVAIA Guides":
           - "Overview": labs/dvaia-guides/README.md
           - "DVAIA Course Mapping": labs/dvaia-guides/dvaia-course-mapping.md
