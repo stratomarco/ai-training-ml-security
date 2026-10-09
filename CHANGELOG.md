@@ -1,6 +1,14 @@
 # Changelog
 
-## v1.1.0-v1.1.0 - release candidate
+## Unreleased - BrokenPilot learning path and local evidence
+
+- Added a ticket-to-agent prompt-injection exercise with a real ticket state change, control profiles, and resettable lab data.
+- Rebuilt the BrokenPilot interface around guided exercises and a browser-local evidence notebook that records before-and-after state for review.
+- Kept the standalone lab offline and bound to the local machine by default; hardened the container runtime and response headers.
+- Made BrokenPilot the primary one-week hands-on path, with external labs optional, and clarified that rubrics are optional feedback aids.
+- Expanded the BrokenPilot regression suite and course setup guidance.
+
+## v1.1.0 - release candidate
 
 This release-candidate checkpoint marks the course as ready for final review after the release cleanup sequence.
 

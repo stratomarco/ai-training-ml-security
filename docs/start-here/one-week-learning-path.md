@@ -10,7 +10,7 @@ By the end of the week, you should be able to:
 
 - reason about AI systems using security engineering principles,
 - identify ML, LLM, RAG, and agent attack surfaces,
-- reproduce selected failures in DVAIA and BrokenPilot,
+- reproduce selected failures in BrokenPilot, with DVAIA available for optional comparison,
 - design concrete controls,
 - validate whether controls actually work,
 - write decision-grade findings,
@@ -21,7 +21,7 @@ By the end of the week, you should be able to:
 | Day | Focus | Main outputs |
 |---|---|---|
 | Day 1 | Foundations and ML architecture | System context diagram, abuse cases |
-| Day 2 | LLM and RAG security | DVAIA/BrokenPilot evidence log, mitigation design |
+| Day 2 | LLM and RAG security | BrokenPilot evidence log, mitigation design |
 | Day 3 | Agent security and MLOps | Tool permission matrix or executive risk memo |
 | Day 4 | Privacy, adversarial ML, and red teaming | Strong rewritten finding |
 | Day 5 | BrokenPilot capstone | Final report and presentation |
@@ -56,10 +56,11 @@ For the hands-on one-week path, you should have:
 
 - Git,
 - Python,
-- Docker,
+- Docker if using the container path,
 - a browser,
-- DVAIA for selected LLM/RAG labs,
-- BrokenPilot prototype app for agent/tool and capstone labs.
+- BrokenPilot prototype app for LLM, RAG, agent/tool, and capstone labs.
+
+DVAIA is optional external practice. The supported BrokenPilot path runs locally with Python and does not require Docker.
 
 See the Lab Setup section before the first day.
 

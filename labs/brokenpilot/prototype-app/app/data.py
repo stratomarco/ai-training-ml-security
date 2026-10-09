@@ -33,6 +33,11 @@ def reset_tickets() -> list[dict[str, Any]]:
     return load_tickets()
 
 
+def reset_documents() -> list[dict[str, Any]]:
+    load_documents.cache_clear()
+    return load_documents()
+
+
 def get_user(user_id: str) -> dict[str, Any] | None:
     for user in load_users():
         if user["id"] == user_id:
@@ -45,6 +50,36 @@ def get_ticket(ticket_id: str) -> dict[str, Any] | None:
         if ticket["id"] == ticket_id:
             return ticket
     return None
+
+
+def create_ticket(*, user: dict[str, Any], title: str, summary: str) -> dict[str, Any]:
+    next_number = max(int(ticket["id"].split("-")[1]) for ticket in load_tickets()) + 1
+    ticket_id = f"TCK-{next_number:04d}"
+    ticket = {
+        "id": ticket_id,
+        "tenant": user["tenant"],
+        "title": title,
+        "status": "open",
+        "owner": user["id"],
+        "summary": summary,
+    }
+    load_tickets().append(ticket)
+    load_documents().append(
+        {
+            "id": f"DOC-{ticket_id}",
+            "title": title,
+            "tenant": user["tenant"],
+            "visibility": "restricted",
+            "classification": "internal",
+            "allowed_roles": ["ops", "developer", "viewer", "contractor"],
+            "allowed_users": [],
+            "tags": ["ticket"],
+            "body": summary,
+            "source": "user_ticket",
+            "source_ticket_id": ticket_id,
+        }
+    )
+    return ticket.copy()
 
 
 def update_ticket(ticket_id: str, *, status: str | None = None, note: str | None = None, actor: str | None = None) -> dict[str, Any] | None:

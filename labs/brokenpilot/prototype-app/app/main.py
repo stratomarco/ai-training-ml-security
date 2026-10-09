@@ -1,28 +1,49 @@
 import re
 from html import escape
 from pathlib import Path
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from .audit import clear_events, list_events, record
 from .controls import Controls
-from .data import get_ticket, get_user, load_documents, load_tickets, load_users, reset_tickets
+from .data import create_ticket, get_ticket, get_user, load_documents, load_tickets, load_users, reset_documents, reset_tickets
 from .memory import add_memory_entry, find_memory_instruction, list_memory, reset_memory, visible_memory_for_user
 from .mock_llm import generate_answer
 from .rag import retrieve_documents
-from .schemas import AgentRunRequest, ChatRequest, MemoryAddRequest, RenderRequest, RetrieveRequest, ToolUpdateTicketRequest
+from .schemas import AgentRunRequest, ChatRequest, MemoryAddRequest, RenderRequest, RetrieveRequest, TicketCreateRequest, ToolUpdateTicketRequest
 from .tools import update_ticket_tool
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = BASE_DIR / "static"
 TICKET_RE = re.compile(r"\bTCK-\d{4}\b", re.IGNORECASE)
+DOCUMENT_ACTION_MARKER = "AGENT_INSTRUCTION:"
+LOCAL_CSP = "default-src 'none'; connect-src 'self'; style-src 'self'; script-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'"
 
 app = FastAPI(
     title="BrokenPilot Prototype",
     description="Minimal intentionally vulnerable AI application for ML Security training.",
     version="0.3.0",
+    docs_url=None,
+    redoc_url=None,
 )
+app.add_middleware(TrustedHostMiddleware, allowed_hosts=["127.0.0.1", "localhost"], www_redirect=False)
+
+
+@app.middleware("http")
+async def local_response_headers(request: Request, call_next):
+    if request.method not in {"GET", "HEAD", "OPTIONS"}:
+        origin = request.headers.get("origin")
+        expected_origin = f"{request.url.scheme}://{request.headers.get('host', '')}"
+        if (origin and origin != expected_origin) or request.headers.get("sec-fetch-site") == "cross-site":
+            return JSONResponse(status_code=403, content={"detail": {"error": "cross_origin_request_denied"}})
+    response = await call_next(request)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["Referrer-Policy"] = "no-referrer"
+    if request.url.path == "/":
+        response.headers["Content-Security-Policy"] = LOCAL_CSP
+    return response
 
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
@@ -76,6 +97,19 @@ def tickets():
     return {"tickets": load_tickets()}
 
 
+@app.post("/tickets")
+def ticket_create(request: TicketCreateRequest):
+    """Create a fake user ticket and index its lower-trust text for the lab."""
+    user = get_user(request.user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail=f"Unknown user_id: {request.user_id}")
+    ticket = create_ticket(user=user, title=request.title, summary=request.summary)
+    controls = Controls.from_env()
+    if controls.audit_log:
+        record("ticket.create", {"user_id": user["id"], "ticket_id": ticket["id"]})
+    return {"user": _public_user(user), "ticket": ticket, "indexed_document_id": f"DOC-{ticket['id']}"}
+
+
 @app.get("/audit")
 def audit_events():
     return {"events": list_events()}
@@ -84,6 +118,7 @@ def audit_events():
 @app.post("/reset")
 def reset_lab_state():
     reset_tickets()
+    reset_documents()
     clear_events()
     reset_memory()
     return {"status": "reset", "tickets": load_tickets(), "memory": list_memory(), "audit_events": list_events()}
@@ -301,9 +336,9 @@ def tool_update_ticket(request: ToolUpdateTicketRequest):
 def agent_run(request: AgentRunRequest):
     """Deterministic agent simulation for confused-deputy testing.
 
-    The agent retrieves context, extracts a ticket id from the user goal, and may call
-    update_ticket. The default intentionally vulnerable configuration lets the agent
-    update cross-tenant tickets because the tool does not enforce authorization.
+    The agent retrieves context, extracts a ticket id from its decision text, and may
+    call update_ticket. In vulnerable mode, a retrieved document can supply that text.
+    The tool also allows cross-tenant updates when authorization is disabled.
     """
     user = get_user(request.user_id)
     if not user:
@@ -322,9 +357,18 @@ def agent_run(request: AgentRunRequest):
 
     goal_for_decision = request.goal
     decision_source = "user_goal"
+    source_doc_id = None
     if memory_instruction:
         goal_for_decision = f"{request.goal}\n{memory_instruction}"
         decision_source = "memory_instruction"
+    elif not controls.prompt_injection_filter:
+        for doc in docs:
+            body = doc.get("body", "")
+            if DOCUMENT_ACTION_MARKER in body:
+                goal_for_decision = f"{request.goal}\n{body.split(DOCUMENT_ACTION_MARKER, 1)[1].strip()}"
+                decision_source = "retrieved_document"
+                source_doc_id = doc["id"]
+                break
 
     ticket_match = TICKET_RE.search(goal_for_decision)
     if not ticket_match:
@@ -337,6 +381,7 @@ def agent_run(request: AgentRunRequest):
                     "action": "no_tool_call",
                     "memory_ids": [entry["id"] for entry in memories],
                     "decision_source": decision_source,
+                    "source_doc_id": source_doc_id,
                 },
             )
         return {
@@ -347,7 +392,8 @@ def agent_run(request: AgentRunRequest):
             "visible_memory": memories,
             "agent_decision": "no_tool_call",
             "decision_source": decision_source,
-            "reason": "No ticket id was present in the user goal or active memory.",
+            "source_doc_id": source_doc_id,
+            "reason": "No ticket id was present in the active decision context.",
         }
 
     ticket_id = ticket_match.group(0).upper()
@@ -376,6 +422,7 @@ def agent_run(request: AgentRunRequest):
                 "authorization_decision": result["authorization_decision"],
                 "approval_decision": result["approval_decision"],
                 "decision_source": decision_source,
+                "source_doc_id": source_doc_id,
                 "memory_ids": [entry["id"] for entry in memories],
                 "controls": controls.as_dict(),
             },
@@ -389,5 +436,6 @@ def agent_run(request: AgentRunRequest):
         "visible_memory": memories,
         "agent_decision": "tool_call_update_ticket",
         "decision_source": decision_source,
+        "source_doc_id": source_doc_id,
         **result,
     }

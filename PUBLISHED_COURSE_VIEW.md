@@ -13,12 +13,12 @@ This file defines what should feel student-facing in the final v1.1 release.
 - `labs/STUDENT_LAB_JOURNAL_GUIDE.md`
 - runnable lab folders under `labs/`
 - `course-templates/`
-- `assessments/` that students use to understand grading expectations
+- `assessments/` as optional self-checks and instructor feedback guidance
 
 ## Instructor-facing by default
 
 - `instructor/`
-- grading calibration notes
+- optional rubric and feedback calibration notes
 - strong and weak answer anchors
 - debrief guides
 - release-readiness notes

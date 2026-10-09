@@ -1,6 +1,6 @@
 # BrokenPilot Standalone Lab: AI Red Team Methodology
 
-This lab uses BrokenPilot as the assessed red-team target when DVAIA is unavailable or optional.
+This lab uses BrokenPilot as the primary red-team practice target. DVAIA is optional comparison practice.
 
 ## Learning objective
 
@@ -24,7 +24,7 @@ Out of scope for runnable findings:
 - model supply-chain compromise;
 - adversarial ML perturbation attacks.
 
-## Mini-assessment flow
+## Practice flow
 
 1. Pick one primary attack path.
 2. Reproduce vulnerable behavior.
@@ -87,7 +87,7 @@ user_tenant: alpha
 ticket_tenant: beta
 ```
 
-## Required red-team conclusion
+## Red-team conclusion to aim for
 
 A strong conclusion says:
 
@@ -97,4 +97,4 @@ Memory poisoning influenced the agent's intended action, but independent target-
 
 ## Deliverable
 
-Submit one rewritten finding using the finding quality rubric.
+Write one finding and compare it with the finding quality rubric if feedback would help. No score is required.

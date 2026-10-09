@@ -17,7 +17,7 @@ Where is untrusted text being treated as instruction or as safe output for anoth
 
 ## Lab or exercise connection
 
-Use BrokenPilot for direct injection, indirect injection, and output handling. DVAIA can remain optional enrichment. The graded artifact should show vulnerable behavior, controlled behavior, the root cause, and a control that lives at the right boundary.
+Use BrokenPilot for direct injection, indirect injection, and output handling. DVAIA can remain optional enrichment. A useful practice finding shows vulnerable behavior, controlled behavior, the root cause, and a control that lives at the right boundary.
 
 ## What a strong submission looks like
 

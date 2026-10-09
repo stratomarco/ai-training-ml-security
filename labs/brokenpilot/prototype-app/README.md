@@ -4,29 +4,36 @@ This directory contains the minimal runnable BrokenPilot prototype.
 
 It is intentionally small and deterministic. The goal is to make the BrokenPilot capstone testable without requiring a real LLM, cloud account, vector database, ticketing system, or production-like integrations.
 
-## Cross-platform local setup
+## First run and guided path
 
-Windows PowerShell:
+Use Python 3.10 or newer. From this directory, create a virtual environment, install `requirements.txt`, and launch a named profile. For example:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-pytest
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python -m pip install -r requirements.txt
+python run_lab.py --profile vulnerable
 ```
 
-macOS or Linux local run:
+Open `http://127.0.0.1:8010`. The local UI lets students plant a fake ticket, run the agent, inspect JSON evidence and ticket state, and reset in-memory lab state. Its evidence notebook keeps recent runs in that browser across server restarts, so students can compare control profiles and export one JSON record of the investigation. Start with [Ticket to Retrieval to Agent](TICKET_TO_AGENT_LAB.md).
+
+For macOS or Linux, the complete first-run command sequence is:
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install --upgrade pip
-pip install -r requirements.txt
-pytest
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python3 -m pip install -r requirements.txt
+python run_lab.py --profile vulnerable
 ```
+
+To compare controls, stop with `Ctrl+C` and restart, for example `python run_lab.py --profile tool-authz`. Profiles are `vulnerable`, `retrieval-authz`, `injection-filter`, `tool-authz`, `tool-approval`, `memory-review`, `memory-isolation`, `output-encoding`, and `all-controls`. A new process has fresh fake state. The launcher binds only to `127.0.0.1` and explicitly sets every teaching control for the selected profile.
+
+The UI and API remain intentionally vulnerable in the vulnerable profile. Keep the service on loopback, use only fake data, and do not expose it on a shared network. There is no account, flag, or grading service.
+
+The evidence notebook uses browser local storage. It keeps at most 24 runs, records ticket state before and after each request, and omits approval tokens. Export its JSON before clearing browser data or changing browser profiles. The notebook is a learning aid, not a trusted audit log; verify important effects in the app state and server audit events.
+
+The UI and API schema (`/openapi.json`) are served locally. The default FastAPI Swagger/ReDoc pages are disabled because their browser assets would otherwise load from external CDNs.
+State-changing browser requests from other origins are rejected; command-line requests without a browser `Origin` header remain available for the exercises. This is a local teaching target, not an authentication boundary.
 
 ## What this prototype demonstrates
 
@@ -37,13 +44,15 @@ The current MVP supports these endpoints:
 | `GET /health` | Confirm the app is running |
 | `GET /users` | List fake users available for testing |
 | `GET /tickets` | List fake tickets |
+| `POST /tickets` | Create a fake ticket and index its summary as lower-trust content |
 | `GET /controls` | Show active control toggles |
 | `GET /audit` | Show in-memory audit events |
 | `GET /memory` | List in-memory agent memory entries |
-| `POST /reset` | Reset tickets, audit events, and memory |
+| `POST /reset` | Reset tickets, created documents, audit events, and memory |
 | `POST /memory/add` | Add an agent memory entry |
 | `POST /retrieve` | Retrieve fake documents using keyword matching |
 | `POST /chat` | Run a mock chat flow over retrieved documents |
+| `POST /render` | Demonstrate raw versus encoded HTML output handling |
 | `POST /tools/update-ticket` | Simulate an agent/tool ticket update |
 | `POST /agent/run` | Simulate a simple agent that may call the update-ticket tool |
 
@@ -73,25 +82,6 @@ This is a local training app. It uses:
 - no real model provider
 
 Do not connect this prototype to real systems or real data.
-
-## Run locally on Windows PowerShell
-
-From the repository root:
-
-```powershell
-cd labs\brokenpilot\prototype-app
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
-```
-
-Open:
-
-```text
-http://127.0.0.1:8010
-```
 
 ## Run with Docker Compose
 
@@ -125,6 +115,7 @@ The app uses environment variables to demonstrate vulnerable and hardened behavi
 | `ENABLE_MEMORY_REVIEW` | `false` | If true, new memory is inactive unless approved with the lab token |
 | `ENABLE_MEMORY_ISOLATION` | `false` | If true, global/cross-tenant memory is not used as active instruction context |
 | `ENABLE_AUDIT_LOG` | `true` | If true, relevant actions are recorded in memory |
+| `ENABLE_OUTPUT_ENCODING` | `false` | If true, model-derived HTML is encoded at the demo sink |
 
 Default mode is intentionally vulnerable.
 
@@ -296,6 +287,6 @@ Then restart Uvicorn.
 - There is no persistent database.
 - Tool calling is deterministic and local only.
 - Memory is in-memory only and resets with `/reset`.
-- The UI is intentionally basic.
+- The browser UI is a local request/evidence workspace; it displays returned HTML as text.
 
 These limitations are deliberate. The goal is a reliable teaching target before adding complexity.

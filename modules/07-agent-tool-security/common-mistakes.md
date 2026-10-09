@@ -126,7 +126,7 @@ reason=cross_tenant
 correlation_id=...
 ```
 
-Without useful logs, the system cannot support incident response, grading, debugging, or control validation.
+Without useful logs, the system cannot support incident response, debugging, feedback, or control validation.
 
 ## 8. No dry-run mode
 
@@ -159,11 +159,11 @@ Controls:
 - repeated-denial stop condition;
 - escalation to human.
 
-## 10. Grading only the exploit
+## 10. Treating the exploit as the whole outcome
 
 In a training context, it is easy to reward students only for finding a clever exploit.
 
-This course should reward:
+Useful feedback should recognize:
 
 - correct root cause;
 - security principle violated;

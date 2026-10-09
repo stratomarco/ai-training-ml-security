@@ -12,6 +12,8 @@ COPY app ./app
 COPY data ./data
 COPY static ./static
 
+USER 10001:10001
+
 EXPOSE 8010
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8010"]

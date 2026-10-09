@@ -27,13 +27,13 @@ This file maps modules to frameworks, labs, deliverables, and core security prin
 | 02 | Custom | Architecture mapping |
 | 03 | Custom toy ML app | Evasion, poisoning, extraction basics |
 | 04 | Custom | Architecture risk review |
-| 05 | DVAIA | Prompt injection and insecure output handling |
-| 06 | DVAIA + custom RAG | Indirect prompt injection and retrieval auth |
-| 07 | Vulnerable agent lab + BrokenPilot design | Tool misuse and excessive agency |
+| 05 | BrokenPilot; DVAIA optional | Prompt injection and insecure output handling |
+| 06 | BrokenPilot; DVAIA optional | Indirect prompt injection and retrieval auth |
+| 07 | BrokenPilot | Tool misuse, memory poisoning, and excessive agency |
 | 08 | Custom broken ML pipeline | Supply chain and MLOps review |
 | 09 | Custom HR/customer-support RAG | Privacy leakage and cross-tenant retrieval |
 | 10 | Custom classifier | Adversarial robustness |
-| 11 | DVAIA + custom | Full AI red-team workflow |
+| 11 | BrokenPilot; DVAIA optional | AI red-team workflow and evidence |
 | 12 | BrokenPilot | Capstone |
 
 ## Module-to-deliverable map
@@ -94,4 +94,4 @@ Mitigation: Per-action authorization, scoped tool tokens, approval gates, audit 
 
 ## Current map status
 
-This course map reflects the v1.0 release candidate. Modules 01–12 are complete, labs and templates are mapped to their modules, and BrokenPilot is the final capstone exercise. Historical build notes are tracked in `CHANGELOG.md`.
+Modules 01–12 are mapped to labs and templates. BrokenPilot is the primary runnable LLM, RAG, agent, and capstone target; DVAIA remains optional external practice. Historical build notes are tracked in `CHANGELOG.md`.

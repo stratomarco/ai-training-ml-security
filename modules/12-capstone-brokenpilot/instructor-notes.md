@@ -165,7 +165,7 @@ Use these when teams get stuck:
 9. Which mitigation creates the most developer friction?
 10. Which residual risk should leadership explicitly accept or reject?
 
-## Suggested grading emphasis
+## Optional rubric for feedback
 
 | Criterion | Weight |
 |---|---:|

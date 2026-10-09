@@ -188,7 +188,7 @@ Students should use these as concrete examples of the course principle that agen
 
 Module 07 remains the reference lab standard. BrokenPilot demonstrates the tool confused-deputy problem, tool authorization, approval gates, audit logging, and defense in depth with memory poisoning.
 
-Primary graded deliverable: A tool permission matrix or tool-control design with authorization rules, approval rules, audit fields, and validation steps.
+Suggested practice deliverable: A tool permission matrix or tool-control design with authorization rules, approval rules, audit fields, and validation steps.
 
 See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
 

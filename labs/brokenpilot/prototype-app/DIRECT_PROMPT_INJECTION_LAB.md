@@ -28,15 +28,7 @@ The lesson is not that the marker string is special. The marker is a determinist
 
 ## Controlled run
 
-Enable the prompt-injection filter stand-in:
-
-```powershell
-$env:ENABLE_PROMPT_INJECTION_FILTER="true"
-```
-
-```bash
-export ENABLE_PROMPT_INJECTION_FILTER=true
-```
+Stop the vulnerable process with `Ctrl+C`, then restart it from this directory with `python run_lab.py --profile injection-filter`. This enables the prompt-injection filter stand-in before the server starts.
 
 Run the same request again. Expected observation:
 

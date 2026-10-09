@@ -26,6 +26,12 @@ class ToolUpdateTicketRequest(BaseModel):
     approval_token: str | None = Field(None, examples=["APPROVED-FOR-LAB"])
 
 
+class TicketCreateRequest(BaseModel):
+    user_id: str = Field(..., examples=["eve"])
+    title: str = Field(..., min_length=1, max_length=120, examples=["Supplier bulletin delta"])
+    summary: str = Field(..., min_length=1, max_length=1000)
+
+
 class AgentRunRequest(BaseModel):
     user_id: str = Field(..., examples=["alice"])
     goal: str = Field(..., min_length=1, examples=["Resolve the vendor onboarding issue and close TCK-2001"])

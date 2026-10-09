@@ -40,4 +40,4 @@ The insecure output-handling portion of this module must be run through `POST /r
 
 - Vulnerable mode: `ENABLE_OUTPUT_ENCODING=false`; the rendered response includes the raw benign marker `<b>OUTPUT_SINK_TRIGGERED</b>`.
 - Controlled mode: `ENABLE_OUTPUT_ENCODING=true`; the same marker is HTML-escaped for the sink context.
-- Graded artifact: explain why the problem is downstream trust of model output, not the model producing text.
+- Practice finding: explain why the problem is downstream trust of model output, not the model producing text.

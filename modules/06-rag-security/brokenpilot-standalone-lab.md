@@ -37,11 +37,7 @@ The fake token is intentionally fake. The point is the authorization failure, no
 
 ## Step 3: enable retrieval authorization
 
-```powershell
-$env:ENABLE_RETRIEVAL_AUTHZ="true"
-```
-
-Run the same request again.
+Stop BrokenPilot with `Ctrl+C`, then restart from `labs/brokenpilot/prototype-app` with `python run_lab.py --profile retrieval-authz`. Run the same request again. The process must restart for a changed environment setting to take effect.
 
 Expected evidence:
 

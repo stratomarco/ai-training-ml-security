@@ -15,7 +15,7 @@ Module 06 uses BrokenPilot as the primary runnable RAG target. The core learning
 - Design metadata filters and authorization checks before retrieval results enter the model context
 - Explain why vector similarity is not authorization
 
-## Graded deliverable
+## Suggested practice deliverable
 
 A retrieval security design note with tenant filters, role/user checks, logging expectations, validation tests, and residual risk.
 
@@ -31,4 +31,4 @@ A retrieval security design note with tenant filters, role/user checks, logging 
 
 ## Instructor note
 
-Use this file as the first stop when deciding what to run live, what to assign as self-study, and what to grade. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning lab and grade the artifact instead of pretending it is runnable.
+Use this file as the first stop when deciding what to run live and what to offer for self-study. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning exercise with a written artifact instead of pretending it is runnable. Rubrics are optional feedback guidance.

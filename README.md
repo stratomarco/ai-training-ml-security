@@ -124,7 +124,7 @@ The root-level `modules/`, `labs/`, `course-templates/`, `instructor/`, and `ass
 
 ## Development status
 
-Current release: v1.1.0.1.0.
+Current release: v1.1.0.
 
 The v1 release is the first stable teaching release. It includes the full 12-module course, validated runnable labs, instructor guidance, assessment material, MkDocs strict navigation, and release-quality usage and licensing guidance.
 
@@ -158,7 +158,7 @@ See `LICENSE.md`, `LICENSE-CONTENT.md`, `LICENSE-CODE.md`, and `COMMERCIAL-LICEN
 
 ## Course status
 
-Current release: v1.1.0.1.0.
+Current release: v1.1.0.
 
 | Module | Status | Notes |
 |---|---|---|

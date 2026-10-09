@@ -33,15 +33,9 @@ output_handling_decision: raw
 
 ## Controlled run
 
-Enable output encoding:
+Stop the vulnerable process with `Ctrl+C`, then restart it from this directory with `python run_lab.py --profile output-encoding`. This enables output encoding before the server starts.
 
-```powershell
-$env:ENABLE_OUTPUT_ENCODING="true"
-```
-
-```bash
-export ENABLE_OUTPUT_ENCODING=true
-```
+The selected profile starts the process with `ENABLE_OUTPUT_ENCODING=true`; verify it at `GET /controls`.
 
 Run the same request again. Expected observation:
 
@@ -70,7 +64,7 @@ This lab demonstrates insecure output handling with a deterministic HTML sink.
 
 ### Controlled run
 
-1. Set `ENABLE_OUTPUT_ENCODING=true`.
+1. Stop the process and restart with `python run_lab.py --profile output-encoding`.
 2. Repeat the same `POST /render` request.
 3. Observe that the marker is encoded for the HTML context instead of embedded raw.
 
@@ -78,6 +72,6 @@ This lab demonstrates insecure output handling with a deterministic HTML sink.
 
 The vulnerability is not that the model produced text. The vulnerability is that a downstream component trusted model-derived text and embedded it into an HTML context without context-aware output encoding.
 
-### Graded artifact
+### Optional written artifact
 
 Submit a short finding with evidence, sink context, failed security property, control, validation method, and residual risk.

@@ -6,12 +6,13 @@ DVAIA is useful for extra practice, but BrokenPilot is the course-owned runnable
 
 ## Required flow
 
-1. Run BrokenPilot locally.
+1. Run BrokenPilot locally and open its guided browser workspace.
 2. Complete the Module 05 BrokenPilot standalone lab.
 3. Complete the Module 06 BrokenPilot standalone lab.
 4. Complete Module 07 tool and memory validation.
-5. Use Module 11 to turn the evidence into strong findings.
-6. Use Module 12 for the final report and readout.
+5. Run the [ticket-to-retrieval-to-agent chain](../labs/brokenpilot/prototype-app/TICKET_TO_AGENT_LAB.md) to connect the boundaries.
+6. Use Module 11 to turn the evidence into strong findings.
+7. Use Module 12 for the final report and readout.
 
 ## What BrokenPilot covers
 
@@ -32,6 +33,6 @@ DVAIA is useful for extra practice, but BrokenPilot is the course-owned runnable
 
 If DVAIA setup takes more than 20 minutes for more than one team, switch the cohort to BrokenPilot. Keep DVAIA as optional homework or instructor demo.
 
-## Grading rule
+## Scope and optional feedback
 
-Do not require students to find supply-chain, privacy, or adversarial-ML vulnerabilities in the BrokenPilot runnable target. Those topics are assessed through tabletop and written deliverables unless a separate target is added.
+BrokenPilot does not implement supply-chain or adversarial-ML vulnerabilities. Teach those topics through the separate supplied exercises and evidence. Use rubrics as optional feedback guidance; there is no flag or exam grading requirement.
