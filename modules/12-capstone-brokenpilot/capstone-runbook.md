@@ -18,7 +18,7 @@ The capstone can be run as a tabletop, workshop, or full-day exercise.
 - [ ] Prepare student handouts.
 - [ ] Prepare templates.
 - [ ] Decide which materials are instructor-only.
-- [ ] Define scoring expectations.
+- [ ] Decide whether to use the optional rubrics for feedback.
 
 ### Student preparation
 
@@ -68,7 +68,7 @@ Explain:
 - why the system matters;
 - safety rules;
 - expected deliverables;
-- assessment criteria.
+- what a useful evidence-backed report should contain.
 
 Key message:
 

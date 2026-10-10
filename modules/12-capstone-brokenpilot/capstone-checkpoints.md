@@ -2,7 +2,7 @@
 
 Use this page with the BrokenPilot capstone. The capstone is the final integration point for the course, so students should build the report over several checkpoints instead of writing it at the end.
 
-## Required checkpoints
+## Suggested checkpoints
 
 1. Scope and system model.
 2. Reproducible evidence.
@@ -11,9 +11,9 @@ Use this page with the BrokenPilot capstone. The capstone is the final integrati
 
 Each checkpoint should update the same final report. Students should not submit four unrelated documents.
 
-## Grading emphasis
+## Feedback emphasis
 
-The capstone is graded on evidence, root cause, implementable controls, validation, residual risk, and communication. It is not graded on the number of payloads attempted.
+Use evidence, root cause, implementable controls, validation, residual risk, and communication to guide optional feedback. Payload count is not a useful measure of learning.
 
 ## How to use with the 40-hour course
 

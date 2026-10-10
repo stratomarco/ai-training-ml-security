@@ -9,7 +9,7 @@ This profile defines how to teach Module 12 inside the recommended 40-hour, one-
 | Course day | Day 5 |
 | Treatment | Capstone |
 | Suggested time | Full day capstone |
-| Main live objective | Students should integrate the course into a final assessment with evidence, findings, controls, validation, and residual risk. |
+| Main live objective | Students should integrate the course into a final security review with evidence, findings, controls, validation, and residual risk. |
 | Primary deliverable | Final BrokenPilot report and short executive presentation. |
 
 ## Core content to keep
@@ -26,7 +26,7 @@ Use this path when the cohort is senior, when lab setup takes longer than expect
 
 ## Lab or exercise path
 
-Primary activity: **BrokenPilot final assessment**.
+Primary activity: **BrokenPilot final security review**.
 
 The lab or exercise should produce an artifact, not only a discussion. Acceptable artifacts include an evidence log entry, threat model note, permission matrix, risk memo, finding rewrite, test plan, or final report section.
 

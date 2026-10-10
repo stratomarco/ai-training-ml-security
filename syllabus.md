@@ -117,7 +117,7 @@ Every lab must map to a real engineering decision. No lab should exist only beca
 
 ## Assessment model
 
-Students should be assessed on:
+Students can receive optional feedback on:
 
 - Security reasoning
 - Ability to identify trust boundaries
@@ -129,19 +129,19 @@ Students should be assessed on:
 - Communication to leadership
 - Residual risk thinking
 
-The goal is not to reward only exploitation. The goal is to reward complete security judgment.
+The goal is to develop complete security judgment, beyond an attack demonstration. These points can guide discussion and optional rubric feedback; they are not exam requirements.
 
 ## Current status
 
-Current working version: **v1.1-dev testable-labs and course-depth draft**. Modules 01–12 have complete teaching packages. Current development is focused on testable labs, deeper explanations, one-week delivery, portability, and instructor-ready assessment material.
+Current release: **v1.1.0**. Modules 01–12 have teaching packages. Current improvement work focuses on the local BrokenPilot experience, clearer setup, and practical evidence quality for self-study and instructor-led delivery.
 
-## v1.1-dev roadmap
+## Current improvement priorities
 
 The current development priorities are:
 
 1. Keep a single source of truth for course content and generate MkDocs source before build.
-2. Reduce external lab dependency risk by pinning DVAIA and extending BrokenPilot coverage.
+2. Keep BrokenPilot as the primary local LLM, RAG, agent, and capstone target; retain DVAIA as optional external practice.
 3. Improve cross-platform setup for Windows, macOS, and Linux.
 4. Deepen explanations, controls, remediations, and worked examples.
-5. Align capstone assessment scope with what the runnable target can exhibit and what remains tabletop-based.
+5. Align capstone claims with what the runnable target can exhibit and what remains tabletop-based.
 6. Prepare a reviewed 40-hour / one-week instructor-led delivery model.

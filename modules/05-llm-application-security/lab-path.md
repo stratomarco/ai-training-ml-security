@@ -15,7 +15,7 @@ Module 05 uses BrokenPilot for direct prompt injection, indirect prompt injectio
 - Explain why prompt wording is not a security boundary
 - Map the same root cause across user input, retrieved content, and downstream output sinks
 
-## Graded deliverable
+## Suggested practice deliverable
 
 A Module 05 control note that identifies the trust boundary, shows the vulnerable and controlled behavior, recommends an architectural control, and states residual risk.
 
@@ -28,8 +28,8 @@ A Module 05 control note that identifies the trust boundary, shows the vulnerabl
 ## Avoid
 
 - Do not imply marker detection is a production control
-- Do not grade students only on making the model misbehave
+- Do not treat making the model misbehave as the whole learning outcome
 
 ## Instructor note
 
-Use this file as the first stop when deciding what to run live, what to assign as self-study, and what to grade. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning lab and grade the artifact instead of pretending it is runnable.
+Use this file as the first stop when deciding what to run live and what to offer for self-study. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning exercise with a written artifact instead of pretending it is runnable. Rubrics are optional feedback guidance.

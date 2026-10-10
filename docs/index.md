@@ -29,9 +29,11 @@ This site is the browsable learning portal for the AI Training  -  ML Security c
 ## Labs
 
 - [Lab Setup Overview](lab-setup/overview.md)
-- [DVAIA Setup](lab-setup/dvaia.md)
-- [DVAIA Course Mapping](labs/dvaia-guides/dvaia-course-mapping.md)
+- [BrokenPilot local setup](labs/brokenpilot/prototype-app/README.md)
+- [Ticket-to-retrieval-to-agent lab](labs/brokenpilot/prototype-app/TICKET_TO_AGENT_LAB.md)
+- [Optional Qwen live-model extension](labs/brokenpilot/prototype-app/QWEN_EXTENDED_LAB.md)
 - [BrokenPilot Capstone](labs/brokenpilot/README.md)
+- [DVAIA optional external practice](lab-setup/dvaia.md)
 
 ## Key idea
 
@@ -40,7 +42,7 @@ ML Security is not separate from software security. It is software security, dat
 
 ## Current development focus
 
-The course is now moving from "complete curriculum" to "testable learning experience." The next work items are DVAIA validation, a minimal BrokenPilot prototype, worked student examples, instructor delivery formats, concrete control assessments, and deeper adversarial ML examples.
+The current delivery focus is making the supported labs easier to run, inspect, and teach. BrokenPilot is a runnable, deterministic local target with a guided browser workspace. The next improvements should be driven by student and instructor trial runs, especially where the mock target no longer teaches the intended security boundary clearly.
 
 Start with the [Development Plan](start-here/development-plan.md).
 

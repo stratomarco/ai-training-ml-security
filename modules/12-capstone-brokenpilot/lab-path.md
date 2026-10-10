@@ -18,13 +18,13 @@ Module 12 uses BrokenPilot as the capstone target for LLM, RAG, agent, privacy l
 - Residual risk and remediation backlog
 - Executive recommendation
 
-## Graded deliverable
+## Suggested practice deliverable
 
 A final BrokenPilot report and presentation with validated findings, remediation backlog, residual risk, and a leadership-ready recommendation.
 
 ## Keep central
 
-- Assessed runnable scope: Modules 05, 06, 07, 09, and 11
+- Runnable scope: Modules 05, 06, 07, 09, and 11
 - Supporting tabletop scope: Modules 08 and 10
 
 ## Avoid
@@ -34,4 +34,4 @@ A final BrokenPilot report and presentation with validated findings, remediation
 
 ## Instructor note
 
-Use this file as the first stop when deciding what to run live, what to assign as self-study, and what to grade. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning lab and grade the artifact instead of pretending it is runnable.
+Use this file as the first stop when deciding what to run live and what to offer for self-study. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning exercise with a written artifact instead of pretending it is runnable. Rubrics are optional feedback guidance.

@@ -186,7 +186,7 @@ This lab is course-owned and deterministic. DVAIA remains useful as an optional 
 
 Module 05 uses BrokenPilot for direct prompt injection, indirect prompt injection, and insecure output handling. DVAIA remains an optional external comparison lab, not a survival dependency.
 
-Primary graded deliverable: A Module 05 control note that identifies the trust boundary, shows the vulnerable and controlled behavior, recommends an architectural control, and states residual risk.
+Suggested practice deliverable: A Module 05 control note that identifies the trust boundary, shows the vulnerable and controlled behavior, recommends an architectural control, and states residual risk.
 
 See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
 

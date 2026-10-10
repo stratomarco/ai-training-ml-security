@@ -17,7 +17,7 @@ What decision will this test inform, and what evidence would be enough to change
 
 ## Lab or exercise connection
 
-Use BrokenPilot for attack-chain practice and use the scoping tabletop for planning quality. The graded output is a report that helps a system owner decide what to fix first.
+Use BrokenPilot for attack-chain practice and use the scoping tabletop for planning quality. The practice output is a report that helps a system owner decide what to fix first.
 
 ## What a strong submission looks like
 

@@ -15,7 +15,7 @@ Windows PowerShell:
 ```powershell
 cd labs\brokenpilot\prototype-app
 .\.venv\Scripts\Activate.ps1
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 macOS or Linux:
@@ -23,7 +23,7 @@ macOS or Linux:
 ```bash
 cd labs/brokenpilot/prototype-app
 source .venv/bin/activate
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 Reset lab state:
@@ -53,13 +53,7 @@ security_observation: Retrieved content was treated as instruction.
 
 ## Step 2: enable the deterministic teaching control
 
-PowerShell:
-
-```powershell
-$env:ENABLE_PROMPT_INJECTION_FILTER="true"
-```
-
-Run the same request again.
+Stop BrokenPilot with `Ctrl+C`, then restart from the same directory with `python run_lab.py --profile injection-filter`. Run the same request again. Changing an environment variable in a different shell after the server starts will not reconfigure the running process.
 
 Expected evidence:
 

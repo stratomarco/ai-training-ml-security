@@ -4,7 +4,7 @@ This index keeps the course honest about what students can run and what they sho
 
 BrokenPilot is the runnable target for LLM, RAG, agent, privacy-leakage, and red-team attack-chain exercises. The toy-classifier app is the runnable target for classical ML attacks. MLOps supply-chain exercises are evidence-review labs. Some privacy and red-team exercises are tabletop by design.
 
-| Area | Primary lab modality | Main target | Graded artifact |
+| Area | Primary lab modality | Main target | Suggested practice artifact |
 |---|---|---|---|
 | Module 05 LLM application security | Runnable attack lab | BrokenPilot | LLM control note |
 | Module 06 RAG security | Runnable attack lab | BrokenPilot | Retrieval authorization design |

@@ -1,35 +1,22 @@
 # Lab Setup Overview
 
-The course uses a mix of tabletop exercises, local vulnerable applications, and design reviews.
+The course combines local hands-on targets with tabletop and design exercises. BrokenPilot is the primary course-owned application for LLM, RAG, agent, and capstone work. The toy classifier supports selected adversarial ML exercises. DVAIA is optional external practice.
 
-Some labs can be completed using only the Markdown files. Others reference external vulnerable AI projects such as DVAIA.
+## Choose a path
 
-## Lab categories
-
-| Category | Runtime needed | Example |
+| Goal | Target | Runtime |
 |---|---|---|
-| Tabletop | No | Architecture review, privacy risk assessment |
-| Local vulnerable app | Yes | DVAIA-style LLM labs |
-| Toy ML exercise | Optional | Evasion, poisoning, membership inference tabletop |
-| Capstone | No initially | BrokenPilot paper design |
+| Prompt injection, retrieval authorization, tool actions, memory, output handling | [BrokenPilot](../labs/brokenpilot/prototype-app/README.md) | Local Python or Docker Compose |
+| Ticket-to-retrieval-to-agent chain | [BrokenPilot guided exercise](../labs/brokenpilot/prototype-app/TICKET_TO_AGENT_LAB.md) | Local Python |
+| Evasion and other toy classifier behavior | [Toy classifier lab](../labs/toy-ml-attacks/toy-classifier-app/README.md) | Local Python |
+| Architecture, MLOps, privacy, and risk review | Module handouts and supplied evidence | No service required |
 
-## Recommended setup
+## Start BrokenPilot
 
-- Git
-- Python 3.10+
-- Docker Desktop
-- Browser
-- Code editor
+Install the requirements from `labs/brokenpilot/prototype-app`, then run `python run_lab.py --profile vulnerable` and open `http://127.0.0.1:8010`. The app binds to the local loopback interface. For each control comparison, stop the process with `Ctrl+C`, start the named control profile, recreate any in-memory setup, and repeat the request. The guided UI shows the active controls, responses, tickets, and an evidence notebook that stays in the same browser across server restarts.
 
+Use only fake data. The vulnerable profile intentionally lacks several security checks and must not be exposed on a network. No course account, online service, downloaded model, or flag validation is required for the supported lab path.
 
-## v1.1-dev lab validation focus
+The optional DVAIA materials document a separately validated historical lab path. They are not required to complete the BrokenPilot exercises. The [standalone path](brokenpilot-standalone-path.md) maps the course modules to the local target.
 
-The next development phase prioritizes lab validation over new releases.
-
-Start with:
-
-1. [DVAIA Local Validation Plan](dvaia-validation.md)
-2. [DVAIA Module Mapping](dvaia-module-mapping.md)
-3. BrokenPilot prototype planning in the BrokenPilot lab section
-
-A lab should not be presented as hands-on until the target has been installed, tested, and documented in at least one supported instructor environment.
+After the standalone path, students with suitable hardware can opt into the [Qwen live-model extension](../labs/brokenpilot/prototype-app/QWEN_EXTENDED_LAB.md). It uses Ollama installed on the same computer and adds model-response and model-proposal investigations. The core course and capstone do not require a downloaded model.

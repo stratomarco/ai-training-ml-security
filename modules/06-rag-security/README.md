@@ -352,7 +352,7 @@ If the answer is no, the design is probably relying too much on the model.
 
 Module 06 uses BrokenPilot as the primary runnable RAG target. The core learning path is retrieval authorization, source trust, and indirect prompt injection through retrieved documents.
 
-Primary graded deliverable: A retrieval security design note with tenant filters, role/user checks, logging expectations, validation tests, and residual risk.
+Suggested practice deliverable: A retrieval security design note with tenant filters, role/user checks, logging expectations, validation tests, and residual risk.
 
 See `lab-path.md` in this module and `labs/RUNNABLE_AND_REASONING_LAB_INDEX.md` for the full lab modality map.
 
