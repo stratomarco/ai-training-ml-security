@@ -38,6 +38,8 @@
             <option value="tool">5 · Call the ticket tool directly</option>
             <option value="memory">6 · Plant agent memory</option>
             <option value="render">7 · Inspect the output sink</option>
+            <option value="qwen-chat" disabled>8 · Qwen: chat over retrieved data</option>
+            <option value="qwen-agent" disabled>9 · Qwen: agent proposes a ticket action</option>
           </select>
           <p id="scenario-help" class="scenario-help"></p>
           <div class="field-row">
@@ -49,6 +51,13 @@
           <div id="scope-field"><label for="scope">Memory scope</label><select id="scope" name="scope"><option value="global">Global</option><option value="tenant">Tenant</option><option value="user">User</option></select></div>
           <div id="status-field"><label for="ticket-status">New ticket status</label><select id="ticket-status" name="ticket-status"><option value="closed">Closed</option><option value="escalated">Escalated</option><option value="updated">Updated</option></select></div>
           <div id="approval-field"><label for="approval-token">Lab approval token (optional)</label><input id="approval-token" name="approval-token" autocomplete="off" placeholder="Only for the approval-control exercise"></div>
+          <div id="authorized-action-field" hidden>
+            <p class="muted">Optional explicit user action for the Qwen intent-gate profile. Leave both blank when testing whether a document alone can steer the agent.</p>
+            <div class="field-row">
+              <div><label for="authorized-ticket-id">User-authorized ticket ID</label><input id="authorized-ticket-id" placeholder="Example: TCK-2001" maxlength="8"></div>
+              <div><label for="authorized-status">User-authorized status</label><select id="authorized-status"><option value="">No action authorized</option><option value="closed">Closed</option><option value="escalated">Escalated</option><option value="updated">Updated</option></select></div>
+            </div>
+          </div>
           <div class="form-actions"><button id="run-request" type="submit">Run request <span aria-hidden="true">→</span></button><button id="load-example" class="quiet" type="button">Load example</button></div>
         </form>
       </section>
@@ -72,8 +81,15 @@
         <div class="form-actions"><button id="reset-lab" class="danger" type="button">Reset fake lab state</button><a class="quiet-link" href="/audit">Inspect full audit log ↗</a></div>
       </section>
     </div>
+    <section class="panel qwen-panel" aria-labelledby="qwen-title">
+      <div class="panel-heading"><span class="step">05</span><div><p class="eyebrow">OPTIONAL LIVE MODEL LAYER</p><h2 id="qwen-title">Qwen extension</h2></div></div>
+      <p id="qwen-status" class="result-state" role="status" aria-live="polite">Checking local model…</p>
+      <p class="muted">Complete the standalone exercises first. For the live layer, install Ollama, pull <code>qwen3:4b-instruct-2507-q4_K_M</code>, stop the Docker lab if it uses port 8010, and run <code>python run_lab.py --qwen --profile vulnerable</code>. Refresh state to enable exercises 8 and 9.</p>
+      <p class="muted">Qwen responses vary. A model proposal is evidence of behavior, not authorization. BrokenPilot accepts only a bounded ticket proposal; its own code decides whether the tool runs. Use fake data only.</p>
+      <p class="qwen-alert" role="note"><strong>Local risk alert:</strong> This lab has no real user authentication. Any local API caller can reach the direct fake-ticket tool, and the vulnerable profile can change fake tickets. Keep BrokenPilot and Ollama on your own computer and never submit real documents, credentials, or system actions.</p>
+    </section>
     <section class="panel notebook" aria-labelledby="notebook-title">
-      <div class="panel-heading"><span class="step">05</span><div><p class="eyebrow">COMPARE YOUR RUNS</p><h2 id="notebook-title">Evidence notebook</h2></div></div>
+      <div class="panel-heading"><span class="step">06</span><div><p class="eyebrow">COMPARE YOUR RUNS</p><h2 id="notebook-title">Evidence notebook</h2></div></div>
       <p class="muted">Each request records the active controls and ticket state before and after. Entries stay in this browser across lab restarts and are never sent to a course service. Approval tokens are omitted.</p>
       <div id="notebook-list" class="notebook-list" aria-live="polite">No runs recorded yet.</div>
       <p id="notebook-status" class="muted" role="status"></p>

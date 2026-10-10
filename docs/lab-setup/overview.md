@@ -18,3 +18,5 @@ Install the requirements from `labs/brokenpilot/prototype-app`, then run `python
 Use only fake data. The vulnerable profile intentionally lacks several security checks and must not be exposed on a network. No course account, online service, downloaded model, or flag validation is required for the supported lab path.
 
 The optional DVAIA materials document a separately validated historical lab path. They are not required to complete the BrokenPilot exercises. The [standalone path](brokenpilot-standalone-path.md) maps the course modules to the local target.
+
+After the standalone path, students with suitable hardware can opt into the [Qwen live-model extension](../labs/brokenpilot/prototype-app/QWEN_EXTENDED_LAB.md). It uses Ollama installed on the same computer and adds model-response and model-proposal investigations. The core course and capstone do not require a downloaded model.

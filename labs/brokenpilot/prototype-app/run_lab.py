@@ -35,14 +35,18 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--profile", choices=PROFILES, default="vulnerable")
     parser.add_argument("--port", type=int, default=8010)
+    parser.add_argument("--qwen", action="store_true", help="Enable the optional local Ollama/Qwen extension")
     args = parser.parse_args()
 
     for short_name, env_name in CONTROL_NAMES.items():
         os.environ[env_name] = "true" if short_name in PROFILES[args.profile] else "false"
     os.environ["ENABLE_AUDIT_LOG"] = "true"
+    os.environ["BROKENPILOT_QWEN_ENABLED"] = "1" if args.qwen else "0"
 
     print(f"BrokenPilot profile: {args.profile}", flush=True)
     print(f"Open http://127.0.0.1:{args.port}", flush=True)
+    if args.qwen:
+        print("Qwen extension: local Ollama model required at 127.0.0.1:11434.", flush=True)
     print("Stop with Ctrl+C before switching profiles.", flush=True)
     uvicorn.run("app.main:app", host="127.0.0.1", port=args.port)
 

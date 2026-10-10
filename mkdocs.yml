@@ -413,6 +413,7 @@ nav:
           - "Memory Poisoning Lab": labs/brokenpilot/prototype-app/MEMORY_POISONING_LAB.md
           - "Output Handling Lab": labs/brokenpilot/prototype-app/OUTPUT_HANDLING_LAB.md
           - "Overview": labs/brokenpilot/prototype-app/README.md
+          - "Qwen Extended Lab": labs/brokenpilot/prototype-app/QWEN_EXTENDED_LAB.md
           - "Ticket To Agent Lab": labs/brokenpilot/prototype-app/TICKET_TO_AGENT_LAB.md
           - "Tool Calling Lab": labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md
           - "Prototype Plan": labs/brokenpilot/prototype-plan.md

@@ -31,6 +31,7 @@ This site is the browsable learning portal for the AI Training  -  ML Security c
 - [Lab Setup Overview](lab-setup/overview.md)
 - [BrokenPilot local setup](labs/brokenpilot/prototype-app/README.md)
 - [Ticket-to-retrieval-to-agent lab](labs/brokenpilot/prototype-app/TICKET_TO_AGENT_LAB.md)
+- [Optional Qwen live-model extension](labs/brokenpilot/prototype-app/QWEN_EXTENDED_LAB.md)
 - [BrokenPilot Capstone](labs/brokenpilot/README.md)
 - [DVAIA optional external practice](lab-setup/dvaia.md)
 

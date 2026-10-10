@@ -4,6 +4,7 @@ from pathlib import Path
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from pydantic import ValidationError
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from .audit import clear_events, list_events, record
@@ -11,8 +12,9 @@ from .controls import Controls
 from .data import create_ticket, get_ticket, get_user, load_documents, load_tickets, load_users, reset_documents, reset_tickets
 from .memory import add_memory_entry, find_memory_instruction, list_memory, reset_memory, visible_memory_for_user
 from .mock_llm import generate_answer
+from .qwen import ModelProposal, ModelUnavailable, enabled as qwen_enabled, generate as qwen_generate, status as qwen_status
 from .rag import retrieve_documents
-from .schemas import AgentRunRequest, ChatRequest, MemoryAddRequest, RenderRequest, RetrieveRequest, TicketCreateRequest, ToolUpdateTicketRequest
+from .schemas import AgentRunRequest, ChatRequest, MemoryAddRequest, QwenAgentRunRequest, QwenChatRequest, RenderRequest, RetrieveRequest, TicketCreateRequest, ToolUpdateTicketRequest
 from .tools import update_ticket_tool
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +26,7 @@ LOCAL_CSP = "default-src 'none'; connect-src 'self'; style-src 'self'; script-sr
 app = FastAPI(
     title="BrokenPilot Prototype",
     description="Minimal intentionally vulnerable AI application for ML Security training.",
-    version="0.3.0",
+    version="0.4.0",
     docs_url=None,
     redoc_url=None,
 )
@@ -77,8 +79,9 @@ def health():
     return {
         "status": "ok",
         "app": "brokenpilot-prototype",
-        "version": "0.3.0",
+        "version": "0.4.0",
         "controls": controls.as_dict(),
+        "qwen_extension_enabled": qwen_enabled(),
     }
 
 
@@ -233,6 +236,127 @@ def chat(request: ChatRequest):
         "controls": controls.as_dict(),
         "retrieved_documents": docs,
         **answer,
+    }
+
+
+@app.get("/qwen/status")
+def qwen_extension_status():
+    return qwen_status()
+
+
+def _require_qwen() -> None:
+    if not qwen_enabled():
+        raise HTTPException(status_code=409, detail={"error": "qwen_extension_disabled"})
+
+
+def _qwen_failure(exc: ModelUnavailable) -> HTTPException:
+    status_code = 429 if exc.reason == "model_busy" else 503
+    return HTTPException(status_code=status_code, detail={"error": exc.reason})
+
+
+@app.post("/qwen/chat")
+def qwen_chat(request: QwenChatRequest):
+    """Ask the real local model about fake retrieved data; never execute a tool."""
+    _require_qwen()
+    user = get_user(request.user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail=f"Unknown user_id: {request.user_id}")
+    controls = Controls.from_env()
+    docs = retrieve_documents(
+        user=user, query=request.message, documents=load_documents(),
+        controls=controls, top_k=request.top_k,
+    )
+    try:
+        answer, digest = qwen_generate(user=user, request_text=request.message, documents=docs)
+    except ModelUnavailable as exc:
+        raise _qwen_failure(exc) from exc
+    if controls.audit_log:
+        record("qwen.chat", {"user_id": user["id"], "doc_ids": [doc["id"] for doc in docs], "model_digest": digest})
+    return {
+        "mode": "qwen_live",
+        "user": _public_user(user),
+        "controls": controls.as_dict(),
+        "model_digest": digest,
+        "retrieved_documents": docs,
+        "answer": answer,
+        "security_observation": "This is a real model response. Inspect its text; no tool was called.",
+    }
+
+
+@app.post("/qwen/agent/run")
+def qwen_agent_run(request: QwenAgentRunRequest):
+    """Let the model propose one bounded action; apply lab controls in code."""
+    _require_qwen()
+    user = get_user(request.user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail=f"Unknown user_id: {request.user_id}")
+    controls = Controls.from_env()
+    docs = retrieve_documents(
+        user=user, query=request.goal, documents=load_documents(),
+        controls=controls, top_k=request.top_k,
+    )
+    memories = visible_memory_for_user(user=user, controls=controls)
+    try:
+        model_text, digest = qwen_generate(
+            user=user, request_text=request.goal, documents=docs, memories=memories, proposal=True,
+        )
+    except ModelUnavailable as exc:
+        raise _qwen_failure(exc) from exc
+
+    outcome = "no_tool_call"
+    proposal = None
+    tool_result = None
+    try:
+        parsed = ModelProposal.model_validate_json(model_text)
+        proposal = parsed.model_dump()
+    except ValidationError:
+        outcome = "invalid_model_proposal"
+    else:
+        if parsed.action == "update_ticket":
+            if not TICKET_RE.fullmatch(parsed.ticket_id) or parsed.status == "none":
+                outcome = "invalid_model_proposal"
+            elif controls.prompt_injection_filter and (
+                request.authorized_ticket_id != parsed.ticket_id.upper()
+                or request.authorized_status != parsed.status
+            ):
+                outcome = "blocked_by_explicit_intent_gate"
+            else:
+                ticket = get_ticket(parsed.ticket_id.upper())
+                if not ticket:
+                    outcome = "unknown_ticket"
+                else:
+                    try:
+                        tool_result = update_ticket_tool(
+                            user=user, ticket=ticket, status=parsed.status,
+                            note=f"Qwen extension proposed this action during: {request.goal[:200]}",
+                            approval_token=request.approval_token, controls=controls,
+                        )
+                        outcome = "tool_updated_ticket"
+                    except HTTPException as exc:
+                        outcome = "tool_blocked"
+                        tool_result = {"status_code": exc.status_code, "detail": exc.detail}
+        elif parsed.action == "none" and (parsed.ticket_id or parsed.status != "none"):
+            outcome = "invalid_model_proposal"
+
+    if controls.audit_log:
+        record("qwen.agent", {
+            "user_id": user["id"], "doc_ids": [doc["id"] for doc in docs],
+            "memory_ids": [entry["id"] for entry in memories],
+            "model_digest": digest, "proposal": proposal, "outcome": outcome,
+            "controls": controls.as_dict(),
+        })
+    return {
+        "mode": "qwen_live",
+        "user": _public_user(user),
+        "controls": controls.as_dict(),
+        "model_digest": digest,
+        "retrieved_documents": docs,
+        "visible_memory": memories,
+        "model_output": model_text,
+        "proposal": proposal,
+        "agent_decision": outcome,
+        "tool_result": tool_result,
+        "security_observation": "The model proposed an action; application code decided whether to call the ticket tool.",
     }
 
 

@@ -2,7 +2,7 @@
 
 This directory contains the minimal runnable BrokenPilot prototype.
 
-It is intentionally small and deterministic. The goal is to make the BrokenPilot capstone testable without requiring a real LLM, cloud account, vector database, ticketing system, or production-like integrations.
+The standalone path is intentionally small and deterministic. The goal is to make the BrokenPilot capstone testable without requiring a real LLM, cloud account, vector database, ticketing system, or production-like integrations. An optional local-model layer follows it.
 
 ## First run and guided path
 
@@ -30,6 +30,8 @@ To compare controls, stop with `Ctrl+C` and restart, for example `python run_lab
 
 The UI and API remain intentionally vulnerable in the vulnerable profile. Keep the service on loopback, use only fake data, and do not expose it on a shared network. There is no account, flag, or grading service.
 
+After the standalone exercises, the optional [Qwen extension](QWEN_EXTENDED_LAB.md) adds two live-model investigations using a locally installed Ollama model. Start it with `python run_lab.py --qwen --profile vulnerable`. It uses the exact Qwen3 4B Instruct 2507 Q4_K_M tag and localhost-only model API; the Docker Compose path keeps this extension disabled. The model may respond differently between runs, so compare concrete proposals and ticket state instead of expecting a fixed answer.
+
 The evidence notebook uses browser local storage. It keeps at most 24 runs, records ticket state before and after each request, and omits approval tokens. Export its JSON before clearing browser data or changing browser profiles. The notebook is a learning aid, not a trusted audit log; verify important effects in the app state and server audit events.
 
 The UI and API schema (`/openapi.json`) are served locally. The default FastAPI Swagger/ReDoc pages are disabled because their browser assets would otherwise load from external CDNs.
@@ -55,6 +57,9 @@ The current MVP supports these endpoints:
 | `POST /render` | Demonstrate raw versus encoded HTML output handling |
 | `POST /tools/update-ticket` | Simulate an agent/tool ticket update |
 | `POST /agent/run` | Simulate a simple agent that may call the update-ticket tool |
+| `GET /qwen/status` | Check whether the optional local Qwen model is ready |
+| `POST /qwen/chat` | Ask the live model about fake retrieved content without tools |
+| `POST /qwen/agent/run` | Validate a bounded model action proposal before the ticket tool |
 
 The prototype demonstrates these BrokenPilot vulnerabilities:
 
@@ -75,11 +80,11 @@ This is a local training app. It uses:
 - fake documents
 - fake tickets
 - fake secrets
-- deterministic mock LLM behavior
-- no external network calls
+- deterministic mock LLM behavior in the standalone path
+- no external network calls in the standalone path; the optional Qwen path calls only the fixed local Ollama address
 - no real credentials
 - no real ticketing system
-- no real model provider
+- no cloud model provider
 
 Do not connect this prototype to real systems or real data.
 
@@ -283,7 +288,7 @@ Then restart Uvicorn.
 ## Current limitations
 
 - Retrieval is keyword-based, not vector search.
-- The LLM is deterministic mock logic, not a real model.
+- The standalone LLM is deterministic mock logic; the optional Qwen extension requires a separate local model installation.
 - There is no persistent database.
 - Tool calling is deterministic and local only.
 - Memory is in-memory only and resets with `/reset`.

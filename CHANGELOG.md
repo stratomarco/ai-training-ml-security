@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased - optional Qwen live-model extension
+
+- Added an opt-in local Qwen3 layer after the deterministic BrokenPilot exercises.
+- Added live chat and bounded agent-proposal exercises with application-side intent, tool authorization, and approval controls.
+- Restricted the adapter to a fixed localhost Ollama endpoint and exact locally installed teaching model; documented variable model behavior and remaining lab risks.
+
 ## Unreleased - BrokenPilot learning path and local evidence
 
 - Added a ticket-to-agent prompt-injection exercise with a real ticket state change, control profiles, and resettable lab data.
