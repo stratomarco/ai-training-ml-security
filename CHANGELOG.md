@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased - workflow runtime maintenance
+
+- Moved the active quality and manual documentation deployment workflows to SHA-pinned Node 24 actions and the Ubuntu 24.04 runner label.
+
 ## Unreleased - classroom delivery and release hardening
 
 - Aligned instructor guidance with BrokenPilot-first delivery, optional DVAIA, optional Qwen, and feedback-only rubrics.
