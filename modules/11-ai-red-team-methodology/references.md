@@ -4,8 +4,8 @@
 
 - OWASP GenAI Red Teaming Guide: https://genai.owasp.org/resource/genai-red-teaming-guide/
 - OWASP GenAI Security Project: https://genai.owasp.org/
-- OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
-- OWASP LLM01:2025 Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+- OWASP Top 10 for LLM Applications 2026: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
+- OWASP LLM01:2026 Prompt Injection: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 - MITRE ATLAS: https://atlas.mitre.org/
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
 - NIST AI 600-1  -  Generative AI Profile: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence

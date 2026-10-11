@@ -105,24 +105,30 @@ This creates ambiguity between **data** and **instructions**.
 
 ---
 
-## Slide 7  -  OWASP LLM framing
+## Slide 7  -  OWASP LLM risks (2026)
 
 OWASP LLM risks provide a useful practitioner map:
 
 - Prompt injection
-- Insecure output handling
-- Training data poisoning
-- Model denial of service
-- Supply chain vulnerabilities
 - Sensitive information disclosure
-- Tool/plugin design issues
 - Excessive agency
-- Overreliance
-- Model theft
+- Supply chain
+- Data and model poisoning
+- Unbounded consumption
+- Misinformation
+- Hidden context exposure
+- Vector and embedding weaknesses
+- Improper output handling
 
 Do not memorize numbers.
 
 Understand failure modes.
+
+**Speaker notes:**
+
+"By the end of this section, you should be able to take one LLM risk and name the application control that could change the outcome. OWASP changed several numbers in 2026, so please do not memorize the list. Ask a practical question instead: if this happened in BrokenPilot, where would we enforce the decision, and what evidence would show it worked? For tool actions and memory, we will also use the agentic list."
+
+Source for the risk names: [OWASP Top 10 for LLM Applications 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/).
 
 ---
 
