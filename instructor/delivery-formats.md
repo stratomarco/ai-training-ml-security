@@ -8,8 +8,8 @@ This guide helps instructors adapt the course to different teaching windows. The
 |---|---|---|
 | 2-hour lunch-and-learn | Awareness and executive/developer framing | Core ideas, examples, one mini exercise |
 | Half-day workshop | Practical introduction | Modules 1, 5, 6, 7 highlights + one lab/tabletop |
-| 1-day workshop | Practitioner overview | Security foundations, LLM/RAG/agent risks, DVAIA lab, mini readout |
-| 2-day intensive | Hands-on practitioner training | Modules 1–8 highlights, validated labs, BrokenPilot tabletop |
+| 1-day workshop | Practitioner overview | Security foundations, LLM/RAG/agent risks, BrokenPilot guided lab, mini readout |
+| 2-day intensive | Hands-on practitioner training | Modules 1–8 highlights, BrokenPilot labs, control comparisons |
 | 12-week course | Full curriculum | All modules, labs, capstone, assessments |
 
 ## 2-hour lunch-and-learn
@@ -47,7 +47,7 @@ This guide helps instructors adapt the course to different teaching windows. The
 ### Keep
 
 - Modules 1, 5, 6, 7
-- One DVAIA demonstration if validated
+- One BrokenPilot guided exercise; DVAIA is optional comparison
 - One threat modeling exercise
 - One mitigation design exercise
 
@@ -74,8 +74,8 @@ This guide helps instructors adapt the course to different teaching windows. The
 ### Keep
 
 - Modules 1, 2, 5, 6, 7, 8, 11
-- DVAIA lab if validated
 - Mini BrokenPilot attack path
+- Optional DVAIA comparison if already validated
 - Executive readout exercise
 
 ### Cut or assign as pre-read
@@ -83,7 +83,7 @@ This guide helps instructors adapt the course to different teaching windows. The
 - Module 3 details
 - Module 9 details
 - Module 10 details
-- Full capstone grading
+- Full capstone report and presentation
 
 ## 2-day intensive
 
@@ -91,8 +91,8 @@ This guide helps instructors adapt the course to different teaching windows. The
 
 - Modules 1–8
 - Module 11
-- BrokenPilot tabletop
-- DVAIA validated labs
+- BrokenPilot guided labs and tabletop
+- Optional DVAIA comparison if already validated
 - Concrete control deliverables
 
 ### Add
@@ -129,3 +129,5 @@ Everything.
 ## Instructor rule of thumb
 
 When time is short, cut taxonomy before cutting architecture. Students remember attack paths and design principles better than category numbers.
+
+Offer the Qwen live-model extension only when the [classroom preflight](qwen-classroom-preflight.md) fits the chosen format and hardware. Keep the deterministic BrokenPilot path available in every format.

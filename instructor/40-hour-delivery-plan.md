@@ -126,12 +126,12 @@ Cut or compress:
 Before delivery, validate:
 
 - [ ] MkDocs site runs locally.
-- [ ] DVAIA starts locally.
-- [ ] DVAIA walkthroughs are reachable and current.
 - [ ] BrokenPilot starts locally.
 - [ ] BrokenPilot tests pass.
 - [ ] BrokenPilot tool authorization scenario works.
 - [ ] BrokenPilot memory poisoning scenario works.
+- [ ] If using optional DVAIA, it starts locally and its walkthroughs are current.
+- [ ] If using optional Qwen, its classroom preflight succeeds on the intended machines.
 - [ ] Student handouts are available.
 - [ ] Templates are available.
 - [ ] Capstone instructions are clear.
@@ -141,11 +141,11 @@ Before delivery, validate:
 
 Students should have:
 
-- a laptop with Docker available,
+- a laptop with Docker available only if using the container path,
 - Python available,
 - Git available,
 - browser access to the course website,
-- local access to DVAIA if participating in hands-on labs,
+- local access to DVAIA only if choosing that optional external practice,
 - local access to BrokenPilot for capstone work.
 
 ## Teaching stance

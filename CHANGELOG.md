@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased - classroom delivery and release hardening
+
+- Aligned instructor guidance with BrokenPilot-first delivery, optional DVAIA, optional Qwen, and feedback-only rubrics.
+- Added a bounded local Qwen classroom preflight that records model readiness, latency, and actual exercise outcomes using fake data.
+- Ran course quality checks on `main` pushes and pinned direct course/lab dependencies, workflow actions, and the BrokenPilot Docker base image.
+
 ## Unreleased - optional Qwen live-model extension
 
 - Added an opt-in local Qwen3 layer after the deterministic BrokenPilot exercises.

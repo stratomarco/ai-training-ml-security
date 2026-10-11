@@ -9,7 +9,7 @@ Read these files in order before teaching the course:
 1. [`teaching-the-course-narrative.md`](teaching-the-course-narrative.md) - the course argument and storyline.
 2. [`40-hour-delivery-plan.md`](40-hour-delivery-plan.md) - the week plan and timing model.
 3. [`40-hour-student-experience-runbook.md`](40-hour-student-experience-runbook.md) - daily rhythm, student flow, and support model.
-4. [`grading-calibration-guide.md`](grading-calibration-guide.md) - grading consistency and calibration guidance.
+4. [`brokenpilot-guide.md`](brokenpilot-guide.md) - the supported lab sequence and optional live-model layer.
 
 ## Per-module teaching notes
 
@@ -38,7 +38,7 @@ Use exactly one instructor facilitation entry point per major lab family:
 - BrokenPilot, Modules 05-07, 09, 11, and 12: [`brokenpilot-guide.md`](brokenpilot-guide.md)
 - MLOps evidence pack, Module 08: [`mlops-evidence-pack-guide.md`](mlops-evidence-pack-guide.md)
 
-Keep model answers, rubrics, and module-level instructor notes as references. The files above are the preparation entry points.
+Keep model answers, rubrics, and module-level instructor notes as references. The [grading calibration guide](grading-calibration-guide.md) is optional when using rubrics for feedback. The files above are the preparation entry points.
 
 ## Delivery and support
 

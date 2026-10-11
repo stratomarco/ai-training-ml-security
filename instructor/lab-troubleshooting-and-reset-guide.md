@@ -17,7 +17,8 @@ From `labs/brokenpilot/prototype-app`:
 
 ```powershell
 python -m pip install -r requirements.txt
-pytest
+python -m pytest -q
+python run_lab.py --profile vulnerable
 ```
 
 If a scenario behaves differently than expected:
@@ -27,6 +28,8 @@ If a scenario behaves differently than expected:
 - verify the user, tenant, and role
 - verify the control flag being tested
 - run the relevant test function before changing code
+
+For the optional Qwen layer, run the [classroom preflight](qwen-classroom-preflight.md) before students arrive. A missing model, unavailable Ollama server, or slow response is a setup issue; use the deterministic BrokenPilot path while resolving it. Do not change Ollama or BrokenPilot to a network-wide bind address for troubleshooting.
 
 ## Toy classifier quick checks
 

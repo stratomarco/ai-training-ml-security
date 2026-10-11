@@ -1,6 +1,6 @@
 # Toy Classifier Instructor Guide
 
-This is the single instructor entry point for the toy-classifier labs used in Modules 03 and 10. Use the student-facing lab material for instructions, and use this guide for facilitation, debrief, and grading emphasis.
+This is the single instructor entry point for the toy-classifier labs used in Modules 03 and 10. Use the student-facing lab material for instructions, and use this guide for facilitation, debrief, and optional feedback.
 
 ## Where this lab fits
 
