@@ -22,21 +22,31 @@ Run the supported app and tests from the current target directory:
 
 ```powershell
 cd labs/brokenpilot/prototype-app
-pytest
-uvicorn app.main:app --reload --port 8010
+python -m pip install -r requirements.txt
+python -m pytest -q
+python run_lab.py --profile vulnerable
 ```
+
+Open `http://127.0.0.1:8010`. Start with the deterministic ticket-to-agent exercise, then restart with one named control profile at a time. The launcher sets the profile explicitly and binds the app to localhost. Reset fake state before repeating a scenario within one process.
 
 Supported entry points:
 
-- `Prototype app README`
-- `Main lab guide`
-- `Direct prompt injection lab`
-- `Output handling lab`
-- `Tool calling lab`
-- `Memory poisoning lab`
-- `Cross-tenant privacy leakage lab`
-- `Capstone checkpoints`
-- `Capstone final report path`
+- [Prototype app README](../labs/brokenpilot/prototype-app/README.md)
+- [Ticket-to-agent guided exercise](../labs/brokenpilot/prototype-app/TICKET_TO_AGENT_LAB.md)
+- [Main lab guide](../labs/brokenpilot/prototype-app/LAB_GUIDE.md)
+- [Direct prompt injection lab](../labs/brokenpilot/prototype-app/DIRECT_PROMPT_INJECTION_LAB.md)
+- [Output handling lab](../labs/brokenpilot/prototype-app/OUTPUT_HANDLING_LAB.md)
+- [Tool calling lab](../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md)
+- [Memory poisoning lab](../labs/brokenpilot/prototype-app/MEMORY_POISONING_LAB.md)
+- [Cross-tenant privacy leakage lab](../labs/privacy-labs/brokenpilot-cross-tenant-leakage-lab.md)
+- [Capstone checkpoints](../modules/12-capstone-brokenpilot/capstone-checkpoints.md)
+- [Capstone final report path](../modules/12-capstone-brokenpilot/final-report-current-path.md)
+
+## Optional live-model extension
+
+Use the [Qwen extension](../labs/brokenpilot/prototype-app/QWEN_EXTENDED_LAB.md) only after students complete the deterministic path. Run the [classroom preflight](qwen-classroom-preflight.md) on the machines you intend to use. If model setup or response time would consume the lab period, keep the standalone exercises as the supported path.
+
+When discussing Qwen output, separate the retrieved source, raw model response, parsed proposal, application decision, and final ticket state. A refusal can still echo fake sensitive text. A model proposal does not authorize a tool call. Record the digest and timing for each run; do not promise a fixed attack result.
 
 ## How to run the lab family
 
@@ -75,10 +85,10 @@ Use these prompts after each BrokenPilot segment:
 - Do not describe tool authorization as an LLM feature. It is application authorization around an LLM-mediated action.
 - Do not treat memory poisoning as only a prompt problem. It is also a storage, review, scope, isolation, and provenance problem.
 
-## Solution and grading references
+## Optional feedback and solution references
 
-- `BrokenPilot instructor solution`
-- `Complete final report example`
-- `Final report evidence map`
-- `BrokenPilot final report rubric`
-- `Module 12 instructor notes`
+- [BrokenPilot instructor solution](../labs/brokenpilot/instructor-solution.md)
+- [Complete final report example](../labs/brokenpilot/worked-examples/current-complete-final-report.md)
+- [Final report evidence map](../labs/brokenpilot/worked-examples/current-final-report-evidence-map.md)
+- [BrokenPilot final report rubric](../labs/brokenpilot/grading-rubric.md) (optional feedback guidance)
+- [Module 12 instructor notes](../modules/12-capstone-brokenpilot/instructor-notes.md)

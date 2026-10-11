@@ -8,7 +8,7 @@
 | 09:30-10:15 | ML and LLM architecture |
 | 10:15-10:30 | Break |
 | 10:30-11:30 | OWASP ML and LLM risks |
-| 11:30-12:15 | Prompt injection and DVAIA lab |
+| 11:30-12:15 | Prompt injection and BrokenPilot guided lab |
 | 12:15-13:00 | Lunch |
 | 13:00-14:00 | RAG and indirect prompt injection |
 | 14:00-15:00 | Agent and tool security |
@@ -24,7 +24,7 @@ Day 1:
 - ML system architecture
 - OWASP ML Top 10
 - LLM application security
-- DVAIA labs
+- BrokenPilot guided lab; DVAIA only as optional extra practice
 
 Day 2:
 

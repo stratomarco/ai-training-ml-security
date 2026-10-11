@@ -58,17 +58,19 @@ LLM and RAG risks are application-security problems with model-mediated behavior
 | 09:00–09:30 | Review Day 1: model is not the security boundary |
 | 09:30–10:45 | Module 05 deep dive: prompt injection and output/action separation |
 | 10:45–11:00 | Break |
-| 11:00–12:00 | DVAIA Module 05 walkthrough |
+| 11:00–12:00 | BrokenPilot prompt-injection and output-handling exercises |
 | 12:00–13:00 | Lunch |
 | 13:00–14:15 | Module 06 deep dive: RAG trust boundaries |
 | 14:15–14:30 | Break |
-| 14:30–15:45 | DVAIA or BrokenPilot RAG/indirect injection exercise |
+| 14:30–15:45 | BrokenPilot retrieval and indirect-injection exercise |
 | 15:45–16:30 | Controls: retrieval authorization, source trust, citation validation |
 | 16:30–17:00 | Student evidence log review |
 
 ### Deliverable
 
 Students produce an evidence log for one LLM/RAG issue and a mitigation design that distinguishes weak mitigations from enforceable controls.
+
+Use DVAIA only as optional comparison or extra practice. If the [Qwen classroom preflight](qwen-classroom-preflight.md) succeeds on the intended machines, Exercise 8 can extend the Day 2 debrief; the deterministic BrokenPilot exercise remains the core activity.
 
 ### Instructor emphasis
 
@@ -103,6 +105,8 @@ Once AI can act, the security problem becomes workflow security.
 ### Deliverable
 
 Students produce a tool permission matrix or executive risk memo.
+
+If the optional Qwen preflight succeeds, use Exercise 9 to compare a model proposal with the application-side tool decision. Allow for variable model behavior and keep the deterministic agent exercise available for the required control comparison.
 
 ### Instructor emphasis
 

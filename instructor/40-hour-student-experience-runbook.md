@@ -10,7 +10,7 @@ Use the same rhythm each day:
 2. Demonstrate the vulnerable or risky condition.
 3. Let students reproduce or review the evidence.
 4. Discuss why naive fixes are insufficient.
-5. Convert evidence into a graded artifact.
+5. Convert evidence into a short artifact for discussion or feedback.
 6. Close with a checkpoint.
 
 ## What to protect
@@ -58,8 +58,10 @@ Collect a short checkpoint. Give feedback on one item only: the highest-leverage
 | 4 | 45 minutes | privacy/adversarial/finding rewrite |
 | 5 | 90 minutes | capstone report and readout |
 
-## Instructor grading anchors
+## Optional feedback anchors
 
 Strong submissions are concise, evidence-based, and implementable.
 
 Weak submissions are long, clever, or dramatic, but do not identify an enforcement point or validation method.
+
+Use the course rubrics when structured feedback helps the group. No flag or exam grading is required for this delivery path.
