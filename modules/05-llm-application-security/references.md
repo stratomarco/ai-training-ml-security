@@ -8,8 +8,9 @@
 - OWASP GenAI Security Project  
   https://genai.owasp.org/
 
-- OWASP LLM Top 10 2025 PDF  
-  https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf
+- OWASP Top 10 for LLM Applications 2026, current guide: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
+
+- OWASP LLM Top 10 2025 PDF, previous edition for the crosswalk: https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf
 
 - DVAIA  -  Damn Vulnerable AI Application  
   https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application

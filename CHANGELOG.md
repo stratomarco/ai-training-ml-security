@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased - OWASP 2026 and capstone scope
+
+- Updated the LLM risk map and active references to OWASP's 2026 guide, with a versioned 2025 crosswalk and a short presenter note.
+- Clarified which BrokenPilot capstone components are runnable and which are paper-design exercises; kept rubrics optional.
+
 ## Unreleased - workflow runtime maintenance
 
 - Moved the active quality and manual documentation deployment workflows to SHA-pinned Node 24 actions and the Ubuntu 24.04 runner label.

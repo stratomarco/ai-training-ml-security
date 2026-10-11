@@ -6,6 +6,8 @@ This runbook helps instructors deliver the BrokenPilot capstone as a structured 
 
 The capstone can be run as a tabletop, workshop, or full-day exercise.
 
+The [runnable BrokenPilot prototype](../../labs/brokenpilot/prototype-app/README.md) and the [paper architecture](../../labs/brokenpilot/architecture.md) have different scopes. The prototype has fake users and tickets, keyword retrieval, a bounded ticket-update tool, in-memory state, and an optional local Qwen layer. The paper architecture adds components such as an identity service, embeddings, a vector database, and other business tools. Students may assess those components as tabletop risks, but must label them as untested design analysis rather than reproduced lab findings.
+
 ## Before the session
 
 ### Instructor preparation
@@ -42,7 +44,9 @@ labs/brokenpilot/scenario.md
 labs/brokenpilot/architecture.md
 labs/brokenpilot/roles.md
 labs/brokenpilot/tools.md
-course-templates/brokenpilot-final-report-template.md
+labs/brokenpilot/prototype-app/README.md
+labs/brokenpilot/prototype-app/TICKET_TO_AGENT_LAB.md
+course-templates/current-brokenpilot-final-report-template.md
 course-templates/brokenpilot-risk-register-template.md
 course-templates/brokenpilot-evidence-log-template.md
 course-templates/brokenpilot-remediation-backlog-template.md
@@ -76,18 +80,15 @@ Key message:
 
 ### 2. Architecture walkthrough  -  30 minutes
 
-Walk through:
+Walk through the runnable prototype first:
 
-- web/API layer;
-- LLM gateway;
-- RAG retriever;
-- vector database;
-- document store;
-- ticket system;
-- service configuration tool;
-- memory store;
-- audit logs;
-- approval workflows.
+- local web/API layer and fake request identities;
+- keyword retriever and fake documents;
+- fake tickets and the bounded ticket-update tool;
+- in-memory memory, audit events, and control profiles;
+- optional local Qwen model proposal path, only if classroom preflight passes.
+
+Then show the paper architecture as a design review: identity/session service, embedding service, vector database, model gateway, service configuration and other tools, monitoring, and approval workflow. These are not additional runnable prototype features.
 
 Ask students:
 
@@ -114,6 +115,8 @@ Instructor should circulate and challenge shallow answers.
 ### 4. Attack path planning  -  45 minutes
 
 Students choose at least three attack paths.
+
+Mark each path as **reproduced in the prototype** or **tabletop analysis of the paper design**. Do not present a tabletop hypothesis as an observed exploit.
 
 They should define:
 
@@ -206,9 +209,9 @@ Recommended attack paths:
 - indirect prompt injection through retrieved document;
 - unauthorized ticket update through tool misuse.
 
-## Scoring
+## Optional feedback
 
-Use:
+If structured feedback helps, use these rubrics as discussion prompts. No flag, score, or exam grading is required:
 
 - [`../../assessments/brokenpilot-capstone-final-rubric.md`](../../assessments/brokenpilot-capstone-final-rubric.md)
 - [`../../labs/brokenpilot/grading-rubric.md`](../../labs/brokenpilot/grading-rubric.md)

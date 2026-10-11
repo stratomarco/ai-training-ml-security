@@ -84,20 +84,22 @@ By the end of this module, students should be able to:
 
 ## OWASP LLM risk framing
 
-This module primarily maps to the OWASP Top 10 for LLM Applications. The 2025 OWASP LLM Top 10 uses the following numbering:
+This module uses the [OWASP Top 10 for LLM Applications 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) as its current practitioner map. The closest 2025 labels are shown so older reports and exercises remain readable; they are not claims that the two editions define every risk identically.
 
-- LLM01: Prompt Injection
-- LLM02: Sensitive Information Disclosure
-- LLM03: Supply Chain
-- LLM04: Data and Model Poisoning
-- LLM05: Improper Output Handling
-- LLM06: Excessive Agency
-- LLM07: System Prompt Leakage
-- LLM08: Vector and Embedding Weaknesses
-- LLM09: Misinformation
-- LLM10: Unbounded Consumption
+| 2026 ID | 2026 risk | Closest 2025 ID and label |
+|---|---|---|
+| LLM01:2026 | Prompt Injection | LLM01:2025 Prompt Injection |
+| LLM02:2026 | Sensitive Information Disclosure | LLM02:2025 Sensitive Information Disclosure |
+| LLM03:2026 | Excessive Agency | LLM06:2025 Excessive Agency |
+| LLM04:2026 | Supply Chain | LLM03:2025 Supply Chain |
+| LLM05:2026 | Data and Model Poisoning | LLM04:2025 Data and Model Poisoning |
+| LLM06:2026 | Unbounded Consumption | LLM10:2025 Unbounded Consumption |
+| LLM07:2026 | Misinformation | LLM09:2025 Misinformation |
+| LLM08:2026 | Hidden Context Exposure | LLM07:2025 System Prompt Leakage; broader in 2026 |
+| LLM09:2026 | Vector and Embedding Weaknesses | LLM08:2025 Vector and Embedding Weaknesses |
+| LLM10:2026 | Improper Output Handling | LLM05:2025 Improper Output Handling |
 
-The 2023/2024 OWASP LLM release used different numbering for several categories, including insecure output handling, sensitive information disclosure, excessive agency, and overreliance/model-theft-related themes. The engineering lesson should not depend on memorizing numbering. Students should learn the underlying failure modes and check the current OWASP GenAI project when producing reports.
+The 2023/2024 editions also used different numbering. Cite the edition with the ID in a report. The engineering lesson does not depend on memorizing numbers: identify the failure, the enforcement point, and evidence that a control works. For agent actions and memory, pair this application list with the [OWASP Agentic Applications 2026 guide](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/).
 
 ## Reading-first deepening materials
 
@@ -109,25 +111,20 @@ Module 05 now includes additional reading-first material intended to make the to
 - `common-mistakes.md`  -  captures common design and reporting mistakes teams make with LLM applications.
 - `worked-example.md`  -  shows how to turn a vague “the model was jailbroken” observation into an engineering-grade finding.
 
-Students should read these before or alongside the DVAIA lab. The lab reinforces the concepts; it does not replace the explanation.
+Students should read these before or alongside the BrokenPilot lab. The lab reinforces the concepts; it does not replace the explanation.
 
 ## Lab
 
 Recommended lab base:
 
-- `labs/dvaia-guides/llm-application-security-lab.md`
+- [BrokenPilot standalone path](brokenpilot-standalone-lab.md)
+- [Direct injection and output handling](brokenpilot-direct-injection-output-lab.md)
+
+DVAIA is an optional external comparison, not required for the core lab.
 
 The lab should be run in a local, intentionally vulnerable environment only.
 
-The lab covers:
-
-1. Direct prompt injection
-2. System prompt leakage attempt
-3. Insecure output handling review
-4. Sensitive disclosure through context misuse
-5. Model DoS risk analysis
-6. Overreliance scenario
-7. Mitigation design
+The runnable BrokenPilot path covers direct prompt injection, indirect injection through retrieved content, output handling, cross-tenant disclosure, and the boundary between a proposed action and a ticket update. Use reading and discussion for unbounded consumption, misinformation, and model theft; the prototype does not reproduce those risks. End with a mitigation design and a validation method for the observed failure.
 
 ## Deliverables
 
@@ -146,7 +143,7 @@ Students should produce:
 | LLM app architecture refresher | 15 min |
 | OWASP LLM risk walkthrough | 35 min |
 | Attack-to-root-cause discussion | 20 min |
-| DVAIA-style lab | 60–90 min |
+| BrokenPilot guided lab | 60–90 min |
 | Mitigation workshop | 30 min |
 | Review and quiz | 15 min |
 

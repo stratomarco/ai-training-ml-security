@@ -10,8 +10,7 @@ Use these references to support the module.
 - OWASP blog  -  Top 10 for Agentic Applications release and risk summary  
   https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/
 
-- OWASP Top 10 for Large Language Model Applications  
-  https://owasp.org/www-project-top-10-for-large-language-model-applications/
+- OWASP Top 10 for LLM Applications 2026: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
 - NIST AI RMF Generative AI Profile  -  NIST AI 600-1  
   https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence

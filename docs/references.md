@@ -7,7 +7,8 @@ This file contains the initial reference spine for the course.
 - OWASP Machine Learning Security Top 10: https://owasp.org/www-project-machine-learning-security-top-10/
 - OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
 - OWASP GenAI Security Project: https://genai.owasp.org/
-- OWASP LLM Top 10 latest archive: https://genai.owasp.org/llm-top-10/
+- OWASP Top 10 for LLM Applications 2026: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
+- OWASP LLM Top 10 2025 archive: https://genai.owasp.org/llm-top-10/
 - OWASP Top 10 for Agentic Applications 2026: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
 - OWASP Agentic AI Threats and Mitigations: https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/
 - OWASP Agentic Skills Top 10: https://owasp.org/www-project-agentic-skills-top-10/  
@@ -107,13 +108,14 @@ For red teams:
 
 - OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
 - OWASP GenAI Security Project: https://genai.owasp.org/
-- OWASP LLM Top 10 2025 PDF: https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf
+- OWASP Top 10 for LLM Applications 2026: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
+- OWASP LLM Top 10 2025 PDF, previous edition: https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf
 - DVAIA  -  Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
 
 
 ## RAG and indirect prompt injection references
 
-- OWASP LLM01  -  Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+- OWASP LLM01:2026 Prompt Injection: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 - NIST AI 600-1  -  Generative AI Profile: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - DVAIA  -  Damn Vulnerable AI Application: https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application
 
@@ -157,7 +159,7 @@ Module 08 uses these references to connect conventional secure development and s
 - NIST Privacy Framework: https://www.nist.gov/privacy-framework
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
 - NIST AI RMF Generative AI Profile, NIST AI 600-1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
-- OWASP LLM02:2025 Sensitive Information Disclosure: https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/
+- OWASP LLM02:2026 Sensitive Information Disclosure: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 - OWASP ML03:2023 Model Inversion Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML03_2023-Model_Inversion_Attack
 - OWASP ML04:2023 Membership Inference Attack: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML04_2023-Membership_Inference_Attack
 - OWASP Machine Learning Security Top 10: https://owasp.org/www-project-machine-learning-security-top-10/
@@ -184,7 +186,7 @@ Module 10 uses these references to connect adversarial ML to practical robustnes
 - OWASP GenAI Red Teaming Guide: https://genai.owasp.org/resource/genai-red-teaming-guide/
 - OWASP GenAI Security Project: https://genai.owasp.org/
 - OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
-- OWASP LLM01:2025 Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+- OWASP LLM01:2026 Prompt Injection: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 - MITRE ATLAS: https://atlas.mitre.org/
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
 - NIST AI 600-1  -  Generative AI Profile: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
