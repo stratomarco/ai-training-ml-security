@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.2.0 - BrokenPilot-first teaching release
+
+- Made BrokenPilot the primary local LLM, RAG, agent, privacy, red-team, and capstone lab with a guided browser path, ticket-to-agent exercise, resettable fake data, and explicit vulnerable/controlled profiles.
+- Added an opt-in local Qwen3 model comparison with bounded adapter access and application-side intent, tool, and approval controls. Model responses remain variable; the deterministic lab supplies the reproducible boundary demonstration.
+- Clarified optional DVAIA practice, optional feedback rubrics, Python 3.12 setup, and the difference between runnable prototype evidence and paper-design analysis.
+- Updated OWASP 2026 references and the capstone scope, strengthened dependency and workflow pins, and repaired student navigation found during a fresh Windows walkthrough.
+- Excluded local virtual environments from generated course-site content.
+
+See [release notes](release-notes/v1.2.0.md) for validation and remaining limits.
+
 ## Unreleased - OWASP 2026 and capstone scope
 
 - Updated the LLM risk map and active references to OWASP's 2026 guide, with a versioned 2025 crosswalk and a short presenter note.

@@ -1,5 +1,7 @@
 # Roadmap
 
+> The version headings below preserve the original plan. Work landed in a different order and with narrower scope in places. For the delivered v1.2.0 scope, use the [current release notes](release-notes/v1.2.0.md). Choose future changes from student and instructor feedback rather than treating these historical labels as commitments.
+
 This roadmap describes work after the first complete curriculum release.
 
 ## v1.0  -  Complete Markdown curriculum

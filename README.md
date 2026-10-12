@@ -124,11 +124,11 @@ The root-level `modules/`, `labs/`, `course-templates/`, `instructor/`, and `ass
 
 ## Development status
 
-Current release: v1.1.0.
+Current release: v1.2.0.
 
 The v1 release is the first stable teaching release. It includes the full 12-module course, validated runnable labs, instructor guidance, assessment material, MkDocs strict navigation, and release-quality usage and licensing guidance.
 
-Completed in the v1.1.0 line:
+The current v1.2.0 release includes:
 
 1. BrokenPilot-primary lab validation, with DVAIA retained only as optional external practice.
 2. BrokenPilot runnable MVP with retrieval, tool-calling, memory poisoning, control toggles, and tests.
@@ -136,6 +136,8 @@ Completed in the v1.1.0 line:
 4. Worked examples, grading calibration, finding rewrite exercises, and executive communication exercises.
 5. 40-hour / one-week professional delivery model.
 6. Single-source-of-truth MkDocs generation workflow.
+7. A guided BrokenPilot browser lab, a ticket-to-agent exercise, and an optional local Qwen3 comparison layer.
+8. First-install corrections for Python 3.12, control-profile restarts, lab routing, and prototype-versus-paper-design scope.
 
 ## Lab philosophy
 
@@ -158,7 +160,7 @@ See `LICENSE.md`, `LICENSE-CONTENT.md`, `LICENSE-CODE.md`, and `COMMERCIAL-LICEN
 
 ## Course status
 
-Current release: v1.1.0.
+Current release: v1.2.0.
 
 | Module | Status | Notes |
 |---|---|---|

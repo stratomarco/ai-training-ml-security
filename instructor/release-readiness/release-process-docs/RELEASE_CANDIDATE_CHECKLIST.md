@@ -73,13 +73,4 @@ Open the generated site locally and check:
 
 ## 6. Tagging recommendation
 
-When all checks pass:
-
-```powershell
-git status
-git add .
-git commit -m "Prepare v1.1 dev release candidate"
-git tag v1.1-dev-rc1
-git push
-git push origin v1.1-dev-rc1
-```
+This checklist originated during the v1.1 release-candidate phase. For the current stable version, follow the root [Release Tagging Guide](../../../RELEASE_TAGGING_GUIDE.md) after the final gate and pull-request checks pass. Do not reuse the historical `v1.1-dev-rc1` tag.

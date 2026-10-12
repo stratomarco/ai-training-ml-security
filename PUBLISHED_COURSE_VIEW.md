@@ -1,7 +1,7 @@
 
 # Published course view
 
-This file defines what should feel student-facing in the final v1.1 release.
+This file defines what should feel student-facing in the current stable course release.
 
 ## Student-facing by default
 

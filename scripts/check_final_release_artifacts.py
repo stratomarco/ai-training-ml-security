@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
@@ -125,8 +126,8 @@ def main() -> None:
             errors.append("USAGE_AND_LICENSING_GUIDE.md does not mention attribution")
 
     version = read("VERSION").strip()
-    if version and not version.startswith("v1.1"):
-        warnings.append(f"VERSION is not v1.1-prefixed: {version}")
+    if version and not re.fullmatch(r"v\d+\.\d+\.\d+", version):
+        errors.append(f"VERSION must be a stable semantic version: {version}")
 
     if (ROOT / "scripts" / "check_root_process_docs.py").exists():
         import subprocess

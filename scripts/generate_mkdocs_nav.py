@@ -75,6 +75,10 @@ EXCLUDE_PATH_CONTAINS = [
     "/release-readiness/",
     "/__pycache__/",
     "/.pytest_cache/",
+    "/.venv",
+    "/venv/",
+    "/.tox/",
+    "/.nox/",
 ]
 
 EXCLUDE_EXACT = {

@@ -50,5 +50,7 @@ Students should not use these techniques against systems they do not own or have
 
 | Version | Status |
 |---|---|
-| v1.0.0-rc | Active release candidate |
+| v1.2.0 | Current course release |
+| v1.1.0 | Previous stable release |
+| v1.0.0-rc | Historical release candidate |
 | v0.x | Draft build history |

@@ -55,7 +55,12 @@ def copy_dir(src: Path, dst: Path) -> None:
         dst,
         ignore=shutil.ignore_patterns(
             ".git",
-            ".venv",
+            ".venv*",
+            "venv",
+            ".tox",
+            ".nox",
+            ".mypy_cache",
+            ".ruff_cache",
             "__pycache__",
             ".pytest_cache",
             "site",

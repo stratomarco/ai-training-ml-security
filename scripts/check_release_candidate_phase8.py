@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import subprocess
 import sys
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,13 +16,11 @@ REQUIRED_FILES = [
     f"{RELEASE_PROCESS}/QUALITY_GATE_BASELINE.md",
     "PUBLISHED_COURSE_VIEW.md",
     "CHANGELOG.md",
-    "release-notes/v1.1-dev-release-candidate.md",
     "mkdocs.yml",
     ".github/workflows/course-quality.yml",
 ]
 
 REQUIRED_TEXT = {
-    "VERSION": ["v1.1.0"],
     "COURSE_RELEASE_MANIFEST.md": [
         "mkdocs build --strict",
         "BrokenPilot",
@@ -51,6 +50,21 @@ def run(command: list[str], cwd: Path = ROOT) -> None:
 
 def main() -> None:
     errors: list[str] = []
+
+    version_path = ROOT / "VERSION"
+    version = version_path.read_text(encoding="utf-8").strip() if version_path.exists() else ""
+    if not re.fullmatch(r"v\d+\.\d+\.\d+", version):
+        errors.append(f"VERSION must contain one stable semantic version, got: {version!r}")
+    else:
+        for rel in (f"release-notes/{version}.md", f"docs/releases/{version}.md"):
+            if not (ROOT / rel).is_file():
+                errors.append(f"missing current release notes: {rel}")
+        if f"Version: `{version}`" not in (ROOT / "COURSE_RELEASE_MANIFEST.md").read_text(encoding="utf-8"):
+            errors.append("COURSE_RELEASE_MANIFEST.md version does not match VERSION")
+        if f"Current release: {version}." not in (ROOT / "README.md").read_text(encoding="utf-8"):
+            errors.append("README.md current release does not match VERSION")
+        if f"## {version} " not in (ROOT / "CHANGELOG.md").read_text(encoding="utf-8"):
+            errors.append("CHANGELOG.md lacks a current release section")
 
     for rel in REQUIRED_FILES:
         if not (ROOT / rel).exists():
