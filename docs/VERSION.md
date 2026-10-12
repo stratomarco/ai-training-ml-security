@@ -1,17 +1,18 @@
 # Version
 
-Current working version: **v1.1.0 website edition draft**
+Current release: **v1.2.0**. See the [release notes](releases/v1.2.0.md).
 
 ## Version meaning
 
 - `v1.0.0`: first complete Markdown curriculum release.
 - `v1.0.1`: review cleanup and reference fixes.
 - `v1.1.0`: website edition with MkDocs Material, local preview, GitHub Pages workflow, and browsable course navigation.
+- `v1.2.0`: BrokenPilot-first teaching release with the guided local lab, optional Qwen3 extension, and tested first-install course path.
 
 ## Status
 
-Modules 01–12 remain complete. The BrokenPilot capstone remains complete. The new work in v1.1 adds a website layer and publishing workflow.
+Modules 01–12 are available. BrokenPilot is the primary runnable LLM, RAG, agent, and capstone target; the toy classifier and static MLOps evidence pack cover their own topics. The optional Qwen3 layer is a variable-model comparison, and rubrics are feedback aids.
 
 ## Current development focus
 
-Working branch target: v1.1-dev  -  quality, testability, lab validation, delivery guidance, and deeper material. No new public release should be tagged until these improvements are reviewed.
+Maintain the supported student path and validate changes through the release gate. Further claims about learning outcomes require independent classroom use.

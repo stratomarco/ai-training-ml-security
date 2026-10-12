@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2.0 - BrokenPilot-first teaching release
+
+This release adds the guided local BrokenPilot path and optional Qwen3 comparison, clarifies the runnable and paper-design boundaries, and records first-install corrections. The canonical [project changelog](../CHANGELOG.md) and [release notes](releases/v1.2.0.md) carry the full scope and validation limits.
+
 ## v1.1-dev  -  Content strategy and licensing update
 
 - Added reading-first, lab-supported content strategy.

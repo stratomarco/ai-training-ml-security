@@ -1,6 +1,6 @@
 # Release Tagging Guide
 
-This guide assumes the final release gate is green.
+Use this guide for the current stable `v1.2.0` release. Run it from a clean `main` checkout after the release pull request and its checks have passed. Never move an existing release tag.
 
 ## Final validation
 
@@ -31,23 +31,30 @@ cd ..\..\toy-ml-attacks\toy-classifier-app
 pytest
 ```
 
-## Commit
+## Verify the release commit
 
 ```powershell
-cd C:\Dev\ai-training-ml-security
-git status
-git add .
-git commit -m "Finalize v1.1 dev release candidate"
-git push
+git switch main
+git pull --ff-only
+git status --short
+git rev-parse HEAD
+git ls-remote --tags origin v1.2.0
 ```
 
-## Tag release candidate
+The tag lookup must return no existing `v1.2.0` tag. Confirm `VERSION`, the manifest, the changelog, and the release notes all say `v1.2.0`.
+
+## Tag the verified commit
 
 ```powershell
-git tag v1.1.0-v1.1.0
-git push origin v1.1.0-v1.1.0
+git tag -a v1.2.0 -m "AI Training ML Security v1.2.0"
+git push origin v1.2.0
 ```
 
-## After tagging
+## Publish and verify
 
-Keep `v1.1.0-v1.1.0` as the review tag until a final human pass confirms there are no release blockers. Promote to a final `v1.1` tag only after that review.
+```powershell
+gh release create v1.2.0 --verify-tag --title "AI Training: ML Security v1.2.0" --notes-file release-notes/v1.2.0.md
+gh release view v1.2.0
+```
+
+Confirm the GitHub release is neither a draft nor a prerelease and that its tag resolves to the tested `main` commit. Site deployment is a separate workflow and should only be described as published after it runs successfully.

@@ -1,6 +1,8 @@
 
 # Validation Baseline for v1.1-dev
 
+> Historical development baseline. For a stable release, run the root [final release gate](../../../RELEASE_TAGGING_GUIDE.md) and the repository's pull-request checks. The relaxed MkDocs guidance below applied only while v1.1-dev navigation was being built.
+
 This branch is still in course buildout and cleanup. The validation baseline protects the parts of the course that are stable enough to gate every push.
 
 ## Active gates

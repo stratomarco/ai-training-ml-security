@@ -1,6 +1,6 @@
 # Quality Gate Baseline
 
-This file summarizes the release-candidate quality gates.
+This file summarizes the current release quality gates.
 
 ## Required commands
 

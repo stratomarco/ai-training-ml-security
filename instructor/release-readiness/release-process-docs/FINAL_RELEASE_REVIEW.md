@@ -59,7 +59,7 @@ Confirm the wording is clear:
 
 ## Release decision
 
-Tag `v1.1-dev-rc1` when:
+Tag the version named in `VERSION` using [the current tagging guide](../../../RELEASE_TAGGING_GUIDE.md) when:
 
 - final release gate passes
 - MkDocs strict build passes
