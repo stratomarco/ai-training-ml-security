@@ -1,7 +1,7 @@
 
 # Security Engineering Foundation Deliverable
 
-## Graded artifact
+## Practice artifact
 
 Submit a short threat model for a simple AI-assisted workflow.
 

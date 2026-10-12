@@ -7,7 +7,7 @@ Use this checklist when reviewing student work or editing a module.
 - The student can name the security property at risk.
 - The student can point to the relevant trust boundary or authority boundary.
 - The student understands whether the lab is runnable or reasoning-based.
-- The student knows the graded artifact before starting.
+- The student knows the expected practice artifact before starting.
 
 ## During the lab
 

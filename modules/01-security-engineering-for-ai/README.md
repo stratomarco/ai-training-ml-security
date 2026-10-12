@@ -2,7 +2,7 @@
 
 ## Status
 
-Ready for v0.2 review.
+Available for the current course release.
 
 ## Purpose
 
@@ -178,7 +178,7 @@ Before starting the lab or exercise, read [student-reading-guide.md](student-rea
 
 ## Depth reading path
 
-Use these pages to connect the module reading to later labs and graded deliverables:
+Use these pages to connect the module reading to later labs and practical deliverables:
 
 - [Deep Dive](deep-dive.md)
 - [Attack Anatomy](attack-anatomy.md)
@@ -192,6 +192,6 @@ Use these pages to connect the module reading to later labs and graded deliverab
 
 For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
 
-## Round 3 graded artifact confirmation
+## Practice deliverable
 
-This module ends in a graded artifact: a **threat model**. Use `exercise-deliverable-anchor.md` as the submission anchor.
+This module ends in a **threat model**. Use `exercise-deliverable-anchor.md` as the practice anchor; an instructor may use the rubric for optional feedback.

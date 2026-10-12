@@ -84,9 +84,9 @@ Submit:
 2. Optional appendix mapping risks to controls.
 3. One sentence stating what evidence you would collect during the pilot.
 
-## Grading focus
+## Optional feedback focus
 
-The memo is graded on decision quality, not fear level.
+If an instructor uses the optional rubric, focus feedback on decision quality.
 
 A strong memo:
 

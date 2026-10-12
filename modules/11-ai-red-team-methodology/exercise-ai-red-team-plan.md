@@ -22,6 +22,8 @@ BrokenPilot can:
 
 The organization wants to know whether BrokenPilot can be safely piloted with engineering and operations teams.
 
+The runnable prototype has fake users and tickets, keyword retrieval, one bounded ticket-update tool, in-memory memory, and optional local Qwen. The wider paper design includes configuration records, ticket creation, a vector database, and a model/tool gateway. Label each proposed test as **runnable prototype** or **paper-design tabletop**; do not report a tabletop path as a reproduced result.
+
 ## Student tasks
 
 ### Task 1  -  Define scope

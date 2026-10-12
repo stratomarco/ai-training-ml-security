@@ -16,7 +16,7 @@ In the default vulnerable configuration, Alice can update the Beta ticket throug
 
 ```powershell
 cd labs\brokenpilot\prototype-app
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 Open:
@@ -81,8 +81,7 @@ Expected result:
 Stop the app and restart with:
 
 ```powershell
-$env:ENABLE_TOOL_AUTHZ="true"
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile tool-authz
 ```
 
 Repeat Step 3.
@@ -98,12 +97,12 @@ Expected result:
 Restart with:
 
 ```powershell
-$env:ENABLE_TOOL_AUTHZ="true"
-$env:ENABLE_TOOL_APPROVAL="true"
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile all-controls
 ```
 
 Now try a same-tenant update as Alice on `TCK-1001`:
+
+The `all-controls` profile enables both tool authorization and approval, along with the other teaching controls. Confirm both values with `GET /controls`.
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8010/tools/update-ticket `
@@ -165,4 +164,4 @@ Recommended title:
 
 ## Validation record
 
-The validated Module 07 record is maintained in `../../modules/07-agent-tool-security/brokenpilot-tool-validation.md` in the course source and `docs/modules/07-agent-tool-security/brokenpilot-tool-validation.md` in the website mirror.
+The dated Module 07 record is maintained in [the course source](../../../modules/07-agent-tool-security/brokenpilot-tool-validation.md). Use this lab for current steps.

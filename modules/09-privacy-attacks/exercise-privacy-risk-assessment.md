@@ -120,7 +120,7 @@ Use:
 
 - `course-templates/privacy-risk-assessment-template.md`
 
-## Grading guidance
+## Optional feedback guidance
 
 A strong answer does not only say “redact PII.”
 

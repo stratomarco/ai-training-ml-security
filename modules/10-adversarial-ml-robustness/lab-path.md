@@ -16,7 +16,7 @@ Module 10 uses the toy-classifier app for observable classical ML attacks. Broke
 - Poisoning and backdoor tabletop
 - Robustness review and hard-gate decision analysis
 
-## Graded deliverable
+## Practice deliverable
 
 A robustness review explaining whether the classifier can safely act as a hard authorization gate, what fallback is required, and how the control should be validated.
 
@@ -32,4 +32,4 @@ A robustness review explaining whether the classifier can safely act as a hard a
 
 ## Instructor note
 
-Use this file as the first stop when deciding what to run live, what to assign as self-study, and what to grade. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning lab and grade the artifact instead of pretending it is runnable.
+Use this file as the first stop when deciding what to run live and what to assign as self-study. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning lab with a written artifact. Rubrics are optional feedback guidance.

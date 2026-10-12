@@ -1,7 +1,7 @@
 
 # ML System Architecture Deliverable
 
-## Graded artifact
+## Practice artifact
 
 Submit an architecture and data-flow map for an ML-enabled application.
 

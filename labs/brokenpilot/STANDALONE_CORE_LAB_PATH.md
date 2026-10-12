@@ -1,8 +1,8 @@
 # BrokenPilot Standalone Core Lab Path
 
-BrokenPilot is the course-owned fallback and core hands-on target for the one-week course. DVAIA remains a useful external reference lab, but the cohort must be able to complete the required hands-on path with BrokenPilot alone.
+BrokenPilot is the course-owned core hands-on target for the one-week course. DVAIA remains an optional external reference lab.
 
-This path covers the executable parts of Modules 05, 06, 07, 11, and 12. Modules 08, 09, and 10 are assessed through tabletop exercises, design reviews, and written deliverables unless separate lab infrastructure is added.
+This path covers the executable parts of Modules 05, 06, 07, 09, 11, and 12. Module 08 uses a static MLOps evidence pack. Modules 03 and 10 use the separate toy classifier for classical ML attacks.
 
 ## When to use this path
 
@@ -11,7 +11,7 @@ Use this path when:
 - DVAIA is unavailable, broken, slow, blocked by corporate network controls, or not approved for installation.
 - The instructor wants one deterministic local target for the whole cohort.
 - Students are working offline or in a restricted environment.
-- The course needs repeatable evidence for grading.
+- The course needs repeatable evidence for practice and optional feedback.
 
 Use DVAIA as an optional extension when it is available and time permits.
 
@@ -28,7 +28,7 @@ python -m venv .venv
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 pytest
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 macOS or Linux:
@@ -40,7 +40,7 @@ source .venv/bin/activate
 python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 pytest
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 Open:
@@ -64,7 +64,7 @@ The evidence does not need to be polished during the lab. It must be clear enoug
 
 ## Control toggles
 
-BrokenPilot controls are environment variables. Default mode is intentionally vulnerable.
+BrokenPilot controls are set by the named `run_lab.py --profile` launcher. The `vulnerable` profile is intentionally unsafe for fake local data. Stop the server before changing profiles and verify `GET /controls` after restart.
 
 | Toggle | Required in standalone path | Teaching point |
 |---|---:|---|
@@ -93,9 +93,10 @@ Students should explicitly say this in their findings.
 
 | Module | BrokenPilot activity | Assessment output |
 |---|---|---|
-| 05 LLM Application Security | prompt-injection chat flow | one finding with mitigation limits |
+| 05 LLM Application Security | direct/indirect injection and output handling | one finding with mitigation limits |
 | 06 RAG Security | retrieval authorization and indirect injection | evidence log and control recommendation |
 | 07 Agent and Tool Security | tool authz, approval, memory poisoning | tool permission matrix or finding |
+| 09 Privacy Attacks | cross-tenant retrieval of fake sensitive fragments | privacy finding and residual logging risk |
 | 11 AI Red Team Methodology | mini red-team sprint over the same target | rewritten strong finding |
 | 12 BrokenPilot Capstone | end-to-end review | final report and presentation |
 
@@ -106,5 +107,5 @@ A successful standalone run has these properties:
 - every team can start the app locally or through Docker;
 - every team can reproduce at least two vulnerable behaviors;
 - every team can demonstrate at least one control changing the result;
-- no team is graded on a vulnerability the runnable target cannot exhibit;
+- no team is asked to reproduce a vulnerability the runnable target cannot exhibit;
 - the final report separates demonstrated findings from tabletop risks.

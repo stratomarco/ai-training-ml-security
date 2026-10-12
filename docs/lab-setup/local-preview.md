@@ -2,12 +2,11 @@
 
 This site is built with MkDocs Material.
 
-Canonical course content lives in the root-level content directories. Before running MkDocs, generate `.mkdocs-src/` with the sync script.
+Canonical course content lives in the root-level content directories. Run the commands below from your repository checkout's root. Before running MkDocs, generate `.mkdocs-src/` with the sync script.
 
 ## Windows PowerShell
 
 ```powershell
-cd F:\ai-training-ml-security
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -18,7 +17,6 @@ mkdocs serve
 ## macOS or Linux
 
 ```bash
-cd ~/ai-training-ml-security
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

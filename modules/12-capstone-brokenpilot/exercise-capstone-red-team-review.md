@@ -10,8 +10,8 @@ This exercise builds on the threat model. You will choose attack paths, document
 
 Use:
 
-- [`../../labs/brokenpilot/attack-paths.md`](../../labs/brokenpilot/attack-paths.md)
-- [`../../labs/brokenpilot/vulnerabilities.md`](../../labs/brokenpilot/vulnerabilities.md)
+- [`../../labs/brokenpilot/student-brief.md`](../../labs/brokenpilot/student-brief.md)
+- [`../../labs/brokenpilot/prototype-app/TICKET_TO_AGENT_LAB.md`](../../labs/brokenpilot/prototype-app/TICKET_TO_AGENT_LAB.md)
 - [`../../labs/brokenpilot/secure-reference-architecture.md`](../../labs/brokenpilot/secure-reference-architecture.md)
 - [`../../course-templates/brokenpilot-final-report-template.md`](../../course-templates/brokenpilot-final-report-template.md)
 - [`../../course-templates/brokenpilot-evidence-log-template.md`](../../course-templates/brokenpilot-evidence-log-template.md)
@@ -70,6 +70,8 @@ For each finding, capture:
 - root cause.
 
 Do not rely only on screenshots. Explain the control failure.
+
+Use the prototype responses and ticket state for reproduced findings. Treat risks involving paper-design components that are absent from the prototype as tabletop analysis.
 
 ## Part 4  -  Score findings
 

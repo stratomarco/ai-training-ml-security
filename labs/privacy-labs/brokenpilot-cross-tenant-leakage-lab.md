@@ -15,7 +15,7 @@ Attack lab.
 This lab should clear the same standard used by the stronger BrokenPilot labs:
 
 1. Observable failure and observable fix.
-2. The graded artifact is the control and validation, not the leak.
+2. The practice artifact explains the control and its validation, not only the leak.
 3. The naive fix is rejected.
 4. There is a defense-in-depth moment.
 5. The decision maps to a real engineering design choice.
@@ -53,7 +53,7 @@ cd labs\brokenpilot\prototype-app
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 macOS or Linux:
@@ -63,7 +63,7 @@ cd labs/brokenpilot/prototype-app
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 Reset lab state:
@@ -110,17 +110,13 @@ This is a privacy failure and a tenant isolation failure. The model is not the p
 
 ## Step 2: Enable retrieval authorization
 
-PowerShell:
+Stop the vulnerable server with `Ctrl+C`, then restart it from the prototype directory:
 
 ```powershell
-$env:ENABLE_RETRIEVAL_AUTHZ = "true"
+python run_lab.py --profile retrieval-authz
 ```
 
-macOS or Linux:
-
-```bash
-export ENABLE_RETRIEVAL_AUTHZ=true
-```
+Confirm `ENABLE_RETRIEVAL_AUTHZ: true` at `GET /controls` before repeating the request. Changing an environment variable in another shell while the server remains running does not switch the active control.
 
 Run the same request again:
 
@@ -166,12 +162,9 @@ The real fix is to prevent unauthorized documents from being retrieved in the fi
 
 ## Step 4: Defense-in-depth moment
 
-Enable audit logging and repeat the vulnerable request:
+Stop the controlled server and restart with `python run_lab.py --profile vulnerable`. Audit logging is enabled by this launcher. Repeat the vulnerable request:
 
 ```powershell
-$env:ENABLE_RETRIEVAL_AUTHZ = "false"
-$env:ENABLE_AUDIT_LOG = "true"
-
 $body = @{
   user_id = "chris"
   query = "payment credential token alpha"
@@ -239,18 +232,4 @@ Why this is weak:
 
 ## Reset
 
-PowerShell:
-
-```powershell
-Remove-Item Env:\ENABLE_RETRIEVAL_AUTHZ -ErrorAction SilentlyContinue
-Remove-Item Env:\ENABLE_AUDIT_LOG -ErrorAction SilentlyContinue
-Invoke-RestMethod -Method Post http://127.0.0.1:8010/reset
-```
-
-macOS or Linux:
-
-```bash
-unset ENABLE_RETRIEVAL_AUTHZ
-unset ENABLE_AUDIT_LOG
-curl -s -X POST http://127.0.0.1:8010/reset
-```
+Use `POST /reset` to clear fake tickets, memory, and audit events within the running profile. Stop the server with `Ctrl+C` before switching profiles.

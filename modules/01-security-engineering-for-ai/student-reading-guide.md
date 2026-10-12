@@ -17,7 +17,7 @@ What security property is at risk, who can influence the system, and where shoul
 
 ## Lab or exercise connection
 
-Use the module exercise to turn a vague AI concern into assets, trust boundaries, abuse cases, controls, validation evidence, and residual risk. This is a reasoning lab. The graded artifact is the security argument, not a running exploit.
+Use the module exercise to turn a vague AI concern into assets, trust boundaries, abuse cases, controls, validation evidence, and residual risk. This is a reasoning lab. The practice artifact is the security argument.
 
 ## What a strong submission looks like
 

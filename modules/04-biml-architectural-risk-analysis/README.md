@@ -168,7 +168,7 @@ Before starting the lab or exercise, read [student-reading-guide.md](student-rea
 
 ## Depth reading path
 
-Use these pages to connect the module reading to later labs and graded deliverables:
+Use these pages to connect the module reading to later labs and practical deliverables:
 
 - [Deep Dive](deep-dive.md)
 - [Attack Anatomy](attack-anatomy.md)
