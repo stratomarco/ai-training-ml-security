@@ -115,16 +115,9 @@ The application must decide:
 
 ## Lab
 
-Students review and exploit a vulnerable internal operations agent that can:
+Students review the runnable BrokenPilot agent path, which searches fake documents, updates fake tickets, and stores fake memory. The broader agent design discusses incident reads, notification, and shell-like diagnostics as tabletop scenarios; those tools are not implemented in this prototype.
 
-- read fake incidents;
-- search fake internal documents;
-- update fake tickets;
-- store memory;
-- call a simulated notification tool;
-- call a simulated shell-like diagnostic tool.
-
-The goal is not to attack real systems. The lab uses local fake data and simulated tools.
+The lab uses local fake data and simulated state changes.
 
 ### Validated BrokenPilot tool exercise
 

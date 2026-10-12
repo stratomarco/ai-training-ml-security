@@ -1,23 +1,19 @@
-# 11-ai-red-team-methodology
+# Module 11 — AI Red Team Methodology
 
-<!-- module-depth-prose-pass-08-11:start -->
+## Purpose
 
-## Depth pass for advanced modules
+Turn bounded tests into findings that explain the security boundary, observed behavior, impact, fix, and validation. Agree on scope and rules of engagement before testing.
 
-This module now includes a strengthened study path:
+## Student path
 
-- `deep-dive.md` for the core engineering decision;
-- `attack-anatomy.md` for the failure path;
-- `controls-and-remediations.md` for practical controls;
-- `common-mistakes.md` for classroom correction;
-- `worked-example.md` for a strong finding or review artifact.
+1. Read the [student reading guide](student-reading-guide.md), [handout](student-handout.md), and [deep dive](deep-dive.md).
+2. Use the [attack anatomy](attack-anatomy.md), [controls](controls-and-remediations.md), and [common mistakes](common-mistakes.md) to prepare a safe test plan.
+3. Follow the [lab path](lab-path.md) and run the local BrokenPilot attack-chain exercise. Record what the prototype actually does; keep broader agent-design risks in a separate tabletop section.
+4. Complete the [red-team plan](exercise-ai-red-team-plan.md) and [finding rewrite](exercise-finding-rewrite.md).
+5. Compare with the [worked example](worked-example.md) and use the [quiz](quiz.md) for optional self-check.
 
-Use these pages with the module lab path and the 40-hour checkpoint materials.
+## Deliverable
 
-<!-- module-depth-prose-pass-08-11:end -->
+Produce a scoped test plan and one evidence-backed finding with reproduction, impact, root cause, fix, validation, and residual risk. Rubrics are optional feedback aids.
 
-<!-- cohesion-note-link -->
-
-## Course cohesion note
-
-For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
+For instructor handoff, see the [cohesion note](cohesion-note.md).

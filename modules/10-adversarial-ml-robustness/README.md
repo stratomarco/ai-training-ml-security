@@ -1,29 +1,19 @@
-# 10-adversarial-ml-robustness
+# Module 10 — Adversarial ML and Robustness
 
-<!-- module-depth-prose-pass-08-11:start -->
+## Purpose
 
-## Depth pass for advanced modules
+Test how a small classifier behaves under evasion, poisoning, extraction, and output-integrity changes. Decide whether its prediction can safely be used as a hard authorization gate.
 
-This module now includes a strengthened study path:
+## Student path
 
-- `deep-dive.md` for the core engineering decision;
-- `attack-anatomy.md` for the failure path;
-- `controls-and-remediations.md` for practical controls;
-- `common-mistakes.md` for classroom correction;
-- `worked-example.md` for a strong finding or review artifact.
+1. Read the [student reading guide](student-reading-guide.md), [handout](student-handout.md), and [deep dive](deep-dive.md).
+2. Use the [attack anatomy](attack-anatomy.md), [controls](controls-and-remediations.md), and [common mistakes](common-mistakes.md) to frame the failure modes.
+3. Follow the [lab path](lab-path.md) and run the [toy classifier](../../labs/toy-ml-attacks/toy-classifier-app/README.md). Record observed behavior separately from tabletop backdoor and deployment scenarios.
+4. Complete the [adversarial test plan](exercise-adversarial-test-plan.md) and [toy-classifier debrief](toy-classifier-debrief.md).
+5. Compare with the [worked example](worked-example.md) and use the [quiz](quiz.md) for optional self-check.
 
-Use these pages with the module lab path and the 40-hour checkpoint materials.
+## Deliverable
 
-<!-- module-depth-prose-pass-08-11:end -->
+Produce a robustness test plan and deployment decision covering attacker control, baseline and changed behavior, control validation, fallback, and residual risk. Rubrics are optional feedback aids.
 
-<!-- toy-classifier-debrief-link:start -->
-## Toy-classifier debrief
-
-Use `toy-classifier-debrief.md` to frame evasion, poisoning, extraction, and output-integrity behavior around the hard-gate deployment decision.
-<!-- toy-classifier-debrief-link:end -->
-
-<!-- cohesion-note-link -->
-
-## Course cohesion note
-
-For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
+For instructor handoff, see the [cohesion note](cohesion-note.md).

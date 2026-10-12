@@ -1,5 +1,7 @@
 # Quality Improvement Plan
 
+> Historical planning snapshot: the "Current honest state" below describes v1.0 before the runnable BrokenPilot, toy-classifier, and MLOps evidence-pack paths were added. For the current student route, use the [course start page](../index.md) and [lab index](https://github.com/stratomarco/ai-training-ml-security/blob/main/labs/RUNNABLE_AND_REASONING_LAB_INDEX.md).
+
 This document merges the post-v1.0 improvement direction into a practical development plan. The goal is not to create another release immediately. The goal is to move from a complete curriculum to a testable, instructor-friendly, hands-on learning experience.
 
 ## Current honest state

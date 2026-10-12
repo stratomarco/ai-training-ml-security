@@ -26,7 +26,7 @@ Use this path when the cohort is senior, when lab setup takes longer than expect
 
 ## Lab or exercise path
 
-Primary activity: **DVAIA or BrokenPilot RAG scenario**.
+Primary activity: **BrokenPilot retrieval authorization and indirect-injection scenarios**. DVAIA is an optional comparison lab.
 
 The lab or exercise should produce an artifact, not only a discussion. Acceptable artifacts include an evidence log entry, threat model note, permission matrix, risk memo, finding rewrite, test plan, or final report section.
 

@@ -23,7 +23,7 @@ It combines:
 - logs;
 - operational decision support.
 
-The goal is to assess the system as a whole.
+The runnable prototype implements a narrower fake-data path: keyword document retrieval, chat/output examples, ticket updates, and memory. Vector search, configuration tools, and broader incident workflows are paper-design scope. The goal is to assess the system as a whole while labeling evidence from each scope.
 
 ---
 
@@ -265,7 +265,7 @@ Authorization should be checked:
 
 ## Slide 17  -  Expected vulnerability areas
 
-BrokenPilot includes intentionally weak areas:
+The runnable prototype has intentionally weak paths for:
 
 - prompt injection;
 - indirect prompt injection;
@@ -275,10 +275,9 @@ BrokenPilot includes intentionally weak areas:
 - tool misuse;
 - excessive agency;
 - memory poisoning;
-- weak audit logging;
 - weak approval gates;
-- overreliance;
-- weak rate limiting.
+
+The paper design also raises audit logging, rate limiting, and overreliance questions. Test or inspect those controls before describing them as observed prototype weaknesses.
 
 ---
 
@@ -480,7 +479,7 @@ Use this order:
 
 ---
 
-## Slide 31  -  How to score well
+## Slide 31  -  What makes a strong report
 
 Strong teams:
 

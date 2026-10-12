@@ -4,7 +4,7 @@
 
 You are part of a security review team asked to assess BrokenPilot before wider internal deployment.
 
-BrokenPilot is an internal AI assistant used by engineering and operations teams. It can summarize incidents, search documentation, read and update tickets, retrieve service configuration, use tools, and store memory.
+BrokenPilot's paper design is an internal AI assistant for engineering and operations. It includes incident summaries, documentation search, ticket reads and updates, service configuration access, tools, and memory. The runnable local prototype has a narrower fake-data implementation: keyword document retrieval, chat/output examples, ticket updates, and memory. Identify which surface each finding concerns.
 
 Your task is to evaluate whether the system is safe enough to expand, what must change before deployment, and what residual risks remain.
 
@@ -42,6 +42,8 @@ In scope:
 - logging and monitoring;
 - role and permission model;
 - secure architecture.
+
+The vector database, service configuration tools, and broader incident workflows are paper-design scope. Do not describe them as implemented prototype features or claim a vulnerability was reproduced there. For runnable findings, cite the local lab request, response, profile, and state change.
 
 Out of scope:
 
@@ -116,7 +118,7 @@ This is weak because it does not explain impact, root cause, or control failure.
 
 ## Example strong finding
 
-> A low-privilege user can cause BrokenPilot to summarize restricted incident notes because the RAG retriever assembles context before enforcing document-level authorization. The failed control is retrieval authorization, not only prompt filtering.
+> In the vulnerable local profile, a low-privilege user can retrieve a fake restricted document. Repeating the same request with retrieval authorization enabled excludes that document. The failed boundary is document retrieval authorization.
 
 This is stronger because it identifies the asset, actor, control failure, and impact.
 

@@ -457,18 +457,14 @@ Avoid hype. Avoid minimization.
 ## Slide 29  -  BrokenPilot attack-chain example
 
 ```text
-malicious runbook inserted
-  -> RAG retrieves it
-  -> assistant follows hidden instruction
-  -> assistant calls ticket update tool
-  -> no per-action authorization
-  -> restricted incident is modified
-  -> logs show only final natural language summary
+attacker-controlled ticket text is planted in fake local data
+  -> agent reads the ticket text
+  -> text asks the agent to update another tenant's ticket
+  -> vulnerable tool path accepts the cross-tenant update
+  -> controlled path denies it at the tool boundary
 ```
 
-The finding is not “prompt injection.”
-
-The finding is an authorization and workflow-control failure triggered through prompt injection.
+Record the ticket IDs, request, tool result, and authorization decision. Whether a chosen model follows the planted instruction is an observed outcome, not a guaranteed exploit step. The finding concerns the missing per-action authorization in the vulnerable tool path.
 
 ---
 
