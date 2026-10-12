@@ -27,13 +27,13 @@ This file maps modules to frameworks, labs, deliverables, and core security prin
 | 02 | Custom | Architecture mapping |
 | 03 | Custom toy ML app | Evasion, poisoning, extraction basics |
 | 04 | Custom | Architecture risk review |
-| 05 | DVAIA | Prompt injection and insecure output handling |
-| 06 | DVAIA + custom RAG | Indirect prompt injection and retrieval auth |
-| 07 | Vulnerable agent lab + BrokenPilot design | Tool misuse and excessive agency |
-| 08 | Custom broken ML pipeline | Supply chain and MLOps review |
-| 09 | Custom HR/customer-support RAG | Privacy leakage and cross-tenant retrieval |
-| 10 | Custom classifier | Adversarial robustness |
-| 11 | DVAIA + custom | Full AI red-team workflow |
+| 05 | BrokenPilot; DVAIA optional | Direct/indirect injection and output handling |
+| 06 | BrokenPilot; DVAIA optional | Indirect injection and retrieval authorization |
+| 07 | BrokenPilot | Tool authorization, approval, and memory poisoning |
+| 08 | MLOps evidence pack | Supply-chain review and promotion decision |
+| 09 | BrokenPilot and privacy tabletop | Cross-tenant retrieval and privacy review |
+| 10 | Toy classifier | Adversarial robustness |
+| 11 | BrokenPilot | Evidence-backed AI red-team workflow |
 | 12 | BrokenPilot | Capstone |
 
 ## Module-to-deliverable map
@@ -94,4 +94,4 @@ Mitigation: Per-action authorization, scoped tool tokens, approval gates, audit 
 
 ## Current map status
 
-This course map reflects the v1.0 release candidate. Modules 01–12 are complete, labs and templates are mapped to their modules, and BrokenPilot is the final capstone exercise. Historical build notes are tracked in `CHANGELOG.md`.
+This map reflects the current local student path. Modules 01–12 are available, BrokenPilot is the main LLM/RAG/agent target, and the toy classifier and MLOps evidence pack cover their separate topics. Historical build notes are tracked in `CHANGELOG.md`.

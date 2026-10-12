@@ -42,7 +42,7 @@ explain why the model should not be used as a hard authorization gate without fa
 
 ## Reasoning lab entries
 
-Reasoning labs are graded differently. They may not have a runnable failure. They must still end with an engineering artifact.
+Reasoning labs may not have a runnable failure. They still end with an engineering artifact that can be compared with a worked example or used for optional instructor feedback.
 
 Examples:
 
