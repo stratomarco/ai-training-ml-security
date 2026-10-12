@@ -2,6 +2,8 @@
 
 This lab is a small, deterministic target for Modules 03 and 10. It intentionally stays separate from BrokenPilot because classical ML attacks target models, features, thresholds, and training data. BrokenPilot is an LLM/RAG/agent app and should not be forced to teach classifier behavior.
 
+Use Python 3.12 for the pinned dependencies. A fresh Windows install with Python 3.14 attempted to build scikit-learn 1.5.2 from source and failed; the Python 3.12 wheel installed successfully.
+
 All data is synthetic and local. There are no downloads, no external services, and no real-world bypass payloads.
 
 ## What this demonstrates
@@ -70,7 +72,7 @@ pytest
 Expected:
 
 ```text
-6 passed
+7 passed
 ```
 
 ## Teaching notes

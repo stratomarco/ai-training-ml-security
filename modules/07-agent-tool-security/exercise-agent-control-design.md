@@ -253,8 +253,8 @@ After completing the design exercise, run the BrokenPilot prototype tool-calling
 
 Use:
 
-- `brokenpilot-tool-validation.md` for the validated Module 07 scenario;
-- `../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md` for hands-on steps.
+- `../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md` for current hands-on steps;
+- `brokenpilot-tool-validation.md` for a dated validation record.
 
 The required validation question is:
 

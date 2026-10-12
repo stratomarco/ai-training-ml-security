@@ -1,5 +1,7 @@
 # DVAIA Local Validation
 
+This is a historical validation record from 29 June 2026, not the current required lab path. BrokenPilot is the primary course-owned target; DVAIA is an optional external comparison. See the [current standalone path](brokenpilot-standalone-path.md) for student steps.
+
 This page records the local validation status for DVAIA as an external lab dependency for this course.
 
 DVAIA is not vendored into this repository. It is used as an external vulnerable AI application for selected labs, especially in Modules 05, 06, 07, and 11.
@@ -46,9 +48,9 @@ Default URL: `http://127.0.0.1:5000`
 
 ## Course usage
 
-DVAIA is now a **validated external lab dependency** for this course.
+DVAIA was a **validated external lab dependency** at the recorded commit. It is optional in the current course path.
 
-Students should install and run DVAIA locally before attempting DVAIA-backed labs in this course.
+Students who choose the optional DVAIA exercises should install and run that pinned version locally before attempting them.
 
 This course provides:
 
@@ -90,15 +92,15 @@ Do not use real customer data, production credentials, production tickets, or pr
 Do not reuse DVAIA configuration as a production pattern.
 
 
-## Fallback if DVAIA is unavailable
+## Current course path
 
-DVAIA is a validated external dependency, but it is not controlled by this course. If DVAIA is unavailable during delivery, instructors should use the BrokenPilot runnable prototype for the core hands-on path:
+DVAIA was validated at the pinned historical commit but is not controlled by this course. Use BrokenPilot for the core hands-on path:
 
-| Module | Preferred hands-on path | Fallback path |
+| Module | Core hands-on path | Optional comparison |
 |---|---|---|
-| Module 05 | DVAIA direct prompt injection | BrokenPilot indirect-instruction and mock LLM behavior |
-| Module 06 | DVAIA RAG / indirect prompt injection where available | BrokenPilot retrieval authorization and poisoned document flow |
-| Module 07 | DVAIA agent/tool behavior where available | BrokenPilot tool confused-deputy and memory poisoning flows |
-| Module 11 | DVAIA mini red-team assessment | BrokenPilot attack chain assessment |
+| Module 05 | BrokenPilot direct injection and output handling | DVAIA direct prompt injection |
+| Module 06 | BrokenPilot retrieval authorization and poisoned document flow | DVAIA RAG exercise where supported |
+| Module 07 | BrokenPilot tool authorization and memory poisoning | DVAIA agent/tool behavior where supported |
+| Module 11 | BrokenPilot attack chain assessment | DVAIA mini red-team assessment |
 
 The course should not depend on a live third-party lab being available for every critical learning objective. DVAIA enriches the course, while BrokenPilot provides the controlled baseline path.

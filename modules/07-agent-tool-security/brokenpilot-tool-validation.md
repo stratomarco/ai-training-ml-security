@@ -1,5 +1,7 @@
 # BrokenPilot Tool Authorization Validation
 
+This is a dated validation record. For current launch commands and student steps, use [the tool-calling lab](../../labs/brokenpilot/prototype-app/TOOL_CALLING_LAB.md).
+
 ## Purpose
 
 This validation record belongs in Module 07 because the exercise is about agent and tool security: a model-mediated workflow attempts to update a ticket, but the tool must enforce authorization outside the model.

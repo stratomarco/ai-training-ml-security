@@ -150,33 +150,9 @@ Useful controls include:
 
 ## Current self-study mode
 
-Until the dedicated toy classifier app is added, this lab is a tabletop exercise.
+The shipped [toy classifier](toy-classifier-app/README.md) provides synthetic data and four runnable attacks for Modules 03 and 10. Use it for observable before/after results. The scenarios above remain useful as tabletop exercises when students are designing controls or do not have a supported Python environment.
 
-Do not tell students that a dataset or classifier is already provided. Students may either stay in tabletop mode or create a small synthetic dataset with this schema:
-
-```json
-{
-  "id": "msg-001",
-  "text": "fake training message using synthetic words only",
-  "label": "spam"
-}
-```
-
-Allowed labels for self-created data:
-
-- `spam`
-- `not_spam`
-
-Safe exercises:
-
-- train a local classifier on synthetic messages;
-- change a few synthetic words and observe prediction changes;
-- flip a small number of labels and observe behavior changes;
-- compare predictions before and after poisoning.
-
-The planned `labs/toy-ml-attacks/toy-classifier-app/` will replace this section with concrete scripts and a shipped dataset.
-
-Keep this local and synthetic. The goal is conceptual understanding, not weaponization.
+Keep the work local and synthetic. The goal is conceptual understanding, not weaponization.
 
 ## Deliverable
 

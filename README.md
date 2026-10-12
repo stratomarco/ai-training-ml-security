@@ -166,7 +166,7 @@ Current release: v1.1.0.
 | 02  -  ML System Architecture | Complete | Lifecycle architecture, DFD exercise, architecture review template. |
 | 03  -  OWASP ML Security Top 10 | Complete | Classical ML attack categories and toy ML lab. |
 | 04  -  BIML Architectural Risk Analysis | Complete | Design review, abuse cases, architectural risk review lab. |
-| 05  -  LLM Application Security | Complete | OWASP LLM/GenAI framing and DVAIA-style LLM lab. |
+| 05  -  LLM Application Security | Complete | OWASP LLM/GenAI framing and BrokenPilot direct injection and output-handling labs; DVAIA is optional. |
 | 06  -  RAG Security and Indirect Prompt Injection | Complete | RAG architecture, retrieval authorization, indirect prompt injection, RAG lab, and templates. |
 | 07  -  Agent and Tool Security | Complete | Tool calling, excessive agency, memory poisoning, approval gates, sandboxing, auditability, and agent control design. |
 | 08  -  Secure MLOps and Supply Chain | Complete | Datasets, notebooks, dependencies, training jobs, model artifacts, registries, provenance, promotion gates, feedback loops, and ML-BOM templates. |

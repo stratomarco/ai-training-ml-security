@@ -14,7 +14,7 @@ Module 08 is intentionally a reasoning and evidence-review module. It should not
 - Broken ML pipeline tabletop
 - Model artifact provenance and promotion-gate review
 
-## Graded deliverable
+## Practice deliverable
 
 An MLOps supply-chain review memo with evidence, risk rating, required controls, validation checks, and a launch/pilot/delay recommendation.
 
@@ -32,4 +32,4 @@ An MLOps supply-chain review memo with evidence, risk rating, required controls,
 
 ## Instructor note
 
-Use this file as the first stop when deciding what to run live, what to assign as self-study, and what to grade. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning lab and grade the artifact instead of pretending it is runnable.
+Use this file as the first stop when deciding what to run live and what to assign as self-study. If a lab cannot produce observable vulnerable and controlled behavior, treat it as a reasoning lab with a written artifact. Rubrics are optional feedback guidance.

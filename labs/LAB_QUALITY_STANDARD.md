@@ -4,16 +4,16 @@ This course uses two different lab classes. They should not be judged by the sam
 
 Attack labs are runnable or observable labs. Students should see a broken behavior, enable or design a control, and then observe the security property change.
 
-Reasoning labs are design, review, scoping, or tabletop labs. They may not have a process to run. They are judged by the quality of the engineering decision, the evidence used, and the control validation plan.
+Reasoning labs are design, review, scoping, or tabletop labs. They may not have a process to run. Evaluate them by the quality of the engineering decision, the evidence used, and the control validation plan. Rubrics are optional feedback aids.
 
 ## Six bars for a good lab
 
 1. Observable failure and observable fix when the lab is an attack lab.
-2. The fix is the graded artifact, not the exploit.
+2. The practice artifact explains the fix, not only the exploit.
 3. The naive fix is discussed and rejected when it would not work.
 4. At least one defense-in-depth moment is identified.
 5. The lab maps to a real engineering decision.
-6. The lab is deterministic, resettable, or graded with anchors.
+6. The lab is deterministic, resettable, or has worked examples for comparison.
 
 ## Required student deliverable
 

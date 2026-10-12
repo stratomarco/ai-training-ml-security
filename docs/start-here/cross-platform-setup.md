@@ -2,6 +2,8 @@
 
 The course should be usable on Windows, macOS, and Linux. Use the command set that matches your environment.
 
+For the full course, use Python 3.12. The toy classifier pins scikit-learn 1.5.2; a fresh Windows install with Python 3.14 attempted a source build and failed. Check `python --version` or `python3 --version` before creating a virtual environment.
+
 ## MkDocs local website preview
 
 Windows PowerShell:
@@ -41,7 +43,7 @@ python -m venv .venv
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 pytest
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 macOS or Linux:
@@ -53,7 +55,7 @@ source .venv/bin/activate
 python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 pytest
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 Open:
@@ -62,13 +64,16 @@ Open:
 http://127.0.0.1:8010
 ```
 
+The launcher binds to `127.0.0.1` and sets an explicit teaching profile. If another local service already uses port 8010, start with `python run_lab.py --profile vulnerable --port 8011` and open `http://127.0.0.1:8011`. Use the same port when following API examples. Stop the process before starting a different profile.
+
 ## DVAIA external lab dependency
 
 Windows PowerShell:
 
 ```powershell
-mkdir F:\ai-labs -ErrorAction SilentlyContinue
-cd F:\ai-labs
+$labRoot = Join-Path $env:USERPROFILE 'ai-labs'
+New-Item -ItemType Directory -Force $labRoot | Out-Null
+Set-Location $labRoot
 git clone https://github.com/airtasystems/DVAIA-Damn-Vulnerable-AI-Application.git
 cd .\DVAIA-Damn-Vulnerable-AI-Application
 git checkout 23c115252554caa445c0e6ba28641c1110c118e1

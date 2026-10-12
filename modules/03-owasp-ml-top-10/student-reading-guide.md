@@ -17,7 +17,7 @@ Which failure mode is present, and what evidence would prove that the proposed c
 
 ## Lab or exercise connection
 
-Use the toy-classifier app for observable classical ML attacks. BrokenPilot is not the right target for these attacks. The graded artifact is a short attack-to-control mapping with test evidence and residual risk.
+Use the toy-classifier app for observable classical ML attacks. BrokenPilot is not the right target for these attacks. The practice artifact is a short attack-to-control mapping with test evidence and residual risk.
 
 ## What a strong submission looks like
 

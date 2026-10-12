@@ -19,7 +19,7 @@ Some labs are tabletop exercises and require only the course material. Other lab
 Recommended local tools:
 
 - Git
-- Python 3.10+
+- Python 3.12 is recommended for the full course. BrokenPilot runs on Python 3.10+, but the toy classifier's pinned scikit-learn 1.5.2 did not install on Windows with Python 3.14 in the fresh-install check.
 - Docker Desktop, if running vulnerable lab environments
 - A code editor such as VS Code
 - A browser

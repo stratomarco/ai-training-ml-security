@@ -15,7 +15,7 @@ Module 03 uses the toy-classifier app to turn OWASP ML categories into concrete 
 
 Do not ask only, "Which OWASP category is this?" Ask, "What evidence would make this a finding, and what control would change the security property?"
 
-## Graded artifact
+## Practice artifact
 
 Students submit a short finding that includes:
 

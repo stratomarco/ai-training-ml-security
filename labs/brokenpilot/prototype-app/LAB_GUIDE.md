@@ -6,7 +6,7 @@ Use the minimal BrokenPilot prototype to demonstrate how AI application risk eme
 
 ## Prerequisites
 
-- Python 3.11+ or Docker Desktop
+- Python 3.10+ or Docker Desktop
 - Local checkout of this repository
 - No cloud API keys required
 
@@ -159,11 +159,7 @@ Stop the app and restart with controls enabled.
 PowerShell local run:
 
 ```powershell
-$env:ENABLE_RETRIEVAL_AUTHZ="true"
-$env:ENABLE_PROMPT_INJECTION_FILTER="true"
-$env:ENABLE_TOOL_AUTHZ="true"
-$env:ENABLE_TOOL_APPROVAL="true"
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile all-controls
 ```
 
 Docker Compose run:
@@ -175,6 +171,8 @@ docker compose up --build
 ```
 
 Repeat Exercises 3, 4, 5, and 6.
+
+Confirm the active toggles at `GET /controls`. This profile also enables memory review, memory isolation, and output encoding.
 
 Expected improved behavior:
 

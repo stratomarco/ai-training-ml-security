@@ -37,9 +37,9 @@ This demonstrates a persistent agent-memory attack path.
 BrokenPilot must be running locally:
 
 ```powershell
-cd F:\ai-training-ml-security\labs\brokenpilot\prototype-app
+cd labs\brokenpilot\prototype-app
 .\.venv\Scripts\Activate.ps1
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile vulnerable
 ```
 
 The app should be reachable at:
@@ -114,8 +114,7 @@ Alice did not provide a ticket id in the user goal. The agent took the ticket id
 Stop the app with `Ctrl+C`, then restart it with memory review enabled:
 
 ```powershell
-$env:ENABLE_MEMORY_REVIEW="true"
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile memory-review
 ```
 
 Reset the lab state:
@@ -165,8 +164,7 @@ The unapproved memory exists, but the agent does not use it as active decision c
 Restart the app with memory isolation enabled:
 
 ```powershell
-$env:ENABLE_MEMORY_ISOLATION="true"
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
+python run_lab.py --profile memory-isolation
 ```
 
 With memory isolation enabled, cross-tenant global memory is not treated as trusted active instruction context for Alice.

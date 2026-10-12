@@ -1,5 +1,7 @@
 # BrokenPilot Memory Poisoning Validation
 
+This is a dated validation record. For current launch commands and student steps, use [the memory-poisoning lab](../../labs/brokenpilot/prototype-app/MEMORY_POISONING_LAB.md).
+
 This page records the Module 07 memory poisoning validation flow for the runnable BrokenPilot prototype.
 
 The validation belongs in Module 07 because the teaching point is agent/tool security: persistent memory can become an authority source that influences future agent actions.

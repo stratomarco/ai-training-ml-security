@@ -26,7 +26,7 @@ Use this path when the cohort is senior, when lab setup takes longer than expect
 
 ## Lab or exercise path
 
-Primary activity: **DVAIA direct prompt injection or BrokenPilot fallback**.
+Primary activity: **BrokenPilot direct injection and output handling**. Use DVAIA as optional comparison when it is available.
 
 The lab or exercise should produce an artifact, not only a discussion. Acceptable artifacts include an evidence log entry, threat model note, permission matrix, risk memo, finding rewrite, test plan, or final report section.
 

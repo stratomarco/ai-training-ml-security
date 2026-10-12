@@ -18,7 +18,7 @@ Attack labs need observable failure and observable fix. Students should show vul
 
 ## For reasoning labs
 
-Reasoning labs need a graded artifact. Students should produce a review, memo, scope, rubric, or remediation plan that can be assessed against anchors.
+Reasoning labs need a concrete practice artifact. Students should produce a review, memo, scope, or remediation plan that can be compared with worked examples. Rubrics may support optional feedback.
 
 ## Common debrief correction
 
