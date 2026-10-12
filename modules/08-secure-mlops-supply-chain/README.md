@@ -1,23 +1,19 @@
-# 08-secure-mlops-supply-chain
+# Module 08 — Secure MLOps and AI Supply Chain
 
-<!-- module-depth-prose-pass-08-11:start -->
+## Purpose
 
-## Depth pass for advanced modules
+Decide whether a model artifact has enough provenance, integrity, evaluation, approval, and rollback evidence to be promoted. Accuracy alone cannot answer that question.
 
-This module now includes a strengthened study path:
+## Student path
 
-- `deep-dive.md` for the core engineering decision;
-- `attack-anatomy.md` for the failure path;
-- `controls-and-remediations.md` for practical controls;
-- `common-mistakes.md` for classroom correction;
-- `worked-example.md` for a strong finding or review artifact.
+1. Read the [student reading guide](student-reading-guide.md), [handout](student-handout.md), and [deep dive](deep-dive.md).
+2. Use the [attack anatomy](attack-anatomy.md), [controls](controls-and-remediations.md), and [common mistakes](common-mistakes.md) to prepare for the review.
+3. Follow the [lab path](lab-path.md) and inspect the [static evidence pack](../../labs/mlops-supply-chain-labs/evidence-pack-review/README.md). Do not execute its notebook or load its absent model artifact.
+4. Complete the [TriageRanker design review](exercise-secure-mlops-review.md) and [executive risk memo](exercise-executive-risk-memo.md). The design scenario and evidence pack are distinct inputs; label which evidence supports each claim.
+5. Compare your reasoning with the [worked example](worked-example.md), then use the [quiz](quiz.md) for optional self-check.
 
-Use these pages with the module lab path and the 40-hour checkpoint materials.
+## Deliverable
 
-<!-- module-depth-prose-pass-08-11:end -->
+Produce a supply-chain review with an artifact and risk inventory, a promotion decision, required gates, validation steps, rollback plan, and residual risk. Write a one-page leadership memo that states what can launch and what must wait. Rubrics are optional feedback aids.
 
-<!-- cohesion-note-link -->
-
-## Course cohesion note
-
-For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
+For instructor handoff, see the [cohesion note](cohesion-note.md).

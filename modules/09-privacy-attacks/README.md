@@ -1,23 +1,19 @@
-# 09-privacy-attacks
+# Module 09 — Privacy Attacks and Data Protection
 
-<!-- module-depth-prose-pass-08-11:start -->
+## Purpose
 
-## Depth pass for advanced modules
+Trace sensitive information through retrieval, model context, output, logs, memory, and feedback. A fixed retrieval path does not by itself prove that every copy or inference path is safe.
 
-This module now includes a strengthened study path:
+## Student path
 
-- `deep-dive.md` for the core engineering decision;
-- `attack-anatomy.md` for the failure path;
-- `controls-and-remediations.md` for practical controls;
-- `common-mistakes.md` for classroom correction;
-- `worked-example.md` for a strong finding or review artifact.
+1. Read the [student reading guide](student-reading-guide.md), [handout](student-handout.md), and [deep dive](deep-dive.md).
+2. Use the [attack anatomy](attack-anatomy.md), [controls](controls-and-remediations.md), and [common mistakes](common-mistakes.md) to identify data paths and control locations.
+3. Follow the [lab path](lab-path.md): run the [BrokenPilot cross-tenant retrieval lab](../../labs/privacy-labs/brokenpilot-cross-tenant-leakage-lab.md) with fake data, then analyze membership inference and model inversion as tabletop risks.
+4. Complete the [PeopleAssist privacy assessment](exercise-privacy-risk-assessment.md). This fictional HR design is separate from the BrokenPilot prototype; do not report its weaknesses as reproduced BrokenPilot findings.
+5. Compare with the [worked example](worked-example.md) and use the [quiz](quiz.md) for optional self-check.
 
-Use these pages with the module lab path and the 40-hour checkpoint materials.
+## Deliverable
 
-<!-- module-depth-prose-pass-08-11:end -->
+Produce a privacy review with data inventory, flow map, vulnerable and controlled retrieval evidence, log/retention questions, implementable controls, validation, and residual risk. Rubrics are optional feedback aids.
 
-<!-- cohesion-note-link -->
-
-## Course cohesion note
-
-For instructor handoff language and the module's place in the full course story, see [cohesion-note.md](cohesion-note.md).
+For instructor handoff, see the [cohesion note](cohesion-note.md).

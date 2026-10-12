@@ -184,6 +184,6 @@ For self-study, use this order before starting the lab:
 4. `controls-and-remediations.md` to understand what strong controls look like.
 5. `common-mistakes.md` to avoid common shallow fixes.
 6. `worked-example.md` to see how to write an engineering-grade finding.
-7. DVAIA lab guide for hands-on reinforcement.
+7. BrokenPilot direct-injection and output-handling labs for hands-on reinforcement; DVAIA is an optional comparison lab.
 
 The key question throughout the module is: **where does the security decision live?** If the answer is only “inside the prompt,” the design is weak.

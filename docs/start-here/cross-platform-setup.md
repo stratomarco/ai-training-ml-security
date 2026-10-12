@@ -66,7 +66,9 @@ http://127.0.0.1:8010
 
 The launcher binds to `127.0.0.1` and sets an explicit teaching profile. If another local service already uses port 8010, start with `python run_lab.py --profile vulnerable --port 8011` and open `http://127.0.0.1:8011`. Use the same port when following API examples. Stop the process before starting a different profile.
 
-## DVAIA external lab dependency
+## Optional DVAIA comparison lab
+
+BrokenPilot is the core runnable course lab. Use these commands only if you choose the external DVAIA comparison exercise.
 
 Windows PowerShell:
 

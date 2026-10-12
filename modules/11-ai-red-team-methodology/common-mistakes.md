@@ -22,7 +22,7 @@ A model saying something unsafe is not the same as a tool executing an unsafe ac
 
 ## Mistake 6: Ending at exploit success
 
-The course grades the fix and the validation, not only the exploit. If the report does not tell engineering what to change, it is incomplete.
+A useful report explains the fix and its validation, as well as the observed exploit path. If it does not tell engineering what to change, it is incomplete. The rubric is optional feedback guidance.
 
 ## How to correct these mistakes in class
 

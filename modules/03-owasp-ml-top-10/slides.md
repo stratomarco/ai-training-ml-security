@@ -373,12 +373,14 @@ Controls should exist around the model:
 
 ## Slide 22  -  Lab setup
 
-Scenario options:
+Tabletop scenario options:
 
 - Spam classifier
 - Fraud scoring model
 - Image classifier
 - Support-ticket classifier
+
+The runnable classical-ML exercise later in the course is the [toy text classifier](../../labs/toy-ml-attacks/toy-classifier-app/README.md); an image classifier is not supplied.
 
 Student tasks:
 

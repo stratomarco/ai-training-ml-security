@@ -306,13 +306,9 @@ RAG security tests should include:
 
 ## Lab
 
-Recommended lab files:
+Start with the [module lab path](lab-path.md) and the [BrokenPilot retrieval labs](../../labs/brokenpilot/README.md). The runnable prototype uses keyword retrieval over bundled fake documents. Vector search, chunk-level authorization, and a vector database are paper-design extensions; use the [RAG threat-model template](../../course-templates/rag-threat-model-template.md) and [vector-database authorization checklist](../../course-templates/vector-database-authorization-checklist.md) for those design questions. The [indirect-injection lab guide](../../labs/rag-labs/rag-indirect-prompt-injection-lab.md) provides additional reasoning practice.
 
-- `labs/rag-labs/rag-indirect-prompt-injection-lab.md`
-- `course-templates/rag-threat-model-template.md`
-- `course-templates/vector-database-authorization-checklist.md`
-
-The lab uses a local, intentionally vulnerable RAG scenario. Students should not run these exercises against production AI systems or systems they do not own.
+Run local lab exercises only against the supplied fake data.
 
 ## Deliverables
 

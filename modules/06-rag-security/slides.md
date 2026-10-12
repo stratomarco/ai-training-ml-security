@@ -363,16 +363,14 @@ Watch for:
 
 ## Slide 21  -  Lab scenario
 
-Students review a vulnerable internal RAG assistant.
+Students review the runnable BrokenPilot retrieval path:
 
-The assistant:
+- keyword search over bundled fake documents;
+- a switchable document-authorization control;
+- retrieved content that can carry attacker instructions;
+- vulnerable and controlled responses to compare.
 
-- indexes internal documents
-- uses vector search
-- does not enforce chunk-level authorization
-- retrieves poisoned content
-- over-trusts retrieved documents
-- may reveal sensitive context
+Vector search and chunk-level authorization are separate paper-design questions in this module.
 
 Student goal:
 
