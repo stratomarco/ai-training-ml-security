@@ -1,0 +1,11 @@
+*
+!Dockerfile
+!requirements.txt
+!app/
+!app/*.py
+!data/
+!data/*.json
+!static/
+!static/*.html
+!static/*.css
+!static/*.js

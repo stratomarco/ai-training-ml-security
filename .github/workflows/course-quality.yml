@@ -70,3 +70,26 @@ jobs:
           python-version: "3.11"
       - name: Verify offline artifact fixtures on Windows
         run: python -m unittest discover -s labs/mlops-supply-chain-labs/artifact-promotion -p 'test_*.py'
+
+  brokenpilot-docker:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: labs/brokenpilot/prototype-app
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Build and start local lab
+        run: docker compose up --build -d --wait
+      - name: Exercise Mock Hub through published loopback port
+        run: python tests/docker_smoke.py
+      - name: Check container restrictions
+        run: |
+          test "$(docker inspect brokenpilot-prototype --format '{{.Config.User}}')" = 10001:10001
+          test "$(docker inspect brokenpilot-prototype --format '{{.HostConfig.ReadonlyRootfs}}')" = true
+          test "$(docker inspect brokenpilot-prototype --format '{{join .HostConfig.CapDrop ","}}')" = ALL
+          test "$(docker inspect brokenpilot-prototype --format '{{join .HostConfig.SecurityOpt ","}}')" = no-new-privileges:true
+          test "$(docker inspect brokenpilot-prototype --format '{{.State.Health.Status}}')" = healthy
+          test "$(docker port brokenpilot-prototype 8010/tcp)" = 127.0.0.1:8010
+      - name: Stop local lab
+        if: always()
+        run: docker compose down

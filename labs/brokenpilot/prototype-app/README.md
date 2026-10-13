@@ -96,12 +96,15 @@ Do not connect this prototype to real systems or real data.
 
 ## Run with Docker Compose
 
+From the repository root:
+
 ```powershell
 cd labs\brokenpilot\prototype-app
-docker compose up --build
+docker compose up --build -d --wait
+docker compose ps
 ```
 
-Open:
+When `docker compose ps` reports `healthy`, open:
 
 ```text
 http://127.0.0.1:8010
@@ -112,6 +115,18 @@ Stop:
 ```powershell
 docker compose down
 ```
+
+The container publishes only to `127.0.0.1`, runs as a non-root user with a read-only application filesystem, drops Linux capabilities, and uses a small temporary directory. The Docker build includes only the application, fake data, static UI, and dependency list. Keep Docker Desktop and the lab on your own machine; the vulnerable profile has no user authentication.
+
+To compare the Mock Hub least-privilege control in Docker, set the toggle before recreating the container:
+
+```powershell
+$env:ENABLE_HUB_LEAST_PRIVILEGE = "true"
+docker compose up -d --wait --force-recreate
+Remove-Item Env:ENABLE_HUB_LEAST_PRIVILEGE
+```
+
+The running container keeps the selected setting until it is recreated or stopped. Use `docker compose down` when finished.
 
 ## Control toggles
 
