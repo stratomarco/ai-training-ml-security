@@ -10,6 +10,7 @@ The labs are designed as local or tabletop exercises using fake systems and fake
 |---|---|
 | [`broken-ml-pipeline-lab.md`](broken-ml-pipeline-lab.md) | Review an intentionally weak ML pipeline and design secure MLOps controls. |
 | [`model-artifact-provenance-lab.md`](model-artifact-provenance-lab.md) | Review model artifact trust, provenance, safe loading, registry controls, and promotion gates. |
+| [`artifact-promotion/artifact-promotion-lab.md`](artifact-promotion/artifact-promotion-lab.md) | Optional offline gate that hashes fake artifact bytes and compares them with a trusted approval policy. |
 
 ## Teaching focus
 
@@ -31,3 +32,5 @@ The goal is engineering judgment, not tool trivia.
 ## MLOps Evidence Pack Review Lab
 
 Use `mlops-evidence-pack-review-lab.md` for the concrete Module 08 supply-chain review exercise. The evidence pack is intentionally static: students review notebook, dependency, artifact, registry, storage, and promotion evidence instead of running a fake pipeline.
+
+The optional artifact-promotion gate adds one bounded decision without replacing the evidence review or creating a fake training pipeline.

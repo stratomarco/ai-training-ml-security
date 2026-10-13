@@ -1,0 +1,6 @@
+{
+  "model_id": "incident-triage-ranker",
+  "format": "json-weights-v1",
+  "weights": {"urgent": 1.25, "vendor": 0.75},
+  "bias": -0.2
+}

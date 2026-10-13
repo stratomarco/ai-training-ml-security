@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - dev
       - v1.1-dev-testable-labs
   pull_request:
   workflow_dispatch:
@@ -42,6 +43,9 @@ jobs:
 
       - name: MkDocs strict build
         run: python -m mkdocs build --strict
+
+      - name: Offline artifact-promotion gate tests
+        run: python -m unittest discover -s labs/mlops-supply-chain-labs/artifact-promotion -p 'test_*.py'
 
       - name: BrokenPilot tests
         working-directory: labs/brokenpilot/prototype-app

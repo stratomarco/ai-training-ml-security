@@ -411,6 +411,7 @@ nav:
           - "Direct Prompt Injection Lab": labs/brokenpilot/prototype-app/DIRECT_PROMPT_INJECTION_LAB.md
           - "Lab Guide": labs/brokenpilot/prototype-app/LAB_GUIDE.md
           - "Memory Poisoning Lab": labs/brokenpilot/prototype-app/MEMORY_POISONING_LAB.md
+          - "Mock Hub Lab": labs/brokenpilot/prototype-app/MOCK_HUB_LAB.md
           - "Output Handling Lab": labs/brokenpilot/prototype-app/OUTPUT_HANDLING_LAB.md
           - "Qwen Extended Lab": labs/brokenpilot/prototype-app/QWEN_EXTENDED_LAB.md
           - "Overview": labs/brokenpilot/prototype-app/README.md
@@ -458,6 +459,7 @@ nav:
           - "Validated Lab Results": labs/dvaia-guides/validated-lab-results.md
       - "MLOps Supply Chain Labs":
           - "Overview": labs/mlops-supply-chain-labs/README.md
+          - "Artifact Promotion Lab": labs/mlops-supply-chain-labs/artifact-promotion/artifact-promotion-lab.md
           - "Broken ML Pipeline Lab": labs/mlops-supply-chain-labs/broken-ml-pipeline-lab.md
           - "Model.pkl.overview": labs/mlops-supply-chain-labs/evidence-pack-review/artifacts/model.pkl.README.md
           - "Overview": labs/mlops-supply-chain-labs/evidence-pack-review/README.md

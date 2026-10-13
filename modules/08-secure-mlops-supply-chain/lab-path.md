@@ -6,7 +6,8 @@ Module 08 is intentionally a reasoning and evidence-review module. It should not
 
 ## Runnable path
 
-- Not applicable for this module.
+- Optional [offline artifact-promotion gate](../../labs/mlops-supply-chain-labs/artifact-promotion/artifact-promotion-lab.md): compare approved, tampered, and unapproved fake artifacts without deserializing them.
+- Optional [BrokenPilot Mock Hub](../../labs/brokenpilot/prototype-app/MOCK_HUB_LAB.md): compare a leaked write-scoped worker token with redaction and least privilege. This is a separate extension, not the primary Module 08 path.
 
 ## Reasoning path
 
@@ -29,6 +30,7 @@ An MLOps supply-chain review memo with evidence, risk rating, required controls,
 
 - Do not build a fake pipeline just to make the module runnable
 - Do not reduce supply-chain review to package scanning only
+- Do not load suspicious checkpoints or use real model-registry credentials in a student lab
 
 ## Instructor note
 

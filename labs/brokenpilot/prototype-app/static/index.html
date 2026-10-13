@@ -88,9 +88,17 @@
       <p class="muted">Qwen responses vary. A model proposal is evidence of behavior, not authorization. BrokenPilot accepts only a bounded ticket proposal; its own code decides whether the tool runs. Use fake data only.</p>
       <p class="qwen-alert" role="note"><strong>Local risk alert:</strong> This lab has no real user authentication. Any local API caller can reach the direct fake-ticket tool, and the vulnerable profile can change fake tickets. Keep BrokenPilot and Ollama on your own computer and never submit real documents, credentials, or system actions.</p>
     </section>
+    <section class="panel" aria-labelledby="hub-title">
+      <div class="panel-heading"><span class="step">06</span><div><p class="eyebrow">OPTIONAL SUPPLY CHAIN LAYER</p><h2 id="hub-title">Mock model Hub</h2></div></div>
+      <p class="muted">This is an in-memory registry with fake credentials and fake revisions. Inspect the worker diagnostics, copy the lab token if exposed, and try to promote an unreviewed revision. Restart with <code>hub-least-privilege</code> and <code>hub-redaction</code> to compare controls.</p>
+      <p id="hub-state" class="result-state" role="status" aria-live="polite">Loading mock Hub state…</p>
+      <div class="field-row"><div><label for="hub-token">Fake registry token</label><input id="hub-token" autocomplete="off" spellcheck="false" placeholder="Paste the LAB-only token from diagnostics"></div></div>
+      <div class="form-actions"><button id="hub-diagnostics" class="quiet" type="button">Inspect diagnostics</button><button id="hub-promote" type="button">Promote unreviewed revision</button></div>
+      <p class="qwen-alert" role="note"><strong>Local risk alert:</strong> Use only the generated LAB token. This exercise never contacts Hugging Face, downloads a model, or loads an artifact.</p>
+    </section>
     <section class="panel notebook" aria-labelledby="notebook-title">
-      <div class="panel-heading"><span class="step">06</span><div><p class="eyebrow">COMPARE YOUR RUNS</p><h2 id="notebook-title">Evidence notebook</h2></div></div>
-      <p class="muted">Each request records the active controls and ticket state before and after. Entries stay in this browser across lab restarts and are never sent to a course service. Approval tokens are omitted.</p>
+      <div class="panel-heading"><span class="step">07</span><div><p class="eyebrow">COMPARE YOUR RUNS</p><h2 id="notebook-title">Evidence notebook</h2></div></div>
+      <p class="muted">Each request records the active controls and fake ticket or Hub state before and after. Entries stay in this browser across lab restarts and are never sent to a course service. Approval tokens and fake registry tokens are omitted from saved and exported evidence. A diagnostic token appears only in the live response, so copy it before switching runs.</p>
       <div id="notebook-list" class="notebook-list" aria-live="polite">No runs recorded yet.</div>
       <p id="notebook-status" class="muted" role="status"></p>
       <div class="form-actions"><button id="download-notebook" class="quiet" type="button" disabled>Download notebook JSON</button><button id="clear-notebook" class="danger" type="button" disabled>Clear local notebook</button></div>

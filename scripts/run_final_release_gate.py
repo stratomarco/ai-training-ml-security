@@ -42,6 +42,7 @@ def main() -> None:
 
     run([py, "-m", "pytest"], cwd=ROOT / "labs" / "brokenpilot" / "prototype-app")
     run([py, "-m", "pytest"], cwd=ROOT / "labs" / "toy-ml-attacks" / "toy-classifier-app")
+    run([py, "-m", "unittest", "discover", "-s", "labs/mlops-supply-chain-labs/artifact-promotion", "-p", "test_*.py"])
 
     print("\nFinal release gate passed.")
 

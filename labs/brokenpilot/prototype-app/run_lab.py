@@ -16,6 +16,8 @@ CONTROL_NAMES = {
     "memory_review": "ENABLE_MEMORY_REVIEW",
     "memory_isolation": "ENABLE_MEMORY_ISOLATION",
     "output_encoding": "ENABLE_OUTPUT_ENCODING",
+    "hub_least_privilege": "ENABLE_HUB_LEAST_PRIVILEGE",
+    "hub_diagnostic_redaction": "ENABLE_HUB_DIAGNOSTIC_REDACTION",
 }
 
 PROFILES = {
@@ -27,6 +29,8 @@ PROFILES = {
     "memory-review": {"memory_review"},
     "memory-isolation": {"memory_isolation"},
     "output-encoding": {"output_encoding"},
+    "hub-least-privilege": {"hub_least_privilege"},
+    "hub-redaction": {"hub_diagnostic_redaction"},
     "all-controls": set(CONTROL_NAMES),
 }
 

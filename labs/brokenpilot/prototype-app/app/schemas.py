@@ -69,3 +69,7 @@ class MemoryAddRequest(BaseModel):
 
 class MemoryListRequest(BaseModel):
     user_id: str | None = Field(None, examples=["alice"])
+
+
+class MockHubPromoteRequest(BaseModel):
+    revision: Literal["unreviewed-v2"]

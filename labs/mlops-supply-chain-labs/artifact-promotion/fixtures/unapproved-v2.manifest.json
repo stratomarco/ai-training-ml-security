@@ -1,0 +1,8 @@
+{
+  "model_id": "incident-triage-ranker",
+  "revision": "unapproved-v2",
+  "artifact_format": "json-weights-v1",
+  "artifact_sha256": "a810171cbd68c2b775d3583aa91d21b00402999ce808031a3df5f356797472d2",
+  "source_commit": "synthetic-source-002",
+  "dataset_id": "synthetic-tickets-v2"
+}

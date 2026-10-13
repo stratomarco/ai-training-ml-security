@@ -19,6 +19,8 @@ class Controls:
     memory_isolation: bool
     audit_log: bool
     output_encoding: bool
+    hub_least_privilege: bool
+    hub_diagnostic_redaction: bool
 
     @classmethod
     def from_env(cls) -> "Controls":
@@ -31,6 +33,8 @@ class Controls:
             memory_isolation=_env_bool("ENABLE_MEMORY_ISOLATION", False),
             audit_log=_env_bool("ENABLE_AUDIT_LOG", True),
             output_encoding=_env_bool("ENABLE_OUTPUT_ENCODING", False),
+            hub_least_privilege=_env_bool("ENABLE_HUB_LEAST_PRIVILEGE", False),
+            hub_diagnostic_redaction=_env_bool("ENABLE_HUB_DIAGNOSTIC_REDACTION", False),
         )
 
     def as_dict(self) -> dict:
@@ -43,4 +47,6 @@ class Controls:
             "ENABLE_MEMORY_ISOLATION": self.memory_isolation,
             "ENABLE_AUDIT_LOG": self.audit_log,
             "ENABLE_OUTPUT_ENCODING": self.output_encoding,
+            "ENABLE_HUB_LEAST_PRIVILEGE": self.hub_least_privilege,
+            "ENABLE_HUB_DIAGNOSTIC_REDACTION": self.hub_diagnostic_redaction,
         }

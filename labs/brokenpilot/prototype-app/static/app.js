@@ -36,15 +36,23 @@ function post(path, payload) {
 }
 
 async function captureState() {
-  const [controls, tickets] = await Promise.all([api("/controls"), api("/tickets")]);
-  if (!controls.ok || !tickets.ok) throw new Error("Could not read the current lab state.");
-  return {controls: controls.body, tickets: tickets.body.tickets};
+  const [controls, tickets, hub] = await Promise.all([api("/controls"), api("/tickets"), api("/hub/model")]);
+  if (!controls.ok || !tickets.ok || !hub.ok) throw new Error("Could not read the current lab state.");
+  return {controls: controls.body, tickets: tickets.body.tickets, hub: hub.body};
 }
 
 function safeRequest(request) {
   const body = {...request.body};
   delete body.approval_token;
+  delete body.registry_token;
   return {path: request.path, body};
+}
+
+function safeResponse(kind, body) {
+  if (kind === "hub-diagnostics" && body && typeof body === "object") {
+    return {...body, debug_registry_token: body.debug_registry_token ? "[redacted in evidence]" : null};
+  }
+  return body;
 }
 
 function setScenario() {
@@ -105,7 +113,7 @@ function summarize(kind, result) {
   const body = result.body;
   if (!result.ok) {
     const reason = body.detail && typeof body.detail === "object" ? body.detail.error : null;
-    return `The API returned ${result.status}${reason ? ` (${reason})` : ""}. Check the ticket state and the control that blocked this action.`;
+    return `The API returned ${result.status}${reason ? ` (${reason})` : ""}. Check the fake state and the control that blocked this action.`;
   }
   if (kind === "ticket") return `Created ${body.ticket.id}; its summary was indexed as ${body.indexed_document_id}. Now run the agent exercise.`;
   if (kind === "agent") return `Decision: ${body.agent_decision}. Source: ${body.decision_source}${body.source_doc_id ? ` (${body.source_doc_id})` : ""}.`;
@@ -115,7 +123,9 @@ function summarize(kind, result) {
   if (kind === "qwen-agent") return `Qwen proposal: ${body.proposal?.action || "invalid"}. Application decision: ${body.agent_decision}.`;
   if (kind === "tool") return `Tool result: ${body.result}. Authorization: ${body.authorization_decision}.`;
   if (kind === "memory") return `Memory ${body.memory.id} created. Review: ${body.memory.review_decision}.`;
-  if (kind === "reset") return "Fake tickets, created documents, memory, and audit events reset.";
+  if (kind === "hub-diagnostics") return `Worker credential scope: ${body.runtime_credential_scope}. Token exposure: ${body.token_exposure}.`;
+  if (kind === "hub-promote") return `Mock Hub revision: ${body.model.active_revision}. No real artifact was changed.`;
+  if (kind === "reset") return "Fake tickets, documents, memory, Hub state, and audit events reset.";
   return "Inspect the response and current tickets.";
 }
 
@@ -123,12 +133,14 @@ function showResult(kind, request, result, before, after) {
   evidence = {
     captured_at: new Date().toISOString(), exercise: kind, request: safeRequest(request),
     controls: before.controls, tickets_before: before.tickets, http_status: result.status,
-    response: result.body, tickets_after: after.tickets
+    response: safeResponse(kind, result.body), tickets_after: after.tickets,
+    hub_before: before.hub, hub_after: after.hub
   };
   $("request-state").textContent = result.ok ? `HTTP ${result.status} · response received` : `HTTP ${result.status} · request blocked or invalid`;
   $("request-state").classList.toggle("error", !result.ok);
   $("result-summary").textContent = summarize(kind, result);
-  $("result-json").textContent = JSON.stringify(evidence, null, 2);
+  const display = kind === "hub-diagnostics" ? {...evidence, response: result.body} : evidence;
+  $("result-json").textContent = JSON.stringify(display, null, 2);
   $("download-evidence").disabled = false;
   notebook = [...notebook, evidence].slice(-NOTEBOOK_LIMIT);
   try {
@@ -159,6 +171,14 @@ function ticketEffect(entry) {
   return labels.length ? labels.join(" · ") : "No ticket state change";
 }
 
+function stateEffect(entry) {
+  const ticket = ticketEffect(entry);
+  const previous = entry.hub_before?.active_revision;
+  const current = entry.hub_after?.active_revision;
+  const hub = previous && current && previous !== current ? `Mock Hub: ${previous} → ${current}` : null;
+  return hub ? `${ticket} · ${hub}` : ticket;
+}
+
 function renderNotebook() {
   const list = $("notebook-list");
   list.replaceChildren();
@@ -173,7 +193,7 @@ function renderNotebook() {
     const date = new Date(entry.captured_at);
     meta.textContent = `${Number.isNaN(date.getTime()) ? "Saved run" : date.toLocaleString()} · ${profileLabel(entry.controls)}`;
     const effect = document.createElement("p");
-    effect.textContent = ticketEffect(entry);
+    effect.textContent = stateEffect(entry);
     details.append(title, meta, effect);
     const view = document.createElement("button");
     view.className = "quiet";
@@ -183,7 +203,7 @@ function renderNotebook() {
       evidence = entry;
       $("request-state").textContent = `Saved ${entry.exercise} run · HTTP ${entry.http_status}`;
       $("request-state").classList.toggle("error", entry.http_status >= 400);
-      $("result-summary").textContent = `${profileLabel(entry.controls)} · ${ticketEffect(entry)}`;
+      $("result-summary").textContent = `${profileLabel(entry.controls)} · ${stateEffect(entry)}`;
       $("result-json").textContent = JSON.stringify(entry, null, 2);
       $("download-evidence").disabled = false;
       $("evidence-title").scrollIntoView({behavior: "smooth", block: "start"});
@@ -205,7 +225,7 @@ function downloadJson(filename, value) {
 }
 
 async function refreshState() {
-  const [health, users, tickets, qwen] = await Promise.all([api("/health"), api("/users"), api("/tickets"), api("/qwen/status")]);
+  const [health, users, tickets, qwen, hub] = await Promise.all([api("/health"), api("/users"), api("/tickets"), api("/qwen/status"), api("/hub/model")]);
   $("runtime-status").textContent = !health.ok ? "Unavailable" :
     health.body.qwen_extension_enabled ? "Online · mock + Qwen extension" : "Online · deterministic mock";
   const model = qwen.body || {};
@@ -215,6 +235,7 @@ async function refreshState() {
     "On · Ollama unavailable. Start the local server, then refresh state.";
   $("qwen-status").textContent = qwenMessage;
   $("qwen-status").classList.toggle("error", !!model.enabled && !model.ready);
+  $("hub-state").textContent = hub.ok ? `${hub.body.model_id}: ${hub.body.active_revision}` : "Mock Hub unavailable";
   for (const kind of ["qwen-chat", "qwen-agent"]) {
     $("scenario").querySelector(`option[value="${kind}"]`).disabled = !model.ready;
   }
@@ -278,7 +299,7 @@ $("lab-form").addEventListener("submit", async (event) => {
   finally { button.disabled = false; }
 });
 $("reset-lab").addEventListener("click", async () => {
-  if (!window.confirm("Reset fake tickets, created documents, memory, and audit events?")) return;
+  if (!window.confirm("Reset fake tickets, documents, memory, Hub state, and audit events?")) return;
   try {
     const before = await captureState();
     const result = await post("/reset", {});
@@ -287,6 +308,34 @@ $("reset-lab").addEventListener("click", async () => {
     await refreshState();
   } catch (error) { showConnectionError(error); }
 });
+async function runHub(kind) {
+  const button = $(kind === "hub-diagnostics" ? "hub-diagnostics" : "hub-promote");
+  button.disabled = true;
+  $("request-state").textContent = "Running mock Hub request…";
+  try {
+    const before = await captureState();
+    let result;
+    let request;
+    if (kind === "hub-diagnostics") {
+      request = {path: "/hub/diagnostics", body: {}};
+      result = await api(request.path);
+    } else {
+      const token = $("hub-token").value.trim();
+      request = {path: "/hub/promote", body: {revision: "unreviewed-v2", credential_supplied: !!token}};
+      result = await api(request.path, {
+        method: "POST",
+        headers: {"Content-Type": "application/json", "Authorization": `Bearer ${token}`},
+        body: JSON.stringify({revision: "unreviewed-v2"})
+      });
+    }
+    const after = await captureState();
+    showResult(kind, request, result, before, after);
+    await refreshState();
+  } catch (error) { showConnectionError(error); }
+  finally { button.disabled = false; }
+}
+$("hub-diagnostics").addEventListener("click", () => runHub("hub-diagnostics"));
+$("hub-promote").addEventListener("click", () => runHub("hub-promote"));
 $("clear-evidence").addEventListener("click", () => {
   evidence = null;
   $("result-json").textContent = "{}";
