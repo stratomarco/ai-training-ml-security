@@ -2,9 +2,11 @@
 
 This small Module 08 lab makes one promotion decision observable. It uses fake JSON weight files, synthetic metadata, and Python's standard library. The gate hashes artifact bytes and compares them with a separate trusted approval policy. It never deserializes or executes a model.
 
+This is a separate fictional candidate from the Module 08 static evidence pack. It shares a model name with the BrokenPilot Mock Hub for discussion, but the two runnable labs do not share state or enforce each other's decisions.
+
 ## Run the three cases
 
-Use Python 3.10 or newer from this directory. No package install or network connection is needed.
+Use Python 3.10 or newer from `labs/mlops-supply-chain-labs/artifact-promotion`. No package install or network connection is needed.
 
 ```text
 python promotion_gate.py

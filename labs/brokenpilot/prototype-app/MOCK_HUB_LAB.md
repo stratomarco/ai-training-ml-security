@@ -8,7 +8,7 @@ The 2024 Hugging Face Spaces secrets incident is a useful discussion prompt abou
 
 ## Run the vulnerable profile
 
-From `labs/brokenpilot/prototype-app`, start:
+First follow the [BrokenPilot first-run setup](README.md#first-run-and-guided-path) to create the virtual environment and install the app dependencies. From `labs/brokenpilot/prototype-app` with that environment active, start:
 
 ```text
 python run_lab.py --profile vulnerable
@@ -24,6 +24,7 @@ Open `http://127.0.0.1:8010` and find **Mock model Hub**.
 
 No real model behavior changes. The observable effect is the mock registry state transition.
 The UI shows the fake token in the live diagnostic response but redacts it from saved and exported notebook evidence.
+The separate artifact-promotion gate uses the same fictional model name for comparison, but the two labs do not share state or enforce each other's decisions.
 
 ## Compare the controls
 
