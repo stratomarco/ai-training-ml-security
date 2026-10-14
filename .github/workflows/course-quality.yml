@@ -82,7 +82,7 @@ jobs:
         run: docker compose up --build -d --wait
       - name: Exercise Mock Hub through published loopback port
         run: python tests/docker_smoke.py vulnerable
-      - name: Check container restrictions
+      - name: Check container restrictions and dependency scope
         run: |
           test "$(docker inspect brokenpilot-prototype --format '{{.Config.User}}')" = 10001:10001
           test "$(docker inspect brokenpilot-prototype --format '{{.HostConfig.ReadonlyRootfs}}')" = true
@@ -90,6 +90,7 @@ jobs:
           test "$(docker inspect brokenpilot-prototype --format '{{join .HostConfig.SecurityOpt ","}}')" = no-new-privileges:true
           test "$(docker inspect brokenpilot-prototype --format '{{.State.Health.Status}}')" = healthy
           test "$(docker port brokenpilot-prototype 8010/tcp)" = 127.0.0.1:8010
+          docker compose exec -T brokenpilot python -c "import importlib.util; assert importlib.util.find_spec('pytest') is None; assert importlib.util.find_spec('httpx') is None"
       - name: Compare all-controls Docker profile
         run: |
           docker compose -f docker-compose.yml -f docker-compose.controls.yml up -d --wait --force-recreate

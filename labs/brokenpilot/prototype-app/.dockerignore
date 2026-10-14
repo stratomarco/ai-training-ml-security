@@ -1,6 +1,6 @@
 *
 !Dockerfile
-!requirements.txt
+!requirements-runtime.txt
 !app/
 !app/*.py
 !data/

@@ -116,7 +116,7 @@ Stop:
 docker compose down
 ```
 
-The container publishes only to `127.0.0.1`, runs as a non-root user with a read-only application filesystem, drops Linux capabilities, and uses a small temporary directory. The Docker build includes only the application, fake data, static UI, and dependency list. Keep Docker Desktop and the lab on your own machine; the vulnerable profile has no user authentication.
+The container publishes only to `127.0.0.1`, runs as a non-root user with a read-only application filesystem, drops Linux capabilities, and uses a small temporary directory. The Docker build includes only the application, fake data, static UI, and runtime dependencies. The local `requirements.txt` also installs test tools and the client for the optional Qwen exercise; these are excluded from the Docker image because that exercise is disabled there. Keep Docker Desktop and the lab on your own machine; the vulnerable profile has no user authentication.
 
 To compare the Mock Hub least-privilege control in Docker, set the toggle before recreating the container:
 
