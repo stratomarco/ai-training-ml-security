@@ -81,7 +81,7 @@ jobs:
       - name: Build and start local lab
         run: docker compose up --build -d --wait
       - name: Exercise Mock Hub through published loopback port
-        run: python tests/docker_smoke.py
+        run: python tests/docker_smoke.py vulnerable
       - name: Check container restrictions
         run: |
           test "$(docker inspect brokenpilot-prototype --format '{{.Config.User}}')" = 10001:10001
@@ -90,6 +90,10 @@ jobs:
           test "$(docker inspect brokenpilot-prototype --format '{{join .HostConfig.SecurityOpt ","}}')" = no-new-privileges:true
           test "$(docker inspect brokenpilot-prototype --format '{{.State.Health.Status}}')" = healthy
           test "$(docker port brokenpilot-prototype 8010/tcp)" = 127.0.0.1:8010
+      - name: Compare all-controls Docker profile
+        run: |
+          docker compose -f docker-compose.yml -f docker-compose.controls.yml up -d --wait --force-recreate
+          python tests/docker_smoke.py all-controls
       - name: Stop local lab
         if: always()
         run: docker compose down

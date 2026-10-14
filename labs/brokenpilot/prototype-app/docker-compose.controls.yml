@@ -1,0 +1,15 @@
+# Optional counterpart to `python run_lab.py --profile all-controls`.
+# Apply after docker-compose.yml so these settings override its defaults.
+services:
+  brokenpilot:
+    environment:
+      ENABLE_RETRIEVAL_AUTHZ: "true"
+      ENABLE_PROMPT_INJECTION_FILTER: "true"
+      ENABLE_TOOL_AUTHZ: "true"
+      ENABLE_TOOL_APPROVAL: "true"
+      ENABLE_MEMORY_REVIEW: "true"
+      ENABLE_MEMORY_ISOLATION: "true"
+      ENABLE_OUTPUT_ENCODING: "true"
+      ENABLE_AUDIT_LOG: "true"
+      ENABLE_HUB_LEAST_PRIVILEGE: "true"
+      ENABLE_HUB_DIAGNOSTIC_REDACTION: "true"

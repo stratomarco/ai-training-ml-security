@@ -126,7 +126,13 @@ docker compose up -d --wait --force-recreate
 Remove-Item Env:ENABLE_HUB_LEAST_PRIVILEGE
 ```
 
-The running container keeps the selected setting until it is recreated or stopped. Use `docker compose down` when finished.
+The running container keeps the selected setting until it is recreated or stopped. To compare all teaching controls at once, use the checked-in Compose override from this directory:
+
+```powershell
+docker compose -f docker-compose.yml -f docker-compose.controls.yml up -d --wait --force-recreate
+```
+
+Reload the browser page, then check the **Current controls** panel or request `GET /controls`. Recreate the default vulnerable profile with `docker compose up -d --wait --force-recreate`. Each recreation starts with fresh in-memory tickets, audit events, and fake Hub tokens. Use `docker compose down` when finished.
 
 ## Control toggles
 
