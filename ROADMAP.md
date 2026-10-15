@@ -17,7 +17,7 @@ Defer live checkpoint deserialization, malicious pickle execution, external mode
 
 ## Candidate external practice: AIGoat
 
-[AIGoat](https://github.com/AISecurityConsortium/AIGoat) may add useful MCP and inter-agent exercises beyond BrokenPilot. Start with the [instructor adoption evaluation](instructor/aigoat-adoption-evaluation.md): check the upstream training-content license, isolate the intentionally vulnerable runtime, and validate a small MCP03/MCP07/ASI07 pilot before adding a student-facing guide. This is not part of the required course or the v1.3.0 first-time learner pilot. BrokenPilot remains the primary local target.
+[AIGoat](https://github.com/AISecurityConsortium/AIGoat) adds two useful MCP trust-boundary examples beyond BrokenPilot. The [instructor adoption evaluation](instructor/aigoat-adoption-evaluation.md) records a contained v2.0 pilot of MCP03-2 and MCP07-1 at vulnerable and defended levels. An [optional Module 07 source-review exercise](labs/aigoat-guides/mcp-trust-boundary-review.md) is available without installing the app. A reproducible, safe first-time student setup across platforms remains an open gate; this is not part of the required course or the v1.3.0 learner pilot. Defer the scripted ASI07-1 handoff because its signature check does not establish authentic provenance. BrokenPilot remains the primary local target.
 
 ## v1.0  -  Complete Markdown curriculum
 

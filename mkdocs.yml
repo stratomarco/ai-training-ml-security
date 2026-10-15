@@ -385,6 +385,8 @@ nav:
           - "Brokenpilot Attack Chain Lab": labs/ai-red-team-labs/brokenpilot-attack-chain-lab.md
           - "Strong AI Red Team Scope": labs/ai-red-team-labs/worked-examples/strong-ai-red-team-scope.md
           - "Weak AI Red Team Scope": labs/ai-red-team-labs/worked-examples/weak-ai-red-team-scope.md
+      - "AIGoat Guides":
+          - "Mcp Trust Boundary Review": labs/aigoat-guides/mcp-trust-boundary-review.md
       - "Architecture Risk Review Labs":
           - "Overview": labs/architecture-risk-review-labs/README.md
           - "Docops Assistant Architecture Review": labs/architecture-risk-review-labs/docops-assistant-architecture-review.md
