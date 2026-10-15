@@ -1,6 +1,6 @@
 # AIGoat adoption evaluation
 
-Status: **bounded instructor pilot passed for two MCP exercises; learner setup remains unvalidated**. This is an instructor planning note. BrokenPilot remains the primary local LLM, RAG, agent, and capstone target. The current first-time learner pilot does not require AIGoat.
+Status: **bounded Windows student-style run completed for two MCP exercises; supported learner setup remains open**. This is an instructor planning note. BrokenPilot remains the primary local LLM, RAG, agent, and capstone target. The current 40-hour path does not require AIGoat.
 
 ## Why consider it
 
@@ -33,7 +33,7 @@ The recommended pair adds two distinct trust boundaries and was reproduced local
 4. **Teaching evidence:** repeat the MCP03-2 and MCP07-1 vulnerable and defended comparisons from a reset state, preserve tool listing/call/result evidence, and check that the stated control matches what happened. A model refusal is an observation, not proof that the application boundary held. Treat ASI07-1 as a discussion example until its signature semantics can be taught without implying authentication it does not provide.
 5. **Learner pilot:** only after instructor smoke checks, ask a first-time learner whether setup and the chosen control comparison can be completed without coaching. Record the time and blockers. Keep it outside the required 40-hour path unless it teaches a distinct, repeatable outcome.
 
-The two MCP exercises pass the instructor teaching gate. The learner setup gate is still open, so the course adds an optional source-review exercise without promising a supported student runtime. If a learner has an independently contained AIGoat instance, the same questions can be answered from its UI. BrokenPilot remains the supported path. Revisit broader integration only when a first-time learner can complete the setup and control comparison without coaching.
+The two MCP exercises pass the teaching gate. The supported learner setup gate is still open, so the course adds an optional source-review exercise without promising a supported student runtime. If a learner has an independently contained AIGoat instance, the same questions can be answered from its UI. BrokenPilot remains the supported path. Revisit broader integration only when a first-time learner can complete the setup and control comparison without coaching.
 
 ## Bounded instructor pilot, 15 October 2026
 
@@ -48,3 +48,13 @@ Docker Desktop built and ran the upstream frontend and backend in a separately n
 | MCP03-1, Level 0 vs Level 2 | A simulated plan gained an unrequested internal-notes step. | Description inspection removed the instruction and the simulated plan matched the baseline. | A deterministic planner simulation only. No model or server tool executed in this comparison. |
 
 The API control comparisons above passed on this one Windows and Docker Desktop host. They do not validate a first-time learner setup, other operating systems, the seven omitted images, or model-driven agent behavior. No pilot volunteer is available yet. The next gate is a fresh learner install with actual setup time, port checks, exercise completion, and teardown recorded. Stop the pilot stack when the session ends; do not leave vulnerable services running by default.
+
+## Fresh student-style run, 15 October 2026
+
+I cloned the pinned v2.0 commit into a fresh Ubuntu WSL filesystem and followed a learner setup path on one Windows machine with Docker Desktop. This is an accelerated maintainer-run walkthrough, not an independent volunteer pilot. A native Windows checkout still cannot represent seven upstream product-image filenames containing a double quote. Building the full WSL source through Docker Desktop avoids the checkout failure, but the upstream Compose bind mounts failed because Docker Desktop's Ubuntu WSL integration socket was unavailable. For this run I used a separate Compose file that bound all three published services to `127.0.0.1`, baked a fake local configuration into the backend image, omitted four failing backend bind mounts, disabled debug mode, and used a fresh randomly generated session secret. No course source or media was copied from AIGoat.
+
+The stack became healthy with fresh database and model volumes and a local `tinyllama` model. I confirmed actual host listeners for ports 3000, 8000, and 11434 were loopback-only. In the browser I logged in with the upstream demo account and completed MCP03-2 Level 0 and Level 1 and MCP07-1 Level 0 and Level 1. Each case's vulnerable and defended result matched the separate API pilot, and the upstream UI accepted the evidence submissions. This confirms the two teaching comparisons are usable through the UI on this contained setup. It does not test a live agent model.
+
+**Student-visible delivery defect:** Seven product images failed to load in the browser (`naturalWidth=0` and HTTP 404). The Docker build context lacked the quoted filenames even though the WSL checkout contained them. The two MCP exercises remained functional. A supported learner route needs this media issue resolved or explicitly removed from the delivered UI. It also needs a tested, documented setup on the target operating systems, predictable dependency and model-download requirements, and an independent first-time learner with timing and support notes. Until then, keep the course extension as credited source review with optional use of a separately contained upstream instance.
+
+The fresh AIGoat stack was stopped after validation. No vulnerable service was left listening on those ports.

@@ -37,6 +37,14 @@ python -m pip install --upgrade pip
 pip install -r requirements-dev.txt
 ```
 
+If Python 3.12 is not installed but Docker Desktop is available, run the complete lab in a Python 3.12 container from this directory. In PowerShell:
+
+```powershell
+docker run --rm -v "${PWD}:/work" -w /work python:3.12-slim sh -c "pip install --disable-pip-version-check -r requirements-dev.txt && python train.py && python attacks/evasion.py && python attacks/poisoning.py && python attacks/extraction.py && python attacks/output_integrity.py && pytest -q"
+```
+
+This downloads the Python image and dependencies on first use. It writes the ignored `model.pkl` training artifact into the lab directory on the host. Run it only with this course's synthetic files.
+
 ## Run the baseline model
 
 ```bash
