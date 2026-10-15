@@ -62,10 +62,6 @@ macOS or Linux:
 ./scripts/cleanup_duplicate_content.sh
 ```
 
-## Deploy manually
+## Publish the hosted site
 
-```powershell
-mkdocs gh-deploy --force
-```
-
-The recommended hosted deployment for this repository is GitHub Pages via GitHub Actions. See [GitHub Pages Deployment](github-pages.md).
+The hosted site deploys from `main` through GitHub Actions. To republish the same source, run the [deployment workflow](github-pages.md#manual-redeployment) from `main` in GitHub. The local preview does not publish the site.

@@ -59,15 +59,23 @@ def main() -> None:
 
     if deploy_docs:
         for required in [
+            "branches:",
+            "- main",
             "workflow_dispatch",
+            "contents: read",
+            "pages: write",
+            "id-token: write",
             "python scripts/sync_mkdocs_content.py",
             "python scripts/generate_mkdocs_nav.py",
             "mkdocs build --strict",
-            "mkdocs gh-deploy --force",
+            "actions/configure-pages@",
+            "actions/upload-pages-artifact@",
+            "path: site",
+            "actions/deploy-pages@",
         ]:
             require_contains(deploy_docs, required, "deploy-docs.yml", errors)
-        if "gh-deploy --force --strict" in deploy_docs:
-            errors.append("deploy-docs.yml passes invalid --strict flag to gh-deploy")
+        if "mkdocs gh-deploy" in deploy_docs:
+            errors.append("deploy-docs.yml still uses branch-based MkDocs deployment")
         if "check_release_cleanup_phase7_mkdocs_strict.py" in deploy_docs:
             errors.append("deploy-docs.yml still references archived phase-7 checker")
         check_script_refs(deploy_docs, "deploy-docs.yml", errors)
