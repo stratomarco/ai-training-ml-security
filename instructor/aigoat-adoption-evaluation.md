@@ -34,3 +34,7 @@ These names and scenarios are drawn from AIGoat's [v2.0 lab catalog](https://git
 5. **Learner pilot:** only after instructor smoke checks, ask a first-time learner whether setup and the chosen control comparison can be completed without coaching. Record the time and blockers. Keep it outside the required 40-hour path unless it teaches a distinct, repeatable outcome.
 
 Adopt a student-facing optional guide only after the license, isolation, cross-platform, and teaching gates pass. If any gate fails, retain a credited upstream reference and keep BrokenPilot as the supported path. Revisit broader integration only when there is evidence that a specific course gap remains.
+
+## Source-inspection note, 15 October 2026
+
+The v2.0 tag resolves to the commit above. Source files were inspected without running the application. A native Windows Git checkout failed on `media/The "Adversarial" Red Team T-Shirt.png`, a filename Windows cannot create. The partial checkout was removed after reading the relevant source blobs. A Windows student path therefore needs an upstream filename change or a separately tested Linux-filesystem route. This note is not evidence that the labs run or that a safe setup has been validated.
