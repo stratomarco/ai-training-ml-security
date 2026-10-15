@@ -26,13 +26,15 @@ python3 -m pip install -r requirements.txt
 python run_lab.py --profile vulnerable
 ```
 
-To compare controls, stop with `Ctrl+C` and restart, for example `python run_lab.py --profile tool-authz`. Profiles are `vulnerable`, `retrieval-authz`, `injection-filter`, `tool-authz`, `tool-approval`, `memory-review`, `memory-isolation`, `output-encoding`, and `all-controls`. A new process has fresh fake state. The launcher binds only to `127.0.0.1` and explicitly sets every teaching control for the selected profile.
+To compare controls, stop with `Ctrl+C` and restart, for example `python run_lab.py --profile tool-authz`. Profiles are `vulnerable`, `retrieval-authz`, `injection-filter`, `tool-authz`, `tool-approval`, `memory-review`, `memory-isolation`, `output-encoding`, `hub-least-privilege`, `hub-redaction`, and `all-controls`. A new process has fresh fake state. The launcher binds only to `127.0.0.1` and explicitly sets every teaching control for the selected profile.
 
 The UI and API remain intentionally vulnerable in the vulnerable profile. Keep the service on loopback, use only fake data, and do not expose it on a shared network. There is no account, flag, or grading service.
 
 After the standalone exercises, the optional [Qwen extension](QWEN_EXTENDED_LAB.md) adds two live-model investigations using a locally installed Ollama model. Start it with `python run_lab.py --qwen --profile vulnerable`. It uses the exact Qwen3 4B Instruct 2507 Q4_K_M tag and localhost-only model API; the Docker Compose path keeps this extension disabled. The model may respond differently between runs, so compare concrete proposals and ticket state instead of expecting a fixed answer.
 
-The evidence notebook uses browser local storage. It keeps at most 24 runs, records ticket state before and after each request, and omits approval tokens. Export its JSON before clearing browser data or changing browser profiles. The notebook is a learning aid, not a trusted audit log; verify important effects in the app state and server audit events.
+The optional [Mock Hub lab](MOCK_HUB_LAB.md) uses an in-memory registry to compare credential exposure with least privilege. It does not fetch, load, or overwrite any real model.
+
+The evidence notebook uses browser local storage. It keeps at most 24 runs, records fake ticket and Hub state before and after each request, and omits approval and fake registry tokens from saved and exported evidence. The live diagnostic response displays its fake token once so the student can try it. Export notebook JSON before clearing browser data or changing browser profiles. The notebook is a learning aid, not a trusted audit log; verify important effects in the app state and server audit events.
 
 The UI and API schema (`/openapi.json`) are served locally. The default FastAPI Swagger/ReDoc pages are disabled because their browser assets would otherwise load from external CDNs.
 State-changing browser requests from other origins are rejected; command-line requests without a browser `Origin` header remain available for the exercises. This is a local teaching target, not an authentication boundary.
@@ -50,7 +52,10 @@ The current MVP supports these endpoints:
 | `GET /controls` | Show active control toggles |
 | `GET /audit` | Show in-memory audit events |
 | `GET /memory` | List in-memory agent memory entries |
-| `POST /reset` | Reset tickets, created documents, audit events, and memory |
+| `POST /reset` | Reset tickets, created documents, audit events, memory, and mock Hub state; rotate lab tokens |
+| `GET /hub/model` | Show the active fake model revision |
+| `GET /hub/diagnostics` | Show or redact the fake worker registry credential |
+| `POST /hub/promote` | Use a fake registry credential to change the in-memory revision |
 | `POST /memory/add` | Add an agent memory entry |
 | `POST /retrieve` | Retrieve fake documents using keyword matching |
 | `POST /chat` | Run a mock chat flow over retrieved documents |
@@ -82,6 +87,7 @@ This is a local training app. It uses:
 - fake secrets
 - deterministic mock LLM behavior in the standalone path
 - no external network calls in the standalone path; the optional Qwen path calls only the fixed local Ollama address
+- a mock Hub that changes only in-memory revision metadata, never a real artifact
 - no real credentials
 - no real ticketing system
 - no cloud model provider
@@ -90,12 +96,15 @@ Do not connect this prototype to real systems or real data.
 
 ## Run with Docker Compose
 
+From the repository root:
+
 ```powershell
 cd labs\brokenpilot\prototype-app
-docker compose up --build
+docker compose up --build -d --wait
+docker compose ps
 ```
 
-Open:
+When `docker compose ps` reports `healthy`, open:
 
 ```text
 http://127.0.0.1:8010
@@ -106,6 +115,24 @@ Stop:
 ```powershell
 docker compose down
 ```
+
+The container publishes only to `127.0.0.1`, runs as a non-root user with a read-only application filesystem, drops Linux capabilities, and uses a small temporary directory. The Docker build includes only the application, fake data, static UI, and runtime dependencies. The local `requirements.txt` also installs test tools and the client for the optional Qwen exercise; these are excluded from the Docker image because that exercise is disabled there. Keep Docker Desktop and the lab on your own machine; the vulnerable profile has no user authentication.
+
+To compare the Mock Hub least-privilege control in Docker, set the toggle before recreating the container:
+
+```powershell
+$env:ENABLE_HUB_LEAST_PRIVILEGE = "true"
+docker compose up -d --wait --force-recreate
+Remove-Item Env:ENABLE_HUB_LEAST_PRIVILEGE
+```
+
+The running container keeps the selected setting until it is recreated or stopped. To compare all teaching controls at once, use the checked-in Compose override from this directory:
+
+```powershell
+docker compose -f docker-compose.yml -f docker-compose.controls.yml up -d --wait --force-recreate
+```
+
+Reload the browser page, then check the **Current controls** panel or request `GET /controls`. Recreate the default vulnerable profile with `docker compose up -d --wait --force-recreate`. Each recreation starts with fresh in-memory tickets, audit events, and fake Hub tokens. Use `docker compose down` when finished.
 
 ## Control toggles
 
@@ -121,6 +148,8 @@ The app uses environment variables to demonstrate vulnerable and hardened behavi
 | `ENABLE_MEMORY_ISOLATION` | `false` | If true, global/cross-tenant memory is not used as active instruction context |
 | `ENABLE_AUDIT_LOG` | `true` | If true, relevant actions are recorded in memory |
 | `ENABLE_OUTPUT_ENCODING` | `false` | If true, model-derived HTML is encoded at the demo sink |
+| `ENABLE_HUB_LEAST_PRIVILEGE` | `false` | If true, the mock worker holds only a read-scoped lab token |
+| `ENABLE_HUB_DIAGNOSTIC_REDACTION` | `false` | If true, worker diagnostics omit the lab token |
 
 Default mode is intentionally vulnerable.
 
@@ -293,5 +322,6 @@ Then restart Uvicorn.
 - Tool calling is deterministic and local only.
 - Memory is in-memory only and resets with `/reset`.
 - The browser UI is a local request/evidence workspace; it displays returned HTML as text.
+- The mock Hub does not ingest model artifacts, perform network retrieval, or execute code.
 
 These limitations are deliberate. The goal is a reliable teaching target before adding complexity.

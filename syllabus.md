@@ -82,6 +82,8 @@ By the end of the course, students should be able to:
 | 11 | AI Red Team Methodology | Create repeatable AI security testing programs |
 | 12 | Capstone: BrokenPilot | Threat model, attack, defend, and present residual risk |
 
+Module 08 uses the static evidence-pack review as its primary path. An optional offline artifact-promotion gate and a separate BrokenPilot Mock Hub extension make two supply-chain control decisions observable without loading untrusted models or requiring a cloud account.
+
 ## Teaching model
 
 Each module should include:

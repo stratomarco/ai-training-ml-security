@@ -9,7 +9,7 @@ BrokenPilot is the runnable target for LLM, RAG, agent, privacy-leakage, and red
 | Module 05 LLM application security | Runnable attack lab | BrokenPilot | LLM control note |
 | Module 06 RAG security | Runnable attack lab | BrokenPilot | Retrieval authorization design |
 | Module 07 agent and tool security | Runnable attack lab | BrokenPilot | Tool permission matrix |
-| Module 08 MLOps supply chain | Reasoning evidence review | Static evidence pack | Supply-chain review memo |
+| Module 08 MLOps supply chain | Reasoning evidence review with optional offline gate | Static evidence pack plus fake artifact-promotion gate | Supply-chain review memo |
 | Module 09 privacy attacks | Mixed | BrokenPilot plus tabletop | Privacy leakage review |
 | Module 10 adversarial ML | Runnable toy ML plus tabletop | Toy classifier | Robustness review |
 | Module 11 AI red team | Mixed | BrokenPilot plus tabletop | Red-team finding or scope package |

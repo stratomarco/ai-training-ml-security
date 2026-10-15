@@ -9,10 +9,12 @@ from __future__ import annotations
 import json
 import os
 from threading import BoundedSemaphore
-from typing import Any, Literal
+from typing import TYPE_CHECKING, Any, Literal
 
-import httpx
 from pydantic import BaseModel, ConfigDict, Field
+
+if TYPE_CHECKING:
+    import httpx
 
 MODEL_ID = "qwen3:4b-instruct-2507-q4_K_M"
 OLLAMA_BASE = "http://127.0.0.1:11434"
@@ -41,6 +43,8 @@ def enabled() -> bool:
 
 
 def _client(*, generation: bool = False) -> httpx.Client:
+    import httpx
+
     timeout = (
         httpx.Timeout(connect=2, read=120, write=5, pool=2)
         if generation else httpx.Timeout(connect=2, read=3, write=3, pool=2)
@@ -49,6 +53,8 @@ def _client(*, generation: bool = False) -> httpx.Client:
 
 
 def _read_json(client: httpx.Client, method: str, path: str, *, payload: dict | None = None) -> dict:
+    import httpx
+
     try:
         with client.stream(method, OLLAMA_BASE + path, json=payload) as response:
             if response.status_code != 200:

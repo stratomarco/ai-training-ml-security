@@ -2,8 +2,22 @@ services:
   brokenpilot:
     build: .
     container_name: brokenpilot-prototype
+    init: true
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m
     ports:
       - "127.0.0.1:8010:8010"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8010/health', timeout=2).read()"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 10s
     environment:
       ENABLE_RETRIEVAL_AUTHZ: ${ENABLE_RETRIEVAL_AUTHZ:-false}
       ENABLE_PROMPT_INJECTION_FILTER: ${ENABLE_PROMPT_INJECTION_FILTER:-false}
@@ -13,4 +27,6 @@ services:
       ENABLE_MEMORY_ISOLATION: ${ENABLE_MEMORY_ISOLATION:-false}
       ENABLE_OUTPUT_ENCODING: ${ENABLE_OUTPUT_ENCODING:-false}
       ENABLE_AUDIT_LOG: ${ENABLE_AUDIT_LOG:-true}
+      ENABLE_HUB_LEAST_PRIVILEGE: ${ENABLE_HUB_LEAST_PRIVILEGE:-false}
+      ENABLE_HUB_DIAGNOSTIC_REDACTION: ${ENABLE_HUB_DIAGNOSTIC_REDACTION:-false}
       BROKENPILOT_QWEN_ENABLED: "0"

@@ -164,13 +164,13 @@ python run_lab.py --profile all-controls
 
 Docker Compose run:
 
-Edit `.env` or set the variables in `docker-compose.yml`, then:
+From `labs/brokenpilot/prototype-app`, apply the checked-in all-controls override:
 
 ```powershell
-docker compose up --build
+docker compose -f docker-compose.yml -f docker-compose.controls.yml up -d --wait --force-recreate
 ```
 
-Repeat Exercises 3, 4, 5, and 6.
+Repeat Exercises 3, 4, 5, and 6. To return to the default vulnerable Docker profile, run `docker compose up -d --wait --force-recreate`. Each recreation resets the in-memory lab state.
 
 Confirm the active toggles at `GET /controls`. This profile also enables memory review, memory isolation, and output encoding.
 

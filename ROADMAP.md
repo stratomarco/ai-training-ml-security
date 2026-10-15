@@ -4,6 +4,17 @@
 
 This roadmap describes work after the first complete curriculum release.
 
+## Current `dev` work after v1.2.0
+
+The next course iteration adds two optional, offline Module 08 exercises while keeping its static evidence review as the main path:
+
+1. BrokenPilot Mock Hub: a fake worker credential exposed by diagnostics can change only an in-memory model revision. Compare diagnostic redaction and read-only worker scope.
+2. Artifact-promotion gate: compare synthetic approved, tampered, and unapproved files against a simulated protected approval policy. The exercise reads and hashes bytes; it does not load model artifacts.
+
+Release checks should cover the vulnerable and controlled Hub paths, artifact decisions, existing BrokenPilot behavior, and the generated course website. Instructor guidance must identify the limits of both simulations. Rubrics remain optional.
+
+Defer live checkpoint deserialization, malicious pickle execution, external model-hub access, and an automated red-team framework. A separate bounded pilot should establish a safe execution environment and a clear teaching advantage before adding them. The offline gate demonstrates approval logic; it does not implement signatures or prove artifact safety.
+
 ## v1.0  -  Complete Markdown curriculum
 
 Goal: first complete teachable release.

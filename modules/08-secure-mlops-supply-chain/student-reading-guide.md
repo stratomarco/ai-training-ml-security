@@ -17,7 +17,7 @@ Can the team prove where this model came from, what data and code produced it, w
 
 ## Lab or exercise connection
 
-Use the MLOps evidence-pack review. It is intentionally a reasoning lab because realistic supply-chain review is evidence review, not a fake pipeline demo.
+Use the MLOps evidence-pack review as the primary exercise. For a small observable control, run the [offline artifact-promotion gate](../../labs/mlops-supply-chain-labs/artifact-promotion/artifact-promotion-lab.md) and explain why an internally consistent unapproved candidate must still be denied. The optional [BrokenPilot Mock Hub](../../labs/brokenpilot/prototype-app/MOCK_HUB_LAB.md) covers a separate credential-scope boundary. Neither exercise loads a model artifact.
 
 ## What a strong submission looks like
 

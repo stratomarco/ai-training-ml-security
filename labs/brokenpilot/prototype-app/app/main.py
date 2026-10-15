@@ -10,11 +10,12 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 from .audit import clear_events, list_events, record
 from .controls import Controls
 from .data import create_ticket, get_ticket, get_user, load_documents, load_tickets, load_users, reset_documents, reset_tickets
+from .hub import diagnostics as hub_diagnostics_data, model_state as hub_model_state, promote_revision, reset_hub
 from .memory import add_memory_entry, find_memory_instruction, list_memory, reset_memory, visible_memory_for_user
 from .mock_llm import generate_answer
 from .qwen import ModelProposal, ModelUnavailable, enabled as qwen_enabled, generate as qwen_generate, status as qwen_status
 from .rag import retrieve_documents
-from .schemas import AgentRunRequest, ChatRequest, MemoryAddRequest, QwenAgentRunRequest, QwenChatRequest, RenderRequest, RetrieveRequest, TicketCreateRequest, ToolUpdateTicketRequest
+from .schemas import AgentRunRequest, ChatRequest, MemoryAddRequest, MockHubPromoteRequest, QwenAgentRunRequest, QwenChatRequest, RenderRequest, RetrieveRequest, TicketCreateRequest, ToolUpdateTicketRequest
 from .tools import update_ticket_tool
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -124,7 +125,42 @@ def reset_lab_state():
     reset_documents()
     clear_events()
     reset_memory()
-    return {"status": "reset", "tickets": load_tickets(), "memory": list_memory(), "audit_events": list_events()}
+    hub = reset_hub()
+    return {"status": "reset", "tickets": load_tickets(), "memory": list_memory(), "mock_hub": hub, "audit_events": list_events()}
+
+
+@app.get("/hub/model")
+def mock_hub_model():
+    """Show fake registry state without exposing a credential."""
+    return hub_model_state()
+
+
+@app.get("/hub/diagnostics")
+def mock_hub_diagnostics():
+    """Teach why a worker must not expose an over-scoped registry credential."""
+    controls = Controls.from_env()
+    result = hub_diagnostics_data(controls)
+    if controls.audit_log:
+        record("hub.diagnostics", {"token_exposure": result["token_exposure"], "runtime_credential_scope": result["runtime_credential_scope"]})
+    return result
+
+
+@app.post("/hub/promote")
+def mock_hub_promote(payload: MockHubPromoteRequest, request: Request):
+    """Change only an in-memory revision; never fetch or load a model."""
+    authorization = request.headers.get("authorization", "")
+    scheme, separator, token = authorization.partition(" ")
+    credential = token if separator and scheme.lower() == "bearer" and len(token) <= 128 else None
+    controls = Controls.from_env()
+    try:
+        model = promote_revision(revision=payload.revision, token=credential)
+    except HTTPException as exc:
+        if controls.audit_log:
+            record("hub.promote", {"revision": payload.revision, "decision": "denied", "status_code": exc.status_code})
+        raise
+    if controls.audit_log:
+        record("hub.promote", {"revision": payload.revision, "decision": "allowed"})
+    return {"model": model, "decision": "allowed", "simulation": "no artifact or real hub was modified"}
 
 
 @app.get("/memory")
