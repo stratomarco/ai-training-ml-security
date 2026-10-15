@@ -103,6 +103,7 @@ def title_from_name(name: str) -> str:
         "owasp": "OWASP",
         "biml": "BIML",
         "dvaia": "DVAIA",
+        "aigoat": "AIGoat",
         "mkdocs": "MkDocs",
         "ci": "CI",
         "mlo ps": "MLOps",

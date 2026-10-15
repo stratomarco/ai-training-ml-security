@@ -15,6 +15,10 @@ Release checks cover the vulnerable and controlled Hub paths, artifact decisions
 
 Defer live checkpoint deserialization, malicious pickle execution, external model-hub access, and an automated red-team framework. A separate bounded pilot should establish a safe execution environment and a clear teaching advantage before adding them. The offline gate demonstrates approval logic; it does not implement signatures or prove artifact safety.
 
+## Candidate external practice: AIGoat
+
+[AIGoat](https://github.com/AISecurityConsortium/AIGoat) may add useful MCP and inter-agent exercises beyond BrokenPilot. Start with the [instructor adoption evaluation](instructor/aigoat-adoption-evaluation.md): check the upstream training-content license, isolate the intentionally vulnerable runtime, and validate a small MCP03/MCP07/ASI07 pilot before adding a student-facing guide. This is not part of the required course or the v1.3.0 first-time learner pilot. BrokenPilot remains the primary local target.
+
 ## v1.0  -  Complete Markdown curriculum
 
 Goal: first complete teachable release.
