@@ -2,6 +2,14 @@
 
 Use this guide with two or three people who have not used this course and one instructor who did not build the new labs. This is a delivery check, not an exam. Do not infer learning outcomes from CI or a maintainer walkthrough.
 
+Send each student the [participant brief](field-pilot-participant-v1.3.0.md). Copy the [observation form](field-pilot-observation-v1.3.0.md) for every session. The brief gives tasks without the expected answers; use this guide for facilitation and triage.
+
+## Invitation to send when volunteers are available
+
+> I am looking for first-time learners to try a 90 to 120 minute local route through AI Training: ML Security v1.3.0. You will use fake data on your own computer, and you will not need a cloud account or a local language model. This is a course usability session, not an exam. I would like to observe setup and a few labs, then hear where the instructions or controls were unclear. If you are interested, I can share the participant brief and arrange a time.
+
+Do not send invitations until a contact and scheduling route is agreed. No volunteers have been confirmed yet.
+
 ## Preparation
 
 Give each participant the v1.3.0 release link, the [course website](https://stratomarco.github.io/ai-training-ml-security/), and the [cross-platform setup guide](https://stratomarco.github.io/ai-training-ml-security/start-here/cross-platform-setup/). Ask them to use a fresh checkout or download on their own machine. Use fake lab data only. No model download is needed for this pilot; the Qwen3 extension can be evaluated separately if the participant already has the supported local setup.
@@ -26,4 +34,4 @@ Ask the instructor to find the lab sequence from `instructor/README.md`, set up 
 
 For each task, record `completed without help`, `completed with help`, `blocked`, or `not attempted`, plus the exact observation. Separate setup failures, confusing instructions, incorrect lab behavior, and enhancement requests. Reproduce a blocker on a clean checkout before changing the course. Fix broken links, unsafe defaults, and repeatable blockers before recommending a wider class. Prioritize other changes only when the same confusion recurs or the instructor identifies a concrete teaching gap. Keep rubrics optional and do not assign scores to pilot participants.
 
-Pilot status: **not run**. Fill in the participant count, dates, environments, observations, and resulting changes after real sessions. Do not treat this guide as evidence that the pilot happened.
+Pilot status: **not run**. The participant brief and observation form are ready; no volunteers have been confirmed. Fill in the participant count, dates, environments, observations, and resulting changes after real sessions. Do not treat these materials as evidence that the pilot happened.

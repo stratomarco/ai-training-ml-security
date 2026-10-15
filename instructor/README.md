@@ -51,6 +51,7 @@ Use these guides when planning timing, delivery format, student support, and deb
 - [`executive-communication-guide.md`](executive-communication-guide.md)
 - [`finding-rewrite-facilitation-guide.md`](finding-rewrite-facilitation-guide.md)
 - [`field-pilot-v1.3.0.md`](field-pilot-v1.3.0.md) for first-time student and instructor feedback on the new release
+- [`field-pilot-participant-v1.3.0.md`](field-pilot-participant-v1.3.0.md) and [`field-pilot-observation-v1.3.0.md`](field-pilot-observation-v1.3.0.md) for the ready-to-share pilot materials
 
 ## Release-readiness material
 
