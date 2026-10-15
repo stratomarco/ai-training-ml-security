@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import os
 import shutil
+import stat
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -43,12 +45,26 @@ CANONICAL_FILES = [
 ]
 
 
+def remove_generated_tree(path: Path) -> None:
+    if not path.resolve().is_relative_to(ROOT.resolve()):
+        raise ValueError(f"Refusing to remove a path outside the repository: {path}")
+
+    def retry_readonly(func, name, exc_info) -> None:
+        error = exc_info[1]
+        if not isinstance(error, PermissionError):
+            raise error
+        os.chmod(name, stat.S_IWRITE)
+        func(name)
+
+    shutil.rmtree(path, onerror=retry_readonly)
+
+
 def copy_dir(src: Path, dst: Path) -> None:
     if not src.exists():
         return
 
     if dst.exists():
-        shutil.rmtree(dst)
+        remove_generated_tree(dst)
 
     shutil.copytree(
         src,
@@ -81,7 +97,7 @@ def copy_file(src: Path, dst: Path) -> None:
 
 def main() -> None:
     if OUT.exists():
-        shutil.rmtree(OUT)
+        remove_generated_tree(OUT)
 
     OUT.mkdir(parents=True, exist_ok=True)
 
