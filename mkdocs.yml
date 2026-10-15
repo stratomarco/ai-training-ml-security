@@ -1,5 +1,6 @@
 site_name: "AI Training: ML Security"
 site_description: Security engineering for systems that contain machine learning.
+site_url: https://stratomarco.github.io/ai-training-ml-security/
 docs_dir: .mkdocs-src
 site_dir: site
 site_author: "AI Training: ML Security contributors"

@@ -1,66 +1,17 @@
 # GitHub Pages Deployment
 
-This repository includes a GitHub Actions workflow that builds the MkDocs site and deploys it to GitHub Pages.
+The course website is built from the canonical root-level course content. A push to `main` runs the strict MkDocs build and deploys the generated `site/` directory through GitHub Actions. Maintainers can also start the workflow manually from `main`.
 
-## One-time GitHub setting
+## One-time repository setting
 
-In the GitHub repository:
+In the GitHub repository, open **Settings > Pages** and select **GitHub Actions** under **Build and deployment > Source**. The [Deploy MkDocs site workflow](https://github.com/stratomarco/ai-training-ml-security/actions/workflows/deploy-docs.yml) uses the official Pages artifact and deployment actions. It does not push a `gh-pages` branch.
 
-1. Go to **Settings**.
-2. Go to **Pages**.
-3. Under **Build and deployment**, choose **Source: GitHub Actions**.
+## Before publishing
 
-After that, every push to `main` or the active development branch that changes course content, MkDocs configuration, requirements, scripts, or the deployment workflow can rebuild the website.
+Run the [final release gate](../COURSE_RELEASE_MANIFEST.md#release-status) from the repository root. It generates the MkDocs source, validates navigation, builds the site in strict mode, and runs the course lab checks.
 
-## How the workflow builds the site
+After a reviewed change reaches `main`, check that the deployment workflow succeeds and open the published site. Verify the Start Here path, Module 08 labs, and BrokenPilot links in the live site. A successful build alone does not confirm that the site is reachable.
 
-The workflow does not depend on hand-maintained copies under `docs/modules` or `docs/labs`.
+## Manual redeployment
 
-It runs:
-
-```bash
-python scripts/sync_mkdocs_content.py
-python scripts/check_repo_structure.py
-python scripts/check_no_em_dash.py
-mkdocs build
-```
-
-The sync step generates `.mkdocs-src/` from the canonical root-level content directories.
-
-## Local build check
-
-Windows PowerShell:
-
-```powershell
-python scripts\sync_mkdocs_content.py
-python scripts\check_repo_structure.py
-python scripts\check_no_em_dash.py
-mkdocs build
-```
-
-macOS or Linux:
-
-```bash
-python3 scripts/sync_mkdocs_content.py
-python3 scripts/check_repo_structure.py
-python3 scripts/check_no_em_dash.py
-mkdocs build
-```
-
-If the build succeeds locally, push the changes:
-
-```powershell
-git add .
-git commit -m "Update website content"
-git push
-```
-
-## Release flow
-
-For major content releases:
-
-1. Update the canonical content in the root-level course directories.
-2. Run the sync and checks locally.
-3. Commit and push.
-4. Verify the GitHub Actions deployment.
-5. Create a GitHub release tag only when the development line is reviewed and ready.
+If the source is already on `main` but the site needs to be republished, open the deployment workflow in GitHub Actions, select **Run workflow**, and choose `main`. No local `mkdocs gh-deploy` command is needed for this repository's publishing mode.
