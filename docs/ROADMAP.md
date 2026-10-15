@@ -1,6 +1,6 @@
 # Roadmap
 
-> The version headings below preserve the original plan. Some work landed in a different order or with narrower scope. For the delivered v1.2.0 scope, use the [current release notes](releases/v1.2.0.md). Future additions should be chosen from student and instructor feedback, not inferred from these historical version labels.
+> The version headings below preserve the original plan. Some work landed in a different order or with narrower scope. For the delivered v1.3.0 scope, use the [current release notes](releases/v1.3.0.md). Future additions should be chosen from student and instructor feedback, not inferred from these historical version labels.
 
 This roadmap describes work after the first complete curriculum release.
 

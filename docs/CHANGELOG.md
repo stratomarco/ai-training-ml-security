@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.0 - Offline supply-chain labs and course website
+
+This release adds optional Mock Hub and artifact-promotion exercises, strengthens local Docker and CI validation, and publishes the course website. The canonical [project changelog](../CHANGELOG.md) and [release notes](releases/v1.3.0.md) record the scope and limits.
+
 ## v1.2.0 - BrokenPilot-first teaching release
 
 This release adds the guided local BrokenPilot path and optional Qwen3 comparison, clarifies the runnable and paper-design boundaries, and records first-install corrections. The canonical [project changelog](../CHANGELOG.md) and [release notes](releases/v1.2.0.md) carry the full scope and validation limits.

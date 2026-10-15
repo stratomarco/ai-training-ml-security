@@ -588,6 +588,7 @@ nav:
       - "Delivery Guide": instructor/delivery-guide.md
       - "Executive Communication Guide": instructor/executive-communication-guide.md
       - "Facilitation Notes": instructor/facilitation-notes.md
+      - "Field Pilot V1.3.0": instructor/field-pilot-v1.3.0.md
       - "Finding Rewrite Facilitation Guide": instructor/finding-rewrite-facilitation-guide.md
       - "Grading Calibration Guide": instructor/grading-calibration-guide.md
       - "Lab Troubleshooting And Reset Guide": instructor/lab-troubleshooting-and-reset-guide.md
@@ -616,6 +617,7 @@ nav:
       - "V1.1 Dev Release Cleanup Phase8": release-notes/v1.1-dev-release-cleanup-phase8.md
       - "V1.1 Dev Worklog": release-notes/v1.1-dev-worklog.md
       - "V1.2.0": release-notes/v1.2.0.md
+      - "V1.3.0": release-notes/v1.3.0.md
   - "Project":
       - "Version": VERSION.md
       - "Changelog": CHANGELOG.md

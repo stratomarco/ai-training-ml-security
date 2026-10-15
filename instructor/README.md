@@ -50,6 +50,7 @@ Use these guides when planning timing, delivery format, student support, and deb
 - [`lab-troubleshooting-and-reset-guide.md`](lab-troubleshooting-and-reset-guide.md)
 - [`executive-communication-guide.md`](executive-communication-guide.md)
 - [`finding-rewrite-facilitation-guide.md`](finding-rewrite-facilitation-guide.md)
+- [`field-pilot-v1.3.0.md`](field-pilot-v1.3.0.md) for first-time student and instructor feedback on the new release
 
 ## Release-readiness material
 

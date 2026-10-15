@@ -87,6 +87,8 @@ http://127.0.0.1:8000
 
 GitHub Pages deployment is configured through `.github/workflows/deploy-docs.yml`. In GitHub, set **Settings > Pages > Source** to **GitHub Actions**.
 
+[Browse the published course](https://stratomarco.github.io/ai-training-ml-security/).
+
 ## Source of truth
 
 Canonical course content lives in the root-level content directories. MkDocs source is generated into `.mkdocs-src/` before preview or deployment. See `SOURCE_OF_TRUTH.md`.
@@ -124,11 +126,11 @@ The root-level `modules/`, `labs/`, `course-templates/`, `instructor/`, and `ass
 
 ## Development status
 
-Current release: v1.2.0.
+Current release: v1.3.0.
 
 The v1 release is the first stable teaching release. It includes the full 12-module course, validated runnable labs, instructor guidance, assessment material, MkDocs strict navigation, and release-quality usage and licensing guidance.
 
-The current v1.2.0 release includes:
+The supported release path includes:
 
 1. BrokenPilot-primary lab validation, with DVAIA retained only as optional external practice.
 2. BrokenPilot runnable MVP with retrieval, tool-calling, memory poisoning, control toggles, and tests.
@@ -138,6 +140,8 @@ The current v1.2.0 release includes:
 6. Single-source-of-truth MkDocs generation workflow.
 7. A guided BrokenPilot browser lab, a ticket-to-agent exercise, and an optional local Qwen3 comparison layer.
 8. First-install corrections for Python 3.12, control-profile restarts, lab routing, and prototype-versus-paper-design scope.
+9. Optional offline Module 08 exercises for a fake Mock Hub credential boundary and an artifact-promotion decision.
+10. A published course website built and deployed from reviewed `main` changes.
 
 ## Lab philosophy
 
@@ -160,7 +164,7 @@ See `LICENSE.md`, `LICENSE-CONTENT.md`, `LICENSE-CODE.md`, and `COMMERCIAL-LICEN
 
 ## Course status
 
-Current release: v1.2.0.
+Current release: v1.3.0.
 
 | Module | Status | Notes |
 |---|---|---|

@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.3.0 - Offline supply-chain labs and course website
+
+- Added the optional BrokenPilot Mock Hub exercise with fake registry credentials, in-memory revision promotion, diagnostic redaction, and least-privilege profiles.
+- Added an optional offline artifact-promotion gate that hashes fake artifacts and compares their metadata with a separate approval policy. It does not deserialize models or implement signatures.
+- Limited the BrokenPilot Docker build context and dependencies to runtime files, tightened its local runtime defaults, and added Docker and Windows artifact checks to CI.
+- Published the MkDocs site through GitHub Pages Actions, with a strict build on pushes to `main` and a live-site verification step for maintainers.
+- Kept the 12-module course, deterministic BrokenPilot path, optional Qwen layer, and feedback-only rubrics.
+
+See [release notes](release-notes/v1.3.0.md) for validation and remaining limits.
+
 ## v1.2.0 - BrokenPilot-first teaching release
 
 - Made BrokenPilot the primary local LLM, RAG, agent, privacy, red-team, and capstone lab with a guided browser path, ticket-to-agent exercise, resettable fake data, and explicit vulnerable/controlled profiles.

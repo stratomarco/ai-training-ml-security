@@ -1,8 +1,8 @@
 # Course Release Manifest
 
-Version: `v1.2.0`
+Version: `v1.3.0`
 
-This manifest records the stable teaching-release baseline for the AI Training - ML Security course. See [v1.2.0 release notes](release-notes/v1.2.0.md) for changes and validation limits.
+This manifest records the stable teaching-release baseline for the AI Training - ML Security course. See [v1.3.0 release notes](release-notes/v1.3.0.md) for changes and validation limits.
 
 ## Release status
 
@@ -12,7 +12,7 @@ The release can be tagged from a clean, reviewed `main` commit after the full ga
 python scripts/run_final_release_gate.py
 ```
 
-The gate includes the MkDocs strict build, BrokenPilot tests, and toy classifier tests. The labs can also be checked separately:
+The gate includes the MkDocs strict build, BrokenPilot tests, toy classifier tests, and the offline artifact-promotion tests. The labs can also be checked separately:
 
 ```powershell
 cd labs/brokenpilot/prototype-app
@@ -34,6 +34,8 @@ The supported hands-on targets are:
 - `labs/toy-ml-attacks/toy-classifier-app/`
 - `labs/mlops-supply-chain-labs/evidence-pack-review/`
 
+The optional Module 08 extensions are `labs/brokenpilot/prototype-app/MOCK_HUB_LAB.md` and `labs/mlops-supply-chain-labs/artifact-promotion/artifact-promotion-lab.md`. Both use fake local data. The artifact gate and Mock Hub are separate simulations and do not share state or enforce each other's decisions.
+
 BrokenPilot is the primary capstone path. Optional or historical lab folders are retained only when they provide useful context and are not required for the release-candidate student path.
 
 ## Validation baseline
@@ -47,6 +49,8 @@ Stable-release quality gates:
 - MkDocs builds in strict mode
 - BrokenPilot tests pass
 - toy classifier tests pass
+- artifact-promotion tests pass
+- GitHub Pages deployment succeeds and the published student route is reachable
 
 ## Known non-blocking note
 

@@ -1,17 +1,17 @@
 # Roadmap
 
-> The version headings below preserve the original plan. Work landed in a different order and with narrower scope in places. For the delivered v1.2.0 scope, use the [current release notes](release-notes/v1.2.0.md). Choose future changes from student and instructor feedback rather than treating these historical labels as commitments.
+> The version headings below preserve the original plan. Work landed in a different order and with narrower scope in places. For the delivered v1.3.0 scope, use the [current release notes](release-notes/v1.3.0.md). Choose future changes from student and instructor feedback rather than treating these historical labels as commitments.
 
 This roadmap describes work after the first complete curriculum release.
 
-## Current `dev` work after v1.2.0
+## Delivered in v1.3.0
 
-The next course iteration adds two optional, offline Module 08 exercises while keeping its static evidence review as the main path:
+This release adds two optional, offline Module 08 exercises while keeping its static evidence review as the main path:
 
 1. BrokenPilot Mock Hub: a fake worker credential exposed by diagnostics can change only an in-memory model revision. Compare diagnostic redaction and read-only worker scope.
 2. Artifact-promotion gate: compare synthetic approved, tampered, and unapproved files against a simulated protected approval policy. The exercise reads and hashes bytes; it does not load model artifacts.
 
-Release checks should cover the vulnerable and controlled Hub paths, artifact decisions, existing BrokenPilot behavior, and the generated course website. Instructor guidance must identify the limits of both simulations. Rubrics remain optional.
+Release checks cover the vulnerable and controlled Hub paths, artifact decisions, existing BrokenPilot behavior, and the generated course website. Instructor guidance identifies the limits of both simulations. Rubrics remain optional. Independent student and instructor feedback remains to be collected.
 
 Defer live checkpoint deserialization, malicious pickle execution, external model-hub access, and an automated red-team framework. A separate bounded pilot should establish a safe execution environment and a clear teaching advantage before adding them. The offline gate demonstrates approval logic; it does not implement signatures or prove artifact safety.
 
