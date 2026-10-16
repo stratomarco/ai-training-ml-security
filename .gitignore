@@ -19,3 +19,4 @@ Thumbs.db
 labs/toy-ml-attacks/toy-classifier-app/model.pkl
 labs/toy-ml-attacks/toy-classifier-app/*.pkl
 labs/brokenpilot/prototype-app/qwen-preflight*.json
+.local/

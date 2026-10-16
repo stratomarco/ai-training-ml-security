@@ -1,0 +1,101 @@
+name: aigoat-mcp-course
+
+services:
+  data-permissions:
+    image: aigoat-mcp-backend:v2.0
+    network_mode: none
+    entrypoint: ["/bin/sh", "-ec", "chown -R 10001:10001 /app/data"]
+    volumes:
+      - type: volume
+        source: db_data
+        target: /app/data
+    read_only: true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+    security_opt:
+      - no-new-privileges:true
+
+  backend:
+    image: aigoat-mcp-backend:v2.0
+    user: "10001:10001"
+    networks:
+      - lab_internal
+    depends_on:
+      data-permissions:
+        condition: service_completed_successfully
+    entrypoint:
+      - /bin/sh
+      - -ec
+      - |
+        python -m alembic upgrade head
+        if [ ! -e /app/data/.course-seeded ]; then
+          python -m scripts.seed
+          touch /app/data/.course-seeded
+        fi
+        python -m scripts.seed --sync-support
+        python -m scripts.seed --sync-challenges
+        exec python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+    environment:
+      CONFIG_PATH: /app/config/config.yml
+      PYTHONDONTWRITEBYTECODE: "1"
+      HOME: /tmp
+    volumes:
+      - type: bind
+        source: ${AIGOAT_CONFIG_PATH:?Set AIGOAT_CONFIG_PATH to the generated local config}
+        target: /app/config/config.yml
+        read_only: true
+      - type: volume
+        source: db_data
+        target: /app/data
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 128
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://127.0.0.1:8000/api/products/', timeout=5).raise_for_status()"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 45s
+
+  frontend:
+    image: aigoat-mcp-frontend:v2.0
+    networks:
+      - lab_internal
+      - web
+    ports:
+      - target: 3000
+        published: 3000
+        host_ip: 127.0.0.1
+        protocol: tcp
+    depends_on:
+      backend:
+        condition: service_healthy
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx:rw,nosuid,size=16m
+      - /var/run:rw,nosuid,size=4m
+      - /tmp:rw,noexec,nosuid,size=16m
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 64
+
+networks:
+  lab_internal:
+    internal: true
+  web:
+
+volumes:
+  db_data:

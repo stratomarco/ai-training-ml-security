@@ -98,6 +98,7 @@ not_in_nav: |
   /instructor/release-readiness/release-process-docs/VALIDATION_BASELINE.md
   /instructor/release-readiness/release-process-docs/VOICE_POLISH_PASS_REPORT.md
   /instructor/release-readiness/release-process-docs/project-backlog.md
+  /instructor/release-readiness/remediation-2026-10-16.md
   /instructor/release-readiness/student-facing-cleanup-checklist.md
   /instructor/release-readiness/student-walkthrough-validation-2026-10-15.md
   /lab-setup/brokenpilot-standalone-path.md
@@ -391,6 +392,7 @@ nav:
           - "Weak AI Red Team Scope": labs/ai-red-team-labs/worked-examples/weak-ai-red-team-scope.md
       - "AIGoat Guides":
           - "Mcp Trust Boundary Review": labs/aigoat-guides/mcp-trust-boundary-review.md
+          - "Windows Mcp Setup": labs/aigoat-guides/windows-mcp-setup.md
       - "Architecture Risk Review Labs":
           - "Overview": labs/architecture-risk-review-labs/README.md
           - "Docops Assistant Architecture Review": labs/architecture-risk-review-labs/docops-assistant-architecture-review.md
