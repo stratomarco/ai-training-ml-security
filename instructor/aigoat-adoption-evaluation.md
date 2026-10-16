@@ -1,6 +1,6 @@
 # AIGoat adoption evaluation
 
-Status: **two MCP exercises and a contained Windows setup passed on one maintainer host; independent learner and other-platform pilots remain open**. This is an instructor planning note. BrokenPilot remains the primary local LLM, RAG, agent, and capstone target. The current 40-hour path does not require AIGoat.
+Status: **two MCP exercises and a contained Windows setup passed on one maintainer host, including an isolated fresh-state replay; independent learner and other-platform pilots remain open**. This is an instructor planning note. BrokenPilot remains the primary local LLM, RAG, agent, and capstone target. The current 40-hour path does not require AIGoat.
 
 ## Why consider it
 
@@ -72,3 +72,5 @@ This removes the Windows media and Docker integration blockers for the selected 
 ## Instructor and student role simulation, 16 October 2026
 
 The [role simulation](release-readiness/aigoat-role-simulation-2026-10-16.md) followed the course's optional Windows route with a regular demo user, completed both L0/L1 comparisons in the browser, wrote short student journal entries, and reviewed them as a separate course instructor persona. It found a stale-session sign-in problem and a navigation ambiguity between AIGoat's CTF and MCP labs. The Windows guide now gives the direct route and recovery steps. This is a maintainer-operated simulation on a host with cached images, not an independent learner or clean first install. The optional status and remaining learner/platform gates are unchanged.
+
+The same [record](release-readiness/aigoat-role-simulation-2026-10-16.md#isolated-end-to-end-follow-up-16-october-2026) now includes a second run from a separate pinned source checkout, new course checkout, new configuration, and new database volume. Both browser exercises passed at L0 and L1; restart preserved the signed-in learner and recorded attempt, and final teardown closed the local listener. Docker's dependency cache was still available. This strengthens the Windows workflow evidence without replacing an independent learner or cold-build pilot.

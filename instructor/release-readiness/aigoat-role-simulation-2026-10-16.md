@@ -38,3 +38,20 @@ For a real class, ask the learner to attach a short redacted transcript or scree
 ## Course fit and remaining gates
 
 Keep AIGoat optional after the required BrokenPilot work. These two cases add MCP tool-contract and credential-distribution boundaries without duplicating BrokenPilot's primary tool-authorization lesson. The Windows guide now names the direct menu path, explicit sign-in, reset sequence, and stale-session recovery. The large initial image build, loosely bounded upstream dependencies, and Windows-only supported launcher remain delivery costs. A fresh independent learner on a clean host and any other operating system still need their own pilot before promising a required or cross-platform live lab.
+
+## Isolated end-to-end follow-up, 16 October 2026
+
+I repeated the course route with a new course checkout at `b5a0f7a58cb506c0795d3b8820f0bb3405065915`, a separate AIGoat source checkout at the pinned `e1c538badb93c6c1c2307096ab5d709a9ee0fe55`, a new ignored local configuration, and a separately named Docker project and database volume. The Windows launcher rebuilt both images from that source. Docker was allowed to reuse cached dependency layers, so this checks a fresh source, configuration, and database on the same host, not a cold build or first-time download. No Ollama service or model was needed. The initial rebuild and start took about 23 seconds on this cached host.
+
+The browser initially displayed the prior generic **User** session state, even against the new database. Following the revised guide, I logged out, signed in as the documented regular demo user `alice`, opened **Console → MCP**, and completed both selected exercises without using AIGoat flags or scores. The fresh-state observations matched the earlier run:
+
+| Exercise | Vulnerable L0 after reset | Protected L1 after reset |
+|---|---|---|
+| MCP03-2 | A second listing changed `lookup_ticket` from customer-visible status to a full ticket record. The repeated call returned extra staff-only fields. | The initial call returned customer-visible status. After the changed listing, the repeated call was denied with `tool 'lookup_ticket' description does not match the pin`. |
+| MCP07-1 | Support diagnostics exposed a catalog-owned training credential. Using that decoy value in the catalog's `staff_prices` tool returned the mock staff price list. | Support diagnostics reported `CATALOG_STAFF_TOKEN: (not provided)`. |
+
+The backend was healthy, had no host port, and ran as UID/GID `10001` with a read-only root filesystem, all Linux capabilities dropped, and `no-new-privileges`. Its only network was the internal lab network. The frontend published `127.0.0.1:3000`, and the Windows listener check also showed only `127.0.0.1`. On the restarted storefront, all 28 visible images had nonzero natural width. These checks cover the tested stack, not every possible container or browser state.
+
+I stopped the isolated stack, confirmed port 3000 closed while its database volume remained, and restarted it without a rebuild. The backend became healthy again in about 11 seconds. Reloading the lab page restored `alice` and stated that earlier exchanges in the attempt remained recorded, although the visible interaction list was empty after reload. I then stopped the stack and confirmed no isolated container or port 3000 listener remained. The test-only source checkouts, ignored configuration, and database volume remain available for reproduction; no lab service is running.
+
+Riley's review remains **acceptable optional practice evidence**. This follow-up increases confidence in the documented Windows learner route and its restart behavior. It is still one maintainer operating both personas on one host with Docker cache. A genuinely independent first-time student, a cold dependency build, and non-Windows delivery have not been validated.
