@@ -39,6 +39,7 @@ def main() -> None:
     run([py, "scripts/sync_mkdocs_content.py"])
     run([py, "scripts/generate_mkdocs_nav.py"])
     run([py, "-m", "mkdocs", "build", "--strict"])
+    run([py, "scripts/check_mkdocs_edit_links.py"])
 
     run([py, "-m", "pytest"], cwd=ROOT / "labs" / "brokenpilot" / "prototype-app")
     run([py, "-m", "pytest"], cwd=ROOT / "labs" / "toy-ml-attacks" / "toy-classifier-app")

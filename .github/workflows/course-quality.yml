@@ -44,6 +44,9 @@ jobs:
       - name: MkDocs strict build
         run: python -m mkdocs build --strict
 
+      - name: Verify page edit links
+        run: python scripts/check_mkdocs_edit_links.py
+
       - name: Offline artifact-promotion gate tests
         run: python -m unittest discover -s labs/mlops-supply-chain-labs/artifact-promotion -p 'test_*.py'
 

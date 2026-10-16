@@ -124,6 +124,8 @@ ai-training-ml-security/
 
 The root-level `modules/`, `labs/`, `course-templates/`, `instructor/`, and `assessments/` directories are the source of truth. The `docs/` directory contains only website-only pages such as the landing page, start-here material, lab setup notes, and release notes. Generated MkDocs source is built into `.mkdocs-src/` by `scripts/sync_mkdocs_content.py` and is ignored by Git.
 
+The site build maps each page's edit link back to its original file in the repository; `scripts/check_mkdocs_edit_links.py` verifies those links before deployment.
+
 ## Development status
 
 Current release: v1.3.0.

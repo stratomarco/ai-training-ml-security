@@ -38,6 +38,9 @@ theme:
 plugins:
   - search
 
+hooks:
+  - scripts/mkdocs_source_links.py
+
 markdown_extensions:
   - admonition
   - attr_list
