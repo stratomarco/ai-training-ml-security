@@ -92,6 +92,8 @@ def rel(path: Path) -> str:
 
 def title_from_name(name: str) -> str:
     stem = Path(name).stem
+    if stem.startswith("40-hour-"):
+        return "40-Hour " + title_from_name(stem[len("40-hour-"):])
     stem = stem.replace("README", "Overview")
     stem = re.sub(r"^\d+[-_]", "", stem)
     stem = stem.replace("-", " ").replace("_", " ")

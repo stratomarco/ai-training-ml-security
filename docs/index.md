@@ -6,6 +6,8 @@ This site is the browsable learning portal for the AI Training  -  ML Security c
 
 ## Start here
 
+- [40-hour course map](start-here/40-hour-course-map.md)
+- [40-hour student workbook](start-here/40-hour-student-workbook.md)
 - [Course Overview](start-here/course-overview.md)
 - [Prerequisites](start-here/prerequisites.md)
 - [How to Use This Course](start-here/how-to-use-this-course.md)
