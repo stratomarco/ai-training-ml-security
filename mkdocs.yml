@@ -38,6 +38,9 @@ theme:
 plugins:
   - search
 
+hooks:
+  - scripts/mkdocs_source_links.py
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -95,7 +98,9 @@ not_in_nav: |
   /instructor/release-readiness/release-process-docs/VALIDATION_BASELINE.md
   /instructor/release-readiness/release-process-docs/VOICE_POLISH_PASS_REPORT.md
   /instructor/release-readiness/release-process-docs/project-backlog.md
+  /instructor/release-readiness/remediation-2026-10-16.md
   /instructor/release-readiness/student-facing-cleanup-checklist.md
+  /instructor/release-readiness/student-walkthrough-validation-2026-10-15.md
   /lab-setup/brokenpilot-standalone-path.md
   /lab-setup/dvaia-fallback-decision-guide.md
   /lab-setup/dvaia-module-mapping.md
@@ -124,8 +129,8 @@ nav:
       - "Glossary": glossary.md
       - "Published Course View": PUBLISHED_COURSE_VIEW.md
       - "Start Here":
-          - "Hour Course Map": start-here/40-hour-course-map.md
-          - "Hour Student Workbook": start-here/40-hour-student-workbook.md
+          - "40-Hour Course Map": start-here/40-hour-course-map.md
+          - "40-Hour Student Workbook": start-here/40-hour-student-workbook.md
           - "Content Strategy": start-here/content-strategy.md
           - "Course Overview": start-here/course-overview.md
           - "Cross Platform Setup": start-here/cross-platform-setup.md
@@ -385,6 +390,9 @@ nav:
           - "Brokenpilot Attack Chain Lab": labs/ai-red-team-labs/brokenpilot-attack-chain-lab.md
           - "Strong AI Red Team Scope": labs/ai-red-team-labs/worked-examples/strong-ai-red-team-scope.md
           - "Weak AI Red Team Scope": labs/ai-red-team-labs/worked-examples/weak-ai-red-team-scope.md
+      - "AIGoat Guides":
+          - "Mcp Trust Boundary Review": labs/aigoat-guides/mcp-trust-boundary-review.md
+          - "Windows Mcp Setup": labs/aigoat-guides/windows-mcp-setup.md
       - "Architecture Risk Review Labs":
           - "Overview": labs/architecture-risk-review-labs/README.md
           - "Docops Assistant Architecture Review": labs/architecture-risk-review-labs/docops-assistant-architecture-review.md
@@ -552,10 +560,10 @@ nav:
       - "Vector Database Authorization Checklist": course-templates/vector-database-authorization-checklist.md
   - "Assessments":
       - "Overview": assessments/README.md
-      - "Hour Checkpoint Rubric": assessments/40-hour-checkpoint-rubric.md
-      - "Hour Course Assessment Plan": assessments/40-hour-course-assessment-plan.md
-      - "Hour Daily Checkpoints": assessments/40-hour-daily-checkpoints.md
-      - "Hour Deliverables Map": assessments/40-hour-deliverables-map.md
+      - "40-Hour Checkpoint Rubric": assessments/40-hour-checkpoint-rubric.md
+      - "40-Hour Course Assessment Plan": assessments/40-hour-course-assessment-plan.md
+      - "40-Hour Daily Checkpoints": assessments/40-hour-daily-checkpoints.md
+      - "40-Hour Deliverables Map": assessments/40-hour-deliverables-map.md
       - "AI Red Team Grading": assessments/ai-red-team-grading.md
       - "Anchor Based Grading Guide": assessments/anchor-based-grading-guide.md
       - "Brokenpilot Capstone Final Rubric": assessments/brokenpilot-capstone-final-rubric.md
@@ -580,9 +588,10 @@ nav:
       - "Voice And Cohesion Review Checklist": assessments/voice-and-cohesion-review-checklist.md
   - "Instructor":
       - "Overview": instructor/README.md
-      - "Hour Delivery Plan": instructor/40-hour-delivery-plan.md
-      - "Hour Module Delivery Profiles": instructor/40-hour-module-delivery-profiles.md
-      - "Hour Student Experience Runbook": instructor/40-hour-student-experience-runbook.md
+      - "40-Hour Delivery Plan": instructor/40-hour-delivery-plan.md
+      - "40-Hour Module Delivery Profiles": instructor/40-hour-module-delivery-profiles.md
+      - "40-Hour Student Experience Runbook": instructor/40-hour-student-experience-runbook.md
+      - "AIGoat Adoption Evaluation": instructor/aigoat-adoption-evaluation.md
       - "Brokenpilot Guide": instructor/brokenpilot-guide.md
       - "Delivery Formats": instructor/delivery-formats.md
       - "Delivery Guide": instructor/delivery-guide.md

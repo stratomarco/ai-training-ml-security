@@ -14,6 +14,8 @@ Module 07 remains the reference lab standard. BrokenPilot demonstrates the tool 
 
 - Separate model intent from system authorization
 - Design a tool broker that enforces target-object authorization
+- Optional [AIGoat MCP trust-boundary source review](../../labs/aigoat-guides/mcp-trust-boundary-review.md): compare tool-definition pinning and credential scoping in two independently maintained training cases. No AIGoat installation is required for the source review.
+- Optional [contained Windows AIGoat MCP setup](../../labs/aigoat-guides/windows-mcp-setup.md): run the same two comparisons locally if you want live traces. The source review remains the no-install route.
 
 ## Suggested practice deliverable
 

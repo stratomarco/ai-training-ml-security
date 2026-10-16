@@ -1,0 +1,21 @@
+app:
+  debug: false
+  secret_key: "__GENERATED_SECRET__"
+  allowed_origins:
+    - "http://127.0.0.1:3000"
+    - "http://localhost:3000"
+database:
+  url: "sqlite+aiosqlite:////app/data/aigoat.db"
+ollama:
+  base_url: "http://127.0.0.1:9"
+  model: "mistral"
+rag:
+  enabled: false
+  chroma_path: "/app/data/chroma_db"
+defense:
+  profiles_path: "/app/config/defense_profiles.yml"
+taxonomy:
+  frameworks_path: "/app/config/frameworks"
+  labs_path: "/app/config/labs"
+mcp:
+  registry_path: "/app/config/mcp_servers.yml"
