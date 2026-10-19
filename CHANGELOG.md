@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.4.0 - Optional AIGoat MCP extension and learner delivery
+
+- Added an optional, credited AIGoat v2.0 source-review exercise for MCP tool redefinition and credential scoping after the required BrokenPilot path.
+- Added a pinned Windows and Docker Desktop launcher for the same two exercises. It keeps the backend off host ports, publishes the frontend only on loopback, and applies a read-only filesystem, non-root user, dropped capabilities, and `no-new-privileges` to the backend.
+- Improved the 40-hour student workbook with direct module and lab routes, and added ready-to-share participant and observation materials for a future independent pilot.
+- Added source-aware page edit links with a build-time check that every published course page resolves to a real repository file.
+- Added a Docker fallback for the toy classifier and updated its test dependency after repository security review.
+- Kept AIGoat optional. BrokenPilot remains the required LLM, RAG, agent, privacy, red-team, and capstone target.
+
+See [release notes](release-notes/v1.4.0.md) for validation, licensing boundaries, and remaining limits.
+
 ## v1.3.0 - Offline supply-chain labs and course website
 
 - Added the optional BrokenPilot Mock Hub exercise with fake registry credentials, in-memory revision promotion, diagnostic redaction, and least-privilege profiles.

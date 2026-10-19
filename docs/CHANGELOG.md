@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.4.0 - Optional AIGoat MCP extension and learner delivery
+
+This release adds a credited, optional AIGoat v2.0 source review and contained Windows route for two MCP trust-boundary exercises. It also improves 40-hour learner navigation, verifies page edit links, and prepares field pilot materials. The canonical [project changelog](../CHANGELOG.md) and [release notes](releases/v1.4.0.md) record the scope and limits.
+
 ## v1.3.0 - Offline supply-chain labs and course website
 
 This release adds optional Mock Hub and artifact-promotion exercises, strengthens local Docker and CI validation, and publishes the course website. The canonical [project changelog](../CHANGELOG.md) and [release notes](releases/v1.3.0.md) record the scope and limits.

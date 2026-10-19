@@ -135,7 +135,7 @@ The goal is to develop complete security judgment, beyond an attack demonstratio
 
 ## Current status
 
-Current release: **v1.1.0**. Modules 01–12 have teaching packages. Current improvement work focuses on the local BrokenPilot experience, clearer setup, and practical evidence quality for self-study and instructor-led delivery.
+Current release: **v1.4.0**. Modules 01–12 have teaching packages. Current improvement work focuses on maintaining the tested BrokenPilot path, clearer delivery, and bounded optional extensions that add a distinct learning outcome.
 
 ## Current improvement priorities
 

@@ -1,6 +1,6 @@
 # Roadmap
 
-> The version headings below preserve the original plan. Work landed in a different order and with narrower scope in places. For the delivered v1.3.0 scope, use the [current release notes](release-notes/v1.3.0.md). Choose future changes from student and instructor feedback rather than treating these historical labels as commitments.
+> The version headings below preserve the original plan. Work landed in a different order and with narrower scope in places. For the delivered v1.4.0 scope, use the [current release notes](release-notes/v1.4.0.md). Choose future changes from student and instructor feedback rather than treating these historical labels as commitments.
 
 This roadmap describes work after the first complete curriculum release.
 
@@ -15,9 +15,9 @@ Release checks cover the vulnerable and controlled Hub paths, artifact decisions
 
 Defer live checkpoint deserialization, malicious pickle execution, external model-hub access, and an automated red-team framework. A separate bounded pilot should establish a safe execution environment and a clear teaching advantage before adding them. The offline gate demonstrates approval logic; it does not implement signatures or prove artifact safety.
 
-## Candidate external practice: AIGoat
+## Delivered as optional practice in v1.4.0: AIGoat
 
-[AIGoat](https://github.com/AISecurityConsortium/AIGoat) adds two useful MCP trust-boundary examples beyond BrokenPilot. The [instructor adoption evaluation](instructor/aigoat-adoption-evaluation.md) records a contained v2.0 pilot of MCP03-2 and MCP07-1 at vulnerable and defended levels. An [optional Module 07 source-review exercise](labs/aigoat-guides/mcp-trust-boundary-review.md) is available without installing the app. A reproducible, safe first-time student setup across platforms remains an open gate; this is not part of the required course or the v1.3.0 learner pilot. Defer the scripted ASI07-1 handoff because its signature check does not establish authentic provenance. BrokenPilot remains the primary local target.
+[AIGoat](https://github.com/AISecurityConsortium/AIGoat) adds two useful MCP trust-boundary examples beyond BrokenPilot. The [instructor adoption evaluation](instructor/aigoat-adoption-evaluation.md) records a contained v2.0 pilot of MCP03-2 and MCP07-1 at vulnerable and defended levels. An [optional Module 07 source-review exercise](labs/aigoat-guides/mcp-trust-boundary-review.md) is available without installing the app, and Windows learners can use the contained live route. A reproducible first-time student setup across platforms remains an open gate, so this is not part of the required course. Defer the scripted ASI07-1 handoff because its signature check does not establish authentic provenance. BrokenPilot remains the primary local target.
 
 ## v1.0  -  Complete Markdown curriculum
 

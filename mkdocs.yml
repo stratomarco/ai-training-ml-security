@@ -401,11 +401,12 @@ nav:
           - "Weak Docops Architecture Risk Review": labs/architecture-risk-review-labs/worked-examples/weak-docops-architecture-risk-review.md
       - "Brokenpilot":
           - "Overview": labs/brokenpilot/README.md
+          - "Capstone Checkpoints": labs/brokenpilot/CAPSTONE_CHECKPOINTS.md
+          - "Capstone Final Report Current Path": labs/brokenpilot/CAPSTONE_FINAL_REPORT_CURRENT_PATH.md
+          - "Standalone Core Lab Path": labs/brokenpilot/STANDALONE_CORE_LAB_PATH.md
           - "Architecture": labs/brokenpilot/architecture.md
           - "Attack Paths": labs/brokenpilot/attack-paths.md
           - "Capstone Assessment Scope": labs/brokenpilot/capstone-assessment-scope.md
-          - "Capstone Checkpoints": labs/brokenpilot/CAPSTONE_CHECKPOINTS.md
-          - "Capstone Final Report Current Path": labs/brokenpilot/CAPSTONE_FINAL_REPORT_CURRENT_PATH.md
           - "Data Model": labs/brokenpilot/data-model.md
           - "Evidence Log Guide": labs/brokenpilot/evidence-log-guide.md
           - "Final Presentation Guide": labs/brokenpilot/final-presentation-guide.md
@@ -413,9 +414,9 @@ nav:
           - "Implementation Notes": labs/brokenpilot/implementation-notes.md
           - "Instructor Solution": labs/brokenpilot/instructor-solution.md
           - "Module Mapping": labs/brokenpilot/module-mapping.md
+          - "Overview": labs/brokenpilot/prototype/README.md
           - "Architecture": labs/brokenpilot/prototype/architecture.md
           - "Mock LLM Mode": labs/brokenpilot/prototype/mock-llm-mode.md
-          - "Overview": labs/brokenpilot/prototype/README.md
           - "Security And Safety": labs/brokenpilot/prototype/security-and-safety.md
           - "Student Lab Flow": labs/brokenpilot/prototype/student-lab-flow.md
           - "Direct Prompt Injection Lab": labs/brokenpilot/prototype-app/DIRECT_PROMPT_INJECTION_LAB.md
@@ -432,17 +433,16 @@ nav:
           - "Roles": labs/brokenpilot/roles.md
           - "Scenario": labs/brokenpilot/scenario.md
           - "Secure Reference Architecture": labs/brokenpilot/secure-reference-architecture.md
-          - "Standalone Core Lab Path": labs/brokenpilot/STANDALONE_CORE_LAB_PATH.md
           - "Student Brief": labs/brokenpilot/student-brief.md
           - "Tools": labs/brokenpilot/tools.md
           - "Vulnerabilities": labs/brokenpilot/vulnerabilities.md
+          - "Overview": labs/brokenpilot/worked-examples/README.md
           - "Current Complete Final Report": labs/brokenpilot/worked-examples/current-complete-final-report.md
           - "Current Final Report Evidence Map": labs/brokenpilot/worked-examples/current-final-report-evidence-map.md
           - "Current Final Report Review Guide": labs/brokenpilot/worked-examples/current-final-report-review-guide.md
           - "Finding Rewrite Before After": labs/brokenpilot/worked-examples/finding-rewrite-before-after.md
           - "Gold Standard Final Report Example": labs/brokenpilot/worked-examples/gold-standard-final-report-example.md
           - "Instructor Notes Final Report Examples": labs/brokenpilot/worked-examples/instructor-notes-final-report-examples.md
-          - "Overview": labs/brokenpilot/worked-examples/README.md
           - "Strong Evidence Log Example": labs/brokenpilot/worked-examples/strong-evidence-log-example.md
           - "Strong Executive Readout Example": labs/brokenpilot/worked-examples/strong-executive-readout-example.md
           - "Strong Executive Risk Memo Example": labs/brokenpilot/worked-examples/strong-executive-risk-memo-example.md
@@ -471,8 +471,8 @@ nav:
           - "Overview": labs/mlops-supply-chain-labs/README.md
           - "Artifact Promotion Lab": labs/mlops-supply-chain-labs/artifact-promotion/artifact-promotion-lab.md
           - "Broken ML Pipeline Lab": labs/mlops-supply-chain-labs/broken-ml-pipeline-lab.md
-          - "Model.pkl.overview": labs/mlops-supply-chain-labs/evidence-pack-review/artifacts/model.pkl.README.md
           - "Overview": labs/mlops-supply-chain-labs/evidence-pack-review/README.md
+          - "Model.pkl.overview": labs/mlops-supply-chain-labs/evidence-pack-review/artifacts/model.pkl.README.md
           - "MLOps Evidence Pack Review Lab": labs/mlops-supply-chain-labs/mlops-evidence-pack-review-lab.md
           - "Model Artifact Provenance Lab": labs/mlops-supply-chain-labs/model-artifact-provenance-lab.md
           - "Complete MLOps Evidence Pack Model Answer": labs/mlops-supply-chain-labs/worked-examples/complete-mlops-evidence-pack-model-answer.md
@@ -565,6 +565,7 @@ nav:
       - "40-Hour Course Assessment Plan": assessments/40-hour-course-assessment-plan.md
       - "40-Hour Daily Checkpoints": assessments/40-hour-daily-checkpoints.md
       - "40-Hour Deliverables Map": assessments/40-hour-deliverables-map.md
+      - "Final Assessment Readiness Review": assessments/FINAL_ASSESSMENT_READINESS_REVIEW.md
       - "AI Red Team Grading": assessments/ai-red-team-grading.md
       - "Anchor Based Grading Guide": assessments/anchor-based-grading-guide.md
       - "Brokenpilot Capstone Final Rubric": assessments/brokenpilot-capstone-final-rubric.md
@@ -573,7 +574,6 @@ nav:
       - "Capstone Grading": assessments/capstone-grading.md
       - "Concrete Controls Assessment": assessments/concrete-controls-assessment.md
       - "Executive Risk Memo Rubric": assessments/executive-risk-memo-rubric.md
-      - "Final Assessment Readiness Review": assessments/FINAL_ASSESSMENT_READINESS_REVIEW.md
       - "Finding Quality Rubric": assessments/finding-quality-rubric.md
       - "Finding Rewrite Exercise": assessments/finding-rewrite-exercise.md
       - "Grading Calibration Exercise": assessments/grading-calibration-exercise.md
@@ -630,6 +630,7 @@ nav:
       - "V1.1 Dev Worklog": release-notes/v1.1-dev-worklog.md
       - "V1.2.0": release-notes/v1.2.0.md
       - "V1.3.0": release-notes/v1.3.0.md
+      - "V1.4.0": release-notes/v1.4.0.md
   - "Project":
       - "Version": VERSION.md
       - "Changelog": CHANGELOG.md
