@@ -128,7 +128,7 @@ The site build maps each page's edit link back to its original file in the repos
 
 ## Development status
 
-Current release: v1.3.0.
+Current release: v1.4.0.
 
 The v1 release is the first stable teaching release. It includes the full 12-module course, validated runnable labs, instructor guidance, assessment material, MkDocs strict navigation, and release-quality usage and licensing guidance.
 
@@ -144,6 +144,8 @@ The supported release path includes:
 8. First-install corrections for Python 3.12, control-profile restarts, lab routing, and prototype-versus-paper-design scope.
 9. Optional offline Module 08 exercises for a fake Mock Hub credential boundary and an artifact-promotion decision.
 10. A published course website built and deployed from reviewed `main` changes.
+11. An optional AIGoat v2.0 source review and contained Windows route for two MCP trust-boundary exercises.
+12. Direct 40-hour workbook routes, verified page edit links, and ready-to-share field pilot materials.
 
 ## Lab philosophy
 
@@ -166,7 +168,7 @@ See `LICENSE.md`, `LICENSE-CONTENT.md`, `LICENSE-CODE.md`, and `COMMERCIAL-LICEN
 
 ## Course status
 
-Current release: v1.3.0.
+Current release: v1.4.0.
 
 | Module | Status | Notes |
 |---|---|---|
